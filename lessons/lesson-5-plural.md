@@ -70,4 +70,4 @@ A plain noun is neither singular nor plural — it is just the thing. *Mi kan an
 
 Five lessons, 57 roots. Past, present, future; one thing or many; and a grammar in which no word has ever changed its shape.
 
-**Still open:** possession (*my*, *your*) and whether questions get a particle. See the open questions in [grammar/](../grammar/).
+**Still open:** whether questions get a particle. Possession is covered in [Lesson 6](lesson-6-possession.md). See the open questions in [grammar/](../grammar/).

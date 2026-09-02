@@ -51,26 +51,28 @@ Design rules:
 
 **Vocabulary: 57 roots.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival) → 180 → 300.
 
-Phonology, alphabet, numbers, tense, plurals and the first words are settled. Possession and question-marking are still being decided. Follow the commits to watch a language grow in real time.
+Phonology, alphabet, numbers, tense, plurals, possession and the first words are settled. Question-marking is still being decided. Follow the commits to watch a language grow in real time.
 
 ## Repository layout
 
 ```
-grammar/     phonology, numbers, tense, plural
+grammar/     phonology, numbers, tense, plural, possession
 dictionary/  word | meaning | source languages
-lessons/     Lessons 1-5: greetings, food, people, tense, plural
+lessons/     Lessons 1-6: greetings, food, people, tense, plural, possession
 ```
 
 - [grammar/phonology.md](grammar/phonology.md) — alphabet, one letter one sound, syllable shape
 - [grammar/numbers.md](grammar/numbers.md) — digits, *des* and *sen*, how numbers are built
 - [grammar/tense.md](grammar/tense.md) — tense: *suda* (past), *saufa* (future), the verb never changes
 - [grammar/plural.md](grammar/plural.md) — plural: say the noun twice; single after a number
+- [grammar/possession.md](grammar/possession.md) — possession: owner right after the noun, no marker
 - [dictionary/dictionary.md](dictionary/dictionary.md) — every word settled so far, with its sources
 - [lessons/lesson-1-greetings.md](lessons/lesson-1-greetings.md) — Lesson 1: greetings
 - [lessons/lesson-2-food-and-home.md](lessons/lesson-2-food-and-home.md) — Lesson 2: water, food, home
 - [lessons/lesson-3-people.md](lessons/lesson-3-people.md) — Lesson 3: people, day and night
 - [lessons/lesson-4-tense.md](lessons/lesson-4-tense.md) — Lesson 4: yesterday, today, tomorrow
 - [lessons/lesson-5-plural.md](lessons/lesson-5-plural.md) — Lesson 5: more than one
+- [lessons/lesson-6-possession.md](lessons/lesson-6-possession.md) — Lesson 6: mine, yours, theirs
 
 Each file marks what is settled and what is still open.
 

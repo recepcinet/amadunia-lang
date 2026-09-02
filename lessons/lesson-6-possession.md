@@ -1,0 +1,94 @@
+# Lesson 6 — Mine, yours, theirs
+
+*Prerequisite: [Lesson 5](lesson-5-plural.md).*
+
+## New words
+
+None. This lesson adds no vocabulary at all.
+
+## The owner comes second
+
+To say whose something is, put the owner right after it.
+
+| Amadunia | English |
+|---|---|
+| ruma mi | my house |
+| nama yu | your name |
+| anak ta | her child |
+| rafiki kita | our friend |
+
+You already know *mi*, *yu*, *ta*, *kita*. There is no separate word for *my* — the ordinary pronoun does it.
+
+## Works with any noun
+
+The owner does not have to be a pronoun.
+
+| Amadunia | English |
+|---|---|
+| ruma rafiki | the friend's house |
+| nama anak | the child's name |
+| cha doktor | the doctor's tea |
+
+## Owner, then description
+
+If you also want to describe the thing, the owner comes first, then the adjective.
+
+| Amadunia | English |
+|---|---|
+| ruma mi kabir | my big house |
+| anak ta kechi | her small child |
+| rafiki yu hao | your good friend |
+
+## Chains
+
+Each word belongs to the one before it. Keep going as long as you need.
+
+| Amadunia | English |
+|---|---|
+| ruma rafiki mi | my friend's house |
+| anak rafiki yu | your friend's child |
+| nama anak rafiki mi | my friend's child's name |
+
+## In a sentence
+
+| Amadunia | English |
+|---|---|
+| Mi kan ruma yu. | I see your house. |
+| Rafiki mi saufa lai. | My friend will come. |
+| Anak ta suda nomu cha. | Her child drank tea. |
+| Kita bil nama doktor. | We know the doctor's name. |
+
+## With plurals
+
+Double the noun, then add the owner:
+
+| Amadunia | English |
+|---|---|
+| anak-anak mi | my children |
+| ruma-ruma rafiki | the friend's houses |
+| tri anak ta | her three children |
+
+## A conversation
+
+> — Nama yu?
+> — Nama mi Luma. Nama yu?
+> — Nama mi Sol. Ruma yu kabir?
+> — No, ruma mi kechi. Rafiki mi lai!
+> — Rafiki yu hao?
+> — Ya, rafiki mi hao.
+
+*Your name? — My name is Luma. Yours? — My name is Sol. Is your house big? — No, my house is small. My friend is coming! — Is your friend good? — Yes, my friend is good.*
+
+## Practice
+
+1. Ruma mi kechi. — *My house is small.* (You met this sentence in Lesson 3 as a guess. It was right.)
+2. Mi mau cha yu. — *I want your tea.*
+3. Anak-anak rafiki mi kula pan. — *My friend's children eat bread.*
+4. Doktor suda kan anak ta. — *The doctor saw her child.*
+5. Nama rafiki yu? — *Your friend's name?*
+
+## What you can already say
+
+Six lessons, 57 roots, and still not one word has changed its shape. You can now say whose anything is, to any depth, using only words you already had.
+
+**Still open:** whether questions get a particle. See the open questions in [grammar/](../grammar/).

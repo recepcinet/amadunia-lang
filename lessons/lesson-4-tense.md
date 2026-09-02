@@ -72,4 +72,4 @@ Only the first sentence carries *suda*; the rest inherit it. Putting *suda* in e
 
 Four lessons in: greet, ask, want, eat, drink, come, go, give, see, speak, know — in past, present and future, for any subject, without a single verb ever changing shape.
 
-**Still open:** possession (*my*, *your*) and whether questions get a particle. Plurals are covered in [Lesson 5](lesson-5-plural.md). See the open questions in [grammar/](../grammar/).
+**Still open:** whether questions get a particle. Plurals are covered in [Lesson 5](lesson-5-plural.md), possession in [Lesson 6](lesson-6-possession.md). See the open questions in [grammar/](../grammar/).

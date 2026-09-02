@@ -61,13 +61,11 @@ There is no separate word for *is*. *Ruma kabir* is complete as it stands.
 1. Mi kan anak. — *I see a child.*
 2. Rafiki nomu cha. — *The friend drinks tea.*
 3. Doktor bil. — *The doctor knows.*
-4. Ruma mi kechi. — *My house is small.* — **careful:** possession has no settled rule yet; see below.
+4. Ruma mi kechi. — *My house is small.*
 5. Din kabir, rat kechi. — *The day is long, the night is short.*
 
 ## What is still open
 
-Sentence 4 above is a guess, not a rule. How to say *my*, *your*, *their* has not been decided — putting the pronoun after the noun is only one option. The same goes for:
-
 - **Questions** — whether a particle replaces the rising tone used since Lesson 1
 
-These are founder decisions. Tense and plurals have since been settled — see [Lesson 4](lesson-4-tense.md) and [Lesson 5](lesson-5-plural.md).
+This is a founder decision. Tense, plurals and possession have since been settled — see [Lesson 4](lesson-4-tense.md), [Lesson 5](lesson-5-plural.md) and [Lesson 6](lesson-6-possession.md). Sentence 4 above, first offered as a guess, turned out to follow the rule.
