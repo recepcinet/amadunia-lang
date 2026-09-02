@@ -51,7 +51,7 @@ Design rules:
 
 🚧 Amadunia was born on **September 2, 2026** and is under active construction.
 
-**Vocabulary: 134 roots.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival — reached September 2, 2026) → 180 → 300.
+**Vocabulary: 180 roots.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival) → 180 (reached September 3, 2026) → 300.
 
 Phonology, alphabet, numbers, tense, plurals, possession, questions, pronouns, the copula, negation, conjunction, demonstratives and place marking are all settled. **The grammar needed for A1 is complete.** What remains — existence (*there is*), comparison (*bigger than*) — is refinement. Follow the commits to watch a language grow in real time.
 

@@ -37,7 +37,18 @@ Two-consonant sequences that occur in current vocabulary:
 - `mb` — *ambil* (to take), across the syllable break *am-bil*
 - `nd` — *anda* (to walk), across the syllable break *an-da*
 - `ng` — *angin* (wind), *cang* (long)
+- `bl` — *problema*
 - `br` — *libro* (book), across the syllable break *li-bro*
+- `ft` — *hafta* (week)
+- `lb` — *kalb* (heart)
+- `lt` — *kultura*
+- `mp` — *tempo*
+- `nk` — *banka*
+- `nt` — *kanta* (to sing)
+- `ny` — *nyama* (meat), *tanya* (to ask), *punya* (to have)
+- `pr` — *problema*
+- `rp` — *korpo* (body)
+- `rt` — *start*
 - `sk` — *eski* (old), *skola* (school), across the syllable break and word-initial
 - `sp` — *espera* (to wait), across the syllable break *es-pera*
 - `st` — *studi* (to learn), word-initial like *tr* and *pl*
