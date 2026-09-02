@@ -1,6 +1,6 @@
 # Amadunia — Dictionary
 
-**64 roots.** Target for A1: 300.
+**76 roots.** Target for A1: 300.
 
 | Word | Meaning | Source languages |
 |---|---|---|
@@ -8,12 +8,16 @@
 | bai | goodbye | already-global |
 | bas | enough, stop | Hindi/Urdu *bas*, Persian *bas*, Swahili *basi*, Turkish *bas* |
 | hi | hello | already-global |
+| mersi | thank you | French *merci* — adopted in Persian, Turkish, Romanian, Bulgarian, Greek, Egyptian Arabic |
 | no | no | already-global |
 | ok | ok | already-global |
+| pardon | sorry, excuse me | French *pardon* — adopted in Turkish, Russian, Persian, Arabic dialects; Spanish *perdón* |
+| plis | please | English *please*, already-global |
 | salam | peaceful greeting | Arabic, Hebrew, Persian, Turkish, Urdu, Swahili |
 | ya | yes | — |
 | **People** | | |
 | anak | child | Indonesian/Malay *anak*, Tagalog *anak*, Javanese *anak* |
+| insan | person, human | Arabic *insān* — adopted in Turkish, Persian, Urdu, Indonesian, Swahili *insani* |
 | kita | we (including you) | Indonesian, Malay |
 | mama | mother | — |
 | mi | I | — |
@@ -33,6 +37,9 @@
 | **Time** | | |
 | din | day | Hindi/Urdu *din*, Bengali *din*, Persian *din* |
 | rat | night | Hindi/Urdu *raat*, Bengali *raat*, Sanskrit *rātri* |
+| sasa | now | Swahili *sasa* |
+| **Place** | | |
+| sini | here | Indonesian/Malay *sini* |
 | **Actions** | | |
 | ama | to love | Latin |
 | beri | to give | Indonesian/Malay *beri*, Turkish *vermek* |
@@ -41,11 +48,18 @@
 | kan | to see | Chinese *kàn* (看) |
 | kula | to eat | Swahili *kula*, Arabic *akala* |
 | lai | to come | Chinese *lái* (来) |
+| madad | help; to help | Arabic *madad*, Hindi/Urdu *madad*, Persian *madad*, Turkish *medet* |
 | mau | to want | Indonesian/Malay *mau* |
 | nomu | to drink | Japanese *nomu* (飲む) |
 | sema | to say, to speak | Swahili *sema* |
+| **Town and money** | | |
+| market | market, shop | already-global — English, Turkish, Russian, Arabic dialects, Indonesian |
+| pesa | money | Swahili *pesa*, Hindi/Urdu *paisa*, Spanish/Tagalog *peso/piso* |
+| rabota | work | Russian *rabota*, Polish/Czech *robota* — source of the global word *robot* |
 | **Qualities and ideas** | | |
+| barid | cold | Arabic *bārid*, Swahili *baridi* |
 | chok | many, much | Turkish *çok*, Azeri *çox* |
+| garam | hot | Hindi/Urdu *garam*, Persian *garm*, Bengali *gorom* |
 | hao | good | Chinese *hǎo* (好) |
 | kabir | big | Arabic *kabīr*, Swahili *-kubwa*, Turkish *kebir* |
 | kechi | small | Indonesian/Malay *kecil*, Turkish *küçük* |

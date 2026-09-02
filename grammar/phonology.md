@@ -28,7 +28,11 @@ Two-consonant sequences that occur in current vocabulary:
 - `ks` — *taksi* (taxi), across the syllable break *tak-si*
 - `kt` — *doktor*, across the syllable break *dok-tor*
 - `lm` — *salam*, across the syllable break *sa-lam*
-- `rk` — *porke* (why), across the syllable break *por-ke*
+- `rk` — *porke* (why), *market*, across the syllable break *por-ke*
+- `rs` — *mersi* (thank you), across the syllable break *mer-si*
+- `rd` — *pardon*, across the syllable break *par-don*
+- `ns` — *insan* (person), across the syllable break *in-san*
+- `pl` — *plis* (please), word-initial like *tr*
 
 ## Vowel sequences
 
@@ -36,8 +40,9 @@ Observed in current vocabulary:
 
 | Sequence | Example |
 |---|---|
-| ai | *bai*, *fai* |
-| au | *nau* |
+| ai | *bai*, *fai*, *kaifa* |
+| ao | *hao* |
+| au | *nau*, *mau* |
 | ia | *dunia* |
 | ua | *uan*, *una* |
 

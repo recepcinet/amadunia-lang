@@ -49,7 +49,7 @@ Design rules:
 
 🚧 Amadunia was born on **September 2, 2026** and is under active construction.
 
-**Vocabulary: 64 roots.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival) → 180 → 300.
+**Vocabulary: 76 roots.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival) → 180 → 300.
 
 Phonology, alphabet, numbers, tense, plurals, possession, questions and the first words are settled. The full pronoun set and whether the language wants a copula are still being decided. Follow the commits to watch a language grow in real time.
 
@@ -58,7 +58,7 @@ Phonology, alphabet, numbers, tense, plurals, possession, questions and the firs
 ```
 grammar/     phonology, numbers, tense, plural, possession, questions
 dictionary/  word | meaning | source languages
-lessons/     Lessons 1-7: greetings, food, people, tense, plural, possession, questions
+lessons/     Lessons 1-8: greetings, food, people, tense, plural, possession, questions, getting by
 ```
 
 - [grammar/phonology.md](grammar/phonology.md) — alphabet, one letter one sound, syllable shape
@@ -75,6 +75,7 @@ lessons/     Lessons 1-7: greetings, food, people, tense, plural, possession, qu
 - [lessons/lesson-5-plural.md](lessons/lesson-5-plural.md) — Lesson 5: more than one
 - [lessons/lesson-6-possession.md](lessons/lesson-6-possession.md) — Lesson 6: mine, yours, theirs
 - [lessons/lesson-7-questions.md](lessons/lesson-7-questions.md) — Lesson 7: asking
+- [lessons/lesson-8-getting-by.md](lessons/lesson-8-getting-by.md) — Lesson 8: getting by — please, thanks, help, money
 
 Each file marks what is settled and what is still open.
 
