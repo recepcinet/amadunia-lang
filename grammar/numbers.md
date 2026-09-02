@@ -14,6 +14,7 @@
 |---|---|
 | 10 | des |
 | 100 | sen |
+| 1000 | mila |
 
 ## Building numbers
 

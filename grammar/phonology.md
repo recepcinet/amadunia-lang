@@ -39,10 +39,12 @@ Two-consonant sequences that occur in current vocabulary:
 - `ng` — *angin* (wind), *cang* (long)
 - `bl` — *problema*
 - `br` — *libro* (book), across the syllable break *li-bro*
+- `fl` — *flor* (flower), word-initial
 - `ft` — *hafta* (week)
 - `lb` — *kalb* (heart)
 - `lt` — *kultura*
 - `mp` — *tempo*
+- `nc` — *pencere* (window)
 - `nk` — *banka*
 - `nt` — *kanta* (to sing)
 - `ny` — *nyama* (meat), *tanya* (to ask), *punya* (to have)
