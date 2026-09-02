@@ -1,6 +1,6 @@
 # Amadunia — Dictionary
 
-**234 roots.** Target for A1: 300.
+**259 roots.** Target for A1: 300.
 
 | Word | Meaning | Source languages |
 |---|---|---|
@@ -36,10 +36,12 @@
 | yu | you — one form for everyone | English *you* |
 | **Body** | | |
 | ain | eye | Arabic *ʿayn* (عين), Hebrew *ayin* |
+| burun | nose | Turkish *burun*, Azeri *burun*, Turkmen *burun* |
 | dente | tooth | Latin *dentem* → Italian *dente*, Spanish *diente*, Portuguese *dente*, French *dent*, English *dental* |
 | kaki | foot, leg | Indonesian/Malay/Tagalog *kaki* |
 | kalb | heart | Arabic *qalb* (قلب), Turkish *kalp*, Urdu *qalb*, Persian *qalb* |
 | korpo | body | Latin *corpus* — global through *corps*, *corporate*, Spanish *cuerpo*, Italian *corpo* |
+| kulit | skin | Indonesian/Malay *kulit* |
 | mano | hand | Spanish/Italian *mano*, Latin *manus*, Portuguese *mão*, French *main* |
 | mulut | mouth | Indonesian/Malay *mulut* |
 | rambut | hair | Indonesian/Malay *rambut* |
@@ -52,10 +54,12 @@
 | **Food and water** | | |
 | akua | water | Latin *aqua*, Spanish *agua*, Portuguese *água*, Italian *acqua* |
 | ca | tea | Chinese *chá*, Hindi *chai*, Turkish *çay*, Swahili *chai*, Russian *chay*, Persian *chai* |
+| corba | soup | Persian *shorbā* → Turkish *çorba*, Arabic *shurba*, Urdu *shorba*, Bulgarian/Serbian *čorba* |
 | fruta | fruit | Latin *fructus*, Spanish/Portuguese *fruta*, Russian *frukt*, English *fruit*, German *Frucht* |
 | halib | milk | Arabic *ḥalīb* (حليب), Swahili *haliba*, Maltese *ħalib* |
 | kafe | coffee | Arabic *qahwa* → Turkish *kahve* → global: *café*, *coffee*, *Kaffee*, *kofe*, Swahili *kahawa* |
 | legum | vegetable | Latin *legumen* → French *légume*, Spanish *legumbre*, English *legume* |
+| minyak | oil | Indonesian/Malay *minyak* |
 | namak | salt | Hindi/Urdu *namak*, Persian *namak*, Bengali *nun* |
 | nyama | meat | Swahili *nyama*, and Bantu-wide |
 | pan | bread, food | Spanish/Portuguese *pan/pão*, Japanese *pan*, Korean *ppang* |
@@ -69,14 +73,21 @@
 | kamisa | shirt | Latin *camisia* → Spanish/Portuguese *camisa*, Arabic *qamīṣ*, Urdu/Hindi *kameez*, Swahili *kamisi* |
 | sapatu | shoe | Portuguese *sapato*, Spanish *zapato*, Indonesian/Malay *sepatu*, Tagalog *sapatos* |
 | **Home and world** | | |
+| anahtar | key | Turkish *anahtar*, Azeri *açar* aside; from Greek *anoiktēri* |
+| bage | garden | Persian *bāgh*, Urdu/Hindi *bāgh*, Turkish *bağ* |
 | bahari | sea | Arabic *baḥr* (بحر), Swahili *bahari*, Turkish *bahriye*, Indonesian *bahari* |
 | dom | house, home | Russian/Polish *dom*, Czech *dům*, Latin *domus* — global through *domestic*, *domicile*. Replaced *ruma* on September 3, 2026 |
 | dunia | world | Arabic, Hindi, Swahili, Indonesian, Turkish |
+| hutan | forest | Indonesian/Malay *hutan* |
+| kamra | room | Hindi/Urdu *kamra*, Nepali *kamra*, Bengali *kamra* |
+| lampu | lamp | Indonesian/Malay *lampu* — global: *lamp*, *lampe*, *lampa*, *lampara* |
 | madina | city | Arabic *madīna* (مدينة), Turkish *medine*, Urdu *madīna*, Swahili *mji/madina* |
 | negara | country | Sanskrit *nagara* → Indonesian/Malay *negara*, Thai *nakhon*, Khmer, Javanese |
 | pahar | mountain | Hindi/Urdu *pahāṛ*, Nepali *pahad* |
 | pencere | window | Turkish *pencere*, Persian *panjare*, Urdu *panjra* |
+| petra | stone | Greek *pétra* → Latin, Spanish *piedra*, Italian *pietra* — global through *petroleum*, *petrify* |
 | pintu | door | Indonesian/Malay *pintu*, Tagalog *pinto* |
+| sabun | soap | Arabic *ṣābūn* → Turkish *sabun*, Swahili *sabuni*, Indonesian *sabun*, Hindi *sābun*, Russian... Spanish *jabón*, French *savon* |
 | sol | sun | Latin/Spanish/Portuguese *sol* |
 | sungai | river | Indonesian/Malay *sungai*, Javanese *kali/sungai* |
 | tabla | table | Latin *tabula* → Spanish *tabla*, English *table*, Russian *tablitsa* |
@@ -161,11 +172,16 @@
 | **Town and money** | | |
 | auto | car | German *Auto*, Spanish *auto*, Turkish/Indonesian *oto*, Russian *avto* — global |
 | banka | bank | Italian *banca* — global: *bank*, *banco*, *banka*, *banki* |
+| harga | price | Indonesian/Malay *harga*, from Sanskrit *argha* |
 | hospital | hospital | Latin *hospitale* — global: *hospital*, *hôpital*, *hospitalis*, Indonesian *hospital* |
+| kertas | paper | Greek *chártēs* → Arabic *qirṭās* → Indonesian/Malay *kertas*, Swahili *karatasi* |
 | kursi | chair | Arabic *kursī*, Turkish *kürsü*, Hindi/Urdu *kursī*, Indonesian *kursi*, Swahili *kiti* |
 | market | market, shop | already-global — English, Turkish, Russian, Arabic dialects, Indonesian |
+| mesin | machine | Latin *machina* — global: *machine*, *máquina*, *Maschine*, *mashina*, Indonesian *mesin* |
 | pesa | money | Swahili *pesa*, Hindi/Urdu *paisa*, Spanish/Tagalog *peso/piso* |
+| posta | mail | Latin *posita* — global: *post*, *posta*, *pochta*, *pos*, Turkish *posta*, Swahili *posta* |
 | rabota | work | Russian *rabota*, Polish/Czech *robota* — source of the global word *robot* |
+| regalo | gift | Spanish/Italian *regalo*, Portuguese *regalo* |
 | restoran | restaurant | French *restaurant* — global: Turkish/Indonesian/Russian/Polish *restoran* |
 | skola | school | Latin *schola* — global: Russian *shkola*, Polish *szkoła*, Indonesian *sekolah*, Swahili *shule*, German *Schule*, English *school* |
 | tarik | road, way | Arabic *ṭarīq* (طريق), Turkish *tarik*, Urdu *tarīq*, Swahili *tariki* |
@@ -178,6 +194,8 @@
 | siya | black | Persian *siyāh*, Turkish *siyah*, Urdu/Hindi *siyāh*, Bengali *shyam* |
 | yesil | green | Turkish *yeşil*, Azeri *yaşıl*, Turkmen *ýaşyl* — written with *s*, the alphabet having no *sh* |
 | **Qualities and ideas** | | |
+| amani | peace | Arabic *amān* (أمان), Swahili *amani*, Turkish *aman*, Urdu *amān* |
+| arte | art | Latin *artem* — global: *art*, *arte*, *arta*, Russian *art* |
 | asan | easy | Hindi/Urdu *āsān*, Persian *āsān*, Bengali *ashan* |
 | baid | far | Arabic *baʿīd* (بعيد) |
 | barid | cold | Arabic *bārid*, Swahili *baridi* |
@@ -188,8 +206,10 @@
 | daima | always | Arabic *dāʾiman* (دائما), Swahili *daima*, Turkish *daima*, Urdu *dāʾim* |
 | dekat | near | Indonesian/Malay *dekat* |
 | duan | short | Chinese *duǎn* (短) |
+| dulce | sweet | Latin *dulcis* → Spanish/Portuguese *dulce/doce*, Italian *dolce*, French *doux* |
 | eski | old | Turkish *eski*, Azeri *əski* |
 | garam | hot | Hindi/Urdu *garam*, Persian *garm*, Bengali *gorom* |
+| habari | news | Arabic *khabar* (خبر) → Swahili *habari*, Turkish *haber*, Urdu *khabar*, Indonesian *kabar* |
 | hao | good | Chinese *hǎo* (好) |
 | hayai | fast | Japanese *hayai* (速い) |
 | historia | history | Greek *historía* — global: *history*, *historia*, *Geschichte* aside, *istoriya*, Indonesian *historia* |
@@ -205,6 +225,8 @@
 | kultura | culture | Latin *cultura* — global: *culture*, *cultura*, *Kultur*, *kultura* |
 | kurang | less | Indonesian/Malay *kurang* |
 | lebi | more | Indonesian/Malay *lebih* |
+| legis | law | Latin *lēgis* — global through *legal*, *ley*, *legge*, *legislation* |
+| lingua | language | Latin *lingua* → Italian/Portuguese *lingua*, Spanish *lengua*, French *langue* — global through *linguistics*, *lingua franca* |
 | luma | light | — |
 | mal | bad | Latin *malus*, Spanish/French *mal*, already-global via *malaria* |
 | muskil | difficult | Arabic *mushkil* (مشكل), Turkish *müşkül*, Urdu/Hindi *mushkil*, Persian *moshkel* — written with *s*, the alphabet having no *sh* |
@@ -213,12 +235,15 @@
 | paling | most — the superlative, before the adjective | Indonesian/Malay *paling* |
 | plen | full | Latin *plēnus*, Spanish *lleno*, French *plein*, English *plenty* |
 | problema | problem | Greek *próblēma* — global: *problem*, *problema*, *Problem*, *problema* |
+| safari | journey | Arabic *safar* (سفر) → Swahili *safari*, and global in English |
 | safi | clean | Arabic *ṣāfī* (صافي), Swahili *safi*, Hindi/Urdu *sāf*, Turkish *saf* |
+| sansi | chance | French *chance* → Turkish *şans*, Russian *shans*, Polish *szansa* |
 | sedih | sad | Indonesian/Malay *sedih* |
 | senang | happy | Indonesian/Malay *senang* |
 | sundar | beautiful | Hindi/Urdu *sundar*, Sanskrit *sundara*, Nepali *sundar* |
 | surat | letter | Indonesian/Malay *surat*, from Arabic *sūra* (a written passage) |
 | uhuru | freedom | Swahili *uhuru* |
+| umid | hope | Persian *omīd*, Urdu *ummīd*, Hindi *ummeed*, Turkish *ümit* |
 | umur | life, age | Arabic *ʿumr* (عمر), Turkish *ömür*, Urdu *umr*, Indonesian *umur*, Swahili *umri* |
 | una | together; *una* + noun = with — see [grammar/place.md](../grammar/place.md) | Latin *ūnā*, "together" |
 | **Question words** | | |

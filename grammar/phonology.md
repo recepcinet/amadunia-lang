@@ -29,6 +29,8 @@ Two-consonant sequences that occur in current vocabulary:
 - `ks` — *taksi* (taxi), across the syllable break *tak-si*
 - `kt` — *doktor*, across the syllable break *dok-tor*
 - `lm` — *salam*, across the syllable break *sa-lam*
+- `rb` — *corba* (soup)
+- `rg` — *harga* (price)
 - `rk` — *porke* (why), *market*, across the syllable break *por-ke*
 - `rs` — *mersi* (thank you), across the syllable break *mer-si*
 - `rd` — *pardon*, across the syllable break *par-don*
@@ -39,6 +41,8 @@ Two-consonant sequences that occur in current vocabulary:
 - `ng` — *angin* (wind), *cang* (long)
 - `bl` — *problema*
 - `br` — *libro* (book), across the syllable break *li-bro*
+- `ht` — *anahtar* (key)
+- `lc` — *dulce* (sweet)
 - `fl` — *flor* (flower), word-initial
 - `ft` — *hafta* (week)
 - `lb` — *kalb* (heart)
