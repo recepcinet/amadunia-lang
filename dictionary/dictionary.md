@@ -1,6 +1,6 @@
 # Amadunia — Dictionary
 
-**101 roots.** Target for A1: 300.
+**113 roots.** Target for A1: 300.
 
 | Word | Meaning | Source languages |
 |---|---|---|
@@ -40,25 +40,34 @@
 | dunia | world | Arabic, Hindi, Swahili, Indonesian, Turkish |
 | ruma | house, home | Indonesian/Malay *rumah* |
 | sol | sun | Latin/Spanish/Portuguese *sol* |
+| **Weather** | | |
+| angin | wind | Indonesian/Malay *angin*, Javanese *angin* |
+| yuki | snow | Japanese *yuki* (雪) |
 | **Time** | | |
 | din | day | Hindi/Urdu *din*, Bengali *din*, Persian *din* |
 | rat | night | Hindi/Urdu *raat*, Bengali *raat*, Sanskrit *rātri* |
 | sasa | now | Swahili *sasa* |
 | **Place** | | |
+| kiri | left | Indonesian/Malay *kiri* |
 | sub | down, below | Latin *sub* — global as the prefix in *submarine*, *subway*, Spanish/Italian *sotto/sub*, Turkish *sub-* in loanwords |
 | sini | here | Indonesian/Malay *sini* |
 | situ | there | Indonesian/Malay *situ* — the pair of *sini* |
 | upar | up, above | Hindi/Urdu *ūpar*, Bengali *upore*, Nepali *upar* |
+| yamin | right | Arabic *yamīn* (يمين) — the source of *Yemen*, the land on the right hand |
 | **Actions** | | |
 | ama | to love | Latin |
 | ambil | to take | Indonesian/Malay *ambil* |
 | anda | to walk | Spanish/Portuguese *andar*, Italian *andare* |
 | beri | to give | Indonesian/Malay *beri*, Turkish *vermek* |
 | bil | to know | Turkish *bilmek*, Azeri/Uzbek/Kazakh *bil-* |
+| buka | to open | Indonesian/Malay *buka*, Javanese *bukak* |
+| espera | to wait | Spanish/Portuguese *esperar*, Italian *sperare* — the root of *Esperanto*, "one who hopes" |
+| faham | to understand | Arabic *fahima*, Indonesian/Malay *paham*, Swahili *fahamu*, Urdu *fahm*, Turkish *fehim* |
 | go | to go | English *go*, already-global |
 | kan | to see | Chinese *kàn* (看) |
 | kara | to read | Arabic *qaraʾa* (قرأ) — the root of *Quran*, "that which is read" |
 | katab | to write | Arabic *kataba* (كتب) — the root of *kitab* (book), Turkish *katip*, Swahili *kitabu* |
+| kimbia | to run | Swahili *kimbia* |
 | kula | to eat | Swahili *kula*, Arabic *akala* |
 | kupi | to buy | Russian *kupit'*, Bulgarian/Serbian/Croatian *kupi*, Czech *koupit* |
 | lai | to come | Chinese *lái* (来) |
@@ -68,6 +77,7 @@
 | nomu | to drink | Japanese *nomu* (飲む) |
 | otur | to sit | Turkish *otur-*, Azeri *otur-* |
 | sema | to say, to speak | Swahili *sema* |
+| studi | to learn, to study | Latin *studere* — global: English *study*, Spanish *estudiar*, German *Studium*, Russian *studirovat'*, Indonesian *studi* |
 | suru | to do, to make | Japanese *suru* (する) |
 | **Town and money** | | |
 | market | market, shop | already-global — English, Turkish, Russian, Arabic dialects, Indonesian |
@@ -77,8 +87,10 @@
 | asul | blue | Arabic *lāzaward* → Spanish/Portuguese *azul*, Italian *azzurro*, English *azure* |
 | merah | red | Indonesian/Malay *merah* |
 | **Qualities and ideas** | | |
+| asan | easy | Hindi/Urdu *āsān*, Persian *āsān*, Bengali *ashan* |
 | barid | cold | Arabic *bārid*, Swahili *baridi* |
 | baru | new | Indonesian/Malay *baru* |
+| cang | long | Chinese *cháng* (长) |
 | cok | many, much | Turkish *çok*, Azeri *çox* |
 | eski | old | Turkish *eski*, Azeri *əski* |
 | hayai | fast | Japanese *hayai* (速い) |
@@ -88,6 +100,7 @@
 | keci | small | Indonesian/Malay *kecil*, Turkish *küçük* |
 | luma | light | — |
 | mal | bad | Latin *malus*, Spanish/French *mal*, already-global via *malaria* |
+| sundar | beautiful | Hindi/Urdu *sundar*, Sanskrit *sundara*, Nepali *sundar* |
 | una | together | — |
 | **Question words** | | |
 | berapa | how many, how much | Indonesian/Malay *berapa* |

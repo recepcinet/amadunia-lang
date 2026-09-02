@@ -36,7 +36,10 @@ Two-consonant sequences that occur in current vocabulary:
 - `pl` — *plis* (please), word-initial like *tr*
 - `mb` — *ambil* (to take), across the syllable break *am-bil*
 - `nd` — *anda* (to walk), across the syllable break *an-da*
+- `ng` — *angin* (wind), *cang* (long)
 - `sk` — *eski* (old), across the syllable break *es-ki*
+- `sp` — *espera* (to wait), across the syllable break *es-pera*
+- `st` — *studi* (to learn), word-initial like *tr* and *pl*
 
 ## Vowel sequences
 
