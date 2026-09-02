@@ -1,6 +1,6 @@
 # Lesson 3 — People, day and night
 
-*Prerequisite: [Lesson 2](lesson-2-food-and-home.md).*
+*Prerequisite: [Lesson 2](lesson-02-food-and-home.md).*
 
 ## New words
 
@@ -66,4 +66,4 @@ There is no separate word for *is*. *Dom kabir* is complete as it stands.
 
 ## What is still open
 
-Tense, plurals, possession and questions have all since been settled — see Lessons [4](lesson-4-tense.md), [5](lesson-5-plural.md), [6](lesson-6-possession.md) and [7](lesson-7-questions.md). Sentence 4 above, first offered as a guess, turned out to follow the rule. The rising-tone question used since Lesson 1 was confirmed as the rule.
+Tense, plurals, possession and questions have all since been settled — see Lessons [4](lesson-04-tense.md), [5](lesson-05-plural.md), [6](lesson-06-possession.md) and [7](lesson-07-questions.md). Sentence 4 above, first offered as a guess, turned out to follow the rule. The rising-tone question used since Lesson 1 was confirmed as the rule.

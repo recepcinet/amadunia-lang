@@ -1,6 +1,6 @@
 # Lesson 5 — More than one
 
-*Prerequisite: [Lesson 4](lesson-4-tense.md).*
+*Prerequisite: [Lesson 4](lesson-04-tense.md).*
 
 ## New words
 
@@ -70,4 +70,4 @@ A plain noun is neither singular nor plural — it is just the thing. *Mi kan an
 
 Five lessons, 57 roots. Past, present, future; one thing or many; and a grammar in which no word has ever changed its shape.
 
-Possession is covered in [Lesson 6](lesson-6-possession.md), questions in [Lesson 7](lesson-7-questions.md).
+Possession is covered in [Lesson 6](lesson-06-possession.md), questions in [Lesson 7](lesson-07-questions.md).

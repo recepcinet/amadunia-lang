@@ -1,6 +1,6 @@
 # Lesson 9 — We, you all, they
 
-*Prerequisite: [Lesson 8](lesson-8-getting-by.md).*
+*Prerequisite: [Lesson 8](lesson-08-getting-by.md).*
 
 ## New words
 

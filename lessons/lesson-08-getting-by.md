@@ -1,6 +1,6 @@
 # Lesson 8 — Getting by
 
-*Prerequisite: [Lesson 7](lesson-7-questions.md).*
+*Prerequisite: [Lesson 7](lesson-07-questions.md).*
 
 ## New words
 

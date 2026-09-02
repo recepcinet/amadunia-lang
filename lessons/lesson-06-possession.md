@@ -1,6 +1,6 @@
 # Lesson 6 — Mine, yours, theirs
 
-*Prerequisite: [Lesson 5](lesson-5-plural.md).*
+*Prerequisite: [Lesson 5](lesson-05-plural.md).*
 
 ## New words
 
@@ -91,4 +91,4 @@ Double the noun, then add the owner:
 
 Six lessons, 57 roots, and still not one word has changed its shape. You can now say whose anything is, to any depth, using only words you already had.
 
-Questions are covered in [Lesson 7](lesson-7-questions.md).
+Questions are covered in [Lesson 7](lesson-07-questions.md).

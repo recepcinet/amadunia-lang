@@ -51,9 +51,9 @@ Design rules:
 
 🚧 Amadunia was born on **September 2, 2026** and is under active construction.
 
-**Vocabulary: 120 roots.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival — reached September 2, 2026) → 180 → 300.
+**Vocabulary: 132 roots.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival — reached September 2, 2026) → 180 → 300.
 
-Phonology, alphabet, numbers, tense, plurals, possession, questions, pronouns, the copula, negation, conjunction, demonstratives and place marking are all settled. **The grammar needed for A1 is complete.** What remains — existence, comparison — is refinement. Follow the commits to watch a language grow in real time.
+Phonology, alphabet, numbers, tense, plurals, possession, questions, pronouns, the copula, negation, conjunction, demonstratives and place marking are all settled. **The grammar needed for A1 is complete.** What remains — verb chaining (*want to eat*), existence (*there is*), comparison (*bigger than*) — is refinement. Follow the commits to watch a language grow in real time.
 
 ## Repository layout
 
@@ -64,7 +64,7 @@ texts/       original writing in Amadunia
 dictionary/  word | meaning | source languages
 lessons/     Lessons 1-12: greetings, food, people, tense, plural, possession,
              questions, getting by, pronouns, a day, being, colours, weather,
-             not and and, pointing and placing
+             not and and, pointing and placing, school and time
 ```
 
 - [grammar/phonology.md](grammar/phonology.md) — alphabet, one letter one sound, syllable shape
@@ -80,21 +80,22 @@ lessons/     Lessons 1-12: greetings, food, people, tense, plural, possession,
 - [grammar/demonstratives.md](grammar/demonstratives.md) — *ini* this, *itu* that; after the noun, last in the phrase
 - [grammar/place.md](grammar/place.md) — *in* at, *dari* from, *por* to; motion verbs take the destination bare; *una* + noun = with
 - [dictionary/dictionary.md](dictionary/dictionary.md) — every word settled so far, with its sources
-- [lessons/lesson-1-greetings.md](lessons/lesson-1-greetings.md) — Lesson 1: greetings
-- [lessons/lesson-2-food-and-home.md](lessons/lesson-2-food-and-home.md) — Lesson 2: water, food, home
-- [lessons/lesson-3-people.md](lessons/lesson-3-people.md) — Lesson 3: people, day and night
-- [lessons/lesson-4-tense.md](lessons/lesson-4-tense.md) — Lesson 4: yesterday, today, tomorrow
-- [lessons/lesson-5-plural.md](lessons/lesson-5-plural.md) — Lesson 5: more than one
-- [lessons/lesson-6-possession.md](lessons/lesson-6-possession.md) — Lesson 6: mine, yours, theirs
-- [lessons/lesson-7-questions.md](lessons/lesson-7-questions.md) — Lesson 7: asking
-- [lessons/lesson-8-getting-by.md](lessons/lesson-8-getting-by.md) — Lesson 8: getting by — please, thanks, help, money
-- [lessons/lesson-9-pronouns.md](lessons/lesson-9-pronouns.md) — Lesson 9: we, you all, they
+- [lessons/lesson-01-greetings.md](lessons/lesson-01-greetings.md) — Lesson 1: greetings
+- [lessons/lesson-02-food-and-home.md](lessons/lesson-02-food-and-home.md) — Lesson 2: water, food, home
+- [lessons/lesson-03-people.md](lessons/lesson-03-people.md) — Lesson 3: people, day and night
+- [lessons/lesson-04-tense.md](lessons/lesson-04-tense.md) — Lesson 4: yesterday, today, tomorrow
+- [lessons/lesson-05-plural.md](lessons/lesson-05-plural.md) — Lesson 5: more than one
+- [lessons/lesson-06-possession.md](lessons/lesson-06-possession.md) — Lesson 6: mine, yours, theirs
+- [lessons/lesson-07-questions.md](lessons/lesson-07-questions.md) — Lesson 7: asking
+- [lessons/lesson-08-getting-by.md](lessons/lesson-08-getting-by.md) — Lesson 8: getting by — please, thanks, help, money
+- [lessons/lesson-09-pronouns.md](lessons/lesson-09-pronouns.md) — Lesson 9: we, you all, they
 - [lessons/lesson-10-a-day.md](lessons/lesson-10-a-day.md) — Lesson 10: a day — body, sleep, buy, there
 - [lessons/lesson-11-being.md](lessons/lesson-11-being.md) — Lesson 11: being — *es*
 - [lessons/lesson-12-colors-directions.md](lessons/lesson-12-colors-directions.md) — Lesson 12: colours and directions
 - [lessons/lesson-13-weather-directions.md](lessons/lesson-13-weather-directions.md) — Lesson 13: weather and directions
 - [lessons/lesson-14-not-and.md](lessons/lesson-14-not-and.md) — Lesson 14: not, and
 - [lessons/lesson-15-pointing-placing.md](lessons/lesson-15-pointing-placing.md) — Lesson 15: pointing and placing
+- [lessons/lesson-16-school-and-time.md](lessons/lesson-16-school-and-time.md) — Lesson 16: school and time
 
 - [texts/story-1-anak-espera-sol.md](texts/story-1-anak-espera-sol.md) — the first story written in Amadunia
 

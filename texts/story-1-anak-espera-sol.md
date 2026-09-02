@@ -2,7 +2,7 @@
 
 *The child waits for the sun.*
 
-An original story, written with 34 of Amadunia's 113 roots and no grammar beyond Lesson 13.
+An original story, written with 34 roots — of the 113 the language had on September 2, 2026 — and no grammar beyond Lesson 13.
 
 ---
 
@@ -63,12 +63,12 @@ Writing this found four gaps that thirteen lessons had not:
 
 2. ~~**No "not".**~~ The story contains no negation because none was possible; the sun's silence had to be shown by what it did instead. **Closed September 3, 2026:** *no*, see [negation.md](../grammar/negation.md). The silence is better as it stands, so the story keeps it.
 
-3. **No "again".** *Rafiki lai* is "friends come"; "friends come back" needs a word the language does not have. *baru* (new) was tried and rejected — *lai baru* reads as "comes new".
+3. ~~**No "again".**~~ *Rafiki lai* is "friends come"; "friends come back" needed a word the language did not have. **Closed September 3, 2026:** *tena*, Swahili. *Rafiki lai tena*.
 
-4. **No place marking.** *Anak kan sol* is "the child sees the sun" and "the child looks at the sun" alike; *Sol lai upar* leans on word order alone to mean "the sun comes up". Already noted in [Lesson 13](../lessons/lesson-13-weather-directions.md).
+4. ~~**No place marking.**~~ *Sol lai upar* leaned on word order alone. **Closed September 3, 2026:** *in*, *dari* and *por*, see [place.md](../grammar/place.md). All four gaps this story found are now closed; it stands as written.
 
 Gaps 1 and 2 are grammar decisions for the founder. Gaps 3 and 4 are partly vocabulary.
 
 ## Roots used
 
-34 of 113: angin, anak, baru, barid, beri, cang, cok, din, dunia, es, espera, faham, garam, go, hao, kabir, kan, keci, kim, kimbia, lai, luma, mi, otur, rafiki, rat, salam, sema, sini, sol, suda, upar, yu, yuki.
+34 roots, of the 113 that existed when this was written: angin, anak, baru, barid, beri, cang, cok, din, dunia, es, espera, faham, garam, go, hao, kabir, kan, keci, kim, kimbia, lai, luma, mi, otur, rafiki, rat, salam, sema, sini, sol, suda, upar, yu, yuki.

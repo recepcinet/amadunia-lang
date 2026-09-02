@@ -1,6 +1,6 @@
 # Lesson 4 — Yesterday, today, tomorrow
 
-*Prerequisite: [Lesson 3](lesson-3-people.md).*
+*Prerequisite: [Lesson 3](lesson-03-people.md).*
 
 ## New words
 
@@ -72,4 +72,4 @@ Only the first sentence carries *suda*; the rest inherit it. Putting *suda* in e
 
 Four lessons in: greet, ask, want, eat, drink, come, go, give, see, speak, know — in past, present and future, for any subject, without a single verb ever changing shape.
 
-Plurals are covered in [Lesson 5](lesson-5-plural.md), possession in [Lesson 6](lesson-6-possession.md), questions in [Lesson 7](lesson-7-questions.md).
+Plurals are covered in [Lesson 5](lesson-05-plural.md), possession in [Lesson 6](lesson-06-possession.md), questions in [Lesson 7](lesson-07-questions.md).

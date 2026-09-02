@@ -1,6 +1,6 @@
 # Lesson 2 — Water, food, home
 
-*Prerequisite: [Lesson 1](lesson-1-greetings.md).*
+*Prerequisite: [Lesson 1](lesson-01-greetings.md).*
 
 ## New words
 
@@ -74,4 +74,4 @@ Say each aloud, then cover the English.
 
 Two lessons in, with about twenty words, you can greet someone, ask their state, say what you want, eat, come, go, give, and call something good. No tense, no agreement, no gender has been needed yet.
 
-Past and future are covered in [Lesson 4](lesson-4-tense.md), plurals in [Lesson 5](lesson-5-plural.md), questions in [Lesson 7](lesson-7-questions.md).
+Past and future are covered in [Lesson 4](lesson-04-tense.md), plurals in [Lesson 5](lesson-05-plural.md), questions in [Lesson 7](lesson-07-questions.md).

@@ -1,6 +1,6 @@
 # Lesson 7 — Asking
 
-*Prerequisite: [Lesson 6](lesson-6-possession.md).*
+*Prerequisite: [Lesson 6](lesson-06-possession.md).*
 
 ## New words
 
@@ -96,4 +96,4 @@ Both are correct. The short one leans on tone; the full one does not need it.
 
 Seven lessons, 64 roots. Statements, past and future, one or many, whose, and now every kind of question — and still not one word has ever changed its shape or its place.
 
-Pronouns are covered in [Lesson 9](lesson-9-pronouns.md), the copula in [Lesson 11](lesson-11-being.md), negation in [Lesson 14](lesson-14-not-and.md), answering a negative question in [Lesson 15](lesson-15-pointing-placing.md).
+Pronouns are covered in [Lesson 9](lesson-09-pronouns.md), the copula in [Lesson 11](lesson-11-being.md), negation in [Lesson 14](lesson-14-not-and.md), answering a negative question in [Lesson 15](lesson-15-pointing-placing.md).

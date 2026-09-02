@@ -1,6 +1,6 @@
 # Amadunia — Dictionary
 
-**120 roots.** Target for A1: 300.
+**132 roots.** Target for A1: 300.
 
 | Word | Meaning | Source languages |
 |---|---|---|
@@ -42,11 +42,14 @@
 | sol | sun | Latin/Spanish/Portuguese *sol* |
 | **Weather** | | |
 | angin | wind | Indonesian/Malay *angin*, Javanese *angin* |
+| yamur | rain | Turkish *yağmur*, Azeri *yağmur*, Turkmen *ýagmyr* |
 | yuki | snow | Japanese *yuki* (雪) |
 | **Time** | | |
 | din | day | Hindi/Urdu *din*, Bengali *din*, Persian *din* |
+| hora | hour | Spanish/Portuguese *hora*, Italian *ora*, Latin *hora*, Greek *hōra* — global through *hour* |
 | rat | night | Hindi/Urdu *raat*, Bengali *raat*, Sanskrit *rātri* |
 | sasa | now | Swahili *sasa* |
+| tahun | year | Indonesian/Malay *tahun*, Javanese *taun* |
 | **This and that** | | |
 | ini | this — after the noun, last in the phrase | Indonesian/Malay *ini*, Tagalog *ito* |
 | itu | that | Indonesian/Malay *itu* |
@@ -63,6 +66,8 @@
 | anda | to walk | Spanish/Portuguese *andar*, Italian *andare* |
 | beri | to give | Indonesian/Malay *beri*, Turkish *vermek* |
 | bil | to know | Turkish *bilmek*, Azeri/Uzbek/Kazakh *bil-* |
+| fikir | to think | Arabic *fikr*, Turkish *fikir*, Urdu/Hindi *fikr*, Swahili *fikiri*, Indonesian *pikir* |
+| funga | to close | Swahili *funga* |
 | buka | to open | Indonesian/Malay *buka*, Javanese *bukak* |
 | espera | to wait | Spanish/Portuguese *esperar*, Italian *sperare* — the root of *Esperanto*, "one who hopes" |
 | faham | to understand | Arabic *fahima*, Indonesian/Malay *paham*, Swahili *fahamu*, Urdu *fahm*, Turkish *fehim* |
@@ -82,10 +87,14 @@
 | sema | to say, to speak | Swahili *sema* |
 | studi | to learn, to study | Latin *studere* — global: English *study*, Spanish *estudiar*, German *Studium*, Russian *studirovat'*, Indonesian *studi* |
 | suru | to do, to make | Japanese *suru* (する) |
+| tena | again | Swahili *tena* |
 | **Town and money** | | |
 | market | market, shop | already-global — English, Turkish, Russian, Arabic dialects, Indonesian |
 | pesa | money | Swahili *pesa*, Hindi/Urdu *paisa*, Spanish/Tagalog *peso/piso* |
+| kursi | chair | Arabic *kursī*, Turkish *kürsü*, Hindi/Urdu *kursī*, Indonesian *kursi*, Swahili *kiti* |
 | rabota | work | Russian *rabota*, Polish/Czech *robota* — source of the global word *robot* |
+| skola | school | Latin *schola* — global: Russian *shkola*, Polish *szkoła*, Indonesian *sekolah*, Swahili *shule*, German *Schule*, English *school* |
+| tarik | road, way | Arabic *ṭarīq* (طريق), Turkish *tarik*, Urdu *tarīq*, Swahili *tariki* |
 | **Colours** | | |
 | asul | blue | Arabic *lāzaward* → Spanish/Portuguese *azul*, Italian *azzurro*, English *azure* |
 | merah | red | Indonesian/Malay *merah* |
@@ -95,12 +104,14 @@
 | baru | new | Indonesian/Malay *baru* |
 | cang | long | Chinese *cháng* (长) |
 | cok | many, much | Turkish *çok*, Azeri *çox* |
+| duan | short | Chinese *duǎn* (短) |
 | eski | old | Turkish *eski*, Azeri *əski* |
 | hayai | fast | Japanese *hayai* (速い) |
 | garam | hot | Hindi/Urdu *garam*, Persian *garm*, Bengali *gorom* |
 | hao | good | Chinese *hǎo* (好) |
 | kabir | big | Arabic *kabīr*, Swahili *-kubwa*, Turkish *kebir* |
 | keci | small | Indonesian/Malay *kecil*, Turkish *küçük* |
+| lebi | more | Indonesian/Malay *lebih* |
 | luma | light | — |
 | mal | bad | Latin *malus*, Spanish/French *mal*, already-global via *malaria* |
 | sundar | beautiful | Hindi/Urdu *sundar*, Sanskrit *sundara*, Nepali *sundar* |
@@ -127,6 +138,7 @@
 | doktor | doctor | Turkish, Russian, Indonesian, Hindi, Swahili *daktari* |
 | foto | photo | already-global |
 | hotel | hotel | already-global |
+| libro | book | Spanish/Italian *libro*, Portuguese *livro*, French *livre* — global through *library* |
 | musik | music | already-global — German *Musik*, Turkish *müzik*, Russian *muzyka*, Indonesian *musik*, Arabic *mūsīqā*, Swahili *muziki* |
 | taksi | taxi | already-global |
 | telefon | telephone | already-global — Turkish, German, Russian, Polish, Indonesian *telepon*, Arabic *tilifūn* |
