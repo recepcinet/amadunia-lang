@@ -18,9 +18,9 @@ Syllables stay simple — never more than two consonants in a row, and none of t
 
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 |---|---|---|---|---|---|---|---|---|----|
-| uan | du | tri | cha | fai | sis | seti | ba | nau | des |
+| uan | du | tri | pat | fai | sis | seti | ba | nau | des |
 
-No irregular numbers, ever: 11 = *des-uan*, 20 = *du-des*, 21 = *du-des-uan*. Hundreds use *sen*: 345 = *tri-sen cha-des fai*.
+No irregular numbers, ever: 11 = *des-uan*, 20 = *du-des*, 21 = *du-des-uan*. Hundreds use *sen*: 345 = *tri-sen pat-des fai*.
 
 **First words:**
 
@@ -35,7 +35,7 @@ Congratulations, you speak Amadunia. 🌍
 
 ## Why another world language?
 
-Esperanto (1887) proved a constructed language can live — but its roots are ~95% European. Amadunia draws from the biggest language families of the whole world: *ba* (8) is Chinese, *cha* (4) is Hindi, *dunia* spans Arabic–Hindi–Swahili–Indonesian–Turkish, *ama* is Latin, *kita* is Indonesian. Every continent should hear something familiar.
+Esperanto (1887) proved a constructed language can live — but its roots are ~95% European. Amadunia draws from the biggest language families of the whole world: *ba* (8) is Chinese, *pat* (4) is Indonesian–Tagalog, *cha* (tea) is at home in Chinese, Hindi, Turkish, Swahili and Russian alike, *dunia* spans Arabic–Hindi–Swahili–Indonesian–Turkish, *ama* is Latin, *kita* is Indonesian. Every continent should hear something familiar.
 
 Design rules:
 
@@ -49,7 +49,7 @@ Design rules:
 
 🚧 Amadunia was born on **September 2, 2026** and is under active construction.
 
-**Vocabulary: 41 roots.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival) → 180 → 300.
+**Vocabulary: 42 roots.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival) → 180 → 300.
 
 Phonology, alphabet, numbers and the first words are settled. Tense, plurals and question-marking are still being decided. Follow the commits to watch a language grow in real time.
 

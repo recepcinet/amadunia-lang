@@ -7,6 +7,7 @@
 | Word | Meaning |
 |---|---|
 | akua | water |
+| cha | tea |
 | pan | bread, food |
 | ruma | house, home |
 | sol | sun |
@@ -34,6 +35,7 @@ Subject, then verb, then object. Every sentence below uses that same shape — n
 | Ta go ruma. | She goes home. |
 | Kita lai ruma. | We come home. |
 | Mi beri pan. | I give bread. |
+| Ta mau cha. | He wants tea. |
 
 Notice what did *not* happen: the verb never changed. *Mi kula*, *yu kula*, *ta kula*, *kita kula* — one form, always.
 
@@ -43,6 +45,9 @@ Lesson 1 asked a question by tone alone: *Ok?* The same works with a full senten
 
 > — Yu mau akua?
 > — Ya, mi mau akua.
+
+> — Yu mau cha?
+> — Ya! Mi mau cha.
 
 > — Yu mau pan?
 > — No, bas.

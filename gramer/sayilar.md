@@ -6,7 +6,7 @@
 
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 |---|---|---|---|---|---|---|---|---|----|
-| uan | du | tri | cha | fai | sis | seti | ba | nau | des |
+| uan | du | tri | pat | fai | sis | seti | ba | nau | des |
 
 ## Units above ten
 
@@ -34,13 +34,13 @@ There are no irregular numbers. Larger numbers are written by joining smaller on
 **Tens plus a digit** — join with a hyphen:
 
 - 21 = *du-des-uan*
-- 45 = *cha-des fai*
+- 45 = *pat-des fai*
 
 **Hundreds** — the digit followed by *sen*, then the remainder as a separate word:
 
-- 345 = *tri-sen cha-des fai*
+- 345 = *tri-sen pat-des fai*
 
 ## Open questions
 
 - Words for 1000 and above are not yet decided.
-- Whether the separator between groups is a hyphen or a space is used inconsistently above (*du-des-uan* vs *cha-des fai*, both taken from the README) and needs a single rule.
+- Whether the separator between groups is a hyphen or a space is used inconsistently above (*du-des-uan* vs *pat-des fai*, both inherited from the README) and needs a single rule.

@@ -1,6 +1,6 @@
 # Amadunia — Dictionary
 
-**41 roots.** Target for A1: 300.
+**42 roots.** Target for A1: 300.
 
 | Word | Meaning | Source languages |
 |---|---|---|
@@ -22,6 +22,7 @@
 | yu | you | — |
 | **Food and water** | | |
 | akua | water | Latin *aqua*, Spanish *agua*, Portuguese *água*, Italian *acqua* |
+| cha | tea | Chinese *chá*, Hindi *chai*, Turkish *çay*, Swahili *chai*, Russian *chay*, Persian *chai* |
 | pan | bread, food | Spanish/Portuguese *pan/pão*, Japanese *pan*, Korean *ppang* |
 | **Home and world** | | |
 | dunia | world | Arabic, Hindi, Swahili, Indonesian, Turkish |
@@ -43,11 +44,11 @@
 | taksi | taxi | already-global |
 | **Numbers** | | |
 | ba | 8 | Chinese |
-| cha | 4 | Hindi |
 | des | 10 | — |
 | du | 2 | — |
 | fai | 5 | — |
 | nau | 9 | — |
+| pat | 4 | Indonesian/Malay *empat*, Tagalog *apat*, Javanese *papat* |
 | sen | 100 | — |
 | seti | 7 | — |
 | sis | 6 | — |
@@ -62,6 +63,5 @@ Words with excellent global reach that collide with vocabulary already settled. 
 
 | Candidate | Meaning | Reach | Problem |
 |---|---|---|---|
-| cha | tea | Chinese, Hindi, Turkish, Swahili, Russian, Persian — one of the most widespread words on Earth | *cha* is already **4** |
 | kitab | book | Arabic, Turkish, Hindi, Urdu, Swahili, Indonesian | near-minimal pair with *kita* (we) |
 | hi | sun | Japanese *hi* | *hi* is already **hello**; *sol* was used instead |
