@@ -51,7 +51,9 @@ Two-consonant sequences that occur in current vocabulary:
 - `pr` — *problema*
 - `rp` — *korpo* (body)
 - `rt` — *start*
+- `sf` — *asfar* (yellow)
 - `sk` — *eski* (old), *skola* (school), across the syllable break and word-initial
+- `sm` — *asman* (sky)
 - `sp` — *espera* (to wait), across the syllable break *es-pera*
 - `st` — *studi* (to learn), word-initial like *tr* and *pl*
 

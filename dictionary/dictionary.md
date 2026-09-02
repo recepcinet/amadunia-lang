@@ -1,6 +1,6 @@
 # Amadunia — Dictionary
 
-**209 roots.** Target for A1: 300.
+**234 roots.** Target for A1: 300.
 
 | Word | Meaning | Source languages |
 |---|---|---|
@@ -20,6 +20,7 @@
 | dugu | sibling — no gender | Swahili *ndugu* |
 | familia | family | Latin *familia*, Spanish *familia*, Swahili *familia*, Polish *familia*, Russian *familiya* |
 | insan | person, human | Arabic *insān* — adopted in Turkish, Persian, Urdu, Indonesian, Swahili *insani* |
+| kisan | farmer | Hindi/Urdu *kisān*, Nepali *kisan*, Bengali *kisan* |
 | kita | we, including you — see [grammar/pronouns.md](../grammar/pronouns.md) | Indonesian, Malay, Tagalog |
 | mama | mother | — |
 | mi | I, me | Spanish/Italian *mi*, English *me*, Swahili *mimi* |
@@ -29,16 +30,21 @@
 | papa | father | — |
 | polisi | police | Greek *polis* → global: Swahili *polisi*, Indonesian *polisi*, Turkish *polis*, Russian *politsiya* |
 | rafiki | friend | Swahili *rafiki*, Arabic *rafīq*, Persian *rafiq* |
+| sofer | driver | French *chauffeur* → Turkish *şoför*, Russian *shofyor*, Indonesian *sopir*, Arabic *shufīr* |
 | ta | he, she, it — no gender | Chinese *tā* 他/她/它, one sound for all three |
+| tacir | merchant | Arabic *tājir* (تاجر), Turkish *tacir*, Urdu *tājir*, Swahili *tajiri* |
 | yu | you — one form for everyone | English *you* |
 | **Body** | | |
 | ain | eye | Arabic *ʿayn* (عين), Hebrew *ayin* |
+| dente | tooth | Latin *dentem* → Italian *dente*, Spanish *diente*, Portuguese *dente*, French *dent*, English *dental* |
 | kaki | foot, leg | Indonesian/Malay/Tagalog *kaki* |
 | kalb | heart | Arabic *qalb* (قلب), Turkish *kalp*, Urdu *qalb*, Persian *qalb* |
 | korpo | body | Latin *corpus* — global through *corps*, *corporate*, Spanish *cuerpo*, Italian *corpo* |
 | mano | hand | Spanish/Italian *mano*, Latin *manus*, Portuguese *mão*, French *main* |
 | mulut | mouth | Indonesian/Malay *mulut* |
+| rambut | hair | Indonesian/Malay *rambut* |
 | sar | head | Persian *sar*, Hindi/Urdu *sir/sar*, Sanskrit *śiras* |
+| telinga | ear | Indonesian/Malay *telinga*, Javanese *talingan* |
 | **Feelings** | | |
 | gusa | anger | Hindi/Urdu *gussa*, Persian *ghosse*, Nepali *gussa* |
 | korku | fear | Turkish *korku*, Azeri *qorxu* |
@@ -47,12 +53,18 @@
 | akua | water | Latin *aqua*, Spanish *agua*, Portuguese *água*, Italian *acqua* |
 | ca | tea | Chinese *chá*, Hindi *chai*, Turkish *çay*, Swahili *chai*, Russian *chay*, Persian *chai* |
 | fruta | fruit | Latin *fructus*, Spanish/Portuguese *fruta*, Russian *frukt*, English *fruit*, German *Frucht* |
+| halib | milk | Arabic *ḥalīb* (حليب), Swahili *haliba*, Maltese *ħalib* |
 | kafe | coffee | Arabic *qahwa* → Turkish *kahve* → global: *café*, *coffee*, *Kaffee*, *kofe*, Swahili *kahawa* |
+| legum | vegetable | Latin *legumen* → French *légume*, Spanish *legumbre*, English *legume* |
 | namak | salt | Hindi/Urdu *namak*, Persian *namak*, Bengali *nun* |
 | nyama | meat | Swahili *nyama*, and Bantu-wide |
 | pan | bread, food | Spanish/Portuguese *pan/pão*, Japanese *pan*, Korean *ppang* |
 | risi | rice | Greek *óryza* → Arabic *aruzz* → Italian *riso*, French *riz*, English *rice*, Russian *ris* |
 | sukar | sugar | Sanskrit *śarkarā* → Arabic *sukkar* → Turkish *şeker*, Swahili *sukari*, Russian *sakhar*, English *sugar* — one of the most travelled words on Earth |
+| telur | egg | Indonesian/Malay *telur*, Javanese *telur* |
+| **Health** | | |
+| bimar | sick | Persian *bīmār*, Urdu/Hindi *bīmār*, Bengali *bimar* |
+| ilac | medicine | Turkish *ilaç*, Azeri *ilaç* — from Arabic *ʿilāj* (treatment) |
 | **Clothing** | | |
 | kamisa | shirt | Latin *camisia* → Spanish/Portuguese *camisa*, Arabic *qamīṣ*, Urdu/Hindi *kameez*, Swahili *kamisi* |
 | sapatu | shoe | Portuguese *sapato*, Spanish *zapato*, Indonesian/Malay *sepatu*, Tagalog *sapatos* |
@@ -71,6 +83,8 @@
 | yatak | bed | Turkish *yatak*, Azeri *yataq* |
 | **Weather** | | |
 | angin | wind | Indonesian/Malay *angin*, Javanese *angin* |
+| asman | sky | Persian *āsmān*, Urdu/Hindi *āsmān*, Turkish *asuman* |
+| badal | cloud | Hindi/Urdu *bādal*, Bengali *badol*, Nepali *badal* |
 | yamur | rain | Turkish *yağmur*, Azeri *yağmur*, Turkmen *ýagmyr* |
 | yuki | snow | Japanese *yuki* (雪) |
 | **Animals and plants** | | |
@@ -141,6 +155,9 @@
 | suru | to do, to make | Japanese *suru* (する) |
 | tanya | to ask | Indonesian/Malay *tanya* |
 | tena | again | Swahili *tena* |
+| **Play** | | |
+| bola | ball | Portuguese/Spanish *bola*, Indonesian/Malay *bola*, Tagalog *bola*, Swahili *boli* |
+| oyun | game | Turkish *oyun*, Azeri *oyun*, Turkmen *oýun* |
 | **Town and money** | | |
 | auto | car | German *Auto*, Spanish *auto*, Turkish/Indonesian *oto*, Russian *avto* — global |
 | banka | bank | Italian *banca* — global: *bank*, *banco*, *banka*, *banki* |
@@ -154,13 +171,18 @@
 | tarik | road, way | Arabic *ṭarīq* (طريق), Turkish *tarik*, Urdu *tarīq*, Swahili *tariki* |
 | tren | train | Spanish/Turkish *tren*, French *train*, English *train*, Russian *tren* — global |
 | **Colours** | | |
+| asfar | yellow | Arabic *aṣfar* (أصفر), Swahili *safari* (a journey, from the same root's travel sense) aside; Urdu *asfar* |
 | asul | blue | Arabic *lāzaward* → Spanish/Portuguese *azul*, Italian *azzurro*, English *azure* |
 | merah | red | Indonesian/Malay *merah* |
+| putih | white | Indonesian/Malay *putih*, Tagalog *puti* |
+| siya | black | Persian *siyāh*, Turkish *siyah*, Urdu/Hindi *siyāh*, Bengali *shyam* |
+| yesil | green | Turkish *yeşil*, Azeri *yaşıl*, Turkmen *ýaşyl* — written with *s*, the alphabet having no *sh* |
 | **Qualities and ideas** | | |
 | asan | easy | Hindi/Urdu *āsān*, Persian *āsān*, Bengali *ashan* |
 | baid | far | Arabic *baʿīd* (بعيد) |
 | barid | cold | Arabic *bārid*, Swahili *baridi* |
 | baru | new | Indonesian/Malay *baru* |
+| benar | true | Indonesian/Malay *benar* |
 | cang | long | Chinese *cháng* (长) |
 | cok | many, much | Turkish *çok*, Azeri *çox* |
 | daima | always | Arabic *dāʾiman* (دائما), Swahili *daima*, Turkish *daima*, Urdu *dāʾim* |
@@ -175,6 +197,7 @@
 | kabir | big | Arabic *kabīr*, Swahili *-kubwa*, Turkish *kebir* |
 | kadang | sometimes | Indonesian/Malay *kadang* |
 | kadar | as ... as | Arabic *qadar*, Turkish *kadar*, Urdu/Hindi *qadar*, Persian *qadr* |
+| kalima | word | Arabic *kalima* (كلمة), Turkish *kelime*, Urdu *kalima*, Swahili *kalima*, Indonesian *kalimat* |
 | keci | small | Indonesian/Malay *kecil*, Turkish *küçük* |
 | kosong | empty | Indonesian/Malay *kosong* |
 | kotor | dirty | Indonesian/Malay *kotor* |
@@ -186,6 +209,7 @@
 | mal | bad | Latin *malus*, Spanish/French *mal*, already-global via *malaria* |
 | muskil | difficult | Arabic *mushkil* (مشكل), Turkish *müşkül*, Urdu/Hindi *mushkil*, Persian *moshkel* — written with *s*, the alphabet having no *sh* |
 | natura | nature | Latin *natura* — global: *nature*, *natura*, *Natur*, *natura* |
+| numero | number | Latin *numerus* → global: *number*, *número*, *numero*, *Nummer*, *nomer* |
 | paling | most — the superlative, before the adjective | Indonesian/Malay *paling* |
 | plen | full | Latin *plēnus*, Spanish *lleno*, French *plein*, English *plenty* |
 | problema | problem | Greek *próblēma* — global: *problem*, *problema*, *Problem*, *problema* |
@@ -193,6 +217,9 @@
 | sedih | sad | Indonesian/Malay *sedih* |
 | senang | happy | Indonesian/Malay *senang* |
 | sundar | beautiful | Hindi/Urdu *sundar*, Sanskrit *sundara*, Nepali *sundar* |
+| surat | letter | Indonesian/Malay *surat*, from Arabic *sūra* (a written passage) |
+| uhuru | freedom | Swahili *uhuru* |
+| umur | life, age | Arabic *ʿumr* (عمر), Turkish *ömür*, Urdu *umr*, Indonesian *umur*, Swahili *umri* |
 | una | together; *una* + noun = with — see [grammar/place.md](../grammar/place.md) | Latin *ūnā*, "together" |
 | **Question words** | | |
 | berapa | how many, how much | Indonesian/Malay *berapa* |
