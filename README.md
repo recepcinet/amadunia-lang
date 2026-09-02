@@ -51,13 +51,18 @@ Design rules:
 
 ## Repository layout
 
-Planned structure — these directories do not exist yet; for now everything lives in this README.
+```
+gramer/     grammar    — phonology, numbers
+sozluk/     dictionary — word | meaning | source languages
+dersler/    lessons    — Lesson 1: greetings
+```
 
-```
-gramer/     grammar (phonology, numbers, ...)
-sozluk/     dictionary (word | meaning | source languages)
-dersler/    lessons (Lesson 1: greetings, ...)
-```
+- [gramer/fonoloji.md](gramer/fonoloji.md) — alphabet, one letter one sound, syllable shape
+- [gramer/sayilar.md](gramer/sayilar.md) — digits, *des* and *sen*, how numbers are built
+- [sozluk/sozluk.md](sozluk/sozluk.md) — every word settled so far, with its sources
+- [dersler/ders-1-selamlasma.md](dersler/ders-1-selamlasma.md) — Lesson 1: greetings
+
+Each file marks what is settled and what is still open.
 
 ## License
 
