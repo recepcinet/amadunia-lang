@@ -40,7 +40,7 @@ But say **what** something is, and *es* comes back:
 
 | | |
 |---|---|
-| Ruma mi yamin. | My house is on the right. |
+| Dom mi yamin. | My house is on the right. |
 | Market kiri. | The market is on the left. |
 | Mano yamin, mano kiri. | Right hand, left hand. |
 | Anda yamin, plis. | Walk right, please. |
@@ -83,8 +83,8 @@ Nothing new. The particle goes before the verb, and the verb never changes:
 
 > — Salam! Yu faham Amadunia?
 > — Ya! Mi studi sasa. Amadunia asan.
-> — Hao! Ruma yu nali?
-> — Ruma mi yamin, upar. Ruma merah.
+> — Hao! Dom yu nali?
+> — Dom mi yamin, upar. Dom merah.
 > — Angin barid sasa. Yuki?
 > — Ya, yuki. Yuki sundar!
 > — Kita anda? Mi espera yu.
@@ -105,4 +105,4 @@ Nothing new. The particle goes before the verb, and the verb never changes:
 
 Thirteen lessons, **113 roots**. Weather, directions, and four verbs that carry a lot: open, understand, learn, wait. You can now say you are learning the language, in the language.
 
-*not* and *and* are covered in [Lesson 14](lesson-14-not-and.md). **Still open:** the words for *this* and *that*, and how to mark a place ("to the market", "at home") — so far the bare noun does the work. See the open questions in [grammar/](../grammar/).
+*not* and *and* are covered in [Lesson 14](lesson-14-not-and.md); *this*, *that* and place marking in [Lesson 15](lesson-15-pointing-placing.md).

@@ -47,12 +47,12 @@ The form tells you the meaning. *mi-mi* is made only of *mi*, so it cannot conta
 |---|---|
 | Ta-ta suda lai. | They came. |
 | Yu-yu mau ca? | Do you all want tea? |
-| Ruma ta-ta kabir. | Their house is big. |
+| Dom ta-ta kabir. | Their house is big. |
 | Ca garam. Mi mau ta. | The tea is hot. I want it. |
 | Rafiki mi-mi es doktor. | Our friend is a doctor. |
 | Kita saufa kan sol. | We will see the sun. |
 
-With possession, nothing new: *ruma mi-mi* (our house), *anak yu-yu* (your children — all of yours), *nama ta-ta* (their names).
+With possession, nothing new: *dom mi-mi* (our house), *anak yu-yu* (your children — all of yours), *nama ta-ta* (their names).
 
 ## Sources
 

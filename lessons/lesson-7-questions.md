@@ -33,7 +33,7 @@ Take the sentence that would be the answer. Replace the thing you do not know wi
 |---|---|---|
 | Yu kan **anak**. | Yu kan **ke**? | What do you see? |
 | **Rafiki** lai. | **Kim** lai? | Who is coming? |
-| Yu go **ruma**. | Yu go **nali**? | Where are you going? |
+| Yu go **dom**. | Yu go **nali**? | Where are you going? |
 | Yu lai **din**. | Yu lai **kab**? | When do you come? |
 | Yu go **taksi**. | Yu go **kaifa**? | How do you go? |
 | Yu kan **tri** anak. | Yu kan **berapa** anak? | How many children do you see? |
@@ -74,7 +74,7 @@ Both are correct. The short one leans on tone; the full one does not need it.
 > — Salam! Nama yu es ke?
 > — Nama mi es Luma. Yu es kim?
 > — Mi es rafiki Sol. Sol nali?
-> — Sol suda go ruma.
+> — Sol suda go dom.
 > — Ta saufa lai kab?
 > — Rat. Yu mau ca?
 > — Ya! Yu suda beri ca berapa rafiki?
@@ -89,11 +89,11 @@ Both are correct. The short one leans on tone; the full one does not need it.
 3. Doktor nali? — *Where is the doctor?*
 4. Rafiki yu saufa lai kab? — *When will your friend come?*
 5. Yu bil nama ta kaifa? — *How do you know her name?*
-6. Berapa ruma? — *How many houses?*
+6. Berapa dom? — *How many houses?*
 7. Ta go porke? — *Why does she go?*
 
 ## What you can already say
 
 Seven lessons, 64 roots. Statements, past and future, one or many, whose, and now every kind of question — and still not one word has ever changed its shape or its place.
 
-Pronouns are covered in [Lesson 9](lesson-9-pronouns.md), the copula in [Lesson 11](lesson-11-being.md), negation in [Lesson 14](lesson-14-not-and.md). **Still open:** how to answer a negative question. See the open questions in [grammar/](../grammar/).
+Pronouns are covered in [Lesson 9](lesson-9-pronouns.md), the copula in [Lesson 11](lesson-11-being.md), negation in [Lesson 14](lesson-14-not-and.md), answering a negative question in [Lesson 15](lesson-15-pointing-placing.md).

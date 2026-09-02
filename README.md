@@ -51,20 +51,20 @@ Design rules:
 
 🚧 Amadunia was born on **September 2, 2026** and is under active construction.
 
-**Vocabulary: 114 roots.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival — reached September 2, 2026) → 180 → 300.
+**Vocabulary: 120 roots.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival — reached September 2, 2026) → 180 → 300.
 
-Phonology, alphabet, numbers, tense, plurals, possession, questions, pronouns, the copula, negation and conjunction are settled. *This* and *that*, and where time and place words go, are still being decided. Follow the commits to watch a language grow in real time.
+Phonology, alphabet, numbers, tense, plurals, possession, questions, pronouns, the copula, negation, conjunction, demonstratives and place marking are all settled. **The grammar needed for A1 is complete.** What remains — existence, comparison — is refinement. Follow the commits to watch a language grow in real time.
 
 ## Repository layout
 
 ```
 grammar/     phonology, numbers, tense, plural, possession, questions,
-             pronouns, copula, negation, conjunction
+             pronouns, copula, negation, conjunction, demonstratives, place
 texts/       original writing in Amadunia
 dictionary/  word | meaning | source languages
 lessons/     Lessons 1-12: greetings, food, people, tense, plural, possession,
              questions, getting by, pronouns, a day, being, colours, weather,
-             not and and
+             not and and, pointing and placing
 ```
 
 - [grammar/phonology.md](grammar/phonology.md) — alphabet, one letter one sound, syllable shape
@@ -76,7 +76,9 @@ lessons/     Lessons 1-12: greetings, food, people, tense, plural, possession,
 - [grammar/pronouns.md](grammar/pronouns.md) — pronouns: six forms, no case, no gender, no politeness; *mi-mi* vs *kita*
 - [grammar/copula.md](grammar/copula.md) — *es* before a noun, nothing before an adjective; adjectives take tense directly
 - [grammar/negation.md](grammar/negation.md) — negation: *no* before the predicate, and before the tense particle
-- [grammar/conjunction.md](grammar/conjunction.md) — *aur* joins nouns, adjectives and sentences alike
+- [grammar/conjunction.md](grammar/conjunction.md) — *aur* joins nouns, adjectives and sentences alike; *o* is or
+- [grammar/demonstratives.md](grammar/demonstratives.md) — *ini* this, *itu* that; after the noun, last in the phrase
+- [grammar/place.md](grammar/place.md) — *in* at, *dari* from, *por* to; motion verbs take the destination bare; *una* + noun = with
 - [dictionary/dictionary.md](dictionary/dictionary.md) — every word settled so far, with its sources
 - [lessons/lesson-1-greetings.md](lessons/lesson-1-greetings.md) — Lesson 1: greetings
 - [lessons/lesson-2-food-and-home.md](lessons/lesson-2-food-and-home.md) — Lesson 2: water, food, home
@@ -92,6 +94,7 @@ lessons/     Lessons 1-12: greetings, food, people, tense, plural, possession,
 - [lessons/lesson-12-colors-directions.md](lessons/lesson-12-colors-directions.md) — Lesson 12: colours and directions
 - [lessons/lesson-13-weather-directions.md](lessons/lesson-13-weather-directions.md) — Lesson 13: weather and directions
 - [lessons/lesson-14-not-and.md](lessons/lesson-14-not-and.md) — Lesson 14: not, and
+- [lessons/lesson-15-pointing-placing.md](lessons/lesson-15-pointing-placing.md) — Lesson 15: pointing and placing
 
 - [texts/story-1-anak-espera-sol.md](texts/story-1-anak-espera-sol.md) — the first story written in Amadunia
 

@@ -12,7 +12,7 @@ To say whose something is, put the owner right after it.
 
 | Amadunia | English |
 |---|---|
-| ruma mi | my house |
+| dom mi | my house |
 | nama yu | your name |
 | anak ta | her child |
 | rafiki kita | our friend |
@@ -25,7 +25,7 @@ The owner does not have to be a pronoun.
 
 | Amadunia | English |
 |---|---|
-| ruma rafiki | the friend's house |
+| dom rafiki | the friend's house |
 | nama anak | the child's name |
 | ca doktor | the doctor's tea |
 
@@ -35,7 +35,7 @@ If you also want to describe the thing, the owner comes first, then the adjectiv
 
 | Amadunia | English |
 |---|---|
-| ruma mi kabir | my big house |
+| dom mi kabir | my big house |
 | anak ta keci | her small child |
 | rafiki yu hao | your good friend |
 
@@ -45,7 +45,7 @@ Each word belongs to the one before it. Keep going as long as you need.
 
 | Amadunia | English |
 |---|---|
-| ruma rafiki mi | my friend's house |
+| dom rafiki mi | my friend's house |
 | anak rafiki yu | your friend's child |
 | nama anak rafiki mi | my friend's child's name |
 
@@ -53,7 +53,7 @@ Each word belongs to the one before it. Keep going as long as you need.
 
 | Amadunia | English |
 |---|---|
-| Mi kan ruma yu. | I see your house. |
+| Mi kan dom yu. | I see your house. |
 | Rafiki mi saufa lai. | My friend will come. |
 | Anak ta suda nomu ca. | Her child drank tea. |
 | Kita bil nama doktor. | We know the doctor's name. |
@@ -65,15 +65,15 @@ Double the noun, then add the owner:
 | Amadunia | English |
 |---|---|
 | anak-anak mi | my children |
-| ruma-ruma rafiki | the friend's houses |
+| dom-dom rafiki | the friend's houses |
 | tri anak ta | her three children |
 
 ## A conversation
 
 > — Nama yu?
 > — Nama mi es Luma. Nama yu?
-> — Nama mi es Sol. Ruma yu kabir?
-> — No, ruma mi keci. Rafiki mi lai!
+> — Nama mi es Sol. Dom yu kabir?
+> — No, dom mi keci. Rafiki mi lai!
 > — Rafiki yu hao?
 > — Ya, rafiki mi hao.
 
@@ -81,7 +81,7 @@ Double the noun, then add the owner:
 
 ## Practice
 
-1. Ruma mi keci. — *My house is small.* (You met this sentence in Lesson 3 as a guess. It was right.)
+1. Dom mi keci. — *My house is small.* (You met this sentence in Lesson 3 as a guess. It was right.)
 2. Mi mau ca yu. — *I want your tea.*
 3. Anak-anak rafiki mi kula pan. — *My friend's children eat bread.*
 4. Doktor suda kan anak ta. — *The doctor saw her child.*

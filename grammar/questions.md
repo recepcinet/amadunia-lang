@@ -9,7 +9,7 @@ A yes/no question is a statement said with a rising tone and written with a ques
 | Statement | Question |
 |---|---|
 | Yu mau ca. | Yu mau ca? |
-| Ruma yu kabir. | Ruma yu kabir? |
+| Dom yu kabir. | Dom yu kabir? |
 | Ta suda lai. | Ta suda lai? |
 
 This is what the language has done since its first sentence (*Hi! Ok?*). It is confirmed, not changed.
@@ -22,7 +22,7 @@ To ask *what, who, where, when, why, how, how many*, put the question word **in 
 |---|---|---|
 | Yu kan **ke**? | Yu kan anak. | What do you see? — You see a child. |
 | **Kim** lai? | Rafiki lai. | Who is coming? — A friend is coming. |
-| Yu go **nali**? | Mi go ruma. | Where are you going? — I'm going home. |
+| Yu go **nali**? | Mi go dom. | Where are you going? — I'm going home. |
 | Yu saufa lai **kab**? | Mi saufa lai din. | When will you come? — I'll come by day. |
 | Yu mau ca **porke**? | — | Why do you want tea? |
 | Yu go **kaifa**? | Mi go taksi. | How do you go? — I go by taxi. |
@@ -96,5 +96,5 @@ Ten candidates from ten families, ten collisions. As with possession, the langua
 
 ## Open questions
 
-- **Adverb position.** *kab, porke, kaifa* are placed at the end of the sentence above. That assumes time, reason and manner phrases go last, which has not been decided on its own. If adverbs are later placed elsewhere, these three follow them — the in-place rule stays.
+- ~~Adverb position~~ — settled in [place.md](place.md): place first, then time, both at the end. *kab, porke, kaifa* stay where they are.
 - **Lesson 6 asked *Nama yu?*** with no question word. That is a yes/no-shaped question that context turns into "what is your name". The explicit form is *Nama yu es ke?* Both are allowed; whether the short form should be discouraged in teaching is open.

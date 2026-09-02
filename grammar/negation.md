@@ -11,7 +11,7 @@
 | Mi kula pan. | I eat bread. |
 | Mi **no** kula pan. | I do not eat bread. |
 | Mi **no** es doktor. | I am not a doctor. |
-| Ruma **no** kabir. | The house is not big. |
+| Dom **no** kabir. | The house is not big. |
 | Mi **no** sini. | I am not here. |
 
 *no* goes immediately before the predicate — the verb, the adjective, the place word, or *es*.
@@ -24,7 +24,7 @@
 |---|---|
 | Mi **no suda** kula. | I did not eat. |
 | Yu **no saufa** lai. | You will not come. |
-| Ruma **no suda** kabir. | The house was not big. |
+| Dom **no suda** kabir. | The house was not big. |
 | Ta **no saufa es** doktor. | She will not be a doctor. |
 
 Never *suda no*. The order is always **no → tense → verb**.
@@ -67,5 +67,5 @@ Using the answer word as the negator is what Spanish, Italian and Portuguese do:
 
 ## Open questions
 
-- **Answering a negative question.** *Yu no mau ca?* — does *ya* agree with the question or deny it? Every language handles this differently and several handle it badly; it needs its own decision.
+- ~~Answering a negative question~~ — settled: *ya* and *no* answer the **fact**, never the wording. *Yu no mau ca? — No* means I do not want it; *Ya* means I do. This is the English, Spanish, Hindi, Arabic, Turkish and Indonesian system, by far the majority. When it matters, answer with the verb: *Mi mau* / *Mi no mau*.
 - **Nothing, nobody, never.** Not yet designed. Whether they are built from *no* plus an existing word, or given their own roots, is open.

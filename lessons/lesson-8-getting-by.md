@@ -97,4 +97,4 @@ They work alone, and they work at either end of a sentence:
 
 Eight lessons, 76 roots. You can now be polite, ask for help, find a place, ask a price, say where you are and when, and describe heat and cold — enough to get through a day somewhere you have never been.
 
-**A note on word order.** *sini* and *sasa* are placed at the end of the sentence here, as *kab* and *porke* were in Lesson 7. Where time and place words go has not been settled on its own; see the open question in [grammar/questions.md](../grammar/questions.md).
+**A note on word order.** *sini* and *sasa* go at the end of the sentence, place before time. This became the rule in [Lesson 15](lesson-15-pointing-placing.md).

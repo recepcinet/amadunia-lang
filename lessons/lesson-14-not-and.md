@@ -20,8 +20,8 @@ You have used *no* to answer since your first conversation. It does a second job
 | Mi **no** kula pan. | I do not eat bread. |
 | Mi es doktor. | I am a doctor. |
 | Mi **no** es doktor. | I am not a doctor. |
-| Ruma kabir. | The house is big. |
-| Ruma **no** kabir. | The house is not big. |
+| Dom kabir. | The house is big. |
+| Dom **no** kabir. | The house is not big. |
 | Mi sini. | I am here. |
 | Mi **no** sini. | I am not here. |
 
@@ -53,7 +53,7 @@ The order never changes: **no → suda/saufa → verb**.
 |---|---|
 | Mi kupi pan **aur** ca. | I buy bread and tea. |
 | Angin **aur** yuki lai. | Wind and snow came. |
-| Ruma mi keci **aur** sundar. | My house is small and beautiful. |
+| Dom mi keci **aur** sundar. | My house is small and beautiful. |
 | Mi lai **aur** mi kan yu. | I came and I saw you. |
 
 Nouns, adjectives, whole sentences — one word for all three.
@@ -84,7 +84,7 @@ Because you already learned what that means. Two nouns together is possession �
 1. Mi no faham. — *I do not understand.*
 2. Anak no suda lala. — *The child did not sleep.*
 3. Sol aur luma. — *The sun and the light.*
-4. Ruma mi no kabir aur no keci. — *My house is not big and not small.*
+4. Dom mi no kabir aur no keci. — *My house is not big and not small.*
 5. Yu no es doktor? — *Are you not a doctor?*
 6. Mi studi aur mi faham. — *I study and I understand.*
 
@@ -92,4 +92,4 @@ Because you already learned what that means. Two nouns together is possession �
 
 Fourteen lessons, **114 roots**. With one new word and one old word doing new work, you can now deny anything and join anything — the two things a language cannot do without.
 
-**Still open:** the words for *this* and *that*, how to mark a place ("to the market", "at home"), and how to answer a negative question. See the open questions in [grammar/](../grammar/).
+*This*, *that*, place marking and answering a negative question are all covered in [Lesson 15](lesson-15-pointing-placing.md).

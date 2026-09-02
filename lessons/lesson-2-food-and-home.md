@@ -9,7 +9,7 @@
 | akua | water |
 | ca | tea |
 | pan | bread, food |
-| ruma | house, home |
+| dom | house, home |
 | sol | sun |
 | nama | name |
 | kula | to eat |
@@ -32,8 +32,8 @@ Subject, then verb, then object. Every sentence below uses that same shape — n
 |---|---|
 | Mi kula pan. | I eat bread. |
 | Yu mau akua. | You want water. |
-| Ta go ruma. | She goes home. |
-| Kita lai ruma. | We come home. |
+| Ta go dom. | She goes home. |
+| Kita lai dom. | We come home. |
 | Mi beri pan. | I give bread. |
 | Ta mau ca. | He wants tea. |
 
@@ -58,14 +58,14 @@ Lesson 1 asked a question by tone alone: *Ok?* The same works with a full senten
 
 > Sol hao.
 > Akua hao.
-> Ruma hao.
+> Dom hao.
 
 ## Practice
 
 Say each aloud, then cover the English.
 
 1. Mi mau pan. — *I want bread.*
-2. Ta lai ruma. — *She comes home.*
+2. Ta lai dom. — *She comes home.*
 3. Kita kula una. — *We eat together.*
 4. Sol hao! — *The sun is good!*
 5. Yu beri akua? — *Will you give water?*

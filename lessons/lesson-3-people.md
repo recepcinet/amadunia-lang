@@ -36,12 +36,12 @@ A quality word follows what it describes:
 
 | Amadunia | English |
 |---|---|
-| Ruma kabir. | The house is big. |
+| Dom kabir. | The house is big. |
 | Anak keci. | The child is small. |
 | Ca hao. | The tea is good. |
 | Rat mal. | The night is bad. |
 
-There is no separate word for *is*. *Ruma kabir* is complete as it stands.
+There is no separate word for *is*. *Dom kabir* is complete as it stands.
 
 ## Day and night
 
@@ -61,7 +61,7 @@ There is no separate word for *is*. *Ruma kabir* is complete as it stands.
 1. Mi kan anak. — *I see a child.*
 2. Rafiki nomu ca. — *The friend drinks tea.*
 3. Doktor bil. — *The doctor knows.*
-4. Ruma mi keci. — *My house is small.*
+4. Dom mi keci. — *My house is small.*
 5. Din kabir, rat keci. — *The day is long, the night is short.*
 
 ## What is still open

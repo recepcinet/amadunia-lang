@@ -9,7 +9,7 @@
 | | |
 |---|---|
 | Mi kupi pan **aur** ca. | I buy bread and tea. |
-| Ruma kabir **aur** sundar. | The house is big and beautiful. |
+| Dom kabir **aur** sundar. | The house is big and beautiful. |
 | Mi lai **aur** mi kan yu. | I came and I saw you. |
 | Angin **aur** yuki lai. | Wind and snow came. |
 
@@ -63,6 +63,6 @@ That so many candidates collide is not bad luck. Short common words crowd the sa
 
 ## Open questions
 
-- **"or"** is not yet decided.
-- **"with"** is not yet decided. *aur* joins things; it does not accompany them. *una* means "together" and is not a preposition.
+- ~~"or"~~ — settled: **o**, Spanish/Italian *o*, Portuguese *ou*. *Ca o akua?* The language's first one-letter word; the phonology allows a bare vowel, and only four roots end in *-o*, so it does not blur the way *i* would have.
+- ~~"with"~~ — settled in [place.md](place.md): *una* + noun.
 - **Joining more than two clauses** — whether long chains want a different rhythm — is a question for when there is more prose.

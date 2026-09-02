@@ -21,7 +21,7 @@ You know *mi*, *yu*, *ta*. You know that saying a word twice makes it "more than
 | Ta-ta suda lai. | They came. |
 | Yu-yu mau ca? | Do you all want tea? |
 | Mi-mi rabota sini. | We work here. |
-| Ruma ta-ta nali? | Where is their house? |
+| Dom ta-ta nali? | Where is their house? |
 
 ## Two kinds of "we"
 
@@ -87,4 +87,4 @@ No *I / me*, no *she / her*, no *we / us*. One form each.
 
 Nine lessons, 76 roots. You can now talk about anyone — one person or many, with you or without you, a person or a thing — and the words for them have never once changed their shape.
 
-*there* is covered in [Lesson 10](lesson-10-a-day.md), the copula in [Lesson 11](lesson-11-being.md), *not* in [Lesson 14](lesson-14-not-and.md). **Still open:** *this* and *that*. See the open questions in [grammar/](../grammar/).
+*there* is covered in [Lesson 10](lesson-10-a-day.md), the copula in [Lesson 11](lesson-11-being.md), *not* in [Lesson 14](lesson-14-not-and.md), *this* and *that* in [Lesson 15](lesson-15-pointing-placing.md).

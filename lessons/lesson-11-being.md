@@ -26,7 +26,7 @@ You have been doing this since Lesson 3. Nothing changes.
 
 | | |
 |---|---|
-| Ruma kabir. | The house is big. |
+| Dom kabir. | The house is big. |
 | Ca garam. | The tea is hot. |
 | Mi sini. | I am here. |
 | Familia mi situ. | My family is there. |
@@ -55,7 +55,7 @@ Adjectives and place words take the tense word themselves — no *es*:
 
 | | |
 |---|---|
-| Ruma suda kabir. | The house was big. |
+| Dom suda kabir. | The house was big. |
 | Ca saufa garam. | The tea will be hot. |
 | Ta-ta suda sini. | They were here. |
 
@@ -66,7 +66,7 @@ Adjectives and place words take the tense word themselves — no *es*:
 | Nama yu es ke? | What is your name? |
 | Yu es kim? | Who are you? |
 | Ta es doktor? | Is she a doctor? |
-| Ruma kabir? | Is the house big? |
+| Dom kabir? | Is the house big? |
 
 ## A conversation
 
@@ -85,7 +85,7 @@ Adjectives and place words take the tense word themselves — no *es*:
 2. Ain ta kabir. — *Her eyes are big.*
 3. Yu-yu es familia? — *Are you a family?*
 4. Ta suda es rafiki mi. — *He was my friend.*
-5. Hotel es ruma? — *Is a hotel a house?*
+5. Hotel es dom? — *Is a hotel a house?*
 6. Din saufa garam. — *The day will be hot.*
 
 ## What you can already say

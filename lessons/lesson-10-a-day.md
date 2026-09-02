@@ -55,7 +55,7 @@
 
 > Din. Mi ambil telefon. Mi suru rabota.
 > Mi go market. Mi kupi pan, ca, akua.
-> Mi lai ruma. Familia mi situ. Kita kula una.
+> Mi lai dom. Familia mi situ. Kita kula una.
 > Rat. Mi otur. Mi lala.
 
 *Day. I take the phone. I work. I go to the market. I buy bread, tea, water. I come home. My family is there. We eat together. Night. I sit. I sleep.*
@@ -85,4 +85,4 @@ Every verb in that story is in its one and only form. Not one of them changed fo
 
 Ten lessons, 88 roots — past the first milestone of 80. You can now tell the story of a whole day, name the body, point here and there, buy and take and make and sleep.
 
-**A note on word order.** *situ*, like *sini* and *sasa*, sits at the end of its sentence here. Where place and time words go is still an open decision; see [grammar/questions.md](../grammar/questions.md).
+**A note on word order.** *situ*, like *sini* and *sasa*, sits at the end of its sentence — place before time. This became the rule in [Lesson 15](lesson-15-pointing-placing.md).

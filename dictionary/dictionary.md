@@ -1,6 +1,6 @@
 # Amadunia — Dictionary
 
-**114 roots.** Target for A1: 300.
+**120 roots.** Target for A1: 300.
 
 | Word | Meaning | Source languages |
 |---|---|---|
@@ -37,8 +37,8 @@
 | ca | tea | Chinese *chá*, Hindi *chai*, Turkish *çay*, Swahili *chai*, Russian *chay*, Persian *chai* |
 | pan | bread, food | Spanish/Portuguese *pan/pão*, Japanese *pan*, Korean *ppang* |
 | **Home and world** | | |
+| dom | house, home | Russian/Polish *dom*, Czech *dům*, Latin *domus* — global through *domestic*, *domicile*. Replaced *ruma* on September 3, 2026 |
 | dunia | world | Arabic, Hindi, Swahili, Indonesian, Turkish |
-| ruma | house, home | Indonesian/Malay *rumah* |
 | sol | sun | Latin/Spanish/Portuguese *sol* |
 | **Weather** | | |
 | angin | wind | Indonesian/Malay *angin*, Javanese *angin* |
@@ -47,6 +47,9 @@
 | din | day | Hindi/Urdu *din*, Bengali *din*, Persian *din* |
 | rat | night | Hindi/Urdu *raat*, Bengali *raat*, Sanskrit *rātri* |
 | sasa | now | Swahili *sasa* |
+| **This and that** | | |
+| ini | this — after the noun, last in the phrase | Indonesian/Malay *ini*, Tagalog *ito* |
+| itu | that | Indonesian/Malay *itu* |
 | **Place** | | |
 | kiri | left | Indonesian/Malay *kiri* |
 | sub | down, below | Latin *sub* — global as the prefix in *submarine*, *subway*, Spanish/Italian *sotto/sub*, Turkish *sub-* in loanwords |
@@ -101,7 +104,7 @@
 | luma | light | — |
 | mal | bad | Latin *malus*, Spanish/French *mal*, already-global via *malaria* |
 | sundar | beautiful | Hindi/Urdu *sundar*, Sanskrit *sundara*, Nepali *sundar* |
-| una | together | — |
+| una | together; *una* + noun = with — see [grammar/place.md](../grammar/place.md) | Latin *ūnā*, "together" |
 | **Question words** | | |
 | berapa | how many, how much | Indonesian/Malay *berapa* |
 | kab | when | Hindi/Urdu *kab*, Bengali *kobe* |
@@ -110,9 +113,14 @@
 | kim | who | Turkish, Azeri, Uzbek, Kazakh *kim* |
 | nali | where | Chinese *nǎlǐ* (哪里) |
 | porke | why | Spanish *por qué*, Italian *perché*, French *pourquoi* — "for what" |
+| **Prepositions** — before the noun | | |
+| dari | from | Indonesian/Malay *dari* |
+| in | at, in, on | Latin, English, German, Italian, Dutch *in* |
+| por | to, for | Spanish/Portuguese *por*, Italian *per*, French *pour*, Latin *pro* |
 | **Grammar particles** | | |
 | aur | and | Hindi/Urdu *aur* |
 | es | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | Spanish *es*, Latin *est*, Italian *è*, French *est*, German *ist*, English *is*, Russian *est'*, Hindi *hai*, Persian *ast* |
+| o | or | Spanish/Italian *o*, Portuguese *ou*, Latin *aut* — the language's first one-letter word |
 | saufa | future marker (before the verb) | Arabic *sawfa* (سوف) |
 | suda | past marker (before the verb) | Indonesian/Malay *sudah* |
 | **Already-global loans** | | |
@@ -158,15 +166,9 @@ The teens work the other way round — *des* first, then the digit: 11 = *des-ua
 
 There is not one irregular number anywhere in the system.
 
-## Known collision — awaiting a founder ruling
+## A collision, resolved
 
-**luma (light) / ruma (house)** differ only in *l* versus *r*.
-
-That contrast is the single hardest one in the world's languages for speakers of Japanese, Korean, and many Chinese varieties — well over a billion people — which is why every later candidate forming an l/r pair has been rejected (*beli* against *beri*, *cala* against *lala*). This pair predates that rule: *luma* comes from the founder's first word list, and *ruma* was added in the first vocabulary batch before the rule existed.
-
-Options: rename *ruma* (Swahili *nyumba* → *numba*, or Arabic *bayt* → *bait*), rename *luma*, or accept the pair. This is a founder decision. Until it is made, no new word may form an l/r pair with anything.
-
-Every other equal-length pair in the dictionary that differs by one sound — *ba/ta/ya*, *du/yu*, *hi/mi*, *go/no*, *mama/nama*, *bai/fai/lai* — involves contrasts that are robust in nearly every language, and most come from the founder's original list. They are accepted.
+*luma* (light) and *ruma* (house) differed only in *l* versus *r* — the hardest contrast on Earth for over a billion speakers, and the ground on which *beli* and *cala* had been rejected. *luma* is the founder's word; *ruma* was the first batch's, added before the rule existed. On September 3, 2026 *ruma* became **dom**, and the dictionary now contains no l/r pair at all.
 
 ## Blocked candidates
 

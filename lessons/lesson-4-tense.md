@@ -55,7 +55,7 @@ Directly before the verb, after the subject. Nowhere else.
 
 Once the time is set, you may leave the particle off until the time changes:
 
-> Mi **suda** go ruma. Mi kula pan. Mi nomu ca. Mi kan rafiki.
+> Mi **suda** go dom. Mi kula pan. Mi nomu ca. Mi kan rafiki.
 > — I went home. I ate bread. I drank tea. I saw a friend.
 
 Only the first sentence carries *suda*; the rest inherit it. Putting *suda* in every sentence is also correct — just longer.
@@ -65,7 +65,7 @@ Only the first sentence carries *suda*; the rest inherit it. Putting *suda* in e
 1. Ta suda sema. — *She spoke.*
 2. Kita saufa kan sol. — *We will see the sun.*
 3. Anak suda nomu akua. — *The child drank water.*
-4. Yu saufa lai ruma? — *Will you come home?*
+4. Yu saufa lai dom? — *Will you come home?*
 5. Mi suda bil nama. — *I knew the name.*
 
 ## What you can already say

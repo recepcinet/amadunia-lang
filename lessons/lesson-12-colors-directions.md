@@ -25,7 +25,7 @@ A colour is an adjective. It follows the noun, and nothing stands between them.
 
 | | |
 |---|---|
-| Ruma merah. | The house is red. |
+| Dom merah. | The house is red. |
 | Akua asul. | The water is blue. |
 | Ca mi merah. | My tea is red. |
 | Mi kan telefon asul. | I see a blue telephone. |
@@ -52,10 +52,10 @@ Compare with a noun, which does take *es*:
 |---|---|
 | Telefon mi baru. | My telephone is new. |
 | Hotel eski. | The hotel is old. |
-| Mi suda kupi ruma baru. | I bought a new house. |
+| Mi suda kupi dom baru. | I bought a new house. |
 | Rafiki eski hao. | An old friend is good. |
 
-Two adjectives in a row? Put the owner first, then describe: *ruma mi baru* — my new house.
+Two adjectives in a row? Put the owner first, then describe: *dom mi baru* — my new house.
 
 ## Reading and writing
 
@@ -89,9 +89,9 @@ Two adjectives in a row? Put the owner first, then describe: *ruma mi baru* — 
 
 ## A conversation
 
-> — Salam! Ruma yu nali?
-> — Ruma mi situ, upar. Ruma merah.
-> — Ruma baru?
+> — Salam! Dom yu nali?
+> — Dom mi situ, upar. Dom merah.
+> — Dom baru?
 > — No, eski. Ma hao!
 > — Dugu yu situ?
 > — Ya. Ta kara, mi katab. Kita ama musik.
@@ -111,4 +111,4 @@ Two adjectives in a row? Put the owner first, then describe: *ruma mi baru* — 
 
 Twelve lessons, **101 roots** — past one hundred. You can colour things, place them above and below, call them new or old or fast, read, write, walk, and talk about your sibling without ever naming a gender.
 
-*not* is covered in [Lesson 14](lesson-14-not-and.md). **Still open:** the words for *this* and *that*. See the open questions in [grammar/](../grammar/).
+*not* is covered in [Lesson 14](lesson-14-not-and.md), *this* and *that* in [Lesson 15](lesson-15-pointing-placing.md).

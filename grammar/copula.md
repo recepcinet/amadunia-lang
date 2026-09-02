@@ -10,7 +10,7 @@
 |---|---|---|
 | noun | Mi **es** doktor. | I am a doctor. |
 | noun | Sol **es** rafiki mi. | Sol is my friend. |
-| adjective | Ruma kabir. | The house is big. |
+| adjective | Dom kabir. | The house is big. |
 | adjective | Ca garam. | The tea is hot. |
 | place word | Mi sini. | I am here. |
 | place word | Hotel situ. | The hotel is there. |
@@ -30,7 +30,7 @@ Because of the possession rule. Two nouns side by side already mean something: t
 
 Without *es*, *Sol doktor* can only be "Sol's doctor". With it, "Sol is a doctor". The two readings never touch.
 
-An adjective cannot own anything, so *ruma kabir* has no possessive reading to collide with. It needs no *es*, and it takes none.
+An adjective cannot own anything, so *dom kabir* has no possessive reading to collide with. It needs no *es*, and it takes none.
 
 ## Tense
 
@@ -45,7 +45,7 @@ Adjectives and place words take the tense particle **directly** — in a sentenc
 
 | | |
 |---|---|
-| Ruma **suda** kabir. | The house was big. |
+| Dom **suda** kabir. | The house was big. |
 | Ca **saufa** garam. | The tea will be hot. |
 | Mi **suda** sini. | I was here. |
 
@@ -53,7 +53,7 @@ There is no *suda es kabir*. An adjective is its own verb.
 
 ## Adjective: sentence or phrase?
 
-*ruma kabir* standing alone is a sentence: "the house is big". Inside a longer sentence it is a phrase: *Mi kan ruma kabir* — "I see a big house". The difference is whether anything comes before or after it. This is exactly how Indonesian *rumah besar* works, and it has served three hundred million people without a copula.
+*dom kabir* standing alone is a sentence: "the house is big". Inside a longer sentence it is a phrase: *Mi kan dom kabir* — "I see a big house". The difference is whether anything comes before or after it. This is exactly how Indonesian *rumah besar* works, and it has served three hundred million people without a copula.
 
 ## In questions
 
@@ -64,7 +64,7 @@ The question word takes the slot of what it asks about, so *es* stays where it i
 | Nama yu **es ke**? | What is your name? |
 | Yu **es kim**? | Who are you? |
 | Ta-ta **es kim**? | Who are they? |
-| Ruma kabir? | Is the house big? — *adjective, no es* |
+| Dom kabir? | Is the house big? — *adjective, no es* |
 | Hotel nali? | Where is the hotel? — *place word, no es* |
 
 ## Sources
@@ -77,7 +77,7 @@ The split — a copula with nouns, none with adjectives — is the Chinese rule 
 
 **Why not zero everywhere.** Arabic, Russian and Hebrew manage it, but they have case, agreement or free word order to tell "X is Y" from "X's Y". Amadunia has none of those; it has one word order and a possession rule that makes *noun noun* possessive. Zero copula with nouns was already producing ambiguous sentences in Lessons 6, 7, 9 and 10 — all corrected in this decision.
 
-**Why not *es* everywhere.** It would add a word to every adjective sentence the language has spoken since Lesson 3, for no gain: adjectives were never ambiguous. And the tense rule for adjectives (*ruma suda kabir*) falls out for free without it.
+**Why not *es* everywhere.** It would add a word to every adjective sentence the language has spoken since Lesson 3, for no gain: adjectives were never ambiguous. And the tense rule for adjectives (*dom suda kabir*) falls out for free without it.
 
 **Why *es* and not another word:**
 

@@ -17,7 +17,7 @@ To say "more than one", say the noun twice with a hyphen between.
 | One | More than one |
 |---|---|
 | anak | anak-anak |
-| ruma | ruma-ruma |
+| dom | dom-dom |
 | rafiki | rafiki-rafiki |
 | doktor | doktor-doktor |
 
@@ -28,7 +28,7 @@ Nothing is added. Nothing inside the word changes. There is no word in Amadunia 
 | Amadunia | English |
 |---|---|
 | Anak-anak kula pan. | The children eat bread. |
-| Mi kan ruma-ruma. | I see houses. |
+| Mi kan dom-dom. | I see houses. |
 | Rafiki-rafiki suda lai. | The friends came. |
 | Doktor-doktor saufa sema. | The doctors will speak. |
 
@@ -39,7 +39,7 @@ If there is a number, do not double the noun. The number already told everyone.
 | Amadunia | English |
 |---|---|
 | tri anak | three children |
-| du ruma | two houses |
+| du dom | two houses |
 | cok rafiki | many friends |
 | des doktor | ten doctors |
 
@@ -64,7 +64,7 @@ A plain noun is neither singular nor plural — it is just the thing. *Mi kan an
 2. Mi kan du sol? — *Do I see two suns?*
 3. Rafiki-rafiki suda kula. — *The friends ate.*
 4. Cok din, cok rat. — *Many days, many nights.*
-5. Doktor bil ruma-ruma. — *The doctor knows the houses.*
+5. Doktor bil dom-dom. — *The doctor knows the houses.*
 
 ## What you can already say
 

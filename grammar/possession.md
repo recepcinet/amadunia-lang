@@ -8,11 +8,11 @@
 
 | Amadunia | English |
 |---|---|
-| ruma mi | my house |
+| dom mi | my house |
 | nama yu | your name |
 | anak ta | her child, his child |
 | rafiki kita | our friend |
-| ruma rafiki | the friend's house |
+| dom rafiki | the friend's house |
 | nama anak | the child's name |
 
 No possessive pronouns to learn (*my, your, his*), no suffix, no "of". The ordinary pronoun does the job, and so does any ordinary noun.
@@ -23,11 +23,11 @@ The owner takes the slot immediately after the noun — the same slot an adjecti
 
 | Amadunia | English |
 |---|---|
-| ruma mi kabir | my big house |
+| dom mi kabir | my big house |
 | anak ta keci | her small child |
 | rafiki kita hao | our good friend |
 
-*ruma mi* is a unit: "my house". Whatever follows describes that unit.
+*dom mi* is a unit: "my house". Whatever follows describes that unit.
 
 ## Chains
 
@@ -35,7 +35,7 @@ An owner can itself have an owner. Each one follows what it owns, and the chain 
 
 | Amadunia | English |
 |---|---|
-| ruma rafiki mi | my friend's house — *house (of) friend (of) me* |
+| dom rafiki mi | my friend's house — *house (of) friend (of) me* |
 | nama anak rafiki yu | your friend's child's name |
 
 Read left to right, each word belongs to the one before it. No exception at any depth.
@@ -44,7 +44,7 @@ Read left to right, each word belongs to the one before it. No exception at any 
 
 | Amadunia | English |
 |---|---|
-| Mi kan ruma yu. | I see your house. |
+| Mi kan dom yu. | I see your house. |
 | Anak ta suda nomu akua. | Her child drank water. |
 | Rafiki mi saufa lai. | My friend will come. |
 | Kita bil nama doktor. | We know the doctor's name. |
@@ -81,7 +81,7 @@ It also matches what Amadunia already does with adjectives: modifiers follow the
 | no (particle) | Japanese *no* の | already "no" |
 | ya (particle) | Swahili *-a* class agreement | already "yes" |
 | -im / -in (suffix) | Turkish, Hungarian, Arabic | inflection on the noun — against the spirit of rule 3 |
-| owner first (*mi ruma*) | Chinese, Japanese, Turkish, Hindi, English | would be the only modifier placed before the noun — one exception to an otherwise clean pattern |
+| owner first (*mi dom*) | Chinese, Japanese, Turkish, Hindi, English | would be the only modifier placed before the noun — one exception to an otherwise clean pattern |
 
 ## Open questions
 
