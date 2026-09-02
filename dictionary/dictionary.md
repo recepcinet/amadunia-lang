@@ -18,14 +18,14 @@
 | **People** | | |
 | anak | child | Indonesian/Malay *anak*, Tagalog *anak*, Javanese *anak* |
 | insan | person, human | Arabic *insān* — adopted in Turkish, Persian, Urdu, Indonesian, Swahili *insani* |
-| kita | we (including you) | Indonesian, Malay |
+| kita | we, including you — see [grammar/pronouns.md](../grammar/pronouns.md) | Indonesian, Malay, Tagalog |
 | mama | mother | — |
-| mi | I | — |
+| mi | I, me | Spanish/Italian *mi*, English *me*, Swahili *mimi* |
 | nama | name | Sanskrit/Hindi *naam*, Indonesian *nama*, Japanese *namae*, English *name* |
 | papa | father | — |
 | rafiki | friend | Swahili *rafiki*, Arabic *rafīq*, Persian *rafiq* |
-| ta | he / she (no gender) | — |
-| yu | you | — |
+| ta | he, she, it — no gender | Chinese *tā* 他/她/它, one sound for all three |
+| yu | you — one form for everyone | English *you* |
 | **Food and water** | | |
 | akua | water | Latin *aqua*, Spanish *agua*, Portuguese *água*, Italian *acqua* |
 | cha | tea | Chinese *chá*, Hindi *chai*, Turkish *çay*, Swahili *chai*, Russian *chay*, Persian *chai* |

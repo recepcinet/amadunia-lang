@@ -66,5 +66,5 @@ Keeping the noun single after a numeral is itself shared by Turkish, Hungarian, 
 
 ## Open questions
 
-- **Pronouns.** The rule applied mechanically gives *yu-yu* (you all) and *ta-ta* (they). These follow from the rule with no exception, but the pronoun set as a whole (exclusive "we", formal "you") has not been designed, so they are not yet confirmed.
+- ~~Pronouns~~ — settled: *mi-mi*, *yu-yu*, *ta-ta* are confirmed; see [pronouns.md](pronouns.md).
 - Whether doubling may also carry the distributive sense some source languages give it (*din-din* = "every day"), or stays strictly plural.

@@ -96,4 +96,4 @@ Both are correct. The short one leans on tone; the full one does not need it.
 
 Seven lessons, 64 roots. Statements, past and future, one or many, whose, and now every kind of question — and still not one word has ever changed its shape or its place.
 
-**Still open:** the full pronoun set and whether the language wants a copula. See the open questions in [grammar/](../grammar/).
+Pronouns are covered in [Lesson 9](lesson-9-pronouns.md). **Still open:** whether the language wants a copula. See the open questions in [grammar/](../grammar/).
