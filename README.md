@@ -12,7 +12,7 @@
 
 > a b d e f g h i k l m n o p r s t u y (+ *ch* as in "cha")
 
-Every syllable is consonant + vowel. If you can say "banana", you can say anything in Amadunia.
+Syllables stay simple — never more than two consonants in a row, and none of the tongue-twisters other languages allow (*strengths*, *vzglyad*). If you can say "banana" and "taksi", you can say anything in Amadunia.
 
 **Numbers:**
 
@@ -20,7 +20,7 @@ Every syllable is consonant + vowel. If you can say "banana", you can say anythi
 |---|---|---|---|---|---|---|---|---|----|
 | uan | du | tri | cha | fai | sis | seti | ba | nau | des |
 
-No irregular numbers, ever: 11 = *des-uan*, 20 = *du-des*, 21 = *du-des-uan*, 345 = *tri-sen cha-des fai*.
+No irregular numbers, ever: 11 = *des-uan*, 20 = *du-des*, 21 = *du-des-uan*. Hundreds use *sen*: 345 = *tri-sen cha-des fai*.
 
 **First words:**
 
@@ -50,6 +50,8 @@ Design rules:
 🚧 Amadunia was born on **September 2, 2026** and is under active construction. Phonology, alphabet, numbers and first words are settled; pronouns, core verbs and word order are being decided. Follow the commits to watch a language grow in real time.
 
 ## Repository layout
+
+Planned structure — these directories do not exist yet; for now everything lives in this README.
 
 ```
 gramer/     grammar (phonology, numbers, ...)
