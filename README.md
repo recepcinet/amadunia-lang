@@ -51,22 +51,22 @@ Design rules:
 
 🚧 Amadunia was born on **September 2, 2026** and is under active construction.
 
-**Vocabulary: 180 roots.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival) → 180 (reached September 3, 2026) → 300.
+**Vocabulary: 184 roots.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival) → 180 (reached September 3, 2026) → 300.
 
-Phonology, alphabet, numbers, tense, plurals, possession, questions, pronouns, the copula, negation, conjunction, demonstratives and place marking are all settled. **The grammar needed for A1 is complete.** What remains — existence (*there is*), comparison (*bigger than*) — is refinement. Follow the commits to watch a language grow in real time.
+Phonology, alphabet, numbers, tense, plurals, possession, questions, pronouns, the copula, negation, conjunction, demonstratives and place marking are all settled. **The grammar needed for A2 is complete** — comparison, existence, subordination and adverbs were settled on September 3, 2026, the day after the language was born. What remains is smaller: *very*, *always*, *all*, ordinal numbers, and the second tier of joiners. Follow the commits to watch a language grow in real time.
 
 ## Repository layout
 
 ```
 grammar/     phonology, numbers, tense, plural, possession, questions,
              pronouns, copula, negation, conjunction, demonstratives, place,
-             verb chains
+             verb chains, comparison, subordination, adverbs
 texts/       original writing in Amadunia
 dictionary/  word | meaning | source languages
 lessons/     Lessons 1-12: greetings, food, people, tense, plural, possession,
              questions, getting by, pronouns, a day, being, colours, weather,
              not and and, pointing and placing, school and time,
-             wanting and being able
+             wanting and being able, comparing and joining
 ```
 
 - [grammar/phonology.md](grammar/phonology.md) — alphabet, one letter one sound, syllable shape
@@ -82,6 +82,9 @@ lessons/     Lessons 1-12: greetings, food, people, tense, plural, possession,
 - [grammar/demonstratives.md](grammar/demonstratives.md) — *ini* this, *itu* that; after the noun, last in the phrase
 - [grammar/place.md](grammar/place.md) — *in* at, *dari* from, *por* to; motion verbs take the destination bare; *una* + noun = with
 - [grammar/verb-chains.md](grammar/verb-chains.md) — verbs simply follow one another: *Mi mau kula pan*
+- [grammar/comparison.md](grammar/comparison.md) — *lebi/kurang/paling* before the adjective, *dari* for than, *kadar* for as-as
+- [grammar/subordination.md](grammar/subordination.md) — a clause needs no marker; *porke* because, *kab* when, *agar* if
+- [grammar/adverbs.md](grammar/adverbs.md) — an adjective straight after the verb describes the verb
 - [dictionary/dictionary.md](dictionary/dictionary.md) — every word settled so far, with its sources
 - [lessons/lesson-01-greetings.md](lessons/lesson-01-greetings.md) — Lesson 1: greetings
 - [lessons/lesson-02-food-and-home.md](lessons/lesson-02-food-and-home.md) — Lesson 2: water, food, home
@@ -100,6 +103,7 @@ lessons/     Lessons 1-12: greetings, food, people, tense, plural, possession,
 - [lessons/lesson-15-pointing-placing.md](lessons/lesson-15-pointing-placing.md) — Lesson 15: pointing and placing
 - [lessons/lesson-16-school-and-time.md](lessons/lesson-16-school-and-time.md) — Lesson 16: school and time
 - [lessons/lesson-17-wanting-and-able.md](lessons/lesson-17-wanting-and-able.md) — Lesson 17: wanting, being able, having to
+- [lessons/lesson-18-comparing-and-joining.md](lessons/lesson-18-comparing-and-joining.md) — Lesson 18: comparing and joining
 
 - [texts/story-1-anak-espera-sol.md](texts/story-1-anak-espera-sol.md) — the first story written in Amadunia
 

@@ -98,4 +98,13 @@ The split — a copula with nouns, none with adjectives — is the Chinese rule 
 - ~~Verb chaining~~ — settled in [verb-chains.md](verb-chains.md): the verbs simply follow one another, *Mi mau kula pan*.
 
 - ~~Negation~~ — settled in [negation.md](negation.md): *Mi no es doktor*. *no* goes before *es*, and before the tense particle when there is one.
-- **Existence.** "There is a hotel" — whether *es* covers it (*Hotel es*?) or a separate word is needed.
+- ~~Existence~~ — settled September 3, 2026: **es at the front of the sentence, with no subject, means "there is".**
+
+  | | |
+  |---|---|
+  | Es hotel in madina. | There is a hotel in the city. |
+  | No es ca. | There is no tea. |
+  | Es dom kabir sini? | Is there a big house here? |
+  | Suda es skola in negara ini. | There was a school in this country. |
+
+  No new word. Amadunia never drops a subject, so a sentence beginning with *es* can only be existential. Spanish *hay*, French *il y a*, Portuguese *tem*, Turkish *var* and Chinese *yǒu* all press an existing verb into this job; *punya* (to have) was the alternative and was rejected because it needs an owner, and existence has none.

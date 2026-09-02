@@ -95,5 +95,5 @@ And every candidate collided anyway:
 
 ## Open questions
 
-- **A different subject.** "I want *you* to eat" — *Mi mau yu kula* — puts a subject inside the object. That is a complement clause, not a verb chain, and it arrives together with "I know that…" and "I think that…". Not yet decided.
+- ~~A different subject~~ — settled in [subordination.md](subordination.md): *Mi mau yu kula* is a clause standing where an object stands, and needs no marker.
 - **Words that are both noun and verb.** *madad* is listed as "help; to help", so *Mi mau madad* is "I want help" **or** "I want to help". The chain rule makes this ambiguity visible for the first time. Every dual-class entry in the dictionary needs review, and the language may need to settle whether a root may hold both jobs at all.

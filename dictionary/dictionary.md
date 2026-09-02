@@ -1,6 +1,6 @@
 # Amadunia — Dictionary
 
-**180 roots.** Target for A1: 300.
+**184 roots.** Target for A1: 300.
 
 | Word | Meaning | Source languages |
 |---|---|---|
@@ -147,6 +147,8 @@
 | historia | history | Greek *historía* — global: *history*, *historia*, *Geschichte* aside, *istoriya*, Indonesian *historia* |
 | ide | idea | Greek *idéa* — global: *idea*, *idée*, *Idee*, *ideya*, Indonesian *ide* |
 | kabir | big | Arabic *kabīr*, Swahili *-kubwa*, Turkish *kebir* |
+| kadar | as ... as | Arabic *qadar*, Turkish *kadar*, Urdu/Hindi *qadar*, Persian *qadr* |
+| kurang | less | Indonesian/Malay *kurang* |
 | keci | small | Indonesian/Malay *kecil*, Turkish *küçük* |
 | kosong | empty | Indonesian/Malay *kosong* |
 | kotor | dirty | Indonesian/Malay *kotor* |
@@ -155,6 +157,7 @@
 | lebi | more | Indonesian/Malay *lebih* |
 | luma | light | — |
 | mal | bad | Latin *malus*, Spanish/French *mal*, already-global via *malaria* |
+| paling | most — the superlative, before the adjective | Indonesian/Malay *paling* |
 | muskil | difficult | Arabic *mushkil* (مشكل), Turkish *müşkül*, Urdu/Hindi *mushkil*, Persian *moshkel* — written with *s*, the alphabet having no *sh* |
 | natura | nature | Latin *natura* — global: *nature*, *natura*, *Natur*, *natura* |
 | plen | full | Latin *plēnus*, Spanish *lleno*, French *plein*, English *plenty* |
@@ -177,6 +180,7 @@
 | in | at, in, on | Latin, English, German, Italian, Dutch *in* |
 | por | to, for | Spanish/Portuguese *por*, Italian *per*, French *pour*, Latin *pro* |
 | **Grammar particles** | | |
+| agar | if | Persian/Urdu *agar*, Hindi *agar*, Turkish *eğer* |
 | aur | and | Hindi/Urdu *aur* |
 | es | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | Spanish *es*, Latin *est*, Italian *è*, French *est*, German *ist*, English *is*, Russian *est'*, Hindi *hai*, Persian *ast* |
 | o | or | Spanish/Italian *o*, Portuguese *ou*, Latin *aut* — the language's first one-letter word |
