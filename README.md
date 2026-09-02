@@ -59,6 +59,7 @@ Phonology, alphabet, numbers, tense, plurals, possession, questions, pronouns, t
 
 ```
 grammar/     phonology, numbers, tense, plural, possession, questions, pronouns, copula
+texts/       original writing in Amadunia
 dictionary/  word | meaning | source languages
 lessons/     Lessons 1-12: greetings, food, people, tense, plural, possession,
              questions, getting by, pronouns, a day, being, colours, weather
@@ -86,6 +87,8 @@ lessons/     Lessons 1-12: greetings, food, people, tense, plural, possession,
 - [lessons/lesson-11-being.md](lessons/lesson-11-being.md) — Lesson 11: being — *es*
 - [lessons/lesson-12-colors-directions.md](lessons/lesson-12-colors-directions.md) — Lesson 12: colours and directions
 - [lessons/lesson-13-weather-directions.md](lessons/lesson-13-weather-directions.md) — Lesson 13: weather and directions
+
+- [texts/story-1-anak-espera-sol.md](texts/story-1-anak-espera-sol.md) — the first story written in Amadunia
 
 Each file marks what is settled and what is still open.
 
