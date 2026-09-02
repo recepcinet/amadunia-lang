@@ -28,6 +28,7 @@ Two-consonant sequences that occur in current vocabulary:
 - `ks` — *taksi* (taxi), across the syllable break *tak-si*
 - `kt` — *doktor*, across the syllable break *dok-tor*
 - `lm` — *salam*, across the syllable break *sa-lam*
+- `rk` — *porke* (why), across the syllable break *por-ke*
 
 ## Vowel sequences
 

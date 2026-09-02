@@ -1,6 +1,6 @@
 # Amadunia — Dictionary
 
-**57 roots.** Target for A1: 300.
+**64 roots.** Target for A1: 300.
 
 | Word | Meaning | Source languages |
 |---|---|---|
@@ -52,6 +52,14 @@
 | luma | light | — |
 | mal | bad | Latin *malus*, Spanish/French *mal*, already-global via *malaria* |
 | una | together | — |
+| **Question words** | | |
+| berapa | how many, how much | Indonesian/Malay *berapa* |
+| kab | when | Hindi/Urdu *kab*, Bengali *kobe* |
+| kaifa | how | Arabic *kayfa* (كيف) |
+| ke | what | Spanish *qué*, Portuguese *que*, Italian *che*, French *que* |
+| kim | who | Turkish, Azeri, Uzbek, Kazakh *kim* |
+| nali | where | Chinese *nǎlǐ* (哪里) |
+| porke | why | Spanish *por qué*, Italian *perché*, French *pourquoi* — "for what" |
 | **Grammar particles** | | |
 | saufa | future marker (before the verb) | Arabic *sawfa* (سوف) |
 | suda | past marker (before the verb) | Indonesian/Malay *sudah* |

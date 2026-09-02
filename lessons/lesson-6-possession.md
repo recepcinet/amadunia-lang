@@ -91,4 +91,4 @@ Double the noun, then add the owner:
 
 Six lessons, 57 roots, and still not one word has changed its shape. You can now say whose anything is, to any depth, using only words you already had.
 
-**Still open:** whether questions get a particle. See the open questions in [grammar/](../grammar/).
+Questions are covered in [Lesson 7](lesson-7-questions.md).
