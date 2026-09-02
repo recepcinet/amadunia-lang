@@ -34,6 +34,7 @@ Two-consonant sequences that occur in current vocabulary:
 - `rd` — *pardon*, across the syllable break *par-don*
 - `ns` — *insan* (person), across the syllable break *in-san*
 - `pl` — *plis* (please), word-initial like *tr*
+- `mb` — *ambil* (to take), across the syllable break *am-bil*
 
 ## Vowel sequences
 

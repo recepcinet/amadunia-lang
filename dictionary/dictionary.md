@@ -1,6 +1,6 @@
 # Amadunia — Dictionary
 
-**76 roots.** Target for A1: 300.
+**88 roots.** Target for A1: 300.
 
 | Word | Meaning | Source languages |
 |---|---|---|
@@ -17,6 +17,7 @@
 | ya | yes | — |
 | **People** | | |
 | anak | child | Indonesian/Malay *anak*, Tagalog *anak*, Javanese *anak* |
+| familia | family | Latin *familia*, Spanish *familia*, Swahili *familia*, Polish *familia*, Russian *familiya* |
 | insan | person, human | Arabic *insān* — adopted in Turkish, Persian, Urdu, Indonesian, Swahili *insani* |
 | kita | we, including you — see [grammar/pronouns.md](../grammar/pronouns.md) | Indonesian, Malay, Tagalog |
 | mama | mother | — |
@@ -26,6 +27,10 @@
 | rafiki | friend | Swahili *rafiki*, Arabic *rafīq*, Persian *rafiq* |
 | ta | he, she, it — no gender | Chinese *tā* 他/她/它, one sound for all three |
 | yu | you — one form for everyone | English *you* |
+| **Body** | | |
+| ain | eye | Arabic *ʿayn* (عين), Hebrew *ayin* |
+| mano | hand | Spanish/Italian *mano*, Latin *manus*, Portuguese *mão*, French *main* |
+| sar | head | Persian *sar*, Hindi/Urdu *sir/sar*, Sanskrit *śiras* |
 | **Food and water** | | |
 | akua | water | Latin *aqua*, Spanish *agua*, Portuguese *água*, Italian *acqua* |
 | ca | tea | Chinese *chá*, Hindi *chai*, Turkish *çay*, Swahili *chai*, Russian *chay*, Persian *chai* |
@@ -40,18 +45,24 @@
 | sasa | now | Swahili *sasa* |
 | **Place** | | |
 | sini | here | Indonesian/Malay *sini* |
+| situ | there | Indonesian/Malay *situ* — the pair of *sini* |
 | **Actions** | | |
 | ama | to love | Latin |
+| ambil | to take | Indonesian/Malay *ambil* |
 | beri | to give | Indonesian/Malay *beri*, Turkish *vermek* |
 | bil | to know | Turkish *bilmek*, Azeri/Uzbek/Kazakh *bil-* |
 | go | to go | English *go*, already-global |
 | kan | to see | Chinese *kàn* (看) |
 | kula | to eat | Swahili *kula*, Arabic *akala* |
+| kupi | to buy | Russian *kupit'*, Bulgarian/Serbian/Croatian *kupi*, Czech *koupit* |
 | lai | to come | Chinese *lái* (来) |
+| lala | to sleep | Swahili *kulala* |
 | madad | help; to help | Arabic *madad*, Hindi/Urdu *madad*, Persian *madad*, Turkish *medet* |
 | mau | to want | Indonesian/Malay *mau* |
 | nomu | to drink | Japanese *nomu* (飲む) |
+| otur | to sit | Turkish *otur-*, Azeri *otur-* |
 | sema | to say, to speak | Swahili *sema* |
+| suru | to do, to make | Japanese *suru* (する) |
 | **Town and money** | | |
 | market | market, shop | already-global — English, Turkish, Russian, Arabic dialects, Indonesian |
 | pesa | money | Swahili *pesa*, Hindi/Urdu *paisa*, Spanish/Tagalog *peso/piso* |
@@ -80,7 +91,9 @@
 | **Already-global loans** | | |
 | doktor | doctor | Turkish, Russian, Indonesian, Hindi, Swahili *daktari* |
 | foto | photo | already-global |
+| hotel | hotel | already-global |
 | taksi | taxi | already-global |
+| telefon | telephone | already-global — Turkish, German, Russian, Polish, Indonesian *telepon*, Arabic *tilifūn* |
 | **Numbers** | | |
 | ba | 8 | Chinese |
 | des | 10 | — |
