@@ -1,6 +1,6 @@
 # Amadunia — Dictionary
 
-**88 roots.** Target for A1: 300.
+**89 roots.** Target for A1: 300.
 
 | Word | Meaning | Source languages |
 |---|---|---|
@@ -86,6 +86,7 @@
 | nali | where | Chinese *nǎlǐ* (哪里) |
 | porke | why | Spanish *por qué*, Italian *perché*, French *pourquoi* — "for what" |
 | **Grammar particles** | | |
+| es | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | Spanish *es*, Latin *est*, Italian *è*, French *est*, German *ist*, English *is*, Russian *est'*, Hindi *hai*, Persian *ast* |
 | saufa | future marker (before the verb) | Arabic *sawfa* (سوف) |
 | suda | past marker (before the verb) | Indonesian/Malay *sudah* |
 | **Already-global loans** | | |

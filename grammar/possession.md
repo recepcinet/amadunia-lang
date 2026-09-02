@@ -85,5 +85,5 @@ It also matches what Amadunia already does with adjectives: modifiers follow the
 
 ## Open questions
 
-- **Attributive vs predicate.** *Ruma mi kabir* can mean "my big house" or "my house is big". This ambiguity is not created by possession — *ruma kabir* already has it — but possession makes it more visible. Whether the language wants a copula or a linking particle is a separate decision.
+- ~~Attributive vs predicate~~ — settled in [copula.md](copula.md): a noun predicate takes *es* (*rafiki mi es doktor*), which keeps it apart from possession (*rafiki mi doktor* = my friend's doctor); adjectives take nothing.
 - **Alienable vs inalienable.** Some languages distinguish "my hand" from "my house". Amadunia currently does not; whether it ever should is open.

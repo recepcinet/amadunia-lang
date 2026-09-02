@@ -51,16 +51,16 @@ Design rules:
 
 🚧 Amadunia was born on **September 2, 2026** and is under active construction.
 
-**Vocabulary: 88 roots.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival — reached September 2, 2026) → 180 → 300.
+**Vocabulary: 89 roots.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival — reached September 2, 2026) → 180 → 300.
 
-Phonology, alphabet, numbers, tense, plurals, possession, questions, pronouns and the first words are settled. Whether the language wants a copula, and where time and place words go, are still being decided. Follow the commits to watch a language grow in real time.
+Phonology, alphabet, numbers, tense, plurals, possession, questions, pronouns, the copula and the first words are settled. Where time and place words go, and how to say *not*, are still being decided. Follow the commits to watch a language grow in real time.
 
 ## Repository layout
 
 ```
-grammar/     phonology, numbers, tense, plural, possession, questions, pronouns
+grammar/     phonology, numbers, tense, plural, possession, questions, pronouns, copula
 dictionary/  word | meaning | source languages
-lessons/     Lessons 1-10: greetings, food, people, tense, plural, possession, questions, getting by, pronouns, a day
+lessons/     Lessons 1-11: greetings, food, people, tense, plural, possession, questions, getting by, pronouns, a day, being
 ```
 
 - [grammar/phonology.md](grammar/phonology.md) — alphabet, one letter one sound, syllable shape
@@ -70,6 +70,7 @@ lessons/     Lessons 1-10: greetings, food, people, tense, plural, possession, q
 - [grammar/possession.md](grammar/possession.md) — possession: owner right after the noun, no marker
 - [grammar/questions.md](grammar/questions.md) — questions: rising tone for yes/no; question word stays where the answer goes
 - [grammar/pronouns.md](grammar/pronouns.md) — pronouns: six forms, no case, no gender, no politeness; *mi-mi* vs *kita*
+- [grammar/copula.md](grammar/copula.md) — *es* before a noun, nothing before an adjective; adjectives take tense directly
 - [dictionary/dictionary.md](dictionary/dictionary.md) — every word settled so far, with its sources
 - [lessons/lesson-1-greetings.md](lessons/lesson-1-greetings.md) — Lesson 1: greetings
 - [lessons/lesson-2-food-and-home.md](lessons/lesson-2-food-and-home.md) — Lesson 2: water, food, home
@@ -81,6 +82,7 @@ lessons/     Lessons 1-10: greetings, food, people, tense, plural, possession, q
 - [lessons/lesson-8-getting-by.md](lessons/lesson-8-getting-by.md) — Lesson 8: getting by — please, thanks, help, money
 - [lessons/lesson-9-pronouns.md](lessons/lesson-9-pronouns.md) — Lesson 9: we, you all, they
 - [lessons/lesson-10-a-day.md](lessons/lesson-10-a-day.md) — Lesson 10: a day — body, sleep, buy, there
+- [lessons/lesson-11-being.md](lessons/lesson-11-being.md) — Lesson 11: being — *es*
 
 Each file marks what is settled and what is still open.
 

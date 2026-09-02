@@ -65,10 +65,10 @@ No *I / me*, no *she / her*, no *we / us*. One form each.
 
 ## A conversation
 
-> — Salam! Yu-yu kim?
-> — Mi-mi rafiki Sol. Sol sini?
+> — Salam! Yu-yu es kim?
+> — Mi-mi es rafiki Sol. Sol sini?
 > — Ya, ta sini. Ta-ta rabota.
-> — Ta-ta kim?
+> — Ta-ta es kim?
 > — Sol, rafiki ta, anak-anak ta. Kita go kan ta-ta?
 > — Ya! Mersi!
 
@@ -87,4 +87,4 @@ No *I / me*, no *she / her*, no *we / us*. One form each.
 
 Nine lessons, 76 roots. You can now talk about anyone — one person or many, with you or without you, a person or a thing — and the words for them have never once changed their shape.
 
-**Still open:** *this*, *that*, *there*; and whether the language wants a copula. See the open questions in [grammar/](../grammar/).
+*there* is covered in [Lesson 10](lesson-10-a-day.md), the copula in [Lesson 11](lesson-11-being.md). **Still open:** *this* and *that*, and how to say *not*. See the open questions in [grammar/](../grammar/).

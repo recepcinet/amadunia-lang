@@ -33,7 +33,7 @@ Take the sentence that would be the answer. Replace the thing you do not know wi
 |---|---|---|
 | Yu kan **anak**. | Yu kan **ke**? | What do you see? |
 | **Rafiki** lai. | **Kim** lai? | Who is coming? |
-| Ruma yu **ruma kabir**. | Ruma yu **nali**? | Where is your house? |
+| Yu go **ruma**. | Yu go **nali**? | Where are you going? |
 | Yu lai **din**. | Yu lai **kab**? | When do you come? |
 | Yu go **taksi**. | Yu go **kaifa**? | How do you go? |
 | Yu kan **tri** anak. | Yu kan **berapa** anak? | How many children do you see? |
@@ -64,16 +64,16 @@ Look down the two columns. Every question is its own answer with one word change
 
 Lesson 6 asked *Nama yu?* — your name? — and that works. The full form puts the question word where the name would go:
 
-> — Nama yu ke?
-> — Nama mi Sol.
+> — Nama yu es ke?
+> — Nama mi es Sol.
 
 Both are correct. The short one leans on tone; the full one does not need it.
 
 ## A conversation
 
-> — Salam! Nama yu ke?
-> — Nama mi Luma. Yu kim?
-> — Mi rafiki Sol. Sol nali?
+> — Salam! Nama yu es ke?
+> — Nama mi es Luma. Yu es kim?
+> — Mi es rafiki Sol. Sol nali?
 > — Sol suda go ruma.
 > — Ta saufa lai kab?
 > — Rat. Yu mau ca?
@@ -96,4 +96,4 @@ Both are correct. The short one leans on tone; the full one does not need it.
 
 Seven lessons, 64 roots. Statements, past and future, one or many, whose, and now every kind of question — and still not one word has ever changed its shape or its place.
 
-Pronouns are covered in [Lesson 9](lesson-9-pronouns.md). **Still open:** whether the language wants a copula. See the open questions in [grammar/](../grammar/).
+Pronouns are covered in [Lesson 9](lesson-9-pronouns.md), the copula in [Lesson 11](lesson-11-being.md). **Still open:** how to say *not*. See the open questions in [grammar/](../grammar/).

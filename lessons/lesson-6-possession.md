@@ -71,8 +71,8 @@ Double the noun, then add the owner:
 ## A conversation
 
 > — Nama yu?
-> — Nama mi Luma. Nama yu?
-> — Nama mi Sol. Ruma yu kabir?
+> — Nama mi es Luma. Nama yu?
+> — Nama mi es Sol. Ruma yu kabir?
 > — No, ruma mi keci. Rafiki mi lai!
 > — Rafiki yu hao?
 > — Ya, rafiki mi hao.

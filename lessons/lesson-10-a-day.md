@@ -65,8 +65,8 @@ Every verb in that story is in its one and only form. Not one of them changed fo
 ## A conversation
 
 > — Pardon, hotel nali?
-> — Situ. Yu-yu familia?
-> — Ya, mi-mi familia. Anak-anak mi-mi mau lala.
+> — Situ. Yu-yu es familia?
+> — Ya, mi-mi es familia. Anak-anak mi-mi mau lala.
 > — Ok. Hotel hao. Yu-yu saufa lala hao.
 > — Mersi!
 
