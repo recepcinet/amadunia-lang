@@ -1,6 +1,6 @@
 # Amadunia — Dictionary
 
-**89 roots.** Target for A1: 300.
+**101 roots.** Target for A1: 300.
 
 | Word | Meaning | Source languages |
 |---|---|---|
@@ -17,6 +17,7 @@
 | ya | yes | — |
 | **People** | | |
 | anak | child | Indonesian/Malay *anak*, Tagalog *anak*, Javanese *anak* |
+| dugu | sibling — no gender | Swahili *ndugu* |
 | familia | family | Latin *familia*, Spanish *familia*, Swahili *familia*, Polish *familia*, Russian *familiya* |
 | insan | person, human | Arabic *insān* — adopted in Turkish, Persian, Urdu, Indonesian, Swahili *insani* |
 | kita | we, including you — see [grammar/pronouns.md](../grammar/pronouns.md) | Indonesian, Malay, Tagalog |
@@ -44,15 +45,20 @@
 | rat | night | Hindi/Urdu *raat*, Bengali *raat*, Sanskrit *rātri* |
 | sasa | now | Swahili *sasa* |
 | **Place** | | |
+| sub | down, below | Latin *sub* — global as the prefix in *submarine*, *subway*, Spanish/Italian *sotto/sub*, Turkish *sub-* in loanwords |
 | sini | here | Indonesian/Malay *sini* |
 | situ | there | Indonesian/Malay *situ* — the pair of *sini* |
+| upar | up, above | Hindi/Urdu *ūpar*, Bengali *upore*, Nepali *upar* |
 | **Actions** | | |
 | ama | to love | Latin |
 | ambil | to take | Indonesian/Malay *ambil* |
+| anda | to walk | Spanish/Portuguese *andar*, Italian *andare* |
 | beri | to give | Indonesian/Malay *beri*, Turkish *vermek* |
 | bil | to know | Turkish *bilmek*, Azeri/Uzbek/Kazakh *bil-* |
 | go | to go | English *go*, already-global |
 | kan | to see | Chinese *kàn* (看) |
+| kara | to read | Arabic *qaraʾa* (قرأ) — the root of *Quran*, "that which is read" |
+| katab | to write | Arabic *kataba* (كتب) — the root of *kitab* (book), Turkish *katip*, Swahili *kitabu* |
 | kula | to eat | Swahili *kula*, Arabic *akala* |
 | kupi | to buy | Russian *kupit'*, Bulgarian/Serbian/Croatian *kupi*, Czech *koupit* |
 | lai | to come | Chinese *lái* (来) |
@@ -67,9 +73,15 @@
 | market | market, shop | already-global — English, Turkish, Russian, Arabic dialects, Indonesian |
 | pesa | money | Swahili *pesa*, Hindi/Urdu *paisa*, Spanish/Tagalog *peso/piso* |
 | rabota | work | Russian *rabota*, Polish/Czech *robota* — source of the global word *robot* |
+| **Colours** | | |
+| asul | blue | Arabic *lāzaward* → Spanish/Portuguese *azul*, Italian *azzurro*, English *azure* |
+| merah | red | Indonesian/Malay *merah* |
 | **Qualities and ideas** | | |
 | barid | cold | Arabic *bārid*, Swahili *baridi* |
+| baru | new | Indonesian/Malay *baru* |
 | cok | many, much | Turkish *çok*, Azeri *çox* |
+| eski | old | Turkish *eski*, Azeri *əski* |
+| hayai | fast | Japanese *hayai* (速い) |
 | garam | hot | Hindi/Urdu *garam*, Persian *garm*, Bengali *gorom* |
 | hao | good | Chinese *hǎo* (好) |
 | kabir | big | Arabic *kabīr*, Swahili *-kubwa*, Turkish *kebir* |
@@ -93,6 +105,7 @@
 | doktor | doctor | Turkish, Russian, Indonesian, Hindi, Swahili *daktari* |
 | foto | photo | already-global |
 | hotel | hotel | already-global |
+| musik | music | already-global — German *Musik*, Turkish *müzik*, Russian *muzyka*, Indonesian *musik*, Arabic *mūsīqā*, Swahili *muziki* |
 | taksi | taxi | already-global |
 | telefon | telephone | already-global — Turkish, German, Russian, Polish, Indonesian *telepon*, Arabic *tilifūn* |
 | **Numbers** | | |
@@ -109,6 +122,16 @@
 | uan | 1 | — |
 
 **Not yet decided:** the etymologies marked — above. They are left blank on purpose rather than guessed at; see [the format note](README.md).
+
+## Known collision — awaiting a founder ruling
+
+**luma (light) / ruma (house)** differ only in *l* versus *r*.
+
+That contrast is the single hardest one in the world's languages for speakers of Japanese, Korean, and many Chinese varieties — well over a billion people — which is why every later candidate forming an l/r pair has been rejected (*beli* against *beri*, *cala* against *lala*). This pair predates that rule: *luma* comes from the founder's first word list, and *ruma* was added in the first vocabulary batch before the rule existed.
+
+Options: rename *ruma* (Swahili *nyumba* → *numba*, or Arabic *bayt* → *bait*), rename *luma*, or accept the pair. This is a founder decision. Until it is made, no new word may form an l/r pair with anything.
+
+Every other equal-length pair in the dictionary that differs by one sound — *ba/ta/ya*, *du/yu*, *hi/mi*, *go/no*, *mama/nama*, *bai/fai/lai* — involves contrasts that are robust in nearly every language, and most come from the founder's original list. They are accepted.
 
 ## Blocked candidates
 

@@ -51,7 +51,7 @@ Design rules:
 
 🚧 Amadunia was born on **September 2, 2026** and is under active construction.
 
-**Vocabulary: 89 roots.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival — reached September 2, 2026) → 180 → 300.
+**Vocabulary: 101 roots.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival — reached September 2, 2026) → 180 → 300.
 
 Phonology, alphabet, numbers, tense, plurals, possession, questions, pronouns, the copula and the first words are settled. Where time and place words go, and how to say *not*, are still being decided. Follow the commits to watch a language grow in real time.
 
@@ -60,7 +60,8 @@ Phonology, alphabet, numbers, tense, plurals, possession, questions, pronouns, t
 ```
 grammar/     phonology, numbers, tense, plural, possession, questions, pronouns, copula
 dictionary/  word | meaning | source languages
-lessons/     Lessons 1-11: greetings, food, people, tense, plural, possession, questions, getting by, pronouns, a day, being
+lessons/     Lessons 1-12: greetings, food, people, tense, plural, possession,
+             questions, getting by, pronouns, a day, being, colours
 ```
 
 - [grammar/phonology.md](grammar/phonology.md) — alphabet, one letter one sound, syllable shape
@@ -83,6 +84,7 @@ lessons/     Lessons 1-11: greetings, food, people, tense, plural, possession, q
 - [lessons/lesson-9-pronouns.md](lessons/lesson-9-pronouns.md) — Lesson 9: we, you all, they
 - [lessons/lesson-10-a-day.md](lessons/lesson-10-a-day.md) — Lesson 10: a day — body, sleep, buy, there
 - [lessons/lesson-11-being.md](lessons/lesson-11-being.md) — Lesson 11: being — *es*
+- [lessons/lesson-12-colors-directions.md](lessons/lesson-12-colors-directions.md) — Lesson 12: colours and directions
 
 Each file marks what is settled and what is still open.
 

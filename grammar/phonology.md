@@ -35,6 +35,8 @@ Two-consonant sequences that occur in current vocabulary:
 - `ns` — *insan* (person), across the syllable break *in-san*
 - `pl` — *plis* (please), word-initial like *tr*
 - `mb` — *ambil* (to take), across the syllable break *am-bil*
+- `nd` — *anda* (to walk), across the syllable break *an-da*
+- `sk` — *eski* (old), across the syllable break *es-ki*
 
 ## Vowel sequences
 
