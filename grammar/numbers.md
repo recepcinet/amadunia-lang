@@ -27,9 +27,9 @@ There are no irregular numbers. Larger numbers are written by joining smaller on
 
 **Tens** — the digit followed by *des*:
 
-| 20 | 30 | 90 |
-|---|---|---|
-| du-des | tri-des | nau-des |
+| 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 |
+|---|---|---|---|---|---|---|---|
+| du-des | tri-des | pat-des | fai-des | sis-des | seti-des | ba-des | nau-des |
 
 **Tens plus a digit** — join with a hyphen:
 

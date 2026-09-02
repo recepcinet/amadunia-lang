@@ -121,20 +121,41 @@
 | musik | music | already-global — German *Musik*, Turkish *müzik*, Russian *muzyka*, Indonesian *musik*, Arabic *mūsīqā*, Swahili *muziki* |
 | taksi | taxi | already-global |
 | telefon | telephone | already-global — Turkish, German, Russian, Polish, Indonesian *telepon*, Arabic *tilifūn* |
-| **Numbers** | | |
-| ba | 8 | Chinese |
-| des | 10 | — |
-| du | 2 | — |
-| fai | 5 | — |
-| nau | 9 | — |
-| pat | 4 | Indonesian/Malay *empat*, Tagalog *apat*, Javanese *papat* |
-| sen | 100 | — |
-| seti | 7 | — |
-| sis | 6 | — |
-| tri | 3 | — |
+| **Numbers** — in numerical order, not alphabetical | | |
 | uan | 1 | — |
+| du | 2 | — |
+| tri | 3 | — |
+| pat | 4 | Indonesian/Malay *empat*, Tagalog *apat*, Javanese *papat* |
+| fai | 5 | — |
+| sis | 6 | — |
+| seti | 7 | — |
+| ba | 8 | Chinese |
+| nau | 9 | — |
+| des | 10 | — |
+| sen | 100 | — |
 
 **Not yet decided:** the etymologies marked — above. They are left blank on purpose rather than guessed at; see [the format note](README.md).
+
+## Counting to a hundred
+
+These are **not roots** and are not counted in the 113. Every one is built from the roots above by the rule in [grammar/numbers.md](../grammar/numbers.md) — the digit, then *des*. Learn eleven words and you can count to a hundred.
+
+| | Amadunia | built from |
+|---|---|---|
+| 10 | des | *(root)* |
+| 20 | du-des | du + des |
+| 30 | tri-des | tri + des |
+| 40 | pat-des | pat + des |
+| 50 | fai-des | fai + des |
+| 60 | sis-des | sis + des |
+| 70 | seti-des | seti + des |
+| 80 | ba-des | ba + des |
+| 90 | nau-des | nau + des |
+| 100 | sen | *(root)* |
+
+The teens work the other way round — *des* first, then the digit: 11 = *des-uan*, 12 = *des-du*, 19 = *des-nau*. Anything in between joins the two: 21 = *du-des-uan*, 99 = *nau-des-nau*, 345 = *tri-sen pat-des fai*.
+
+There is not one irregular number anywhere in the system.
 
 ## Known collision — awaiting a founder ruling
 
