@@ -49,7 +49,7 @@ Design rules:
 
 🚧 Amadunia was born on **September 2, 2026** and is under active construction.
 
-**Vocabulary: 42 roots.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival) → 180 → 300.
+**Vocabulary: 54 roots.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival) → 180 → 300.
 
 Phonology, alphabet, numbers and the first words are settled. Tense, plurals and question-marking are still being decided. Follow the commits to watch a language grow in real time.
 
@@ -58,7 +58,7 @@ Phonology, alphabet, numbers and the first words are settled. Tense, plurals and
 ```
 gramer/     grammar    — phonology, numbers
 sozluk/     dictionary — word | meaning | source languages
-dersler/    lessons    — Lesson 1: greetings, Lesson 2: water, food, home
+dersler/    lessons    — Lessons 1-3: greetings, food, people
 ```
 
 - [gramer/fonoloji.md](gramer/fonoloji.md) — alphabet, one letter one sound, syllable shape
@@ -66,6 +66,7 @@ dersler/    lessons    — Lesson 1: greetings, Lesson 2: water, food, home
 - [sozluk/sozluk.md](sozluk/sozluk.md) — every word settled so far, with its sources
 - [dersler/ders-1-selamlasma.md](dersler/ders-1-selamlasma.md) — Lesson 1: greetings
 - [dersler/ders-2-yasam.md](dersler/ders-2-yasam.md) — Lesson 2: water, food, home
+- [dersler/ders-3-insanlar.md](dersler/ders-3-insanlar.md) — Lesson 3: people, day and night
 
 Each file marks what is settled and what is still open.
 

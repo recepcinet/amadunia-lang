@@ -1,6 +1,6 @@
 # Amadunia — Dictionary
 
-**42 roots.** Target for A1: 300.
+**54 roots.** Target for A1: 300.
 
 | Word | Meaning | Source languages |
 |---|---|---|
@@ -13,11 +13,13 @@
 | salam | peaceful greeting | Arabic, Hebrew, Persian, Turkish, Urdu, Swahili |
 | ya | yes | — |
 | **People** | | |
+| anak | child | Indonesian/Malay *anak*, Tagalog *anak*, Javanese *anak* |
 | kita | we (including you) | Indonesian, Malay |
 | mama | mother | — |
 | mi | I | — |
 | nama | name | Sanskrit/Hindi *naam*, Indonesian *nama*, Japanese *namae*, English *name* |
 | papa | father | — |
+| rafiki | friend | Swahili *rafiki*, Arabic *rafīq*, Persian *rafiq* |
 | ta | he / she (no gender) | — |
 | yu | you | — |
 | **Food and water** | | |
@@ -28,18 +30,29 @@
 | dunia | world | Arabic, Hindi, Swahili, Indonesian, Turkish |
 | ruma | house, home | Indonesian/Malay *rumah* |
 | sol | sun | Latin/Spanish/Portuguese *sol* |
+| **Time** | | |
+| din | day | Hindi/Urdu *din*, Bengali *din*, Persian *din* |
+| rat | night | Hindi/Urdu *raat*, Bengali *raat*, Sanskrit *rātri* |
 | **Actions** | | |
 | ama | to love | Latin |
 | beri | to give | Indonesian/Malay *beri*, Turkish *vermek* |
+| bil | to know | Turkish *bilmek*, Azeri/Uzbek/Kazakh *bil-* |
 | go | to go | English *go*, already-global |
+| kan | to see | Chinese *kàn* (看) |
 | kula | to eat | Swahili *kula*, Arabic *akala* |
 | lai | to come | Chinese *lái* (来) |
 | mau | to want | Indonesian/Malay *mau* |
+| nomu | to drink | Japanese *nomu* (飲む) |
+| sema | to say, to speak | Swahili *sema* |
 | **Qualities and ideas** | | |
 | hao | good | Chinese *hǎo* (好) |
+| kabir | big | Arabic *kabīr*, Swahili *-kubwa*, Turkish *kebir* |
+| kechi | small | Indonesian/Malay *kecil*, Turkish *küçük* |
 | luma | light | — |
+| mal | bad | Latin *malus*, Spanish/French *mal*, already-global via *malaria* |
 | una | together | — |
 | **Already-global loans** | | |
+| doktor | doctor | Turkish, Russian, Indonesian, Hindi, Swahili *daktari* |
 | foto | photo | already-global |
 | taksi | taxi | already-global |
 | **Numbers** | | |

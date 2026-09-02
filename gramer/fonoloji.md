@@ -10,7 +10,7 @@ Nineteen letters, each with exactly one sound, plus one digraph.
 |---|---|
 | **Vowels** (5) | a e i o u |
 | **Consonants** (14) | b d f g h k l m n p r s t y |
-| **Digraph** (1) | ch — as in *cha* |
+| **Digraph** (1) | ch — as in *cha* (tea), *kechi* (small) |
 
 `y` is always a consonant glide (*ya*, *yu*), never a vowel.
 
@@ -26,6 +26,7 @@ Two-consonant sequences that occur in current vocabulary:
 
 - `tr` — *tri* (3)
 - `ks` — *taksi* (taxi), across the syllable break *tak-si*
+- `kt` — *doktor*, across the syllable break *dok-tor*
 - `lm` — *salam*, across the syllable break *sa-lam*
 
 ## Vowel sequences
