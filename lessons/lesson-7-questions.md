@@ -96,4 +96,4 @@ Both are correct. The short one leans on tone; the full one does not need it.
 
 Seven lessons, 64 roots. Statements, past and future, one or many, whose, and now every kind of question — and still not one word has ever changed its shape or its place.
 
-Pronouns are covered in [Lesson 9](lesson-9-pronouns.md), the copula in [Lesson 11](lesson-11-being.md). **Still open:** how to say *not*. See the open questions in [grammar/](../grammar/).
+Pronouns are covered in [Lesson 9](lesson-9-pronouns.md), the copula in [Lesson 11](lesson-11-being.md), negation in [Lesson 14](lesson-14-not-and.md). **Still open:** how to answer a negative question. See the open questions in [grammar/](../grammar/).

@@ -59,9 +59,9 @@ Anak otur. Anak kan sol. Anak hao.
 
 Writing this found four gaps that thirteen lessons had not:
 
-1. **No "and".** *Angin lai. Yuki lai.* should be one sentence — "wind and snow came". There is no conjunction in the language at all, so every list becomes a series of short sentences. This is the largest gap; it shapes the prose more than anything else.
+1. ~~**No "and".**~~ *Angin lai. Yuki lai.* should have been one sentence — "wind and snow came". There was no conjunction in the language at all. **Closed September 3, 2026:** *aur*, see [conjunction.md](../grammar/conjunction.md). The story is left as written, from before the word existed.
 
-2. **No "not".** The story has no negation in it because none is possible. "The sun did not answer" cannot be written, so the sun's silence had to be shown by what it did instead.
+2. ~~**No "not".**~~ The story contains no negation because none was possible; the sun's silence had to be shown by what it did instead. **Closed September 3, 2026:** *no*, see [negation.md](../grammar/negation.md). The silence is better as it stands, so the story keeps it.
 
 3. **No "again".** *Rafiki lai* is "friends come"; "friends come back" needs a word the language does not have. *baru* (new) was tried and rejected — *lai baru* reads as "comes new".
 

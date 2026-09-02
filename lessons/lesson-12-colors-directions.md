@@ -111,4 +111,4 @@ Two adjectives in a row? Put the owner first, then describe: *ruma mi baru* — 
 
 Twelve lessons, **101 roots** — past one hundred. You can colour things, place them above and below, call them new or old or fast, read, write, walk, and talk about your sibling without ever naming a gender.
 
-**Still open:** how to say *not*, and the words for *this* and *that*. See the open questions in [grammar/](../grammar/).
+*not* is covered in [Lesson 14](lesson-14-not-and.md). **Still open:** the words for *this* and *that*. See the open questions in [grammar/](../grammar/).

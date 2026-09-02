@@ -1,6 +1,6 @@
 # Amadunia — Dictionary
 
-**113 roots.** Target for A1: 300.
+**114 roots.** Target for A1: 300.
 
 | Word | Meaning | Source languages |
 |---|---|---|
@@ -9,7 +9,7 @@
 | bas | enough, stop | Hindi/Urdu *bas*, Persian *bas*, Swahili *basi*, Turkish *bas* |
 | hi | hello | already-global |
 | mersi | thank you | French *merci* — adopted in Persian, Turkish, Romanian, Bulgarian, Greek, Egyptian Arabic |
-| no | no | already-global |
+| no | no; **not** — before the predicate, see [grammar/negation.md](../grammar/negation.md) | the *na/ne* root: Spanish/Italian *no*, English *no/not*, Latin *non*, Russian *ne*, Polish *nie*, Sanskrit/Hindi *na*, Persian *na-* |
 | ok | ok | already-global |
 | pardon | sorry, excuse me | French *pardon* — adopted in Turkish, Russian, Persian, Arabic dialects; Spanish *perdón* |
 | plis | please | English *please*, already-global |
@@ -111,6 +111,7 @@
 | nali | where | Chinese *nǎlǐ* (哪里) |
 | porke | why | Spanish *por qué*, Italian *perché*, French *pourquoi* — "for what" |
 | **Grammar particles** | | |
+| aur | and | Hindi/Urdu *aur* |
 | es | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | Spanish *es*, Latin *est*, Italian *è*, French *est*, German *ist*, English *is*, Russian *est'*, Hindi *hai*, Persian *ast* |
 | saufa | future marker (before the verb) | Arabic *sawfa* (سوف) |
 | suda | past marker (before the verb) | Indonesian/Malay *sudah* |

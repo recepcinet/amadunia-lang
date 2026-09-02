@@ -92,4 +92,4 @@ Adjectives and place words take the tense word themselves — no *es*:
 
 Eleven lessons, 89 roots. You can say what anything is, was or will be, and what it is like — and you have learned exactly one word to do it.
 
-**Still open:** how to say *not*. See the open questions in [grammar/](../grammar/).
+Negation is covered in [Lesson 14](lesson-14-not-and.md) — *Mi no es doktor*. See the open questions in [grammar/](../grammar/).

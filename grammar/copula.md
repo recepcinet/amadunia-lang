@@ -95,5 +95,5 @@ The split — a copula with nouns, none with adjectives — is the Chinese rule 
 
 ## Open questions
 
-- **Negation.** *Mi es doktor* — and "I am not a doctor"? How to say *not* has not been decided; *no* is so far only the answer word.
+- ~~Negation~~ — settled in [negation.md](negation.md): *Mi no es doktor*. *no* goes before *es*, and before the tense particle when there is one.
 - **Existence.** "There is a hotel" — whether *es* covers it (*Hotel es*?) or a separate word is needed.
