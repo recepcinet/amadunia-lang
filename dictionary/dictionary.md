@@ -1,6 +1,6 @@
 # Amadunia — Dictionary
 
-**56 roots.** Target for A1: 300.
+**57 roots.** Target for A1: 300.
 
 | Word | Meaning | Source languages |
 |---|---|---|
@@ -45,6 +45,7 @@
 | nomu | to drink | Japanese *nomu* (飲む) |
 | sema | to say, to speak | Swahili *sema* |
 | **Qualities and ideas** | | |
+| chok | many, much | Turkish *çok*, Azeri *çox* |
 | hao | good | Chinese *hǎo* (好) |
 | kabir | big | Arabic *kabīr*, Swahili *-kubwa*, Turkish *kebir* |
 | kechi | small | Indonesian/Malay *kecil*, Turkish *küçük* |

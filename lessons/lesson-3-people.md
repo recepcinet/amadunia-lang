@@ -68,7 +68,6 @@ There is no separate word for *is*. *Ruma kabir* is complete as it stands.
 
 Sentence 4 above is a guess, not a rule. How to say *my*, *your*, *their* has not been decided — putting the pronoun after the noun is only one option. The same goes for:
 
-- **Plurals** — how to say *children* rather than *child*
 - **Questions** — whether a particle replaces the rising tone used since Lesson 1
 
-These are founder decisions. Until they are made, every lesson uses singular nouns. Tense has since been settled — see [Lesson 4](lesson-4-tense.md).
+These are founder decisions. Tense and plurals have since been settled — see [Lesson 4](lesson-4-tense.md) and [Lesson 5](lesson-5-plural.md).
