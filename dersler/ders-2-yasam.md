@@ -74,4 +74,4 @@ Say each aloud, then cover the English.
 
 Two lessons in, with about twenty words, you can greet someone, ask their state, say what you want, eat, come, go, give, and call something good. No tense, no agreement, no gender has been needed yet.
 
-**Still open:** how to mark past and future, how to form plurals, and whether questions get a particle instead of relying on tone. These are founder decisions — see the open questions in [gramer/](../gramer/).
+**Still open:** how to form plurals, and whether questions get a particle instead of relying on tone. These are founder decisions — see the open questions in [gramer/](../gramer/). Past and future are covered in [Lesson 4](ders-4-zaman.md).

@@ -1,6 +1,6 @@
 # Amadunia — Dictionary
 
-**54 roots.** Target for A1: 300.
+**56 roots.** Target for A1: 300.
 
 | Word | Meaning | Source languages |
 |---|---|---|
@@ -51,6 +51,9 @@
 | luma | light | — |
 | mal | bad | Latin *malus*, Spanish/French *mal*, already-global via *malaria* |
 | una | together | — |
+| **Grammar particles** | | |
+| saufa | future marker (before the verb) | Arabic *sawfa* (سوف) |
+| suda | past marker (before the verb) | Indonesian/Malay *sudah* |
 | **Already-global loans** | | |
 | doktor | doctor | Turkish, Russian, Indonesian, Hindi, Swahili *daktari* |
 | foto | photo | already-global |
