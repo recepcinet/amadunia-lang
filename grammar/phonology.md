@@ -41,6 +41,8 @@ Two-consonant sequences that occur in current vocabulary:
 - `ng` — *angin* (wind), *cang* (long)
 - `bl` — *problema*
 - `br` — *libro* (book), across the syllable break *li-bro*
+- `gr` — *grupo* (group), word-initial
+- `hr` — *cehra* (face)
 - `ht` — *anahtar* (key)
 - `lc` — *dulce* (sweet)
 - `fl` — *flor* (flower), word-initial

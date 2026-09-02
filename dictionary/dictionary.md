@@ -1,6 +1,6 @@
 # Amadunia — Dictionary
 
-**259 roots.** Target for A1: 300.
+**284 roots.** Target for A1: 300.
 
 | Word | Meaning | Source languages |
 |---|---|---|
@@ -37,6 +37,7 @@
 | **Body** | | |
 | ain | eye | Arabic *ʿayn* (عين), Hebrew *ayin* |
 | burun | nose | Turkish *burun*, Azeri *burun*, Turkmen *burun* |
+| cehra | face | Hindi/Urdu *chehra*, Persian *chehreh*, Nepali *cehara* |
 | dente | tooth | Latin *dentem* → Italian *dente*, Spanish *diente*, Portuguese *dente*, French *dent*, English *dental* |
 | kaki | foot, leg | Indonesian/Malay/Tagalog *kaki* |
 | kalb | heart | Arabic *qalb* (قلب), Turkish *kalp*, Urdu *qalb*, Persian *qalb* |
@@ -74,6 +75,7 @@
 | sapatu | shoe | Portuguese *sapato*, Spanish *zapato*, Indonesian/Malay *sepatu*, Tagalog *sapatos* |
 | **Home and world** | | |
 | anahtar | key | Turkish *anahtar*, Azeri *açar* aside; from Greek *anoiktēri* |
+| ates | fire | Turkish *ateş*, Azeri *ateş*, Persian *ātash* |
 | bage | garden | Persian *bāgh*, Urdu/Hindi *bāgh*, Turkish *bağ* |
 | bahari | sea | Arabic *baḥr* (بحر), Swahili *bahari*, Turkish *bahriye*, Indonesian *bahari* |
 | dom | house, home | Russian/Polish *dom*, Czech *dům*, Latin *domus* — global through *domestic*, *domicile*. Replaced *ruma* on September 3, 2026 |
@@ -91,6 +93,8 @@
 | sol | sun | Latin/Spanish/Portuguese *sol* |
 | sungai | river | Indonesian/Malay *sungai*, Javanese *kali/sungai* |
 | tabla | table | Latin *tabula* → Spanish *tabla*, English *table*, Russian *tablitsa* |
+| tanah | earth, ground | Indonesian/Malay *tanah*, Javanese *tanah* |
+| udara | air | Indonesian/Malay *udara*, from Sanskrit *udāra* |
 | yatak | bed | Turkish *yatak*, Azeri *yataq* |
 | **Weather** | | |
 | angin | wind | Indonesian/Malay *angin*, Javanese *angin* |
@@ -100,7 +104,9 @@
 | yuki | snow | Japanese *yuki* (雪) |
 | **Animals and plants** | | |
 | animal | animal | Latin *animal* — global: *animal*, *animale*, *Tier* aside, Indonesian *animalia* |
+| farasi | horse | Arabic *faras* (فرس), Swahili *farasi*, Turkish *feres* |
 | flor | flower | Latin *flōrem* → Spanish/Portuguese *flor*, Italian *fiore*, French *fleur*, English *flora* |
+| kanis | dog | Latin *canis* — global through *canine*, Italian *cane*, Spanish *can*, French *chien* |
 | kucing | cat | Indonesian/Malay *kucing* |
 | pohon | tree | Indonesian/Malay *pohon* |
 | samaki | fish | Swahili *samaki*, Arabic *samak* (سمك) |
@@ -111,7 +117,9 @@
 | hafta | week | Persian *hafta*, Turkish *hafta*, Hindi/Urdu *hafta*, Arabic dialects |
 | hora | hour | Spanish/Portuguese *hora*, Italian *ora*, Latin *hora*, Greek *hōra* — global through *hour* |
 | kemarin | yesterday | Indonesian/Malay *kemarin* |
+| mensis | month | Latin *mēnsis* → Spanish *mes*, Italian *mese*, Portuguese *mês*, French *mois* — global through *bimonthly*, *menstrual* |
 | momen | moment | Latin *momentum* — global: *moment*, *momento*, *Moment*, *moment* |
+| pagi | morning | Indonesian/Malay *pagi* |
 | rat | night | Hindi/Urdu *raat*, Bengali *raat*, Sanskrit *rātri* |
 | sasa | now | Swahili *sasa* |
 | tahun | year | Indonesian/Malay *tahun*, Javanese *taun* |
@@ -139,14 +147,18 @@
 | espera | to wait | Spanish/Portuguese *esperar*, Italian *sperare* — the root of *Esperanto*, "one who hopes" |
 | faham | to understand | Arabic *fahima*, Indonesian/Malay *paham*, Swahili *fahamu*, Urdu *fahm*, Turkish *fehim* |
 | fikir | to think | Arabic *fikr*, Turkish *fikir*, Urdu/Hindi *fikr*, Swahili *fikiri*, Indonesian *pikir* |
+| finis | to finish | Latin *finis* — global: *finish*, *final*, *finale*, *fin*, Turkish *final* |
 | funga | to close | Swahili *funga* |
+| gasil | to wash | Arabic *ghasala* (غسل), Urdu *ghusl*, Swahili *kuosha* aside; Turkish *gasil* |
 | go | to go | English *go*, already-global |
 | hidup | to live | Indonesian/Malay *hidup* |
+| ingat | to remember | Indonesian/Malay *ingat* |
 | kan | to see | Chinese *kàn* (看) |
 | kanta | to sing | Latin *cantāre*, Spanish *cantar*, Italian *cantare*, Portuguese *cantar*, French *chanter* |
 | kara | to read | Arabic *qaraʾa* (قرأ) — the root of *Quran*, "that which is read" |
 | katab | to write | Arabic *kataba* (كتب) — the root of *kitab* (book), Turkish *katip*, Swahili *kitabu* |
 | kimbia | to run | Swahili *kimbia* |
+| kirim | to send | Indonesian/Malay *kirim* |
 | kula | to eat | Swahili *kula*, Arabic *akala* |
 | kupi | to buy | Russian *kupit'*, Bulgarian/Serbian/Croatian *kupi*, Czech *koupit* |
 | lai | to come | Chinese *lái* (来) |
@@ -155,8 +167,10 @@
 | madad | help; to help | Arabic *madad*, Hindi/Urdu *madad*, Persian *madad*, Turkish *medet* |
 | mati | to die | Indonesian/Malay *mati*, Tagalog *matay* |
 | mau | to want | Indonesian/Malay *mau* |
+| naiti | to find | Russian *naiti*, Polish *najść*, Ukrainian *znaity* |
 | nomu | to drink | Japanese *nomu* (飲む) |
 | otur | to sit | Turkish *otur-*, Azeri *otur-* |
+| proba | to try | Latin *probāre* — global: *probe*, *prueba*, *prova*, *proba*, Russian *proba* |
 | punya | to have | Indonesian/Malay *punya* |
 | respon | to answer | Latin *respondēre* — global: *respond*, *responder*, *rispondere*, Indonesian *respon* |
 | sema | to say, to speak | Swahili *sema* |
@@ -164,8 +178,10 @@
 | stop | to stop | English *stop* — global: *stopp*, *stop*, *stoppen*, Indonesian *stop* |
 | studi | to learn, to study | Latin *studere* — global: English *study*, Spanish *estudiar*, German *Studium*, Russian *studirovat'*, Indonesian *studi* |
 | suru | to do, to make | Japanese *suru* (する) |
+| tabak | to cook | Arabic *ṭabakha* (طبخ), Turkish *tabh*, Urdu *tabakh* |
 | tanya | to ask | Indonesian/Malay *tanya* |
 | tena | again | Swahili *tena* |
+| unut | to forget | Turkish *unut-*, Azeri *unut-*, Turkmen *unut-* |
 | **Play** | | |
 | bola | ball | Portuguese/Spanish *bola*, Indonesian/Malay *bola*, Tagalog *bola*, Swahili *boli* |
 | oyun | game | Turkish *oyun*, Azeri *oyun*, Turkmen *oýun* |
@@ -195,6 +211,7 @@
 | yesil | green | Turkish *yeşil*, Azeri *yaşıl*, Turkmen *ýaşyl* — written with *s*, the alphabet having no *sh* |
 | **Qualities and ideas** | | |
 | amani | peace | Arabic *amān* (أمان), Swahili *amani*, Turkish *aman*, Urdu *amān* |
+| amik | deep | Arabic *ʿamīq* (عميق), Urdu *amīq* |
 | arte | art | Latin *artem* — global: *art*, *arte*, *arta*, Russian *art* |
 | asan | easy | Hindi/Urdu *āsān*, Persian *āsān*, Bengali *ashan* |
 | baid | far | Arabic *baʿīd* (بعيد) |
@@ -209,7 +226,11 @@
 | dulce | sweet | Latin *dulcis* → Spanish/Portuguese *dulce/doce*, Italian *dolce*, French *doux* |
 | eski | old | Turkish *eski*, Azeri *əski* |
 | garam | hot | Hindi/Urdu *garam*, Persian *garm*, Bengali *gorom* |
+| genc | young | Turkish *genç*, Azeri *gənc* |
+| golos | voice | Russian *golos*, Polish *głos*, Czech *hlas*, Serbian *glas* |
+| grupo | group | Latin *gruppo* — global: *group*, *grupo*, *Gruppe*, *gruppa*, Indonesian *grup* |
 | habari | news | Arabic *khabar* (خبر) → Swahili *habari*, Turkish *haber*, Urdu *khabar*, Indonesian *kabar* |
+| hafif | light in weight | Arabic *khafīf* (خفيف), Turkish *hafif*, Urdu *hafīf* |
 | hao | good | Chinese *hǎo* (好) |
 | hayai | fast | Japanese *hayai* (速い) |
 | historia | history | Greek *historía* — global: *history*, *historia*, *Geschichte* aside, *istoriya*, Indonesian *historia* |
@@ -229,6 +250,8 @@
 | lingua | language | Latin *lingua* → Italian/Portuguese *lingua*, Spanish *lengua*, French *langue* — global through *linguistics*, *lingua franca* |
 | luma | light | — |
 | mal | bad | Latin *malus*, Spanish/French *mal*, already-global via *malaria* |
+| masal | story | Turkish *masal*, from Arabic *mathal*; Azeri *masal* |
+| mimpi | dream | Indonesian/Malay *mimpi* |
 | muskil | difficult | Arabic *mushkil* (مشكل), Turkish *müşkül*, Urdu/Hindi *mushkil*, Persian *moshkel* — written with *s*, the alphabet having no *sh* |
 | natura | nature | Latin *natura* — global: *nature*, *natura*, *Natur*, *natura* |
 | numero | number | Latin *numerus* → global: *number*, *número*, *numero*, *Nummer*, *nomer* |
@@ -237,6 +260,7 @@
 | problema | problem | Greek *próblēma* — global: *problem*, *problema*, *Problem*, *problema* |
 | safari | journey | Arabic *safar* (سفر) → Swahili *safari*, and global in English |
 | safi | clean | Arabic *ṣāfī* (صافي), Swahili *safi*, Hindi/Urdu *sāf*, Turkish *saf* |
+| sakil | heavy | Arabic *thaqīl* (ثقيل), Turkish *sakil*, Urdu *saqīl* |
 | sansi | chance | French *chance* → Turkish *şans*, Russian *shans*, Polish *szansa* |
 | sedih | sad | Indonesian/Malay *sedih* |
 | senang | happy | Indonesian/Malay *senang* |
@@ -246,6 +270,7 @@
 | umid | hope | Persian *omīd*, Urdu *ummīd*, Hindi *ummeed*, Turkish *ümit* |
 | umur | life, age | Arabic *ʿumr* (عمر), Turkish *ömür*, Urdu *umr*, Indonesian *umur*, Swahili *umri* |
 | una | together; *una* + noun = with — see [grammar/place.md](../grammar/place.md) | Latin *ūnā*, "together" |
+| yalan | lie, falsehood | Turkish *yalan*, Azeri *yalan*, Turkmen *ýalan* |
 | **Question words** | | |
 | berapa | how many, how much | Indonesian/Malay *berapa* |
 | kab | when | Hindi/Urdu *kab*, Bengali *kobe* |
