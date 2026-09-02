@@ -1,6 +1,6 @@
 # Amadunia — Dictionary
 
-**132 roots.** Target for A1: 300.
+**134 roots.** Target for A1: 300.
 
 | Word | Meaning | Source languages |
 |---|---|---|
@@ -66,6 +66,7 @@
 | anda | to walk | Spanish/Portuguese *andar*, Italian *andare* |
 | beri | to give | Indonesian/Malay *beri*, Turkish *vermek* |
 | bil | to know | Turkish *bilmek*, Azeri/Uzbek/Kazakh *bil-* |
+| bisa | can, to be able — before another verb, see [grammar/verb-chains.md](../grammar/verb-chains.md) | Indonesian/Malay *bisa* |
 | fikir | to think | Arabic *fikr*, Turkish *fikir*, Urdu/Hindi *fikr*, Swahili *fikiri*, Indonesian *pikir* |
 | funga | to close | Swahili *funga* |
 | buka | to open | Indonesian/Malay *buka*, Javanese *bukak* |
@@ -77,6 +78,7 @@
 | katab | to write | Arabic *kataba* (كتب) — the root of *kitab* (book), Turkish *katip*, Swahili *kitabu* |
 | kimbia | to run | Swahili *kimbia* |
 | kula | to eat | Swahili *kula*, Arabic *akala* |
+| lasim | must, to have to | Arabic *lāzim*, Turkish *lazım*, Persian *lāzem*, Urdu/Hindi *lāzim*, Swahili *lazima*, Indonesian *lazim* — written with *s*, the alphabet having no *z* |
 | kupi | to buy | Russian *kupit'*, Bulgarian/Serbian/Croatian *kupi*, Czech *koupit* |
 | lai | to come | Chinese *lái* (来) |
 | lala | to sleep | Swahili *kulala* |

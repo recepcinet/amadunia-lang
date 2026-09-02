@@ -1,0 +1,99 @@
+# Verb chains — want to, can, must
+
+*Status: settled — decided September 3, 2026.*
+
+## The rule
+
+**Put the verbs one after another. Nothing goes between them.**
+
+| | |
+|---|---|
+| Mi **mau kula** pan. | I want to eat bread. |
+| Yu **bisa otur** sini. | You can sit here. |
+| Ta **lasim go** skola. | She must go to school. |
+| Mi **mau studi kara**. | I want to learn to read. |
+
+There is no word for "to". There is nothing to add and nothing to change — the verbs simply stand in a row.
+
+## Why nothing goes between them
+
+Two nouns side by side already mean something in Amadunia: the second owns the first. That is why *es* and *aur* had to exist. Two **verbs** side by side meant nothing at all — the slot was empty. So the language could take it for free.
+
+This is the opposite of the copula and the conjunction, and it is worth noticing: those two decisions added words because the slot was taken. This one adds nothing because the slot was open.
+
+## Tense and negation go at the front
+
+Both attach to the **first** verb and cover the whole chain:
+
+| | |
+|---|---|
+| Mi **suda** mau kula. | I wanted to eat. |
+| Yu **saufa** bisa kara. | You will be able to read. |
+| Mi **no** mau kula. | I do not want to eat. |
+| Mi **no suda** mau kula. | I did not want to eat. |
+
+The full order is unchanged from every other rule in the language: **no → suda/saufa → verb → verb → object.**
+
+## Where *no* sits changes the meaning
+
+Because *no* goes in front of what it denies, moving it moves the meaning. This falls out of the existing rule; nothing new is needed.
+
+| | |
+|---|---|
+| Mi **no** mau kula. | I do not want to eat. |
+| Mi mau **no** kula. | I want *not* to eat. |
+| Ta **no** bisa lai. | She cannot come. |
+| Ta bisa **no** lai. | She can stay away. |
+
+## The object comes last
+
+After the final verb, as always:
+
+| | |
+|---|---|
+| Mi mau kupi libro. | I want to buy a book. |
+| Kita lasim funga dom. | We must close the house. |
+| Yu bisa kara libro ini. | You can read this book. |
+
+## Sources
+
+Bare verb juxtaposition is what most of the world's speakers do:
+
+| Language | |
+|---|---|
+| Chinese | *wǒ xiǎng chī* — I want eat |
+| Indonesian, Malay | *saya mau makan* — I want eat |
+| Thai, Vietnamese, Lao | the same, with no marker |
+| Hausa, Yoruba, Akan | serial verbs, the construction's home ground |
+| Haitian Creole | *mwen vle manje* |
+
+English *to*, Spanish *a* and *de*, French *à* and *de* are the minority pattern — and an unpredictable one. Which preposition follows which verb is pure memorisation in all of them, exactly the kind of exception the language exists to avoid.
+
+## Why no marker for "to"
+
+Amadunia's verb has one form. There is no infinitive to distinguish from anything else, so a marker would mark a difference the language does not have.
+
+And every candidate collided anyway:
+
+| Candidate | Source | Reason rejected |
+|---|---|---|
+| to | English | minimal pair with *ta* |
+| ku | Swahili *ku-* | minimal pair with *ke* |
+| de | Spanish, French | minimal pair with *du*, *ke* |
+| a | Spanish | thirty roots end in *-a*; the join would blur |
+| na | Irish, Hindi | minimal pair with *ba*, *ca*, *no*, *ta*, *ya* |
+| za | Polish | the alphabet has no *z* |
+
+## The two words this unlocks
+
+| Word | Meaning | Source |
+|---|---|---|
+| bisa | can, to be able | Indonesian and Malay *bisa* |
+| lasim | must, to have to | Arabic *lāzim*, spoken natively in Turkish *lazım*, Persian *lāzem*, Urdu and Hindi *lāzim*, Swahili *lazima*, Indonesian *lazim* |
+
+*lasim* is written with *s* because the alphabet has no *z*. It is the one adaptation in the word.
+
+## Open questions
+
+- **A different subject.** "I want *you* to eat" — *Mi mau yu kula* — puts a subject inside the object. That is a complement clause, not a verb chain, and it arrives together with "I know that…" and "I think that…". Not yet decided.
+- **Words that are both noun and verb.** *madad* is listed as "help; to help", so *Mi mau madad* is "I want help" **or** "I want to help". The chain rule makes this ambiguity visible for the first time. Every dual-class entry in the dictionary needs review, and the language may need to settle whether a root may hold both jobs at all.

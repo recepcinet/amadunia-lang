@@ -128,4 +128,4 @@ Remember: after a number the noun stays single. *Tri hora*, never *tri hora-hora
 
 Sixteen lessons, **132 roots**. School, books, roads, hours, years, rain — and *tena*, which lets anything happen twice.
 
-**A word this lesson could not add.** *bisa* — "can, be able" — was chosen for this batch and then dropped. Saying *Yu bisa otur* would put one verb in front of another, and whether Amadunia allows that has never been decided. The same block holds *mau* back from "want to eat": *Mi mau kula* is not yet legal, only *Mi mau pan*. Verb chaining is the next grammar decision the vocabulary is asking for. See the open questions in [grammar/](../grammar/).
+**A word this lesson could not add.** *bisa* — "can, be able" — was chosen for this batch and dropped, because *Yu bisa otur* would have put one verb in front of another and that had never been decided. It was settled the next day: see [Lesson 17](lesson-17-wanting-and-able.md). Every lesson up to this one keeps to one verb at a time.

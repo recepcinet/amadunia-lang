@@ -95,7 +95,7 @@ The split — a copula with nouns, none with adjectives — is the Chinese rule 
 
 ## Open questions
 
-- **Verb chaining.** *Mi mau kula* ("I want to eat"), *Yu bisa otur* ("you can sit") — one verb in front of another has never been decided, and it blocks *bisa* (can), *mau* before a verb, and every modal. The most-needed decision left.
+- ~~Verb chaining~~ — settled in [verb-chains.md](verb-chains.md): the verbs simply follow one another, *Mi mau kula pan*.
 
 - ~~Negation~~ — settled in [negation.md](negation.md): *Mi no es doktor*. *no* goes before *es*, and before the tense particle when there is one.
 - **Existence.** "There is a hotel" — whether *es* covers it (*Hotel es*?) or a separate word is needed.
