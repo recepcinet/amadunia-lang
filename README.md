@@ -56,19 +56,19 @@ Phonology, alphabet, numbers, tense and the first words are settled. Plurals, po
 ## Repository layout
 
 ```
-gramer/     grammar    — phonology, numbers, tense
-sozluk/     dictionary — word | meaning | source languages
-dersler/    lessons    — Lessons 1-4: greetings, food, people, tense
+grammar/     phonology, numbers, tense
+dictionary/  word | meaning | source languages
+lessons/     Lessons 1-4: greetings, food, people, tense
 ```
 
-- [gramer/fonoloji.md](gramer/fonoloji.md) — alphabet, one letter one sound, syllable shape
-- [gramer/sayilar.md](gramer/sayilar.md) — digits, *des* and *sen*, how numbers are built
-- [gramer/zaman.md](gramer/zaman.md) — tense: *suda* (past), *saufa* (future), the verb never changes
-- [sozluk/sozluk.md](sozluk/sozluk.md) — every word settled so far, with its sources
-- [dersler/ders-1-selamlasma.md](dersler/ders-1-selamlasma.md) — Lesson 1: greetings
-- [dersler/ders-2-yasam.md](dersler/ders-2-yasam.md) — Lesson 2: water, food, home
-- [dersler/ders-3-insanlar.md](dersler/ders-3-insanlar.md) — Lesson 3: people, day and night
-- [dersler/ders-4-zaman.md](dersler/ders-4-zaman.md) — Lesson 4: yesterday, today, tomorrow
+- [grammar/phonology.md](grammar/phonology.md) — alphabet, one letter one sound, syllable shape
+- [grammar/numbers.md](grammar/numbers.md) — digits, *des* and *sen*, how numbers are built
+- [grammar/tense.md](grammar/tense.md) — tense: *suda* (past), *saufa* (future), the verb never changes
+- [dictionary/dictionary.md](dictionary/dictionary.md) — every word settled so far, with its sources
+- [lessons/lesson-1-greetings.md](lessons/lesson-1-greetings.md) — Lesson 1: greetings
+- [lessons/lesson-2-food-and-home.md](lessons/lesson-2-food-and-home.md) — Lesson 2: water, food, home
+- [lessons/lesson-3-people.md](lessons/lesson-3-people.md) — Lesson 3: people, day and night
+- [lessons/lesson-4-tense.md](lessons/lesson-4-tense.md) — Lesson 4: yesterday, today, tomorrow
 
 Each file marks what is settled and what is still open.
 

@@ -1,6 +1,6 @@
 # Lesson 4 — Yesterday, today, tomorrow
 
-*Prerequisite: [Lesson 3](ders-3-insanlar.md).*
+*Prerequisite: [Lesson 3](lesson-3-people.md).*
 
 ## New words
 
@@ -72,4 +72,4 @@ Only the first sentence carries *suda*; the rest inherit it. Putting *suda* in e
 
 Four lessons in: greet, ask, want, eat, drink, come, go, give, see, speak, know — in past, present and future, for any subject, without a single verb ever changing shape.
 
-**Still open:** plurals, possession (*my*, *your*) and whether questions get a particle. See the open questions in [gramer/](../gramer/).
+**Still open:** plurals, possession (*my*, *your*) and whether questions get a particle. See the open questions in [grammar/](../grammar/).

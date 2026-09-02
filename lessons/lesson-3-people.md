@@ -1,6 +1,6 @@
 # Lesson 3 — People, day and night
 
-*Prerequisite: [Lesson 2](ders-2-yasam.md).*
+*Prerequisite: [Lesson 2](lesson-2-food-and-home.md).*
 
 ## New words
 
@@ -71,4 +71,4 @@ Sentence 4 above is a guess, not a rule. How to say *my*, *your*, *their* has no
 - **Plurals** — how to say *children* rather than *child*
 - **Questions** — whether a particle replaces the rising tone used since Lesson 1
 
-These are founder decisions. Until they are made, every lesson uses singular nouns. Tense has since been settled — see [Lesson 4](ders-4-zaman.md).
+These are founder decisions. Until they are made, every lesson uses singular nouns. Tense has since been settled — see [Lesson 4](lesson-4-tense.md).
