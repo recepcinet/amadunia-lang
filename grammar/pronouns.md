@@ -46,9 +46,9 @@ The form tells you the meaning. *mi-mi* is made only of *mi*, so it cannot conta
 | Amadunia | English |
 |---|---|
 | Ta-ta suda lai. | They came. |
-| Yu-yu mau cha? | Do you all want tea? |
+| Yu-yu mau ca? | Do you all want tea? |
 | Ruma ta-ta kabir. | Their house is big. |
-| Cha garam. Mi mau ta. | The tea is hot. I want it. |
+| Ca garam. Mi mau ta. | The tea is hot. I want it. |
 | Rafiki mi-mi doktor. | Our friend is a doctor. |
 | Kita saufa kan sol. | We will see the sun. |
 

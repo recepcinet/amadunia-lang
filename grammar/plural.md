@@ -23,7 +23,7 @@ If the sentence already says how many, the noun is not doubled.
 |---|---|
 | tri anak | three children |
 | du ruma | two houses |
-| chok rafiki | many friends |
+| cok rafiki | many friends |
 
 The number has done the work; repeating it would be saying the same thing twice. This is the same principle as tense: once the information is there, it is not restated. (*Anak-anak* on its own means "children, more than one, count unspecified".)
 

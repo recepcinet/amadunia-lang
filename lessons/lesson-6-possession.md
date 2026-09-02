@@ -27,7 +27,7 @@ The owner does not have to be a pronoun.
 |---|---|
 | ruma rafiki | the friend's house |
 | nama anak | the child's name |
-| cha doktor | the doctor's tea |
+| ca doktor | the doctor's tea |
 
 ## Owner, then description
 
@@ -36,7 +36,7 @@ If you also want to describe the thing, the owner comes first, then the adjectiv
 | Amadunia | English |
 |---|---|
 | ruma mi kabir | my big house |
-| anak ta kechi | her small child |
+| anak ta keci | her small child |
 | rafiki yu hao | your good friend |
 
 ## Chains
@@ -55,7 +55,7 @@ Each word belongs to the one before it. Keep going as long as you need.
 |---|---|
 | Mi kan ruma yu. | I see your house. |
 | Rafiki mi saufa lai. | My friend will come. |
-| Anak ta suda nomu cha. | Her child drank tea. |
+| Anak ta suda nomu ca. | Her child drank tea. |
 | Kita bil nama doktor. | We know the doctor's name. |
 
 ## With plurals
@@ -73,7 +73,7 @@ Double the noun, then add the owner:
 > — Nama yu?
 > — Nama mi Luma. Nama yu?
 > — Nama mi Sol. Ruma yu kabir?
-> — No, ruma mi kechi. Rafiki mi lai!
+> — No, ruma mi keci. Rafiki mi lai!
 > — Rafiki yu hao?
 > — Ya, rafiki mi hao.
 
@@ -81,8 +81,8 @@ Double the noun, then add the owner:
 
 ## Practice
 
-1. Ruma mi kechi. — *My house is small.* (You met this sentence in Lesson 3 as a guess. It was right.)
-2. Mi mau cha yu. — *I want your tea.*
+1. Ruma mi keci. — *My house is small.* (You met this sentence in Lesson 3 as a guess. It was right.)
+2. Mi mau ca yu. — *I want your tea.*
 3. Anak-anak rafiki mi kula pan. — *My friend's children eat bread.*
 4. Doktor suda kan anak ta. — *The doctor saw her child.*
 5. Nama rafiki yu? — *Your friend's name?*

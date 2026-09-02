@@ -6,7 +6,7 @@
 
 | Word | Meaning |
 |---|---|
-| chok | many, much |
+| cok | many, much |
 
 One word. The rest of this lesson needs no new vocabulary at all.
 
@@ -40,7 +40,7 @@ If there is a number, do not double the noun. The number already told everyone.
 |---|---|
 | tri anak | three children |
 | du ruma | two houses |
-| chok rafiki | many friends |
+| cok rafiki | many friends |
 | des doktor | ten doctors |
 
 So: *anak-anak* **or** *tri anak* — never *tri anak-anak*.
@@ -52,9 +52,9 @@ A plain noun is neither singular nor plural — it is just the thing. *Mi kan an
 ## A conversation
 
 > — Yu suda kan anak-anak?
-> — Ya. Tri anak. Anak-anak kechi!
+> — Ya. Tri anak. Anak-anak keci!
 > — Rafiki-rafiki lai?
-> — Chok rafiki saufa lai.
+> — Cok rafiki saufa lai.
 
 *Did you see the children? — Yes. Three children. The children are small! — Are the friends coming? — Many friends will come.*
 
@@ -63,7 +63,7 @@ A plain noun is neither singular nor plural — it is just the thing. *Mi kan an
 1. Anak-anak nomu akua. — *The children drink water.*
 2. Mi kan du sol? — *Do I see two suns?*
 3. Rafiki-rafiki suda kula. — *The friends ate.*
-4. Chok din, chok rat. — *Many days, many nights.*
+4. Cok din, cok rat. — *Many days, many nights.*
 5. Doktor bil ruma-ruma. — *The doctor knows the houses.*
 
 ## What you can already say

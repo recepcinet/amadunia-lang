@@ -49,7 +49,7 @@ They work alone, and they work at either end of a sentence:
 ## At the market
 
 > — Salam! Yu mau ke?
-> — Mi mau cha garam. Berapa pesa?
+> — Mi mau ca garam. Berapa pesa?
 > — Du pesa.
 > — Ok. Mersi!
 
@@ -63,14 +63,14 @@ They work alone, and they work at either end of a sentence:
 |---|---|
 | Mi sini. | I am here. |
 | Rafiki mi sini? | Is my friend here? |
-| Mi mau cha sasa. | I want tea now. |
+| Mi mau ca sasa. | I want tea now. |
 | Doktor saufa lai sasa. | The doctor will come now. |
 
 ## Hot and cold
 
 | | |
 |---|---|
-| Cha garam. | The tea is hot. |
+| Ca garam. | The tea is hot. |
 | Akua barid. | The water is cold. |
 | Din garam, rat barid. | The day is hot, the night is cold. |
 | Mi mau akua barid, plis. | I want cold water, please. |
@@ -82,7 +82,7 @@ They work alone, and they work at either end of a sentence:
 | Mi rabota sini. | I work here. |
 | Yu rabota nali? | Where do you work? |
 | Insan hao. | A good person. / The person is good. |
-| Chok insan sini. | Many people here. |
+| Cok insan sini. | Many people here. |
 
 ## Practice
 
@@ -91,7 +91,7 @@ They work alone, and they work at either end of a sentence:
 3. Mi mau madad, plis. — *I want help, please.*
 4. Berapa pesa? — Tri pesa. — *How much? — Three.*
 5. Insan-insan rabota sasa. — *The people are working now.*
-6. Cha yu garam? — No, barid. — *Is your tea hot? — No, cold.*
+6. Ca yu garam? — No, barid. — *Is your tea hot? — No, cold.*
 
 ## What you can already say
 

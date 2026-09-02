@@ -8,9 +8,11 @@
 
 ## Learn the basics in 2 minutes
 
-**Alphabet — 19 letters, each with exactly one sound:**
+**Alphabet — 20 letters, each with exactly one sound:**
 
-> a b d e f g h i k l m n o p r s t u y (+ *ch* as in "cha")
+> a b c d e f g h i k l m n o p r s t u y
+
+*c* is the sound of *chai* and *church* — never *k*, never *s*. That is the only letter you have to be told about.
 
 Syllables stay simple — never more than two consonants in a row, and none of the tongue-twisters other languages allow (*strengths*, *vzglyad*). If you can say "banana" and "taksi", you can say anything in Amadunia.
 
@@ -35,7 +37,7 @@ Congratulations, you speak Amadunia. 🌍
 
 ## Why another world language?
 
-Esperanto (1887) proved a constructed language can live — but its roots are ~95% European. Amadunia draws from the biggest language families of the whole world: *ba* (8) is Chinese, *pat* (4) is Indonesian–Tagalog, *cha* (tea) is at home in Chinese, Hindi, Turkish, Swahili and Russian alike, *dunia* spans Arabic–Hindi–Swahili–Indonesian–Turkish, *ama* is Latin, *kita* is Indonesian. Every continent should hear something familiar.
+Esperanto (1887) proved a constructed language can live — but its roots are ~95% European. Amadunia draws from the biggest language families of the whole world: *ba* (8) is Chinese, *pat* (4) is Indonesian–Tagalog, *ca* (tea) is at home in Chinese, Hindi, Turkish, Swahili and Russian alike, *dunia* spans Arabic–Hindi–Swahili–Indonesian–Turkish, *ama* is Latin, *kita* is Indonesian. Every continent should hear something familiar.
 
 Design rules:
 

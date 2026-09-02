@@ -19,7 +19,7 @@ That is the whole system. There is nothing to conjugate, no irregular verbs, and
 Always immediately before the verb, after the subject.
 
 - Ta **suda** lai ruma. — She came home.
-- Rafiki **saufa** nomu cha. — The friend will drink tea.
+- Rafiki **saufa** nomu ca. — The friend will drink tea.
 - Anak **suda** kan sol. — The child saw the sun.
 
 Never after the verb, never at the end of the sentence.
@@ -28,7 +28,7 @@ Never after the verb, never at the end of the sentence.
 
 Once the time is clear, it does not need to be repeated. If a sentence has already been placed in the past, the sentences that follow may drop *suda* until the time changes.
 
-> Mi **suda** go ruma. Mi kula pan. Mi nomu cha.
+> Mi **suda** go ruma. Mi kula pan. Mi nomu ca.
 > — I went home. I ate bread. I drank tea.
 
 Including the particle in every sentence is never wrong. Leaving it out is allowed only when the time has already been set.

@@ -24,7 +24,7 @@ The owner takes the slot immediately after the noun — the same slot an adjecti
 | Amadunia | English |
 |---|---|
 | ruma mi kabir | my big house |
-| anak ta kechi | her small child |
+| anak ta keci | her small child |
 | rafiki kita hao | our good friend |
 
 *ruma mi* is a unit: "my house". Whatever follows describes that unit.

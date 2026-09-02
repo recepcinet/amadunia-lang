@@ -15,7 +15,7 @@
 | bil | to know |
 | nomu | to drink |
 | kabir | big |
-| kechi | small |
+| keci | small |
 | mal | bad |
 | doktor | doctor |
 
@@ -37,8 +37,8 @@ A quality word follows what it describes:
 | Amadunia | English |
 |---|---|
 | Ruma kabir. | The house is big. |
-| Anak kechi. | The child is small. |
-| Cha hao. | The tea is good. |
+| Anak keci. | The child is small. |
+| Ca hao. | The tea is good. |
 | Rat mal. | The night is bad. |
 
 There is no separate word for *is*. *Ruma kabir* is complete as it stands.
@@ -59,10 +59,10 @@ There is no separate word for *is*. *Ruma kabir* is complete as it stands.
 ## Practice
 
 1. Mi kan anak. — *I see a child.*
-2. Rafiki nomu cha. — *The friend drinks tea.*
+2. Rafiki nomu ca. — *The friend drinks tea.*
 3. Doktor bil. — *The doctor knows.*
-4. Ruma mi kechi. — *My house is small.*
-5. Din kabir, rat kechi. — *The day is long, the night is short.*
+4. Ruma mi keci. — *My house is small.*
+5. Din kabir, rat keci. — *The day is long, the night is short.*
 
 ## What is still open
 

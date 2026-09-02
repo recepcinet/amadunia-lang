@@ -19,7 +19,7 @@ You know *mi*, *yu*, *ta*. You know that saying a word twice makes it "more than
 | Amadunia | English |
 |---|---|
 | Ta-ta suda lai. | They came. |
-| Yu-yu mau cha? | Do you all want tea? |
+| Yu-yu mau ca? | Do you all want tea? |
 | Mi-mi rabota sini. | We work here. |
 | Ruma ta-ta nali? | Where is their house? |
 
@@ -47,8 +47,8 @@ The last line uses *kita* because the speaker means everyone — both groups.
 | | |
 |---|---|
 | Doktor lai. Ta hao. | The doctor is coming. She is good. |
-| Cha garam. Mi mau ta. | The tea is hot. I want it. |
-| Anak kechi. Ta suda dormi? | The child is small. Has he slept? |
+| Ca garam. Mi mau ta. | The tea is hot. I want it. |
+| Anak keci. Ta suda dormi? | The child is small. Has he slept? |
 
 ## Nothing changes
 

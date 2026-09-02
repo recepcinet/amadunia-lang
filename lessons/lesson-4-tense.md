@@ -47,7 +47,7 @@ Directly before the verb, after the subject. Nowhere else.
 > — Yu suda kula?
 > — Ya, mi suda kula pan. Yu?
 > — No. Mi saufa kula.
-> — Ok. Mi saufa beri cha.
+> — Ok. Mi saufa beri ca.
 
 *Did you eat? — Yes, I ate bread. You? — No. I will eat. — Ok. I'll give (you) tea.*
 
@@ -55,7 +55,7 @@ Directly before the verb, after the subject. Nowhere else.
 
 Once the time is set, you may leave the particle off until the time changes:
 
-> Mi **suda** go ruma. Mi kula pan. Mi nomu cha. Mi kan rafiki.
+> Mi **suda** go ruma. Mi kula pan. Mi nomu ca. Mi kan rafiki.
 > — I went home. I ate bread. I drank tea. I saw a friend.
 
 Only the first sentence carries *suda*; the rest inherit it. Putting *suda* in every sentence is also correct — just longer.

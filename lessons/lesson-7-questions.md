@@ -20,8 +20,8 @@ Since Lesson 1 you have been raising your voice at the end of a sentence to make
 
 | | |
 |---|---|
-| Yu mau cha. | You want tea. |
-| Yu mau cha? | Do you want tea? |
+| Yu mau ca. | You want tea. |
+| Yu mau ca? | Do you want tea? |
 
 Nothing is added. Nothing moves.
 
@@ -44,8 +44,8 @@ Look down the two columns. Every question is its own answer with one word change
 
 *porke* goes at the end:
 
-> — Yu mau cha porke?
-> — Mi mau cha. Cha hao!
+> — Yu mau ca porke?
+> — Mi mau ca. Ca hao!
 
 *Why do you want tea? — I want tea. Tea is good!*
 
@@ -57,7 +57,7 @@ Look down the two columns. Every question is its own answer with one word change
 |---|---|
 | tri anak | three children |
 | berapa anak? | how many children? |
-| chok rafiki | many friends |
+| cok rafiki | many friends |
 | berapa rafiki? | how many friends? |
 
 ## Asking a name
@@ -76,9 +76,9 @@ Both are correct. The short one leans on tone; the full one does not need it.
 > — Mi rafiki Sol. Sol nali?
 > — Sol suda go ruma.
 > — Ta saufa lai kab?
-> — Rat. Yu mau cha?
-> — Ya! Yu suda beri cha berapa rafiki?
-> — Chok! Chok rafiki suda nomu cha mi.
+> — Rat. Yu mau ca?
+> — Ya! Yu suda beri ca berapa rafiki?
+> — Cok! Cok rafiki suda nomu ca mi.
 
 *Hello! What's your name? — My name is Luma. Who are you? — I'm Sol's friend. Where is Sol? — Sol went home. — When will she come? — Tonight. Do you want tea? — Yes! How many friends did you give tea to? — Many! Many friends drank my tea.*
 

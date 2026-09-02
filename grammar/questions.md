@@ -8,7 +8,7 @@ A yes/no question is a statement said with a rising tone and written with a ques
 
 | Statement | Question |
 |---|---|
-| Yu mau cha. | Yu mau cha? |
+| Yu mau ca. | Yu mau ca? |
 | Ruma yu kabir. | Ruma yu kabir? |
 | Ta suda lai. | Ta suda lai? |
 
@@ -24,7 +24,7 @@ To ask *what, who, where, when, why, how, how many*, put the question word **in 
 | **Kim** lai? | Rafiki lai. | Who is coming? — A friend is coming. |
 | Ruma yu **nali**? | Ruma mi ruma kabir. | Where is your house? — My house is the big house. |
 | Yu saufa lai **kab**? | Mi saufa lai din. | When will you come? — I'll come by day. |
-| Yu mau cha **porke**? | — | Why do you want tea? |
+| Yu mau ca **porke**? | — | Why do you want tea? |
 | Yu go **kaifa**? | Mi go taksi. | How do you go? — I go by taxi. |
 | Yu kan **berapa** anak? | Mi kan tri anak. | How many children do you see? — I see three. |
 
@@ -82,7 +82,7 @@ Ten candidates from ten families, ten collisions. As with possession, the langua
 | Candidate | Meaning | Reason rejected |
 |---|---|---|
 | ne (Turkish) | what | minimal pair with *no* |
-| che (Persian) | what | minimal pair with *cha* (tea) |
+| che (Persian) | what | minimal pair with *ca* (tea) |
 | mana (Indonesian) | where | minimal pair with *mama* |
 | do (Japanese) | how | minimal pair with *du* (2) |
 | kak (Russian) | how | minimal pair with *kan* |

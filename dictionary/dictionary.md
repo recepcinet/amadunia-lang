@@ -28,7 +28,7 @@
 | yu | you — one form for everyone | English *you* |
 | **Food and water** | | |
 | akua | water | Latin *aqua*, Spanish *agua*, Portuguese *água*, Italian *acqua* |
-| cha | tea | Chinese *chá*, Hindi *chai*, Turkish *çay*, Swahili *chai*, Russian *chay*, Persian *chai* |
+| ca | tea | Chinese *chá*, Hindi *chai*, Turkish *çay*, Swahili *chai*, Russian *chay*, Persian *chai* |
 | pan | bread, food | Spanish/Portuguese *pan/pão*, Japanese *pan*, Korean *ppang* |
 | **Home and world** | | |
 | dunia | world | Arabic, Hindi, Swahili, Indonesian, Turkish |
@@ -58,11 +58,11 @@
 | rabota | work | Russian *rabota*, Polish/Czech *robota* — source of the global word *robot* |
 | **Qualities and ideas** | | |
 | barid | cold | Arabic *bārid*, Swahili *baridi* |
-| chok | many, much | Turkish *çok*, Azeri *çox* |
+| cok | many, much | Turkish *çok*, Azeri *çox* |
 | garam | hot | Hindi/Urdu *garam*, Persian *garm*, Bengali *gorom* |
 | hao | good | Chinese *hǎo* (好) |
 | kabir | big | Arabic *kabīr*, Swahili *-kubwa*, Turkish *kebir* |
-| kechi | small | Indonesian/Malay *kecil*, Turkish *küçük* |
+| keci | small | Indonesian/Malay *kecil*, Turkish *küçük* |
 | luma | light | — |
 | mal | bad | Latin *malus*, Spanish/French *mal*, already-global via *malaria* |
 | una | together | — |

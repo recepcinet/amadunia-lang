@@ -4,13 +4,14 @@
 
 ## Alphabet
 
-Nineteen letters, each with exactly one sound, plus one digraph.
+Twenty letters, each with exactly one sound. No digraphs, no diacritics.
 
 | | Letters |
 |---|---|
 | **Vowels** (5) | a e i o u |
-| **Consonants** (14) | b d f g h k l m n p r s t y |
-| **Digraph** (1) | ch — as in *cha* (tea), *kechi* (small) |
+| **Consonants** (15) | b c d f g h k l m n p r s t y |
+
+`c` is always the sound of *chai*, *church* — as in *ca* (tea), *cok* (many), *keci* (small). Never *k*, never *s*. This follows Indonesian, Malay, Hausa and Somali, which all write that sound with a plain *c*. (Until September 2, 2026 it was written *ch*; the digraph was dropped because it was the alphabet's one exception to "one letter, one sound".)
 
 `y` is always a consonant glide (*ya*, *yu*), never a vowel.
 
