@@ -71,9 +71,24 @@ lesson:
 **6. How `r` is made.** Less urgent than stress only because no two words in
 the language are told apart by it — any *r* is understood today.
 
-**7 onward. What the practical pages kept wanting:** *very*, which the
-phrasebook lost twice; *never*, which the second story wanted; *all, some,
-none*; and the ordinal numbers.
+**7 onward, and the demand is thinner than it looks.** These four sit together
+on the list, but the material has reached for them exactly three times between
+them:
+
+| | Asked for by | Where |
+|---|---|---|
+| *very* | once | [the phrasebook](../phrasebook.md), which lost it from "thank you very much" and "this is very good" |
+| *never* | once | [story 2](../texts/story-2-safari-por-pahar.md), which wanted "I will never forget this morning" |
+| ordinal numbers | once | [story 2](../texts/story-2-safari-por-pahar.md) |
+| *all, some, none* | **never** | nothing has yet tried to say it |
+
+They appear in the *Still open* line at the foot of six lessons, which is one
+list repeated, not six demands. Counting mentions instead of findings
+overstates all four by roughly five times, and invents a case for *all, some,
+none* that does not exist.
+
+The rule that came out of checking this: **evidence is a page that tried to say
+something and could not, not a line on a list.**
 
 Two items are not grammar at all and sit outside this order: *madad* doing two
 jobs, and the thinness of Sino-Tibetan and Japonic recorded in
