@@ -5,12 +5,12 @@
 | Word | Meaning | Source languages |
 |---|---|---|
 | **Greetings and basics** | | |
-| bai | goodbye | already-global |
+| bai | goodbye | English *bye* — borrowed as Mandarin 拜拜 *bàibài*, Japanese *baibai*, Hindi/Urdu *bāy*, Indonesian *bai* — already-global |
 | bas | enough, stop | Hindi/Urdu *bas*, Persian *bas*, Swahili *basi*, Turkish *bas* |
-| hi | hello | already-global |
+| hi | hello | English *hi* — travels with English into casual speech nearly everywhere, and the shape never changes — already-global |
 | mersi | thank you | French *merci* — adopted in Persian, Turkish, Romanian, Bulgarian, Greek, Egyptian Arabic |
 | no | no; **not** — before the predicate, see [grammar/negation.md](../grammar/negation.md) | the *na/ne* root: Spanish/Italian *no*, English *no/not*, Latin *non*, Russian *ne*, Polish *nie*, Sanskrit/Hindi *na*, Persian *na-* |
-| ok | ok | already-global |
+| ok | ok | English *OK* — Japanese *ōkē*, Korean *okei*, Turkish *okey*, Russian *okey*, Spanish/Portuguese *ok*; among the most widely borrowed words on Earth — already-global |
 | pardon | sorry, excuse me | French *pardon* — adopted in Turkish, Russian, Persian, Arabic dialects; Spanish *perdón* |
 | plis | please | English *please*, already-global |
 | salam | peaceful greeting | Arabic, Hebrew, Persian, Turkish, Urdu, Swahili |
@@ -308,11 +308,11 @@
 | suda | past marker (before the verb) | Indonesian/Malay *sudah* |
 | **Already-global loans** | | |
 | doktor | doctor | Turkish, Russian, Indonesian, Hindi, Swahili *daktari* |
-| foto | photo | already-global |
-| hotel | hotel | already-global |
+| foto | photo | Greek *phōs, phōtos* (light) via *photograph* — the clipped *foto* is ordinary in German, Dutch, Spanish, Portuguese, Italian, Polish, Turkish, Indonesian, Russian *foto* — already-global |
+| hotel | hotel | French *hôtel* — English *hotel*, Spanish/Portuguese *hotel*, Indonesian *hotel*, Turkish *otel*, Russian *otel*, Hindi *hoṭal* — already-global |
 | libro | book | Spanish/Italian *libro*, Portuguese *livro*, French *livre* — global through *library* |
 | musik | music | already-global — German *Musik*, Turkish *müzik*, Russian *muzyka*, Indonesian *musik*, Arabic *mūsīqā*, Swahili *muziki* |
-| taksi | taxi | already-global |
+| taksi | taxi | French *taxi*, from *taximètre* — Turkish *taksi*, Indonesian *taksi*, Russian *taksi*, Swahili *teksi* — already-global |
 | telefon | telephone | already-global — Turkish, German, Russian, Polish, Indonesian *telepon*, Arabic *tilifūn* |
 | **Numbers** — in numerical order, not alphabetical | | |
 | uan | 1 | Latin *ūnus* → Spanish/Italian *uno*, French *un*, Portuguese *um*; English *one* |

@@ -1,1810 +1,1810 @@
 {
- "language": "Amadunia",
- "license": "CC BY-SA 4.0",
- "generated_from": "dictionary/dictionary.md",
- "note": "Derived mechanically. Edit the markdown, not this file; check.py fails if they disagree.",
- "alphabet": "a b c d e f g h i k l m n o p r s t u y",
- "roots": 300,
- "words": [
-  {
-   "word": "bai",
-   "meaning": "goodbye",
-   "group": "Greetings and basics",
-   "sources": "already-global"
-  },
-  {
-   "word": "bas",
-   "meaning": "enough, stop",
-   "group": "Greetings and basics",
-   "sources": "Hindi/Urdu bas, Persian bas, Swahili basi, Turkish bas"
-  },
-  {
-   "word": "hi",
-   "meaning": "hello",
-   "group": "Greetings and basics",
-   "sources": "already-global"
-  },
-  {
-   "word": "mersi",
-   "meaning": "thank you",
-   "group": "Greetings and basics",
-   "sources": "French merci — adopted in Persian, Turkish, Romanian, Bulgarian, Greek, Egyptian Arabic"
-  },
-  {
-   "word": "no",
-   "meaning": "no; not — before the predicate, see grammar/negation.md",
-   "group": "Greetings and basics",
-   "sources": "the na/ne root: Spanish/Italian no, English no/not, Latin non, Russian ne, Polish nie, Sanskrit/Hindi na, Persian na-"
-  },
-  {
-   "word": "ok",
-   "meaning": "ok",
-   "group": "Greetings and basics",
-   "sources": "already-global"
-  },
-  {
-   "word": "pardon",
-   "meaning": "sorry, excuse me",
-   "group": "Greetings and basics",
-   "sources": "French pardon — adopted in Turkish, Russian, Persian, Arabic dialects; Spanish perdón"
-  },
-  {
-   "word": "plis",
-   "meaning": "please",
-   "group": "Greetings and basics",
-   "sources": "English please, already-global"
-  },
-  {
-   "word": "salam",
-   "meaning": "peaceful greeting",
-   "group": "Greetings and basics",
-   "sources": "Arabic, Hebrew, Persian, Turkish, Urdu, Swahili"
-  },
-  {
-   "word": "ya",
-   "meaning": "yes",
-   "group": "Greetings and basics",
-   "sources": "Indonesian/Malay ya, Javanese ya; German/Dutch/Swedish/Norwegian ja"
-  },
-  {
-   "word": "anak",
-   "meaning": "child",
-   "group": "People",
-   "sources": "Indonesian/Malay anak, Tagalog anak, Javanese anak"
-  },
-  {
-   "word": "dugu",
-   "meaning": "sibling — no gender",
-   "group": "People",
-   "sources": "Swahili ndugu"
-  },
-  {
-   "word": "familia",
-   "meaning": "family",
-   "group": "People",
-   "sources": "Latin familia, Spanish familia, Swahili familia, Polish familia, Russian familiya"
-  },
-  {
-   "word": "insan",
-   "meaning": "person, human",
-   "group": "People",
-   "sources": "Arabic insān — adopted in Turkish, Persian, Urdu, Indonesian, Swahili insani"
-  },
-  {
-   "word": "kisan",
-   "meaning": "farmer",
-   "group": "People",
-   "sources": "Hindi/Urdu kisān, Nepali kisan, Bengali kisan"
-  },
-  {
-   "word": "kita",
-   "meaning": "we, including you — see grammar/pronouns.md",
-   "group": "People",
-   "sources": "Indonesian, Malay, Tagalog"
-  },
-  {
-   "word": "mama",
-   "meaning": "mother",
-   "group": "People",
-   "sources": "a nursery word shared across nearly every family on Earth: Mandarin māma, Swahili mama, Spanish mamá, Russian mama, Arabic māmā, Hindi mā̃"
-  },
-  {
-   "word": "mi",
-   "meaning": "I, me",
-   "group": "People",
-   "sources": "Spanish/Italian mi, English me, Swahili mimi"
-  },
-  {
-   "word": "mualim",
-   "meaning": "teacher",
-   "group": "People",
-   "sources": "Arabic muʿallim (معلم), Swahili mwalimu, Turkish muallim, Urdu muallim, Indonesian muallim"
-  },
-  {
-   "word": "nama",
-   "meaning": "name",
-   "group": "People",
-   "sources": "Sanskrit/Hindi naam, Indonesian nama, Japanese namae, English name"
-  },
-  {
-   "word": "nasab",
-   "meaning": "relative, kin",
-   "group": "People",
-   "sources": "Arabic nasab (lineage), Turkish nesep, Urdu/Hindi nasab, Swahili nasaba"
-  },
-  {
-   "word": "papa",
-   "meaning": "father",
-   "group": "People",
-   "sources": "the nursery pair of mama, as widespread: Mandarin bàba, Swahili baba, Turkish baba, Spanish papá, Hindi pāpā, Russian papa"
-  },
-  {
-   "word": "polisi",
-   "meaning": "police",
-   "group": "People",
-   "sources": "Greek polis → global: Swahili polisi, Indonesian polisi, Turkish polis, Russian politsiya"
-  },
-  {
-   "word": "rafiki",
-   "meaning": "friend",
-   "group": "People",
-   "sources": "Swahili rafiki, Arabic rafīq, Persian rafiq"
-  },
-  {
-   "word": "sofer",
-   "meaning": "driver",
-   "group": "People",
-   "sources": "French chauffeur → Turkish şoför, Russian shofyor, Indonesian sopir, Arabic shufīr"
-  },
-  {
-   "word": "ta",
-   "meaning": "he, she, it — no gender",
-   "group": "People",
-   "sources": "Chinese tā 他/她/它, one sound for all three"
-  },
-  {
-   "word": "tacir",
-   "meaning": "merchant",
-   "group": "People",
-   "sources": "Arabic tājir (تاجر), Turkish tacir, Urdu tājir, Swahili tajiri"
-  },
-  {
-   "word": "yu",
-   "meaning": "you — one form for everyone",
-   "group": "People",
-   "sources": "English you"
-  },
-  {
-   "word": "ain",
-   "meaning": "eye",
-   "group": "Body",
-   "sources": "Arabic ʿayn (عين), Hebrew ayin"
-  },
-  {
-   "word": "burun",
-   "meaning": "nose",
-   "group": "Body",
-   "sources": "Turkish burun, Azeri burun, Turkmen burun"
-  },
-  {
-   "word": "cehra",
-   "meaning": "face",
-   "group": "Body",
-   "sources": "Hindi/Urdu chehra, Persian chehreh, Nepali cehara"
-  },
-  {
-   "word": "dente",
-   "meaning": "tooth",
-   "group": "Body",
-   "sources": "Latin dentem → Italian dente, Spanish diente, Portuguese dente, French dent, English dental"
-  },
-  {
-   "word": "kaki",
-   "meaning": "foot, leg",
-   "group": "Body",
-   "sources": "Indonesian/Malay/Tagalog kaki"
-  },
-  {
-   "word": "kalb",
-   "meaning": "heart",
-   "group": "Body",
-   "sources": "Arabic qalb (قلب), Turkish kalp, Urdu qalb, Persian qalb"
-  },
-  {
-   "word": "korpo",
-   "meaning": "body",
-   "group": "Body",
-   "sources": "Latin corpus — global through corps, corporate, Spanish cuerpo, Italian corpo"
-  },
-  {
-   "word": "kulit",
-   "meaning": "skin",
-   "group": "Body",
-   "sources": "Indonesian/Malay kulit"
-  },
-  {
-   "word": "mano",
-   "meaning": "hand",
-   "group": "Body",
-   "sources": "Spanish/Italian mano, Latin manus, Portuguese mão, French main"
-  },
-  {
-   "word": "mulut",
-   "meaning": "mouth",
-   "group": "Body",
-   "sources": "Indonesian/Malay mulut"
-  },
-  {
-   "word": "rambut",
-   "meaning": "hair",
-   "group": "Body",
-   "sources": "Indonesian/Malay rambut"
-  },
-  {
-   "word": "sar",
-   "meaning": "head",
-   "group": "Body",
-   "sources": "Persian sar, Hindi/Urdu sir/sar, Sanskrit śiras"
-  },
-  {
-   "word": "telinga",
-   "meaning": "ear",
-   "group": "Body",
-   "sources": "Indonesian/Malay telinga, Javanese talingan"
-  },
-  {
-   "word": "gusa",
-   "meaning": "anger",
-   "group": "Feelings",
-   "sources": "Hindi/Urdu gussa, Persian ghosse, Nepali gussa"
-  },
-  {
-   "word": "korku",
-   "meaning": "fear",
-   "group": "Feelings",
-   "sources": "Turkish korku, Azeri qorxu"
-  },
-  {
-   "word": "sabar",
-   "meaning": "patience",
-   "group": "Feelings",
-   "sources": "Arabic ṣabr (صبر), Turkish sabır, Urdu/Hindi sabr, Indonesian sabar, Swahili subira"
-  },
-  {
-   "word": "akua",
-   "meaning": "water",
-   "group": "Food and water",
-   "sources": "Latin aqua, Spanish agua, Portuguese água, Italian acqua"
-  },
-  {
-   "word": "ca",
-   "meaning": "tea",
-   "group": "Food and water",
-   "sources": "Chinese chá, Hindi chai, Turkish çay, Swahili chai, Russian chay, Persian chai"
-  },
-  {
-   "word": "corba",
-   "meaning": "soup",
-   "group": "Food and water",
-   "sources": "Persian shorbā → Turkish çorba, Arabic shurba, Urdu shorba, Bulgarian/Serbian čorba"
-  },
-  {
-   "word": "fruta",
-   "meaning": "fruit",
-   "group": "Food and water",
-   "sources": "Latin fructus, Spanish/Portuguese fruta, Russian frukt, English fruit, German Frucht"
-  },
-  {
-   "word": "halib",
-   "meaning": "milk",
-   "group": "Food and water",
-   "sources": "Arabic ḥalīb (حليب), Swahili haliba, Maltese ħalib"
-  },
-  {
-   "word": "kafe",
-   "meaning": "coffee",
-   "group": "Food and water",
-   "sources": "Arabic qahwa → Turkish kahve → global: café, coffee, Kaffee, kofe, Swahili kahawa"
-  },
-  {
-   "word": "legum",
-   "meaning": "vegetable",
-   "group": "Food and water",
-   "sources": "Latin legumen → French légume, Spanish legumbre, English legume"
-  },
-  {
-   "word": "minyak",
-   "meaning": "oil",
-   "group": "Food and water",
-   "sources": "Indonesian/Malay minyak"
-  },
-  {
-   "word": "namak",
-   "meaning": "salt",
-   "group": "Food and water",
-   "sources": "Hindi/Urdu namak, Persian namak, Bengali nun"
-  },
-  {
-   "word": "nyama",
-   "meaning": "meat",
-   "group": "Food and water",
-   "sources": "Swahili nyama, and Bantu-wide"
-  },
-  {
-   "word": "pan",
-   "meaning": "bread, food",
-   "group": "Food and water",
-   "sources": "Spanish/Portuguese pan/pão, Japanese pan, Korean ppang"
-  },
-  {
-   "word": "risi",
-   "meaning": "rice",
-   "group": "Food and water",
-   "sources": "Greek óryza → Arabic aruzz → Italian riso, French riz, English rice, Russian ris"
-  },
-  {
-   "word": "sukar",
-   "meaning": "sugar",
-   "group": "Food and water",
-   "sources": "Sanskrit śarkarā → Arabic sukkar → Turkish şeker, Swahili sukari, Russian sakhar, English sugar — one of the most travelled words on Earth"
-  },
-  {
-   "word": "telur",
-   "meaning": "egg",
-   "group": "Food and water",
-   "sources": "Indonesian/Malay telur, Javanese telur"
-  },
-  {
-   "word": "bimar",
-   "meaning": "sick",
-   "group": "Health",
-   "sources": "Persian bīmār, Urdu/Hindi bīmār, Bengali bimar"
-  },
-  {
-   "word": "ilac",
-   "meaning": "medicine",
-   "group": "Health",
-   "sources": "Turkish ilaç, Azeri ilaç — from Arabic ʿilāj (treatment)"
-  },
-  {
-   "word": "kamisa",
-   "meaning": "shirt",
-   "group": "Clothing",
-   "sources": "Latin camisia → Spanish/Portuguese camisa, Arabic qamīṣ, Urdu/Hindi kameez, Swahili kamisi"
-  },
-  {
-   "word": "sapatu",
-   "meaning": "shoe",
-   "group": "Clothing",
-   "sources": "Portuguese sapato, Spanish zapato, Indonesian/Malay sepatu, Tagalog sapatos"
-  },
-  {
-   "word": "anahtar",
-   "meaning": "key",
-   "group": "Home and world",
-   "sources": "Turkish anahtar, Azeri açar aside; from Greek anoiktēri"
-  },
-  {
-   "word": "ates",
-   "meaning": "fire",
-   "group": "Home and world",
-   "sources": "Turkish ateş, Azeri ateş, Persian ātash"
-  },
-  {
-   "word": "bage",
-   "meaning": "garden",
-   "group": "Home and world",
-   "sources": "Persian bāgh, Urdu/Hindi bāgh, Turkish bağ"
-  },
-  {
-   "word": "bahari",
-   "meaning": "sea",
-   "group": "Home and world",
-   "sources": "Arabic baḥr (بحر), Swahili bahari, Turkish bahriye, Indonesian bahari"
-  },
-  {
-   "word": "bulan",
-   "meaning": "moon",
-   "group": "Home and world",
-   "sources": "Indonesian/Malay bulan, Javanese wulan, Tagalog buwan"
-  },
-  {
-   "word": "dom",
-   "meaning": "house, home",
-   "group": "Home and world",
-   "sources": "Russian/Polish dom, Czech dům, Latin domus — global through domestic, domicile. Replaced ruma on September 3, 2026"
-  },
-  {
-   "word": "dunia",
-   "meaning": "world",
-   "group": "Home and world",
-   "sources": "Arabic, Hindi, Swahili, Indonesian, Turkish"
-  },
-  {
-   "word": "gelas",
-   "meaning": "glass, cup",
-   "group": "Home and world",
-   "sources": "Dutch glas → Indonesian/Malay gelas, Swahili glasi; English glass, German Glas"
-  },
-  {
-   "word": "hutan",
-   "meaning": "forest",
-   "group": "Home and world",
-   "sources": "Indonesian/Malay hutan"
-  },
-  {
-   "word": "kamra",
-   "meaning": "room",
-   "group": "Home and world",
-   "sources": "Hindi/Urdu kamra, Nepali kamra, Bengali kamra"
-  },
-  {
-   "word": "lampu",
-   "meaning": "lamp",
-   "group": "Home and world",
-   "sources": "Indonesian/Malay lampu — global: lamp, lampe, lampa, lampara"
-  },
-  {
-   "word": "madina",
-   "meaning": "city",
-   "group": "Home and world",
-   "sources": "Arabic madīna (مدينة), Turkish medine, Urdu madīna, Swahili mji/madina"
-  },
-  {
-   "word": "negara",
-   "meaning": "country",
-   "group": "Home and world",
-   "sources": "Sanskrit nagara → Indonesian/Malay negara, Thai nakhon, Khmer, Javanese"
-  },
-  {
-   "word": "pahar",
-   "meaning": "mountain",
-   "group": "Home and world",
-   "sources": "Hindi/Urdu pahāṛ, Nepali pahad"
-  },
-  {
-   "word": "pencere",
-   "meaning": "window",
-   "group": "Home and world",
-   "sources": "Turkish pencere, Persian panjare, Urdu panjra"
-  },
-  {
-   "word": "petra",
-   "meaning": "stone",
-   "group": "Home and world",
-   "sources": "Greek pétra → Latin, Spanish piedra, Italian pietra — global through petroleum, petrify"
-  },
-  {
-   "word": "pintu",
-   "meaning": "door",
-   "group": "Home and world",
-   "sources": "Indonesian/Malay pintu, Tagalog pinto"
-  },
-  {
-   "word": "piring",
-   "meaning": "plate",
-   "group": "Home and world",
-   "sources": "Indonesian/Malay piring"
-  },
-  {
-   "word": "ponte",
-   "meaning": "bridge",
-   "group": "Home and world",
-   "sources": "Latin pontem → Italian/Portuguese ponte, Spanish puente, French pont, Romanian punte"
-  },
-  {
-   "word": "sabun",
-   "meaning": "soap",
-   "group": "Home and world",
-   "sources": "Arabic ṣābūn → Turkish sabun, Swahili sabuni, Indonesian sabun, Hindi sābun, Russian... Spanish jabón, French savon"
-  },
-  {
-   "word": "sikin",
-   "meaning": "knife",
-   "group": "Home and world",
-   "sources": "Arabic sikkīn (سكين), Urdu sikkīn, Swahili kisu aside; Maltese sikkina"
-  },
-  {
-   "word": "sol",
-   "meaning": "sun",
-   "group": "Home and world",
-   "sources": "Latin/Spanish/Portuguese sol"
-  },
-  {
-   "word": "stela",
-   "meaning": "star",
-   "group": "Home and world",
-   "sources": "Latin stella → Italian stella, Spanish estrella, Portuguese estrela — global through stellar, constellation"
-  },
-  {
-   "word": "sungai",
-   "meaning": "river",
-   "group": "Home and world",
-   "sources": "Indonesian/Malay sungai, Javanese kali/sungai"
-  },
-  {
-   "word": "tabla",
-   "meaning": "table",
-   "group": "Home and world",
-   "sources": "Latin tabula → Spanish tabla, English table, Russian tablitsa"
-  },
-  {
-   "word": "tanah",
-   "meaning": "earth, ground",
-   "group": "Home and world",
-   "sources": "Indonesian/Malay tanah, Javanese tanah"
-  },
-  {
-   "word": "udara",
-   "meaning": "air",
-   "group": "Home and world",
-   "sources": "Indonesian/Malay udara, from Sanskrit udāra"
-  },
-  {
-   "word": "yatak",
-   "meaning": "bed",
-   "group": "Home and world",
-   "sources": "Turkish yatak, Azeri yataq"
-  },
-  {
-   "word": "angin",
-   "meaning": "wind",
-   "group": "Weather",
-   "sources": "Indonesian/Malay angin, Javanese angin"
-  },
-  {
-   "word": "asman",
-   "meaning": "sky",
-   "group": "Weather",
-   "sources": "Persian āsmān, Urdu/Hindi āsmān, Turkish asuman"
-  },
-  {
-   "word": "badal",
-   "meaning": "cloud",
-   "group": "Weather",
-   "sources": "Hindi/Urdu bādal, Bengali badol, Nepali badal"
-  },
-  {
-   "word": "yamur",
-   "meaning": "rain",
-   "group": "Weather",
-   "sources": "Turkish yağmur, Azeri yağmur, Turkmen ýagmyr"
-  },
-  {
-   "word": "yuki",
-   "meaning": "snow",
-   "group": "Weather",
-   "sources": "Japanese yuki (雪)"
-  },
-  {
-   "word": "animal",
-   "meaning": "animal",
-   "group": "Animals and plants",
-   "sources": "Latin animal — global: animal, animale, Tier aside, Indonesian animalia"
-  },
-  {
-   "word": "farasi",
-   "meaning": "horse",
-   "group": "Animals and plants",
-   "sources": "Arabic faras (فرس), Swahili farasi, Turkish feres"
-  },
-  {
-   "word": "flor",
-   "meaning": "flower",
-   "group": "Animals and plants",
-   "sources": "Latin flōrem → Spanish/Portuguese flor, Italian fiore, French fleur, English flora"
-  },
-  {
-   "word": "kanis",
-   "meaning": "dog",
-   "group": "Animals and plants",
-   "sources": "Latin canis — global through canine, Italian cane, Spanish can, French chien"
-  },
-  {
-   "word": "kucing",
-   "meaning": "cat",
-   "group": "Animals and plants",
-   "sources": "Indonesian/Malay kucing"
-  },
-  {
-   "word": "pohon",
-   "meaning": "tree",
-   "group": "Animals and plants",
-   "sources": "Indonesian/Malay pohon"
-  },
-  {
-   "word": "samaki",
-   "meaning": "fish",
-   "group": "Animals and plants",
-   "sources": "Swahili samaki, Arabic samak (سمك)"
-  },
-  {
-   "word": "tair",
-   "meaning": "bird",
-   "group": "Animals and plants",
-   "sources": "Arabic ṭayr (طير), Urdu tair, Persian tayr"
-  },
-  {
-   "word": "aksam",
-   "meaning": "evening",
-   "group": "Time",
-   "sources": "Turkish akşam, Azeri axşam, Turkmen agşam"
-  },
-  {
-   "word": "besok",
-   "meaning": "tomorrow",
-   "group": "Time",
-   "sources": "Indonesian/Malay besok, Javanese sesuk"
-  },
-  {
-   "word": "din",
-   "meaning": "day",
-   "group": "Time",
-   "sources": "Hindi/Urdu din, Bengali din, Persian din"
-  },
-  {
-   "word": "hafta",
-   "meaning": "week",
-   "group": "Time",
-   "sources": "Persian hafta, Turkish hafta, Hindi/Urdu hafta, Arabic dialects"
-  },
-  {
-   "word": "hora",
-   "meaning": "hour",
-   "group": "Time",
-   "sources": "Spanish/Portuguese hora, Italian ora, Latin hora, Greek hōra — global through hour"
-  },
-  {
-   "word": "kemarin",
-   "meaning": "yesterday",
-   "group": "Time",
-   "sources": "Indonesian/Malay kemarin"
-  },
-  {
-   "word": "mausim",
-   "meaning": "season",
-   "group": "Time",
-   "sources": "Arabic mawsim (موسم) → Indonesian musim, Turkish mevsim, Urdu mausam, Swahili msimu — the source of monsoon"
-  },
-  {
-   "word": "mensis",
-   "meaning": "month",
-   "group": "Time",
-   "sources": "Latin mēnsis → Spanish mes, Italian mese, Portuguese mês, French mois — global through bimonthly, menstrual"
-  },
-  {
-   "word": "momen",
-   "meaning": "moment",
-   "group": "Time",
-   "sources": "Latin momentum — global: moment, momento, Moment, moment"
-  },
-  {
-   "word": "pagi",
-   "meaning": "morning",
-   "group": "Time",
-   "sources": "Indonesian/Malay pagi"
-  },
-  {
-   "word": "rat",
-   "meaning": "night",
-   "group": "Time",
-   "sources": "Hindi/Urdu raat, Bengali raat, Sanskrit rātri"
-  },
-  {
-   "word": "sasa",
-   "meaning": "now",
-   "group": "Time",
-   "sources": "Swahili sasa"
-  },
-  {
-   "word": "tahun",
-   "meaning": "year",
-   "group": "Time",
-   "sources": "Indonesian/Malay tahun, Javanese taun"
-  },
-  {
-   "word": "tempo",
-   "meaning": "time",
-   "group": "Time",
-   "sources": "Latin tempus → Italian/Portuguese tempo, Spanish tiempo, Indonesian tempo, Russian temp"
-  },
-  {
-   "word": "ini",
-   "meaning": "this — after the noun, last in the phrase",
-   "group": "This and that",
-   "sources": "Indonesian/Malay ini, Tagalog ito"
-  },
-  {
-   "word": "itu",
-   "meaning": "that",
-   "group": "This and that",
-   "sources": "Indonesian/Malay itu"
-  },
-  {
-   "word": "kiri",
-   "meaning": "left",
-   "group": "Place",
-   "sources": "Indonesian/Malay kiri"
-  },
-  {
-   "word": "sini",
-   "meaning": "here",
-   "group": "Place",
-   "sources": "Indonesian/Malay sini"
-  },
-  {
-   "word": "situ",
-   "meaning": "there",
-   "group": "Place",
-   "sources": "Indonesian/Malay situ — the pair of sini"
-  },
-  {
-   "word": "sub",
-   "meaning": "down, below",
-   "group": "Place",
-   "sources": "Latin sub — global as the prefix in submarine, subway, Spanish/Italian sotto/sub, Turkish sub- in loanwords"
-  },
-  {
-   "word": "tempat",
-   "meaning": "place",
-   "group": "Place",
-   "sources": "Indonesian/Malay tempat"
-  },
-  {
-   "word": "upar",
-   "meaning": "up, above",
-   "group": "Place",
-   "sources": "Hindi/Urdu ūpar, Bengali upore, Nepali upar"
-  },
-  {
-   "word": "yamin",
-   "meaning": "right",
-   "group": "Place",
-   "sources": "Arabic yamīn (يمين) — the source of Yemen, the land on the right hand"
-  },
-  {
-   "word": "ama",
-   "meaning": "to love",
-   "group": "Actions",
-   "sources": "Latin"
-  },
-  {
-   "word": "ambil",
-   "meaning": "to take",
-   "group": "Actions",
-   "sources": "Indonesian/Malay ambil"
-  },
-  {
-   "word": "anda",
-   "meaning": "to walk",
-   "group": "Actions",
-   "sources": "Spanish/Portuguese andar, Italian andare"
-  },
-  {
-   "word": "beca",
-   "meaning": "to sell",
-   "group": "Actions",
-   "sources": "Hindi/Urdu bechnā, Bengali becha"
-  },
-  {
-   "word": "beri",
-   "meaning": "to give",
-   "group": "Actions",
-   "sources": "Indonesian/Malay beri, Turkish vermek"
-  },
-  {
-   "word": "bil",
-   "meaning": "to know",
-   "group": "Actions",
-   "sources": "Turkish bilmek, Azeri/Uzbek/Kazakh bil-"
-  },
-  {
-   "word": "bisa",
-   "meaning": "can, to be able — before another verb, see grammar/verb-chains.md",
-   "group": "Actions",
-   "sources": "Indonesian/Malay bisa"
-  },
-  {
-   "word": "buka",
-   "meaning": "to open",
-   "group": "Actions",
-   "sources": "Indonesian/Malay buka, Javanese bukak"
-  },
-  {
-   "word": "dengar",
-   "meaning": "to hear",
-   "group": "Actions",
-   "sources": "Indonesian/Malay dengar"
-  },
-  {
-   "word": "espera",
-   "meaning": "to wait",
-   "group": "Actions",
-   "sources": "Spanish/Portuguese esperar, Italian sperare — the root of Esperanto, \"one who hopes\""
-  },
-  {
-   "word": "faham",
-   "meaning": "to understand",
-   "group": "Actions",
-   "sources": "Arabic fahima, Indonesian/Malay paham, Swahili fahamu, Urdu fahm, Turkish fehim"
-  },
-  {
-   "word": "fikir",
-   "meaning": "to think",
-   "group": "Actions",
-   "sources": "Arabic fikr, Turkish fikir, Urdu/Hindi fikr, Swahili fikiri, Indonesian pikir"
-  },
-  {
-   "word": "finis",
-   "meaning": "to finish",
-   "group": "Actions",
-   "sources": "Latin finis — global: finish, final, finale, fin, Turkish final"
-  },
-  {
-   "word": "funga",
-   "meaning": "to close",
-   "group": "Actions",
-   "sources": "Swahili funga"
-  },
-  {
-   "word": "gasil",
-   "meaning": "to wash",
-   "group": "Actions",
-   "sources": "Arabic ghasala (غسل), Urdu ghusl, Swahili kuosha aside; Turkish gasil"
-  },
-  {
-   "word": "go",
-   "meaning": "to go",
-   "group": "Actions",
-   "sources": "English go, already-global"
-  },
-  {
-   "word": "hidup",
-   "meaning": "to live",
-   "group": "Actions",
-   "sources": "Indonesian/Malay hidup"
-  },
-  {
-   "word": "ingat",
-   "meaning": "to remember",
-   "group": "Actions",
-   "sources": "Indonesian/Malay ingat"
-  },
-  {
-   "word": "kan",
-   "meaning": "to see",
-   "group": "Actions",
-   "sources": "Chinese kàn (看)"
-  },
-  {
-   "word": "kanta",
-   "meaning": "to sing",
-   "group": "Actions",
-   "sources": "Latin cantāre, Spanish cantar, Italian cantare, Portuguese cantar, French chanter"
-  },
-  {
-   "word": "kara",
-   "meaning": "to read",
-   "group": "Actions",
-   "sources": "Arabic qaraʾa (قرأ) — the root of Quran, \"that which is read\""
-  },
-  {
-   "word": "katab",
-   "meaning": "to write",
-   "group": "Actions",
-   "sources": "Arabic kataba (كتب) — the root of kitab (book), Turkish katip, Swahili kitabu"
-  },
-  {
-   "word": "kimbia",
-   "meaning": "to run",
-   "group": "Actions",
-   "sources": "Swahili kimbia"
-  },
-  {
-   "word": "kirim",
-   "meaning": "to send",
-   "group": "Actions",
-   "sources": "Indonesian/Malay kirim"
-  },
-  {
-   "word": "kula",
-   "meaning": "to eat",
-   "group": "Actions",
-   "sources": "Swahili kula, Arabic akala"
-  },
-  {
-   "word": "kupi",
-   "meaning": "to buy",
-   "group": "Actions",
-   "sources": "Russian kupit', Bulgarian/Serbian/Croatian kupi, Czech koupit"
-  },
-  {
-   "word": "lai",
-   "meaning": "to come",
-   "group": "Actions",
-   "sources": "Chinese lái (来)"
-  },
-  {
-   "word": "lala",
-   "meaning": "to sleep",
-   "group": "Actions",
-   "sources": "Swahili kulala"
-  },
-  {
-   "word": "lasim",
-   "meaning": "must, to have to",
-   "group": "Actions",
-   "sources": "Arabic lāzim, Turkish lazım, Persian lāzem, Urdu/Hindi lāzim, Swahili lazima, Indonesian lazim — written with s, the alphabet having no z"
-  },
-  {
-   "word": "leta",
-   "meaning": "to bring",
-   "group": "Actions",
-   "sources": "Swahili leta"
-  },
-  {
-   "word": "lihat",
-   "meaning": "to look, to watch",
-   "group": "Actions",
-   "sources": "Indonesian/Malay lihat"
-  },
-  {
-   "word": "madad",
-   "meaning": "help; to help",
-   "group": "Actions",
-   "sources": "Arabic madad, Hindi/Urdu madad, Persian madad, Turkish medet"
-  },
-  {
-   "word": "mati",
-   "meaning": "to die",
-   "group": "Actions",
-   "sources": "Indonesian/Malay mati, Tagalog matay"
-  },
-  {
-   "word": "mau",
-   "meaning": "to want",
-   "group": "Actions",
-   "sources": "Indonesian/Malay mau"
-  },
-  {
-   "word": "naiti",
-   "meaning": "to find",
-   "group": "Actions",
-   "sources": "Russian naiti, Polish najść, Ukrainian znaity"
-  },
-  {
-   "word": "nomu",
-   "meaning": "to drink",
-   "group": "Actions",
-   "sources": "Japanese nomu (飲む)"
-  },
-  {
-   "word": "otur",
-   "meaning": "to sit",
-   "group": "Actions",
-   "sources": "Turkish otur-, Azeri otur-"
-  },
-  {
-   "word": "pone",
-   "meaning": "to put",
-   "group": "Actions",
-   "sources": "Latin pōnere → Spanish poner, Italian porre, Portuguese pôr — global through position, component"
-  },
-  {
-   "word": "proba",
-   "meaning": "to try",
-   "group": "Actions",
-   "sources": "Latin probāre — global: probe, prueba, prova, proba, Russian proba"
-  },
-  {
-   "word": "punya",
-   "meaning": "to have",
-   "group": "Actions",
-   "sources": "Indonesian/Malay punya"
-  },
-  {
-   "word": "respon",
-   "meaning": "to answer",
-   "group": "Actions",
-   "sources": "Latin respondēre — global: respond, responder, rispondere, Indonesian respon"
-  },
-  {
-   "word": "sema",
-   "meaning": "to say, to speak",
-   "group": "Actions",
-   "sources": "Swahili sema"
-  },
-  {
-   "word": "senti",
-   "meaning": "to feel",
-   "group": "Actions",
-   "sources": "Latin sentīre → Spanish/Portuguese/French sentir, Italian sentire — global through sentiment, consent, resent"
-  },
-  {
-   "word": "start",
-   "meaning": "to begin",
-   "group": "Actions",
-   "sources": "English start — global: German starten, Russian start, Turkish/Indonesian start"
-  },
-  {
-   "word": "stop",
-   "meaning": "to stop",
-   "group": "Actions",
-   "sources": "English stop — global: stopp, stop, stoppen, Indonesian stop"
-  },
-  {
-   "word": "studi",
-   "meaning": "to learn, to study",
-   "group": "Actions",
-   "sources": "Latin studere — global: English study, Spanish estudiar, German Studium, Russian studirovat', Indonesian studi"
-  },
-  {
-   "word": "suru",
-   "meaning": "to do, to make",
-   "group": "Actions",
-   "sources": "Japanese suru (する)"
-  },
-  {
-   "word": "tabak",
-   "meaning": "to cook",
-   "group": "Actions",
-   "sources": "Arabic ṭabakha (طبخ), Turkish tabh, Urdu tabakh"
-  },
-  {
-   "word": "tanya",
-   "meaning": "to ask",
-   "group": "Actions",
-   "sources": "Indonesian/Malay tanya"
-  },
-  {
-   "word": "tena",
-   "meaning": "again",
-   "group": "Actions",
-   "sources": "Swahili tena"
-  },
-  {
-   "word": "unut",
-   "meaning": "to forget",
-   "group": "Actions",
-   "sources": "Turkish unut-, Azeri unut-, Turkmen unut-"
-  },
-  {
-   "word": "bola",
-   "meaning": "ball",
-   "group": "Play",
-   "sources": "Portuguese/Spanish bola, Indonesian/Malay bola, Tagalog bola, Swahili boli"
-  },
-  {
-   "word": "oyun",
-   "meaning": "game",
-   "group": "Play",
-   "sources": "Turkish oyun, Azeri oyun, Turkmen oýun"
-  },
-  {
-   "word": "auto",
-   "meaning": "car",
-   "group": "Town and money",
-   "sources": "German Auto, Spanish auto, Turkish/Indonesian oto, Russian avto — global"
-  },
-  {
-   "word": "banka",
-   "meaning": "bank",
-   "group": "Town and money",
-   "sources": "Italian banca — global: bank, banco, banka, banki"
-  },
-  {
-   "word": "harga",
-   "meaning": "price",
-   "group": "Town and money",
-   "sources": "Indonesian/Malay harga, from Sanskrit argha"
-  },
-  {
-   "word": "hospital",
-   "meaning": "hospital",
-   "group": "Town and money",
-   "sources": "Latin hospitale — global: hospital, hôpital, hospitalis, Indonesian hospital"
-  },
-  {
-   "word": "kertas",
-   "meaning": "paper",
-   "group": "Town and money",
-   "sources": "Greek chártēs → Arabic qirṭās → Indonesian/Malay kertas, Swahili karatasi"
-  },
-  {
-   "word": "kursi",
-   "meaning": "chair",
-   "group": "Town and money",
-   "sources": "Arabic kursī, Turkish kürsü, Hindi/Urdu kursī, Indonesian kursi, Swahili kiti"
-  },
-  {
-   "word": "market",
-   "meaning": "market, shop",
-   "group": "Town and money",
-   "sources": "already-global — English, Turkish, Russian, Arabic dialects, Indonesian"
-  },
-  {
-   "word": "mesin",
-   "meaning": "machine",
-   "group": "Town and money",
-   "sources": "Latin machina — global: machine, máquina, Maschine, mashina, Indonesian mesin"
-  },
-  {
-   "word": "pesa",
-   "meaning": "money",
-   "group": "Town and money",
-   "sources": "Swahili pesa, Hindi/Urdu paisa, Spanish/Tagalog peso/piso"
-  },
-  {
-   "word": "posta",
-   "meaning": "mail",
-   "group": "Town and money",
-   "sources": "Latin posita — global: post, posta, pochta, pos, Turkish posta, Swahili posta"
-  },
-  {
-   "word": "rabota",
-   "meaning": "work",
-   "group": "Town and money",
-   "sources": "Russian rabota, Polish/Czech robota — source of the global word robot"
-  },
-  {
-   "word": "regalo",
-   "meaning": "gift",
-   "group": "Town and money",
-   "sources": "Spanish/Italian regalo, Portuguese regalo"
-  },
-  {
-   "word": "restoran",
-   "meaning": "restaurant",
-   "group": "Town and money",
-   "sources": "French restaurant — global: Turkish/Indonesian/Russian/Polish restoran"
-  },
-  {
-   "word": "skola",
-   "meaning": "school",
-   "group": "Town and money",
-   "sources": "Latin schola — global: Russian shkola, Polish szkoła, Indonesian sekolah, Swahili shule, German Schule, English school"
-  },
-  {
-   "word": "tarik",
-   "meaning": "road, way",
-   "group": "Town and money",
-   "sources": "Arabic ṭarīq (طريق), Turkish tarik, Urdu tarīq, Swahili tariki"
-  },
-  {
-   "word": "tren",
-   "meaning": "train",
-   "group": "Town and money",
-   "sources": "Spanish/Turkish tren, French train, English train, Russian tren — global"
-  },
-  {
-   "word": "asfar",
-   "meaning": "yellow",
-   "group": "Colours",
-   "sources": "Arabic aṣfar (أصفر), Swahili safari (a journey, from the same root's travel sense) aside; Urdu asfar"
-  },
-  {
-   "word": "asul",
-   "meaning": "blue",
-   "group": "Colours",
-   "sources": "Arabic lāzaward → Spanish/Portuguese azul, Italian azzurro, English azure"
-  },
-  {
-   "word": "merah",
-   "meaning": "red",
-   "group": "Colours",
-   "sources": "Indonesian/Malay merah"
-  },
-  {
-   "word": "putih",
-   "meaning": "white",
-   "group": "Colours",
-   "sources": "Indonesian/Malay putih, Tagalog puti"
-  },
-  {
-   "word": "siya",
-   "meaning": "black",
-   "group": "Colours",
-   "sources": "Persian siyāh, Turkish siyah, Urdu/Hindi siyāh, Bengali shyam"
-  },
-  {
-   "word": "yesil",
-   "meaning": "green",
-   "group": "Colours",
-   "sources": "Turkish yeşil, Azeri yaşıl, Turkmen ýaşyl — written with s, the alphabet having no sh"
-  },
-  {
-   "word": "amani",
-   "meaning": "peace",
-   "group": "Qualities and ideas",
-   "sources": "Arabic amān (أمان), Swahili amani, Turkish aman, Urdu amān"
-  },
-  {
-   "word": "amik",
-   "meaning": "deep",
-   "group": "Qualities and ideas",
-   "sources": "Arabic ʿamīq (عميق), Urdu amīq"
-  },
-  {
-   "word": "arte",
-   "meaning": "art",
-   "group": "Qualities and ideas",
-   "sources": "Latin artem — global: art, arte, arta, Russian art"
-  },
-  {
-   "word": "asan",
-   "meaning": "easy",
-   "group": "Qualities and ideas",
-   "sources": "Hindi/Urdu āsān, Persian āsān, Bengali ashan"
-  },
-  {
-   "word": "bahaya",
-   "meaning": "danger",
-   "group": "Qualities and ideas",
-   "sources": "Indonesian/Malay bahaya, from Sanskrit bhaya"
-  },
-  {
-   "word": "baid",
-   "meaning": "far",
-   "group": "Qualities and ideas",
-   "sources": "Arabic baʿīd (بعيد)"
-  },
-  {
-   "word": "barid",
-   "meaning": "cold",
-   "group": "Qualities and ideas",
-   "sources": "Arabic bārid, Swahili baridi"
-  },
-  {
-   "word": "baru",
-   "meaning": "new",
-   "group": "Qualities and ideas",
-   "sources": "Indonesian/Malay baru"
-  },
-  {
-   "word": "benar",
-   "meaning": "true",
-   "group": "Qualities and ideas",
-   "sources": "Indonesian/Malay benar"
-  },
-  {
-   "word": "cang",
-   "meaning": "long",
-   "group": "Qualities and ideas",
-   "sources": "Chinese cháng (长)"
-  },
-  {
-   "word": "cok",
-   "meaning": "many, much",
-   "group": "Qualities and ideas",
-   "sources": "Turkish çok, Azeri çox"
-  },
-  {
-   "word": "daima",
-   "meaning": "always",
-   "group": "Qualities and ideas",
-   "sources": "Arabic dāʾiman (دائما), Swahili daima, Turkish daima, Urdu dāʾim"
-  },
-  {
-   "word": "dekat",
-   "meaning": "near",
-   "group": "Qualities and ideas",
-   "sources": "Indonesian/Malay dekat"
-  },
-  {
-   "word": "duan",
-   "meaning": "short",
-   "group": "Qualities and ideas",
-   "sources": "Chinese duǎn (短)"
-  },
-  {
-   "word": "dulce",
-   "meaning": "sweet",
-   "group": "Qualities and ideas",
-   "sources": "Latin dulcis → Spanish/Portuguese dulce/doce, Italian dolce, French doux"
-  },
-  {
-   "word": "eski",
-   "meaning": "old",
-   "group": "Qualities and ideas",
-   "sources": "Turkish eski, Azeri əski"
-  },
-  {
-   "word": "garam",
-   "meaning": "hot",
-   "group": "Qualities and ideas",
-   "sources": "Hindi/Urdu garam, Persian garm, Bengali gorom"
-  },
-  {
-   "word": "genc",
-   "meaning": "young",
-   "group": "Qualities and ideas",
-   "sources": "Turkish genç, Azeri gənc"
-  },
-  {
-   "word": "golos",
-   "meaning": "voice",
-   "group": "Qualities and ideas",
-   "sources": "Russian golos, Polish głos, Czech hlas, Serbian glas"
-  },
-  {
-   "word": "grupo",
-   "meaning": "group",
-   "group": "Qualities and ideas",
-   "sources": "Latin gruppo — global: group, grupo, Gruppe, gruppa, Indonesian grup"
-  },
-  {
-   "word": "habari",
-   "meaning": "news",
-   "group": "Qualities and ideas",
-   "sources": "Arabic khabar (خبر) → Swahili habari, Turkish haber, Urdu khabar, Indonesian kabar"
-  },
-  {
-   "word": "hafif",
-   "meaning": "light in weight",
-   "group": "Qualities and ideas",
-   "sources": "Arabic khafīf (خفيف), Turkish hafif, Urdu hafīf"
-  },
-  {
-   "word": "hao",
-   "meaning": "good",
-   "group": "Qualities and ideas",
-   "sources": "Chinese hǎo (好)"
-  },
-  {
-   "word": "hayai",
-   "meaning": "fast",
-   "group": "Qualities and ideas",
-   "sources": "Japanese hayai (速い)"
-  },
-  {
-   "word": "historia",
-   "meaning": "history",
-   "group": "Qualities and ideas",
-   "sources": "Greek historía — global: history, historia, Geschichte aside, istoriya, Indonesian historia"
-  },
-  {
-   "word": "ide",
-   "meaning": "idea",
-   "group": "Qualities and ideas",
-   "sources": "Greek idéa — global: idea, idée, Idee, ideya, Indonesian ide"
-  },
-  {
-   "word": "kabir",
-   "meaning": "big",
-   "group": "Qualities and ideas",
-   "sources": "Arabic kabīr, Swahili -kubwa, Turkish kebir"
-  },
-  {
-   "word": "kadang",
-   "meaning": "sometimes",
-   "group": "Qualities and ideas",
-   "sources": "Indonesian/Malay kadang"
-  },
-  {
-   "word": "kadar",
-   "meaning": "as ... as",
-   "group": "Qualities and ideas",
-   "sources": "Arabic qadar, Turkish kadar, Urdu/Hindi qadar, Persian qadr"
-  },
-  {
-   "word": "kalima",
-   "meaning": "word",
-   "group": "Qualities and ideas",
-   "sources": "Arabic kalima (كلمة), Turkish kelime, Urdu kalima, Swahili kalima, Indonesian kalimat"
-  },
-  {
-   "word": "keci",
-   "meaning": "small",
-   "group": "Qualities and ideas",
-   "sources": "Indonesian/Malay kecil, Turkish küçük"
-  },
-  {
-   "word": "kosong",
-   "meaning": "empty",
-   "group": "Qualities and ideas",
-   "sources": "Indonesian/Malay kosong"
-  },
-  {
-   "word": "kotor",
-   "meaning": "dirty",
-   "group": "Qualities and ideas",
-   "sources": "Indonesian/Malay kotor"
-  },
-  {
-   "word": "kuat",
-   "meaning": "strong",
-   "group": "Qualities and ideas",
-   "sources": "Indonesian/Malay kuat"
-  },
-  {
-   "word": "kultura",
-   "meaning": "culture",
-   "group": "Qualities and ideas",
-   "sources": "Latin cultura — global: culture, cultura, Kultur, kultura"
-  },
-  {
-   "word": "kurang",
-   "meaning": "less",
-   "group": "Qualities and ideas",
-   "sources": "Indonesian/Malay kurang"
-  },
-  {
-   "word": "lebi",
-   "meaning": "more",
-   "group": "Qualities and ideas",
-   "sources": "Indonesian/Malay lebih"
-  },
-  {
-   "word": "legis",
-   "meaning": "law",
-   "group": "Qualities and ideas",
-   "sources": "Latin lēgis — global through legal, ley, legge, legislation"
-  },
-  {
-   "word": "lingua",
-   "meaning": "language",
-   "group": "Qualities and ideas",
-   "sources": "Latin lingua → Italian/Portuguese lingua, Spanish lengua, French langue — global through linguistics, lingua franca"
-  },
-  {
-   "word": "luma",
-   "meaning": "light",
-   "group": "Qualities and ideas",
-   "sources": "Latin lūmen → Spanish lumbre, Italian/Portuguese lume — global through luminous, illuminate"
-  },
-  {
-   "word": "mal",
-   "meaning": "bad",
-   "group": "Qualities and ideas",
-   "sources": "Latin malus, Spanish/French mal, already-global via malaria"
-  },
-  {
-   "word": "masal",
-   "meaning": "story",
-   "group": "Qualities and ideas",
-   "sources": "Turkish masal, from Arabic mathal; Azeri masal"
-  },
-  {
-   "word": "mimpi",
-   "meaning": "dream",
-   "group": "Qualities and ideas",
-   "sources": "Indonesian/Malay mimpi"
-  },
-  {
-   "word": "muskil",
-   "meaning": "difficult",
-   "group": "Qualities and ideas",
-   "sources": "Arabic mushkil (مشكل), Turkish müşkül, Urdu/Hindi mushkil, Persian moshkel — written with s, the alphabet having no sh"
-  },
-  {
-   "word": "natura",
-   "meaning": "nature",
-   "group": "Qualities and ideas",
-   "sources": "Latin natura — global: nature, natura, Natur, natura"
-  },
-  {
-   "word": "numero",
-   "meaning": "number",
-   "group": "Qualities and ideas",
-   "sources": "Latin numerus → global: number, número, numero, Nummer, nomer"
-  },
-  {
-   "word": "paling",
-   "meaning": "most — the superlative, before the adjective",
-   "group": "Qualities and ideas",
-   "sources": "Indonesian/Malay paling"
-  },
-  {
-   "word": "plen",
-   "meaning": "full",
-   "group": "Qualities and ideas",
-   "sources": "Latin plēnus, Spanish lleno, French plein, English plenty"
-  },
-  {
-   "word": "problema",
-   "meaning": "problem",
-   "group": "Qualities and ideas",
-   "sources": "Greek próblēma — global: problem, problema, Problem, problema"
-  },
-  {
-   "word": "safari",
-   "meaning": "journey",
-   "group": "Qualities and ideas",
-   "sources": "Arabic safar (سفر) → Swahili safari, and global in English"
-  },
-  {
-   "word": "safi",
-   "meaning": "clean",
-   "group": "Qualities and ideas",
-   "sources": "Arabic ṣāfī (صافي), Swahili safi, Hindi/Urdu sāf, Turkish saf"
-  },
-  {
-   "word": "sakil",
-   "meaning": "heavy",
-   "group": "Qualities and ideas",
-   "sources": "Arabic thaqīl (ثقيل), Turkish sakil, Urdu saqīl"
-  },
-  {
-   "word": "sansi",
-   "meaning": "chance",
-   "group": "Qualities and ideas",
-   "sources": "French chance → Turkish şans, Russian shans, Polish szansa"
-  },
-  {
-   "word": "sedih",
-   "meaning": "sad",
-   "group": "Qualities and ideas",
-   "sources": "Indonesian/Malay sedih"
-  },
-  {
-   "word": "senang",
-   "meaning": "happy",
-   "group": "Qualities and ideas",
-   "sources": "Indonesian/Malay senang"
-  },
-  {
-   "word": "sukut",
-   "meaning": "silence",
-   "group": "Qualities and ideas",
-   "sources": "Arabic sukūt (سكوت), Turkish sükût, Urdu sukūt"
-  },
-  {
-   "word": "sundar",
-   "meaning": "beautiful",
-   "group": "Qualities and ideas",
-   "sources": "Hindi/Urdu sundar, Sanskrit sundara, Nepali sundar"
-  },
-  {
-   "word": "surat",
-   "meaning": "letter",
-   "group": "Qualities and ideas",
-   "sources": "Indonesian/Malay surat, from Arabic sūra (a written passage)"
-  },
-  {
-   "word": "uhuru",
-   "meaning": "freedom",
-   "group": "Qualities and ideas",
-   "sources": "Swahili uhuru"
-  },
-  {
-   "word": "umid",
-   "meaning": "hope",
-   "group": "Qualities and ideas",
-   "sources": "Persian omīd, Urdu ummīd, Hindi ummeed, Turkish ümit"
-  },
-  {
-   "word": "umur",
-   "meaning": "life, age",
-   "group": "Qualities and ideas",
-   "sources": "Arabic ʿumr (عمر), Turkish ömür, Urdu umr, Indonesian umur, Swahili umri"
-  },
-  {
-   "word": "una",
-   "meaning": "together; una + noun = with — see grammar/place.md",
-   "group": "Qualities and ideas",
-   "sources": "Latin ūnā, \"together\""
-  },
-  {
-   "word": "yalan",
-   "meaning": "lie, falsehood",
-   "group": "Qualities and ideas",
-   "sources": "Turkish yalan, Azeri yalan, Turkmen ýalan"
-  },
-  {
-   "word": "yanlis",
-   "meaning": "wrong",
-   "group": "Qualities and ideas",
-   "sources": "Turkish yanlış, Azeri yanlış — written with s, the alphabet having no sh"
-  },
-  {
-   "word": "berapa",
-   "meaning": "how many, how much",
-   "group": "Question words",
-   "sources": "Indonesian/Malay berapa"
-  },
-  {
-   "word": "kab",
-   "meaning": "when",
-   "group": "Question words",
-   "sources": "Hindi/Urdu kab, Bengali kobe"
-  },
-  {
-   "word": "kaifa",
-   "meaning": "how",
-   "group": "Question words",
-   "sources": "Arabic kayfa (كيف)"
-  },
-  {
-   "word": "ke",
-   "meaning": "what",
-   "group": "Question words",
-   "sources": "Spanish qué, Portuguese que, Italian che, French que"
-  },
-  {
-   "word": "kim",
-   "meaning": "who",
-   "group": "Question words",
-   "sources": "Turkish, Azeri, Uzbek, Kazakh kim"
-  },
-  {
-   "word": "nali",
-   "meaning": "where",
-   "group": "Question words",
-   "sources": "Chinese nǎlǐ (哪里)"
-  },
-  {
-   "word": "porke",
-   "meaning": "why",
-   "group": "Question words",
-   "sources": "Spanish por qué, Italian perché, French pourquoi — \"for what\""
-  },
-  {
-   "word": "dari",
-   "meaning": "from",
-   "group": "Prepositions",
-   "sources": "Indonesian/Malay dari"
-  },
-  {
-   "word": "in",
-   "meaning": "at, in, on",
-   "group": "Prepositions",
-   "sources": "Latin, English, German, Italian, Dutch in"
-  },
-  {
-   "word": "por",
-   "meaning": "to, for",
-   "group": "Prepositions",
-   "sources": "Spanish/Portuguese por, Italian per, French pour, Latin pro"
-  },
-  {
-   "word": "agar",
-   "meaning": "if",
-   "group": "Grammar particles",
-   "sources": "Persian/Urdu agar, Hindi agar, Turkish eğer"
-  },
-  {
-   "word": "aur",
-   "meaning": "and",
-   "group": "Grammar particles",
-   "sources": "Hindi/Urdu aur"
-  },
-  {
-   "word": "es",
-   "meaning": "is, am, are — before a noun predicate only; see grammar/copula.md",
-   "group": "Grammar particles",
-   "sources": "Spanish es, Latin est, Italian è, French est, German ist, English is, Russian est', Hindi hai, Persian ast"
-  },
-  {
-   "word": "o",
-   "meaning": "or",
-   "group": "Grammar particles",
-   "sources": "Spanish/Italian o, Portuguese ou, Latin aut — the language's first one-letter word"
-  },
-  {
-   "word": "saufa",
-   "meaning": "future marker (before the verb)",
-   "group": "Grammar particles",
-   "sources": "Arabic sawfa (سوف)"
-  },
-  {
-   "word": "suda",
-   "meaning": "past marker (before the verb)",
-   "group": "Grammar particles",
-   "sources": "Indonesian/Malay sudah"
-  },
-  {
-   "word": "doktor",
-   "meaning": "doctor",
-   "group": "Already-global loans",
-   "sources": "Turkish, Russian, Indonesian, Hindi, Swahili daktari"
-  },
-  {
-   "word": "foto",
-   "meaning": "photo",
-   "group": "Already-global loans",
-   "sources": "already-global"
-  },
-  {
-   "word": "hotel",
-   "meaning": "hotel",
-   "group": "Already-global loans",
-   "sources": "already-global"
-  },
-  {
-   "word": "libro",
-   "meaning": "book",
-   "group": "Already-global loans",
-   "sources": "Spanish/Italian libro, Portuguese livro, French livre — global through library"
-  },
-  {
-   "word": "musik",
-   "meaning": "music",
-   "group": "Already-global loans",
-   "sources": "already-global — German Musik, Turkish müzik, Russian muzyka, Indonesian musik, Arabic mūsīqā, Swahili muziki"
-  },
-  {
-   "word": "taksi",
-   "meaning": "taxi",
-   "group": "Already-global loans",
-   "sources": "already-global"
-  },
-  {
-   "word": "telefon",
-   "meaning": "telephone",
-   "group": "Already-global loans",
-   "sources": "already-global — Turkish, German, Russian, Polish, Indonesian telepon, Arabic tilifūn"
-  },
-  {
-   "word": "uan",
-   "meaning": "1",
-   "group": "Numbers",
-   "sources": "Latin ūnus → Spanish/Italian uno, French un, Portuguese um; English one"
-  },
-  {
-   "word": "du",
-   "meaning": "2",
-   "group": "Numbers",
-   "sources": "Latin duo, Greek dýo, Russian dva, Hindi/Urdu do, Persian do, Welsh dau — global through duo, dual"
-  },
-  {
-   "word": "tri",
-   "meaning": "3",
-   "group": "Numbers",
-   "sources": "Latin trēs, Greek treîs, Sanskrit tri, Russian tri, Hindi tīn — global through tri-"
-  },
-  {
-   "word": "pat",
-   "meaning": "4",
-   "group": "Numbers",
-   "sources": "Indonesian/Malay empat, Tagalog apat, Javanese papat"
-  },
-  {
-   "word": "fai",
-   "meaning": "5",
-   "group": "Numbers",
-   "sources": "the Germanic five — English five, German fünf, Dutch vijf, Swedish fem — from the root that also gave Latin quīnque and Greek pénte"
-  },
-  {
-   "word": "sis",
-   "meaning": "6",
-   "group": "Numbers",
-   "sources": "Latin sex → Spanish seis, French/English six, German sechs; Greek héx, Persian shesh"
-  },
-  {
-   "word": "seti",
-   "meaning": "7",
-   "group": "Numbers",
-   "sources": "Latin septem → Spanish siete, Italian sette, French sept; Sanskrit sapta, Hindi sāt, Greek heptá, English seven"
-  },
-  {
-   "word": "ba",
-   "meaning": "8",
-   "group": "Numbers",
-   "sources": "Chinese"
-  },
-  {
-   "word": "nau",
-   "meaning": "9",
-   "group": "Numbers",
-   "sources": "Hindi/Urdu nau, Bengali noy, Persian noh — the same root as Latin novem, German neun, English nine"
-  },
-  {
-   "word": "des",
-   "meaning": "10",
-   "group": "Numbers",
-   "sources": "Hindi/Urdu das, Sanskrit daśa; Latin decem → Spanish diez, Italian dieci, French dix; Greek déka"
-  },
-  {
-   "word": "sen",
-   "meaning": "100",
-   "group": "Numbers",
-   "sources": "Latin centum → French cent, Spanish cien, Italian cento; Russian sto, Sanskrit śatam, Hindi sau, Persian sad"
-  },
-  {
-   "word": "mila",
-   "meaning": "1000",
-   "group": "Numbers",
-   "sources": "Latin mille → Spanish mil, Italian mila, French mille, Turkish milyon"
-  }
- ]
+  "language": "Amadunia",
+  "license": "CC BY-SA 4.0",
+  "generated_from": "dictionary.md",
+  "note": "Generated by check.py. Edit dictionary.md, never this file.",
+  "alphabet": "abcdefghiklmnoprstuy",
+  "roots": 300,
+  "words": [
+    {
+      "word": "bai",
+      "meaning": "goodbye",
+      "group": "Greetings and basics",
+      "sources": "English bye — borrowed as Mandarin 拜拜 bàibài, Japanese baibai, Hindi/Urdu bāy, Indonesian bai — already-global"
+    },
+    {
+      "word": "bas",
+      "meaning": "enough, stop",
+      "group": "Greetings and basics",
+      "sources": "Hindi/Urdu bas, Persian bas, Swahili basi, Turkish bas"
+    },
+    {
+      "word": "hi",
+      "meaning": "hello",
+      "group": "Greetings and basics",
+      "sources": "English hi — travels with English into casual speech nearly everywhere, and the shape never changes — already-global"
+    },
+    {
+      "word": "mersi",
+      "meaning": "thank you",
+      "group": "Greetings and basics",
+      "sources": "French merci — adopted in Persian, Turkish, Romanian, Bulgarian, Greek, Egyptian Arabic"
+    },
+    {
+      "word": "no",
+      "meaning": "no; not — before the predicate, see grammar/negation.md",
+      "group": "Greetings and basics",
+      "sources": "the na/ne root: Spanish/Italian no, English no/not, Latin non, Russian ne, Polish nie, Sanskrit/Hindi na, Persian na-"
+    },
+    {
+      "word": "ok",
+      "meaning": "ok",
+      "group": "Greetings and basics",
+      "sources": "English OK — Japanese ōkē, Korean okei, Turkish okey, Russian okey, Spanish/Portuguese ok; among the most widely borrowed words on Earth — already-global"
+    },
+    {
+      "word": "pardon",
+      "meaning": "sorry, excuse me",
+      "group": "Greetings and basics",
+      "sources": "French pardon — adopted in Turkish, Russian, Persian, Arabic dialects; Spanish perdón"
+    },
+    {
+      "word": "plis",
+      "meaning": "please",
+      "group": "Greetings and basics",
+      "sources": "English please, already-global"
+    },
+    {
+      "word": "salam",
+      "meaning": "peaceful greeting",
+      "group": "Greetings and basics",
+      "sources": "Arabic, Hebrew, Persian, Turkish, Urdu, Swahili"
+    },
+    {
+      "word": "ya",
+      "meaning": "yes",
+      "group": "Greetings and basics",
+      "sources": "Indonesian/Malay ya, Javanese ya; German/Dutch/Swedish/Norwegian ja"
+    },
+    {
+      "word": "anak",
+      "meaning": "child",
+      "group": "People",
+      "sources": "Indonesian/Malay anak, Tagalog anak, Javanese anak"
+    },
+    {
+      "word": "dugu",
+      "meaning": "sibling — no gender",
+      "group": "People",
+      "sources": "Swahili ndugu"
+    },
+    {
+      "word": "familia",
+      "meaning": "family",
+      "group": "People",
+      "sources": "Latin familia, Spanish familia, Swahili familia, Polish familia, Russian familiya"
+    },
+    {
+      "word": "insan",
+      "meaning": "person, human",
+      "group": "People",
+      "sources": "Arabic insān — adopted in Turkish, Persian, Urdu, Indonesian, Swahili insani"
+    },
+    {
+      "word": "kisan",
+      "meaning": "farmer",
+      "group": "People",
+      "sources": "Hindi/Urdu kisān, Nepali kisan, Bengali kisan"
+    },
+    {
+      "word": "kita",
+      "meaning": "we, including you — see grammar/pronouns.md",
+      "group": "People",
+      "sources": "Indonesian, Malay, Tagalog"
+    },
+    {
+      "word": "mama",
+      "meaning": "mother",
+      "group": "People",
+      "sources": "a nursery word shared across nearly every family on Earth: Mandarin māma, Swahili mama, Spanish mamá, Russian mama, Arabic māmā, Hindi mā̃"
+    },
+    {
+      "word": "mi",
+      "meaning": "I, me",
+      "group": "People",
+      "sources": "Spanish/Italian mi, English me, Swahili mimi"
+    },
+    {
+      "word": "mualim",
+      "meaning": "teacher",
+      "group": "People",
+      "sources": "Arabic muʿallim (معلم), Swahili mwalimu, Turkish muallim, Urdu muallim, Indonesian muallim"
+    },
+    {
+      "word": "nama",
+      "meaning": "name",
+      "group": "People",
+      "sources": "Sanskrit/Hindi naam, Indonesian nama, Japanese namae, English name"
+    },
+    {
+      "word": "nasab",
+      "meaning": "relative, kin",
+      "group": "People",
+      "sources": "Arabic nasab (lineage), Turkish nesep, Urdu/Hindi nasab, Swahili nasaba"
+    },
+    {
+      "word": "papa",
+      "meaning": "father",
+      "group": "People",
+      "sources": "the nursery pair of mama, as widespread: Mandarin bàba, Swahili baba, Turkish baba, Spanish papá, Hindi pāpā, Russian papa"
+    },
+    {
+      "word": "polisi",
+      "meaning": "police",
+      "group": "People",
+      "sources": "Greek polis → global: Swahili polisi, Indonesian polisi, Turkish polis, Russian politsiya"
+    },
+    {
+      "word": "rafiki",
+      "meaning": "friend",
+      "group": "People",
+      "sources": "Swahili rafiki, Arabic rafīq, Persian rafiq"
+    },
+    {
+      "word": "sofer",
+      "meaning": "driver",
+      "group": "People",
+      "sources": "French chauffeur → Turkish şoför, Russian shofyor, Indonesian sopir, Arabic shufīr"
+    },
+    {
+      "word": "ta",
+      "meaning": "he, she, it — no gender",
+      "group": "People",
+      "sources": "Chinese tā 他/她/它, one sound for all three"
+    },
+    {
+      "word": "tacir",
+      "meaning": "merchant",
+      "group": "People",
+      "sources": "Arabic tājir (تاجر), Turkish tacir, Urdu tājir, Swahili tajiri"
+    },
+    {
+      "word": "yu",
+      "meaning": "you — one form for everyone",
+      "group": "People",
+      "sources": "English you"
+    },
+    {
+      "word": "ain",
+      "meaning": "eye",
+      "group": "Body",
+      "sources": "Arabic ʿayn (عين), Hebrew ayin"
+    },
+    {
+      "word": "burun",
+      "meaning": "nose",
+      "group": "Body",
+      "sources": "Turkish burun, Azeri burun, Turkmen burun"
+    },
+    {
+      "word": "cehra",
+      "meaning": "face",
+      "group": "Body",
+      "sources": "Hindi/Urdu chehra, Persian chehreh, Nepali cehara"
+    },
+    {
+      "word": "dente",
+      "meaning": "tooth",
+      "group": "Body",
+      "sources": "Latin dentem → Italian dente, Spanish diente, Portuguese dente, French dent, English dental"
+    },
+    {
+      "word": "kaki",
+      "meaning": "foot, leg",
+      "group": "Body",
+      "sources": "Indonesian/Malay/Tagalog kaki"
+    },
+    {
+      "word": "kalb",
+      "meaning": "heart",
+      "group": "Body",
+      "sources": "Arabic qalb (قلب), Turkish kalp, Urdu qalb, Persian qalb"
+    },
+    {
+      "word": "korpo",
+      "meaning": "body",
+      "group": "Body",
+      "sources": "Latin corpus — global through corps, corporate, Spanish cuerpo, Italian corpo"
+    },
+    {
+      "word": "kulit",
+      "meaning": "skin",
+      "group": "Body",
+      "sources": "Indonesian/Malay kulit"
+    },
+    {
+      "word": "mano",
+      "meaning": "hand",
+      "group": "Body",
+      "sources": "Spanish/Italian mano, Latin manus, Portuguese mão, French main"
+    },
+    {
+      "word": "mulut",
+      "meaning": "mouth",
+      "group": "Body",
+      "sources": "Indonesian/Malay mulut"
+    },
+    {
+      "word": "rambut",
+      "meaning": "hair",
+      "group": "Body",
+      "sources": "Indonesian/Malay rambut"
+    },
+    {
+      "word": "sar",
+      "meaning": "head",
+      "group": "Body",
+      "sources": "Persian sar, Hindi/Urdu sir/sar, Sanskrit śiras"
+    },
+    {
+      "word": "telinga",
+      "meaning": "ear",
+      "group": "Body",
+      "sources": "Indonesian/Malay telinga, Javanese talingan"
+    },
+    {
+      "word": "gusa",
+      "meaning": "anger",
+      "group": "Feelings",
+      "sources": "Hindi/Urdu gussa, Persian ghosse, Nepali gussa"
+    },
+    {
+      "word": "korku",
+      "meaning": "fear",
+      "group": "Feelings",
+      "sources": "Turkish korku, Azeri qorxu"
+    },
+    {
+      "word": "sabar",
+      "meaning": "patience",
+      "group": "Feelings",
+      "sources": "Arabic ṣabr (صبر), Turkish sabır, Urdu/Hindi sabr, Indonesian sabar, Swahili subira"
+    },
+    {
+      "word": "akua",
+      "meaning": "water",
+      "group": "Food and water",
+      "sources": "Latin aqua, Spanish agua, Portuguese água, Italian acqua"
+    },
+    {
+      "word": "ca",
+      "meaning": "tea",
+      "group": "Food and water",
+      "sources": "Chinese chá, Hindi chai, Turkish çay, Swahili chai, Russian chay, Persian chai"
+    },
+    {
+      "word": "corba",
+      "meaning": "soup",
+      "group": "Food and water",
+      "sources": "Persian shorbā → Turkish çorba, Arabic shurba, Urdu shorba, Bulgarian/Serbian čorba"
+    },
+    {
+      "word": "fruta",
+      "meaning": "fruit",
+      "group": "Food and water",
+      "sources": "Latin fructus, Spanish/Portuguese fruta, Russian frukt, English fruit, German Frucht"
+    },
+    {
+      "word": "halib",
+      "meaning": "milk",
+      "group": "Food and water",
+      "sources": "Arabic ḥalīb (حليب), Swahili haliba, Maltese ħalib"
+    },
+    {
+      "word": "kafe",
+      "meaning": "coffee",
+      "group": "Food and water",
+      "sources": "Arabic qahwa → Turkish kahve → global: café, coffee, Kaffee, kofe, Swahili kahawa"
+    },
+    {
+      "word": "legum",
+      "meaning": "vegetable",
+      "group": "Food and water",
+      "sources": "Latin legumen → French légume, Spanish legumbre, English legume"
+    },
+    {
+      "word": "minyak",
+      "meaning": "oil",
+      "group": "Food and water",
+      "sources": "Indonesian/Malay minyak"
+    },
+    {
+      "word": "namak",
+      "meaning": "salt",
+      "group": "Food and water",
+      "sources": "Hindi/Urdu namak, Persian namak, Bengali nun"
+    },
+    {
+      "word": "nyama",
+      "meaning": "meat",
+      "group": "Food and water",
+      "sources": "Swahili nyama, and Bantu-wide"
+    },
+    {
+      "word": "pan",
+      "meaning": "bread, food",
+      "group": "Food and water",
+      "sources": "Spanish/Portuguese pan/pão, Japanese pan, Korean ppang"
+    },
+    {
+      "word": "risi",
+      "meaning": "rice",
+      "group": "Food and water",
+      "sources": "Greek óryza → Arabic aruzz → Italian riso, French riz, English rice, Russian ris"
+    },
+    {
+      "word": "sukar",
+      "meaning": "sugar",
+      "group": "Food and water",
+      "sources": "Sanskrit śarkarā → Arabic sukkar → Turkish şeker, Swahili sukari, Russian sakhar, English sugar — one of the most travelled words on Earth"
+    },
+    {
+      "word": "telur",
+      "meaning": "egg",
+      "group": "Food and water",
+      "sources": "Indonesian/Malay telur, Javanese telur"
+    },
+    {
+      "word": "bimar",
+      "meaning": "sick",
+      "group": "Health",
+      "sources": "Persian bīmār, Urdu/Hindi bīmār, Bengali bimar"
+    },
+    {
+      "word": "ilac",
+      "meaning": "medicine",
+      "group": "Health",
+      "sources": "Turkish ilaç, Azeri ilaç — from Arabic ʿilāj (treatment)"
+    },
+    {
+      "word": "kamisa",
+      "meaning": "shirt",
+      "group": "Clothing",
+      "sources": "Latin camisia → Spanish/Portuguese camisa, Arabic qamīṣ, Urdu/Hindi kameez, Swahili kamisi"
+    },
+    {
+      "word": "sapatu",
+      "meaning": "shoe",
+      "group": "Clothing",
+      "sources": "Portuguese sapato, Spanish zapato, Indonesian/Malay sepatu, Tagalog sapatos"
+    },
+    {
+      "word": "anahtar",
+      "meaning": "key",
+      "group": "Home and world",
+      "sources": "Turkish anahtar, Azeri açar aside; from Greek anoiktēri"
+    },
+    {
+      "word": "ates",
+      "meaning": "fire",
+      "group": "Home and world",
+      "sources": "Turkish ateş, Azeri ateş, Persian ātash"
+    },
+    {
+      "word": "bage",
+      "meaning": "garden",
+      "group": "Home and world",
+      "sources": "Persian bāgh, Urdu/Hindi bāgh, Turkish bağ"
+    },
+    {
+      "word": "bahari",
+      "meaning": "sea",
+      "group": "Home and world",
+      "sources": "Arabic baḥr (بحر), Swahili bahari, Turkish bahriye, Indonesian bahari"
+    },
+    {
+      "word": "bulan",
+      "meaning": "moon",
+      "group": "Home and world",
+      "sources": "Indonesian/Malay bulan, Javanese wulan, Tagalog buwan"
+    },
+    {
+      "word": "dom",
+      "meaning": "house, home",
+      "group": "Home and world",
+      "sources": "Russian/Polish dom, Czech dům, Latin domus — global through domestic, domicile. Replaced ruma on September 3, 2026"
+    },
+    {
+      "word": "dunia",
+      "meaning": "world",
+      "group": "Home and world",
+      "sources": "Arabic, Hindi, Swahili, Indonesian, Turkish"
+    },
+    {
+      "word": "gelas",
+      "meaning": "glass, cup",
+      "group": "Home and world",
+      "sources": "Dutch glas → Indonesian/Malay gelas, Swahili glasi; English glass, German Glas"
+    },
+    {
+      "word": "hutan",
+      "meaning": "forest",
+      "group": "Home and world",
+      "sources": "Indonesian/Malay hutan"
+    },
+    {
+      "word": "kamra",
+      "meaning": "room",
+      "group": "Home and world",
+      "sources": "Hindi/Urdu kamra, Nepali kamra, Bengali kamra"
+    },
+    {
+      "word": "lampu",
+      "meaning": "lamp",
+      "group": "Home and world",
+      "sources": "Indonesian/Malay lampu — global: lamp, lampe, lampa, lampara"
+    },
+    {
+      "word": "madina",
+      "meaning": "city",
+      "group": "Home and world",
+      "sources": "Arabic madīna (مدينة), Turkish medine, Urdu madīna, Swahili mji/madina"
+    },
+    {
+      "word": "negara",
+      "meaning": "country",
+      "group": "Home and world",
+      "sources": "Sanskrit nagara → Indonesian/Malay negara, Thai nakhon, Khmer, Javanese"
+    },
+    {
+      "word": "pahar",
+      "meaning": "mountain",
+      "group": "Home and world",
+      "sources": "Hindi/Urdu pahāṛ, Nepali pahad"
+    },
+    {
+      "word": "pencere",
+      "meaning": "window",
+      "group": "Home and world",
+      "sources": "Turkish pencere, Persian panjare, Urdu panjra"
+    },
+    {
+      "word": "petra",
+      "meaning": "stone",
+      "group": "Home and world",
+      "sources": "Greek pétra → Latin, Spanish piedra, Italian pietra — global through petroleum, petrify"
+    },
+    {
+      "word": "pintu",
+      "meaning": "door",
+      "group": "Home and world",
+      "sources": "Indonesian/Malay pintu, Tagalog pinto"
+    },
+    {
+      "word": "piring",
+      "meaning": "plate",
+      "group": "Home and world",
+      "sources": "Indonesian/Malay piring"
+    },
+    {
+      "word": "ponte",
+      "meaning": "bridge",
+      "group": "Home and world",
+      "sources": "Latin pontem → Italian/Portuguese ponte, Spanish puente, French pont, Romanian punte"
+    },
+    {
+      "word": "sabun",
+      "meaning": "soap",
+      "group": "Home and world",
+      "sources": "Arabic ṣābūn → Turkish sabun, Swahili sabuni, Indonesian sabun, Hindi sābun, Russian... Spanish jabón, French savon"
+    },
+    {
+      "word": "sikin",
+      "meaning": "knife",
+      "group": "Home and world",
+      "sources": "Arabic sikkīn (سكين), Urdu sikkīn, Swahili kisu aside; Maltese sikkina"
+    },
+    {
+      "word": "sol",
+      "meaning": "sun",
+      "group": "Home and world",
+      "sources": "Latin/Spanish/Portuguese sol"
+    },
+    {
+      "word": "stela",
+      "meaning": "star",
+      "group": "Home and world",
+      "sources": "Latin stella → Italian stella, Spanish estrella, Portuguese estrela — global through stellar, constellation"
+    },
+    {
+      "word": "sungai",
+      "meaning": "river",
+      "group": "Home and world",
+      "sources": "Indonesian/Malay sungai, Javanese kali/sungai"
+    },
+    {
+      "word": "tabla",
+      "meaning": "table",
+      "group": "Home and world",
+      "sources": "Latin tabula → Spanish tabla, English table, Russian tablitsa"
+    },
+    {
+      "word": "tanah",
+      "meaning": "earth, ground",
+      "group": "Home and world",
+      "sources": "Indonesian/Malay tanah, Javanese tanah"
+    },
+    {
+      "word": "udara",
+      "meaning": "air",
+      "group": "Home and world",
+      "sources": "Indonesian/Malay udara, from Sanskrit udāra"
+    },
+    {
+      "word": "yatak",
+      "meaning": "bed",
+      "group": "Home and world",
+      "sources": "Turkish yatak, Azeri yataq"
+    },
+    {
+      "word": "angin",
+      "meaning": "wind",
+      "group": "Weather",
+      "sources": "Indonesian/Malay angin, Javanese angin"
+    },
+    {
+      "word": "asman",
+      "meaning": "sky",
+      "group": "Weather",
+      "sources": "Persian āsmān, Urdu/Hindi āsmān, Turkish asuman"
+    },
+    {
+      "word": "badal",
+      "meaning": "cloud",
+      "group": "Weather",
+      "sources": "Hindi/Urdu bādal, Bengali badol, Nepali badal"
+    },
+    {
+      "word": "yamur",
+      "meaning": "rain",
+      "group": "Weather",
+      "sources": "Turkish yağmur, Azeri yağmur, Turkmen ýagmyr"
+    },
+    {
+      "word": "yuki",
+      "meaning": "snow",
+      "group": "Weather",
+      "sources": "Japanese yuki (雪)"
+    },
+    {
+      "word": "animal",
+      "meaning": "animal",
+      "group": "Animals and plants",
+      "sources": "Latin animal — global: animal, animale, Tier aside, Indonesian animalia"
+    },
+    {
+      "word": "farasi",
+      "meaning": "horse",
+      "group": "Animals and plants",
+      "sources": "Arabic faras (فرس), Swahili farasi, Turkish feres"
+    },
+    {
+      "word": "flor",
+      "meaning": "flower",
+      "group": "Animals and plants",
+      "sources": "Latin flōrem → Spanish/Portuguese flor, Italian fiore, French fleur, English flora"
+    },
+    {
+      "word": "kanis",
+      "meaning": "dog",
+      "group": "Animals and plants",
+      "sources": "Latin canis — global through canine, Italian cane, Spanish can, French chien"
+    },
+    {
+      "word": "kucing",
+      "meaning": "cat",
+      "group": "Animals and plants",
+      "sources": "Indonesian/Malay kucing"
+    },
+    {
+      "word": "pohon",
+      "meaning": "tree",
+      "group": "Animals and plants",
+      "sources": "Indonesian/Malay pohon"
+    },
+    {
+      "word": "samaki",
+      "meaning": "fish",
+      "group": "Animals and plants",
+      "sources": "Swahili samaki, Arabic samak (سمك)"
+    },
+    {
+      "word": "tair",
+      "meaning": "bird",
+      "group": "Animals and plants",
+      "sources": "Arabic ṭayr (طير), Urdu tair, Persian tayr"
+    },
+    {
+      "word": "aksam",
+      "meaning": "evening",
+      "group": "Time",
+      "sources": "Turkish akşam, Azeri axşam, Turkmen agşam"
+    },
+    {
+      "word": "besok",
+      "meaning": "tomorrow",
+      "group": "Time",
+      "sources": "Indonesian/Malay besok, Javanese sesuk"
+    },
+    {
+      "word": "din",
+      "meaning": "day",
+      "group": "Time",
+      "sources": "Hindi/Urdu din, Bengali din, Persian din"
+    },
+    {
+      "word": "hafta",
+      "meaning": "week",
+      "group": "Time",
+      "sources": "Persian hafta, Turkish hafta, Hindi/Urdu hafta, Arabic dialects"
+    },
+    {
+      "word": "hora",
+      "meaning": "hour",
+      "group": "Time",
+      "sources": "Spanish/Portuguese hora, Italian ora, Latin hora, Greek hōra — global through hour"
+    },
+    {
+      "word": "kemarin",
+      "meaning": "yesterday",
+      "group": "Time",
+      "sources": "Indonesian/Malay kemarin"
+    },
+    {
+      "word": "mausim",
+      "meaning": "season",
+      "group": "Time",
+      "sources": "Arabic mawsim (موسم) → Indonesian musim, Turkish mevsim, Urdu mausam, Swahili msimu — the source of monsoon"
+    },
+    {
+      "word": "mensis",
+      "meaning": "month",
+      "group": "Time",
+      "sources": "Latin mēnsis → Spanish mes, Italian mese, Portuguese mês, French mois — global through bimonthly, menstrual"
+    },
+    {
+      "word": "momen",
+      "meaning": "moment",
+      "group": "Time",
+      "sources": "Latin momentum — global: moment, momento, Moment, moment"
+    },
+    {
+      "word": "pagi",
+      "meaning": "morning",
+      "group": "Time",
+      "sources": "Indonesian/Malay pagi"
+    },
+    {
+      "word": "rat",
+      "meaning": "night",
+      "group": "Time",
+      "sources": "Hindi/Urdu raat, Bengali raat, Sanskrit rātri"
+    },
+    {
+      "word": "sasa",
+      "meaning": "now",
+      "group": "Time",
+      "sources": "Swahili sasa"
+    },
+    {
+      "word": "tahun",
+      "meaning": "year",
+      "group": "Time",
+      "sources": "Indonesian/Malay tahun, Javanese taun"
+    },
+    {
+      "word": "tempo",
+      "meaning": "time",
+      "group": "Time",
+      "sources": "Latin tempus → Italian/Portuguese tempo, Spanish tiempo, Indonesian tempo, Russian temp"
+    },
+    {
+      "word": "ini",
+      "meaning": "this — after the noun, last in the phrase",
+      "group": "This and that",
+      "sources": "Indonesian/Malay ini, Tagalog ito"
+    },
+    {
+      "word": "itu",
+      "meaning": "that",
+      "group": "This and that",
+      "sources": "Indonesian/Malay itu"
+    },
+    {
+      "word": "kiri",
+      "meaning": "left",
+      "group": "Place",
+      "sources": "Indonesian/Malay kiri"
+    },
+    {
+      "word": "sini",
+      "meaning": "here",
+      "group": "Place",
+      "sources": "Indonesian/Malay sini"
+    },
+    {
+      "word": "situ",
+      "meaning": "there",
+      "group": "Place",
+      "sources": "Indonesian/Malay situ — the pair of sini"
+    },
+    {
+      "word": "sub",
+      "meaning": "down, below",
+      "group": "Place",
+      "sources": "Latin sub — global as the prefix in submarine, subway, Spanish/Italian sotto/sub, Turkish sub- in loanwords"
+    },
+    {
+      "word": "tempat",
+      "meaning": "place",
+      "group": "Place",
+      "sources": "Indonesian/Malay tempat"
+    },
+    {
+      "word": "upar",
+      "meaning": "up, above",
+      "group": "Place",
+      "sources": "Hindi/Urdu ūpar, Bengali upore, Nepali upar"
+    },
+    {
+      "word": "yamin",
+      "meaning": "right",
+      "group": "Place",
+      "sources": "Arabic yamīn (يمين) — the source of Yemen, the land on the right hand"
+    },
+    {
+      "word": "ama",
+      "meaning": "to love",
+      "group": "Actions",
+      "sources": "Latin"
+    },
+    {
+      "word": "ambil",
+      "meaning": "to take",
+      "group": "Actions",
+      "sources": "Indonesian/Malay ambil"
+    },
+    {
+      "word": "anda",
+      "meaning": "to walk",
+      "group": "Actions",
+      "sources": "Spanish/Portuguese andar, Italian andare"
+    },
+    {
+      "word": "beca",
+      "meaning": "to sell",
+      "group": "Actions",
+      "sources": "Hindi/Urdu bechnā, Bengali becha"
+    },
+    {
+      "word": "beri",
+      "meaning": "to give",
+      "group": "Actions",
+      "sources": "Indonesian/Malay beri, Turkish vermek"
+    },
+    {
+      "word": "bil",
+      "meaning": "to know",
+      "group": "Actions",
+      "sources": "Turkish bilmek, Azeri/Uzbek/Kazakh bil-"
+    },
+    {
+      "word": "bisa",
+      "meaning": "can, to be able — before another verb, see grammar/verb-chains.md",
+      "group": "Actions",
+      "sources": "Indonesian/Malay bisa"
+    },
+    {
+      "word": "buka",
+      "meaning": "to open",
+      "group": "Actions",
+      "sources": "Indonesian/Malay buka, Javanese bukak"
+    },
+    {
+      "word": "dengar",
+      "meaning": "to hear",
+      "group": "Actions",
+      "sources": "Indonesian/Malay dengar"
+    },
+    {
+      "word": "espera",
+      "meaning": "to wait",
+      "group": "Actions",
+      "sources": "Spanish/Portuguese esperar, Italian sperare — the root of Esperanto, \"one who hopes\""
+    },
+    {
+      "word": "faham",
+      "meaning": "to understand",
+      "group": "Actions",
+      "sources": "Arabic fahima, Indonesian/Malay paham, Swahili fahamu, Urdu fahm, Turkish fehim"
+    },
+    {
+      "word": "fikir",
+      "meaning": "to think",
+      "group": "Actions",
+      "sources": "Arabic fikr, Turkish fikir, Urdu/Hindi fikr, Swahili fikiri, Indonesian pikir"
+    },
+    {
+      "word": "finis",
+      "meaning": "to finish",
+      "group": "Actions",
+      "sources": "Latin finis — global: finish, final, finale, fin, Turkish final"
+    },
+    {
+      "word": "funga",
+      "meaning": "to close",
+      "group": "Actions",
+      "sources": "Swahili funga"
+    },
+    {
+      "word": "gasil",
+      "meaning": "to wash",
+      "group": "Actions",
+      "sources": "Arabic ghasala (غسل), Urdu ghusl, Swahili kuosha aside; Turkish gasil"
+    },
+    {
+      "word": "go",
+      "meaning": "to go",
+      "group": "Actions",
+      "sources": "English go, already-global"
+    },
+    {
+      "word": "hidup",
+      "meaning": "to live",
+      "group": "Actions",
+      "sources": "Indonesian/Malay hidup"
+    },
+    {
+      "word": "ingat",
+      "meaning": "to remember",
+      "group": "Actions",
+      "sources": "Indonesian/Malay ingat"
+    },
+    {
+      "word": "kan",
+      "meaning": "to see",
+      "group": "Actions",
+      "sources": "Chinese kàn (看)"
+    },
+    {
+      "word": "kanta",
+      "meaning": "to sing",
+      "group": "Actions",
+      "sources": "Latin cantāre, Spanish cantar, Italian cantare, Portuguese cantar, French chanter"
+    },
+    {
+      "word": "kara",
+      "meaning": "to read",
+      "group": "Actions",
+      "sources": "Arabic qaraʾa (قرأ) — the root of Quran, \"that which is read\""
+    },
+    {
+      "word": "katab",
+      "meaning": "to write",
+      "group": "Actions",
+      "sources": "Arabic kataba (كتب) — the root of kitab (book), Turkish katip, Swahili kitabu"
+    },
+    {
+      "word": "kimbia",
+      "meaning": "to run",
+      "group": "Actions",
+      "sources": "Swahili kimbia"
+    },
+    {
+      "word": "kirim",
+      "meaning": "to send",
+      "group": "Actions",
+      "sources": "Indonesian/Malay kirim"
+    },
+    {
+      "word": "kula",
+      "meaning": "to eat",
+      "group": "Actions",
+      "sources": "Swahili kula, Arabic akala"
+    },
+    {
+      "word": "kupi",
+      "meaning": "to buy",
+      "group": "Actions",
+      "sources": "Russian kupit', Bulgarian/Serbian/Croatian kupi, Czech koupit"
+    },
+    {
+      "word": "lai",
+      "meaning": "to come",
+      "group": "Actions",
+      "sources": "Chinese lái (来)"
+    },
+    {
+      "word": "lala",
+      "meaning": "to sleep",
+      "group": "Actions",
+      "sources": "Swahili kulala"
+    },
+    {
+      "word": "lasim",
+      "meaning": "must, to have to",
+      "group": "Actions",
+      "sources": "Arabic lāzim, Turkish lazım, Persian lāzem, Urdu/Hindi lāzim, Swahili lazima, Indonesian lazim — written with s, the alphabet having no z"
+    },
+    {
+      "word": "leta",
+      "meaning": "to bring",
+      "group": "Actions",
+      "sources": "Swahili leta"
+    },
+    {
+      "word": "lihat",
+      "meaning": "to look, to watch",
+      "group": "Actions",
+      "sources": "Indonesian/Malay lihat"
+    },
+    {
+      "word": "madad",
+      "meaning": "help; to help",
+      "group": "Actions",
+      "sources": "Arabic madad, Hindi/Urdu madad, Persian madad, Turkish medet"
+    },
+    {
+      "word": "mati",
+      "meaning": "to die",
+      "group": "Actions",
+      "sources": "Indonesian/Malay mati, Tagalog matay"
+    },
+    {
+      "word": "mau",
+      "meaning": "to want",
+      "group": "Actions",
+      "sources": "Indonesian/Malay mau"
+    },
+    {
+      "word": "naiti",
+      "meaning": "to find",
+      "group": "Actions",
+      "sources": "Russian naiti, Polish najść, Ukrainian znaity"
+    },
+    {
+      "word": "nomu",
+      "meaning": "to drink",
+      "group": "Actions",
+      "sources": "Japanese nomu (飲む)"
+    },
+    {
+      "word": "otur",
+      "meaning": "to sit",
+      "group": "Actions",
+      "sources": "Turkish otur-, Azeri otur-"
+    },
+    {
+      "word": "pone",
+      "meaning": "to put",
+      "group": "Actions",
+      "sources": "Latin pōnere → Spanish poner, Italian porre, Portuguese pôr — global through position, component"
+    },
+    {
+      "word": "proba",
+      "meaning": "to try",
+      "group": "Actions",
+      "sources": "Latin probāre — global: probe, prueba, prova, proba, Russian proba"
+    },
+    {
+      "word": "punya",
+      "meaning": "to have",
+      "group": "Actions",
+      "sources": "Indonesian/Malay punya"
+    },
+    {
+      "word": "respon",
+      "meaning": "to answer",
+      "group": "Actions",
+      "sources": "Latin respondēre — global: respond, responder, rispondere, Indonesian respon"
+    },
+    {
+      "word": "sema",
+      "meaning": "to say, to speak",
+      "group": "Actions",
+      "sources": "Swahili sema"
+    },
+    {
+      "word": "senti",
+      "meaning": "to feel",
+      "group": "Actions",
+      "sources": "Latin sentīre → Spanish/Portuguese/French sentir, Italian sentire — global through sentiment, consent, resent"
+    },
+    {
+      "word": "start",
+      "meaning": "to begin",
+      "group": "Actions",
+      "sources": "English start — global: German starten, Russian start, Turkish/Indonesian start"
+    },
+    {
+      "word": "stop",
+      "meaning": "to stop",
+      "group": "Actions",
+      "sources": "English stop — global: stopp, stop, stoppen, Indonesian stop"
+    },
+    {
+      "word": "studi",
+      "meaning": "to learn, to study",
+      "group": "Actions",
+      "sources": "Latin studere — global: English study, Spanish estudiar, German Studium, Russian studirovat', Indonesian studi"
+    },
+    {
+      "word": "suru",
+      "meaning": "to do, to make",
+      "group": "Actions",
+      "sources": "Japanese suru (する)"
+    },
+    {
+      "word": "tabak",
+      "meaning": "to cook",
+      "group": "Actions",
+      "sources": "Arabic ṭabakha (طبخ), Turkish tabh, Urdu tabakh"
+    },
+    {
+      "word": "tanya",
+      "meaning": "to ask",
+      "group": "Actions",
+      "sources": "Indonesian/Malay tanya"
+    },
+    {
+      "word": "tena",
+      "meaning": "again",
+      "group": "Actions",
+      "sources": "Swahili tena"
+    },
+    {
+      "word": "unut",
+      "meaning": "to forget",
+      "group": "Actions",
+      "sources": "Turkish unut-, Azeri unut-, Turkmen unut-"
+    },
+    {
+      "word": "bola",
+      "meaning": "ball",
+      "group": "Play",
+      "sources": "Portuguese/Spanish bola, Indonesian/Malay bola, Tagalog bola, Swahili boli"
+    },
+    {
+      "word": "oyun",
+      "meaning": "game",
+      "group": "Play",
+      "sources": "Turkish oyun, Azeri oyun, Turkmen oýun"
+    },
+    {
+      "word": "auto",
+      "meaning": "car",
+      "group": "Town and money",
+      "sources": "German Auto, Spanish auto, Turkish/Indonesian oto, Russian avto — global"
+    },
+    {
+      "word": "banka",
+      "meaning": "bank",
+      "group": "Town and money",
+      "sources": "Italian banca — global: bank, banco, banka, banki"
+    },
+    {
+      "word": "harga",
+      "meaning": "price",
+      "group": "Town and money",
+      "sources": "Indonesian/Malay harga, from Sanskrit argha"
+    },
+    {
+      "word": "hospital",
+      "meaning": "hospital",
+      "group": "Town and money",
+      "sources": "Latin hospitale — global: hospital, hôpital, hospitalis, Indonesian hospital"
+    },
+    {
+      "word": "kertas",
+      "meaning": "paper",
+      "group": "Town and money",
+      "sources": "Greek chártēs → Arabic qirṭās → Indonesian/Malay kertas, Swahili karatasi"
+    },
+    {
+      "word": "kursi",
+      "meaning": "chair",
+      "group": "Town and money",
+      "sources": "Arabic kursī, Turkish kürsü, Hindi/Urdu kursī, Indonesian kursi, Swahili kiti"
+    },
+    {
+      "word": "market",
+      "meaning": "market, shop",
+      "group": "Town and money",
+      "sources": "already-global — English, Turkish, Russian, Arabic dialects, Indonesian"
+    },
+    {
+      "word": "mesin",
+      "meaning": "machine",
+      "group": "Town and money",
+      "sources": "Latin machina — global: machine, máquina, Maschine, mashina, Indonesian mesin"
+    },
+    {
+      "word": "pesa",
+      "meaning": "money",
+      "group": "Town and money",
+      "sources": "Swahili pesa, Hindi/Urdu paisa, Spanish/Tagalog peso/piso"
+    },
+    {
+      "word": "posta",
+      "meaning": "mail",
+      "group": "Town and money",
+      "sources": "Latin posita — global: post, posta, pochta, pos, Turkish posta, Swahili posta"
+    },
+    {
+      "word": "rabota",
+      "meaning": "work",
+      "group": "Town and money",
+      "sources": "Russian rabota, Polish/Czech robota — source of the global word robot"
+    },
+    {
+      "word": "regalo",
+      "meaning": "gift",
+      "group": "Town and money",
+      "sources": "Spanish/Italian regalo, Portuguese regalo"
+    },
+    {
+      "word": "restoran",
+      "meaning": "restaurant",
+      "group": "Town and money",
+      "sources": "French restaurant — global: Turkish/Indonesian/Russian/Polish restoran"
+    },
+    {
+      "word": "skola",
+      "meaning": "school",
+      "group": "Town and money",
+      "sources": "Latin schola — global: Russian shkola, Polish szkoła, Indonesian sekolah, Swahili shule, German Schule, English school"
+    },
+    {
+      "word": "tarik",
+      "meaning": "road, way",
+      "group": "Town and money",
+      "sources": "Arabic ṭarīq (طريق), Turkish tarik, Urdu tarīq, Swahili tariki"
+    },
+    {
+      "word": "tren",
+      "meaning": "train",
+      "group": "Town and money",
+      "sources": "Spanish/Turkish tren, French train, English train, Russian tren — global"
+    },
+    {
+      "word": "asfar",
+      "meaning": "yellow",
+      "group": "Colours",
+      "sources": "Arabic aṣfar (أصفر), Swahili safari (a journey, from the same root's travel sense) aside; Urdu asfar"
+    },
+    {
+      "word": "asul",
+      "meaning": "blue",
+      "group": "Colours",
+      "sources": "Arabic lāzaward → Spanish/Portuguese azul, Italian azzurro, English azure"
+    },
+    {
+      "word": "merah",
+      "meaning": "red",
+      "group": "Colours",
+      "sources": "Indonesian/Malay merah"
+    },
+    {
+      "word": "putih",
+      "meaning": "white",
+      "group": "Colours",
+      "sources": "Indonesian/Malay putih, Tagalog puti"
+    },
+    {
+      "word": "siya",
+      "meaning": "black",
+      "group": "Colours",
+      "sources": "Persian siyāh, Turkish siyah, Urdu/Hindi siyāh, Bengali shyam"
+    },
+    {
+      "word": "yesil",
+      "meaning": "green",
+      "group": "Colours",
+      "sources": "Turkish yeşil, Azeri yaşıl, Turkmen ýaşyl — written with s, the alphabet having no sh"
+    },
+    {
+      "word": "amani",
+      "meaning": "peace",
+      "group": "Qualities and ideas",
+      "sources": "Arabic amān (أمان), Swahili amani, Turkish aman, Urdu amān"
+    },
+    {
+      "word": "amik",
+      "meaning": "deep",
+      "group": "Qualities and ideas",
+      "sources": "Arabic ʿamīq (عميق), Urdu amīq"
+    },
+    {
+      "word": "arte",
+      "meaning": "art",
+      "group": "Qualities and ideas",
+      "sources": "Latin artem — global: art, arte, arta, Russian art"
+    },
+    {
+      "word": "asan",
+      "meaning": "easy",
+      "group": "Qualities and ideas",
+      "sources": "Hindi/Urdu āsān, Persian āsān, Bengali ashan"
+    },
+    {
+      "word": "bahaya",
+      "meaning": "danger",
+      "group": "Qualities and ideas",
+      "sources": "Indonesian/Malay bahaya, from Sanskrit bhaya"
+    },
+    {
+      "word": "baid",
+      "meaning": "far",
+      "group": "Qualities and ideas",
+      "sources": "Arabic baʿīd (بعيد)"
+    },
+    {
+      "word": "barid",
+      "meaning": "cold",
+      "group": "Qualities and ideas",
+      "sources": "Arabic bārid, Swahili baridi"
+    },
+    {
+      "word": "baru",
+      "meaning": "new",
+      "group": "Qualities and ideas",
+      "sources": "Indonesian/Malay baru"
+    },
+    {
+      "word": "benar",
+      "meaning": "true",
+      "group": "Qualities and ideas",
+      "sources": "Indonesian/Malay benar"
+    },
+    {
+      "word": "cang",
+      "meaning": "long",
+      "group": "Qualities and ideas",
+      "sources": "Chinese cháng (长)"
+    },
+    {
+      "word": "cok",
+      "meaning": "many, much",
+      "group": "Qualities and ideas",
+      "sources": "Turkish çok, Azeri çox"
+    },
+    {
+      "word": "daima",
+      "meaning": "always",
+      "group": "Qualities and ideas",
+      "sources": "Arabic dāʾiman (دائما), Swahili daima, Turkish daima, Urdu dāʾim"
+    },
+    {
+      "word": "dekat",
+      "meaning": "near",
+      "group": "Qualities and ideas",
+      "sources": "Indonesian/Malay dekat"
+    },
+    {
+      "word": "duan",
+      "meaning": "short",
+      "group": "Qualities and ideas",
+      "sources": "Chinese duǎn (短)"
+    },
+    {
+      "word": "dulce",
+      "meaning": "sweet",
+      "group": "Qualities and ideas",
+      "sources": "Latin dulcis → Spanish/Portuguese dulce/doce, Italian dolce, French doux"
+    },
+    {
+      "word": "eski",
+      "meaning": "old",
+      "group": "Qualities and ideas",
+      "sources": "Turkish eski, Azeri əski"
+    },
+    {
+      "word": "garam",
+      "meaning": "hot",
+      "group": "Qualities and ideas",
+      "sources": "Hindi/Urdu garam, Persian garm, Bengali gorom"
+    },
+    {
+      "word": "genc",
+      "meaning": "young",
+      "group": "Qualities and ideas",
+      "sources": "Turkish genç, Azeri gənc"
+    },
+    {
+      "word": "golos",
+      "meaning": "voice",
+      "group": "Qualities and ideas",
+      "sources": "Russian golos, Polish głos, Czech hlas, Serbian glas"
+    },
+    {
+      "word": "grupo",
+      "meaning": "group",
+      "group": "Qualities and ideas",
+      "sources": "Latin gruppo — global: group, grupo, Gruppe, gruppa, Indonesian grup"
+    },
+    {
+      "word": "habari",
+      "meaning": "news",
+      "group": "Qualities and ideas",
+      "sources": "Arabic khabar (خبر) → Swahili habari, Turkish haber, Urdu khabar, Indonesian kabar"
+    },
+    {
+      "word": "hafif",
+      "meaning": "light in weight",
+      "group": "Qualities and ideas",
+      "sources": "Arabic khafīf (خفيف), Turkish hafif, Urdu hafīf"
+    },
+    {
+      "word": "hao",
+      "meaning": "good",
+      "group": "Qualities and ideas",
+      "sources": "Chinese hǎo (好)"
+    },
+    {
+      "word": "hayai",
+      "meaning": "fast",
+      "group": "Qualities and ideas",
+      "sources": "Japanese hayai (速い)"
+    },
+    {
+      "word": "historia",
+      "meaning": "history",
+      "group": "Qualities and ideas",
+      "sources": "Greek historía — global: history, historia, Geschichte aside, istoriya, Indonesian historia"
+    },
+    {
+      "word": "ide",
+      "meaning": "idea",
+      "group": "Qualities and ideas",
+      "sources": "Greek idéa — global: idea, idée, Idee, ideya, Indonesian ide"
+    },
+    {
+      "word": "kabir",
+      "meaning": "big",
+      "group": "Qualities and ideas",
+      "sources": "Arabic kabīr, Swahili -kubwa, Turkish kebir"
+    },
+    {
+      "word": "kadang",
+      "meaning": "sometimes",
+      "group": "Qualities and ideas",
+      "sources": "Indonesian/Malay kadang"
+    },
+    {
+      "word": "kadar",
+      "meaning": "as ... as",
+      "group": "Qualities and ideas",
+      "sources": "Arabic qadar, Turkish kadar, Urdu/Hindi qadar, Persian qadr"
+    },
+    {
+      "word": "kalima",
+      "meaning": "word",
+      "group": "Qualities and ideas",
+      "sources": "Arabic kalima (كلمة), Turkish kelime, Urdu kalima, Swahili kalima, Indonesian kalimat"
+    },
+    {
+      "word": "keci",
+      "meaning": "small",
+      "group": "Qualities and ideas",
+      "sources": "Indonesian/Malay kecil, Turkish küçük"
+    },
+    {
+      "word": "kosong",
+      "meaning": "empty",
+      "group": "Qualities and ideas",
+      "sources": "Indonesian/Malay kosong"
+    },
+    {
+      "word": "kotor",
+      "meaning": "dirty",
+      "group": "Qualities and ideas",
+      "sources": "Indonesian/Malay kotor"
+    },
+    {
+      "word": "kuat",
+      "meaning": "strong",
+      "group": "Qualities and ideas",
+      "sources": "Indonesian/Malay kuat"
+    },
+    {
+      "word": "kultura",
+      "meaning": "culture",
+      "group": "Qualities and ideas",
+      "sources": "Latin cultura — global: culture, cultura, Kultur, kultura"
+    },
+    {
+      "word": "kurang",
+      "meaning": "less",
+      "group": "Qualities and ideas",
+      "sources": "Indonesian/Malay kurang"
+    },
+    {
+      "word": "lebi",
+      "meaning": "more",
+      "group": "Qualities and ideas",
+      "sources": "Indonesian/Malay lebih"
+    },
+    {
+      "word": "legis",
+      "meaning": "law",
+      "group": "Qualities and ideas",
+      "sources": "Latin lēgis — global through legal, ley, legge, legislation"
+    },
+    {
+      "word": "lingua",
+      "meaning": "language",
+      "group": "Qualities and ideas",
+      "sources": "Latin lingua → Italian/Portuguese lingua, Spanish lengua, French langue — global through linguistics, lingua franca"
+    },
+    {
+      "word": "luma",
+      "meaning": "light",
+      "group": "Qualities and ideas",
+      "sources": "Latin lūmen → Spanish lumbre, Italian/Portuguese lume — global through luminous, illuminate"
+    },
+    {
+      "word": "mal",
+      "meaning": "bad",
+      "group": "Qualities and ideas",
+      "sources": "Latin malus, Spanish/French mal, already-global via malaria"
+    },
+    {
+      "word": "masal",
+      "meaning": "story",
+      "group": "Qualities and ideas",
+      "sources": "Turkish masal, from Arabic mathal; Azeri masal"
+    },
+    {
+      "word": "mimpi",
+      "meaning": "dream",
+      "group": "Qualities and ideas",
+      "sources": "Indonesian/Malay mimpi"
+    },
+    {
+      "word": "muskil",
+      "meaning": "difficult",
+      "group": "Qualities and ideas",
+      "sources": "Arabic mushkil (مشكل), Turkish müşkül, Urdu/Hindi mushkil, Persian moshkel — written with s, the alphabet having no sh"
+    },
+    {
+      "word": "natura",
+      "meaning": "nature",
+      "group": "Qualities and ideas",
+      "sources": "Latin natura — global: nature, natura, Natur, natura"
+    },
+    {
+      "word": "numero",
+      "meaning": "number",
+      "group": "Qualities and ideas",
+      "sources": "Latin numerus → global: number, número, numero, Nummer, nomer"
+    },
+    {
+      "word": "paling",
+      "meaning": "most — the superlative, before the adjective",
+      "group": "Qualities and ideas",
+      "sources": "Indonesian/Malay paling"
+    },
+    {
+      "word": "plen",
+      "meaning": "full",
+      "group": "Qualities and ideas",
+      "sources": "Latin plēnus, Spanish lleno, French plein, English plenty"
+    },
+    {
+      "word": "problema",
+      "meaning": "problem",
+      "group": "Qualities and ideas",
+      "sources": "Greek próblēma — global: problem, problema, Problem, problema"
+    },
+    {
+      "word": "safari",
+      "meaning": "journey",
+      "group": "Qualities and ideas",
+      "sources": "Arabic safar (سفر) → Swahili safari, and global in English"
+    },
+    {
+      "word": "safi",
+      "meaning": "clean",
+      "group": "Qualities and ideas",
+      "sources": "Arabic ṣāfī (صافي), Swahili safi, Hindi/Urdu sāf, Turkish saf"
+    },
+    {
+      "word": "sakil",
+      "meaning": "heavy",
+      "group": "Qualities and ideas",
+      "sources": "Arabic thaqīl (ثقيل), Turkish sakil, Urdu saqīl"
+    },
+    {
+      "word": "sansi",
+      "meaning": "chance",
+      "group": "Qualities and ideas",
+      "sources": "French chance → Turkish şans, Russian shans, Polish szansa"
+    },
+    {
+      "word": "sedih",
+      "meaning": "sad",
+      "group": "Qualities and ideas",
+      "sources": "Indonesian/Malay sedih"
+    },
+    {
+      "word": "senang",
+      "meaning": "happy",
+      "group": "Qualities and ideas",
+      "sources": "Indonesian/Malay senang"
+    },
+    {
+      "word": "sukut",
+      "meaning": "silence",
+      "group": "Qualities and ideas",
+      "sources": "Arabic sukūt (سكوت), Turkish sükût, Urdu sukūt"
+    },
+    {
+      "word": "sundar",
+      "meaning": "beautiful",
+      "group": "Qualities and ideas",
+      "sources": "Hindi/Urdu sundar, Sanskrit sundara, Nepali sundar"
+    },
+    {
+      "word": "surat",
+      "meaning": "letter",
+      "group": "Qualities and ideas",
+      "sources": "Indonesian/Malay surat, from Arabic sūra (a written passage)"
+    },
+    {
+      "word": "uhuru",
+      "meaning": "freedom",
+      "group": "Qualities and ideas",
+      "sources": "Swahili uhuru"
+    },
+    {
+      "word": "umid",
+      "meaning": "hope",
+      "group": "Qualities and ideas",
+      "sources": "Persian omīd, Urdu ummīd, Hindi ummeed, Turkish ümit"
+    },
+    {
+      "word": "umur",
+      "meaning": "life, age",
+      "group": "Qualities and ideas",
+      "sources": "Arabic ʿumr (عمر), Turkish ömür, Urdu umr, Indonesian umur, Swahili umri"
+    },
+    {
+      "word": "una",
+      "meaning": "together; una + noun = with — see grammar/place.md",
+      "group": "Qualities and ideas",
+      "sources": "Latin ūnā, \"together\""
+    },
+    {
+      "word": "yalan",
+      "meaning": "lie, falsehood",
+      "group": "Qualities and ideas",
+      "sources": "Turkish yalan, Azeri yalan, Turkmen ýalan"
+    },
+    {
+      "word": "yanlis",
+      "meaning": "wrong",
+      "group": "Qualities and ideas",
+      "sources": "Turkish yanlış, Azeri yanlış — written with s, the alphabet having no sh"
+    },
+    {
+      "word": "berapa",
+      "meaning": "how many, how much",
+      "group": "Question words",
+      "sources": "Indonesian/Malay berapa"
+    },
+    {
+      "word": "kab",
+      "meaning": "when",
+      "group": "Question words",
+      "sources": "Hindi/Urdu kab, Bengali kobe"
+    },
+    {
+      "word": "kaifa",
+      "meaning": "how",
+      "group": "Question words",
+      "sources": "Arabic kayfa (كيف)"
+    },
+    {
+      "word": "ke",
+      "meaning": "what",
+      "group": "Question words",
+      "sources": "Spanish qué, Portuguese que, Italian che, French que"
+    },
+    {
+      "word": "kim",
+      "meaning": "who",
+      "group": "Question words",
+      "sources": "Turkish, Azeri, Uzbek, Kazakh kim"
+    },
+    {
+      "word": "nali",
+      "meaning": "where",
+      "group": "Question words",
+      "sources": "Chinese nǎlǐ (哪里)"
+    },
+    {
+      "word": "porke",
+      "meaning": "why",
+      "group": "Question words",
+      "sources": "Spanish por qué, Italian perché, French pourquoi — \"for what\""
+    },
+    {
+      "word": "dari",
+      "meaning": "from",
+      "group": "Prepositions",
+      "sources": "Indonesian/Malay dari"
+    },
+    {
+      "word": "in",
+      "meaning": "at, in, on",
+      "group": "Prepositions",
+      "sources": "Latin, English, German, Italian, Dutch in"
+    },
+    {
+      "word": "por",
+      "meaning": "to, for",
+      "group": "Prepositions",
+      "sources": "Spanish/Portuguese por, Italian per, French pour, Latin pro"
+    },
+    {
+      "word": "agar",
+      "meaning": "if",
+      "group": "Grammar particles",
+      "sources": "Persian/Urdu agar, Hindi agar, Turkish eğer"
+    },
+    {
+      "word": "aur",
+      "meaning": "and",
+      "group": "Grammar particles",
+      "sources": "Hindi/Urdu aur"
+    },
+    {
+      "word": "es",
+      "meaning": "is, am, are — before a noun predicate only; see grammar/copula.md",
+      "group": "Grammar particles",
+      "sources": "Spanish es, Latin est, Italian è, French est, German ist, English is, Russian est', Hindi hai, Persian ast"
+    },
+    {
+      "word": "o",
+      "meaning": "or",
+      "group": "Grammar particles",
+      "sources": "Spanish/Italian o, Portuguese ou, Latin aut — the language's first one-letter word"
+    },
+    {
+      "word": "saufa",
+      "meaning": "future marker (before the verb)",
+      "group": "Grammar particles",
+      "sources": "Arabic sawfa (سوف)"
+    },
+    {
+      "word": "suda",
+      "meaning": "past marker (before the verb)",
+      "group": "Grammar particles",
+      "sources": "Indonesian/Malay sudah"
+    },
+    {
+      "word": "doktor",
+      "meaning": "doctor",
+      "group": "Already-global loans",
+      "sources": "Turkish, Russian, Indonesian, Hindi, Swahili daktari"
+    },
+    {
+      "word": "foto",
+      "meaning": "photo",
+      "group": "Already-global loans",
+      "sources": "Greek phōs, phōtos (light) via photograph — the clipped foto is ordinary in German, Dutch, Spanish, Portuguese, Italian, Polish, Turkish, Indonesian, Russian foto — already-global"
+    },
+    {
+      "word": "hotel",
+      "meaning": "hotel",
+      "group": "Already-global loans",
+      "sources": "French hôtel — English hotel, Spanish/Portuguese hotel, Indonesian hotel, Turkish otel, Russian otel, Hindi hoṭal — already-global"
+    },
+    {
+      "word": "libro",
+      "meaning": "book",
+      "group": "Already-global loans",
+      "sources": "Spanish/Italian libro, Portuguese livro, French livre — global through library"
+    },
+    {
+      "word": "musik",
+      "meaning": "music",
+      "group": "Already-global loans",
+      "sources": "already-global — German Musik, Turkish müzik, Russian muzyka, Indonesian musik, Arabic mūsīqā, Swahili muziki"
+    },
+    {
+      "word": "taksi",
+      "meaning": "taxi",
+      "group": "Already-global loans",
+      "sources": "French taxi, from taximètre — Turkish taksi, Indonesian taksi, Russian taksi, Swahili teksi — already-global"
+    },
+    {
+      "word": "telefon",
+      "meaning": "telephone",
+      "group": "Already-global loans",
+      "sources": "already-global — Turkish, German, Russian, Polish, Indonesian telepon, Arabic tilifūn"
+    },
+    {
+      "word": "uan",
+      "meaning": "1",
+      "group": "Numbers",
+      "sources": "Latin ūnus → Spanish/Italian uno, French un, Portuguese um; English one"
+    },
+    {
+      "word": "du",
+      "meaning": "2",
+      "group": "Numbers",
+      "sources": "Latin duo, Greek dýo, Russian dva, Hindi/Urdu do, Persian do, Welsh dau — global through duo, dual"
+    },
+    {
+      "word": "tri",
+      "meaning": "3",
+      "group": "Numbers",
+      "sources": "Latin trēs, Greek treîs, Sanskrit tri, Russian tri, Hindi tīn — global through tri-"
+    },
+    {
+      "word": "pat",
+      "meaning": "4",
+      "group": "Numbers",
+      "sources": "Indonesian/Malay empat, Tagalog apat, Javanese papat"
+    },
+    {
+      "word": "fai",
+      "meaning": "5",
+      "group": "Numbers",
+      "sources": "the Germanic five — English five, German fünf, Dutch vijf, Swedish fem — from the root that also gave Latin quīnque and Greek pénte"
+    },
+    {
+      "word": "sis",
+      "meaning": "6",
+      "group": "Numbers",
+      "sources": "Latin sex → Spanish seis, French/English six, German sechs; Greek héx, Persian shesh"
+    },
+    {
+      "word": "seti",
+      "meaning": "7",
+      "group": "Numbers",
+      "sources": "Latin septem → Spanish siete, Italian sette, French sept; Sanskrit sapta, Hindi sāt, Greek heptá, English seven"
+    },
+    {
+      "word": "ba",
+      "meaning": "8",
+      "group": "Numbers",
+      "sources": "Chinese"
+    },
+    {
+      "word": "nau",
+      "meaning": "9",
+      "group": "Numbers",
+      "sources": "Hindi/Urdu nau, Bengali noy, Persian noh — the same root as Latin novem, German neun, English nine"
+    },
+    {
+      "word": "des",
+      "meaning": "10",
+      "group": "Numbers",
+      "sources": "Hindi/Urdu das, Sanskrit daśa; Latin decem → Spanish diez, Italian dieci, French dix; Greek déka"
+    },
+    {
+      "word": "sen",
+      "meaning": "100",
+      "group": "Numbers",
+      "sources": "Latin centum → French cent, Spanish cien, Italian cento; Russian sto, Sanskrit śatam, Hindi sau, Persian sad"
+    },
+    {
+      "word": "mila",
+      "meaning": "1000",
+      "group": "Numbers",
+      "sources": "Latin mille → Spanish mil, Italian mila, French mille, Turkish milyon"
+    }
+  ]
 }

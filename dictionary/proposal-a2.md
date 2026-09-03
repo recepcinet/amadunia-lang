@@ -20,13 +20,13 @@ Root length, measured across all 300:
 
 | Family | 2-3 letters | 4 | 5+ | Average |
 |---|---|---|---|---|
-| Austronesian | 6 | 23 | 79 | 5.1 |
+| Austronesian | 7 | 24 | 81 | 5.0 |
 | Semitic | 1 | 13 | 54 | 5.0 |
-| Turkic | 6 | 21 | 59 | 4.9 |
-| Indo-Aryan | 14 | 18 | 49 | 4.5 |
-| Latin/Romance | 22 | 19 | 44 | 4.4 |
-| **Sino-Tibetan** | **6** | **5** | **0** | **3.2** |
-| Japonic | 1 | 4 | 1 | 4.0 |
+| Turkic | 7 | 22 | 61 | 4.8 |
+| Indo-Aryan | 15 | 18 | 50 | 4.5 |
+| Latin/Romance | 23 | 20 | 46 | 4.4 |
+| **Sino-Tibetan** | **7** | **5** | **0** | **3.2** |
+| Japonic | 3 | 4 | 1 | 3.6 |
 
 Sino-Tibetan is the only family in the dictionary with no root of five letters
 or more. But modern Mandarin vocabulary is overwhelmingly two syllables, and
@@ -44,10 +44,10 @@ If A2 is to fix the imbalance rather than inherit it, the cost is countable.
 
 | Family | Reach now | For 10% of 600 | Roots needed |
 |---|---|---|---|
-| Sino-Tibetan | 11 (3.7%) | 60 | **+49** |
-| Japonic | 6 (2.0%) | 60 | **+54** |
+| Sino-Tibetan | 12 (4.0%) | 60 | **+48** |
+| Japonic | 8 (2.7%) | 60 | **+52** |
 
-Together that is up to 103 of the 300 new roots — **a third of the entire A2
+Together that is up to 100 of the 300 new roots — **a third of the entire A2
 batch** — before a single word is chosen for what it means. The real figure is
 lower, because one word can reach several families at once and these count
 each separately, but the order of magnitude is right.
@@ -84,7 +84,7 @@ arranged into short sentences to avoid the first three, and
 
 ## What is measured and what is judgement
 
-Measured: the length table, the seven passing shapes, the +49 and +54, the
+Measured: the length table, the seven passing shapes, the +48 and +52, the
 four gaps and where they were found.
 
 Judgement, and the founder's: whether to set a family floor and where, whether

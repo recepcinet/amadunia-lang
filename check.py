@@ -458,6 +458,16 @@ for path in PROSE:
                   f"{os.path.basename(path)}: '{t}' joins two roots and is neither a "
                   f"number nor a plural — see grammar/word-formation.md: {sent}")
 
+# --------------------------------------------------- an etymology names a language
+# CONTRIBUTING rule 9: every root names its sources. Six did not — bai, foto,
+# hi, hotel, ok and taksi said only "already-global", which is a label, not a
+# source. The etymology check only tested that the field was non-empty, so a
+# word could claim global standing while naming nobody.
+for w in words:
+    check(re.search(r"\b[A-Z][a-z]{2,}\b", source[w]),
+          f"dictionary.md: '{w}' names no language in its sources ({source[w]}); "
+          f"'already-global' is a label, not an etymology")
+
 # ------------------------------------------------------------ no articles
 # Design rule 3 and grammar/definiteness.md: the language has no article. A
 # bare noun is neither definite nor indefinite. Nothing was holding the
@@ -610,12 +620,18 @@ FAMILY = {
 }
 EUROPEAN = {"Latin/Romance", "Germanic", "Slavic", "Greek"}
 
+# balance.md defines origin as "the family a root came from — the first source
+# its entry names". This used to walk FAMILY in the order that dict happens to
+# be written in and take the first family found anywhere in the entry, which is
+# not that: it made every root mentioning Latin a Latin root regardless of where
+# Latin appeared. It reported Latin/Romance at 29.7% — the reach figure — while
+# the page said 28.3% and the stated method gives 25.0%. Three numbers, no two
+# alike. Position in the entry is what decides now.
 origin = {}
 for w in words:
-    fams = []
-    for lang, fam in FAMILY.items():
-        if re.search(r"\b" + lang + r"\b", source[w]) and fam not in fams: fams.append(fam)
-    if fams: origin[w] = fams[0]
+    hits = [(m.start(), FAMILY[lang]) for lang in FAMILY
+            for m in re.finditer(r"\b" + lang + r"\b", source[w])]
+    if hits: origin[w] = min(hits)[1]
 euro = sum(1 for f in origin.values() if f in EUROPEAN)
 counts = {}
 for f in origin.values(): counts[f] = counts.get(f, 0) + 1
@@ -630,6 +646,27 @@ check(m and (int(m.group(1)), int(m.group(2)), int(m.group(3)))
           == (euro, len(words), round(100*euro/len(words))),
       f"balance.md's European figure is stale; recount gives {euro} of {len(words)}, "
       f"{round(100*euro/len(words))}%")
+# The whole table is regenerated and compared, not just the two headline
+# figures. Only those two were checked, and the table drifted underneath them:
+# the stored origin column could not be reproduced by the method this page
+# states, and nobody could have noticed.
+_reach = {}
+for w in words:
+    fams = {fam for lang, fam in FAMILY.items()
+            if re.search(r"\b" + lang + r"\b", source[w])}
+    for fam in fams: _reach[fam] = _reach.get(fam, 0) + 1
+_ocount = {}
+for f in origin.values(): _ocount[f] = _ocount.get(f, 0) + 1
+_want = ["| Family | Origin | | Reach | |"]
+for f, rc in sorted(_reach.items(), key=lambda kv: -kv[1]):
+    oc = _ocount.get(f, 0)
+    _want.append(f"| {f} | {oc} | {100*oc/len(words):.1f}% | {rc} | {100*rc/len(words):.1f}% |")
+_have = [l for l in bal.splitlines() if l.startswith("| ") and l.count("|") == 6]
+check(_have[:len(_want)] == _want,
+      "balance.md's family table has drifted from the dictionary — regenerate it"
+      + (f"\n    want: {_want[2] if len(_want) > 2 else ''}"
+         f"\n    have: {_have[2] if len(_have) > 2 else '(missing)'}"))
+
 m = re.search(r"\*\*By origin there is a largest bloc\.\*\* (\S+) is ([\d.]+)%", bal)
 check(m and m.group(1) == top[0] and abs(float(m.group(2)) - 100*top[1]/len(words)) < 0.05,
       f"balance.md's largest family is stale; recount gives {top[0]} at {100*top[1]/len(words):.1f}%")

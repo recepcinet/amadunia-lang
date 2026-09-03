@@ -1,10 +1,10 @@
 word,meaning,group,sources
-bai,goodbye,Greetings and basics,already-global
+bai,goodbye,Greetings and basics,"English bye — borrowed as Mandarin 拜拜 bàibài, Japanese baibai, Hindi/Urdu bāy, Indonesian bai — already-global"
 bas,"enough, stop",Greetings and basics,"Hindi/Urdu bas, Persian bas, Swahili basi, Turkish bas"
-hi,hello,Greetings and basics,already-global
+hi,hello,Greetings and basics,"English hi — travels with English into casual speech nearly everywhere, and the shape never changes — already-global"
 mersi,thank you,Greetings and basics,"French merci — adopted in Persian, Turkish, Romanian, Bulgarian, Greek, Egyptian Arabic"
 no,"no; not — before the predicate, see grammar/negation.md",Greetings and basics,"the na/ne root: Spanish/Italian no, English no/not, Latin non, Russian ne, Polish nie, Sanskrit/Hindi na, Persian na-"
-ok,ok,Greetings and basics,already-global
+ok,ok,Greetings and basics,"English OK — Japanese ōkē, Korean okei, Turkish okey, Russian okey, Spanish/Portuguese ok; among the most widely borrowed words on Earth — already-global"
 pardon,"sorry, excuse me",Greetings and basics,"French pardon — adopted in Turkish, Russian, Persian, Arabic dialects; Spanish perdón"
 plis,please,Greetings and basics,"English please, already-global"
 salam,peaceful greeting,Greetings and basics,"Arabic, Hebrew, Persian, Turkish, Urdu, Swahili"
@@ -281,11 +281,11 @@ o,or,Grammar particles,"Spanish/Italian o, Portuguese ou, Latin aut — the lang
 saufa,future marker (before the verb),Grammar particles,Arabic sawfa (سوف)
 suda,past marker (before the verb),Grammar particles,Indonesian/Malay sudah
 doktor,doctor,Already-global loans,"Turkish, Russian, Indonesian, Hindi, Swahili daktari"
-foto,photo,Already-global loans,already-global
-hotel,hotel,Already-global loans,already-global
+foto,photo,Already-global loans,"Greek phōs, phōtos (light) via photograph — the clipped foto is ordinary in German, Dutch, Spanish, Portuguese, Italian, Polish, Turkish, Indonesian, Russian foto — already-global"
+hotel,hotel,Already-global loans,"French hôtel — English hotel, Spanish/Portuguese hotel, Indonesian hotel, Turkish otel, Russian otel, Hindi hoṭal — already-global"
 libro,book,Already-global loans,"Spanish/Italian libro, Portuguese livro, French livre — global through library"
 musik,music,Already-global loans,"already-global — German Musik, Turkish müzik, Russian muzyka, Indonesian musik, Arabic mūsīqā, Swahili muziki"
-taksi,taxi,Already-global loans,already-global
+taksi,taxi,Already-global loans,"French taxi, from taximètre — Turkish taksi, Indonesian taksi, Russian taksi, Swahili teksi — already-global"
 telefon,telephone,Already-global loans,"already-global — Turkish, German, Russian, Polish, Indonesian telepon, Arabic tilifūn"
 uan,1,Numbers,"Latin ūnus → Spanish/Italian uno, French un, Portuguese um; English one"
 du,2,Numbers,"Latin duo, Greek dýo, Russian dva, Hindi/Urdu do, Persian do, Welsh dau — global through duo, dual"

@@ -136,8 +136,8 @@ at once.
 | Japonic | 4 | 1.3% | 6 | 2.0% |
 | Iranian | 2 | 0.7% | 36 | 12.0% |
 
-**European roots are 37% of the dictionary**, against Esperanto's ~95%. By
-reach, nothing exceeds 36%. The thin spot is real and named rather than hidden:
+**European roots are 34% of the dictionary**, against Esperanto's ~95% — both
+counted the same way, by where a root came from. By reach, nothing exceeds 38%. The thin spot is real and named rather than hidden:
 Sino-Tibetan and Japonic sit at 2.7% and 1.3%. That was recorded as structural
 — their words are short, and the short space is full — and the explanation
 turned out to be wrong: modern Chinese and Japanese words are mostly two
