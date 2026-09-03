@@ -187,6 +187,12 @@ for path in sorted(glob.glob("lessons/*.md") + glob.glob("texts/*.md") + ["phras
             check(not (w in ("ini", "itu") and nxt in PRONOUNS),
                   f"{os.path.basename(path)}: '{w} {nxt}' — the owner goes before ini/itu: {sent}")
 
+# ------------------------------------------------------------------- README
+# The front page states the root count by hand; it must match the dictionary.
+m = re.search(r"\*\*(\d+) roots\*\*", read("README.md"))
+check(m and int(m.group(1)) == len(words),
+      f"README.md says {m.group(1) if m else '?'} roots; the dictionary has {len(words)}")
+
 # -------------------------------------------------------------------- links
 for f in md():
     for m in re.finditer(r"\]\(([^)#]+?)(?:#[^)]*)?\)", read(f)):
