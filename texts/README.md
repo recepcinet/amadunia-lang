@@ -8,8 +8,9 @@ Every text here is written using **only** the roots in the [dictionary](../dicti
 the seventeen rules that can be spotted in a sentence — tense, plural,
 possession, the copula, existence, negation, conjunction, questions,
 demonstratives, place, *una*, verb chains, comparison, subordination, adverbs,
-commands, numbers — appears in at least one of these ten texts. Two are thin:
-commands are in two texts and the adverb rule in one. That is the rule the
+commands, numbers — appears in at least one of these eleven texts. One is thin: commands are in
+two. The adverb rule was in one until [text 11](text-11-anak-katab.md) was
+written for it, and uses it eleven times in eighteen sentences. That is the rule the
 lessons introduced six lessons after they started using it, and it is still the
 least exercised thing in the language.
 
@@ -36,3 +37,4 @@ These are original compositions, not translations. Translating an existing book 
 | [Kaifa suru ca](text-8-kaifa-suru-ca.md) | 19 | 300 roots, Lessons 1-23 — instructions, written without the imperative the language lacks |
 | [Pagi in madina](text-9-pagi-in-madina.md) | 56 | 300 roots, Lessons 1-23 — an errand, written from the frequency list to reach the tail |
 | [Mila tahun](text-10-mila-tahun.md) | 37 | 300 roots, Lessons 1-23 — an argument, for the abstract words a scene cannot reach |
+| [Anak katab](text-11-anak-katab.md) | 31 | 300 roots, Lessons 1-23 — a portrait, written for the least-exercised rule |

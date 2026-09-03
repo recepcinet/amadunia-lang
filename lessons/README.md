@@ -36,7 +36,7 @@ Between them the lessons teach every one of the 300 roots. [`check.py`](../check
 
 ## After the lessons
 
-Read the [texts](../texts/) — ten pieces written in Amadunia with nothing invented to make them work: four stories, two arguments, a dialogue, a poem, a letter and a recipe. Each ends with what the language could not say.
+Read the [texts](../texts/) — eleven pieces written in Amadunia with nothing invented to make them work: five stories, two arguments, a dialogue, a poem, a letter and a recipe. Each ends with what the language could not say.
 
 The [phrasebook](../phrasebook.md) is the practical page. The [grammar files](../grammar/) give the reasoning behind every rule, including the candidates that were rejected and why.
 

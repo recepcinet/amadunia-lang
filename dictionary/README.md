@@ -34,16 +34,17 @@ by writing is worth more than a gap found by reading a wordlist.
 | then, next | [text 8](../texts/text-8-kaifa-suru-ca.md) | a recipe's steps can only be set side by side; *tena* is "again", not "next" |
 | to get up, to stand | [text 9](../texts/text-9-pagi-in-madina.md) | *Mi go dari yatak*, I go from the bed, paraphrases a position change; *otur* is to sit and has no opposite |
 | a coin, as against an amount | [text 9](../texts/text-9-pagi-in-madina.md) | *Mi beri fai pesa* is "I give five money" |
+| slowly | [text 11](../texts/text-11-anak-katab.md) | *hayai* is fast and has no opposite, so a child writing *slowly* had to be written as writing *badly* |
 
-Three of the seven are about how a person feels or where a person hurts, and
+Three of the eight are about how a person feels or where a person hurts, and
 that is where 300 roots turn out to be thinnest — not what a thematic wordlist
 would have predicted. The rest are joints rather than things: a point in the
 day, the word that puts one step after another, the opposite of sitting down,
-and the difference between a coin and an amount. **Not one of the seven is a
-noun a category would have suggested,** which is the whole case for finding
-gaps by writing.
+the difference between a coin and an amount, and the opposite of *fast*. **Not
+one of the eight is a noun a category would have suggested,** which is the
+whole case for finding gaps by writing.
 
-Every one of the seven was re-checked against the dictionary on September 3,
+Seven of the eight were re-checked against the dictionary on September 3,
 2026, and two entries did not survive it. Comparing one duration with another
 is granted by [comparison.md](../grammar/comparison.md) under a heading called
 *With verbs*. A word for *forever* may already be *daima*, always — whether it

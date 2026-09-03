@@ -22,6 +22,12 @@ import ast, io, os, re, shutil, subprocess, sys, tempfile
 # mutations read it instead of hard-coding it. They went stale twice in one week
 # and the harness reported NOT APPLIED both times, which is correct but is work
 # nobody needs to do again.
+# The frequency curve moves whenever a text is added, so this mutation reads the
+# row instead of naming it. It went stale three times before that was worth doing.
+_CURVE = re.search(r"\| first 25 \| (\d+)% \|",
+                   io.open("dictionary/frequency.md", encoding="utf-8").read()).group(0)
+_CURVE_OFF = re.sub(r"(\d+)%", lambda m: f"{int(m.group(1)) + 3}%", _CURVE)
+
 _LIVE = int(re.search(r"## Open questions — (\d+) of them",
                       io.open("grammar/README.md", encoding="utf-8").read()).group(1))
 _WORDS = {25: "Twenty-five", 26: "Twenty-six", 27: "Twenty-seven", 28: "Twenty-eight",
@@ -116,8 +122,8 @@ MUTATIONS = [
      "| Udara barid in rat. | The air is cold at night. |\n| Mi kula pan in dom. | I eat bread at home. |",
      "frequency.md's total is stale"),
     ("frequency curve edited by hand", "dictionary/frequency.md",
-     "| first 25 | 52% |", "| first 25 | 55% |",
-     "contradicts the row '| first 25 | 52% |'"),
+     _CURVE, _CURVE_OFF,
+     f"contradicts the row '{_CURVE}'"),
     ("a rule page with no lesson", "grammar/comparison.md",
      "*Taught in [Lesson 18](../lessons/lesson-18-comparing-and-joining.md).*\n\n", "",
      "does not say which lesson teaches it"),
