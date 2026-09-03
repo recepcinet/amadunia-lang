@@ -169,6 +169,13 @@ live = 0
 for p in sorted(glob.glob("grammar/*.md")):
     if p.endswith("README.md"): continue
     body = read(p)
+    # A rule file must carry the section even when it is empty. Skipping it
+    # silently meant that losing it dropped the count and the failure was
+    # reported against grammar/README.md — the one file that had not changed.
+    if not os.path.basename(p).startswith("proposal-"):
+        check("## Open questions" in body,
+              f"{os.path.basename(p)}: no '## Open questions' section — a rule "
+              f"records what it left open, even if that is nothing")
     if "## Open questions" not in body: continue
     live += sum(1 for l in body.split("## Open questions")[1].splitlines()
                 if l.startswith("- ") and not l.startswith("- ~~"))
