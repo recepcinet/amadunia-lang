@@ -8,4 +8,6 @@ These are original compositions, not translations. Translating an existing book 
 
 | Text | Roots used | Written with |
 |---|---|---|
-| [Anak espera sol](story-1-anak-espera-sol.md) | 34 | 113-root dictionary, Lessons 1-13 grammar |
+| [Anak espera sol](story-1-anak-espera-sol.md) | 34 | 113 roots, Lessons 1-13 — a story |
+| [Safari por pahar](story-2-safari-por-pahar.md) | 76 | 300 roots, Lessons 1-22 — a story |
+| [Lingua ini](text-3-lingua-ini.md) | 43 | 300 roots, Lessons 1-23 — an argument, not a story |

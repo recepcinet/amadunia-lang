@@ -114,6 +114,7 @@ lessons/     Lessons 1-12: greetings, food, people, tense, plural, possession,
 
 - [texts/story-1-anak-espera-sol.md](texts/story-1-anak-espera-sol.md) — the first story written in Amadunia, at 113 roots
 - [texts/story-2-safari-por-pahar.md](texts/story-2-safari-por-pahar.md) — the second, at 300
+- [texts/text-3-lingua-ini.md](texts/text-3-lingua-ini.md) — the language explaining itself, in itself
 
 Each file marks what is settled and what is still open.
 
