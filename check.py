@@ -155,13 +155,20 @@ NUMBERS  = {"uan","du","tri","pat","fai","sis","seti","ba","nau","des","sen","mi
 QUANTITY = NUMBERS | {"cok","lebi","kurang","berapa"}
 PRONOUNS = {"mi","yu","ta","kita","mi-mi","yu-yu","ta-ta"}
 
-for path in sorted(glob.glob("lessons/*.md") + glob.glob("texts/*.md") + ["phrasebook.md"]):
+# grammar/ is included: the files that state the rules hold hundreds of example
+# sentences, and nothing was holding them to the rules they document.
+for path in sorted(glob.glob("lessons/*.md") + glob.glob("texts/*.md")
+                   + glob.glob("grammar/*.md") + ["phrasebook.md"]):
     if path.endswith("README.md"): continue
     body = read(path)
     if path.startswith("texts/") and "```" in body: body = body.split("```")[1]
     for line, sent, toks in amadunia_runs(body):
-        # Lessons show deliberately wrong sentences to teach the rule.
-        if any(x in line.lower() for x in ("wrong", "careful", "never")): continue
+        # Lessons show deliberately wrong sentences to teach a rule, and the
+        # grammar files table the candidates they rejected. Neither is a claim
+        # that the sentence is legal.
+        if any(x in line.lower() for x in
+               ("wrong", "careful", "never", "rejected", "reason", "cannot",
+                "not legal", "misrepresent", "✗", "would be", "would read")): continue
         for i, w in enumerate(toks[:-1]):
             nxt = toks[i+1]
 
