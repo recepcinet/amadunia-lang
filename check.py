@@ -498,8 +498,14 @@ check(not glossed_only,
 # reason it is allowed to stand while the class is undecided. See
 # grammar/verb-chains.md.
 #
-# Known limit: a comma-separated list of dictionary words satisfies this check
-# as if it were a sentence. That is how a list of the numbers written into
+# This check and the frequency count deliberately disagree about lists. Here a
+# one-word segment counts, because "Mersi." alone is a real use. In the
+# frequency count a word must sit inside a run of two or more, because a word
+# named in a list is not a word doing work — which is how legum stayed on the
+# once-only list after text 9 had, on paper, used it.
+#
+# Known limit of this one: a comma-separated list of dictionary words satisfies
+# it as if it were a sentence. That is how a list of the numbers written into
 # Lesson 05 briefly made ba count as shown without any sentence using it, and
 # how udara passed on "Akua, ates, udara, tanah" alone until it was given one.
 # Tightening it would cost the interjections — hi, ok, bai, mersi stand alone as

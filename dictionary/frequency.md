@@ -3,7 +3,7 @@
 Generated from the material a learner reads — the twenty-five lessons, the
 eight texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **4342 words of running Amadunia**, and every one of the 300 roots appears
+it. **4345 words of running Amadunia**, and every one of the 300 roots appears
 at least once.
 
 [`check.py`](../check.py) regenerates this page and fails if it disagrees, so
@@ -34,11 +34,11 @@ cover half of everything.** They are the first twenty-five below.
 | | Root | Meaning | Uses | Share |
 |---|---|---|---|---|
 | 1 | *mi* | I, me | 459 | 10.6% |
-| 2 | *yu* | you | 202 | 4.7% |
+| 2 | *yu* | you | 202 | 4.6% |
 | 3 | *ta* | he, she, it | 132 | 3.0% |
 | 4 | *es* | is, am, are | 112 | 2.6% |
 | 5 | *in* | at, in, on | 110 | 2.5% |
-| 6 | *ini* | this | 93 | 2.1% |
+| 6 | *ini* | this | 94 | 2.2% |
 | 7 | *dom* | house, home | 82 | 1.9% |
 | 8 | *anak* | child | 81 | 1.9% |
 | 9 | *suda* | past marker (before the verb) | 80 | 1.8% |
@@ -76,13 +76,14 @@ cover half of everything.** They are the first twenty-five below.
 
 ## Used exactly once
 
-20 roots appear in a single sentence in the whole corpus:
+19 roots appear in a single sentence in the whole corpus:
 
-*amani*, *arte*, *bai*, *bas*, *hi*, *historia*, *legis*, *legum*, *madad*, *mati*, *mersi*, *mila*, *natura*, *numero*, *ok*, *pardon*, *plis*, *proba*, *sansi*, *ya*
+*amani*, *arte*, *bai*, *bas*, *hi*, *historia*, *legis*, *madad*, *mati*, *mersi*, *mila*, *natura*, *numero*, *ok*, *pardon*, *plis*, *proba*, *sansi*, *ya*
 
 Being used once is not a fault — a word for *snow* will not turn up often in
 nine texts about tea, hospitals and errands. This list was 37 roots long until
 [text 9](../texts/text-9-pagi-in-madina.md) was written from it; eighteen of
-them now have a second sentence. Half of what is left are the interjections,
+them now have a second sentence, one of which needed a second attempt — a word
+alone between two commas is named, not used, and this page counts uses. Half of what is left are the interjections,
 which are used alone and cannot be used any other way, and *madad*, which is
 [held back on purpose](../grammar/verb-chains.md).

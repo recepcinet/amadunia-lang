@@ -28,7 +28,7 @@ Mi kirim surat in posta.
 Mi go banka. Mi ambil pesa.
 
 Mi kupi risi, legum, minyak aur namak in market.
-Mi beri fai pesa.
+Legum ini baru. Mi beri fai pesa.
 
 Grupo anak-anak suru oyun una bola in tarik.
 Mi lihat ta-ta. Mi senang.
@@ -56,6 +56,7 @@ Mi lai dom. Mi stop anda. Din finis.
 | Mi go banka. | I go to the bank. |
 | Mi ambil pesa. | I take money. |
 | Mi kupi risi, legum, minyak aur namak in market. | I buy rice, vegetables, oil and salt at the market. |
+| Legum ini baru. | These vegetables are fresh. |
 | Mi beri fai pesa. | I give five coins. |
 | Grupo anak-anak suru oyun una bola in tarik. | A group of children play a game with a ball in the road. |
 | Mi lihat ta-ta. | I watch them. |
@@ -66,9 +67,14 @@ Mi lai dom. Mi stop anda. Din finis.
 
 ## What the text found
 
-**The commonest words did not get commoner.** The point of writing from a
-frequency list is to reach the tail, and it worked: eighteen roots that had one
-use each now have two. But *mi* still opens thirteen of the twenty-one sentences,
+**Writing from a list is not the same as being counted.** Eighteen of the
+thirty-seven appear in this text, but the first draft moved only seventeen of
+them. *legum* sat alone between two commas — *risi, legum, minyak aur namak* —
+and the frequency measure counts a word only inside a run of two or more, so a
+word in the middle of a list is named rather than used. It has its own sentence
+now. The measure is right and the draft was wrong: a list is not a use.
+
+**The commonest words did not get commoner.** But *mi* still opens thirteen of the twenty-one sentences,
 because a first-person errand cannot avoid it. The distribution is a fact about
 the language, not about the material.
 
@@ -104,4 +110,4 @@ want one.
 
 ## Roots used
 
-54 of 300.
+56 of 300.
