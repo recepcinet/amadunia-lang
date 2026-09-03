@@ -58,21 +58,24 @@ calculation.
 
 ## 3. What the writing has asked for
 
-Four gaps were found by trying to write something and failing, not by reading
+Seven gaps were found by trying to write something and failing, not by reading
 a list. [They are recorded with the sentence that stopped in each case](README.md#words-the-writing-has-asked-for):
-pain, love as a noun, to miss someone, and the clock.
+pain, love as a noun, to miss someone, the clock, a word for *then*, standing
+up, and a coin as against an amount.
 
-Three of the four are about how a person feels or where a person hurts. No
+Three of the seven are about how a person feels or where a person hurts. No
 thematic wordlist predicted that, and it is the strongest evidence available
-about where 300 roots are actually thin.
+about where 300 roots are actually thin. Two more were claimed and withdrawn on
+checking, which is why the list is audited rather than appended to.
 
 ## 4. What A2 content is blocked on
 
-Five decisions are waiting, and lesson and text material for A2 will hit all
-of them immediately:
+Three decisions are waiting, and lesson and text material for A2 will hit them
+immediately. Two more were settled on September 3, 2026 and no longer block
+anything:
 
-- **stress** — blocks every spoken word ([briefing](../grammar/proposal-stress.md))
-- **the imperative** — a recipe, a direction, a doctor's instruction ([briefing](../grammar/proposal-sentence-types.md))
+- ~~stress~~ — [settled](../grammar/stress.md): the second-to-last syllable
+- ~~the imperative~~ — [settled](../grammar/sentence-types.md): a verb with no subject
 - **a mark for a name** ([briefing](../grammar/proposal-names.md))
 - **"want to be" plus an adjective** ([briefing](../grammar/proposal-modal-adjective.md))
 - ***rabota*'s class** — one word, nineteen sentences ([the open question](../grammar/verb-chains.md))
@@ -88,6 +91,8 @@ A1 is a level about concrete life — food, clothes, the body, the house, the
 weather, shopping, health. Counted by the dictionary's own thematic groups,
 this one is not shaped like that.
 
+| Theme | Roots |
+|---|---|
 | Qualities and ideas | 64 |
 | Actions | 51 |
 | Home and world | 28 |
