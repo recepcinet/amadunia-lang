@@ -12,6 +12,7 @@ Seventeen rules and four briefings, one decision each. Every one records what wa
 | [tense](tense.md) | *suda* past, *saufa* future, present unmarked — before the verb. The verb never changes. |
 | [plural](plural.md) | Say the noun twice. Single after a number. The unmarked noun is neutral. |
 | [possession](possession.md) | The owner follows the thing owned, with nothing added. Owner before adjective. |
+| [definiteness](definiteness.md) | No articles. A bare noun is neither *a* nor *the*; context decides. |
 | [word-formation](word-formation.md) | Two roots join for a number or a plural, and for nothing else. No compound word exists. |
 | [questions](questions.md) | Rising tone for yes/no. The question word stays where the answer would go. |
 | [pronouns](pronouns.md) | Six forms. No case, no gender, no politeness. *mi-mi* excludes you, *kita* includes you. |
@@ -95,7 +96,7 @@ Two items are not grammar at all and sit outside this order: *madad* doing two
 jobs, and the thinness of Sino-Tibetan and Japonic recorded in
 [balance.md](../dictionary/balance.md). Both are vocabulary policy.
 
-## Open questions — 28 of them
+## Open questions — 29 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
@@ -172,6 +173,10 @@ Gathered from the files above so they can be read in one place. Each is recorded
 
 - Whether *suda* also covers the perfect ("I have eaten") or whether that needs its own marker.
 - Whether a habitual ("I eat every day") ever needs marking, or whether the unmarked present carries it.
+
+**[definiteness](definiteness.md)**
+
+- **Is anything needed when context does not settle it?** *Mi kan dom* is both "I see a house" and "I see the house". *ini*, an owner and a number each force it, and each says more than "definite".
 
 **[word-formation](word-formation.md)**
 

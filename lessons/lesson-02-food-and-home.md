@@ -39,6 +39,8 @@ Subject, then verb, then object. Every sentence below uses that same shape — n
 
 Notice what did *not* happen: the verb never changed. *Mi kula*, *yu kula*, *ta kula*, *kita kula* — one form, always.
 
+Notice something else missing. There is no word for *a* and none for *the*. *pan* is *bread*, *a bread* or *the bread*, and which one it is comes from the situation, the way it does in Russian, Turkish, Hindi, Indonesian, Chinese and Swahili. You will see the same noun translated both ways throughout this course. That is not sloppiness — it is [the rule](../grammar/definiteness.md).
+
 ## Asking
 
 Lesson 1 asked a question by tone alone: *Ok?* The same works with a full sentence.

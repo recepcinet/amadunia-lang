@@ -110,7 +110,7 @@ Design rules:
 
 1. **Zero exceptions** — every rule works everywhere
 2. **Written as spoken** — one letter, one sound
-3. **No conjugation, no gender, no articles** — grammar you can learn in a day
+3. **No conjugation, no gender, [no articles](grammar/definiteness.md)** — grammar you can learn in a day
 4. **Global balance** — no language family dominates
 5. **Already-global words stay** — *hi*, *ok*, *taksi*, *foto*... free vocabulary
 
@@ -194,7 +194,7 @@ negation, conjunction, demonstratives, place, verb chains, comparison,
 subordination and adverbs are settled — seventeen rules, each recorded with its
 reasoning and with the candidates it rejected.
 
-**[Twenty-eight questions are still open](grammar/README.md)**, gathered on one
+**[Twenty-nine questions are still open](grammar/README.md)**, gathered on one
 page with what each one blocks. Four of them were not left open on purpose: the
 imperative, a mark for a name, how *r* is made, and "want to be" followed by an
 adjective are all things the language had been using that no rule ever granted.

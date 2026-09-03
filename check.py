@@ -458,6 +458,18 @@ for path in PROSE:
                   f"{os.path.basename(path)}: '{t}' joins two roots and is neither a "
                   f"number nor a plural — see grammar/word-formation.md: {sent}")
 
+# ------------------------------------------------------------ no articles
+# Design rule 3 and grammar/definiteness.md: the language has no article. A
+# bare noun is neither definite nor indefinite. Nothing was holding the
+# dictionary to that, and an article is the kind of word that arrives quietly,
+# glossed as "the" beside something else.
+for w in words:
+    g = meaning[w].split("—")[0].lower()
+    parts = {p.strip() for p in re.split(r"[;,]", g)}
+    check(not (parts & {"the", "a", "an"}),
+          f"dictionary.md: '{w}' is glossed as an article ({meaning[w]}); "
+          f"the language has none — see grammar/definiteness.md")
+
 # ------------------------------------------------------------ root in use
 # Being taught is not the same as being used. Five roots — kulit, yanlis,
 # foto, ba, nau — sat in a "New words" table and then appeared in no sentence
