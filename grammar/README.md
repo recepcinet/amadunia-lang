@@ -24,6 +24,12 @@ Sixteen files, one decision each. Every one records what was settled, why, which
 | [subordination](subordination.md) | A clause needs no marker. *porke* because, *kab* when, *agar* if. |
 | [adverbs](adverbs.md) | An adjective straight after the verb describes the verb, before the object. |
 
+### Not a rule
+
+| | |
+|---|---|
+| [proposal-stress.md](proposal-stress.md) | A briefing for the decision the open questions put first. Nothing in it is adopted. |
+
 **The full order of a sentence:**
 
 > subject → *no* → *suda/saufa* → verb → adverb → object → place → time → clause
@@ -70,7 +76,7 @@ Two items are not grammar at all and sit outside this order: *madad* doing two
 jobs, and the thinness of Sino-Tibetan and Japonic recorded in
 [balance.md](../dictionary/balance.md). Both are vocabulary policy.
 
-## Open questions — 25 of them
+## Open questions — 26 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
@@ -105,7 +111,8 @@ Gathered from the files above so they can be read in one place. Each is recorded
 
 **[phonology](phonology.md)**
 
-- Whether stress is fixed (and if so, on which syllable) is not yet decided.
+- **Whether a vowel pair is one syllable or two.** Is *dunia* two syllables or three, *akua* two or three? This affects 28 of the 300 roots — every one containing *ai, ao, au, ia* or *ua* — and it has to be settled before stress can be, because "the second-to-last syllable" means nothing until a syllable is defined. Recorded September 3, 2026 while preparing [the stress briefing](proposal-stress.md).
+- Whether stress is fixed (and if so, on which syllable) is not yet decided. See [proposal-stress.md](proposal-stress.md).
 - Whether the two-consonant sequences above are the complete permitted set, or merely the ones used so far, is not yet decided.
 
 **[place](place.md)**
@@ -152,4 +159,4 @@ Gathered from the files above so they can be read in one place. Each is recorded
 
 Nothing on this list has been invented to make a lesson or a text work. When something was needed and undecided, the lesson said so.
 
-Four of them are different in kind — the imperative, the mark for a name, how *r* is made, and "want to be" plus an adjective. They were not left open on purpose. Each is something the language had been using or relying on that no rule ever granted, and all four were found the same way: by writing something that was not a lesson, or by checking the lessons against their own rules.
+Four of them are different in kind — the imperative, the mark for a name, how *r* is made, and "want to be" plus an adjective. They were not left open on purpose. Each is something the language had been using or relying on that no rule ever granted, and all four were found by writing something that was not a lesson.
