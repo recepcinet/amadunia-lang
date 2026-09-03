@@ -78,7 +78,7 @@ Follow the commits to watch a language grow in real time.
 | [lessons/](lessons/) | 23 lessons in order, each assuming only the one before it |
 | [grammar/](grammar/) | 16 rules — what was settled, why, and what was rejected |
 | [dictionary/](dictionary/) | 300 roots with sourced etymologies, [the English index](dictionary/index-english.md) for writing, and [where they come from](dictionary/balance.md) |
-| [texts/](texts/) | four original pieces, each ending with what the language could not say |
+| [texts/](texts/) | five original pieces — two stories, an argument, a dialogue, a poem — each ending with what the language could not say |
 | [phrasebook.md](phrasebook.md) | the practical page — greeting, directions, buying, trouble |
 | [check.py](check.py) | every rule above, tested on every push |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | how to propose a word, and what has already been rejected |

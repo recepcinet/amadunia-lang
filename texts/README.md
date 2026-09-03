@@ -12,3 +12,4 @@ These are original compositions, not translations. Translating an existing book 
 | [Safari por pahar](story-2-safari-por-pahar.md) | 76 | 300 roots, Lessons 1-22 — a story |
 | [Lingua ini](text-3-lingua-ini.md) | 43 | 300 roots, Lessons 1-23 — an argument, not a story |
 | [In madina baru](text-4-in-madina-baru.md) | 63 | 300 roots, Lessons 1-23 — a dialogue |
+| [Uan](text-5-uan.md) | 21 | 300 roots, Lessons 1-23 — a poem |
