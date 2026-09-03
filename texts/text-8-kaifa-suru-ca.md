@@ -63,16 +63,30 @@ English cookbooks and are ordinary in spoken instruction. But it is the
 language's first genre that comes out visibly worse than the rest, and every
 line of this page is evidence for a decision that is already waiting.
 
-**A statement and a command look identical.** *Yu pone sukar* is "you put
-sugar" — a description of what you do, or an instruction to do it. Nothing
-distinguishes them, and in a recipe that ambiguity is the whole point of the
-text.
+**A statement and a command looked identical, and that is what the rule
+fixed.** When this was written, *Yu pone sukar* was "you put sugar" — a
+description of what you do, or an instruction to do it, with nothing to tell
+them apart, and in a recipe that ambiguity is the whole text. The rule settled
+it by making the subject the difference: *Yu pone sukar* is the statement,
+*Pone sukar* is the command. This paragraph is the argument that decided it and
+is left standing as one.
 
 ## Gaps
 
-**There is no imperative.** Eleven sites in one short page. See the briefing in
-[grammar/proposal-sentence-types.md](../grammar/proposal-sentence-types.md);
-the briefing counts seven sites, and these ten more than double it.
+**~~There is no imperative.~~ Granted on September 3, 2026,** and this page is
+what decided it: it more than doubled the count of places one was wanted, from
+seven to seventeen. [The rule](../grammar/sentence-types.md) — a verb with no
+subject is a command, no word added.
+
+The text is left exactly as written, because it is the record of what the
+absence cost. What its opening would now be:
+
+```
+Ambil akua. Pone akua in gelas.
+Pone gelas in ates. Espera.
+```
+
+Four sentences, four subjects gone.
 
 **There is no word for *then*.** The steps of a recipe are a sequence, and the
 language can only set them side by side. *tena* is "again", not "next". Nothing

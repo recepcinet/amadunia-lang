@@ -193,16 +193,17 @@ around 600 — and what those three hundred should be made of is measured in
 **The grammar needed for A2 is complete.** Phonology, pronunciation, numbers,
 tense, plurals, possession, questions, pronouns, the copula, existence,
 negation, conjunction, demonstratives, place, verb chains, comparison,
-subordination, adverbs and stress are settled — twenty rules, each recorded with its
+subordination, adverbs, stress and the sentence types are settled — twenty-one rules, each recorded with its
 reasoning and with the candidates it rejected.
 
-**[Thirty-one questions are still open](grammar/README.md)**, gathered on one
+**[Thirty-two questions are still open](grammar/README.md)**, gathered on one
 page, ordered by [what the writing has actually asked for](grammar/README.md) —
 the imperative leads with three pages that tried and stopped, and six questions
 have never been reached for at all. Four of them were not left open on purpose:
-the imperative, a mark for a name, how *r* is made, and "want to be" followed by
-an adjective are all things the language had been using that no rule ever
-granted.
+a mark for a name, how *r* is made, and "want to be" followed by an adjective
+are things the language had been using that no rule ever granted. A fourth, the
+imperative, was granted on September 3, 2026 — it led that list with three pages
+that had tried and stopped.
 Each was found by writing something that was not a lesson — which is what the
 texts are for.
 

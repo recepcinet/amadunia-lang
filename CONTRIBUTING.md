@@ -6,7 +6,7 @@ Two kinds of contribution are possible, and they work differently.
 [`check.py`](check.py) will tell you which one before a human has to.
 
 **Answering an open question** is a language decision. There are
-[31 of them](grammar/README.md), and each is the founder's call — but a good
+[32 of them](grammar/README.md), and each is the founder's call — but a good
 proposal makes the call easy.
 
 ---
@@ -97,10 +97,11 @@ it. That is the part worth arguing about in an Issue.
 
 ## Answering an open question
 
-The [31 open questions](grammar/README.md) are gathered in one place. Four of
-them are not gaps left on purpose but holes found later — the imperative, the
-mark for a name, how `r` is made, and "want to be" plus an adjective. Those are
-the most useful to answer.
+The [32 open questions](grammar/README.md) are gathered in one place. Four of
+them were not gaps left on purpose but holes found later — the imperative, the
+mark for a name, how `r` is made, and "want to be" plus an adjective. The
+imperative was settled on September 3, 2026; the other three are the most
+useful to answer.
 
 A proposal that is easy to accept looks like the files in [grammar/](grammar/):
 

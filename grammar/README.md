@@ -1,6 +1,6 @@
 # Grammar
 
-Twenty rules and four briefings, one decision each. Three of the briefings are still open; [stress](proposal-stress.md) was decided on September 3, 2026. Every one records what was settled, why, which candidates were rejected and on what ground, and what it left open.
+Twenty-one rules and four briefings, one decision each. Two of the briefings are still open; [stress](proposal-stress.md) and [the imperative and the fragment](proposal-sentence-types.md) were decided on September 3, 2026. Every one records what was settled, why, which candidates were rejected and on what ground, and what it left open.
 
 ## The rules
 
@@ -8,6 +8,7 @@ Twenty rules and four briefings, one decision each. Three of the briefings are s
 |---|---|
 | [phonology](phonology.md) | Twenty letters, one sound each. No digraph, no diacritic. At most two consonants in a row, never three vowels, and no two roots a single sound apart. |
 | [stress](stress.md) | The second-to-last syllable of every word. A vowel pair is one syllable. |
+| [sentence-types](sentence-types.md) | A verb with no subject is a command. Any constituent may stand alone. |
 | [pronunciation](pronunciation.md) | What each of the twenty letters sounds like. *g* never softens; *s* never voices. |
 | [numbers](numbers.md) | Eleven words count to a hundred. No irregular number anywhere. |
 | [tense](tense.md) | *suda* past, *saufa* future, present unmarked — before the verb. The verb never changes. |
@@ -32,7 +33,7 @@ Twenty rules and four briefings, one decision each. Three of the briefings are s
 | | |
 |---|---|
 | [proposal-stress.md](proposal-stress.md) | The briefing the open questions put first. **Decided September 3, 2026** — the rule is [stress.md](stress.md); this is the record of what it was decided on. |
-| [proposal-sentence-types.md](proposal-sentence-types.md) | The imperative and the fragment — both already in use, neither ever granted. |
+| [proposal-sentence-types.md](proposal-sentence-types.md) | The imperative and the fragment. **Decided September 3, 2026** — the rules are [sentence-types.md](sentence-types.md). |
 | [proposal-names.md](proposal-names.md) | Marking a name. Thirty-six sentences are ambiguous today, and capital letters cannot be spoken. |
 | [proposal-modal-adjective.md](proposal-modal-adjective.md) | "Want to be" plus an adjective — the smallest of the four, and the language already contains the shape that fixes it. |
 
@@ -61,11 +62,11 @@ These were not left open on purpose. Each is a form the material relies on that
 no rule ever granted, and each was found by writing something that was not a
 lesson:
 
-- **The imperative.** Bare verbs have been commands since Lesson 10, and half
-  the [phrasebook](../phrasebook.md)'s directions are commands. No rule says
-  they may be.
-- **Fragments.** Almost every phrasebook line is one, and three turns of
-  [the dialogue](../texts/text-4-in-madina-baru.md) are a single word.
+- ~~**The imperative.**~~ **Settled September 3, 2026** — a verb with no
+  subject is a command. [The rule](sentence-types.md). Fourteen sentences had
+  been written that way since Lesson 10 and none needed changing.
+- ~~**Fragments.**~~ **Settled the same day** — any constituent may stand alone
+  as an utterance. Forty-four were already in use.
 - **A mark for a name.** *Sol es genc* is "Sol is young" and "the sun is young"
   alike; found by [the second story](../texts/story-2-safari-por-pahar.md).
 - **"Want to be" plus an adjective.** [Text 3](../texts/text-3-lingua-ini.md)
@@ -97,7 +98,7 @@ Two items are not grammar at all and sit outside this order: *madad* doing two
 jobs, and the thinness of Sino-Tibetan and Japonic recorded in
 [balance.md](../dictionary/balance.md). Both are vocabulary policy.
 
-## Open questions — 31 of them
+## Open questions — 32 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
@@ -112,7 +113,7 @@ phrasebook's list, or a lesson's note. Counted September 3, 2026.
 
 | Question | Pages that reached for it |
 |---|---|
-| the imperative | **3** — [phrasebook](../phrasebook.md), [text 6](../texts/text-6-seti-din.md), [text 8](../texts/text-8-kaifa-suru-ca.md) |
+| ~~the imperative~~ | settled September 3, 2026 — 3 pages had reached for it |
 | *although, before, after, until* | **2** — [text 7](../texts/text-7-surat-por-mama.md), [text 8](../texts/text-8-kaifa-suru-ca.md) |
 | ordinal numbers | 1 — [text 6](../texts/text-6-seti-din.md) |
 | a word for *then* | 1 — [text 8](../texts/text-8-kaifa-suru-ca.md) |
@@ -206,6 +207,10 @@ measurement with its method stated, to be re-run rather than trusted.
 - **Fragments.** *Ke?* *Harga?* *Ponte?* — a turn of one word is what conversation is mostly made of, and nothing covers it. Whether a fragment is a legal sentence, and how it is read, is undecided; the dialogue's fragments work by accident.
 - **Lesson 6 asked *Nama yu?*** with no question word. That is a yes/no-shaped question that context turns into "what is your name". The explicit form is *Nama yu es ke?* Both are allowed; whether the short form should be discouraged in teaching is open.
 
+**[sentence-types](sentence-types.md)**
+
+- **Whether a command can be softened or strengthened by grammar.** English has *do sit down* and *just go*; Amadunia has the voice, the exclamation mark and *plis*, and nothing else. Untested.
+
 **[stress](stress.md)**
 
 - **Whether the short grammar words reduce in speech.** The rule stresses every word, so *Mi ama dunia* has three stresses in three words. Most languages let *es, no, aur, in, dari, por* lean on the word beside them. A fact about how it is spoken, not how it is written.
@@ -234,4 +239,4 @@ measurement with its method stated, to be re-run rather than trusted.
 
 Nothing on this list has been invented to make a lesson or a text work. When something was needed and undecided, the lesson said so.
 
-Four of them are different in kind — the imperative, the mark for a name, how *r* is made, and "want to be" plus an adjective. They were not left open on purpose. Each is something the language had been using or relying on that no rule ever granted, and all four were found by writing something that was not a lesson.
+Four of them were different in kind — the imperative, the mark for a name, how *r* is made, and "want to be" plus an adjective; the imperative was settled on September 3, 2026 and three remain. They were not left open on purpose. Each is something the language had been using or relying on that no rule ever granted, and all four were found by writing something that was not a lesson.

@@ -1,11 +1,12 @@
 # Proposal: the imperative and the fragment
 
-**This is not a rule.** Nothing here has been adopted. It is the briefing for
-the two questions [the open questions](README.md) place second, after
-[stress](proposal-stress.md). They are put together because they are the same
-question asked twice: what counts as a sentence when it is not a statement.
+**Decided on September 3, 2026. Both rules are in
+[sentence-types.md](sentence-types.md):** a sentence that begins with a verb
+and has no subject is a command, and any constituent may stand alone as an
+utterance. This page is kept as the record of what the decision was made on.
 
-Both are already in use. Neither was ever granted.
+Both were already in use when it was written. Neither had ever been granted,
+and not one of the sentences counted below needed rewriting once they were.
 
 ## What is actually in use
 

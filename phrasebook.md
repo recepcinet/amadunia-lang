@@ -148,10 +148,13 @@ immediately:
 - **No word for "very".** *Thank you very much* and *this is very good* both had
   to lose the "very". *cok* means "much" and whether it can carry "very" is
   [undecided](grammar/adverbs.md).
-- **Almost every line is a fragment.** *Sasa.* *Besok.* *Corba, plis.* *Madad!*
-  That is what a phrasebook is, and [nothing in the grammar covers it](grammar/questions.md).
-- **Half the directions are commands** — *Anda tarik ini*, *Go yamin* — and the
-  [imperative was never granted](grammar/questions.md) either.
+- ~~**Almost every line is a fragment.**~~ *Sasa.* *Besok.* *Corba, plis.*
+  *Madad!* That is what a phrasebook is, and as of September 3, 2026
+  [the grammar covers it](grammar/sentence-types.md): any constituent may stand
+  alone as an utterance.
+- ~~**Half the directions are commands**~~ — *Anda tarik ini*, *Go yamin* — and
+  [they are now granted](grammar/sentence-types.md): a verb with no subject is
+  a command. Neither line changed; the rule caught up with them.
 - **The clock cannot be asked.** *Berapa hora* is "how many hours", not "what
   time"; the language has no word for a clock or an hour of the day.
 

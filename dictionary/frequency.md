@@ -3,7 +3,7 @@
 Generated from the material a learner reads — the twenty-five lessons, the
 eight texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **4414 words of running Amadunia**, and every one of the 300 roots appears
+it. **4430 words of running Amadunia**, and every one of the 300 roots appears
 at least once.
 
 [`check.py`](../check.py) regenerates this page and fails if it disagrees, so
@@ -36,42 +36,42 @@ cover half of everything.** They are the first twenty-five below.
 | 1 | *mi* | I, me | 460 | 10.4% |
 | 2 | *yu* | you | 203 | 4.6% |
 | 3 | *ta* | he, she, it | 132 | 3.0% |
-| 4 | *es* | is, am, are | 113 | 2.6% |
-| 5 | *in* | at, in, on | 113 | 2.6% |
+| 4 | *in* | at, in, on | 115 | 2.6% |
+| 5 | *es* | is, am, are | 113 | 2.6% |
 | 6 | *ini* | this | 94 | 2.1% |
 | 7 | *dom* | house, home | 83 | 1.9% |
 | 8 | *anak* | child | 81 | 1.8% |
 | 9 | *lai* | to come | 81 | 1.8% |
 | 10 | *suda* | past marker (before the verb) | 81 | 1.8% |
 | 11 | *mau* | to want | 79 | 1.8% |
-| 12 | *no* | no; not | 77 | 1.7% |
+| 12 | *no* | no; not | 78 | 1.8% |
 | 13 | *hao* | good | 70 | 1.6% |
 | 14 | *ca* | tea | 69 | 1.6% |
-| 15 | *go* | to go | 66 | 1.5% |
+| 15 | *go* | to go | 67 | 1.5% |
 | 16 | *aur* | and | 65 | 1.5% |
-| 17 | *kula* | to eat | 52 | 1.2% |
+| 17 | *kula* | to eat | 53 | 1.2% |
 | 18 | *rafiki* | friend | 52 | 1.2% |
 | 19 | *kita* | we, including you | 48 | 1.1% |
 | 20 | *kabir* | big | 46 | 1.0% |
 | 21 | *punya* | to have | 45 | 1.0% |
 | 22 | *sol* | sun | 45 | 1.0% |
 | 23 | *dari* | from | 43 | 1.0% |
-| 24 | *saufa* | future marker (before the verb) | 42 | 1.0% |
+| 24 | *saufa* | future marker (before the verb) | 42 | 0.9% |
 | 25 | *din* | day | 40 | 0.9% |
 | 26 | *doktor* | doctor | 37 | 0.8% |
 | 27 | *keci* | small | 36 | 0.8% |
 | 28 | *lebi* | more | 33 | 0.7% |
-| 29 | *itu* | that | 32 | 0.7% |
-| 30 | *pan* | bread, food | 32 | 0.7% |
-| 31 | *libro* | book | 31 | 0.7% |
-| 32 | *sema* | to say, to speak | 31 | 0.7% |
-| 33 | *akua* | water | 29 | 0.7% |
+| 29 | *pan* | bread, food | 33 | 0.7% |
+| 30 | *itu* | that | 32 | 0.7% |
+| 31 | *akua* | water | 31 | 0.7% |
+| 32 | *libro* | book | 31 | 0.7% |
+| 33 | *sema* | to say, to speak | 31 | 0.7% |
 | 34 | *garam* | hot | 29 | 0.7% |
 | 35 | *kan* | to see | 29 | 0.7% |
 | 36 | *por* | to, for | 29 | 0.7% |
 | 37 | *market* | market, shop | 28 | 0.6% |
 | 38 | *nama* | name | 28 | 0.6% |
-| 39 | *sini* | here | 27 | 0.6% |
+| 39 | *sini* | here | 28 | 0.6% |
 | 40 | *nali* | where | 26 | 0.6% |
 
 ## Used exactly once
