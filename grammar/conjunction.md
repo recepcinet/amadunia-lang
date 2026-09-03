@@ -1,5 +1,7 @@
 # Conjunction — saying "and"
 
+*Taught in [Lesson 14](../lessons/lesson-14-not-and.md).*
+
 *Status: settled — decided September 3, 2026. Reversible if the founder disagrees; see "Why this and not the alternatives" below.*
 
 ## The rule

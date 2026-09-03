@@ -1,5 +1,7 @@
 # The copula — saying "is"
 
+*The word is given in [Lesson 06](../lessons/lesson-06-possession.md); the rule is taught in [Lesson 11](../lessons/lesson-11-being.md), and [Lesson 12](../lessons/lesson-12-colors-directions.md) drills it with a deliberately wrong sentence.*
+
 *Status: settled — decided September 2, 2026. Reversible if the founder disagrees; see "Why this and not the alternatives" below.*
 
 ## The rule

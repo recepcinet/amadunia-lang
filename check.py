@@ -569,6 +569,19 @@ check(_m and int(_m.group(1)) == _blocked and int(_m.group(2)) == len(ADJECTIVES
       f"proposal-modal-adjective.md says {_m.group(1) if _m else '?'} blocked "
       f"combinations; three modals against {len(ADJECTIVES)} adjectives is {_blocked}")
 
+# ------------------------------------------- every rule says where it is taught
+# The lessons linked to grammar/ from the beginning; grammar/ never linked back.
+# All nineteen rule pages were orphaned in that direction — a reader on
+# copula.md had no way to reach the lesson that teaches it. A new rule page
+# should not be able to arrive orphaned either.
+for path in sorted(glob.glob("grammar/*.md")):
+    base = os.path.basename(path)
+    if base == "README.md" or base.startswith("proposal-"): continue
+    body = read(path)
+    check(re.search(r"\((?:\.\./)?lessons/lesson-\d\d[^)]*\)", body)
+          or "../README.md" in body,
+          f"{base}: does not say which lesson teaches it")
+
 # ------------------------------------------------------------ root in use
 # Being taught is not the same as being used. Five roots — kulit, yanlis,
 # foto, ba, nau — sat in a "New words" table and then appeared in no sentence

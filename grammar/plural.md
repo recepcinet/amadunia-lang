@@ -1,5 +1,7 @@
 # Plural
 
+*Taught in [Lesson 05](../lessons/lesson-05-plural.md).*
+
 *Status: settled — decided September 2, 2026. Reversible if the founder disagrees; see "Why this and not the alternatives" below.*
 
 ## The rule

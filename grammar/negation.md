@@ -1,5 +1,7 @@
 # Negation — saying "not"
 
+*First met in [Lesson 01](../lessons/lesson-01-greetings.md) as an answer; taught as a rule in [Lesson 14](../lessons/lesson-14-not-and.md).*
+
 *Status: settled — decided September 3, 2026. Reversible if the founder disagrees; see "Why this and not the alternatives" below.*
 
 ## The rule

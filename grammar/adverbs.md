@@ -1,5 +1,7 @@
 # Adverbs — how something is done
 
+*Taught in [Lesson 12](../lessons/lesson-12-colors-directions.md), and extended in [Lesson 18](../lessons/lesson-18-comparing-and-joining.md) for the case where the verb has an object.*
+
 *Status: settled — decided September 3, 2026.*
 
 ## The rule

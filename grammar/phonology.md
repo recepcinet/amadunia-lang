@@ -1,5 +1,7 @@
 # Phonology
 
+*Taught on [the front page](../README.md) and in [Lesson 01](../lessons/lesson-01-greetings.md).*
+
 *Status: settled.*
 
 ## Alphabet

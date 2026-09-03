@@ -1,5 +1,7 @@
 # Demonstratives — this and that
 
+*Taught in [Lesson 15](../lessons/lesson-15-pointing-placing.md).*
+
 *Status: settled — decided September 3, 2026.*
 
 ## The rule

@@ -1,5 +1,7 @@
 # Verb chains — want to, can, must
 
+*Taught in [Lesson 17](../lessons/lesson-17-wanting-and-able.md), after [Lesson 16](../lessons/lesson-16-school-and-time.md) found it missing.*
+
 *Status: settled — decided September 3, 2026.*
 
 ## The rule

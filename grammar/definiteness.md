@@ -1,5 +1,7 @@
 # Definiteness
 
+*Taught in [Lesson 02](../lessons/lesson-02-food-and-home.md), where the first noun is glossed both ways.*
+
 **Settled by design rule 3: there are no articles. A bare noun is neither
 definite nor indefinite, and context decides.**
 

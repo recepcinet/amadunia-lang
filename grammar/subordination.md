@@ -1,5 +1,7 @@
 # Subordination — that, because, if, when
 
+*Taught in [Lesson 18](../lessons/lesson-18-comparing-and-joining.md).*
+
 *Status: settled — decided September 3, 2026.*
 
 ## A clause can be an object. Nothing marks it.

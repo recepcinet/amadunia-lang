@@ -34,6 +34,10 @@ Nothing is added. Nothing inside the word changes. There is no word in Amadunia 
 
 ## When you already said how many
 
+The numbers are on [the front page](../README.md), and no lesson teaches them,
+because there is nothing to teach: eleven words with not one exception between
+them. This is where they are first used.
+
 If there is a number, do not double the noun. The number already told everyone.
 
 | Amadunia | English |

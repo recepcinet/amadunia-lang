@@ -1,5 +1,7 @@
 # Place and role — in, dari, por
 
+*Taught in [Lesson 15](../lessons/lesson-15-pointing-placing.md), after [Lesson 13](../lessons/lesson-13-weather-directions.md) found it missing.*
+
 *Status: settled — decided September 3, 2026.*
 
 ## Three small words

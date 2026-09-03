@@ -1,5 +1,7 @@
 # Word formation
 
+*The two joinings are taught in [Lesson 05](../lessons/lesson-05-plural.md) and on [the front page](../README.md); nothing else joins.*
+
 **Settled: two roots may be joined in exactly two ways, and both were settled
 elsewhere. There is no third way, and no compound word exists.**
 

@@ -1,5 +1,7 @@
 # Tense
 
+*Taught in [Lesson 04](../lessons/lesson-04-tense.md).*
+
 *Status: settled — decided September 2, 2026. Reversible if the founder disagrees; see "Why this and not the alternatives" below.*
 
 ## The rule

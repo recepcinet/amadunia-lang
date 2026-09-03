@@ -1,5 +1,7 @@
 # Comparison — bigger, biggest, as big as
 
+*Taught in [Lesson 18](../lessons/lesson-18-comparing-and-joining.md).*
+
 *Status: settled — decided September 3, 2026.*
 
 ## Three degree words, all before the adjective

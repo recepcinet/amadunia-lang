@@ -1,5 +1,7 @@
 # Pronunciation
 
+*Taught on [the front page](../README.md) and in [Lesson 01](../lessons/lesson-01-greetings.md).*
+
 *Status: written down September 3, 2026. Most of it was already decided and had never been said.*
 
 ## What this file fixes

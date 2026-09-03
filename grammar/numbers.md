@@ -1,5 +1,7 @@
 # Numbers
 
+*Taught on [the front page](../README.md) rather than in a lesson, because there is nothing to teach — eleven words and no exception. [Lesson 05](../lessons/lesson-05-plural.md) is where they are first used and now says where they came from. That arrangement is why six, eight and nine sat in no sentence in the whole course until [Lesson 21](../lessons/lesson-21-things-and-ideas.md) and [Lesson 24](../lessons/lesson-24-the-table-and-the-city.md) were given sentences for them.*
+
 *Status: settled for 1–10, 100.*
 
 ## Digits
