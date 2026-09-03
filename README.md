@@ -118,6 +118,7 @@ lessons/     23 lessons in order — see lessons/README.md
 - [texts/story-1-anak-espera-sol.md](texts/story-1-anak-espera-sol.md) — the first story written in Amadunia, at 113 roots
 - [texts/story-2-safari-por-pahar.md](texts/story-2-safari-por-pahar.md) — the second, at 300
 - [texts/text-3-lingua-ini.md](texts/text-3-lingua-ini.md) — the language explaining itself, in itself
+- [texts/text-4-in-madina-baru.md](texts/text-4-in-madina-baru.md) — a dialogue, which found two rules the lessons had used but never granted
 
 Each file marks what is settled and what is still open.
 
