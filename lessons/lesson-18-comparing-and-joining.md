@@ -82,7 +82,7 @@ Anywhere an object goes, a sentence can go. Nothing joins them:
 | Mi mau **yu kula**. | I want you to eat. |
 | Ta sema **dom mi kabir**. | She says my house is big. |
 
-There is no word for "that" and none is needed.
+There is no word for the "that" of *I think that…*, and none is needed. (*itu* is the demonstrative "that", as in *dom itu* — a different word.)
 
 ## Because, when, if
 

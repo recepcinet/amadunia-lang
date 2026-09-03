@@ -20,7 +20,7 @@
 | Ta lasim go skola. | She must go to school. |
 | Kita lasim funga libro. | We must close the book. |
 
-There is no word for "to". Nothing goes between the verbs, and neither verb changes.
+There is no word for the "to" of *to eat*. Nothing goes between the verbs, and neither verb changes. (*por* is the preposition "to, for", as in *por yu* — a different word doing a different job.)
 
 Until now you could only say *Mi mau pan* — "I want bread". Now you can want to **do** things.
 

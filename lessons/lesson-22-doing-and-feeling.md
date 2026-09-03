@@ -121,4 +121,6 @@ They are opposites and they behave the same:
 
 Twenty-two lessons, **255 roots**. Eight more verbs, the four elements, a dog and a horse, and the words for what a face and a voice are — enough to tell someone a story.
 
-**Still open:** *very*; *never*; *all, some, none*; ordinal numbers; and a word for *danger*, which the conversation above had to borrow English for. See the open questions in [grammar/](../grammar/).
+**Still open:** *very*; *never*; *all, some, none*; ordinal numbers. See the open questions in [grammar/](../grammar/).
+
+The word for *danger* that this lesson's conversation had to borrow English for arrived at the 300-root milestone: it is *bahaya*, taught in [Lesson 25](lesson-25-doing-and-being.md). The gap was found here and is closed.

@@ -274,6 +274,18 @@ for g in sorted(set(expected) & set(listed)):
     check(sorted(expected[g]) == listed[g],
           f"index-english.md maps '{g}' to {listed[g]}; the dictionary now gives {sorted(expected[g])}")
 
+# ------------------------------------------------------------- closed gaps
+# A lesson or text that says "No word for X" must still be right. Lesson 22
+# said the language had none for danger; bahaya arrived at the 300 milestone
+# and the note sat there for a day saying otherwise.
+for path in glob.glob("lessons/*.md") + glob.glob("texts/*.md") + ["phrasebook.md"]:
+    if path.endswith("README.md"): continue
+    for m in re.finditer(r'[Nn]o word for "([a-z ]+)"', read(path)):
+        term = m.group(1).strip()
+        check(term not in expected,
+              f"{os.path.basename(path)}: says there is no word for \"{term}\", "
+              f"but the dictionary now gives {', '.join(expected.get(term, []))}")
+
 # ------------------------------------------------------------------ balance
 # Design rule 4: no language family dominates. dictionary/balance.md states the
 # figures; they are recomputed here so the page cannot drift from the data.

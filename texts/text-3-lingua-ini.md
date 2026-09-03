@@ -80,7 +80,7 @@ Four new gaps, none of them small:
 
 2. **No name for any country or people.** The text wanted to say the words come from Chinese, Hindi, Arabic, Swahili. It could only say *dari dunia*, "from the world". Amadunia has no way to name a place on Earth.
 
-3. **No word for "letter".** *Twenty letters, one sound each* is on the front page of the project and is unsayable in the language it describes.
+3. **No word for a letter of the alphabet.** *Twenty letters, one sound each* is on the front page of the project and is unsayable in the language it describes. *surat* is a letter you post, which is a different thing.
 
 4. **No word for a part of speech** — no "verb", no "noun", no "word class". A language cannot yet teach itself.
 
