@@ -834,6 +834,44 @@ for path in md():
                   f"{path}: '{word}' does not build a number — {_bad_number(word)}")
 
 
+# --------------------------------------------------- the guarantee list
+# GUARANTEES.md lists every message this file can print, so a contributor can
+# see what will fail without reading the whole script. It is generated from
+# this file, so it is regenerated here and compared — a check added without
+# updating it is a check nobody outside this script knows about.
+import ast as _ast
+_lines = read("check.py").splitlines()
+_secs = [(_i + 1, re.sub(r"^#\s*-+\s*", "", _l).strip())
+         for _i, _l in enumerate(_lines) if _l.startswith("# ---")]
+def _section_of(line):
+    name = "the dictionary itself"
+    for _ln, _n in _secs:
+        if _ln < line: name = _n
+    return name
+_items = []
+for _n in _ast.walk(_ast.parse(read("check.py"))):
+    if isinstance(_n, _ast.Call) and getattr(_n.func, "id", "") == "check" and len(_n.args) > 1:
+        _m = _n.args[1]
+        _txt = "".join(_v.value if isinstance(_v, _ast.Constant) else "…"
+                       for _v in (_m.values if isinstance(_m, _ast.JoinedStr) else [_m]))
+        _items.append((_n.lineno, _section_of(_n.lineno), re.sub(r"\s+", " ", _txt).strip()))
+_items.sort()
+_grouped = defaultdict(list)
+_order = []
+for _, _s, _t in _items:
+    if _s not in _grouped: _order.append(_s)
+    _grouped[_s].append(_t)
+_want = "\n".join("### %s\n\n" % _s + "\n".join("- %s" % _t for _t in _grouped[_s])
+                  for _s in _order)
+_have = read("GUARANTEES.md")
+_between = _have.split("<!-- generated -->")[1].split("<!-- end generated -->")[0].strip() \
+           if "<!-- generated -->" in _have else ""
+check(_between == _want,
+      "GUARANTEES.md has drifted from check.py — regenerate it")
+check(f"**{len(_items)} guarantees** in **{len(_grouped)} groups**" in _have,
+      f"GUARANTEES.md's counts are stale; check.py has {len(_items)} guarantees "
+      f"in {len(_grouped)} groups")
+
 # ----------------------------------------------------------- tables render
 # A run of lines starting with "|" is a markdown table only if its second line
 # is a separator. Nothing checked that, and this file reads table rows happily

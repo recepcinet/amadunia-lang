@@ -241,7 +241,7 @@ Follow the commits to watch a language grow in real time.
 | [dictionary/](dictionary/) | 300 roots with sourced etymologies, [the English index](dictionary/index-english.md) for writing, and [where they come from](dictionary/balance.md) |
 | [texts/](texts/) | ten original pieces — four stories, two arguments, a dialogue, a poem, a letter, a recipe — each ending with what the language could not say |
 | [phrasebook.md](phrasebook.md) | the practical page — greeting, directions, buying, trouble |
-| [check.py](check.py) | every rule above, tested on every push |
+| [check.py](check.py) | every rule above, tested on every push — [and what it refuses](GUARANTEES.md), listed |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | how to propose a word, and what has already been rejected |
 
 Each directory has its own index. Every file in `grammar/` marks what it

@@ -76,7 +76,7 @@ The first audit read the glosses and missed the second one entirely.
 **9. A real, sourced etymology,** and from a family that is not already
 crowding the dictionary. Every root names its sources; none says "invented".
 
-**10. Run the checker.**
+**10. Run the checker.** [What it refuses](GUARANTEES.md) is listed in full, generated from the checker itself.
 
 ```
 python3 check.py
