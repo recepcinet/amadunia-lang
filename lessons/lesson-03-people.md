@@ -61,7 +61,7 @@ There is no separate word for *is*. *Dom kabir* is complete as it stands.
 1. Mi kan anak. — *I see a child.*
 2. Rafiki nomu ca. — *The friend drinks tea.*
 3. Doktor bil. — *The doctor knows.*
-4. Dom mi keci. — *My house is small.*
+4. Dom keci. — *The house is small.*
 5. Din kabir, rat keci. — *The day is long, the night is short.*
 
 ## What is still open

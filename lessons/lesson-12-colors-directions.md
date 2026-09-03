@@ -70,6 +70,10 @@ Two adjectives in a row? Put the owner first, then describe: *dom mi baru* — m
 
 ## Walking, fast
 
+An adjective placed straight after the verb describes the verb, not the noun.
+That is the whole rule — Amadunia has no separate class of adverbs and no
+ending to add, the way English adds *-ly*.
+
 | | |
 |---|---|
 | Mi anda market. | I walk to the market. |

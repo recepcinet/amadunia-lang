@@ -100,7 +100,10 @@ The joined part normally comes second. Put it first and a comma marks the break:
 
 ## How something is done
 
-An adjective straight after the verb describes the verb:
+You have been doing this since [Lesson 12](lesson-12-colors-directions.md):
+an adjective straight after the verb describes the verb. What is new here is
+where it goes when the verb has an object — the adjective still comes first,
+before the object.
 
 | | |
 |---|---|

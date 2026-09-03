@@ -67,10 +67,10 @@ Every verb in that story is in its one and only form. Not one of them changed fo
 > — Pardon, hotel nali?
 > — Situ. Yu-yu es familia?
 > — Ya, mi-mi es familia. Anak-anak mi-mi saufa lala.
-> — Ok. Hotel hao. Yu-yu saufa lala hao.
+> — Ok. Hotel hao. Yu-yu saufa lala.
 > — Mersi!
 
-*Excuse me, where is the hotel? — There. Are you a family? — Yes, we're a family. Our children will sleep. — Ok. The hotel is good. You'll sleep well. — Thanks!*
+*Excuse me, where is the hotel? — There. Are you a family? — Yes, we're a family. Our children will sleep. — Ok. The hotel is good. You'll sleep. — Thanks!*
 
 ## Practice
 

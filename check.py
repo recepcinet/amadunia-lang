@@ -349,6 +349,33 @@ for _grp, _rows in _rows_by_grp.items():
         check(not out, f"dictionary.md: the '{_grp}' group is not alphabetical: "
                        + ", ".join(out[:3]))
 
+# ----------------------------------------- grammar a lesson has not reached
+# Vocabulary order is checked. Grammar that introduces no new word was not,
+# which is how verb chains sat in three early lessons. The same scan, widened,
+# found two more: possession three lessons before Lesson 06 taught it, and the
+# adverb rule eight lessons before anything explained it — Lesson 18 introduced
+# that rule using the very sentence Lesson 12 had already shown without comment.
+FUNCTION = (GROUP["Grammar particles"] | GROUP["Prepositions"] | GROUP["Place"]
+            | GROUP["This and that"] | GROUP["Question words"] | NUMBERS | DEGREE
+            | {"no", "una", "cok", "daima", "kadang", "sasa", "tena"})
+NOUNS = set(words) - VERBS - ADJECTIVES - FUNCTION - {"mi", "yu", "ta", "kita"}
+ADVERBIAL = ADJECTIVES | {"cok"}
+for path in sorted(glob.glob("lessons/lesson-*.md")):
+    n = int(re.search(r"lesson-(\d\d)", path).group(1))
+    body = read(path).split("## What you can already say")[0]
+    for line, sent, toks in amadunia_runs(body):
+        if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗")): continue
+        base = [t.split("-")[0] for t in toks]
+        for a, b in zip(base, base[1:]):
+            if n < 6:
+                check(not (a in NOUNS and b in {"mi", "yu", "ta", "kita"}),
+                      f"{os.path.basename(path)}: '{a} {b}' — possession is taught "
+                      f"in Lesson 06: {sent}")
+            if n < 12:
+                check(not (a in VERBS and b in ADVERBIAL),
+                      f"{os.path.basename(path)}: '{a} {b}' — an adjective after the "
+                      f"verb is taught in Lesson 12: {sent}")
+
 # ------------------------------------------------------------ root in use
 # Being taught is not the same as being used. Five roots — kulit, yanlis,
 # foto, ba, nau — sat in a "New words" table and then appeared in no sentence
