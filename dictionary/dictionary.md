@@ -14,7 +14,7 @@
 | pardon | sorry, excuse me | French *pardon* — adopted in Turkish, Russian, Persian, Arabic dialects; Spanish *perdón* |
 | plis | please | English *please*, already-global |
 | salam | peaceful greeting | Arabic, Hebrew, Persian, Turkish, Urdu, Swahili |
-| ya | yes | — |
+| ya | yes | Indonesian/Malay *ya*, Javanese *ya*; German/Dutch/Swedish/Norwegian *ja* |
 | **People** | | |
 | anak | child | Indonesian/Malay *anak*, Tagalog *anak*, Javanese *anak* |
 | dugu | sibling — no gender | Swahili *ndugu* |
@@ -22,12 +22,12 @@
 | insan | person, human | Arabic *insān* — adopted in Turkish, Persian, Urdu, Indonesian, Swahili *insani* |
 | kisan | farmer | Hindi/Urdu *kisān*, Nepali *kisan*, Bengali *kisan* |
 | kita | we, including you — see [grammar/pronouns.md](../grammar/pronouns.md) | Indonesian, Malay, Tagalog |
-| mama | mother | — |
+| mama | mother | a nursery word shared across nearly every family on Earth: Mandarin *māma*, Swahili *mama*, Spanish *mamá*, Russian *mama*, Arabic *māmā*, Hindi *mā̃* |
 | mi | I, me | Spanish/Italian *mi*, English *me*, Swahili *mimi* |
 | mualim | teacher | Arabic *muʿallim* (معلم), Swahili *mwalimu*, Turkish *muallim*, Urdu *muallim*, Indonesian *muallim* |
 | nama | name | Sanskrit/Hindi *naam*, Indonesian *nama*, Japanese *namae*, English *name* |
 | nasab | relative, kin | Arabic *nasab* (lineage), Turkish *nesep*, Urdu/Hindi *nasab*, Swahili *nasaba* |
-| papa | father | — |
+| papa | father | the nursery pair of *mama*, as widespread: Mandarin *bàba*, Swahili *baba*, Turkish *baba*, Spanish *papá*, Hindi *pāpā*, Russian *papa* |
 | polisi | police | Greek *polis* → global: Swahili *polisi*, Indonesian *polisi*, Turkish *polis*, Russian *politsiya* |
 | rafiki | friend | Swahili *rafiki*, Arabic *rafīq*, Persian *rafiq* |
 | sofer | driver | French *chauffeur* → Turkish *şoför*, Russian *shofyor*, Indonesian *sopir*, Arabic *shufīr* |
@@ -262,7 +262,7 @@
 | lebi | more | Indonesian/Malay *lebih* |
 | legis | law | Latin *lēgis* — global through *legal*, *ley*, *legge*, *legislation* |
 | lingua | language | Latin *lingua* → Italian/Portuguese *lingua*, Spanish *lengua*, French *langue* — global through *linguistics*, *lingua franca* |
-| luma | light | — |
+| luma | light | Latin *lūmen* → Spanish *lumbre*, Italian/Portuguese *lume* — global through *luminous*, *illuminate* |
 | mal | bad | Latin *malus*, Spanish/French *mal*, already-global via *malaria* |
 | masal | story | Turkish *masal*, from Arabic *mathal*; Azeri *masal* |
 | mimpi | dream | Indonesian/Malay *mimpi* |
@@ -315,20 +315,20 @@
 | taksi | taxi | already-global |
 | telefon | telephone | already-global — Turkish, German, Russian, Polish, Indonesian *telepon*, Arabic *tilifūn* |
 | **Numbers** — in numerical order, not alphabetical | | |
-| uan | 1 | — |
-| du | 2 | — |
-| tri | 3 | — |
+| uan | 1 | Latin *ūnus* → Spanish/Italian *uno*, French *un*, Portuguese *um*; English *one* |
+| du | 2 | Latin *duo*, Greek *dýo*, Russian *dva*, Hindi/Urdu *do*, Persian *do*, Welsh *dau* — global through *duo*, *dual* |
+| tri | 3 | Latin *trēs*, Greek *treîs*, Sanskrit *tri*, Russian *tri*, Hindi *tīn* — global through *tri-* |
 | pat | 4 | Indonesian/Malay *empat*, Tagalog *apat*, Javanese *papat* |
-| fai | 5 | — |
-| sis | 6 | — |
-| seti | 7 | — |
+| fai | 5 | the Germanic five — English *five*, German *fünf*, Dutch *vijf*, Swedish *fem* — from the root that also gave Latin *quīnque* and Greek *pénte* |
+| sis | 6 | Latin *sex* → Spanish *seis*, French/English *six*, German *sechs*; Greek *héx*, Persian *shesh* |
+| seti | 7 | Latin *septem* → Spanish *siete*, Italian *sette*, French *sept*; Sanskrit *sapta*, Hindi *sāt*, Greek *heptá*, English *seven* |
 | ba | 8 | Chinese |
-| nau | 9 | — |
-| des | 10 | — |
-| sen | 100 | — |
+| nau | 9 | Hindi/Urdu *nau*, Bengali *noy*, Persian *noh* — the same root as Latin *novem*, German *neun*, English *nine* |
+| des | 10 | Hindi/Urdu *das*, Sanskrit *daśa*; Latin *decem* → Spanish *diez*, Italian *dieci*, French *dix*; Greek *déka* |
+| sen | 100 | Latin *centum* → French *cent*, Spanish *cien*, Italian *cento*; Russian *sto*, Sanskrit *śatam*, Hindi *sau*, Persian *sad* |
 | mila | 1000 | Latin *mille* → Spanish *mil*, Italian *mila*, French *mille*, Turkish *milyon* |
 
-**Not yet decided:** the etymologies marked — above. They are left blank on purpose rather than guessed at; see [the format note](README.md).
+**Every root is sourced.** The dictionary contains no blank etymology.
 
 ## Counting to a hundred
 

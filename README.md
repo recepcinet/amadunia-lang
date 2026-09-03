@@ -67,7 +67,8 @@ lessons/     Lessons 1-12: greetings, food, people, tense, plural, possession,
              questions, getting by, pronouns, a day, being, colours, weather,
              not and and, pointing and placing, school and time,
              wanting and being able, comparing and joining, home and nature,
-             colours and health, things and ideas, doing and feeling
+             colours and health, things and ideas, doing and feeling,
+             everything so far
 ```
 
 - [grammar/phonology.md](grammar/phonology.md) — alphabet, one letter one sound, syllable shape
@@ -109,6 +110,7 @@ lessons/     Lessons 1-12: greetings, food, people, tense, plural, possession,
 - [lessons/lesson-20-colours-and-health.md](lessons/lesson-20-colours-and-health.md) — Lesson 20: colours and health
 - [lessons/lesson-21-things-and-ideas.md](lessons/lesson-21-things-and-ideas.md) — Lesson 21: things and ideas
 - [lessons/lesson-22-doing-and-feeling.md](lessons/lesson-22-doing-and-feeling.md) — Lesson 22: doing and feeling
+- [lessons/lesson-23-everything-so-far.md](lessons/lesson-23-everything-so-far.md) — Lesson 23: everything so far
 
 - [texts/story-1-anak-espera-sol.md](texts/story-1-anak-espera-sol.md) — the first story written in Amadunia, at 113 roots
 - [texts/story-2-safari-por-pahar.md](texts/story-2-safari-por-pahar.md) — the second, at 300
