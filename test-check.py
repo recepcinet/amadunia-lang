@@ -133,9 +133,13 @@ MUTATIONS = [
      "> — Ya! Mi mau pan o ca.",
      "> — Ya! Mi mau kupi pan o ca.",
      "verb chain 'mau kupi' predates Lesson 17"),
+    # nau was the target here until Lesson 24 started using it, at which point
+    # removing it from text 6 no longer made it unused and this mutation began
+    # tripping the root-count check instead. yanlis is now the only root whose
+    # single running use is in this text.
     ("root glossed but never used", "texts/text-6-seti-din.md",
-     "Nau insan espera in kamra baru.",
-     "Cok insan espera in kamra baru.",
+     'Doktor respon: "No. Kalb anak hao.\nKorpo ta kuat. Ide yu yanlis."',
+     'Doktor respon: "No. Kalb anak hao.\nKorpo ta kuat."',
      "never used in a sentence"),
     ("settled question listed as open", "lessons/lesson-20-colours-and-health.md",
      "What is still open is kept in one place: [the open questions](../grammar/README.md).",
