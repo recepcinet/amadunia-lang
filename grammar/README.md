@@ -100,6 +100,43 @@ jobs, and the thinness of Sino-Tibetan and Japonic recorded in
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
+### What the writing has actually asked for
+
+The list below is grouped by file, which says nothing about which questions
+matter. This does. The measure is narrow and deliberate: **a page that tried to
+say something and could not**, recorded at the time in a text's gaps, the
+phrasebook's list, or a lesson's note. Counted September 3, 2026.
+
+| Question | Pages that reached for it |
+|---|---|
+| the imperative | **3** — [phrasebook](../phrasebook.md), [text 6](../texts/text-6-seti-din.md), [text 8](../texts/text-8-kaifa-suru-ca.md) |
+| *although, before, after, until* | **2** — [text 7](../texts/text-7-surat-por-mama.md), [text 8](../texts/text-8-kaifa-suru-ca.md) |
+| ordinal numbers | 1 — [text 6](../texts/text-6-seti-din.md) |
+| a word for *then* | 1 — [text 8](../texts/text-8-kaifa-suru-ca.md) |
+| *very* | 1 — [phrasebook](../phrasebook.md) |
+| whether a time noun takes *in* | 1 — [phrasebook](../phrasebook.md) |
+| *never* | 0 |
+| *all, some, none* | 0 |
+| indirect questions | 0 |
+| reflexives | 0 |
+| superlative within a named group | 0 |
+| where frequency adverbs sit | 0 |
+
+Six questions have never been reached for by anything anyone wrote. That is not
+an argument for dropping them — a language needs *never* eventually — but it is
+an argument about order.
+
+**Two caveats, and they matter.** Stress and marking a name score zero here and
+are the first and third briefings, because neither was found by writing: stress
+was found by asking how a word is said aloud, and the name problem by scanning
+every sentence for ambiguity. Absence from this table means nothing was blocked
+while writing, not that the question is small.
+
+And this table is **not machine-checked**. It rests on matching topic words
+against gap sections, and the topic list would be hand-kept — the arrangement
+that has already gone wrong three times in this repository. It is a dated
+measurement with its method stated, to be re-run rather than trusted.
+
 **[adverbs](adverbs.md)**
 
 - **Adverbs of degree on adverbs** — "very quickly" — needs a word for "very". *cok* is "much"; whether it covers "very" is untested.

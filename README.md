@@ -195,9 +195,12 @@ subordination and adverbs are settled — seventeen rules, each recorded with it
 reasoning and with the candidates it rejected.
 
 **[Twenty-nine questions are still open](grammar/README.md)**, gathered on one
-page with what each one blocks. Four of them were not left open on purpose: the
-imperative, a mark for a name, how *r* is made, and "want to be" followed by an
-adjective are all things the language had been using that no rule ever granted.
+page, ordered by [what the writing has actually asked for](grammar/README.md) —
+the imperative leads with three pages that tried and stopped, and six questions
+have never been reached for at all. Four of them were not left open on purpose:
+the imperative, a mark for a name, how *r* is made, and "want to be" followed by
+an adjective are all things the language had been using that no rule ever
+granted.
 Each was found by writing something that was not a lesson — which is what the
 texts are for.
 
