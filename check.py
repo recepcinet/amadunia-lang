@@ -872,6 +872,25 @@ check(f"**{len(_items)} guarantees** in **{len(_grouped)} groups**" in _have,
       f"GUARANTEES.md's counts are stale; check.py has {len(_items)} guarantees "
       f"in {len(_grouped)} groups")
 
+# ------------------------------------------------------- place before time
+# The sentence order ends subject → … → object → place → time → clause, and the
+# place-before-time half was the only part of it never checked. Twenty-one
+# sentences carry both and all twenty-one have them in that order.
+_TIMEW = GROUP.get("Time", set())
+_PLACEW = GROUP.get("Place", set()) | GROUP.get("Prepositions", set())
+for path in PROSE:
+    body = read(path)
+    if path.startswith("texts/") and "```" in body:
+        body = "".join(body.split("```")[1::2])
+    for line, sent, toks in amadunia_runs(body):
+        if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗")): continue
+        base = [t.split("-")[0] for t in toks]
+        _p = [i for i, t in enumerate(base) if t in _PLACEW]
+        _t = [i for i, t in enumerate(base) if t in _TIMEW]
+        check(not (_p and _t and min(_t) < min(_p)),
+              f"{os.path.basename(path)}: time comes before place, and the order "
+              f"is place then time: {sent}")
+
 # ----------------------------------------------------------- tables render
 # A run of lines starting with "|" is a markdown table only if its second line
 # is a separator. Nothing checked that, and this file reads table rows happily

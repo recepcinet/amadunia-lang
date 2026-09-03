@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**87 guarantees** in **39 groups**, and every one of them is
+**88 guarantees** in **40 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -138,6 +138,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - GUARANTEES.md has drifted from check.py — regenerate it
 - GUARANTEES.md's counts are stale; check.py has … guarantees in … groups
+### place before time
+
+- …: time comes before place, and the order is place then time: …
 ### tables render
 
 - …:…: table rows with no header row above them — …
