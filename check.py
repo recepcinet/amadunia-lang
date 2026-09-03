@@ -327,6 +327,28 @@ for path in PROSE:
             check(False, f"{os.path.basename(path)}: '{base[0]} {base[1]}' — a noun "
                          f"predicate needs es before it: {sent}")
 
+# -------------------------------------------------------- dictionary order
+# Each thematic group is alphabetical inside itself, and the numbers run in
+# numerical order rather than alphabetical. Both were asked for and both held,
+# but nothing was holding them: a word appended to the end of its group would
+# have passed every other check in this file.
+_grp, _rows_by_grp = None, {}
+for _line in read("dictionary/dictionary.md").split("## Counting")[0].splitlines():
+    _h = re.match(r"\| \*\*(.+?)\*\*", _line)
+    if _h: _grp = _h.group(1); _rows_by_grp[_grp] = []; continue
+    _r = re.match(r"\| ([a-z-]+) \| ([^|]*)\|", _line)
+    if _r and _grp: _rows_by_grp[_grp].append((_r.group(1), _r.group(2).strip()))
+for _grp, _rows in _rows_by_grp.items():
+    ws = [w for w, _ in _rows]
+    if "Numbers" in _grp:
+        vals = [int(g) for _, g in _rows if re.fullmatch(r"\d+", g)]
+        check(vals == sorted(vals),
+              f"dictionary.md: the {_grp} group is not in numerical order")
+    else:
+        out = [f"{a} before {b}" for a, b in zip(ws, ws[1:]) if a > b]
+        check(not out, f"dictionary.md: the '{_grp}' group is not alphabetical: "
+                       + ", ".join(out[:3]))
+
 # ------------------------------------------------------------ root in use
 # Being taught is not the same as being used. Five roots — kulit, yanlis,
 # foto, ba, nau — sat in a "New words" table and then appeared in no sentence

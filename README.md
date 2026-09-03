@@ -203,7 +203,7 @@ Follow the commits to watch a language grow in real time.
 | say something today | [the phrasebook](phrasebook.md) — greeting, directions, buying, trouble |
 | look a word up | [the dictionary](dictionary/dictionary.md), or [the English index](dictionary/index-english.md) to write |
 | know why a rule is the way it is | [grammar/](grammar/) — each page ends with what it rejected |
-| read the language, not lessons about it | [texts/](texts/) — six original pieces |
+| read the language, not lessons about it | [texts/](texts/) — seven original pieces |
 | add a word | [CONTRIBUTING.md](CONTRIBUTING.md) |
 | answer one of the open questions | [grammar/README.md](grammar/README.md) |
 
@@ -214,7 +214,7 @@ Follow the commits to watch a language grow in real time.
 | [lessons/](lessons/) | 25 lessons in order, teaching every one of the 300 roots |
 | [grammar/](grammar/) | 17 rules — what was settled, why, and what was rejected — and the decisions still to make |
 | [dictionary/](dictionary/) | 300 roots with sourced etymologies, [the English index](dictionary/index-english.md) for writing, and [where they come from](dictionary/balance.md) |
-| [texts/](texts/) | six original pieces — three stories, an argument, a dialogue, a poem — each ending with what the language could not say |
+| [texts/](texts/) | seven original pieces — three stories, an argument, a dialogue, a poem, a letter — each ending with what the language could not say |
 | [phrasebook.md](phrasebook.md) | the practical page — greeting, directions, buying, trouble |
 | [check.py](check.py) | every rule above, tested on every push |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | how to propose a word, and what has already been rejected |
