@@ -12,13 +12,17 @@ elsewhere. There is no third way, and no compound word exists.**
 
 ## What the corpus actually contains
 
-Every hyphenated form in the repository was collected on September 3, 2026 —
-lessons, texts, grammar files, dictionary and front page. There are 35 of
-them, and every single one is a number or a reduplicated plural:
+Every hyphenated form in the repository is collected and counted by
+[`check.py`](../check.py) on every run, so this page cannot fall behind the
+corpus — it did once, by one form, when three texts were written after it.
+There are **36**, and every single one is a number or a reduplicated plural:
 
-- 16 number shapes: *des-du*, *du-des*, *ba-des*, *du-sen*, *du-mila* …
+- 17 number shapes: *des-du*, *du-des*, *ba-des*, *du-sen*, *du-mila* …
 - 19 reduplications: *anak-anak*, *ain-ain*, *doktor-doktor*, *hora-hora* …
 - nothing else.
+
+File names are not counted. *surat-por-mama* and *anak-katab* are hyphenated
+because file names are, and they are not forms of the language.
 
 **Not one compound word has ever been formed.** The language has no *airport*,
 no *bookshop*, no *railway* — no word built out of two words.

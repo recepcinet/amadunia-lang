@@ -891,6 +891,35 @@ for path in PROSE:
               f"{os.path.basename(path)}: time comes before place, and the order "
               f"is place then time: {sent}")
 
+# ------------------------------------------------- the joined-form count
+# word-formation.md says how many hyphenated forms exist and that every one is
+# a number or a doubled plural. It fell behind by one when three texts were
+# written after it, so the count is recomputed. File names are excluded: they
+# are hyphenated because file names are, not because the language joins roots.
+_joined = set()
+_filenames = {os.path.basename(_p) for _p in md()}
+for path in md():
+    for _line in read(path).splitlines():
+        # phonology.md writes syllable divisions the same way — por-ke is the
+        # break inside porke, not two roots joined.
+        if "syllable break" in _line: continue
+        for _t in re.findall(r"\b[a-z]+(?:-[a-z]+)+\b", _line.lower()):
+            _ps = _t.split("-")
+            if all(_x in words for _x in _ps) and not any(_t in _f for _f in _filenames):
+                _joined.add(_t)
+_reduplications = {_t for _t in _joined if len(set(_t.split("-"))) == 1}
+_numberforms = {_t for _t in _joined if all(_x in NUMBERS for _x in _t.split("-"))}
+_wf = read("grammar/word-formation.md")
+check(len(_joined) == len(_reduplications) + len(_numberforms),
+      f"grammar/word-formation.md: {len(_joined) - len(_reduplications) - len(_numberforms)} "
+      f"joined forms are neither a number nor a plural")
+check(f"There are **{len(_joined)}**" in _wf,
+      f"word-formation.md's count is stale; the repository has {len(_joined)} joined forms")
+check(f"- {len(_numberforms)} number shapes" in _wf and
+      f"- {len(_reduplications)} reduplications" in _wf,
+      f"word-formation.md's breakdown is stale; {len(_numberforms)} numbers and "
+      f"{len(_reduplications)} reduplications")
+
 # ----------------------------------------------------------- tables render
 # A run of lines starting with "|" is a markdown table only if its second line
 # is a separator. Nothing checked that, and this file reads table rows happily
