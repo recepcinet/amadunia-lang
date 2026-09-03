@@ -141,4 +141,4 @@ Keep it against the verb, before the object — that is what keeps it clear:
 
 Eighteen lessons, **147 roots**. You can compare anything, say what exists, put a whole thought inside a sentence, and give a reason, a time or a condition. That is the grammar of A2.
 
-**Still open:** *very*; *always, sometimes, never*; *all, some, none*; ordinal numbers; *although, before, after, until*. See the open questions in [grammar/](../grammar/).
+What is still open is kept in one place, with what each one blocks and how often the material has actually reached for it: [the open questions](../grammar/README.md).

@@ -285,6 +285,26 @@ for g in sorted(set(expected) & set(listed)):
     check(sorted(expected[g]) == listed[g],
           f"index-english.md maps '{g}' to {listed[g]}; the dictionary now gives {sorted(expected[g])}")
 
+# ------------------------------------------------------- settled, not open
+# The "Still open" line was copied into six lessons and drifted into five
+# variants; two of them listed questions that had been settled the next day.
+# A settled question is struck through in its grammar file, so no page may
+# name one as open.
+_settled = set()
+for p in glob.glob("grammar/*.md"):
+    if p.endswith("README.md"): continue
+    body = read(p)
+    if "## Open questions" not in body: continue
+    for line in body.split("## Open questions")[1].splitlines():
+        m = re.match(r"- ~~(.+?)~~", line)
+        if m: _settled.add(m.group(1).strip().lower().rstrip("."))
+for path in PROSE:
+    for m in re.finditer(r"\*\*Still open:\*\*([^\n]*)", read(path)):
+        for topic in _settled:
+            check(topic not in m.group(1).lower(),
+                  f"{os.path.basename(path)}: lists '{topic}' as still open; "
+                  f"grammar/ marks it settled")
+
 # ------------------------------------------------------------- closed gaps
 # A lesson or text that says "No word for X" must still be right. Lesson 22
 # said the language had none for danger; bahaya arrived at the 300 milestone

@@ -92,4 +92,4 @@ There is no limit. The verbs line up, the object goes last.
 
 Seventeen lessons, **134 roots**. Want, can, must — and any verb after any of them. This was the last thing the grammar was missing.
 
-**Still open:** how to say "I want *you* to eat" — a second subject inside the sentence; and "there is"; and "bigger than". See the open questions in [grammar/](../grammar/).
+"I want *you* to eat" — a second subject inside the sentence — turns out to be a clause standing where an object stands, and needs no marker; existence and comparison were settled at the same time. All three are in [Lesson 18](lesson-18-comparing-and-joining.md).
