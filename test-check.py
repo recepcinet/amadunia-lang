@@ -13,7 +13,7 @@ dead check through.
 
     python3 test-check.py
 """
-import io, os, re, shutil, subprocess, sys, tempfile
+import ast, io, os, re, shutil, subprocess, sys, tempfile
 
 # (name, file, find, replace, expect) — expect must appear in the failure output,
 # so a mutation caught by the wrong check counts as a miss. "zzugu" was first
@@ -267,16 +267,40 @@ MUTATIONS = [
      "dictionary.csv has drifted"),
 ]
 
+# check() is instrumented in the throwaway copy so every run says which call
+# sites fired. That turns "how many mutations are caught" into the question
+# that actually matters: how many of check.py's guarantees any mutation
+# reaches. Measured by hand on September 3, 2026 it was 70 of 79.
+_PLAIN = "def check(ok, msg):\n    if not ok: fails.append(msg)"
+_LOUD = ('def check(ok, msg):\n'
+         '    if not ok:\n'
+         '        import sys as _s\n'
+         '        fails.append(msg)\n'
+         '        _s.stderr.write("FIRED %d\\n" % _s._getframe(1).f_lineno)')
+_OFFSET = _LOUD.count("\n") - _PLAIN.count("\n")   # instrumenting shifts every line below it
+FIRED = set()
+
 def run(cwd):
     r = subprocess.run([sys.executable, "check.py"], cwd=cwd,
                        capture_output=True, text=True)
-    return r.returncode, (r.stdout + r.stderr)
+    out = r.stdout + r.stderr
+    FIRED.update(int(n) - _OFFSET for n in re.findall(r"FIRED (\d+)", out))
+    return r.returncode, out
 
 def main():
     src = os.path.dirname(os.path.abspath(__file__))
     tmp = tempfile.mkdtemp(prefix="amadunia-mut-")
     work = os.path.join(tmp, "repo")
     shutil.copytree(src, work, ignore=shutil.ignore_patterns(".git", "__pycache__"))
+
+    guarantees = {n.lineno for n in ast.walk(ast.parse(io.open(
+                      os.path.join(work, "check.py"), encoding="utf-8").read()))
+                  if isinstance(n, ast.Call) and getattr(n.func, "id", "") == "check"}
+    plain = io.open(os.path.join(work, "check.py"), encoding="utf-8").read()
+    if _PLAIN not in plain:
+        print("check() no longer has the shape this test instruments"); shutil.rmtree(tmp); return 1
+    io.open(os.path.join(work, "check.py"), "w", encoding="utf-8").write(
+        plain.replace(_PLAIN, _LOUD, 1))
 
     code, out = run(work)
     if code != 0:
@@ -310,8 +334,30 @@ def main():
     if code == 0: print("  NOT CAUGHT   CRLF line endings"); missed += 1
     else: print(f"  caught       {'CRLF line endings':44} -> CRLF rejected"); caught += 1
 
+    # A lesson filename, which no text replacement can express
+    old = os.path.join(work, "lessons/lesson-05-plural.md")
+    new = os.path.join(work, "lessons/lesson-5-plural.md")
+    os.rename(old, new); code, out = run(work); os.rename(new, old)
+    if code and "lesson number must be two digits" in out:
+        print(f"  caught       {'a one-digit lesson name':44} -> two digits required"); caught += 1
+    else: print("  NOT CAUGHT   a one-digit lesson name"); missed += 1
+
+    # A derived file that cannot be parsed at all
+    full = os.path.join(work, "dictionary/dictionary.json")
+    original = io.open(full, encoding="utf-8").read()
+    io.open(full, "w", encoding="utf-8").write("{ this is not json")
+    code, out = run(work)
+    io.open(full, "w", encoding="utf-8").write(original)
+    if code and "could not be read" in out:
+        print(f"  caught       {'dictionary.json unparseable':44} -> reported, not crashed"); caught += 1
+    else: print("  NOT CAUGHT   dictionary.json unparseable"); missed += 1
+
     shutil.rmtree(tmp)
+    reached = len(guarantees & FIRED)
     print(f"\n{caught} caught, {missed} not caught, {notapplied} not applied")
+    print(f"{reached} of {len(guarantees)} guarantees in check.py were reached by a mutation.")
+    for n in sorted(guarantees - FIRED):
+        print(f"  line {n} is never exercised")
     if missed or notapplied:
         print("A mutation that is not caught means the check is inert or absent.")
         print("A mutation that is not applied means this test is stale, not that the check works.")

@@ -280,7 +280,9 @@ for path in sorted(glob.glob("lessons/lesson-*.md")):
               f"the lessons have taught {len(vocab)}")
 
     # Every lesson but the first names the one before it.
-    n = int(re.search(r"lesson-(\d\d)", path).group(1))
+    _num = re.search(r"lesson-(\d\d)", path)
+    if not _num: continue          # the two-digit rule reports it; do not crash here
+    n = int(_num.group(1))
     pm = re.search(r"\*Prerequisite: \[Lesson (\d+)\]", body)
     check((n == 1 and not pm) or (pm and int(pm.group(1)) == n - 1),
           f"{os.path.basename(path)}: prerequisite should be Lesson {n-1}")
@@ -329,7 +331,9 @@ VERBS  = {w for w in words if meaning[w].startswith("to ")}
 VERBS |= {"bisa", "lasim"}  # modals, glossed "can" and "must", not "to ..."
 VERBS |= {"madad"}          # class undecided: treat as a verb until it is settled
 for path in glob.glob("lessons/lesson-*.md"):
-    n = int(re.search(r"lesson-(\d\d)", path).group(1))
+    _num = re.search(r"lesson-(\d\d)", path)
+    if not _num: continue          # the two-digit rule reports it; do not crash here
+    n = int(_num.group(1))
     if n >= INTRO["verb chain"]: continue
     body = read(path).split("## What you can already say")[0]
     for line, sent, toks in amadunia_runs(body):
@@ -434,7 +438,9 @@ FUNCTION = (GROUP["Grammar particles"] | GROUP["Prepositions"] | GROUP["Place"]
 NOUNS = set(words) - VERBS - ADJECTIVES - FUNCTION - {"mi", "yu", "ta", "kita"}
 ADVERBIAL = ADJECTIVES | {"cok"}
 for path in sorted(glob.glob("lessons/lesson-*.md")):
-    n = int(re.search(r"lesson-(\d\d)", path).group(1))
+    _num = re.search(r"lesson-(\d\d)", path)
+    if not _num: continue          # the two-digit rule reports it; do not crash here
+    n = int(_num.group(1))
     body = read(path).split("## What you can already say")[0]
     for line, sent, toks in amadunia_runs(body):
         if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗")): continue
