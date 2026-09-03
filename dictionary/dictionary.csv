@@ -1,0 +1,301 @@
+word,meaning,group,sources
+bai,goodbye,Greetings and basics,already-global
+bas,"enough, stop",Greetings and basics,"Hindi/Urdu bas, Persian bas, Swahili basi, Turkish bas"
+hi,hello,Greetings and basics,already-global
+mersi,thank you,Greetings and basics,"French merci — adopted in Persian, Turkish, Romanian, Bulgarian, Greek, Egyptian Arabic"
+no,"no; not — before the predicate, see grammar/negation.md",Greetings and basics,"the na/ne root: Spanish/Italian no, English no/not, Latin non, Russian ne, Polish nie, Sanskrit/Hindi na, Persian na-"
+ok,ok,Greetings and basics,already-global
+pardon,"sorry, excuse me",Greetings and basics,"French pardon — adopted in Turkish, Russian, Persian, Arabic dialects; Spanish perdón"
+plis,please,Greetings and basics,"English please, already-global"
+salam,peaceful greeting,Greetings and basics,"Arabic, Hebrew, Persian, Turkish, Urdu, Swahili"
+ya,yes,Greetings and basics,"Indonesian/Malay ya, Javanese ya; German/Dutch/Swedish/Norwegian ja"
+anak,child,People,"Indonesian/Malay anak, Tagalog anak, Javanese anak"
+dugu,sibling — no gender,People,Swahili ndugu
+familia,family,People,"Latin familia, Spanish familia, Swahili familia, Polish familia, Russian familiya"
+insan,"person, human",People,"Arabic insān — adopted in Turkish, Persian, Urdu, Indonesian, Swahili insani"
+kisan,farmer,People,"Hindi/Urdu kisān, Nepali kisan, Bengali kisan"
+kita,"we, including you — see grammar/pronouns.md",People,"Indonesian, Malay, Tagalog"
+mama,mother,People,"a nursery word shared across nearly every family on Earth: Mandarin māma, Swahili mama, Spanish mamá, Russian mama, Arabic māmā, Hindi mā̃"
+mi,"I, me",People,"Spanish/Italian mi, English me, Swahili mimi"
+mualim,teacher,People,"Arabic muʿallim (معلم), Swahili mwalimu, Turkish muallim, Urdu muallim, Indonesian muallim"
+nama,name,People,"Sanskrit/Hindi naam, Indonesian nama, Japanese namae, English name"
+nasab,"relative, kin",People,"Arabic nasab (lineage), Turkish nesep, Urdu/Hindi nasab, Swahili nasaba"
+papa,father,People,"the nursery pair of mama, as widespread: Mandarin bàba, Swahili baba, Turkish baba, Spanish papá, Hindi pāpā, Russian papa"
+polisi,police,People,"Greek polis → global: Swahili polisi, Indonesian polisi, Turkish polis, Russian politsiya"
+rafiki,friend,People,"Swahili rafiki, Arabic rafīq, Persian rafiq"
+sofer,driver,People,"French chauffeur → Turkish şoför, Russian shofyor, Indonesian sopir, Arabic shufīr"
+ta,"he, she, it — no gender",People,"Chinese tā 他/她/它, one sound for all three"
+tacir,merchant,People,"Arabic tājir (تاجر), Turkish tacir, Urdu tājir, Swahili tajiri"
+yu,you — one form for everyone,People,English you
+ain,eye,Body,"Arabic ʿayn (عين), Hebrew ayin"
+burun,nose,Body,"Turkish burun, Azeri burun, Turkmen burun"
+cehra,face,Body,"Hindi/Urdu chehra, Persian chehreh, Nepali cehara"
+dente,tooth,Body,"Latin dentem → Italian dente, Spanish diente, Portuguese dente, French dent, English dental"
+kaki,"foot, leg",Body,Indonesian/Malay/Tagalog kaki
+kalb,heart,Body,"Arabic qalb (قلب), Turkish kalp, Urdu qalb, Persian qalb"
+korpo,body,Body,"Latin corpus — global through corps, corporate, Spanish cuerpo, Italian corpo"
+kulit,skin,Body,Indonesian/Malay kulit
+mano,hand,Body,"Spanish/Italian mano, Latin manus, Portuguese mão, French main"
+mulut,mouth,Body,Indonesian/Malay mulut
+rambut,hair,Body,Indonesian/Malay rambut
+sar,head,Body,"Persian sar, Hindi/Urdu sir/sar, Sanskrit śiras"
+telinga,ear,Body,"Indonesian/Malay telinga, Javanese talingan"
+gusa,anger,Feelings,"Hindi/Urdu gussa, Persian ghosse, Nepali gussa"
+korku,fear,Feelings,"Turkish korku, Azeri qorxu"
+sabar,patience,Feelings,"Arabic ṣabr (صبر), Turkish sabır, Urdu/Hindi sabr, Indonesian sabar, Swahili subira"
+akua,water,Food and water,"Latin aqua, Spanish agua, Portuguese água, Italian acqua"
+ca,tea,Food and water,"Chinese chá, Hindi chai, Turkish çay, Swahili chai, Russian chay, Persian chai"
+corba,soup,Food and water,"Persian shorbā → Turkish çorba, Arabic shurba, Urdu shorba, Bulgarian/Serbian čorba"
+fruta,fruit,Food and water,"Latin fructus, Spanish/Portuguese fruta, Russian frukt, English fruit, German Frucht"
+halib,milk,Food and water,"Arabic ḥalīb (حليب), Swahili haliba, Maltese ħalib"
+kafe,coffee,Food and water,"Arabic qahwa → Turkish kahve → global: café, coffee, Kaffee, kofe, Swahili kahawa"
+legum,vegetable,Food and water,"Latin legumen → French légume, Spanish legumbre, English legume"
+minyak,oil,Food and water,Indonesian/Malay minyak
+namak,salt,Food and water,"Hindi/Urdu namak, Persian namak, Bengali nun"
+nyama,meat,Food and water,"Swahili nyama, and Bantu-wide"
+pan,"bread, food",Food and water,"Spanish/Portuguese pan/pão, Japanese pan, Korean ppang"
+risi,rice,Food and water,"Greek óryza → Arabic aruzz → Italian riso, French riz, English rice, Russian ris"
+sukar,sugar,Food and water,"Sanskrit śarkarā → Arabic sukkar → Turkish şeker, Swahili sukari, Russian sakhar, English sugar — one of the most travelled words on Earth"
+telur,egg,Food and water,"Indonesian/Malay telur, Javanese telur"
+bimar,sick,Health,"Persian bīmār, Urdu/Hindi bīmār, Bengali bimar"
+ilac,medicine,Health,"Turkish ilaç, Azeri ilaç — from Arabic ʿilāj (treatment)"
+kamisa,shirt,Clothing,"Latin camisia → Spanish/Portuguese camisa, Arabic qamīṣ, Urdu/Hindi kameez, Swahili kamisi"
+sapatu,shoe,Clothing,"Portuguese sapato, Spanish zapato, Indonesian/Malay sepatu, Tagalog sapatos"
+anahtar,key,Home and world,"Turkish anahtar, Azeri açar aside; from Greek anoiktēri"
+ates,fire,Home and world,"Turkish ateş, Azeri ateş, Persian ātash"
+bage,garden,Home and world,"Persian bāgh, Urdu/Hindi bāgh, Turkish bağ"
+bahari,sea,Home and world,"Arabic baḥr (بحر), Swahili bahari, Turkish bahriye, Indonesian bahari"
+bulan,moon,Home and world,"Indonesian/Malay bulan, Javanese wulan, Tagalog buwan"
+dom,"house, home",Home and world,"Russian/Polish dom, Czech dům, Latin domus — global through domestic, domicile. Replaced ruma on September 3, 2026"
+dunia,world,Home and world,"Arabic, Hindi, Swahili, Indonesian, Turkish"
+gelas,"glass, cup",Home and world,"Dutch glas → Indonesian/Malay gelas, Swahili glasi; English glass, German Glas"
+hutan,forest,Home and world,Indonesian/Malay hutan
+kamra,room,Home and world,"Hindi/Urdu kamra, Nepali kamra, Bengali kamra"
+lampu,lamp,Home and world,"Indonesian/Malay lampu — global: lamp, lampe, lampa, lampara"
+madina,city,Home and world,"Arabic madīna (مدينة), Turkish medine, Urdu madīna, Swahili mji/madina"
+negara,country,Home and world,"Sanskrit nagara → Indonesian/Malay negara, Thai nakhon, Khmer, Javanese"
+pahar,mountain,Home and world,"Hindi/Urdu pahāṛ, Nepali pahad"
+pencere,window,Home and world,"Turkish pencere, Persian panjare, Urdu panjra"
+petra,stone,Home and world,"Greek pétra → Latin, Spanish piedra, Italian pietra — global through petroleum, petrify"
+pintu,door,Home and world,"Indonesian/Malay pintu, Tagalog pinto"
+piring,plate,Home and world,Indonesian/Malay piring
+ponte,bridge,Home and world,"Latin pontem → Italian/Portuguese ponte, Spanish puente, French pont, Romanian punte"
+sabun,soap,Home and world,"Arabic ṣābūn → Turkish sabun, Swahili sabuni, Indonesian sabun, Hindi sābun, Russian... Spanish jabón, French savon"
+sikin,knife,Home and world,"Arabic sikkīn (سكين), Urdu sikkīn, Swahili kisu aside; Maltese sikkina"
+sol,sun,Home and world,Latin/Spanish/Portuguese sol
+stela,star,Home and world,"Latin stella → Italian stella, Spanish estrella, Portuguese estrela — global through stellar, constellation"
+sungai,river,Home and world,"Indonesian/Malay sungai, Javanese kali/sungai"
+tabla,table,Home and world,"Latin tabula → Spanish tabla, English table, Russian tablitsa"
+tanah,"earth, ground",Home and world,"Indonesian/Malay tanah, Javanese tanah"
+udara,air,Home and world,"Indonesian/Malay udara, from Sanskrit udāra"
+yatak,bed,Home and world,"Turkish yatak, Azeri yataq"
+angin,wind,Weather,"Indonesian/Malay angin, Javanese angin"
+asman,sky,Weather,"Persian āsmān, Urdu/Hindi āsmān, Turkish asuman"
+badal,cloud,Weather,"Hindi/Urdu bādal, Bengali badol, Nepali badal"
+yamur,rain,Weather,"Turkish yağmur, Azeri yağmur, Turkmen ýagmyr"
+yuki,snow,Weather,Japanese yuki (雪)
+animal,animal,Animals and plants,"Latin animal — global: animal, animale, Tier aside, Indonesian animalia"
+farasi,horse,Animals and plants,"Arabic faras (فرس), Swahili farasi, Turkish feres"
+flor,flower,Animals and plants,"Latin flōrem → Spanish/Portuguese flor, Italian fiore, French fleur, English flora"
+kanis,dog,Animals and plants,"Latin canis — global through canine, Italian cane, Spanish can, French chien"
+kucing,cat,Animals and plants,Indonesian/Malay kucing
+pohon,tree,Animals and plants,Indonesian/Malay pohon
+samaki,fish,Animals and plants,"Swahili samaki, Arabic samak (سمك)"
+tair,bird,Animals and plants,"Arabic ṭayr (طير), Urdu tair, Persian tayr"
+aksam,evening,Time,"Turkish akşam, Azeri axşam, Turkmen agşam"
+besok,tomorrow,Time,"Indonesian/Malay besok, Javanese sesuk"
+din,day,Time,"Hindi/Urdu din, Bengali din, Persian din"
+hafta,week,Time,"Persian hafta, Turkish hafta, Hindi/Urdu hafta, Arabic dialects"
+hora,hour,Time,"Spanish/Portuguese hora, Italian ora, Latin hora, Greek hōra — global through hour"
+kemarin,yesterday,Time,Indonesian/Malay kemarin
+mausim,season,Time,"Arabic mawsim (موسم) → Indonesian musim, Turkish mevsim, Urdu mausam, Swahili msimu — the source of monsoon"
+mensis,month,Time,"Latin mēnsis → Spanish mes, Italian mese, Portuguese mês, French mois — global through bimonthly, menstrual"
+momen,moment,Time,"Latin momentum — global: moment, momento, Moment, moment"
+pagi,morning,Time,Indonesian/Malay pagi
+rat,night,Time,"Hindi/Urdu raat, Bengali raat, Sanskrit rātri"
+sasa,now,Time,Swahili sasa
+tahun,year,Time,"Indonesian/Malay tahun, Javanese taun"
+tempo,time,Time,"Latin tempus → Italian/Portuguese tempo, Spanish tiempo, Indonesian tempo, Russian temp"
+ini,"this — after the noun, last in the phrase",This and that,"Indonesian/Malay ini, Tagalog ito"
+itu,that,This and that,Indonesian/Malay itu
+kiri,left,Place,Indonesian/Malay kiri
+sini,here,Place,Indonesian/Malay sini
+situ,there,Place,Indonesian/Malay situ — the pair of sini
+sub,"down, below",Place,"Latin sub — global as the prefix in submarine, subway, Spanish/Italian sotto/sub, Turkish sub- in loanwords"
+tempat,place,Place,Indonesian/Malay tempat
+upar,"up, above",Place,"Hindi/Urdu ūpar, Bengali upore, Nepali upar"
+yamin,right,Place,"Arabic yamīn (يمين) — the source of Yemen, the land on the right hand"
+ama,to love,Actions,Latin
+ambil,to take,Actions,Indonesian/Malay ambil
+anda,to walk,Actions,"Spanish/Portuguese andar, Italian andare"
+beca,to sell,Actions,"Hindi/Urdu bechnā, Bengali becha"
+beri,to give,Actions,"Indonesian/Malay beri, Turkish vermek"
+bil,to know,Actions,"Turkish bilmek, Azeri/Uzbek/Kazakh bil-"
+bisa,"can, to be able — before another verb, see grammar/verb-chains.md",Actions,Indonesian/Malay bisa
+buka,to open,Actions,"Indonesian/Malay buka, Javanese bukak"
+dengar,to hear,Actions,Indonesian/Malay dengar
+espera,to wait,Actions,"Spanish/Portuguese esperar, Italian sperare — the root of Esperanto, ""one who hopes"""
+faham,to understand,Actions,"Arabic fahima, Indonesian/Malay paham, Swahili fahamu, Urdu fahm, Turkish fehim"
+fikir,to think,Actions,"Arabic fikr, Turkish fikir, Urdu/Hindi fikr, Swahili fikiri, Indonesian pikir"
+finis,to finish,Actions,"Latin finis — global: finish, final, finale, fin, Turkish final"
+funga,to close,Actions,Swahili funga
+gasil,to wash,Actions,"Arabic ghasala (غسل), Urdu ghusl, Swahili kuosha aside; Turkish gasil"
+go,to go,Actions,"English go, already-global"
+hidup,to live,Actions,Indonesian/Malay hidup
+ingat,to remember,Actions,Indonesian/Malay ingat
+kan,to see,Actions,Chinese kàn (看)
+kanta,to sing,Actions,"Latin cantāre, Spanish cantar, Italian cantare, Portuguese cantar, French chanter"
+kara,to read,Actions,"Arabic qaraʾa (قرأ) — the root of Quran, ""that which is read"""
+katab,to write,Actions,"Arabic kataba (كتب) — the root of kitab (book), Turkish katip, Swahili kitabu"
+kimbia,to run,Actions,Swahili kimbia
+kirim,to send,Actions,Indonesian/Malay kirim
+kula,to eat,Actions,"Swahili kula, Arabic akala"
+kupi,to buy,Actions,"Russian kupit', Bulgarian/Serbian/Croatian kupi, Czech koupit"
+lai,to come,Actions,Chinese lái (来)
+lala,to sleep,Actions,Swahili kulala
+lasim,"must, to have to",Actions,"Arabic lāzim, Turkish lazım, Persian lāzem, Urdu/Hindi lāzim, Swahili lazima, Indonesian lazim — written with s, the alphabet having no z"
+leta,to bring,Actions,Swahili leta
+lihat,"to look, to watch",Actions,Indonesian/Malay lihat
+madad,help; to help,Actions,"Arabic madad, Hindi/Urdu madad, Persian madad, Turkish medet"
+mati,to die,Actions,"Indonesian/Malay mati, Tagalog matay"
+mau,to want,Actions,Indonesian/Malay mau
+naiti,to find,Actions,"Russian naiti, Polish najść, Ukrainian znaity"
+nomu,to drink,Actions,Japanese nomu (飲む)
+otur,to sit,Actions,"Turkish otur-, Azeri otur-"
+pone,to put,Actions,"Latin pōnere → Spanish poner, Italian porre, Portuguese pôr — global through position, component"
+proba,to try,Actions,"Latin probāre — global: probe, prueba, prova, proba, Russian proba"
+punya,to have,Actions,Indonesian/Malay punya
+respon,to answer,Actions,"Latin respondēre — global: respond, responder, rispondere, Indonesian respon"
+sema,"to say, to speak",Actions,Swahili sema
+senti,to feel,Actions,"Latin sentīre → Spanish/Portuguese/French sentir, Italian sentire — global through sentiment, consent, resent"
+start,to begin,Actions,"English start — global: German starten, Russian start, Turkish/Indonesian start"
+stop,to stop,Actions,"English stop — global: stopp, stop, stoppen, Indonesian stop"
+studi,"to learn, to study",Actions,"Latin studere — global: English study, Spanish estudiar, German Studium, Russian studirovat', Indonesian studi"
+suru,"to do, to make",Actions,Japanese suru (する)
+tabak,to cook,Actions,"Arabic ṭabakha (طبخ), Turkish tabh, Urdu tabakh"
+tanya,to ask,Actions,Indonesian/Malay tanya
+tena,again,Actions,Swahili tena
+unut,to forget,Actions,"Turkish unut-, Azeri unut-, Turkmen unut-"
+bola,ball,Play,"Portuguese/Spanish bola, Indonesian/Malay bola, Tagalog bola, Swahili boli"
+oyun,game,Play,"Turkish oyun, Azeri oyun, Turkmen oýun"
+auto,car,Town and money,"German Auto, Spanish auto, Turkish/Indonesian oto, Russian avto — global"
+banka,bank,Town and money,"Italian banca — global: bank, banco, banka, banki"
+harga,price,Town and money,"Indonesian/Malay harga, from Sanskrit argha"
+hospital,hospital,Town and money,"Latin hospitale — global: hospital, hôpital, hospitalis, Indonesian hospital"
+kertas,paper,Town and money,"Greek chártēs → Arabic qirṭās → Indonesian/Malay kertas, Swahili karatasi"
+kursi,chair,Town and money,"Arabic kursī, Turkish kürsü, Hindi/Urdu kursī, Indonesian kursi, Swahili kiti"
+market,"market, shop",Town and money,"already-global — English, Turkish, Russian, Arabic dialects, Indonesian"
+mesin,machine,Town and money,"Latin machina — global: machine, máquina, Maschine, mashina, Indonesian mesin"
+pesa,money,Town and money,"Swahili pesa, Hindi/Urdu paisa, Spanish/Tagalog peso/piso"
+posta,mail,Town and money,"Latin posita — global: post, posta, pochta, pos, Turkish posta, Swahili posta"
+rabota,work,Town and money,"Russian rabota, Polish/Czech robota — source of the global word robot"
+regalo,gift,Town and money,"Spanish/Italian regalo, Portuguese regalo"
+restoran,restaurant,Town and money,French restaurant — global: Turkish/Indonesian/Russian/Polish restoran
+skola,school,Town and money,"Latin schola — global: Russian shkola, Polish szkoła, Indonesian sekolah, Swahili shule, German Schule, English school"
+tarik,"road, way",Town and money,"Arabic ṭarīq (طريق), Turkish tarik, Urdu tarīq, Swahili tariki"
+tren,train,Town and money,"Spanish/Turkish tren, French train, English train, Russian tren — global"
+asfar,yellow,Colours,"Arabic aṣfar (أصفر), Swahili safari (a journey, from the same root's travel sense) aside; Urdu asfar"
+asul,blue,Colours,"Arabic lāzaward → Spanish/Portuguese azul, Italian azzurro, English azure"
+merah,red,Colours,Indonesian/Malay merah
+putih,white,Colours,"Indonesian/Malay putih, Tagalog puti"
+siya,black,Colours,"Persian siyāh, Turkish siyah, Urdu/Hindi siyāh, Bengali shyam"
+yesil,green,Colours,"Turkish yeşil, Azeri yaşıl, Turkmen ýaşyl — written with s, the alphabet having no sh"
+amani,peace,Qualities and ideas,"Arabic amān (أمان), Swahili amani, Turkish aman, Urdu amān"
+amik,deep,Qualities and ideas,"Arabic ʿamīq (عميق), Urdu amīq"
+arte,art,Qualities and ideas,"Latin artem — global: art, arte, arta, Russian art"
+asan,easy,Qualities and ideas,"Hindi/Urdu āsān, Persian āsān, Bengali ashan"
+bahaya,danger,Qualities and ideas,"Indonesian/Malay bahaya, from Sanskrit bhaya"
+baid,far,Qualities and ideas,Arabic baʿīd (بعيد)
+barid,cold,Qualities and ideas,"Arabic bārid, Swahili baridi"
+baru,new,Qualities and ideas,Indonesian/Malay baru
+benar,true,Qualities and ideas,Indonesian/Malay benar
+cang,long,Qualities and ideas,Chinese cháng (长)
+cok,"many, much",Qualities and ideas,"Turkish çok, Azeri çox"
+daima,always,Qualities and ideas,"Arabic dāʾiman (دائما), Swahili daima, Turkish daima, Urdu dāʾim"
+dekat,near,Qualities and ideas,Indonesian/Malay dekat
+duan,short,Qualities and ideas,Chinese duǎn (短)
+dulce,sweet,Qualities and ideas,"Latin dulcis → Spanish/Portuguese dulce/doce, Italian dolce, French doux"
+eski,old,Qualities and ideas,"Turkish eski, Azeri əski"
+garam,hot,Qualities and ideas,"Hindi/Urdu garam, Persian garm, Bengali gorom"
+genc,young,Qualities and ideas,"Turkish genç, Azeri gənc"
+golos,voice,Qualities and ideas,"Russian golos, Polish głos, Czech hlas, Serbian glas"
+grupo,group,Qualities and ideas,"Latin gruppo — global: group, grupo, Gruppe, gruppa, Indonesian grup"
+habari,news,Qualities and ideas,"Arabic khabar (خبر) → Swahili habari, Turkish haber, Urdu khabar, Indonesian kabar"
+hafif,light in weight,Qualities and ideas,"Arabic khafīf (خفيف), Turkish hafif, Urdu hafīf"
+hao,good,Qualities and ideas,Chinese hǎo (好)
+hayai,fast,Qualities and ideas,Japanese hayai (速い)
+historia,history,Qualities and ideas,"Greek historía — global: history, historia, Geschichte aside, istoriya, Indonesian historia"
+ide,idea,Qualities and ideas,"Greek idéa — global: idea, idée, Idee, ideya, Indonesian ide"
+kabir,big,Qualities and ideas,"Arabic kabīr, Swahili -kubwa, Turkish kebir"
+kadang,sometimes,Qualities and ideas,Indonesian/Malay kadang
+kadar,as ... as,Qualities and ideas,"Arabic qadar, Turkish kadar, Urdu/Hindi qadar, Persian qadr"
+kalima,word,Qualities and ideas,"Arabic kalima (كلمة), Turkish kelime, Urdu kalima, Swahili kalima, Indonesian kalimat"
+keci,small,Qualities and ideas,"Indonesian/Malay kecil, Turkish küçük"
+kosong,empty,Qualities and ideas,Indonesian/Malay kosong
+kotor,dirty,Qualities and ideas,Indonesian/Malay kotor
+kuat,strong,Qualities and ideas,Indonesian/Malay kuat
+kultura,culture,Qualities and ideas,"Latin cultura — global: culture, cultura, Kultur, kultura"
+kurang,less,Qualities and ideas,Indonesian/Malay kurang
+lebi,more,Qualities and ideas,Indonesian/Malay lebih
+legis,law,Qualities and ideas,"Latin lēgis — global through legal, ley, legge, legislation"
+lingua,language,Qualities and ideas,"Latin lingua → Italian/Portuguese lingua, Spanish lengua, French langue — global through linguistics, lingua franca"
+luma,light,Qualities and ideas,"Latin lūmen → Spanish lumbre, Italian/Portuguese lume — global through luminous, illuminate"
+mal,bad,Qualities and ideas,"Latin malus, Spanish/French mal, already-global via malaria"
+masal,story,Qualities and ideas,"Turkish masal, from Arabic mathal; Azeri masal"
+mimpi,dream,Qualities and ideas,Indonesian/Malay mimpi
+muskil,difficult,Qualities and ideas,"Arabic mushkil (مشكل), Turkish müşkül, Urdu/Hindi mushkil, Persian moshkel — written with s, the alphabet having no sh"
+natura,nature,Qualities and ideas,"Latin natura — global: nature, natura, Natur, natura"
+numero,number,Qualities and ideas,"Latin numerus → global: number, número, numero, Nummer, nomer"
+paling,"most — the superlative, before the adjective",Qualities and ideas,Indonesian/Malay paling
+plen,full,Qualities and ideas,"Latin plēnus, Spanish lleno, French plein, English plenty"
+problema,problem,Qualities and ideas,"Greek próblēma — global: problem, problema, Problem, problema"
+safari,journey,Qualities and ideas,"Arabic safar (سفر) → Swahili safari, and global in English"
+safi,clean,Qualities and ideas,"Arabic ṣāfī (صافي), Swahili safi, Hindi/Urdu sāf, Turkish saf"
+sakil,heavy,Qualities and ideas,"Arabic thaqīl (ثقيل), Turkish sakil, Urdu saqīl"
+sansi,chance,Qualities and ideas,"French chance → Turkish şans, Russian shans, Polish szansa"
+sedih,sad,Qualities and ideas,Indonesian/Malay sedih
+senang,happy,Qualities and ideas,Indonesian/Malay senang
+sukut,silence,Qualities and ideas,"Arabic sukūt (سكوت), Turkish sükût, Urdu sukūt"
+sundar,beautiful,Qualities and ideas,"Hindi/Urdu sundar, Sanskrit sundara, Nepali sundar"
+surat,letter,Qualities and ideas,"Indonesian/Malay surat, from Arabic sūra (a written passage)"
+uhuru,freedom,Qualities and ideas,Swahili uhuru
+umid,hope,Qualities and ideas,"Persian omīd, Urdu ummīd, Hindi ummeed, Turkish ümit"
+umur,"life, age",Qualities and ideas,"Arabic ʿumr (عمر), Turkish ömür, Urdu umr, Indonesian umur, Swahili umri"
+una,together; una + noun = with — see grammar/place.md,Qualities and ideas,"Latin ūnā, ""together"""
+yalan,"lie, falsehood",Qualities and ideas,"Turkish yalan, Azeri yalan, Turkmen ýalan"
+yanlis,wrong,Qualities and ideas,"Turkish yanlış, Azeri yanlış — written with s, the alphabet having no sh"
+berapa,"how many, how much",Question words,Indonesian/Malay berapa
+kab,when,Question words,"Hindi/Urdu kab, Bengali kobe"
+kaifa,how,Question words,Arabic kayfa (كيف)
+ke,what,Question words,"Spanish qué, Portuguese que, Italian che, French que"
+kim,who,Question words,"Turkish, Azeri, Uzbek, Kazakh kim"
+nali,where,Question words,Chinese nǎlǐ (哪里)
+porke,why,Question words,"Spanish por qué, Italian perché, French pourquoi — ""for what"""
+dari,from,Prepositions,Indonesian/Malay dari
+in,"at, in, on",Prepositions,"Latin, English, German, Italian, Dutch in"
+por,"to, for",Prepositions,"Spanish/Portuguese por, Italian per, French pour, Latin pro"
+agar,if,Grammar particles,"Persian/Urdu agar, Hindi agar, Turkish eğer"
+aur,and,Grammar particles,Hindi/Urdu aur
+es,"is, am, are — before a noun predicate only; see grammar/copula.md",Grammar particles,"Spanish es, Latin est, Italian è, French est, German ist, English is, Russian est', Hindi hai, Persian ast"
+o,or,Grammar particles,"Spanish/Italian o, Portuguese ou, Latin aut — the language's first one-letter word"
+saufa,future marker (before the verb),Grammar particles,Arabic sawfa (سوف)
+suda,past marker (before the verb),Grammar particles,Indonesian/Malay sudah
+doktor,doctor,Already-global loans,"Turkish, Russian, Indonesian, Hindi, Swahili daktari"
+foto,photo,Already-global loans,already-global
+hotel,hotel,Already-global loans,already-global
+libro,book,Already-global loans,"Spanish/Italian libro, Portuguese livro, French livre — global through library"
+musik,music,Already-global loans,"already-global — German Musik, Turkish müzik, Russian muzyka, Indonesian musik, Arabic mūsīqā, Swahili muziki"
+taksi,taxi,Already-global loans,already-global
+telefon,telephone,Already-global loans,"already-global — Turkish, German, Russian, Polish, Indonesian telepon, Arabic tilifūn"
+uan,1,Numbers,"Latin ūnus → Spanish/Italian uno, French un, Portuguese um; English one"
+du,2,Numbers,"Latin duo, Greek dýo, Russian dva, Hindi/Urdu do, Persian do, Welsh dau — global through duo, dual"
+tri,3,Numbers,"Latin trēs, Greek treîs, Sanskrit tri, Russian tri, Hindi tīn — global through tri-"
+pat,4,Numbers,"Indonesian/Malay empat, Tagalog apat, Javanese papat"
+fai,5,Numbers,"the Germanic five — English five, German fünf, Dutch vijf, Swedish fem — from the root that also gave Latin quīnque and Greek pénte"
+sis,6,Numbers,"Latin sex → Spanish seis, French/English six, German sechs; Greek héx, Persian shesh"
+seti,7,Numbers,"Latin septem → Spanish siete, Italian sette, French sept; Sanskrit sapta, Hindi sāt, Greek heptá, English seven"
+ba,8,Numbers,Chinese
+nau,9,Numbers,"Hindi/Urdu nau, Bengali noy, Persian noh — the same root as Latin novem, German neun, English nine"
+des,10,Numbers,"Hindi/Urdu das, Sanskrit daśa; Latin decem → Spanish diez, Italian dieci, French dix; Greek déka"
+sen,100,Numbers,"Latin centum → French cent, Spanish cien, Italian cento; Russian sto, Sanskrit śatam, Hindi sau, Persian sad"
+mila,1000,Numbers,"Latin mille → Spanish mil, Italian mila, French mille, Turkish milyon"

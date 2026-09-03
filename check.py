@@ -297,6 +297,33 @@ for path in glob.glob("lessons/*.md") + glob.glob("texts/*.md") + ["phrasebook.m
               f"{os.path.basename(path)}: says there is no word for \"{term}\", "
               f"but the dictionary now gives {', '.join(expected.get(term, []))}")
 
+# ------------------------------------------------------ machine-readable
+# dictionary.json and dictionary.csv are generated from the markdown so tools
+# can read the language. They are regenerated here and compared, so neither can
+# drift from the source.
+import json, csv, io as _io
+def _strip(s):
+    s = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", s)
+    return s.replace("**", "").replace("*", "").strip()
+_grp, _rows = None, []
+for line in read("dictionary/dictionary.md").split("## Counting")[0].splitlines():
+    m = re.match(r"^\| \*\*(.+?)\*\*", line)
+    if m: _grp = m.group(1).split(" —")[0].strip(); continue
+    if re.match(r"^\| [a-z]", line):
+        p = line.split("|")
+        _rows.append({"word": p[1].strip(), "meaning": _strip(p[2]),
+                      "group": _grp, "sources": _strip(p[3])})
+try:
+    _j = json.loads(read("dictionary/dictionary.json"))
+    check(_j.get("words") == _rows and _j.get("roots") == len(words),
+          "dictionary.json has drifted from dictionary.md — regenerate it")
+except Exception as e:
+    check(False, f"dictionary.json could not be read: {e}")
+_csv = list(csv.reader(_io.StringIO(read("dictionary/dictionary.csv"))))
+check(_csv[:1] == [["word", "meaning", "group", "sources"]] and
+      _csv[1:] == [[r["word"], r["meaning"], r["group"], r["sources"]] for r in _rows],
+      "dictionary.csv has drifted from dictionary.md — regenerate it")
+
 # ------------------------------------------------------------------ balance
 # Design rule 4: no language family dominates. dictionary/balance.md states the
 # figures; they are recomputed here so the page cannot drift from the data.

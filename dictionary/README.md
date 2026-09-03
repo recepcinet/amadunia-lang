@@ -11,3 +11,5 @@ Words are grouped by theme and alphabetised within each group — except the num
 For the other direction, see [English → Amadunia](index-english.md). It is derived from this file mechanically, so the two cannot drift apart.
 
 For which families the roots come from, and how far each one reaches, see [Where the words come from](balance.md).
+
+For tools rather than people: [dictionary.json](dictionary.json) and [dictionary.csv](dictionary.csv) carry the same 300 entries, generated from this file. The CSV imports straight into a flashcard deck. Edit the markdown, never the derived files — [`check.py`](../check.py) regenerates both and fails if they disagree.
