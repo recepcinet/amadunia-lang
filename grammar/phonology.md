@@ -52,6 +52,7 @@ Two-consonant sequences that occur in current vocabulary:
 - `mp` — *tempo*
 - `nc` — *pencere* (window)
 - `nk` — *banka*
+- `nl` — *yanlis* (wrong)
 - `nt` — *kanta* (to sing)
 - `ny` — *nyama* (meat), *tanya* (to ask), *punya* (to have)
 - `pr` — *problema*

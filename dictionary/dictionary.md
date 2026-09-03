@@ -1,6 +1,6 @@
 # Amadunia — Dictionary
 
-**284 roots.** Target for A1: 300.
+**300 roots — the A1 target, reached September 3, 2026.** Target for A1: 300.
 
 | Word | Meaning | Source languages |
 |---|---|---|
@@ -78,8 +78,10 @@
 | ates | fire | Turkish *ateş*, Azeri *ateş*, Persian *ātash* |
 | bage | garden | Persian *bāgh*, Urdu/Hindi *bāgh*, Turkish *bağ* |
 | bahari | sea | Arabic *baḥr* (بحر), Swahili *bahari*, Turkish *bahriye*, Indonesian *bahari* |
+| bulan | moon | Indonesian/Malay *bulan*, Javanese *wulan*, Tagalog *buwan* |
 | dom | house, home | Russian/Polish *dom*, Czech *dům*, Latin *domus* — global through *domestic*, *domicile*. Replaced *ruma* on September 3, 2026 |
 | dunia | world | Arabic, Hindi, Swahili, Indonesian, Turkish |
+| gelas | glass, cup | Dutch *glas* → Indonesian/Malay *gelas*, Swahili *glasi*; English *glass*, German *Glas* |
 | hutan | forest | Indonesian/Malay *hutan* |
 | kamra | room | Hindi/Urdu *kamra*, Nepali *kamra*, Bengali *kamra* |
 | lampu | lamp | Indonesian/Malay *lampu* — global: *lamp*, *lampe*, *lampa*, *lampara* |
@@ -89,8 +91,12 @@
 | pencere | window | Turkish *pencere*, Persian *panjare*, Urdu *panjra* |
 | petra | stone | Greek *pétra* → Latin, Spanish *piedra*, Italian *pietra* — global through *petroleum*, *petrify* |
 | pintu | door | Indonesian/Malay *pintu*, Tagalog *pinto* |
+| piring | plate | Indonesian/Malay *piring* |
+| ponte | bridge | Latin *pontem* → Italian/Portuguese *ponte*, Spanish *puente*, French *pont*, Romanian *punte* |
 | sabun | soap | Arabic *ṣābūn* → Turkish *sabun*, Swahili *sabuni*, Indonesian *sabun*, Hindi *sābun*, Russian... Spanish *jabón*, French *savon* |
+| sikin | knife | Arabic *sikkīn* (سكين), Urdu *sikkīn*, Swahili *kisu* aside; Maltese *sikkina* |
 | sol | sun | Latin/Spanish/Portuguese *sol* |
+| stela | star | Latin *stella* → Italian *stella*, Spanish *estrella*, Portuguese *estrela* — global through *stellar*, *constellation* |
 | sungai | river | Indonesian/Malay *sungai*, Javanese *kali/sungai* |
 | tabla | table | Latin *tabula* → Spanish *tabla*, English *table*, Russian *tablitsa* |
 | tanah | earth, ground | Indonesian/Malay *tanah*, Javanese *tanah* |
@@ -112,11 +118,13 @@
 | samaki | fish | Swahili *samaki*, Arabic *samak* (سمك) |
 | tair | bird | Arabic *ṭayr* (طير), Urdu *tair*, Persian *tayr* |
 | **Time** | | |
+| aksam | evening | Turkish *akşam*, Azeri *axşam*, Turkmen *agşam* |
 | besok | tomorrow | Indonesian/Malay *besok*, Javanese *sesuk* |
 | din | day | Hindi/Urdu *din*, Bengali *din*, Persian *din* |
 | hafta | week | Persian *hafta*, Turkish *hafta*, Hindi/Urdu *hafta*, Arabic dialects |
 | hora | hour | Spanish/Portuguese *hora*, Italian *ora*, Latin *hora*, Greek *hōra* — global through *hour* |
 | kemarin | yesterday | Indonesian/Malay *kemarin* |
+| mausim | season | Arabic *mawsim* (موسم) → Indonesian *musim*, Turkish *mevsim*, Urdu *mausam*, Swahili *msimu* — the source of *monsoon* |
 | mensis | month | Latin *mēnsis* → Spanish *mes*, Italian *mese*, Portuguese *mês*, French *mois* — global through *bimonthly*, *menstrual* |
 | momen | moment | Latin *momentum* — global: *moment*, *momento*, *Moment*, *moment* |
 | pagi | morning | Indonesian/Malay *pagi* |
@@ -132,6 +140,7 @@
 | sini | here | Indonesian/Malay *sini* |
 | situ | there | Indonesian/Malay *situ* — the pair of *sini* |
 | sub | down, below | Latin *sub* — global as the prefix in *submarine*, *subway*, Spanish/Italian *sotto/sub*, Turkish *sub-* in loanwords |
+| tempat | place | Indonesian/Malay *tempat* |
 | upar | up, above | Hindi/Urdu *ūpar*, Bengali *upore*, Nepali *upar* |
 | yamin | right | Arabic *yamīn* (يمين) — the source of *Yemen*, the land on the right hand |
 | **Actions** | | |
@@ -164,16 +173,20 @@
 | lai | to come | Chinese *lái* (来) |
 | lala | to sleep | Swahili *kulala* |
 | lasim | must, to have to | Arabic *lāzim*, Turkish *lazım*, Persian *lāzem*, Urdu/Hindi *lāzim*, Swahili *lazima*, Indonesian *lazim* — written with *s*, the alphabet having no *z* |
+| leta | to bring | Swahili *leta* |
+| lihat | to look, to watch | Indonesian/Malay *lihat* |
 | madad | help; to help | Arabic *madad*, Hindi/Urdu *madad*, Persian *madad*, Turkish *medet* |
 | mati | to die | Indonesian/Malay *mati*, Tagalog *matay* |
 | mau | to want | Indonesian/Malay *mau* |
 | naiti | to find | Russian *naiti*, Polish *najść*, Ukrainian *znaity* |
 | nomu | to drink | Japanese *nomu* (飲む) |
 | otur | to sit | Turkish *otur-*, Azeri *otur-* |
+| pone | to put | Latin *pōnere* → Spanish *poner*, Italian *porre*, Portuguese *pôr* — global through *position*, *component* |
 | proba | to try | Latin *probāre* — global: *probe*, *prueba*, *prova*, *proba*, Russian *proba* |
 | punya | to have | Indonesian/Malay *punya* |
 | respon | to answer | Latin *respondēre* — global: *respond*, *responder*, *rispondere*, Indonesian *respon* |
 | sema | to say, to speak | Swahili *sema* |
+| senti | to feel | Latin *sentīre* → Spanish/Portuguese/French *sentir*, Italian *sentire* — global through *sentiment*, *consent*, *resent* |
 | start | to begin | English *start* — global: German *starten*, Russian *start*, Turkish/Indonesian *start* |
 | stop | to stop | English *stop* — global: *stopp*, *stop*, *stoppen*, Indonesian *stop* |
 | studi | to learn, to study | Latin *studere* — global: English *study*, Spanish *estudiar*, German *Studium*, Russian *studirovat'*, Indonesian *studi* |
@@ -214,6 +227,7 @@
 | amik | deep | Arabic *ʿamīq* (عميق), Urdu *amīq* |
 | arte | art | Latin *artem* — global: *art*, *arte*, *arta*, Russian *art* |
 | asan | easy | Hindi/Urdu *āsān*, Persian *āsān*, Bengali *ashan* |
+| bahaya | danger | Indonesian/Malay *bahaya*, from Sanskrit *bhaya* |
 | baid | far | Arabic *baʿīd* (بعيد) |
 | barid | cold | Arabic *bārid*, Swahili *baridi* |
 | baru | new | Indonesian/Malay *baru* |
@@ -264,6 +278,7 @@
 | sansi | chance | French *chance* → Turkish *şans*, Russian *shans*, Polish *szansa* |
 | sedih | sad | Indonesian/Malay *sedih* |
 | senang | happy | Indonesian/Malay *senang* |
+| sukut | silence | Arabic *sukūt* (سكوت), Turkish *sükût*, Urdu *sukūt* |
 | sundar | beautiful | Hindi/Urdu *sundar*, Sanskrit *sundara*, Nepali *sundar* |
 | surat | letter | Indonesian/Malay *surat*, from Arabic *sūra* (a written passage) |
 | uhuru | freedom | Swahili *uhuru* |
@@ -271,6 +286,7 @@
 | umur | life, age | Arabic *ʿumr* (عمر), Turkish *ömür*, Urdu *umr*, Indonesian *umur*, Swahili *umri* |
 | una | together; *una* + noun = with — see [grammar/place.md](../grammar/place.md) | Latin *ūnā*, "together" |
 | yalan | lie, falsehood | Turkish *yalan*, Azeri *yalan*, Turkmen *ýalan* |
+| yanlis | wrong | Turkish *yanlış*, Azeri *yanlış* — written with *s*, the alphabet having no *sh* |
 | **Question words** | | |
 | berapa | how many, how much | Indonesian/Malay *berapa* |
 | kab | when | Hindi/Urdu *kab*, Bengali *kobe* |

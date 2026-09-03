@@ -51,7 +51,7 @@ Design rules:
 
 🚧 Amadunia was born on **September 2, 2026** and is under active construction.
 
-**Vocabulary: 284 roots.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival) → 180 (reached September 3, 2026) → 300.
+**Vocabulary: 300 roots — the A1 target, reached September 3, 2026, the day after the language was born.** The target for A1 is **300 roots** — not the ~500 words a natural language needs at A1, because compounding does the rest. (Esperanto launched with 917 roots; Basic English covers daily life in 850 words.) Milestones: 80 roots (survival) → 180 → **300, reached September 3, 2026**. Next: A2 at around 600.
 
 Phonology, alphabet, numbers, tense, plurals, possession, questions, pronouns, the copula, negation, conjunction, demonstratives and place marking are all settled. **The grammar needed for A2 is complete** — comparison, existence, subordination and adverbs were settled on September 3, 2026, the day after the language was born. What remains is smaller: *very*, *always*, *all*, ordinal numbers, and the second tier of joiners. Follow the commits to watch a language grow in real time.
 
@@ -110,7 +110,8 @@ lessons/     Lessons 1-12: greetings, food, people, tense, plural, possession,
 - [lessons/lesson-21-things-and-ideas.md](lessons/lesson-21-things-and-ideas.md) — Lesson 21: things and ideas
 - [lessons/lesson-22-doing-and-feeling.md](lessons/lesson-22-doing-and-feeling.md) — Lesson 22: doing and feeling
 
-- [texts/story-1-anak-espera-sol.md](texts/story-1-anak-espera-sol.md) — the first story written in Amadunia
+- [texts/story-1-anak-espera-sol.md](texts/story-1-anak-espera-sol.md) — the first story written in Amadunia, at 113 roots
+- [texts/story-2-safari-por-pahar.md](texts/story-2-safari-por-pahar.md) — the second, at 300
 
 Each file marks what is settled and what is still open.
 
