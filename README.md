@@ -88,6 +88,7 @@ lessons/     Lessons 1-12: greetings, food, people, tense, plural, possession,
 - [grammar/subordination.md](grammar/subordination.md) — a clause needs no marker; *porke* because, *kab* when, *agar* if
 - [grammar/adverbs.md](grammar/adverbs.md) — an adjective straight after the verb describes the verb
 - [dictionary/dictionary.md](dictionary/dictionary.md) — every word settled so far, with its sources
+- [dictionary/index-english.md](dictionary/index-english.md) — the same, indexed English → Amadunia
 - [lessons/lesson-01-greetings.md](lessons/lesson-01-greetings.md) — Lesson 1: greetings
 - [lessons/lesson-02-food-and-home.md](lessons/lesson-02-food-and-home.md) — Lesson 2: water, food, home
 - [lessons/lesson-03-people.md](lessons/lesson-03-people.md) — Lesson 3: people, day and night

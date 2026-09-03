@@ -96,4 +96,8 @@ And every candidate collided anyway:
 ## Open questions
 
 - ~~A different subject~~ — settled in [subordination.md](subordination.md): *Mi mau yu kula* is a clause standing where an object stands, and needs no marker.
-- **Words that are both noun and verb.** *madad* is listed as "help; to help", so *Mi mau madad* is "I want help" **or** "I want to help". The chain rule makes this ambiguity visible for the first time. Every dual-class entry in the dictionary needs review, and the language may need to settle whether a root may hold both jobs at all.
+- **Words that are both noun and verb.** *madad* is glossed "help; to help", so *Mi mau madad* is "I want help" **or** "I want to help". The chain rule made this visible for the first time.
+
+  The dictionary was audited on September 3, 2026 and **madad is the only case in all 300 roots.** Two others looked like it and are not: *bisa* ("can, to be able") and *lasim* ("must, to have to") are one modal verb under two English glosses, not a noun beside a verb.
+
+  So the open question is not a review of many entries but a decision about one word — and behind it, whether a root may ever hold both jobs. Every root added since has been given one job only.
