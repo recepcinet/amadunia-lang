@@ -29,7 +29,9 @@ by writing is worth more than a gap found by reading a wordlist.
 | love, as a noun | [text 7](../texts/text-7-surat-por-mama.md) | a letter cannot be signed *with love* — *ama* is the verb, and one root does one job |
 | to miss someone | [text 7](../texts/text-7-surat-por-mama.md) | *Mi sedih porke yu-yu baid* names the cause instead of the feeling |
 | a clock, an hour of the day | [the phrasebook](../phrasebook.md) | *Berapa hora* asks "how many hours", not "what time" |
+| then, next | [text 8](../texts/text-8-kaifa-suru-ca.md) | a recipe's steps can only be set side by side; *tena* is "again", not "next" |
 
-Three of the four are about how a person feels or where a person hurts. That is
-where 300 roots turn out to be thinnest, and it is not what a thematic wordlist
-would have predicted.
+Three of the five are about how a person feels or where a person hurts, and
+that is where 300 roots turn out to be thinnest — not what a thematic wordlist
+would have predicted. The other two are joints rather than things: a point in
+the day, and the word that puts one step after another.

@@ -15,3 +15,4 @@ These are original compositions, not translations. Translating an existing book 
 | [Uan](text-5-uan.md) | 21 | 300 roots, Lessons 1-23 — a poem |
 | [Seti din](text-6-seti-din.md) | 57 | 300 roots, Lessons 1-23 — a story, written to reach the unreached roots |
 | [Surat por mama](text-7-surat-por-mama.md) | 54 | 300 roots, Lessons 1-23 — a letter |
+| [Kaifa suru ca](text-8-kaifa-suru-ca.md) | 19 | 300 roots, Lessons 1-23 — instructions, written without the imperative the language lacks |

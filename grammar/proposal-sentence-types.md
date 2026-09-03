@@ -9,7 +9,12 @@ Both are already in use. Neither was ever granted.
 
 ## What is actually in use
 
-**The imperative — 7 sentences**, across Lessons 13, 16 and 19 and
+**The imperative — 17 sentences.** Seven across Lessons 13, 16 and 19 and
+the phrasebook, counted when this briefing was written; ten more in
+[text 8](../texts/text-8-kaifa-suru-ca.md), a recipe written deliberately
+without one to find out what that costs. That text is the sharpest evidence
+available: every step of it says *yu* where the rest of the world says
+nothing. The original seven, from the lessons and
 [the phrasebook](../phrasebook.md):
 
 ```
