@@ -119,6 +119,6 @@ They are opposites and they behave the same:
 
 ## What you can already say
 
-Twenty-two lessons, **284 roots**. Eight more verbs, the four elements, a dog and a horse, and the words for what a face and a voice are — enough to tell someone a story.
+Twenty-two lessons, **255 roots**. Eight more verbs, the four elements, a dog and a horse, and the words for what a face and a voice are — enough to tell someone a story.
 
 **Still open:** *very*; *never*; *all, some, none*; ordinal numbers; and a word for *danger*, which the conversation above had to borrow English for. See the open questions in [grammar/](../grammar/).

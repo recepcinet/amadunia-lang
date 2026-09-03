@@ -109,6 +109,5 @@ good. I love children. — I feel you will be the best teacher.*
 
 ## What you can already say
 
-Twenty-five lessons, and every one of the 300 roots has now been taught
-somewhere. [`check.py`](../check.py) enforces that from here on: a word added
+Twenty-five lessons and **300 roots** — every one now taught somewhere. [`check.py`](../check.py) enforces that from here on: a word added
 to the dictionary without a lesson will fail the build.

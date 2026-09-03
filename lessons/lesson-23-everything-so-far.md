@@ -81,7 +81,8 @@ Each is recorded as an open question in [grammar/](../grammar/). None was invent
 
 ## Where the language stands
 
-Twenty-three lessons. **300 roots**, every one with a sourced etymology, drawn from Austronesian, Semitic, Latin and Romance, Indo-Aryan, Iranian, Turkic, Niger-Congo, Slavic, Sino-Tibetan, Japonic, Greek and Germanic. No two words differ by a single sound unless that contrast is safe in nearly every language on Earth. No *l* against *r* anywhere.
+Twenty-three lessons, and **255 roots** of the three hundred — Lessons 24 and 25
+have the rest. Every root in the dictionary carries a sourced etymology, drawn from Austronesian, Semitic, Latin and Romance, Indo-Aryan, Iranian, Turkic, Niger-Congo, Slavic, Sino-Tibetan, Japonic, Greek and Germanic. No two words differ by a single sound unless that contrast is safe in nearly every language on Earth. No *l* against *r* anywhere.
 
 Twenty letters. One sound each.
 

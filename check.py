@@ -205,6 +205,22 @@ for path in sorted(glob.glob("lessons/lesson-*.md")):
             check(root in vocab or root in PROPER or root in {"sol", "luma"},
                   f"{os.path.basename(path)}: uses '{root}' before any lesson teaches it: {sent}")
 
+    # A lesson that states a root count is telling the learner what they now
+    # know. Six lessons stated the dictionary's size instead, overstating by up
+    # to forty-five.
+    m = re.search(r"\*\*(\d+) roots\*\*", body)
+    if m:
+        check(int(m.group(1)) == len(vocab),
+              f"{os.path.basename(path)}: claims {m.group(1)} roots taught by here; "
+              f"the lessons have taught {len(vocab)}")
+
+    # Every lesson but the first names the one before it.
+    n = int(re.search(r"lesson-(\d\d)", path).group(1))
+    pm = re.search(r"\*Prerequisite: \[Lesson (\d+)\]", body)
+    check((n == 1 and not pm) or (pm and int(pm.group(1)) == n - 1),
+          f"{os.path.basename(path)}: prerequisite should be Lesson {n-1}")
+
+
 # ----------------------------------------------------------------- coverage
 # Every root must be taught somewhere: in a lesson's "New words" table, or on
 # the front page (the founder's first words and the numbers live there). Sixty-two

@@ -139,6 +139,6 @@ Keep it against the verb, before the object — that is what keeps it clear:
 
 ## What you can already say
 
-Eighteen lessons, **184 roots**. You can compare anything, say what exists, put a whole thought inside a sentence, and give a reason, a time or a condition. That is the grammar of A2.
+Eighteen lessons, **147 roots**. You can compare anything, say what exists, put a whole thought inside a sentence, and give a reason, a time or a condition. That is the grammar of A2.
 
 **Still open:** *very*; *always, sometimes, never*; *all, some, none*; ordinal numbers; *although, before, after, until*. See the open questions in [grammar/](../grammar/).

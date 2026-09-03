@@ -136,6 +136,6 @@ They stand in the adverb slot, straight after the verb:
 
 ## What you can already say
 
-Nineteen lessons, **209 roots**. A house with doors and windows, a mountain with trees, animals, ways of travelling, and the first three feelings.
+Nineteen lessons, **175 roots**. A house with doors and windows, a mountain with trees, animals, ways of travelling, and the first three feelings.
 
 **Still open:** *very*; *never*; *all, some, none*; ordinal numbers; and whether frequency words like *daima* want a slot of their own. See the open questions in [grammar/](../grammar/).

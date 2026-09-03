@@ -131,6 +131,6 @@ Colours follow the noun, like every adjective, and take no *es*:
 
 ## What you can already say
 
-Twenty lessons, **234 roots**. Six colours, the sky and its clouds, being ill and getting better, four kinds of work, and the first large ideas the language can hold — *umur*, *uhuru*, *benar*.
+Twenty lessons, **204 roots**. Six colours, the sky and its clouds, being ill and getting better, four kinds of work, and the first large ideas the language can hold — *umur*, *uhuru*, *benar*.
 
 **Still open:** *very*; *never*; *all, some, none*; ordinal numbers. See the open questions in [grammar/](../grammar/).
