@@ -32,6 +32,13 @@
 | kadang | sometimes |
 | mila | 1000 |
 
+**Also introduced here** — these appear in the sentences below, and nothing before this lesson has taught them:
+
+| Word | Meaning |
+|---|---|
+| baid | far |
+| hidup | to live |
+| punya | to have |
 ## In the house
 
 | | |

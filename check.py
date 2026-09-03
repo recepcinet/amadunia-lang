@@ -187,6 +187,23 @@ for path in sorted(glob.glob("lessons/*.md") + glob.glob("texts/*.md") + ["phras
             check(not (w in ("ini", "itu") and nxt in PRONOUNS),
                   f"{os.path.basename(path)}: '{w} {nxt}' — the owner goes before ini/itu: {sent}")
 
+# ------------------------------------------------------------ lesson order
+# A learner working through in order must never meet a word nothing has taught.
+# Twenty-four forward references had accumulated in Lessons 18-24 before this
+# was checked; punya was used by five lessons and taught by the last of them.
+vocab = {w for w in words if re.search(r"\*" + w + r"\*|\| " + w + r" \|", read("README.md"))}
+for path in sorted(glob.glob("lessons/lesson-*.md")):
+    body = read(path)
+    if "## New word" in body:
+        section = body.split("## New word")[1].split("\n## ")[0]
+        vocab |= {c.strip() for line in section.splitlines() if line.startswith("|")
+                  for c in line.split("|")[1:-1] if c.strip() in words}
+    for line, sent, toks in amadunia_runs(body):
+        for t in toks:
+            root = t.split("-")[0]
+            check(root in vocab or root in PROPER or root in {"sol", "luma"},
+                  f"{os.path.basename(path)}: uses '{root}' before any lesson teaches it: {sent}")
+
 # ----------------------------------------------------------------- coverage
 # Every root must be taught somewhere: in a lesson's "New words" table, or on
 # the front page (the founder's first words and the numbers live there). Sixty-two

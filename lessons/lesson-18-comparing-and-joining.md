@@ -13,6 +13,19 @@
 
 Four words. Everything else in this lesson is made from words you already have.
 
+**Also introduced here** — these appear in the sentences below, and nothing before this lesson has taught them:
+
+| Word | Meaning |
+|---|---|
+| besok | tomorrow |
+| hafta | week |
+| kafe | coffee |
+| kanta | to sing |
+| kotor | dirty |
+| madina | city |
+| negara | country |
+| problema | problem |
+| sedih | sad |
 ## Bigger, smaller, biggest
 
 Put the degree word in front of the adjective, exactly where *cok* goes:

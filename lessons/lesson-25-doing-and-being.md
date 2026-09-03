@@ -2,8 +2,9 @@
 
 *Prerequisite: [Lesson 24](lesson-24-the-table-and-the-city.md).*
 
-The other half of the words that entered at 180 roots without a lesson —
-fourteen verbs and eighteen qualities. Again, no new grammar.
+The other half of the words that entered at 180 roots without a lesson of
+their own — fourteen verbs and eighteen qualities. A few appeared in earlier
+lessons before anything taught them, and are now introduced there instead. Again, no new grammar.
 
 ## New words
 

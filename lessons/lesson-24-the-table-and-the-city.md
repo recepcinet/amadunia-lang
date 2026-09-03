@@ -2,8 +2,9 @@
 
 *Prerequisite: [Lesson 23](lesson-23-everything-so-far.md).*
 
-These thirty words entered the dictionary when it passed 180 roots and never
-got a lesson. This one and [the next](lesson-25-doing-and-being.md) close that
+These words entered the dictionary when it passed 180 roots and never got a
+lesson of their own. A few you have already met, because the later lessons
+used them before anything taught them; the rest are new here. This one and [the next](lesson-25-doing-and-being.md) close that
 gap. No new grammar — everything here uses rules you already have.
 
 ## New words
@@ -26,6 +27,12 @@ gap. No new grammar — everything here uses rules you already have.
 | nasab | relative | | kemarin | yesterday |
 | tempo | time | | momen | moment |
 
+**Also introduced here** — these appear in the sentences below, and nothing before this lesson has taught them:
+
+| Word | Meaning |
+|---|---|
+| dekat | near |
+| lihat | to look, to watch |
 ## On the table
 
 | | |

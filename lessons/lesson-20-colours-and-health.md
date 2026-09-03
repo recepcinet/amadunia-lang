@@ -20,6 +20,14 @@
 | numero | number | | uhuru | freedom |
 | umur | life, age | | | |
 
+**Also introduced here** — these appear in the sentences below, and nothing before this lesson has taught them:
+
+| Word | Meaning |
+|---|---|
+| beca | to sell |
+| fruta | fruit |
+| ide | idea |
+| mulut | mouth |
 ## Four more colours
 
 Colours follow the noun, like every adjective, and take no *es*:

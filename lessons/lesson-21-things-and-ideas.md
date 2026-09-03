@@ -20,6 +20,11 @@
 | dulce | sweet | | arte | art |
 | legis | law | | | |
 
+**Also introduced here** — these appear in the sentences below, and nothing before this lesson has taught them:
+
+| Word | Meaning |
+|---|---|
+| kuat | strong |
 ## In the room
 
 | | |
