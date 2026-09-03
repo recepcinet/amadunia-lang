@@ -36,7 +36,38 @@ The six with no family are *bai, foto, hi, hotel, ok, taksi* — words that belo
 
 **Sino-Tibetan is 2.7% and Japonic 1.3%.** Between them that is roughly a billion and a half speakers, and the language draws almost nothing from them.
 
-The cause is structural rather than careless. Chinese and Japanese roots are one or two short syllables — *hao*, *kan*, *lai*, *cang*, *duan*, *yuki*, *nomu*, *suru* — and every one of those was taken while the language was small. The two- and three-letter space is now full, so no new short root can be added without a collision, and these are the families whose words are short. Korean and Dravidian have no roots at all.
+The cause was recorded as structural: Chinese and Japanese roots are one or
+two short syllables — *hao*, *kan*, *lai*, *cang*, *duan*, *yuki*, *nomu*,
+*suru* — every one taken while the language was small, and with the two- and
+three-letter space now full, no new short root can be added without a
+collision.
+
+**That explanation was checked on September 3, 2026 and is wrong.** It is true
+of the words already taken and not of the languages they came from. Modern
+Mandarin vocabulary is overwhelmingly two syllables, and so is much of
+Japanese, which is exactly the length the four-letter rule wants. Ten ordinary
+words were put through every rule in [`check.py`](../check.py) — alphabet,
+consonant runs, vowel pairs, minimal pairs, length — and seven passed:
+
+| Source | Shape | Verdict |
+|---|---|---|
+| 面包 *miànbāo*, bread | *mianbao* | passes |
+| 老师 *lǎoshī*, teacher | *laosi* | passes |
+| 电话 *diànhuà*, telephone | *dianua* | passes |
+| 友達 *tomodachi*, friend | *tomodaci* | passes — *c* is exactly that *ch* |
+| 元気 *genki*, well, lively | *genki* | passes |
+| 学校 *gakkō*, school | *gako* | passes |
+| 食べ物 *tabemono*, food | *tabemono* | passes |
+| 朋友 *péngyǒu*, friend | *pengyu* | rejected — *ngy*, three consonants |
+| 时间 *shíjiān*, time | *sicien* | rejected — *ie* is not an attested pair |
+| 先生 *sensei*, teacher | *sensei* | rejected — *ei* is not an attested pair |
+
+None of these has been added; the dictionary is closed at 300 until A2. They
+are here as evidence about the cause. The thinness is not a wall the
+phonology built — it is which words the borrowing reached for. It went to the
+classical monosyllables and stopped.
+
+Korean and Dravidian have no roots at all.
 
 Fixing it would mean taking two-syllable compounds from those languages rather than single words. That is a founder decision and is not recorded as an open question yet, because it is not a gap in the grammar — it is a gap in the vocabulary policy.
 

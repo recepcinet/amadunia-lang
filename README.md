@@ -176,7 +176,8 @@ are [open questions](grammar/verb-chains.md) waiting on a decision.
 the ~500 words a natural language needs at A1 because compounding does the
 rest — Esperanto launched with 917 roots, and Basic English covers daily life
 in 850. Milestones passed: 80 for survival, then 180, then 300. Next is A2, at
-around 600.
+around 600 — and what those three hundred should be made of is measured in
+[a briefing](dictionary/proposal-a2.md), which makes none of the choices.
 
 **The grammar needed for A2 is complete.** Phonology, pronunciation, numbers,
 tense, plurals, possession, questions, pronouns, the copula, existence,
