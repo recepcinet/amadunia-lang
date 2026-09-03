@@ -20,16 +20,24 @@ candidate.
 `w`, `x`, `z`, and no accents. This alone has killed *hijau*, *anjing*, *mvua*,
 *dawa*, *yazi* and Turkish *ve*.
 
-**2. Four letters or more.** The two- and three-letter space is full — fourteen
-two-letter roots already have ten minimal pairs between them. Nothing short can
-be added without a collision.
+**2. Four letters or more.** The space below four letters is full and closed:
+49 roots hold it — *o*, fourteen of two letters and thirty-four of three — and
+the fourteen two-letter roots already have ten minimal pairs between them.
+Nothing short can be added without a collision, and [`check.py`](check.py)
+counts them so nothing short can be added at all.
 
 **3. At most two consonants in a row.** *fenestra* and *Fenster* both died on
 `nst`; *skribi* on `skr`; *tunggu* on `ngg`.
 
 **4. Only these vowel pairs: `ai ao au ia ua`.** No others, and never three
-vowels together. This rejected *sikio* (`io`), *oleo* (`eo`), *kirei* (`ei`),
-*kuai* and *hayawan*.
+vowels together. Two different rules, and it is worth keeping them apart:
+*sikio* (`io`), *oleo* (`eo`) and *kirei* (`ei`) each died on an unattested
+pair, while *kuai* died on the run of three — both of its pairs, `ua` and
+`ai`, are perfectly legal. *hayawan* as spelled dies earlier still, on the `w`;
+transliterated legally as *hayauan* it dies on `aua`.
+
+Until September 3, 2026 only the pair half was enforced. *kuai* — the word this
+rule names as its own example — passed every phonotactic check in the file.
 
 **5. No minimal pair with any existing word** — no two words of the same length
 may differ in exactly one sound. This is the rule that kills most candidates.

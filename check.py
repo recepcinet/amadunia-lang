@@ -48,7 +48,22 @@ for w in words:
     check(not re.search(r"[bcdfghklmnprsty]{3}", w), f"{w}: three consonants in a row")
     for pair in re.findall(r"(?=([aeiou]{2}))", w):
         check(pair in VOWEL_SEQS, f"{w}: vowel sequence '{pair}' is not attested")
+    # Only pairs were checked, so a run of three slipped through whenever each
+    # of its pairs was attested. kuai — recorded in CONTRIBUTING as rejected for
+    # exactly this — passed every phonotactic rule in this file.
+    check(not re.search(r"[aeiou]{3}", w), f"{w}: three vowels in a row")
     check(source[w] != "—", f"{w}: no etymology")
+
+# The two- and three-letter space is full: 49 roots occupy it — o, then 14 of
+# two letters and 34 of three — and every new root must be four or longer. That
+# rule was written down and never enforced; a three-letter root could be added
+# and nothing in this file would notice. Counting is enough to catch an
+# addition. It would not catch a swap, one short root removed and another added,
+# and that is the limit of this check.
+_short = sorted(w for w in words if len(w) < 4)
+check(len(_short) == 49,
+      f"{len(_short)} roots are shorter than four letters; the short space is "
+      f"closed at 49 — see CONTRIBUTING rule 2")
 
 dupes = [w for w in set(words) if words.count(w) > 1]
 check(not dupes, f"duplicate entries: {dupes}")
