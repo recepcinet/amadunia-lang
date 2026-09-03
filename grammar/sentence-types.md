@@ -1,6 +1,6 @@
 # Commands and fragments
 
-*Taught in [Lesson 10](../lessons/lesson-10-a-day.md).*
+*Fragments are taught in [Lesson 01](../lessons/lesson-01-greetings.md), where the first conversation is made of them; commands in [Lesson 10](../lessons/lesson-10-a-day.md), where the first one appears.*
 
 *Status: settled — decided September 3, 2026.*
 

@@ -306,9 +306,9 @@ check(not untaught, f"{len(untaught)} roots are taught nowhere: {', '.join(untau
 # lessons/README.md, and read from there. These four numbers used to sit in
 # this file, which is the arrangement that let three of them drift.
 INTRO = {m.group(1): int(m.group(2)) for m in
-         re.finditer(r"^\| (possession|adverb|verb chain|existence) \| (\d\d) \|$",
+         re.finditer(r"^\| (possession|adverb|verb chain|existence|command) \| (\d\d) \|$",
                      read("lessons/README.md"), re.M)}
-check(len(INTRO) == 4, f"lessons/README.md: the wordless-rule table is incomplete: {INTRO}")
+check(len(INTRO) == 5, f"lessons/README.md: the wordless-rule table is incomplete: {INTRO}")
 
 # ---------------------------------------------------------------- no chains
 # Verb chains were undecided until Lesson 17; the earlier lessons must not use
@@ -431,6 +431,10 @@ for path in sorted(glob.glob("lessons/lesson-*.md")):
     for line, sent, toks in amadunia_runs(body):
         if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗")): continue
         base = [t.split("-")[0] for t in toks]
+        if n < INTRO["command"] and base[0] in VERBS and base[0] not in ("bisa", "lasim"):
+            check(False,
+                  f"{os.path.basename(path)}: a verb with no subject is a command, "
+                  f"taught in Lesson {INTRO['command']:02d}: {sent}")
         if n < INTRO["existence"]:
             check(base[0] != "es",
                   f"{os.path.basename(path)}: a subjectless 'es' means \"there is\", "

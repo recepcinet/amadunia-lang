@@ -32,6 +32,8 @@ Literally: *Hello! Ok?* — *Yes, ok! Goodbye!*
 
 That is a complete, correct Amadunia exchange. There is nothing hidden in it: no conjugation to learn, no gendered form to choose, no article to place.
 
+Not one of those four lines is a full sentence, and none needs to be: [any phrase may stand alone](../grammar/sentence-types.md) when what it answers is clear. That is the rule from the first line of the first lesson, and the same page grants the commands you will meet in [Lesson 10](lesson-10-a-day.md).
+
 ## Two ways to greet
 
 *hi* is the everyday greeting — quick, neutral, usable with anyone.

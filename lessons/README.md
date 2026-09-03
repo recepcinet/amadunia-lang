@@ -43,8 +43,7 @@ The [phrasebook](../phrasebook.md) is the practical page. The [grammar files](..
 ## Where each wordless rule starts
 
 Most rules arrive with a word, and [`check.py`](../check.py) already stops a
-lesson using a word no lesson has taught. Four rules arrive with no word at
-all — nothing to look up, nothing to spot. Those are the ones that drifted:
+lesson using a word no lesson has taught. Five rules arrive with no word at all — nothing to look up, nothing to spot. Those are the ones that drifted:
 verb chains ran in three lessons before Lesson 17 granted them, and Lesson 18
 introduced the adverb rule with a sentence Lesson 12 had already used.
 
@@ -55,6 +54,7 @@ disagree.
 | Rule | Introduced in |
 |---|---|
 | possession | 06 |
+| command | 10 |
 | adverb | 12 |
 | verb chain | 17 |
 | existence | 18 |
