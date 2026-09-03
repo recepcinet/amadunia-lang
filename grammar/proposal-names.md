@@ -8,12 +8,19 @@ permission, after [stress](proposal-stress.md) and
 ## The problem, measured
 
 Two dictionary roots are used as people's names throughout the material:
-**Sol** 33 times across nine files, **Luma** 18 times across five. They are also
-the words for *sun* and *light*.
+**Sol** and **Luma**, which are also the words for *sun* and *light*.
 
-**Thirty-six sentences are formally ambiguous** — a sentence beginning with
-*Sol* or *Luma* where every word is a dictionary word and nothing says which
-reading is meant:
+This page first said Sol was used as a name 33 times and Luma 18. Those figures
+cannot be reproduced, and the reason is the problem itself: separating a
+name-use from a sun-use is a judgement, not a measurement, and it is exactly
+the judgement no rule currently supports. Counting every occurrence instead
+gives Sol 51 and Luma 19.
+
+**Thirty-nine sentences are formally ambiguous.** That number *is* reproducible,
+and [`check.py`](../check.py) now recounts it: a sentence whose first word is
+*Sol* or *Luma*, where every word in it is a dictionary word and nothing says
+which reading is meant. Ten are in each of the two stories, four in Lesson 12,
+three in Lesson 11, and the rest scattered across nine more files.
 
 | | Reading A | Reading B |
 |---|---|---|

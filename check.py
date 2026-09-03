@@ -536,6 +536,28 @@ for w in words:
           f"dictionary.md: '{w}' is glossed as an article ({meaning[w]}); "
           f"the language has none — see grammar/definiteness.md")
 
+# ----------------------------------------- the names briefing counts itself
+# proposal-names.md is decision material, and its central number grows whenever
+# a lesson or text puts Sol or Luma at the front of a sentence. It said
+# thirty-six when the corpus held thirty-nine. A briefing the founder reads
+# before deciding is the last place a stale count belongs.
+_ambiguous = 0
+for path in PROSE:
+    if path.endswith("proposal-names.md"): continue
+    body = read(path)
+    if path.startswith("texts/") and "```" in body:
+        body = "".join(body.split("```")[1::2])
+    for line, sent, toks in amadunia_runs(body):
+        if toks[0] in ("sol", "luma"): _ambiguous += 1
+_m = re.search(r"\*\*([A-Za-z-]+) sentences are formally ambiguous",
+               read("grammar/proposal-names.md"))
+_names = {"Thirty-four": 34, "Thirty-five": 35, "Thirty-six": 36, "Thirty-seven": 37,
+          "Thirty-eight": 38, "Thirty-nine": 39, "Forty": 40, "Forty-one": 41,
+          "Forty-two": 42, "Forty-three": 43}
+check(_m and _names.get(_m.group(1)) == _ambiguous,
+      f"proposal-names.md says {_m.group(1) if _m else '?'} sentences are formally "
+      f"ambiguous; the corpus has {_ambiguous}")
+
 # ------------------------------------------------------------ root in use
 # Being taught is not the same as being used. Five roots — kulit, yanlis,
 # foto, ba, nau — sat in a "New words" table and then appeared in no sentence
