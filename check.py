@@ -319,7 +319,9 @@ try:
           "dictionary.json has drifted from dictionary.md — regenerate it")
 except Exception as e:
     check(False, f"dictionary.json could not be read: {e}")
-_raw = read("dictionary/dictionary.csv")
+# read() uses universal newlines, which turns \r\n into \n and would make this
+# check impossible to fail. Read the bytes as they are.
+_raw = _io.open("dictionary/dictionary.csv", encoding="utf-8", newline="").read()
 check("\r" not in _raw, "dictionary.csv has CRLF line endings; write it with lineterminator='\\n'")
 _csv = list(csv.reader(_io.StringIO(_raw)))
 check(_csv[:1] == [["word", "meaning", "group", "sources"]] and
