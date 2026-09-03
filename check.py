@@ -412,6 +412,34 @@ for path in PROSE:
                   f"{os.path.basename(path)}: '{text}' names {n} open questions; "
                   f"there are {live}")
 
+# --------------------------------------------------- shown, not just glossed
+# A root that appears in a lesson's word table and nowhere else in any lesson
+# has been named, not taught. Five were in that state: foto, kulit, and the
+# numbers 6, 8 and 9 — a learner working through the course met seven in "one
+# week has seven days" and never saw six, eight or nine at work. This reads
+# whole utterances rather than the two-word-minimum runs used elsewhere, so a
+# one-word line (hi, ok, bai) and a list (Akua, ates, udara, tanah) both count.
+shown = set()
+for path in sorted(glob.glob("lessons/lesson-*.md")):
+    body = read(path)
+    if "## New word" in body:
+        head, rest = body.split("## New word", 1)
+        body = head + "\n" + "\n## ".join(rest.split("\n## ")[1:])
+    for line in body.splitlines():
+        cells = ([c.strip() for c in line.split("|")[1:-1]] if line.startswith("|")
+                 else [line.lstrip("> —*").strip()])
+        for cell in cells:
+            for seg in re.split(r"[.!?,:;]", cell):
+                toks = re.findall(r"[a-z]+(?:-[a-z]+)*", seg.lower())
+                if toks and all(t.split("-")[0] in words for t in toks):
+                    shown |= {t.split("-")[0] for t in toks}
+glossed_only = sorted(set(words) - shown - {"madad"})
+check(not glossed_only,
+      f"{len(glossed_only)} roots appear in a lesson word table and in no lesson "
+      f"sentence: {', '.join(glossed_only[:12])}")
+# madad is excluded and named: its class is undecided, so no lesson may use it
+# in a sentence yet. See grammar/verb-chains.md.
+
 # ------------------------------------------------------------ root in use
 # Being taught is not the same as being used. Five roots — kulit, yanlis,
 # foto, ba, nau — sat in a "New words" table and then appeared in no sentence

@@ -98,6 +98,7 @@ Both are correct. The short one leans on tone; the full one does not need it.
 5. Yu bil nama ta kaifa? — *How do you know her name?*
 6. Berapa dom? — *How many houses?*
 7. Ta go porke? — *Why does she go?*
+8. Foto nali? — *Where is the photo?*
 
 ## What you can already say
 

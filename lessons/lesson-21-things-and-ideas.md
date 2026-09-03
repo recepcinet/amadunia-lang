@@ -108,6 +108,8 @@
 4. Mi punya umid porke yu sini. — *I have hope because you are here.*
 5. Lingua ini paling asan in dunia. — *This language is the easiest in the world.*
 6. Safari lebi hao dari pesa. — *A journey is better than money.*
+7. Kulit ta barid. Burun ta keci. — *His skin is cold. His nose is small.*
+8. Mi punya sis libro. — *I have six books.*
 
 ## What you can already say
 

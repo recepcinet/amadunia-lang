@@ -80,6 +80,8 @@ gap. No new grammar — everything here uses rules you already have.
 | | |
 |---|---|
 | Uan hafta punya seti din. | One week has seven days. |
+| Mi suda espera ba hora. | I waited eight hours. |
+| Skola ini punya nau kamra. | This school has nine rooms. |
 | Uan tahun punya pat mausim. | One year has four seasons. |
 | Aksam lai. Sol go. | Evening comes. The sun goes. |
 | Mi go skola besok. | I go to school tomorrow. |
