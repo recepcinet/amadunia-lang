@@ -58,6 +58,7 @@ They are opposites and they behave the same:
 | Ates garam. | Fire is hot. |
 | Akua, ates, udara, tanah. | Water, fire, air, earth. |
 | Es ates in dom! | There is a fire in the house! |
+| Udara barid in rat. | The air is cold at night. |
 | Tanah in bage mi hao. | The ground in my garden is good. |
 
 ## Morning and month

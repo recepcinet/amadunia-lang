@@ -493,8 +493,18 @@ glossed_only = sorted(set(words) - shown - {"madad"})
 check(not glossed_only,
       f"{len(glossed_only)} roots appear in a lesson word table and in no lesson "
       f"sentence: {', '.join(glossed_only[:12])}")
-# madad is excluded and named: its class is undecided, so no lesson may use it
-# in a sentence yet. See grammar/verb-chains.md.
+# madad is excluded and named. Lesson 08 does use it — "Madad! Plis!" — but a
+# one-word cry does not choose between the noun and the verb, which is the only
+# reason it is allowed to stand while the class is undecided. See
+# grammar/verb-chains.md.
+#
+# Known limit: a comma-separated list of dictionary words satisfies this check
+# as if it were a sentence. That is how a list of the numbers written into
+# Lesson 05 briefly made ba count as shown without any sentence using it, and
+# how udara passed on "Akua, ates, udara, tanah" alone until it was given one.
+# Tightening it would cost the interjections — hi, ok, bai, mersi stand alone as
+# whole utterances and must keep counting — and no rule separates the two cases
+# cleanly, so the looseness is recorded rather than removed.
 
 # ------------------------------------------------------------ two roots joined
 # grammar/word-formation.md: two roots join for a number or for a plural, and
