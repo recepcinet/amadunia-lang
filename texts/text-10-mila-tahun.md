@@ -97,10 +97,13 @@ expression, and whether that means a point or a span is [the question recorded
 in place.md](../grammar/place.md) about *in*. Here the span reading is the only
 sensible one, which is evidence but not a decision.
 
-**It has no word for "forever", and did not reach for one.** Worth writing down
-that it did not: *no mati*, does not die, said what was wanted four times, and
-a word for *forever* would have been used had it existed. That is the shape of
-a gap the language has not yet noticed it has.
+**It said "does not die" four times where one word might have done.** The
+first draft recorded this as a missing word for *forever*. That was the second
+wrong claim on this page: *daima*, always, is in the dictionary, and *Natura
+hidup daima* would say nature lives forever. Whether one word should carry both
+habit and endlessness is a real question and it is now
+[on the list](../grammar/adverbs.md), next to the identical one about *cok* and
+"very". What is not true is that the language had nothing to reach for.
 
 ## Roots used
 

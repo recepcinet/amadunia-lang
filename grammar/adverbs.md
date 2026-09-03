@@ -56,4 +56,5 @@ Using one form for adjective and adverb is the majority pattern: Chinese, Indone
 ## Open questions
 
 - **Adverbs of degree on adverbs** — "very quickly" — needs a word for "very". *cok* is "much"; whether it covers "very" is untested.
+- **Whether *daima* covers "forever".** It is glossed "always", from Arabic *dāʾiman*, which carries both senses. *Natura hidup daima* would say nature lives forever, and *Mi kula daima pan* says I always eat bread — habit and endlessness in one word and one slot. Most languages separate them. This is the same shape of question as *cok* and "very" above, and it was found the same way: [text 10](../texts/text-10-mila-tahun.md) recorded that the language had no word for *forever* without checking what it did have.
 - **Frequency adverbs.** *daima* (always) and *kadang* (sometimes) are adverbs by meaning but not adjectives, and they sit in the adverb slot with everything else — *Mi kula daima pan*. Most languages put frequency before the verb instead. Whether Amadunia should make an exception for them is not yet decided; until it is, they follow the ordinary rule.

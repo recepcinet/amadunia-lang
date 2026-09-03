@@ -34,17 +34,19 @@ by writing is worth more than a gap found by reading a wordlist.
 | then, next | [text 8](../texts/text-8-kaifa-suru-ca.md) | a recipe's steps can only be set side by side; *tena* is "again", not "next" |
 | to get up, to stand | [text 9](../texts/text-9-pagi-in-madina.md) | *Mi go dari yatak*, I go from the bed, paraphrases a position change; *otur* is to sit and has no opposite |
 | a coin, as against an amount | [text 9](../texts/text-9-pagi-in-madina.md) | *Mi beri fai pesa* is "I give five money" |
-| forever | [text 10](../texts/text-10-mila-tahun.md) | *no mati*, does not die, said it four times; the word would have been used had it existed |
 
-Three of the eight are about how a person feels or where a person hurts, and
+Three of the seven are about how a person feels or where a person hurts, and
 that is where 300 roots turn out to be thinnest — not what a thematic wordlist
 would have predicted. The rest are joints rather than things: a point in the
 day, the word that puts one step after another, the opposite of sitting down,
-the difference between a coin and an amount, and *forever*. **Not one of the
-eight is a noun a category would have suggested,** which is the whole case for
-finding gaps by writing.
+and the difference between a coin and an amount. **Not one of the seven is a
+noun a category would have suggested,** which is the whole case for finding
+gaps by writing.
 
-A ninth was listed here for a day and withdrawn: comparing one duration with
-another. [comparison.md](../grammar/comparison.md) has a section headed *With
-verbs* that grants exactly that, and the claim was made without reading it. A
-gap has to be a sentence that stopped, not a sentence nobody checked.
+Every one of the seven was re-checked against the dictionary on September 3,
+2026, and two entries did not survive it. Comparing one duration with another
+is granted by [comparison.md](../grammar/comparison.md) under a heading called
+*With verbs*. A word for *forever* may already be *daima*, always — whether it
+covers both is now [an open question](../grammar/adverbs.md) rather than a
+missing word. Both claims were made without reading the page that would refute
+them, which is why the list is now audited rather than appended to.

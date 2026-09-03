@@ -96,7 +96,7 @@ Two items are not grammar at all and sit outside this order: *madad* doing two
 jobs, and the thinness of Sino-Tibetan and Japonic recorded in
 [balance.md](../dictionary/balance.md). Both are vocabulary policy.
 
-## Open questions — 29 of them
+## Open questions — 30 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
@@ -114,6 +114,7 @@ phrasebook's list, or a lesson's note. Counted September 3, 2026.
 | ordinal numbers | 1 — [text 6](../texts/text-6-seti-din.md) |
 | a word for *then* | 1 — [text 8](../texts/text-8-kaifa-suru-ca.md) |
 | *very* | 1 — [phrasebook](../phrasebook.md) |
+| whether *daima* covers *forever* | 1 — [text 10](../texts/text-10-mila-tahun.md) |
 | whether a time noun takes *in* | 1 — [phrasebook](../phrasebook.md) |
 | *never* | 0 |
 | *all, some, none* | 0 |
@@ -140,6 +141,7 @@ measurement with its method stated, to be re-run rather than trusted.
 **[adverbs](adverbs.md)**
 
 - **Adverbs of degree on adverbs** — "very quickly" — needs a word for "very". *cok* is "much"; whether it covers "very" is untested.
+- **Whether *daima* covers "forever".** Glossed "always", from Arabic *dāʾiman*, which carries both. *Natura hidup daima* would say nature lives forever. One word for habit and endlessness, where most languages use two.
 - **Frequency adverbs.** *daima* (always) and *kadang* (sometimes) are adverbs by meaning but not adjectives, and they sit in the adverb slot with everything else — *Mi kula daima pan*. Most languages put frequency before the verb instead. Whether Amadunia should make an exception for them is not yet decided; until it is, they follow the ordinary rule.
 
 **[comparison](comparison.md)**
