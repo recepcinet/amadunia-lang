@@ -223,6 +223,41 @@ untaught = sorted(set(words) - taught)
 check(not untaught, f"{len(untaught)} roots are taught nowhere: {', '.join(untaught[:12])}"
                     + (" ..." if len(untaught) > 12 else ""))
 
+# ------------------------------------------------------- derived documents
+# texts/README.md restates each text's root count; it is not the text's own
+# claim and had nothing checking it.
+for m in re.finditer(r"\| \[.+?\]\((.+?)\) \| (\d+) \|", read("texts/README.md")):
+    body = read("texts/" + m.group(1))
+    real = len(set(re.findall(r"[a-z]+", body.split("```")[1].lower())) - PROPER)
+    check(int(m.group(2)) == real,
+          f"texts/README.md says {m.group(1)} uses {m.group(2)} roots; it uses {real}")
+
+# The English index was generated from the dictionary once. If a meaning is
+# later reworded the index goes stale, and only its word list was being checked.
+def glosses(meaning):
+    m = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", meaning).split("—")[0]
+    m = re.sub(r"\([^)]*\)", "", m).replace("**", "").replace("*", "")
+    for g in re.split(r"[;,]", m):
+        g = g.strip()
+        if g and len(g.split()) <= 4 and "=" not in g and "+" not in g \
+           and not g.startswith("including"): yield g
+expected = {}
+for w in words:
+    if re.fullmatch(r"\d+", meaning[w].strip()): continue
+    for g in glosses(meaning[w]): expected.setdefault(g, []).append(w)
+listed = {}
+for line in read("dictionary/index-english.md").splitlines():
+    m = re.match(r"^\| (?!English|-)(.+?) \| (.+?) \|$", line)
+    if m and not m.group(1).startswith("-") and not re.fullmatch(r"\d+", m.group(1)):
+        listed[m.group(1)] = sorted(x.strip() for x in m.group(2).split(","))
+for g in sorted(set(expected) - set(listed)):
+    check(False, f"index-english.md is missing the headword '{g}' ({', '.join(expected[g])})")
+for g in sorted(set(listed) - set(expected)):
+    check(False, f"index-english.md has a headword the dictionary no longer gives: '{g}'")
+for g in sorted(set(expected) & set(listed)):
+    check(sorted(expected[g]) == listed[g],
+          f"index-english.md maps '{g}' to {listed[g]}; the dictionary now gives {sorted(expected[g])}")
+
 # ------------------------------------------------------------------ balance
 # Design rule 4: no language family dominates. dictionary/balance.md states the
 # figures; they are recomputed here so the page cannot drift from the data.

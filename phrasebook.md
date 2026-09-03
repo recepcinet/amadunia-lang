@@ -5,7 +5,10 @@ Everything here obeys the rules in [grammar/](grammar/) and uses only words in
 line on this page along with the lessons.
 
 If you have read [Lesson 1](lessons/lesson-01-greetings.md) you can already say
-the first section. The rest needs no more than [Lesson 15](lessons/lesson-15-pointing-placing.md).
+the first section. The rest draws on the whole course — the last word it needs
+arrives in [Lesson 25](lessons/lesson-25-doing-and-being.md), so read
+the page for what you can use now rather than as a test of what you have
+finished.
 
 ---
 
