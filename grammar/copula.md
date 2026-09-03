@@ -95,6 +95,8 @@ The split — a copula with nouns, none with adjectives — is the Chinese rule 
 
 ## Open questions
 
+- **"want to be" plus an adjective has no form.** *es* is a verb and can be chained — *mau es doktor*, "want to be a doctor". An adjective is its own predicate and takes no verb, so *mau* has nothing to attach to: "wants to be the easiest" cannot be built. Both [text 3](../texts/text-3-lingua-ini.md) and Lesson 21 hit this and both were rewritten around it — text 3 by supplying a noun (*mau es lingua paling asan*), Lesson 21 by dropping the modal. Whether *es* is allowed before an adjective inside a verb chain, or something else is needed, is undecided. Found September 3, 2026 by checking every sentence in the repository against the copula rule.
+
 - ~~Verb chaining~~ — settled in [verb-chains.md](verb-chains.md): the verbs simply follow one another, *Mi mau kula pan*.
 
 - ~~Negation~~ — settled in [negation.md](negation.md): *Mi no es doktor*. *no* goes before *es*, and before the tense particle when there is one.

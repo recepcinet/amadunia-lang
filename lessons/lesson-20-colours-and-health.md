@@ -54,7 +54,7 @@ Colours follow the noun, like every adjective, and take no *es*:
 | | |
 |---|---|
 | Mi bimar. | I am sick. |
-| Ta suda es bimar, sasa ta hao. | She was sick, now she is well. |
+| Ta suda bimar, sasa ta hao. | She was sick, now she is well. |
 | Doktor beri ilac por mi. | The doctor gives medicine to me. |
 | Mi no bisa go skola porke mi bimar. | I can't go to school because I'm sick. |
 
@@ -65,7 +65,7 @@ Colours follow the noun, like every adjective, and take no *es*:
 | Papa mi es kisan. | My father is a farmer. |
 | Tacir itu beca fruta in market. | That merchant sells fruit at the market. |
 | Sofer punya auto merah. | The driver has a red car. |
-| Mualim mi es paling hao. | My teacher is the best. |
+| Mualim mi paling hao. | My teacher is the best. |
 
 ## Food
 
@@ -96,8 +96,8 @@ Colours follow the noun, like every adjective, and take no *es*:
 
 | | |
 |---|---|
-| Umur mi es sundar. | My life is beautiful. |
-| Uhuru es paling kabir ide. | Freedom is the biggest idea. |
+| Umur mi sundar. | My life is beautiful. |
+| Uhuru es ide paling kabir. | Freedom is the biggest idea. |
 | Mi mau uhuru por insan-insan. | I want freedom for people. |
 
 ## A conversation

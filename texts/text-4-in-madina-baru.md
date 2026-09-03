@@ -13,14 +13,14 @@ Written at 300 roots, with no grammar beyond Lesson 23.
 ```
 — Pardon! Yu punya tempo?
 — Ya. Ke?
-— Mi es baru in madina ini. Mi naiti hotel.
+— Mi baru in madina ini. Mi naiti hotel.
 — Es hotel du sini. Uan lebi kabir, uan lebi keci.
 — Harga?
 — Hotel kabir: sis-des pesa por uan rat. Hotel keci: tri-des.
 — Mi mau hotel keci. Ta nali?
 — Anda tarik ini. Kab yu lihat ponte, go yamin.
 — Ponte?
-— Ya. Ponte in sungai. Yu no bisa unut ta — ta es merah.
+— Ya. Ponte in sungai. Yu no bisa unut ta — ta merah.
 — Mersi! Aur es restoran in tempat ini?
 — Es. Restoran keci. Corba situ paling hao in madina.
 — Yu sema benar?
@@ -37,14 +37,14 @@ Written at 300 roots, with no grammar beyond Lesson 23.
 |---|---|
 | — Pardon! Yu punya tempo? | Excuse me! Do you have time? |
 | — Ya. Ke? | Yes. What? |
-| — Mi es baru in madina ini. Mi naiti hotel. | I am new in this city. I am looking for a hotel. |
+| — Mi baru in madina ini. Mi naiti hotel. | I am new in this city. I am looking for a hotel. |
 | — Es hotel du sini. Uan lebi kabir, uan lebi keci. | There are two hotels here. One bigger, one smaller. |
 | — Harga? | The price? |
 | — Hotel kabir: sis-des pesa por uan rat. Hotel keci: tri-des. | The big hotel: sixty for one night. The small one: thirty. |
 | — Mi mau hotel keci. Ta nali? | I want the small hotel. Where is it? |
 | — Anda tarik ini. Kab yu lihat ponte, go yamin. | Walk this road. When you see a bridge, go right. |
 | — Ponte? | A bridge? |
-| — Ya. Ponte in sungai. Yu no bisa unut ta — ta es merah. | Yes. The bridge on the river. You cannot miss it — it is red. |
+| — Ya. Ponte in sungai. Yu no bisa unut ta — ta merah. | Yes. The bridge on the river. You cannot miss it — it is red. |
 | — Mersi! Aur es restoran in tempat ini? | Thanks! And is there a restaurant in this place? |
 | — Es. Restoran keci. Corba situ paling hao in madina. | There is. A small restaurant. The soup there is the best in the city. |
 | — Yu sema benar? | Are you telling the truth? |

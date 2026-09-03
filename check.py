@@ -120,6 +120,45 @@ m = re.search(r"## Open questions — (\d+) of them", gi)
 check(m and int(m.group(1)) == live,
       f"grammar/README.md says {m.group(1) if m else '?'} open questions; the files have {live}")
 
+# ------------------------------------------------------------------- copula
+# grammar/copula.md: es goes before a noun and never before an adjective.
+# The rule was settled early and then broken thirteen times in later lessons
+# and texts, because English puts "is" in front of an adjective and the hand
+# follows the English. This catches it.
+ADJECTIVES = {
+    "amik","asan","asfar","asul","baid","barid","baru","benar","bimar","cang",
+    "dekat","duan","dulce","eski","garam","genc","hafif","hao","hayai","kabir",
+    "keci","kosong","kotor","kuat","mal","merah","muskil","plen","putih","safi",
+    "sakil","sedih","senang","siya","sundar","yanlis","yesil",
+}
+DEGREE = {"lebi", "kurang", "paling"}   # es lebi kabir is the same mistake
+
+def amadunia_runs(text):
+    """Sentences made entirely of dictionary words, from tables, quotes and code."""
+    for line in text.splitlines():
+        if line.startswith("|"):   cells = [c.strip() for c in line.split("|")[1:-1]]
+        elif line.startswith(">"): cells = [line.lstrip("> —").strip()]
+        else:                      cells = [line]
+        for cell in cells:
+            for s in re.split(r"[.!?]", cell):
+                toks = re.findall(r"[a-z]+", s.lower())
+                if len(toks) >= 2 and all(t in words or t in PROPER or t in {"sol","luma"} for t in toks):
+                    yield line, s.strip(), toks
+
+for path in sorted(glob.glob("lessons/*.md") + glob.glob("texts/*.md")):
+    if path.endswith("README.md"): continue
+    body = read(path)
+    if path.startswith("texts/") and "```" in body: body = body.split("```")[1]
+    for line, sent, toks in amadunia_runs(body):
+        # Lessons show deliberately wrong sentences to teach the rule.
+        if "wrong" in line.lower() or "careful" in line.lower(): continue
+        for i, w in enumerate(toks[:-1]):
+            if w != "es": continue
+            nxt = toks[i+1]
+            if nxt in DEGREE and i + 2 < len(toks): nxt = toks[i+2]
+            check(nxt not in ADJECTIVES,
+                  f"{os.path.basename(path)}: 'es {toks[i+1]}' — es never goes before an adjective: {sent}")
+
 # -------------------------------------------------------------------- links
 for f in md():
     for m in re.finditer(r"\]\(([^)#]+?)(?:#[^)]*)?\)", read(f)):

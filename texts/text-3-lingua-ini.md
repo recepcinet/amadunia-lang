@@ -24,8 +24,8 @@ Ini es lingua asan.
 
 Es lingua-lingua lebi kabir dari Amadunia.
 Es lingua-lingua lebi eski.
-Amadunia no mau es paling kabir.
-Amadunia mau es paling asan.
+Amadunia no mau es lingua paling kabir.
+Amadunia mau es lingua paling asan.
 
 Agar yu bil des kalima, yu bisa sema.
 Agar yu bil sen kalima, yu bisa sema masal.
@@ -54,8 +54,8 @@ Mi ama dunia. Yu ama dunia. Kita ama dunia.
 | Ini es lingua asan. | This is an easy language. |
 | Es lingua-lingua lebi kabir dari Amadunia. | There are languages bigger than Amadunia. |
 | Es lingua-lingua lebi eski. | There are languages older. |
-| Amadunia no mau es paling kabir. | Amadunia does not want to be the biggest. |
-| Amadunia mau es paling asan. | Amadunia wants to be the easiest. |
+| Amadunia no mau es lingua paling kabir. | Amadunia does not want to be the biggest language. |
+| Amadunia mau es lingua paling asan. | Amadunia wants to be the easiest language. |
 | Agar yu bil des kalima, yu bisa sema. | If you know ten words, you can speak. |
 | Agar yu bil sen kalima, yu bisa sema masal. | If you know a hundred words, you can tell a story. |
 | Agar yu bil tri-sen kalima, yu bisa sema umur yu. | If you know three hundred words, you can tell your life. |

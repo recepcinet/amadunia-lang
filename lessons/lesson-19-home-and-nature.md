@@ -73,7 +73,7 @@
 
 | | |
 |---|---|
-| Mualim mi es hao. | My teacher is good. |
+| Mualim mi hao. | My teacher is good. |
 | Polisi in tarik. | The police are on the road. |
 | Mualim daima kara libro. | The teacher always reads books. |
 

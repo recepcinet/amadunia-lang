@@ -71,8 +71,8 @@
 | Lingua ini asan. | This language is easy. |
 | Mi punya umid. | I have hope. |
 | Amani lebi hao dari gusa. | Peace is better than anger. |
-| Legis lasim es benar por insan-insan. | The law must be true for people. |
-| Arte aur musik es sundar. | Art and music are beautiful. |
+| Legis benar por insan-insan. | The law is true for people. |
+| Arte aur musik sundar. | Art and music are beautiful. |
 
 ## A journey
 
@@ -90,7 +90,7 @@
 > — Berapa din?
 > — Des din. Ta punya umid ta kan animal-animal situ.
 > — Mi mau go una ta!
-> — Yu bisa. Harga no es kabir. Mi saufa katab surat por ta.
+> — Yu bisa. Harga no kabir. Mi saufa katab surat por ta.
 > — Mersi! Ini es regalo paling hao.
 
 *Did you see the news? — No. What happened? — My teacher will go on a journey. She's going to the forest in the mountains. — How many days? — Ten days. She hopes she'll see animals there. — I want to go with her! — You can. The price isn't big. I'll write a letter to her. — Thanks! This is the best gift.*

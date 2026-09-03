@@ -33,7 +33,7 @@ Every rule above appears in this one sentence, and not a word in it changes shap
 > *Mi no suda kara hao libro ini in dom rat ini porke mi sedih.*
 > I did not read this book well at home last night because I was sad.
 
-## Open questions — 24 of them
+## Open questions — 25 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
@@ -49,6 +49,10 @@ Gathered from the files above so they can be read in one place. Each is recorded
 **[conjunction](conjunction.md)**
 
 - **Joining more than two clauses** — whether long chains want a different rhythm — is a question for when there is more prose.
+
+**[copula](copula.md)**
+
+- **"want to be" plus an adjective has no form.** *es* is a verb and can be chained — *mau es doktor*, "want to be a doctor". An adjective is its own predicate and takes no verb, so *mau* has nothing to attach to: "wants to be the easiest" cannot be built. Both [text 3](../texts/text-3-lingua-ini.md) and Lesson 21 hit this and both were rewritten around it — text 3 by supplying a noun (*mau es lingua paling asan*), Lesson 21 by dropping the modal. Whether *es* is allowed before an adjective inside a verb chain, or something else is needed, is undecided. Found September 3, 2026 by checking every sentence in the repository against the copula rule.
 
 **[demonstratives](demonstratives.md)**
 
@@ -111,4 +115,4 @@ Gathered from the files above so they can be read in one place. Each is recorded
 
 Nothing on this list has been invented to make a lesson or a text work. When something was needed and undecided, the lesson said so.
 
-Three of them are different in kind — the imperative, the mark for a name, and how *r* is made. They were not left open on purpose. They are things the language had been using or relying on that no rule ever granted, and all three were found by writing something that was not a lesson.
+Four of them are different in kind — the imperative, the mark for a name, how *r* is made, and "want to be" plus an adjective. They were not left open on purpose. Each is something the language had been using or relying on that no rule ever granted, and all four were found the same way: by writing something that was not a lesson, or by checking the lessons against their own rules.
