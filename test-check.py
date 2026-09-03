@@ -170,6 +170,15 @@ MUTATIONS = [
     ("stale count spelled out", "README.md",
      f"[{_WORDS[_LIVE]} questions are still open]", "[Three questions are still open]",
      f"names 3 open questions; there are {_LIVE}"),
+    ("a text with no code block", "texts/text-10-mila-tahun.md",
+     '```\nInsan hidup sen tahun. Insan mati.\nPahar hidup lebi dari insan.\nPahar hidup mila tahun. Natura no mati.\n\nInsan suda katab historia. Historia no mati.\nArte in dom eski. Kalima in libro eski.\n\nLegis lai dari insan. Legis no lai dari natura.\nAmani lai dari insan.\n\nNumero no mati. Uan es uan in dunia.\nLingua mati kab insan stop sema.\n\nMi proba sema. Yu proba sema.\nKita punya sansi.\n```', "",
+     "no code block"),
+    ("the index naming a text that is gone", "texts/README.md",
+     "text-5-uan.md", "text-99-missing.md",
+     "which does not exist"),
+    ("the front page losing its teaching section", "README.md",
+     "## Learn the basics in 2 minutes", "## Basics in 2 minutes",
+     "no '## Learn the basics' section"),
     ("a text with no Roots used section", "texts/text-5-uan.md",
      "## Roots used", "## Roots",
      "no checkable '## Roots used' section"),
@@ -341,6 +350,16 @@ def main():
     if code and "lesson number must be two digits" in out:
         print(f"  caught       {'a one-digit lesson name':44} -> two digits required"); caught += 1
     else: print("  NOT CAUGHT   a one-digit lesson name"); missed += 1
+
+    # Both fences of text-5, which one replacement cannot remove
+    full = os.path.join(work, "texts/text-5-uan.md")
+    original = io.open(full, encoding="utf-8").read()
+    io.open(full, "w", encoding="utf-8").write(original.replace("```", ""))
+    code, out = run(work)
+    io.open(full, "w", encoding="utf-8").write(original)
+    if code and "the poem cannot be scanned" in out:
+        print(f"  caught       {'the poem losing every fence':44} -> cannot be scanned"); caught += 1
+    else: print("  NOT CAUGHT   the poem losing every fence"); missed += 1
 
     # A derived file that cannot be parsed at all
     full = os.path.join(work, "dictionary/dictionary.json")

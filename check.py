@@ -121,7 +121,13 @@ for kind, found, listed in (("consonant pair", set(_cc), _listed_cc),
 for path in glob.glob("texts/*.md"):
     if path.endswith("README.md"): continue
     body = read(path)
-    if "```" not in body: continue
+    # This used to be a silent `continue`. A text with no code block was skipped
+    # by every check below rather than reported, which is the quietest way for a
+    # file to stop being checked at all.
+    if "```" not in body:
+        check(False, f"{os.path.basename(path)}: no code block — a text keeps its "
+                     f"Amadunia inside one, and nothing below can read it")
+        continue
     for w in sorted(set(re.findall(r"[a-z]+", body.split("```")[1].lower()))):
         check(w in words or w in PROPER, f"{os.path.basename(path)}: '{w}' is not in the dictionary")
     m = re.search(r"## Roots used\n\n(\d+) of", body)
@@ -256,7 +262,12 @@ for path in PROSE:
 # page quotes example sentences, a balance table and a list of rejected
 # candidates; those are illustration, not vocabulary, and letting them seed
 # this set would move every lesson's running total whenever the page grew.
-_front = read("README.md").split("## Learn the basics")[1].split("\n## ")[0]
+_readme = read("README.md")
+check("## Learn the basics" in _readme,
+      "README.md: no '## Learn the basics' section — that is where the front page "
+      "teaches its words, and the lesson order is measured from it")
+_front = (_readme.split("## Learn the basics")[1].split("\n## ")[0]
+          if "## Learn the basics" in _readme else "")
 vocab = {w for w in words if re.search(r"\*" + w + r"\*|\| " + w + r" \|", _front)}
 for path in sorted(glob.glob("lessons/lesson-*.md")):
     body = read(path)
@@ -674,7 +685,10 @@ check(f"**{_agree} of the 300 roots — {round(100*_agree/len(words))}%" in _st,
 # stress is settled. The claim is derived from the line, so it is recomputed:
 # an edit to the poem must not leave the scansion behind.
 _poem = read("texts/text-5-uan.md")
-_last = [l for l in _poem.split("```")[1].splitlines() if l.strip()][-1]
+_lines5 = ([l for l in _poem.split("```")[1].splitlines() if l.strip()]
+           if "```" in _poem else [])
+check(_lines5, "texts/text-5-uan.md: no code block, so the poem cannot be scanned")
+_last = _lines5[-1] if _lines5 else ""
 _pat = ""
 for _t in re.findall(r"[a-z]+(?:-[a-z]+)*", _last.lower()):
     for _half in _t.split("-"):
@@ -859,7 +873,13 @@ check(not unused, f"{len(unused)} roots are never used in a sentence, only "
 # texts/README.md restates each text's root count; it is not the text's own
 # claim and had nothing checking it.
 for m in re.finditer(r"\| \[.+?\]\((.+?)\) \| (\d+) \|", read("texts/README.md")):
+    if not os.path.exists("texts/" + m.group(1)):
+        check(False, f"texts/README.md lists {m.group(1)}, which does not exist")
+        continue
     body = read("texts/" + m.group(1))
+    if "```" not in body:
+        check(False, f"texts/README.md counts {m.group(1)}, which has no code block")
+        continue
     real = len(set(re.findall(r"[a-z]+", body.split("```")[1].lower())) - PROPER)
     check(int(m.group(2)) == real,
           f"texts/README.md says {m.group(1)} uses {m.group(2)} roots; it uses {real}")
