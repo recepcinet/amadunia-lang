@@ -4,7 +4,15 @@
 
 ## New words
 
-None. This lesson adds no vocabulary at all.
+| Word | Meaning |
+|---|---|
+| es | is, am, are — before a noun |
+
+One word, and it earns its place at the end of this lesson. *es* joins a
+subject to a **noun**: *Nama mi es Luma*, my name is Luma. It never goes before
+an adjective — *dom mi keci*, my house is small, has no *es* in it and never
+will. That is the whole rule, and [grammar/copula.md](../grammar/copula.md)
+gives the reasoning.
 
 ## The owner comes second
 

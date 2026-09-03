@@ -194,7 +194,12 @@ for path in PROSE:
 # A learner working through in order must never meet a word nothing has taught.
 # Twenty-four forward references had accumulated in Lessons 18-24 before this
 # was checked; punya was used by five lessons and taught by the last of them.
-vocab = {w for w in words if re.search(r"\*" + w + r"\*|\| " + w + r" \|", read("README.md"))}
+# Only the front page's teaching section counts as taught. The rest of the
+# page quotes example sentences, a balance table and a list of rejected
+# candidates; those are illustration, not vocabulary, and letting them seed
+# this set would move every lesson's running total whenever the page grew.
+_front = read("README.md").split("## Learn the basics")[1].split("\n## ")[0]
+vocab = {w for w in words if re.search(r"\*" + w + r"\*|\| " + w + r" \|", _front)}
 for path in sorted(glob.glob("lessons/lesson-*.md")):
     body = read(path)
     if "## New word" in body:

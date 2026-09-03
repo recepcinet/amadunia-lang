@@ -59,9 +59,11 @@ rejected for this. Not a word that means something bad elsewhere — *matar* is
 "to kill" in Spanish. Not a loaded term — *kulak* is clean phonologically and
 carries a heavy political sense in Russian.
 
-**8. One root, one job.** A word is a noun or a verb, not both. *madad*
-("help; to help") is the single exception in 300 roots and is
-[an open question](grammar/verb-chains.md) because of it.
+**8. One root, one job.** A word is a noun or a verb, not both. Two roots in
+300 break it and both are [an open question](grammar/verb-chains.md): *madad*
+("help; to help"), which says so in its own gloss, and *rabota* ("work"), which
+does not — it is glossed as one noun and then used as a verb in 13 sentences.
+The first audit read the glosses and missed the second one entirely.
 
 **9. A real, sourced etymology,** and from a family that is not already
 crowding the dictionary. Every root names its sources; none says "invented".

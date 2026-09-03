@@ -13,6 +13,13 @@
 | porke | why |
 | kaifa | how |
 | berapa | how many, how much |
+| taksi | taxi |
+| foto | photo |
+
+The last two are not question words. They are the first of the already-global
+words — the ones design rule 5 says stay as they are, because most of the world
+can already say them. *taksi* turns up in the examples below; you learned both
+the moment you read them.
 
 ## You already know how to ask yes or no
 
