@@ -108,7 +108,15 @@ It has earned its place twice over: it found thirteen copula errors that had
 accumulated across five lessons and three texts, and then caught four more in
 the first draft of the phrasebook.
 
-The one thing it cannot check is whether a word is a good word. That is still
+And [`test-check.py`](test-check.py) checks the checker. It breaks each
+guarantee in turn against a throwaway copy of the repository and demands that
+`check.py` rejects it, naming the specific error it expects — so a mutation
+caught by the wrong rule counts as a miss, and a mutation whose target has
+moved is reported as stale rather than as a pass. It exists because one check
+was added that could never fail, and a hand-run test read its empty output as
+success.
+
+The one thing neither can check is whether a word is a good word. That is still
 a decision, and the reasoning behind every one of them is in
 [grammar/](grammar/).
 

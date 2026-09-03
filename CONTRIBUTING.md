@@ -73,6 +73,8 @@ python3 check.py
 ```
 
 It enforces 1 through 6 and 8, plus everything else the repository promises.
+`python3 test-check.py` then checks the checker, by breaking each guarantee and
+requiring `check.py` to reject it.
 It has caught a collision in five consecutive batches of new words, every time
 after the word looked clean by eye.
 

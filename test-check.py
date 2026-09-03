@@ -1,0 +1,156 @@
+#!/usr/bin/env python3
+"""Mutation tests for check.py.
+
+A check that has never been seen to fail has not been tested. Two of the checks
+in check.py were added with a hand-run injection that silently missed its
+target, and the empty output was read as a pass. One of them — the CRLF check —
+turned out to be incapable of failing at all.
+
+This runs every mutation against a throwaway copy of the repository and demands
+that check.py rejects it. A mutation whose target string is missing is reported
+as NOT APPLIED, never as a pass, which is exactly the failure mode that let the
+dead check through.
+
+    python3 test-check.py
+"""
+import io, os, re, shutil, subprocess, sys, tempfile
+
+# (name, file, find, replace, expect) — expect must appear in the failure output,
+# so a mutation caught by the wrong check counts as a miss. "zzugu" was first
+# caught by the alphabet rule, leaving the coverage rule still unverified.
+MUTATIONS = [
+    ("letter outside the alphabet", "dictionary/dictionary.md",
+     "| akua | water |", "| azua | water |",
+     "outside the alphabet"),
+    ("three consonants in a row", "dictionary/dictionary.md",
+     "| akua | water |", "| akstra | test |\n| akua | water |",
+     "three consonants"),
+    ("unattested vowel sequence", "dictionary/dictionary.md",
+     "| akua | water |", "| aeiou | test |\n| akua | water |",
+     "is not attested"),
+    ("blank etymology", "dictionary/dictionary.md",
+     "| bai | goodbye | already-global |", "| bai | goodbye | — |",
+     "no etymology"),
+    ("duplicate entry", "dictionary/dictionary.md",
+     "| akua | water |", "| akua | water |\n| akua | water |",
+     "duplicate entries"),
+    ("l/r minimal pair", "dictionary/dictionary.md",
+     "| lampu | lamp |", "| ruma | test |\n| lampu | lamp |",
+     "l/r minimal pair"),
+    ("invented word inside a text", "texts/story-2-safari-por-pahar.md",
+     "Ates keci garam.", "Ates keci garam. Mi lihat zzzz.",
+     "is not in the dictionary"),
+    ("text root count overstated", "texts/text-5-uan.md",
+     "## Roots used\n\n21 of 300", "## Roots used\n\n19 of 300",
+     "claims 19 roots"),
+    ("es before an adjective", "lessons/lesson-19-home-and-nature.md",
+     "| Mualim mi hao. |", "| Mualim mi es hao. |",
+     "never goes before an adjective"),
+    ("es before an adjective, grammar file", "grammar/copula.md",
+     "| adjective | Dom kabir. |", "| adjective | Dom es kabir. |",
+     "copula.md:"),
+    ("es before an adjective, front page", "README.md",
+     "> — Ya, ok! Bai!", "> — Ya, ok! Dom es kabir! Bai!",
+     "README.md: 'es kabir'"),
+    ("plural after a number", "lessons/lesson-05-plural.md",
+     "| tri anak | three children |", "| tri anak-anak | three children |",
+     "no plural after a number"),
+    ("negation after the tense particle", "lessons/lesson-14-not-and.md",
+     "Anak no suda lala.", "Anak suda no lala.",
+     "comes before the tense particle"),
+    ("word used before it is taught", "lessons/lesson-05-plural.md",
+     "| Anak-anak kula pan. | The children eat bread. |",
+     "| Anak-anak kula fruta. | The children eat fruit. |",
+     "before any lesson teaches it"),
+    ("lesson overstates what it has taught", "lessons/lesson-20-colours-and-health.md",
+     "Twenty lessons, **204 roots**", "Twenty lessons, **234 roots**",
+     "roots taught by here"),
+    ("wrong prerequisite", "lessons/lesson-07-questions.md",
+     "*Prerequisite: [Lesson 6]", "*Prerequisite: [Lesson 4]",
+     "prerequisite should be"),
+    ("root taught nowhere", "dictionary/dictionary.md",
+     "| tempat | place |", "| bofuk | test |\n| tempat | place |",
+     "taught nowhere"),
+    ("text index count wrong", "texts/README.md",
+     "| [Uan](text-5-uan.md) | 21 |", "| [Uan](text-5-uan.md) | 19 |",
+     "texts/README.md says"),
+    ("English index out of step", "dictionary/dictionary.md",
+     "| bola | ball |", "| bola | sphere |",
+     "index-english.md"),
+    ("gap note that is no longer true", "texts/text-4-in-madina-baru.md",
+     'No word for "per".', 'No word for "danger".',
+     "says there is no word for"),
+    ("balance figure stale", "dictionary/balance.md",
+     "**111 of 300, or 37%**", "**111 of 300, or 42%**",
+     "European figure is stale"),
+    ("front page root count", "README.md",
+     "**300 roots**, the A1 target", "**299 roots**, the A1 target",
+     "README.md says 299 roots"),
+    ("open question count stale", "grammar/adverbs.md",
+     "- **Frequency adverbs.", "- ~~Frequency adverbs~~ — settled. **Frequency adverbs.",
+     "open questions; the files have"),
+    ("broken link", "README.md",
+     "[phrasebook.md](phrasebook.md)", "[phrasebook.md](phrasebok.md)",
+     "broken link"),
+    ("dictionary.json drifted", "dictionary/dictionary.json",
+     '"meaning": "goodbye"', '"meaning": "farewell"',
+     "dictionary.json has drifted"),
+    ("dictionary.csv drifted", "dictionary/dictionary.csv",
+     "bai,goodbye,", "bai,farewell,",
+     "dictionary.csv has drifted"),
+]
+
+def run(cwd):
+    r = subprocess.run([sys.executable, "check.py"], cwd=cwd,
+                       capture_output=True, text=True)
+    return r.returncode, (r.stdout + r.stderr)
+
+def main():
+    src = os.path.dirname(os.path.abspath(__file__))
+    tmp = tempfile.mkdtemp(prefix="amadunia-mut-")
+    work = os.path.join(tmp, "repo")
+    shutil.copytree(src, work, ignore=shutil.ignore_patterns(".git", "__pycache__"))
+
+    code, out = run(work)
+    if code != 0:
+        print("The unmutated copy already fails; fix that first:\n" + out)
+        shutil.rmtree(tmp); return 1
+
+    # CRLF is a byte-level mutation, handled separately
+    caught = missed = notapplied = 0
+    for name, path, find, repl, expect in MUTATIONS:
+        full = os.path.join(work, path)
+        original = io.open(full, encoding="utf-8", newline="").read()
+        if find not in original:
+            print(f"  NOT APPLIED  {name}  (target missing in {path})"); notapplied += 1; continue
+        io.open(full, "w", encoding="utf-8", newline="").write(original.replace(find, repl, 1))
+        code, out = run(work)
+        io.open(full, "w", encoding="utf-8", newline="").write(original)
+        if code == 0:
+            print(f"  NOT CAUGHT   {name}"); missed += 1
+        elif expect not in out:
+            first = next((l.strip(" •") for l in out.splitlines() if l.strip().startswith("•")), "?")
+            print(f"  WRONG CHECK  {name}\n               expected {expect!r}, got: {first[:56]}"); missed += 1
+        else:
+            print(f"  caught       {name:44} -> {expect}"); caught += 1
+
+    # CRLF, which cannot be expressed as a text replacement
+    full = os.path.join(work, "dictionary/dictionary.csv")
+    original = io.open(full, encoding="utf-8", newline="").read()
+    io.open(full, "w", encoding="utf-8", newline="").write(original.replace("\n", "\r\n"))
+    code, out = run(work)
+    io.open(full, "w", encoding="utf-8", newline="").write(original)
+    if code == 0: print("  NOT CAUGHT   CRLF line endings"); missed += 1
+    else: print(f"  caught       {'CRLF line endings':44} -> CRLF rejected"); caught += 1
+
+    shutil.rmtree(tmp)
+    print(f"\n{caught} caught, {missed} not caught, {notapplied} not applied")
+    if missed or notapplied:
+        print("A mutation that is not caught means the check is inert or absent.")
+        print("A mutation that is not applied means this test is stale, not that the check works.")
+        return 1
+    print("Every mutation was rejected.")
+    return 0
+
+if __name__ == "__main__":
+    sys.exit(main())
