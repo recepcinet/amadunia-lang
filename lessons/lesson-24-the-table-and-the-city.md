@@ -93,7 +93,7 @@ gap. No new grammar — everything here uses rules you already have.
 
 > — Yu mau kula in restoran besok?
 > — Ya! Restoran nali?
-> — Dekat ponte, in tarik kabir.
+> — In tarik kabir.
 > — Ok. Mi lai in aksam.
 > — Hao. Ta punya nyama, risi, fruta — aur kafe paling hao in madina.
 > — Mi no nomu kafe. Mi nomu ca.

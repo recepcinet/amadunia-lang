@@ -3,7 +3,7 @@
 Generated from the material a learner reads — the twenty-five lessons, the
 eight texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **4430 words of running Amadunia**, and every one of the 300 roots appears
+it. **4427 words of running Amadunia**, and every one of the 300 roots appears
 at least once.
 
 [`check.py`](../check.py) regenerates this page and fails if it disagrees, so
@@ -36,7 +36,7 @@ cover half of everything.** They are the first twenty-five below.
 | 1 | *mi* | I, me | 460 | 10.4% |
 | 2 | *yu* | you | 203 | 4.6% |
 | 3 | *ta* | he, she, it | 132 | 3.0% |
-| 4 | *in* | at, in, on | 115 | 2.6% |
+| 4 | *in* | at, in, on | 116 | 2.6% |
 | 5 | *es* | is, am, are | 113 | 2.6% |
 | 6 | *ini* | this | 94 | 2.1% |
 | 7 | *dom* | house, home | 83 | 1.9% |
@@ -76,9 +76,9 @@ cover half of everything.** They are the first twenty-five below.
 
 ## Used exactly once
 
-9 roots appear in a single sentence in the whole corpus:
+10 roots appear in a single sentence in the whole corpus:
 
-*bai*, *bas*, *hi*, *madad*, *mersi*, *ok*, *pardon*, *plis*, *ya*
+*bai*, *bas*, *dekat*, *hi*, *madad*, *mersi*, *ok*, *pardon*, *plis*, *ya*
 
 That list is now at its floor. Eight of the nine are interjections — *hi*,
 *bai*, *ok*, *ya*, *bas*, *mersi*, *pardon*, *plis* — which are used alone and

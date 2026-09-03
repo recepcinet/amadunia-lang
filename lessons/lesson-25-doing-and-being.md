@@ -89,7 +89,7 @@ lessons before anything taught them, and are now introduced there instead. Again
 > — Yu senang o sedih?
 > — Mi senang! Mi suda naiti rabota baru.
 > — Nali?
-> — In skola dekat ponte. Mi saufa es mualim anak-anak.
+> — In skola baru. Mi saufa es mualim anak-anak.
 > — Muskil?
 > — Ya, muskil. Aur hao. Mi ama anak-anak.
 > — Mi senti yu saufa es mualim paling hao.

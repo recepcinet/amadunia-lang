@@ -708,6 +708,37 @@ for path in md():
               f"{path}: '{_raw}' marks the wrong syllable; the beat is on "
               f"'{_parts[_idx] if _idx is not None else '?'}'")
 
+# ------------------------------------------------------ the adjective follows
+# The adjective goes after its noun. Nothing checked it, and three pages were
+# using dekat, near, as though it were a preposition — Dekat ponte, near the
+# bridge — which no rule grants: dekat is an adjective and the prepositions are
+# in, dari and por.
+#
+# Limit, and it is a real one: an adjective straight after a verb is the adverb
+# rule, so this check has to skip that position — and a genuinely misplaced
+# adjective there is invisible to it. Mi punya keci korku, "I have a small
+# fear", was found by reading rather than by this check, and corrected to
+# korku keci.
+_TIMEG = GROUP.get("Time", set())
+# kadar ("as ... as") and cok sit in the Qualities group by theme but are
+# function words, so they are taken out by hand — the group headings are
+# thematic and were never a part-of-speech list.
+_NOUNS = (set(words) - ADJECTIVES - VERBS - NUMBERS - FUNCTION
+          - {"mi", "yu", "ta", "kita", "kadar", "cok", "lebi", "kurang", "paling"})
+for path in PROSE:
+    body = read(path)
+    if path.startswith("texts/") and "```" in body:
+        body = "".join(body.split("```")[1::2])
+    for line, sent, toks in amadunia_runs(body.replace("—", "\n")):
+        if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗")): continue
+        base = [t.split("-")[0] for t in toks]
+        for _i in range(len(base) - 1):
+            _a, _b = base[_i], base[_i + 1]
+            if _a in ADJECTIVES and _b in _NOUNS and _b not in _TIMEG:
+                if _i and base[_i - 1] in VERBS: continue   # the adverb slot
+                check(False, f"{os.path.basename(path)}: '{_a} {_b}' — the adjective "
+                             f"goes after its noun: {sent}")
+
 # ----------------------------------------------------------- tables render
 # A run of lines starting with "|" is a markdown table only if its second line
 # is a separator. Nothing checked that, and this file reads table rows happily

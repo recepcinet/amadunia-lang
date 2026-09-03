@@ -78,7 +78,7 @@ English does — do not let an unstressed vowel slide toward *uh*.
 | Anda tarik ini. | Walk this road. |
 | Go yamin. | Go right. |
 | Go kiri. | Go left. |
-| Situ, dekat ponte. | There, near the bridge. |
+| Situ, in ponte. | There, at the bridge. |
 | Tarik cang o duan? | Is the road long or short? |
 | Berapa hora? | How many hours? |
 | Mi anda o mi go in tren? | Do I walk or go by train? |
