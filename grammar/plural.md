@@ -68,5 +68,14 @@ Keeping the noun single after a numeral is itself shared by Turkish, Hungarian, 
 
 ## Open questions
 
+- **All, some, none.** *cok* covers "many" and stands before the noun — *cok
+  rafiki*. There is nothing for *all* or *some*. **"None" may already be
+  covered**: the existential negation settled in
+  [copula.md](copula.md) gives *No es ca*, there is no tea, which is what "none"
+  usually means in a sentence — so the question is narrower than its name, and
+  is really about *all* and *some*. Nothing written so far has tried to say
+  either, which is the whole of the evidence for it. Recorded here, where the
+  decision would live, on September 3, 2026.
+
 - ~~Pronouns~~ — settled: *mi-mi*, *yu-yu*, *ta-ta* are confirmed; see [pronouns.md](pronouns.md).
 - Whether doubling may also carry the distributive sense some source languages give it (*din-din* = "every day"), or stays strictly plural.

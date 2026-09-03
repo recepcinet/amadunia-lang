@@ -70,5 +70,14 @@ Every candidate collided, and none was needed:
 
 ## Open questions
 
-- **Reported questions** — "I asked where you were" — puts a question word inside a clause. Untested.
+- **Reported questions** — "I asked where you were" — puts a question word
+  inside a clause. Tested on September 3, 2026 and **no rule forbids it**:
+  *Mi tanya yu es nali*, *Mi bil ta go nali*, *Ta sema kim lai* pass every check
+  in [`check.py`](../check.py). The two settled rules already compose — a clause
+  stands where an object stands, and a question word stands where the answer
+  will stand — which is the same argument this page used above to resolve *Mi
+  mau yu kula*. What is left to decide is whether that composition is granted or
+  merely unforbidden, and whether a clause with a question word in it needs
+  anything to keep it from being heard as a question, given that questions are
+  marked by tone alone.
 - **Although, before, after, until** — the second tier of joiners. Not yet decided.

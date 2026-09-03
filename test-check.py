@@ -25,7 +25,8 @@ import io, os, re, shutil, subprocess, sys, tempfile
 _LIVE = int(re.search(r"## Open questions — (\d+) of them",
                       io.open("grammar/README.md", encoding="utf-8").read()).group(1))
 _WORDS = {25: "Twenty-five", 26: "Twenty-six", 27: "Twenty-seven", 28: "Twenty-eight",
-          29: "Twenty-nine", 30: "Thirty"}
+          29: "Twenty-nine", 30: "Thirty", 31: "Thirty-one", 32: "Thirty-two",
+          33: "Thirty-three", 34: "Thirty-four", 35: "Thirty-five"}
 
 MUTATIONS = [
     ("letter outside the alphabet", "dictionary/dictionary.md",

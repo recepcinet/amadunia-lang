@@ -96,9 +96,11 @@ Two items are not grammar at all and sit outside this order: *madad* doing two
 jobs, and the thinness of Sino-Tibetan and Japonic recorded in
 [balance.md](../dictionary/balance.md). Both are vocabulary policy.
 
-## Open questions — 30 of them
+## Open questions — 32 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
+
+That sentence was not true until September 3, 2026. *All, some, none* and the ordinal numbers appeared in the demand table below and in no rule file at all, so [`check.py`](../check.py) — which counts what the files record — could not see them and the count was right about the wrong set. Both are now in [plural.md](plural.md) and [numbers.md](numbers.md). The table and the list are two views of one thing and nothing enforces that they agree; matching a table row like *a word for then* to a bullet in a file is not something a script can be trusted to do, so it is kept by hand and said so here.
 
 ### What the writing has actually asked for
 
@@ -117,7 +119,7 @@ phrasebook's list, or a lesson's note. Counted September 3, 2026.
 | whether *daima* covers *forever* | 1 — [text 10](../texts/text-10-mila-tahun.md) |
 | whether a time noun takes *in* | 1 — [phrasebook](../phrasebook.md) |
 | *never* | 0 |
-| *all, some, none* | 0 |
+| *all, some, none* | 0 — and *none* may already be covered by the existential *no es* |
 | indirect questions | 0 |
 | reflexives | 0 |
 | superlative within a named group | 0 |

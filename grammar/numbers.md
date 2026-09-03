@@ -45,5 +45,13 @@ There are no irregular numbers. Larger numbers are written by joining smaller on
 
 ## Open questions
 
+- **Ordinal numbers have no form.** *First, second, eighth* cannot be built.
+  [Text 6](../texts/text-6-seti-din.md) is the clearest case: a story that runs
+  on days — ill seven days, medicine eight days — wanted *on the eighth day* and
+  could only say *for eight days*. Nothing in the cardinal system suggests a
+  derivation, and inventing one would be the first affix in the language.
+  Listed in the index since it was first noticed and recorded here, where the
+  decision would live, on September 3, 2026.
+
 - ~~Words for 1000~~ — settled: *mila*. Above a thousand is still open.
 - Whether the separator between groups is a hyphen or a space is used inconsistently above (*du-des-uan* vs *pat-des fai*, both inherited from the README) and needs a single rule.
