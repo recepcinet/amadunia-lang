@@ -123,6 +123,12 @@ lessons/     23 lessons in order — see lessons/README.md
 
 Each file marks what is settled and what is still open.
 
+## A phrasebook
+
+[phrasebook.md](phrasebook.md) is the practical page: hello and goodbye, asking
+the way, buying, eating, and what to say if something goes wrong. Every line on
+it is checked along with the lessons.
+
 ## Checking the language
 
 Amadunia holds itself to rules that are easy to state and easy to break by

@@ -154,7 +154,7 @@ NUMBERS  = {"uan","du","tri","pat","fai","sis","seti","ba","nau","des","sen","mi
 QUANTITY = NUMBERS | {"cok","lebi","kurang","berapa"}
 PRONOUNS = {"mi","yu","ta","kita","mi-mi","yu-yu","ta-ta"}
 
-for path in sorted(glob.glob("lessons/*.md") + glob.glob("texts/*.md")):
+for path in sorted(glob.glob("lessons/*.md") + glob.glob("texts/*.md") + ["phrasebook.md"]):
     if path.endswith("README.md"): continue
     body = read(path)
     if path.startswith("texts/") and "```" in body: body = body.split("```")[1]
