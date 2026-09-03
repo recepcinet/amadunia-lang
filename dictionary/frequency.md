@@ -3,7 +3,7 @@
 Generated from the material a learner reads — the twenty-five lessons, the
 eight texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **4345 words of running Amadunia**, and every one of the 300 roots appears
+it. **4409 words of running Amadunia**, and every one of the 300 roots appears
 at least once.
 
 [`check.py`](../check.py) regenerates this page and fails if it disagrees, so
@@ -17,7 +17,7 @@ the numbers follow the corpus rather than the other way round.
 | first 25 | 52% |
 | first 50 | 67% |
 | first 100 | 83% |
-| first 150 | 91% |
+| first 150 | 90% |
 | first 200 | 95% |
 | first 300 | 100% |
 
@@ -33,57 +33,64 @@ cover half of everything.** They are the first twenty-five below.
 
 | | Root | Meaning | Uses | Share |
 |---|---|---|---|---|
-| 1 | *mi* | I, me | 459 | 10.6% |
-| 2 | *yu* | you | 202 | 4.6% |
+| 1 | *mi* | I, me | 460 | 10.4% |
+| 2 | *yu* | you | 203 | 4.6% |
 | 3 | *ta* | he, she, it | 132 | 3.0% |
-| 4 | *es* | is, am, are | 112 | 2.6% |
-| 5 | *in* | at, in, on | 110 | 2.5% |
-| 6 | *ini* | this | 94 | 2.2% |
-| 7 | *dom* | house, home | 82 | 1.9% |
-| 8 | *anak* | child | 81 | 1.9% |
-| 9 | *suda* | past marker (before the verb) | 80 | 1.8% |
-| 10 | *mau* | to want | 79 | 1.8% |
-| 11 | *lai* | to come | 78 | 1.8% |
-| 12 | *no* | no; not | 73 | 1.7% |
+| 4 | *es* | is, am, are | 113 | 2.6% |
+| 5 | *in* | at, in, on | 113 | 2.6% |
+| 6 | *ini* | this | 94 | 2.1% |
+| 7 | *dom* | house, home | 83 | 1.9% |
+| 8 | *anak* | child | 81 | 1.8% |
+| 9 | *lai* | to come | 81 | 1.8% |
+| 10 | *suda* | past marker (before the verb) | 81 | 1.8% |
+| 11 | *mau* | to want | 79 | 1.8% |
+| 12 | *no* | no; not | 77 | 1.7% |
 | 13 | *hao* | good | 70 | 1.6% |
 | 14 | *ca* | tea | 69 | 1.6% |
 | 15 | *go* | to go | 66 | 1.5% |
 | 16 | *aur* | and | 65 | 1.5% |
 | 17 | *kula* | to eat | 52 | 1.2% |
 | 18 | *rafiki* | friend | 52 | 1.2% |
-| 19 | *kita* | we, including you | 47 | 1.1% |
-| 20 | *kabir* | big | 46 | 1.1% |
-| 21 | *sol* | sun | 45 | 1.0% |
-| 22 | *punya* | to have | 44 | 1.0% |
-| 23 | *saufa* | future marker (before the verb) | 42 | 1.0% |
-| 24 | *din* | day | 40 | 0.9% |
-| 25 | *dari* | from | 39 | 0.9% |
-| 26 | *doktor* | doctor | 37 | 0.9% |
+| 19 | *kita* | we, including you | 48 | 1.1% |
+| 20 | *kabir* | big | 46 | 1.0% |
+| 21 | *punya* | to have | 45 | 1.0% |
+| 22 | *sol* | sun | 45 | 1.0% |
+| 23 | *dari* | from | 42 | 1.0% |
+| 24 | *saufa* | future marker (before the verb) | 42 | 1.0% |
+| 25 | *din* | day | 40 | 0.9% |
+| 26 | *doktor* | doctor | 37 | 0.8% |
 | 27 | *keci* | small | 36 | 0.8% |
 | 28 | *itu* | that | 32 | 0.7% |
 | 29 | *lebi* | more | 32 | 0.7% |
 | 30 | *pan* | bread, food | 32 | 0.7% |
-| 31 | *libro* | book | 30 | 0.7% |
-| 32 | *akua* | water | 29 | 0.7% |
-| 33 | *garam* | hot | 29 | 0.7% |
-| 34 | *kan* | to see | 29 | 0.7% |
-| 35 | *por* | to, for | 29 | 0.7% |
-| 36 | *market* | market, shop | 28 | 0.6% |
-| 37 | *nama* | name | 28 | 0.6% |
-| 38 | *sema* | to say, to speak | 28 | 0.6% |
+| 31 | *libro* | book | 31 | 0.7% |
+| 32 | *sema* | to say, to speak | 31 | 0.7% |
+| 33 | *akua* | water | 29 | 0.7% |
+| 34 | *garam* | hot | 29 | 0.7% |
+| 35 | *kan* | to see | 29 | 0.7% |
+| 36 | *por* | to, for | 29 | 0.7% |
+| 37 | *market* | market, shop | 28 | 0.6% |
+| 38 | *nama* | name | 28 | 0.6% |
 | 39 | *sini* | here | 27 | 0.6% |
 | 40 | *nali* | where | 26 | 0.6% |
 
 ## Used exactly once
 
-19 roots appear in a single sentence in the whole corpus:
+9 roots appear in a single sentence in the whole corpus:
 
-*amani*, *arte*, *bai*, *bas*, *hi*, *historia*, *legis*, *madad*, *mati*, *mersi*, *mila*, *natura*, *numero*, *ok*, *pardon*, *plis*, *proba*, *sansi*, *ya*
+*bai*, *bas*, *hi*, *madad*, *mersi*, *ok*, *pardon*, *plis*, *ya*
 
-Being used once is not a fault — a word for *snow* will not turn up often in
-nine texts about tea, hospitals and errands. This list was 37 roots long until
-[text 9](../texts/text-9-pagi-in-madina.md) was written from it; eighteen of
-them now have a second sentence, one of which needed a second attempt — a word
-alone between two commas is named, not used, and this page counts uses. Half of what is left are the interjections,
-which are used alone and cannot be used any other way, and *madad*, which is
-[held back on purpose](../grammar/verb-chains.md).
+That list is now at its floor. Eight of the nine are interjections — *hi*,
+*bai*, *ok*, *ya*, *bas*, *mersi*, *pardon*, *plis* — which are used alone and
+cannot be used any other way, so one appearance is every appearance they can
+have. The ninth is *madad*, [held back on purpose](../grammar/verb-chains.md)
+until its class is decided.
+
+It was 37 roots long two texts ago. [Text 9](../texts/text-9-pagi-in-madina.md)
+was written from it and took eighteen, one of which needed a second attempt
+because a word alone between two commas is named rather than used. What
+survived that was all of one kind — peace, art, history, law, nature, number,
+chance, to die, to try, a thousand — and nine texts about tea, hospitals,
+letters and errands had not reached a single one. Abstract words need an
+argument, not a scene, so [text 10](../texts/text-10-mila-tahun.md) was written
+as one, and took all ten.
