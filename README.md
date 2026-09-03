@@ -19,6 +19,8 @@
 
 Syllables stay simple — never more than two consonants in a row, and none of the tongue-twisters other languages allow (*strengths*, *vzglyad*). If you can say "banana" and "taksi", you can say anything in Amadunia.
 
+**Stress — the second-to-last syllable, in every word, always:** a-ma-**DU**-nia, ka-**LI**-ma, **DU**-nia, **MER**-si. A vowel pair is one syllable, so *dunia* has two and *bai* has one. No exception, and no word has to be learned with its stress — in 89% of the dictionary the second-to-last syllable is also the first. [The rule](grammar/stress.md).
+
 **Numbers:**
 
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
@@ -191,7 +193,7 @@ around 600 — and what those three hundred should be made of is measured in
 **The grammar needed for A2 is complete.** Phonology, pronunciation, numbers,
 tense, plurals, possession, questions, pronouns, the copula, existence,
 negation, conjunction, demonstratives, place, verb chains, comparison,
-subordination and adverbs are settled — seventeen rules, each recorded with its
+subordination, adverbs and stress are settled — twenty rules, each recorded with its
 reasoning and with the candidates it rejected.
 
 **[Thirty-two questions are still open](grammar/README.md)**, gathered on one

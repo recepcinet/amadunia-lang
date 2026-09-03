@@ -13,6 +13,16 @@
 | no | no |
 | bai | goodbye |
 
+## Where the stress goes
+
+**The second-to-last syllable, in every word, always.** A word with one
+syllable takes it there — *hi*, *ok*, *ya*, *no*, *bai* are all one syllable,
+so there is nothing to decide. *salam* has two: **SA**-lam.
+
+A vowel pair counts as one syllable, so *bai* is one and not two. There is no
+exception anywhere in the language and no word has to be learned with its
+stress. [The rule](../grammar/stress.md).
+
 ## Your first conversation
 
 > — Hi! Ok?

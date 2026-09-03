@@ -1,12 +1,13 @@
 # Grammar
 
-Seventeen rules and four briefings, one decision each. Every one records what was settled, why, which candidates were rejected and on what ground, and what it left open.
+Twenty rules and four briefings, one decision each. Three of the briefings are still open; [stress](proposal-stress.md) was decided on September 3, 2026. Every one records what was settled, why, which candidates were rejected and on what ground, and what it left open.
 
 ## The rules
 
 | | |
 |---|---|
 | [phonology](phonology.md) | Twenty letters, one sound each. No digraph, no diacritic. At most two consonants in a row, never three vowels, and no two roots a single sound apart. |
+| [stress](stress.md) | The second-to-last syllable of every word. A vowel pair is one syllable. |
 | [pronunciation](pronunciation.md) | What each of the twenty letters sounds like. *g* never softens; *s* never voices. |
 | [numbers](numbers.md) | Eleven words count to a hundred. No irregular number anywhere. |
 | [tense](tense.md) | *suda* past, *saufa* future, present unmarked — before the verb. The verb never changes. |
@@ -30,7 +31,7 @@ Seventeen rules and four briefings, one decision each. Every one records what wa
 
 | | |
 |---|---|
-| [proposal-stress.md](proposal-stress.md) | A briefing for the decision the open questions put first. Nothing in it is adopted. |
+| [proposal-stress.md](proposal-stress.md) | The briefing the open questions put first. **Decided September 3, 2026** — the rule is [stress.md](stress.md); this is the record of what it was decided on. |
 | [proposal-sentence-types.md](proposal-sentence-types.md) | The imperative and the fragment — both already in use, neither ever granted. |
 | [proposal-names.md](proposal-names.md) | Marking a name. Thirty-six sentences are ambiguous today, and capital letters cannot be spoken. |
 | [proposal-modal-adjective.md](proposal-modal-adjective.md) | "Want to be" plus an adjective — the smallest of the four, and the language already contains the shape that fixes it. |
@@ -49,11 +50,11 @@ Every rule above appears in this one sentence, and not a word in it changes shap
 The list below is grouped by file. Ordered instead by what each one unblocks,
 and by the evidence for it, the top of the list is:
 
-**1. Where the stress falls.** [The poem](../texts/text-5-uan.md) showed what
-this costs: read its first line stressing *DIN lai* and then *din LAI* — both
-are correct Amadunia and they are different poems. Two people cannot agree on
-the metre of a single line, so nothing can be sung, scanned or taught by ear.
-This blocks more than any other item here.
+**~~1. Where the stress falls.~~ Settled September 3, 2026** — the second-to-last
+syllable of every word, and a vowel pair is one syllable. [The
+rule](stress.md), and [what it was decided on](proposal-stress.md). It blocked
+more than anything else here: until it was made, *DIN lai* and *din LAI* were
+both correct Amadunia and two people could not agree on the metre of a line.
 
 **2, 3, 4, 5. The four the language is already using without permission.**
 These were not left open on purpose. Each is a form the material relies on that
@@ -172,7 +173,7 @@ measurement with its method stated, to be re-run rather than trusted.
 
 **[phonology](phonology.md)**
 
-- **Whether a vowel pair is one syllable or two.** Is *dunia* two syllables or three, *akua* two or three? This affects 28 of the 300 roots — every one containing *ai, ao, au, ia* or *ua* — and it has to be settled before stress can be, because "the second-to-last syllable" means nothing until a syllable is defined. Recorded September 3, 2026 while preparing [the stress briefing](proposal-stress.md).
+- ~~Whether a vowel pair is one syllable or two~~ — settled in [stress.md](stress.md): a vowel pair is one nucleus, so *dunia* is two syllables. Counting a syllable means counting vowel groups.
 - Whether stress is fixed (and if so, on which syllable) is not yet decided. See [proposal-stress.md](proposal-stress.md).
 - Whether the two-consonant sequences above are the complete permitted set, or merely the ones used so far, is not yet decided.
 
@@ -204,6 +205,10 @@ measurement with its method stated, to be re-run rather than trusted.
 - **The imperative was never granted.** *Anda tarik ini*, *Buka ain yu*, *Otur sini* are commands, and the lessons have used a bare verb as one since Lesson 10 — but no rule anywhere says a bare verb may be a command, or how a command differs from a statement with the subject left out. The form is in use and undecided. Found by [the fourth text](../texts/text-4-in-madina-baru.md), September 3, 2026.
 - **Fragments.** *Ke?* *Harga?* *Ponte?* — a turn of one word is what conversation is mostly made of, and nothing covers it. Whether a fragment is a legal sentence, and how it is read, is undecided; the dialogue's fragments work by accident.
 - **Lesson 6 asked *Nama yu?*** with no question word. That is a yes/no-shaped question that context turns into "what is your name". The explicit form is *Nama yu es ke?* Both are allowed; whether the short form should be discouraged in teaching is open.
+
+**[stress](stress.md)**
+
+- **Whether the short grammar words reduce in speech.** The rule stresses every word, so *Mi ama dunia* has three stresses in three words. Most languages let *es, no, aur, in, dari, por* lean on the word beside them. A fact about how it is spoken, not how it is written.
 
 **[subordination](subordination.md)**
 

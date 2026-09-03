@@ -1,9 +1,12 @@
 # Proposal: where the stress falls
 
-**This is not a rule.** Nothing in the language depends on it yet and nothing
-here has been adopted. It is the briefing for the decision that
-[the open questions](README.md) put first, laid out so it can be made in one
-sitting.
+**Decided on September 3, 2026. The rule is in [stress.md](stress.md):
+the second-to-last syllable of every word, and a vowel pair is one syllable.**
+This page is kept as the record of what the decision was made on.
+
+One figure in it was understated. It says penultimate and initial agree on 209
+of the 300 roots; they agree on **266 — 89%** — because the 57 one-syllable
+roots agree trivially and were left out of the count.
 
 ## Why this is first
 

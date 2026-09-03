@@ -630,6 +630,21 @@ _gone = [w for w, n in _order[:40]
          if f"| *{w}* |" not in _fr or f"| {n} |" not in _fr]
 check(not _gone, f"frequency.md's top forty has drifted: {', '.join(_gone[:6])}")
 
+# --------------------------------------------------------------- stress
+# grammar/stress.md defines a syllable as a vowel group and states the counts
+# that follow from it. They are derived from the dictionary, so they are
+# recomputed rather than trusted — the same treatment as the balance table.
+_syl = defaultdict(int)
+for w in words: _syl[len(re.findall(r"[aeiou]+", w))] += 1
+_agree = _syl[1] + _syl[2]          # penultimate and initial are the same syllable
+_st = read("grammar/stress.md")
+check(f"{_syl[1]} of one syllable, {_syl[2]} of two and {_syl[3]}" in _st,
+      f"stress.md's syllable counts are stale; the dictionary gives "
+      f"{_syl[1]}/{_syl[2]}/{_syl[3]}")
+check(f"**{_agree} of the 300 roots — {round(100*_agree/len(words))}%" in _st,
+      f"stress.md's agreement figure is stale; recount gives {_agree} of "
+      f"{len(words)}, {round(100*_agree/len(words))}%")
+
 # ------------------------------------------------------------ root in use
 # Being taught is not the same as being used. Five roots — kulit, yanlis,
 # foto, ba, nau — sat in a "New words" table and then appeared in no sentence

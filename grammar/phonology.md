@@ -119,6 +119,6 @@ three; it is the example [CONTRIBUTING rule 4](../CONTRIBUTING.md) names.
 
 ## Open questions
 
-- **Whether a vowel pair is one syllable or two.** Is *dunia* two syllables or three, *akua* two or three? This affects 28 of the 300 roots — every one containing *ai, ao, au, ia* or *ua* — and it has to be settled before stress can be, because "the second-to-last syllable" means nothing until a syllable is defined. Recorded September 3, 2026 while preparing [the stress briefing](proposal-stress.md).
+- ~~Whether a vowel pair is one syllable or two~~ — settled in [stress.md](stress.md) on September 3, 2026, together with the stress rule that needed it: **a vowel pair is one nucleus**, so *dunia* is two syllables and *familia* three. Counting a syllable means counting vowel groups. It affected 28 of the 300 roots.
 - Whether stress is fixed (and if so, on which syllable) is not yet decided. See [proposal-stress.md](proposal-stress.md).
 - Whether the two-consonant sequences above are the complete permitted set, or merely the ones used so far, is not yet decided.
