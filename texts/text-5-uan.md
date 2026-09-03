@@ -54,6 +54,42 @@ Kita ama dunia una.
 | Yu ama dunia. | You love the world. |
 | Kita ama dunia una. | We love the world together. |
 
+## Metre — readable only since September 3, 2026
+
+This poem was written while stress was still undecided, and it said so: being
+said aloud was "the thing the language is least ready for". [Stress was settled
+today](../grammar/stress.md) — the second-to-last syllable of every word, a
+vowel pair counting as one — so the poem can now be scanned. It was, and it
+holds two things nobody could have seen before.
+
+**The paired lines match to the syllable.** Nothing enforced it; the poem was
+built on parallel words, not counted beats.
+
+| | Syllables |
+|---|---|
+| Mi anda in tarik. / Yu anda in tarik. | 6 and 6 |
+| Mi lihat sol. / Yu lihat sol. | 4 and 4 |
+| Mi punya kalima. / Yu punya kalima. | 6 and 6 |
+| Mi ama dunia. / Yu ama dunia. | 5 and 5 |
+
+Each third line is longer than the pair it closes — 8, 6, 7, 8 — so every verse
+widens at the end.
+
+**The last line is the only regular one in the poem.**
+
+```
+Ki-ta  a-ma  du-nia  u-na
+ X .    X .   X  .    X .
+```
+
+Four beats, every other syllable, with no syllable left over: a line of four
+trochees. Every other line in the poem is irregular — *Din lai. Sol upar.* is
+four beats in five syllables, `XXXX.` — and the closing line, the one that says
+*we love the world together*, is the one that falls into step.
+
+That was luck, not craft. It could not have been craft, because when the line
+was written there was no rule that could tell anyone where its beats were.
+
 ## What the design gives a poem for free
 
 **Parallelism is exact.** *Mi ama · yu ama · kita ama* — three subjects, one

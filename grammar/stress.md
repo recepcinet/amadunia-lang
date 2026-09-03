@@ -88,6 +88,18 @@ word wrong.
 and *din LAI* are different lines, so nothing could be sung, scanned or taught
 by ear.
 
+## What it unblocked, the same day
+
+[The poem](../texts/text-5-uan.md) was written while this was undecided and
+said so — being said aloud was "the thing the language is least ready for". It
+was scanned within the hour, and two things came out of it that nobody could
+have seen before. Its paired lines match to the syllable, 6 and 6, 4 and 4, 6
+and 6, 5 and 5, though the poem was built on parallel words and nothing counted
+beats. And its closing line, *Kita ama dunia una*, is the only regular line in
+it: **X . X . X . X .**, four trochees with nothing left over. That was luck
+rather than craft, because when the line was written no rule could say where
+its beats were.
+
 ## Nothing was at risk
 
 **No two words in Amadunia are told apart by stress, and none ever can be** —

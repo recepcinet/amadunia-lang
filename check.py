@@ -645,6 +645,22 @@ check(f"**{_agree} of the 300 roots — {round(100*_agree/len(words))}%" in _st,
       f"stress.md's agreement figure is stale; recount gives {_agree} of "
       f"{len(words)}, {round(100*_agree/len(words))}%")
 
+# ------------------------------------------------ the poem still scans
+# text-5 states the metre of its closing line, which is only readable because
+# stress is settled. The claim is derived from the line, so it is recomputed:
+# an edit to the poem must not leave the scansion behind.
+_poem = read("texts/text-5-uan.md")
+_last = [l for l in _poem.split("```")[1].splitlines() if l.strip()][-1]
+_pat = ""
+for _t in re.findall(r"[a-z]+(?:-[a-z]+)*", _last.lower()):
+    for _half in _t.split("-"):
+        _n = len(re.findall(r"[aeiou]+", _half))
+        _st = _n - 1 if _n == 1 else _n - 2
+        _pat += "".join("X" if _i == _st else "." for _i in range(_n))
+check(_pat == "X.X.X.X." and "X .    X .   X  .    X ." in _poem,
+      f"text-5's closing line no longer scans as the page says: {_last.strip()} "
+      f"is {_pat}")
+
 # ------------------------------------------------------------ root in use
 # Being taught is not the same as being used. Five roots — kulit, yanlis,
 # foto, ba, nau — sat in a "New words" table and then appeared in no sentence
