@@ -739,6 +739,30 @@ for path in PROSE:
                 check(False, f"{os.path.basename(path)}: '{_a} {_b}' — the adjective "
                              f"goes after its noun: {sent}")
 
+# --------------------------------------------- possession order, preposition
+# Two settled rules with nothing on them. possession.md: the owner comes
+# straight after the thing owned and before any adjective — dom mi kabir, my
+# big house, never dom kabir mi. place.md: in, dari and por take a noun, so a
+# preposition followed by a verb is not a place phrase at all. Neither is
+# violated today; both are held so they stay that way.
+for path in PROSE:
+    body = read(path)
+    if path.startswith("texts/") and "```" in body:
+        body = "".join(body.split("```")[1::2])
+    for line, sent, toks in amadunia_runs(body.replace("—", "\n")):
+        if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗")): continue
+        base = [t.split("-")[0] for t in toks]
+        for _i in range(len(base) - 1):
+            if base[_i] in GROUP["Prepositions"] and base[_i + 1] in VERBS:
+                check(False, f"{os.path.basename(path)}: '{base[_i]} {base[_i+1]}' — "
+                             f"a preposition takes a noun: {sent}")
+        for _i in range(len(base) - 2):
+            _n, _a, _p = base[_i], base[_i + 1], base[_i + 2]
+            if (_n not in ADJECTIVES | VERBS | {"mi", "yu", "ta", "kita"}
+                    and _a in ADJECTIVES and _p in {"mi", "yu", "ta", "kita"}):
+                check(False, f"{os.path.basename(path)}: '{_n} {_a} {_p}' — the owner "
+                             f"comes before the adjective: {sent}")
+
 # ----------------------------------------------------------- tables render
 # A run of lines starting with "|" is a markdown table only if its second line
 # is a separator. Nothing checked that, and this file reads table rows happily
