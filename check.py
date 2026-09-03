@@ -149,11 +149,13 @@ check(not (set(words) - indexed), f"index-english is missing: {sorted(set(words)
 gi = read("grammar/README.md")
 for p in glob.glob("grammar/*.md"):
     b = os.path.basename(p)
-    if b != "README.md": check(b in gi, f"grammar/README.md does not name {b}")
+    if b != "README.md":
+        check(f"]({b})" in gi, f"grammar/README.md does not link {b}")
 li = read("lessons/README.md")
 for p in glob.glob("lessons/*.md"):
     b = os.path.basename(p)
-    if b != "README.md": check(b in li, f"lessons/README.md does not name {b}")
+    if b != "README.md":
+        check(f"]({b})" in li, f"lessons/README.md does not link {b}")
 
 # Open questions must be counted honestly: a settled one gets struck through,
 # and the total in the index must match a scan of the files.
@@ -309,6 +311,12 @@ INTRO = {m.group(1): int(m.group(2)) for m in
          re.finditer(r"^\| (possession|adverb|verb chain|existence|command) \| (\d\d) \|$",
                      read("lessons/README.md"), re.M)}
 check(len(INTRO) == 5, f"lessons/README.md: the wordless-rule table is incomplete: {INTRO}")
+# A missing row used to raise a KeyError further down, so the check above
+# reported nothing and the run died instead — the failure mode it exists to
+# prevent. Absent rules fall back to 99, which keeps every dependent check
+# running and lets this one be the message that appears.
+for _k in ("possession", "adverb", "verb chain", "existence", "command"):
+    INTRO.setdefault(_k, 99)
 
 # ---------------------------------------------------------------- no chains
 # Verb chains were undecided until Lesson 17; the earlier lessons must not use
