@@ -138,9 +138,14 @@ at once.
 
 **European roots are 37% of the dictionary**, against Esperanto's ~95%. By
 reach, nothing exceeds 36%. The thin spot is real and named rather than hidden:
-Sino-Tibetan and Japonic sit at 2.7% and 1.3%, because their words are short
-and the two- and three-letter space filled up first. [The full working is
-here](dictionary/balance.md).
+Sino-Tibetan and Japonic sit at 2.7% and 1.3%. That was recorded as structural
+— their words are short, and the short space is full — and the explanation
+turned out to be wrong: modern Chinese and Japanese words are mostly two
+syllables, which is exactly what the four-letter rule wants. Seven of ten
+ordinary words tested passed every rule. The borrowing reached for the
+classical monosyllables and stopped. [The full working is
+here](dictionary/balance.md), and what it means for the next three hundred is
+[in the A2 briefing](dictionary/proposal-a2.md).
 
 ---
 

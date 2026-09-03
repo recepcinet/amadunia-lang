@@ -6,7 +6,7 @@ Two kinds of contribution are possible, and they work differently.
 [`check.py`](check.py) will tell you which one before a human has to.
 
 **Answering an open question** is a language decision. There are
-[25 of them](grammar/README.md), and each is the founder's call — but a good
+[27 of them](grammar/README.md), and each is the founder's call — but a good
 proposal makes the call easy.
 
 ---
@@ -89,7 +89,7 @@ it. That is the part worth arguing about in an Issue.
 
 ## Answering an open question
 
-The [25 open questions](grammar/README.md) are gathered in one place. Four of
+The [27 open questions](grammar/README.md) are gathered in one place. Four of
 them are not gaps left on purpose but holes found later — the imperative, the
 mark for a name, how `r` is made, and "want to be" plus an adjective. Those are
 the most useful to answer.

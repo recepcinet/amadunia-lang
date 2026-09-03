@@ -389,6 +389,29 @@ for path in sorted(glob.glob("lessons/lesson-*.md")):
                       f"{os.path.basename(path)}: '{a} {b}' — an adjective after the "
                       f"verb is taught in Lesson {INTRO['adverb']:02d}: {sent}")
 
+# ------------------------------------------------- counts named in a link
+# The number of open questions changes whenever one is settled or found, and
+# it is quoted in several files. Four sites had drifted at once — CONTRIBUTING
+# said 25 in two places while the index said 27. A number inside a link to the
+# index is a claim about that index, so it is checked against it. Numbers
+# elsewhere are left alone on purpose: "verb chains ran in three lessons" and
+# "thirteen errors across five lessons and three texts" are history, not
+# totals, and a check that cannot tell those apart is worse than none.
+WORD_NUM = {w: i for i, w in enumerate(
+    "zero one two three four five six seven eight nine ten eleven twelve "
+    "thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty".split())}
+WORD_NUM.update({"twenty-five": 25, "twenty-six": 26, "twenty-seven": 27,
+                 "twenty-eight": 28, "twenty-nine": 29, "thirty": 30})
+for path in PROSE:
+    for m in re.finditer(r"\[([^\]]*)\]\((?:\.\./)?grammar/README\.md\)", read(path)):
+        text = m.group(1)
+        for tok in re.findall(r"[A-Za-z-]+|\d+", text):
+            n = int(tok) if tok.isdigit() else WORD_NUM.get(tok.lower())
+            if n is None: continue
+            check(n == live,
+                  f"{os.path.basename(path)}: '{text}' names {n} open questions; "
+                  f"there are {live}")
+
 # ------------------------------------------------------------ root in use
 # Being taught is not the same as being used. Five roots — kulit, yanlis,
 # foto, ba, nau — sat in a "New words" table and then appeared in no sentence
