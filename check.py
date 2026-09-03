@@ -250,6 +250,27 @@ untaught = sorted(set(words) - taught)
 check(not untaught, f"{len(untaught)} roots are taught nowhere: {', '.join(untaught[:12])}"
                     + (" ..." if len(untaught) > 12 else ""))
 
+# ------------------------------------------------------------ root in use
+# Being taught is not the same as being used. Five roots — kulit, yanlis,
+# foto, ba, nau — sat in a "New words" table and then appeared in no sentence
+# anywhere: a learner met the word once, as a gloss, and never saw it work.
+# The high numbers were among them, which meant the number system had never
+# actually been shown above six. Text 6 used all five. Every root must now
+# appear in at least one running sentence.
+in_use = set()
+for path in PROSE:
+    body = read(path)
+    if path.startswith("texts/") and "```" in body:
+        body = "".join(body.split("```")[1::2])
+    for line, sent, toks in amadunia_runs(body):
+        if any(x in line.lower() for x in
+               ("wrong", "rejected", "cannot", "not legal", "✗")): continue
+        in_use |= {t.split("-")[0] for t in toks}
+unused = sorted(set(words) - in_use)
+check(not unused, f"{len(unused)} roots are never used in a sentence, only "
+                  f"glossed: {', '.join(unused[:12])}"
+                  + (" ..." if len(unused) > 12 else ""))
+
 # ------------------------------------------------------- derived documents
 # texts/README.md restates each text's root count; it is not the text's own
 # claim and had nothing checking it.

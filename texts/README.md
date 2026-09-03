@@ -13,3 +13,4 @@ These are original compositions, not translations. Translating an existing book 
 | [Lingua ini](text-3-lingua-ini.md) | 43 | 300 roots, Lessons 1-23 — an argument, not a story |
 | [In madina baru](text-4-in-madina-baru.md) | 63 | 300 roots, Lessons 1-23 — a dialogue |
 | [Uan](text-5-uan.md) | 21 | 300 roots, Lessons 1-23 — a poem |
+| [Seti din](text-6-seti-din.md) | 57 | 300 roots, Lessons 1-23 — a story, written to reach the unreached roots |
