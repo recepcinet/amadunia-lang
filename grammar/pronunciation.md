@@ -34,8 +34,8 @@ speaker of any of them already knows these five sounds.
 | **u** | /u/ | Spanish *luna*, Japanese *uma*, Swahili *kuku* | *yu* |
 
 They never change. There is no long and short, and **no reduced variant under
-stress**: the *a* in *ama* and the *a* in *salam* are the same sound, and so is
-the unstressed *a* in a-**MA**-dunia. [Stress](stress.md) makes a syllable
+stress**: the *a* in *ama* and the *a* in *salam* are the same sound, and so are
+both unstressed *a*'s in a-ma-**DU**-nia. [Stress](stress.md) makes a syllable
 louder, not different — the way it works in Indonesian, Swahili and Japanese,
 and not the way it works in English, Russian or Portuguese, where an unstressed
 vowel collapses toward a schwa. If it collapsed here, *written as spoken* would

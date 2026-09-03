@@ -671,6 +671,43 @@ check(_pat == "X.X.X.X." and "X .    X .   X  .    X ." in _poem,
       f"text-5's closing line no longer scans as the page says: {_last.strip()} "
       f"is {_pat}")
 
+# Code fences must pair up. This file splits every text on ``` and reads the
+# odd-numbered pieces as Amadunia; an unclosed fence would silently feed it
+# English prose and every text check would be reading the wrong thing.
+for path in md():
+    check(len(re.findall(r"^```", read(path), re.M)) % 2 == 0,
+          f"{path}: odd number of code fences — one is unclosed")
+
+# ------------------------------------------------------ stress marks are right
+# Pages mark stress by capitalising a syllable — SA-lam, a-ma-DU-nia. Having
+# written the rule, I then mis-stressed the language's own name in three files
+# on the same day, so the marks are checked against the rule they illustrate:
+# strip the hyphens, and the capitalised part must hold the penultimate vowel
+# group. Two forms in stress.md are exempt and named — they are deliberately
+# Turkish, shown to contrast with the Amadunia beat.
+_FOREIGN = {"a-nah-**TAR**", "pen-ce-**RE**"}
+_mark = re.compile(r"(?<![\w*])((?:\*{0,2}[A-Za-z]+\*{0,2}-){1,4}\*{0,2}[A-Za-z]+\*{0,2})(?![\w*])")
+for path in md():
+    for _m in _mark.finditer(read(path)):
+        _raw = _m.group(1)
+        if _raw in _FOREIGN: continue
+        _parts = [_x.strip("*") for _x in _raw.split("-")]
+        if not all(_x.isalpha() for _x in _parts): continue
+        _w = "".join(_parts).lower()
+        if _w not in words and _w not in PROPER: continue
+        _caps = [_i for _i, _x in enumerate(_parts) if _x.isupper()]
+        if not _caps: continue
+        _n = len(re.findall(r"[aeiou]+", _w))
+        _want = _n - 1 if _n == 1 else _n - 2
+        _idx, _seen = None, 0
+        for _i, _x in enumerate(_parts):
+            _g = len(re.findall(r"[aeiou]+", _x.lower()))
+            if _seen <= _want < _seen + _g: _idx = _i
+            _seen += _g
+        check(_caps[0] == _idx,
+              f"{path}: '{_raw}' marks the wrong syllable; the beat is on "
+              f"'{_parts[_idx] if _idx is not None else '?'}'")
+
 # ----------------------------------------------------------- tables render
 # A run of lines starting with "|" is a markdown table only if its second line
 # is a separator. Nothing checked that, and this file reads table rows happily

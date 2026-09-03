@@ -14,7 +14,7 @@ no marked word, and nothing to memorise per word.
 | | |
 |---|---|
 | **DU**-nia | world |
-| a-**MA**-dunia → a-ma-**DU**-nia | the language's own name |
+| a-ma-**DU**-nia | the language's own name |
 | **MER**-si | thank you |
 | ka-**LI**-ma | word |
 | sa-**FA**-ri | journey |
@@ -46,8 +46,8 @@ of three.
 
 **It makes the syllable louder and a little higher. It does not change it.**
 
-No vowel reduces, none lengthens, and none shifts quality. The *a* in *ama* is
-the same *a* whether it is stressed or not, and *dunia* said with the beat on
+No vowel reduces, none lengthens, and none shifts quality. The *a*'s in a-ma-**DU**-nia are the same *a*
+whether stressed or not, and *dunia* said with the beat on
 *DU* has exactly the sounds spelled in it. This is how Indonesian, Swahili and
 Japanese work, and it is the opposite of English, Russian and Portuguese, where
 unstressed vowels collapse toward a schwa.

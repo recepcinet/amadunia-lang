@@ -10,6 +10,24 @@ arrives in [Lesson 25](lessons/lesson-25-doing-and-being.md), so read
 the page for what you can use now rather than as a test of what you have
 finished.
 
+## Saying it
+
+A phrasebook is for saying things to somebody, so three facts before the
+phrases. All three were settled rather than guessed, and none has an exception.
+
+**Every letter has one sound and keeps it.** *c* is the *ch* of *chai*; *g* is
+always hard; *s* is always the *s* of *sun*, never a *z*. Nothing is silent.
+[The full table](grammar/pronunciation.md).
+
+**The beat is on the second-to-last syllable, always.** *SA-lam*, *PA-gi*,
+*AK-sam*, *a-ma-DU-nia*. A one-syllable word — *hi*, *ok*, *ya*, *bai* — has
+nowhere else to put it. A vowel pair counts as one syllable, so *bai* is one
+beat and *dunia* is two. [The rule](grammar/stress.md).
+
+**Unstressed vowels do not change.** The *a* of *salam* is the same *a* in both
+syllables. This is how Indonesian, Swahili and Japanese work, and not how
+English does — do not let an unstressed vowel slide toward *uh*.
+
 ---
 
 ## Hello and goodbye
