@@ -29,6 +29,7 @@ Sixteen files, one decision each. Every one records what was settled, why, which
 | | |
 |---|---|
 | [proposal-stress.md](proposal-stress.md) | A briefing for the decision the open questions put first. Nothing in it is adopted. |
+| [proposal-sentence-types.md](proposal-sentence-types.md) | The imperative and the fragment — both already in use, neither ever granted. |
 
 **The full order of a sentence:**
 
