@@ -116,12 +116,34 @@ it: **X . X . X . X .**, four trochees with nothing left over. That was luck
 rather than craft, because when the line was written no rule could say where
 its beats were.
 
-## Nothing was at risk
+## Nothing was at risk — and what it cost anyway
 
 **No two words in Amadunia are told apart by stress, and none ever can be** —
 that would be a minimal pair, which the language forbids. No word changed
-meaning today and no text needed rewriting. The cost of deciding was nil; the
-cost of not deciding was that the language could not be spoken in metre.
+meaning, and no text needed rewriting.
+
+But a rule that fits one tradition cannot fit them all, and it is worth saying
+plainly who pays. Taking the first source each entry names, and counting only
+roots of two syllables or more:
+
+| | Roots |
+|---|---|
+| First source stresses the penultimate — Indonesian, Malay, Swahili, Spanish, Italian, Polish | **87**, and they keep their beat |
+| First source stresses the last — Turkish, Persian, French | **34**, and their beat moves |
+
+*anahtar* is a-nah-**TAR** in Turkish and a-**NAH**-tar here. *pencere* is
+pen-ce-**RE** and becomes pen-**CE**-re. *ates*, *yatak*, *korku*, *burun*,
+*bage*, *mersi* all shift the same way. A Turkish or Persian speaker meets
+eleven per cent of the dictionary saying their own word with the beat in the
+wrong place.
+
+That is the real price of the decision, it is not zero, and nothing makes it
+smaller: any single rule moves somebody's beat. It is paid to the smaller side —
+87 against 34, nearly three to one — and what is lost is recognition of rhythm,
+never meaning, because meaning never rode on stress here in the first place.
+
+(French is counted as final-stress by simplification: it stresses the phrase
+rather than the word, so *mersi* has no fixed word beat to move.)
 
 ## Open questions
 

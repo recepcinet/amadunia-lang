@@ -852,6 +852,28 @@ m = re.search(r"\*\*By origin there is a largest bloc\.\*\* (\S+) is ([\d.]+)%",
 check(m and m.group(1) == top[0] and abs(float(m.group(2)) - 100*top[1]/len(words)) < 0.05,
       f"balance.md's largest family is stale; recount gives {top[0]} at {100*top[1]/len(words):.1f}%")
 
+# stress.md states what the rule cost: how many roots keep the beat their first
+# source gives them and how many lose it. Derived from the etymologies, so
+# recomputed. The two language lists are facts about the source languages, not
+# about this repository, and French is counted as final-stress by the
+# simplification the page names.
+_FINAL  = {"Turkish", "Azeri", "Turkmen", "Uzbek", "Kazakh", "Persian", "French", "Hebrew"}
+_PENULT = {"Indonesian", "Malay", "Swahili", "Polish", "Spanish", "Italian",
+           "Portuguese", "Tagalog", "Javanese"}
+_stressmd = read("grammar/stress.md")
+_keeps = _moves = 0
+for w in words:
+    if len(re.findall(r"[aeiou]+", w)) < 2: continue
+    _hits = [(source[w].find(k), k) for k in FAMILY if re.search(r"\b" + k + r"\b", source[w])]
+    if not _hits: continue
+    _first = min(_hits)[1]
+    if _first in _PENULT: _keeps += 1
+    elif _first in _FINAL: _moves += 1
+check(f"| **{_keeps}**, and they keep their beat |" in _stressmd
+      and f"| **{_moves}**, and their beat moves |" in _stressmd,
+      f"stress.md's cost figures are stale; recount gives {_keeps} keeping "
+      f"the beat and {_moves} losing it")
+
 # ------------------------------------------------------------------- README
 # The front page states the root count by hand; it must match the dictionary.
 m = re.search(r"\*\*(\d+) roots\*\*", read("README.md"))
