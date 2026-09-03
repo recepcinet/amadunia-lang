@@ -763,6 +763,42 @@ for path in PROSE:
                 check(False, f"{os.path.basename(path)}: '{_n} {_a} {_p}' — the owner "
                              f"comes before the adjective: {sent}")
 
+# ------------------------------------------------------------ numbers parse
+# numbers.md builds a compound by position: a digit before a base multiplies it
+# (du-des, twenty), a digit after it adds to it (des-uan, eleven). Nothing
+# checked the order, so uan-des — a second spelling of ten — would have passed.
+# Sixteen compounds are in use and all sixteen parse.
+_VAL = {"uan": 1, "du": 2, "tri": 3, "pat": 4, "fai": 5, "sis": 6, "seti": 7,
+        "ba": 8, "nau": 9, "des": 10, "sen": 100, "mila": 1000}
+_SHOWING = ("would be", "wrong", "never written", "not written",
+            "second spelling", "✗")
+
+def _bad_number(word):
+    """Why this hyphenated form is not a number, or None if it is one."""
+    parts = word.split("-")
+    last_base = None
+    for k, part in enumerate(parts):
+        value = _VAL[part]
+        if value >= 10:
+            if last_base is not None and value >= last_base:
+                return f"'{part}' is not smaller than the base before it"
+            if k and _VAL[parts[k - 1]] == 1:
+                return "a multiplier of one is just the base itself"
+            last_base = value
+        elif k + 1 < len(parts) and _VAL[parts[k + 1]] < 10:
+            return f"'{part}' is a unit and is not multiplying anything"
+    return None
+
+for path in md():
+    for line in read(path).splitlines():
+        # a line showing a rejected form is not claiming it is a number
+        if any(s in line.lower() for s in _SHOWING): continue
+        for word in set(re.findall(r"\b[a-z]+(?:-[a-z]+)+\b", line.lower())):
+            if not all(p in _VAL for p in word.split("-")): continue
+            check(not _bad_number(word),
+                  f"{path}: '{word}' does not build a number — {_bad_number(word)}")
+
+
 # ----------------------------------------------------------- tables render
 # A run of lines starting with "|" is a markdown table only if its second line
 # is a separator. Nothing checked that, and this file reads table rows happily

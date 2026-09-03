@@ -20,7 +20,24 @@
 
 ## Building numbers
 
-There are no irregular numbers. Larger numbers are written by joining smaller ones, largest unit first.
+There are no irregular numbers. Larger numbers are built from *des*, *sen* and
+*mila* by two positions, and the position is what carries the arithmetic:
+
+- **A digit before a base multiplies it.** *du-des* is twenty, *tri-sen* is
+  three hundred.
+- **A digit after a base adds to it.** *des-uan* is eleven, *du-des-uan* is
+  twenty-one.
+
+So *du-des* and *des-du* are different numbers — twenty and twelve — and the
+only thing telling them apart is which side of *des* the *du* stands on. A
+multiplier of one is never written: *uan-des* would be a second spelling of
+*des*, and there are no second spellings here.
+
+This page used to say "largest unit first", which contradicts its own table:
+*du-des* puts the smaller unit first, because two is multiplying ten rather
+than being added to it. Corrected September 3, 2026, when
+[`check.py`](../check.py) was taught to parse these forms and the rule it
+needed turned out not to be the rule that was written down.
 
 **Teens** — *des* followed by the digit:
 
