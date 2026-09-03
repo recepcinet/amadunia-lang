@@ -33,8 +33,13 @@ speaker of any of them already knows these five sounds.
 | **o** | /o/ | Spanish *como*, Japanese *oto*, Indonesian *toko* | *dom* |
 | **u** | /u/ | Spanish *luna*, Japanese *uma*, Swahili *kuku* | *yu* |
 
-They never change. There is no long and short, no stressed and reduced
-variant. The *a* in *ama* and the *a* in *salam* are the same sound.
+They never change. There is no long and short, and **no reduced variant under
+stress**: the *a* in *ama* and the *a* in *salam* are the same sound, and so is
+the unstressed *a* in a-**MA**-dunia. [Stress](stress.md) makes a syllable
+louder, not different — the way it works in Indonesian, Swahili and Japanese,
+and not the way it works in English, Russian or Portuguese, where an unstressed
+vowel collapses toward a schwa. If it collapsed here, *written as spoken* would
+stop being true the moment a word was said aloud.
 
 ## Consonants
 
@@ -91,4 +96,4 @@ behind them. Say them the way your own language does.
   everyone else than a trill. But it is a decision and it has not been made.
   Until it is, any *r* is understood — nothing in the language distinguishes
   two words by their *r*.
-- **Where the stress falls** is open; see [phonology.md](phonology.md).
+- ~~Where the stress falls~~ — settled in [stress.md](stress.md) on September 3, 2026: the second-to-last syllable of every word. It does not change any sound on this page.

@@ -196,7 +196,7 @@ negation, conjunction, demonstratives, place, verb chains, comparison,
 subordination, adverbs and stress are settled — twenty rules, each recorded with its
 reasoning and with the candidates it rejected.
 
-**[Thirty-two questions are still open](grammar/README.md)**, gathered on one
+**[Thirty-one questions are still open](grammar/README.md)**, gathered on one
 page, ordered by [what the writing has actually asked for](grammar/README.md) —
 the imperative leads with three pages that tried and stopped, and six questions
 have never been reached for at all. Four of them were not left open on purpose:

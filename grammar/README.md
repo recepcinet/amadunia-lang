@@ -97,7 +97,7 @@ Two items are not grammar at all and sit outside this order: *madad* doing two
 jobs, and the thinness of Sino-Tibetan and Japonic recorded in
 [balance.md](../dictionary/balance.md). Both are vocabulary policy.
 
-## Open questions — 32 of them
+## Open questions — 31 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
@@ -198,7 +198,7 @@ measurement with its method stated, to be re-run rather than trusted.
 **[pronunciation](pronunciation.md)**
 
 - **How `r` is made.** A tap (Spanish *pero*, Japanese, Turkish, Indonesian), a
-- **Where the stress falls** is open; see [phonology.md](phonology.md).
+- ~~Where the stress falls~~ — settled in [stress.md](stress.md): the second-to-last syllable of every word, and it changes no sound on the pronunciation page.
 
 **[questions](questions.md)**
 

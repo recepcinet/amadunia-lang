@@ -6,7 +6,7 @@ Two kinds of contribution are possible, and they work differently.
 [`check.py`](check.py) will tell you which one before a human has to.
 
 **Answering an open question** is a language decision. There are
-[32 of them](grammar/README.md), and each is the founder's call — but a good
+[31 of them](grammar/README.md), and each is the founder's call — but a good
 proposal makes the call easy.
 
 ---
@@ -97,7 +97,7 @@ it. That is the part worth arguing about in an Issue.
 
 ## Answering an open question
 
-The [32 open questions](grammar/README.md) are gathered in one place. Four of
+The [31 open questions](grammar/README.md) are gathered in one place. Four of
 them are not gaps left on purpose but holes found later — the imperative, the
 mark for a name, how `r` is made, and "want to be" plus an adjective. Those are
 the most useful to answer.
@@ -115,6 +115,21 @@ A proposal that is easy to accept looks like the files in [grammar/](grammar/):
    Half of the grammar files exist because ten candidates collided and the
    eleventh did not.
 5. **What it leaves open.**
+
+### After it is decided, grep for it
+
+A decision does not finish when the rule file is written. Every page that spoke
+of the question as open is now wrong, and `check.py` cannot find them: it
+verifies that a settled question is not on a *"Still open"* list, but a
+sentence like *"where the stress falls is open, see phonology.md"* is prose and
+it reads as prose.
+
+When stress was settled, three such lines survived the commit — one in
+[pronunciation.md](grammar/pronunciation.md), its copy in the index, and a
+count that had not moved with them. They were found the next day by searching
+the repository for the word *stress* and reading every line that did not
+already say *settled*. Do that. It takes a minute and it is the only thing that
+catches it.
 
 ## Writing a lesson or a text
 

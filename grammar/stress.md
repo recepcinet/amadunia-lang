@@ -42,6 +42,22 @@ one nucleus makes syllable-counting mechanical: **count the vowel groups.**
 Under this definition the 300 roots are 57 of one syllable, 209 of two and 34
 of three.
 
+## What stress does to the sound
+
+**It makes the syllable louder and a little higher. It does not change it.**
+
+No vowel reduces, none lengthens, and none shifts quality. The *a* in *ama* is
+the same *a* whether it is stressed or not, and *dunia* said with the beat on
+*DU* has exactly the sounds spelled in it. This is how Indonesian, Swahili and
+Japanese work, and it is the opposite of English, Russian and Portuguese, where
+unstressed vowels collapse toward a schwa.
+
+That is not a stylistic preference. Design rule 2 says the language is written
+as it is spoken; a reduced vowel would break it the first time anyone said a
+word out loud, because the letter on the page would no longer be the sound in
+the air. Stress had to be the kind that leaves the spelling true, and this kind
+is. See [pronunciation.md](pronunciation.md), where the vowels are.
+
 ## The hyphen does not join words for stress
 
 A hyphen joins two words for meaning — a plural, or a number. Each half keeps
