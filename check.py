@@ -13,14 +13,20 @@ import io, os, re, sys, glob
 from collections import defaultdict
 
 ALPHABET   = set("abcdefghiklmnoprstuy")   # 20 letters; c is the ch sound
-CONSONANTS = set("bcdfghklmnprsty")
+VOWELS     = set("aeiou")
+CONSONANTS = ALPHABET - VOWELS             # derived: it was written out twice,
+                                           # here and again inside the run test
 VOWEL_SEQS = ("ai", "ao", "au", "ia", "ua")
 PROPER     = {"amadunia"}                  # the language's own name
 
 # Minimal pairs already in the language when the no-pairs rule was adopted.
-# Most come from the founder's first sixteen words. Each uses a contrast that
-# is robust in nearly every language on Earth; none is l against r. New pairs
-# are failures — see grammar/phonology.md.
+# This used to say most come from the founder's first sixteen words. Counted:
+# three of the twenty-four have both members among those sixteen, thirteen have
+# one. What they do have in common is length — 23 of 24 are shorter than four
+# letters, mama/nama being the only exception — which is the same fact that
+# closed the short space in CONTRIBUTING rule 2. Each uses a contrast that is
+# robust in nearly every language on Earth; none is l against r. New pairs are
+# failures — see grammar/phonology.md.
 ACCEPTED_PAIRS = {
     ("ain","din"), ("ba","ca"), ("ba","ta"), ("ba","ya"), ("bai","bas"),
     ("bai","fai"), ("bai","lai"), ("ca","ta"), ("ca","ya"), ("du","yu"),
@@ -45,7 +51,8 @@ source  = {l.split("|")[1].strip(): l.split("|")[3].strip() for l in rows}
 
 for w in words:
     check(set(w) <= ALPHABET, f"{w}: uses a letter outside the alphabet")
-    check(not re.search(r"[bcdfghklmnprsty]{3}", w), f"{w}: three consonants in a row")
+    check(not re.search("[" + "".join(sorted(CONSONANTS)) + "]{3}", w),
+          f"{w}: three consonants in a row")
     for pair in re.findall(r"(?=([aeiou]{2}))", w):
         check(pair in VOWEL_SEQS, f"{w}: vowel sequence '{pair}' is not attested")
     # Only pairs were checked, so a run of three slipped through whenever each
@@ -64,6 +71,15 @@ _short = sorted(w for w in words if len(w) < 4)
 check(len(_short) == 49,
       f"{len(_short)} roots are shorter than four letters; the short space is "
       f"closed at 49 — see CONTRIBUTING rule 2")
+
+# Every exemption must still describe a real pair. A word renamed or dropped
+# would leave an entry here quietly excusing something that no longer exists,
+# and the exemption list is the one place where a stale line weakens a rule
+# rather than breaking a build.
+for a, b in sorted(ACCEPTED_PAIRS):
+    check(a in words and b in words and len(a) == len(b)
+          and sum(x != y for x, y in zip(a, b)) == 1,
+          f"ACCEPTED_PAIRS lists {a}/{b}, which is no longer a pair in the dictionary")
 
 dupes = [w for w in set(words) if words.count(w) > 1]
 check(not dupes, f"duplicate entries: {dupes}")

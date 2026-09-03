@@ -64,6 +64,39 @@ Two-consonant sequences that occur in current vocabulary:
 - `sp` — *espera* (to wait), across the syllable break *es-pera*
 - `st` — *studi* (to learn), word-initial like *tr* and *pl*
 
+## No two words a sound apart
+
+**Settled: no two roots of the same length may differ in exactly one letter.
+Between *l* and *r* the ban is absolute and outranks everything.**
+
+One letter is one sound here, so a minimal pair is a pair of words a single
+sound apart. *beli* and *beri* would be such a pair, and telling them apart is
+the hardest contrast on Earth for well over a billion speakers — Japanese,
+Korean, and much of southern China and East Africa. A world language cannot
+rest a distinction on it.
+
+This is the rule that kills most candidates. *beli* (to buy) fell to *beri*,
+*guru* to *suru*, *luna* to *luma*, *kota* to *kita*, *buku* to *buka*. It also
+outranks how widely a word travels: *ruma*, a house, was in use eighty-four
+times before it was replaced by *dom*, because *ruma* stood against *luma*.
+
+### The twenty-four that were already here
+
+The rule was adopted after the language had started, so twenty-four pairs
+predate it and are exempt. They are listed in [`check.py`](../check.py), which
+rejects any pair that is not among them.
+
+What the exempt pairs have in common is not where they came from but how short
+they are: **23 of the 24 are under four letters** — *ba/ca*, *go/no*, *hi/mi*,
+*kan/pan*, *pat/rat* — and *mama/nama* is the only exception. Short words
+cannot avoid each other; there are not enough of them. That is the same fact
+that closed the space below four letters in
+[CONTRIBUTING rule 2](../CONTRIBUTING.md), and the two rules are really one
+observation seen from two sides.
+
+Not one of the twenty-four is *l* against *r*, and check.py tests the exempt
+list for that too — an exemption may excuse a pair, never that pair.
+
 ## Vowel sequences
 
 Observed in current vocabulary:

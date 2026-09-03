@@ -6,7 +6,7 @@ Seventeen rules and four briefings, one decision each. Every one records what wa
 
 | | |
 |---|---|
-| [phonology](phonology.md) | Twenty letters, one sound each. No digraph, no diacritic. At most two consonants in a row. |
+| [phonology](phonology.md) | Twenty letters, one sound each. No digraph, no diacritic. At most two consonants in a row, never three vowels, and no two roots a single sound apart. |
 | [pronunciation](pronunciation.md) | What each of the twenty letters sounds like. *g* never softens; *s* never voices. |
 | [numbers](numbers.md) | Eleven words count to a hundred. No irregular number anywhere. |
 | [tense](tense.md) | *suda* past, *saufa* future, present unmarked — before the verb. The verb never changes. |
