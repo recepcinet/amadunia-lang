@@ -98,7 +98,7 @@ Two items are not grammar at all and sit outside this order: *madad* doing two
 jobs, and the thinness of Sino-Tibetan and Japonic recorded in
 [balance.md](../dictionary/balance.md). Both are vocabulary policy.
 
-## Open questions — 32 of them
+## Open questions — 33 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
@@ -210,6 +210,7 @@ measurement with its method stated, to be re-run rather than trusted.
 **[sentence-types](sentence-types.md)**
 
 - **Whether a command can be softened or strengthened by grammar.** English has *do sit down* and *just go*; Amadunia has the voice, the exclamation mark and *plis*, and nothing else. Untested.
+- **There is no way to command someone to *be* something.** *Es doktor* is taken by the existential, so *be a doctor*, *be quick*, *be careful* have no form. Found the day the command rule was made, by asking what it does to *es*.
 
 **[stress](stress.md)**
 

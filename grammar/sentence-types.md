@@ -41,6 +41,21 @@ This is the line that keeps the rule free of exceptions. Letting a subject
 appear "for emphasis" would make *Yu go* two sentences at once, and the
 language has spent three hundred roots avoiding exactly that.
 
+### The one verb it does not apply to
+
+*es* is a verb — [copula.md](copula.md) says so, and it takes the tense
+particles like any other. So *Es doktor* is a sentence beginning with a verb
+and no subject, and by the rule above it should be a command: *be a doctor*.
+
+It is not. **A sentence-initial *es* is the existential**, settled first and
+standing in thirty sentences: *Es hotel in madina*, there is a hotel in the
+city. The narrower rule wins over the broader one, which is how any two rules
+that overlap have to be ordered, and it is not an exception carved out for a
+word — *es* is simply already spoken for in that position.
+
+The cost is named in the open questions below: there is no way to tell someone
+to **be** something.
+
 ### Negation needs no new rule
 
 *no* goes in front of what it denies, which in a command is the verb.
@@ -123,3 +138,8 @@ would make the phrasebook impossible to write.
 - **Whether a command can be softened or strengthened by grammar.** English has
   *do sit down* and *just go*; Amadunia has the voice, the exclamation mark and
   *plis*, and nothing else. Whether that is enough is untested.
+- **There is no way to command someone to *be* something.** *Es doktor* is
+  taken by the existential — there is a doctor — so *be a doctor*, *be quick*,
+  *be careful* have no form. Every language has these and they are among the
+  commonest things anyone says. Found on September 3, 2026 by asking what the
+  command rule does to *es*, the day the command rule was made.

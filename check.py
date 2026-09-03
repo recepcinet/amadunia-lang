@@ -431,7 +431,13 @@ for path in sorted(glob.glob("lessons/lesson-*.md")):
     for line, sent, toks in amadunia_runs(body):
         if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗")): continue
         base = [t.split("-")[0] for t in toks]
-        if n < INTRO["command"] and base[0] in VERBS and base[0] not in ("bisa", "lasim"):
+        # es is excluded deliberately, not by accident: it is a verb, and its
+        # gloss simply does not start with "to ", which is the only reason it
+        # was never in VERBS. A sentence-initial es is the existential, which
+        # wins that slot — see grammar/sentence-types.md. Thirty sentences
+        # depend on it, so the exclusion is written rather than inherited.
+        if n < INTRO["command"] and base[0] in VERBS \
+                and base[0] not in ("bisa", "lasim", "es"):
             check(False,
                   f"{os.path.basename(path)}: a verb with no subject is a command, "
                   f"taught in Lesson {INTRO['command']:02d}: {sent}")

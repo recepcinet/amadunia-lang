@@ -2,6 +2,8 @@
 
 *The word is given in [Lesson 06](../lessons/lesson-06-possession.md); the rule is taught in [Lesson 11](../lessons/lesson-11-being.md), and [Lesson 12](../lessons/lesson-12-colors-directions.md) drills it with a deliberately wrong sentence.*
 
+*The existential also wins the sentence-initial slot over [the command rule](sentence-types.md): a sentence beginning with* es *is "there is", never "be".*
+
 *Status: settled — decided September 2, 2026. Reversible if the founder disagrees; see "Why this and not the alternatives" below.*
 
 ## The rule
