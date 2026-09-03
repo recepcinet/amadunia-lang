@@ -121,8 +121,30 @@ lessons/     23 lessons in order — see lessons/README.md
 
 Each file marks what is settled and what is still open.
 
+## Checking the language
+
+Amadunia holds itself to rules that are easy to state and easy to break by
+accident — twenty letters and no others, at most two consonants in a row, no
+two words a single sound apart, no *l* against *r* anywhere, every root
+sourced, every word in a text already in the dictionary.
+
+[`check.py`](check.py) checks all of them:
+
+```
+python3 check.py
+```
+
+It runs on every push and every pull request. A change that would put a new
+minimal pair into the dictionary, use an unlisted letter, leave an etymology
+blank, invent a word inside a text, or quietly leave a settled question on the
+open list will fail it.
+
+The one thing it cannot check is whether a word is a good word. That is still
+a decision, and the reasoning behind every one of them is in
+[grammar/](grammar/).
+
 ## License
 
-This language and all its materials are licensed under [CC BY-SA 4.0](LICENSE) — free to use, share and build upon, **forever**. Suggestions and contributions are welcome via Issues and Pull Requests; core language decisions are currently curated by the project founder to keep the language coherent while it is young.
+This language and all its materials are licensed under [CC BY-SA 4.0](LICENSE) — free to use, share and build upon, **forever**. Suggestions and contributions are welcome via Issues and Pull Requests; core language decisions are currently curated by the project founder to keep the language coherent while it is young. Run [`check.py`](check.py) before opening a pull request — it will catch most of what would otherwise need a founder to notice.
 
 *Mi ama dunia. Yu ama dunia. Kita ama dunia.* 🌍
