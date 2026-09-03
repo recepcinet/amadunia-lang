@@ -39,3 +39,23 @@ Between them the lessons teach every one of the 300 roots. [`check.py`](../check
 Read the [texts](../texts/) — five pieces written in Amadunia with nothing invented to make them work: two stories, an argument, a dialogue and a poem. Each ends with what the language could not say.
 
 The [phrasebook](../phrasebook.md) is the practical page. The [grammar files](../grammar/) give the reasoning behind every rule, including the candidates that were rejected and why.
+
+## Where each wordless rule starts
+
+Most rules arrive with a word, and [`check.py`](../check.py) already stops a
+lesson using a word no lesson has taught. Four rules arrive with no word at
+all — nothing to look up, nothing to spot. Those are the ones that drifted:
+verb chains ran in three lessons before Lesson 17 granted them, and Lesson 18
+introduced the adverb rule with a sentence Lesson 12 had already used.
+
+This table is the single place those four numbers live. `check.py` reads it
+and holds every earlier lesson to it, so the syllabus and the checker cannot
+disagree.
+
+| Rule | Introduced in |
+|---|---|
+| possession | 06 |
+| adverb | 12 |
+| verb chain | 17 |
+| existence | 18 |
+

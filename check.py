@@ -246,6 +246,14 @@ untaught = sorted(set(words) - taught)
 check(not untaught, f"{len(untaught)} roots are taught nowhere: {', '.join(untaught[:12])}"
                     + (" ..." if len(untaught) > 12 else ""))
 
+# The lesson that introduces each wordless rule is declared once, in
+# lessons/README.md, and read from there. These four numbers used to sit in
+# this file, which is the arrangement that let three of them drift.
+INTRO = {m.group(1): int(m.group(2)) for m in
+         re.finditer(r"^\| (possession|adverb|verb chain|existence) \| (\d\d) \|$",
+                     read("lessons/README.md"), re.M)}
+check(len(INTRO) == 4, f"lessons/README.md: the wordless-rule table is incomplete: {INTRO}")
+
 # ---------------------------------------------------------------- no chains
 # Verb chains were undecided until Lesson 17; the earlier lessons must not use
 # them. This list used to be written out by hand. It held 19 words while the
@@ -258,14 +266,15 @@ VERBS |= {"bisa", "lasim"}  # modals, glossed "can" and "must", not "to ..."
 VERBS |= {"madad"}          # class undecided: treat as a verb until it is settled
 for path in glob.glob("lessons/lesson-*.md"):
     n = int(re.search(r"lesson-(\d\d)", path).group(1))
-    if n >= 17: continue
+    if n >= INTRO["verb chain"]: continue
     body = read(path).split("## What you can already say")[0]
     for line, sent, toks in amadunia_runs(body):
         if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗")): continue
         base = [t.split("-")[0] for t in toks]
         for a, b in zip(base, base[1:]):
             check(not (a in VERBS and b in VERBS),
-                  f"{os.path.basename(path)}: verb chain '{a} {b}' predates Lesson 17")
+                  f"{os.path.basename(path)}: verb chain '{a} {b}' predates "
+                  f"Lesson {INTRO['verb chain']:02d}")
 
 # --------------------------------------------------------- verb position
 # A tense marker is followed by a verb, an adjective, a place, or es. Nothing
@@ -366,15 +375,19 @@ for path in sorted(glob.glob("lessons/lesson-*.md")):
     for line, sent, toks in amadunia_runs(body):
         if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗")): continue
         base = [t.split("-")[0] for t in toks]
+        if n < INTRO["existence"]:
+            check(base[0] != "es",
+                  f"{os.path.basename(path)}: a subjectless 'es' means \"there is\", "
+                  f"taught in Lesson {INTRO['existence']:02d}: {sent}")
         for a, b in zip(base, base[1:]):
-            if n < 6:
+            if n < INTRO["possession"]:
                 check(not (a in NOUNS and b in {"mi", "yu", "ta", "kita"}),
                       f"{os.path.basename(path)}: '{a} {b}' — possession is taught "
-                      f"in Lesson 06: {sent}")
-            if n < 12:
+                      f"in Lesson {INTRO['possession']:02d}: {sent}")
+            if n < INTRO["adverb"]:
                 check(not (a in VERBS and b in ADVERBIAL),
                       f"{os.path.basename(path)}: '{a} {b}' — an adjective after the "
-                      f"verb is taught in Lesson 12: {sent}")
+                      f"verb is taught in Lesson {INTRO['adverb']:02d}: {sent}")
 
 # ------------------------------------------------------------ root in use
 # Being taught is not the same as being used. Five roots — kulit, yanlis,
