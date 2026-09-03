@@ -920,6 +920,31 @@ check(f"- {len(_numberforms)} number shapes" in _wf and
       f"word-formation.md's breakdown is stale; {len(_numberforms)} numbers and "
       f"{len(_reduplications)} reduplications")
 
+# ------------------------------------------------------- nothing is orphaned
+# Seventy-four pages, and a new one is worth nothing if no page links to it.
+# Every markdown file must be reachable from README.md by following links. A
+# link to a directory counts as reaching its README, which is what GitHub
+# shows — the first version of this measurement did not do that and reported
+# lessons/README.md as an orphan when it is one click from the front page.
+_all_md = {os.path.normpath(_p) for _p in md()}
+def _targets(p):
+    out = set()
+    for _m in re.finditer(r"\]\(([^)#]+?)(?:#[^)]*)?\)", read(p)):
+        _t = _m.group(1).strip()
+        if _t.startswith(("http", "mailto")): continue
+        _q = os.path.normpath(os.path.join(os.path.dirname(p), _t))
+        if os.path.isdir(_q): _q = os.path.join(_q, "README.md")
+        out.add(os.path.normpath(_q))
+    return out
+_reached, _queue = {"README.md"}, ["README.md"]
+while _queue:
+    _p = _queue.pop(0)
+    for _t in _targets(_p):
+        if _t in _all_md and _t not in _reached:
+            _reached.add(_t); _queue.append(_t)
+for _p in sorted(_all_md - _reached):
+    check(False, f"{_p}: nothing links to it — no path from README.md reaches it")
+
 # ----------------------------------------------------------- tables render
 # A run of lines starting with "|" is a markdown table only if its second line
 # is a separator. Nothing checked that, and this file reads table rows happily

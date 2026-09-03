@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**91 guarantees** in **41 groups**, and every one of them is
+**92 guarantees** in **42 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -146,6 +146,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - grammar/word-formation.md: … joined forms are neither a number nor a plural
 - word-formation.md's count is stale; the repository has … joined forms
 - word-formation.md's breakdown is stale; … numbers and … reduplications
+### nothing is orphaned
+
+- …: nothing links to it — no path from README.md reaches it
 ### tables render
 
 - …:…: table rows with no header row above them — …

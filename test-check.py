@@ -28,6 +28,12 @@ _CURVE = re.search(r"\| first 25 \| (\d+)% \|",
                    io.open("dictionary/frequency.md", encoding="utf-8").read()).group(0)
 _CURVE_OFF = re.sub(r"(\d+)%", lambda m: f"{int(m.group(1)) + 3}%", _CURVE)
 
+# The guarantee count moves whenever a check is added, so this mutation reads
+# the line instead of naming it. Stale twice before that was worth doing.
+_GCOUNT = re.search(r"\*\*\d+ guarantees\*\* in \*\*\d+ groups\*\*",
+                    io.open("GUARANTEES.md", encoding="utf-8").read()).group(0)
+_GCOUNT_OFF = re.sub(r"^\*\*(\d+)", lambda m: f"**{int(m.group(1)) - 5}", _GCOUNT)
+
 _LIVE = int(re.search(r"## Open questions — (\d+) of them",
                       io.open("grammar/README.md", encoding="utf-8").read()).group(1))
 _WORDS = {25: "Twenty-five", 26: "Twenty-six", 27: "Twenty-seven", 28: "Twenty-eight",
@@ -184,7 +190,7 @@ MUTATIONS = [
      "| Mi kula pan din ini in dom. | I eat bread at home today. |",
      "time comes before place"),
     ("the guarantee count gone stale", "GUARANTEES.md",
-     "**91 guarantees** in **41 groups**", "**86 guarantees** in **41 groups**",
+     _GCOUNT, _GCOUNT_OFF,
      "GUARANTEES.md's counts are stale"),
     ("the guarantee list gone stale", "GUARANTEES.md",
      "- duplicate entries: …", "- duplicate entries: something else",
@@ -382,6 +388,15 @@ def main():
     if code and "the poem cannot be scanned" in out:
         print(f"  caught       {'the poem losing every fence':44} -> cannot be scanned"); caught += 1
     else: print("  NOT CAUGHT   the poem losing every fence"); missed += 1
+
+    # A page nobody links to, which no text replacement can create
+    orphan = os.path.join(work, "texts", "orphan-check.md")
+    io.open(orphan, "w", encoding="utf-8").write("# Orphan\n\nNothing links here.\n")
+    code, out = run(work)
+    os.remove(orphan)
+    if code and "nothing links to it" in out:
+        print(f"  caught       {'a page nothing links to':44} -> orphan reported"); caught += 1
+    else: print("  NOT CAUGHT   a page nothing links to"); missed += 1
 
     # A derived file that cannot be parsed at all
     full = os.path.join(work, "dictionary/dictionary.json")
