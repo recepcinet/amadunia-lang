@@ -592,6 +592,38 @@ for path in sorted(glob.glob("grammar/*.md")):
           or "../README.md" in body,
           f"{base}: does not say which lesson teaches it")
 
+# ------------------------------------------------------------- frequency
+# dictionary/frequency.md is derived from the corpus the way dictionary.json is
+# derived from the markdown: regenerated here and compared, so a lesson edited
+# tomorrow cannot leave it quietly wrong. Only the counted parts are checked —
+# the total, the cumulative curve and the top forty — and the prose is free.
+_freq = defaultdict(int)
+for _p in sorted(glob.glob("lessons/lesson-*.md")) + sorted(glob.glob("texts/*.md")) + ["phrasebook.md"]:
+    _b = read(_p)
+    if _p.startswith("texts/") and "```" in _b: _b = "".join(_b.split("```")[1::2])
+    if "## New word" in _b:
+        _h, _r = _b.split("## New word", 1)
+        _b = _h + "\n" + "\n## ".join(_r.split("\n## ")[1:])
+    for _line, _sent, _toks in amadunia_runs(_b):
+        for _t in _toks:
+            _t = _t.split("-")[0]
+            if _t in words: _freq[_t] += 1
+_tot = sum(_freq.values())
+_order = sorted(_freq.items(), key=lambda kv: (-kv[1], kv[0]))
+_fr = read("dictionary/frequency.md")
+check(f"**{_tot} words of running Amadunia**" in _fr,
+      f"frequency.md's total is stale; the corpus has {_tot} running words")
+_cum, _want = 0, []
+for _i, (_w, _n) in enumerate(_order, 1):
+    _cum += _n
+    if _i in (10, 25, 50, 100, 150, 200, 300):
+        _want.append(f"| first {_i} | {100*_cum/_tot:.0f}% |")
+for _line in _want:
+    check(_line in _fr, f"frequency.md is missing or contradicts the row '{_line}'")
+_gone = [w for w, n in _order[:40]
+         if f"| *{w}* |" not in _fr or f"| {n} |" not in _fr]
+check(not _gone, f"frequency.md's top forty has drifted: {', '.join(_gone[:6])}")
+
 # ------------------------------------------------------------ root in use
 # Being taught is not the same as being used. Five roots — kulit, yanlis,
 # foto, ba, nau — sat in a "New words" table and then appeared in no sentence

@@ -215,6 +215,7 @@ Follow the commits to watch a language grow in real time.
 | learn the language properly, from nothing | [Lesson 01](lessons/lesson-01-greetings.md) — twenty-five lessons in order |
 | say something today | [the phrasebook](phrasebook.md) — greeting, directions, buying, trouble |
 | look a word up | [the dictionary](dictionary/dictionary.md), or [the English index](dictionary/index-english.md) to write |
+| know which words to learn first | [the frequency list](dictionary/frequency.md) — twenty-five roots cover half of everything written |
 | know why a rule is the way it is | [grammar/](grammar/) — each page ends with what it rejected |
 | read the language, not lessons about it | [texts/](texts/) — eight original pieces |
 | add a word | [CONTRIBUTING.md](CONTRIBUTING.md) |

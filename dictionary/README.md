@@ -12,6 +12,8 @@ For the other direction, see [English → Amadunia](index-english.md). It is der
 
 For which families the roots come from, and how far each one reaches, see [Where the words come from](balance.md).
 
+For which roots actually carry the language — ten of them are a third of everything written — see [how often each root is used](frequency.md).
+
 For what the next three hundred should be made of — the measurements, and the decisions they do not make — see [A briefing for A2](proposal-a2.md).
 
 For tools rather than people: [dictionary.json](dictionary.json) and [dictionary.csv](dictionary.csv) carry the same 300 entries, generated from this file. The CSV imports straight into a flashcard deck. Edit the markdown, never the derived files — [`check.py`](../check.py) regenerates both and fails if they disagree.
