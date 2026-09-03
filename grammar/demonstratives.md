@@ -57,6 +57,10 @@ Indonesian and Malay *ini / itu*; Tagalog *ito*. Austronesian, some three hundre
 | yah / vah | Hindi | the alphabet has no *v* |
 | kore / sore | Japanese | clean, but one family, and *sore* is one sound from *sol* |
 
+## A note on checking
+
+*dom mi kabir ini* is a noun phrase and *ini* is last in it. But *Dom ini kabir* — "this house is big" — has *kabir* **outside** the phrase, as the sentence's predicate. The two look identical to a machine, so [`check.py`](../check.py) cannot test the rule in general; it tests only the case that has no predicate reading, an owner after *ini* or *itu*. An audit on September 3, 2026 found no violation of either kind.
+
 ## Open questions
 
 - A third distance (*that over there*, Indonesian *sana*, Japanese *are*) is not provided. *situ* covers it for now.

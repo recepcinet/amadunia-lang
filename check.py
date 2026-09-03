@@ -134,16 +134,25 @@ ADJECTIVES = {
 DEGREE = {"lebi", "kurang", "paling"}   # es lebi kabir is the same mistake
 
 def amadunia_runs(text):
-    """Sentences made entirely of dictionary words, from tables, quotes and code."""
+    """Sentences made entirely of dictionary words, from tables, quotes and code.
+
+    Tokens keep their hyphens so that a reduplicated plural (anak-anak) stays
+    one token, which the plural check needs.
+    """
     for line in text.splitlines():
         if line.startswith("|"):   cells = [c.strip() for c in line.split("|")[1:-1]]
         elif line.startswith(">"): cells = [line.lstrip("> —").strip()]
         else:                      cells = [line]
         for cell in cells:
-            for s in re.split(r"[.!?]", cell):
-                toks = re.findall(r"[a-z]+", s.lower())
-                if len(toks) >= 2 and all(t in words or t in PROPER or t in {"sol","luma"} for t in toks):
+            for s in re.split(r"[.!?,:]", cell):
+                toks = re.findall(r"[a-z]+(?:-[a-z]+)*", s.lower())
+                if len(toks) >= 2 and all(t.split("-")[0] in words or t.split("-")[0] in PROPER
+                                          or t.split("-")[0] in {"sol", "luma"} for t in toks):
                     yield line, s.strip(), toks
+
+NUMBERS  = {"uan","du","tri","pat","fai","sis","seti","ba","nau","des","sen","mila"}
+QUANTITY = NUMBERS | {"cok","lebi","kurang","berapa"}
+PRONOUNS = {"mi","yu","ta","kita","mi-mi","yu-yu","ta-ta"}
 
 for path in sorted(glob.glob("lessons/*.md") + glob.glob("texts/*.md")):
     if path.endswith("README.md"): continue
@@ -151,13 +160,32 @@ for path in sorted(glob.glob("lessons/*.md") + glob.glob("texts/*.md")):
     if path.startswith("texts/") and "```" in body: body = body.split("```")[1]
     for line, sent, toks in amadunia_runs(body):
         # Lessons show deliberately wrong sentences to teach the rule.
-        if "wrong" in line.lower() or "careful" in line.lower(): continue
+        if any(x in line.lower() for x in ("wrong", "careful", "never")): continue
         for i, w in enumerate(toks[:-1]):
-            if w != "es": continue
             nxt = toks[i+1]
-            if nxt in DEGREE and i + 2 < len(toks): nxt = toks[i+2]
-            check(nxt not in ADJECTIVES,
-                  f"{os.path.basename(path)}: 'es {toks[i+1]}' — es never goes before an adjective: {sent}")
+
+            # copula.md: es before a noun, never before an adjective
+            if w == "es":
+                a = toks[i+2] if nxt in DEGREE and i + 2 < len(toks) else nxt
+                check(a not in ADJECTIVES,
+                      f"{os.path.basename(path)}: 'es {nxt}' — es never goes before an adjective: {sent}")
+
+            # plural.md: after a number or quantity word the noun stays single
+            if w in QUANTITY and "-" in nxt:
+                half = nxt.split("-")
+                check(not (len(half) == 2 and half[0] == half[1]),
+                      f"{os.path.basename(path)}: '{w} {nxt}' — no plural after a number: {sent}")
+
+            # negation.md: the order is no, then the tense particle, never the reverse
+            check(not (w in ("suda", "saufa") and nxt == "no"),
+                  f"{os.path.basename(path)}: '{w} no' — no comes before the tense particle: {sent}")
+
+            # demonstratives.md: ini and itu come last in the noun phrase, so an
+            # owner can never follow them. (An adjective after them is usually the
+            # sentence's predicate, which is legal, so that case cannot be checked
+            # here without parsing — see the note in demonstratives.md.)
+            check(not (w in ("ini", "itu") and nxt in PRONOUNS),
+                  f"{os.path.basename(path)}: '{w} {nxt}' — the owner goes before ini/itu: {sent}")
 
 # -------------------------------------------------------------------- links
 for f in md():
