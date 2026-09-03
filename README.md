@@ -153,6 +153,6 @@ a decision, and the reasoning behind every one of them is in
 
 ## License
 
-This language and all its materials are licensed under [CC BY-SA 4.0](LICENSE) — free to use, share and build upon, **forever**. Suggestions and contributions are welcome via Issues and Pull Requests; core language decisions are currently curated by the project founder to keep the language coherent while it is young. Run [`check.py`](check.py) before opening a pull request — it will catch most of what would otherwise need a founder to notice.
+This language and all its materials are licensed under [CC BY-SA 4.0](LICENSE) — free to use, share and build upon, **forever**. Suggestions and contributions are welcome via Issues and Pull Requests; core language decisions are currently curated by the project founder to keep the language coherent while it is young. [CONTRIBUTING.md](CONTRIBUTING.md) sets out how to propose a word — the ten rules a candidate has to survive, and a sample of what they have already rejected — and how to answer one of the open questions.
 
 *Mi ama dunia. Yu ama dunia. Kita ama dunia.* 🌍
