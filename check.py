@@ -285,6 +285,43 @@ for path in PROSE:
                 check(b in AFTER_TENSE,
                       f"{os.path.basename(path)}: '{a} {b}' — {b} is not a verb: {sent}")
 
+# --------------------------------------------------------- the other copula
+# grammar/copula.md has two halves. "es never before an adjective" has been
+# checked ever since it was broken thirteen times. The mandatory half — es
+# before a noun predicate — had nothing on it at all. A sentence may open with
+# a pronoun followed by a verb, an adjective, a place or a particle. A bare
+# noun there means either the copula is missing (Mi doktor) or a noun is
+# standing where a verb belongs, which is how "Mi saufa mualim anak-anak" got
+# in. The word classes are read out of the dictionary's own groups rather than
+# typed here, because the last hand-typed list in this file knew 19 of 47 verbs.
+GROUP, _g = {}, None
+for _line in read("dictionary/dictionary.md").split("## Counting")[0].splitlines():
+    _h = re.match(r"\| \*\*(.+?)\*\*", _line)
+    if _h:
+        _g = re.sub(r"[^A-Za-z ].*", "", _h.group(1)).strip(); GROUP[_g] = set(); continue
+    _r = re.match(r"\| ([a-z-]+) \|", _line)
+    if _r and _g: GROUP[_g].add(_r.group(1))
+PREDICATE_OK = (VERBS | PENDING_CLASS | ADJECTIVES | NUMBERS | DEGREE | GROUP["Place"]
+                | GROUP["Prepositions"] | GROUP["Grammar particles"]
+                | GROUP["This and that"] | GROUP["Question words"]
+                | {"no", "una", "cok", "daima", "kadang", "sasa", "tena"})
+PREDICATE_OK -= {"tempat"}  # sits in the Place group but is a plain noun: in tempat ini
+# rabota is allowed here only because its class is undecided. Ten sentences in
+# the lessons, the grammar and the phrasebook read it as a verb and would fail
+# this check the moment it is settled as the noun the dictionary says it is.
+for path in PROSE:
+    body = read(path)
+    if path.startswith("texts/") and "```" in body:
+        body = "".join(body.split("```")[1::2])
+    for line, sent, toks in amadunia_runs(body):
+        if "·" in line: continue  # a list of words separated by dots, not a sentence
+        if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗")): continue
+        base = [t.split("-")[0] for t in toks]
+        if len(base) >= 2 and base[0] in {"mi", "yu", "ta", "kita"} \
+                and base[1] not in PREDICATE_OK:
+            check(False, f"{os.path.basename(path)}: '{base[0]} {base[1]}' — a noun "
+                         f"predicate needs es before it: {sent}")
+
 # ------------------------------------------------------------ root in use
 # Being taught is not the same as being used. Five roots — kulit, yanlis,
 # foto, ba, nau — sat in a "New words" table and then appeared in no sentence
