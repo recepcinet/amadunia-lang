@@ -28,7 +28,6 @@ Two-consonant sequences that occur in current vocabulary:
 - `tr` — *tri* (3)
 - `ks` — *taksi* (taxi), across the syllable break *tak-si*
 - `kt` — *doktor*, across the syllable break *dok-tor*
-- `lm` — *salam*, across the syllable break *sa-lam*
 - `rb` — *corba* (soup)
 - `rg` — *harga* (price)
 - `rk` — *porke* (why), *market*, across the syllable break *por-ke*
@@ -36,7 +35,9 @@ Two-consonant sequences that occur in current vocabulary:
 - `rd` — *pardon*, across the syllable break *par-don*
 - `ns` — *insan* (person), across the syllable break *in-san*
 - `pl` — *plis* (please), word-initial like *tr*
+- `fr` — *fruta* (fruit), word-initial like *tr*
 - `mb` — *ambil* (to take), across the syllable break *am-bil*
+- `mr` — *kamra* (room), across the syllable break *kam-ra*
 - `nd` — *anda* (to walk), across the syllable break *an-da*
 - `ng` — *angin* (wind), *cang* (long)
 - `bl` — *problema*
@@ -99,7 +100,12 @@ list for that too — an exemption may excuse a pair, never that pair.
 
 ## Vowel sequences
 
-Observed in current vocabulary:
+**Settled: these five sequences and no others, and never three vowels in a
+row.** Both halves are rules, not observations — the page listed them as
+"observed in current vocabulary" while [`check.py`](../check.py) rejected
+anything else, and until September 3, 2026 the checker enforced only the first
+half. *kuai* is legal as two pairs, *ua* then *ai*, and illegal as a run of
+three; it is the example [CONTRIBUTING rule 4](../CONTRIBUTING.md) names.
 
 | Sequence | Example |
 |---|---|

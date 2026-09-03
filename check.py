@@ -92,6 +92,31 @@ for p in sorted(pairs):
     lr = any({x, y} == {"l", "r"} for x, y in zip(*p))
     check(not lr, f"l/r minimal pair: {p[0]} / {p[1]} — the one contrast the language forbids")
 
+# ------------------------------------------------- phonology.md is a record
+# The founder's standing instruction: when a new consonant pair or vowel
+# sequence appears, add it to phonology.md. Nothing enforced that, and the page
+# had drifted — fr (fruta) and mr (kamra) were missing, and lm was listed with
+# salam as its example, where l and m are not adjacent at all. It had never
+# been right.
+_cc, _vv = {}, {}
+for w in words:
+    for i in range(len(w) - 1):
+        a, b = w[i], w[i+1]
+        if a in CONSONANTS and b in CONSONANTS: _cc.setdefault(a+b, w)
+        if a in VOWELS and b in VOWELS: _vv.setdefault(a+b, w)
+_phon = read("grammar/phonology.md")
+_listed_cc = set(re.findall(r"^- `([a-z]{2})`", _phon, re.M))
+_listed_vv = set(re.findall(r"^\| ([a-z]{2}) \|",
+                           _phon.split("## Vowel sequences")[1], re.M))
+for kind, found, listed in (("consonant pair", set(_cc), _listed_cc),
+                            ("vowel sequence", set(_vv), _listed_vv)):
+    for x in sorted(found - listed):
+        check(False, f"grammar/phonology.md does not list the {kind} '{x}' "
+                     f"({_cc.get(x) or _vv.get(x)})")
+    for x in sorted(listed - found):
+        check(False, f"grammar/phonology.md lists the {kind} '{x}', "
+                     f"which no root contains")
+
 # ------------------------------------------------------------------- texts
 for path in glob.glob("texts/*.md"):
     if path.endswith("README.md"): continue
