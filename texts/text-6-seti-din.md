@@ -117,13 +117,15 @@ that. It wants *on the eighth day* and *on the ninth day*, and can only say
 again — is a retreat from a date to an adverb. See the open question in
 [grammar/README.md](../grammar/README.md).
 
-**A doctor cannot tell a patient to open their mouth.** The examination is
-written from outside — *Doktor buka mulut anak*, the doctor opens the child's
-mouth — because there is no settled imperative to write it from inside. Every
-doctor in the world says *open your mouth*. This is one more site for the
-imperative decision in
-[grammar/proposal-sentence-types.md](../grammar/proposal-sentence-types.md),
-and unlike the sites counted there it was found by writing, not by grep.
+**~~A doctor cannot tell a patient to open their mouth.~~ It can now.** The
+examination is written from outside — *Doktor buka mulut anak*, the doctor
+opens the child's mouth — because on the day it was written there was no
+settled imperative to write it from inside. This paragraph was one of the sites
+that argued for one, and unlike the sites counted in the briefing it was found
+by writing rather than by grep. The rule arrived on September 3, 2026:
+[a verb with no subject is a command](../grammar/sentence-types.md), so *Buka
+mulut* is now sayable. The text is left as written, because what it records is
+what the absence cost.
 
 ## Roots used
 

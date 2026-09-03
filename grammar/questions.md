@@ -98,8 +98,8 @@ Ten candidates from ten families, ten collisions. As with possession, the langua
 
 ## Open questions
 
-- **The imperative was never granted.** *Anda tarik ini*, *Buka ain yu*, *Otur sini* are commands, and the lessons have used a bare verb as one since Lesson 10 — but no rule anywhere says a bare verb may be a command, or how a command differs from a statement with the subject left out. The form is in use and undecided. Found by [the fourth text](../texts/text-4-in-madina-baru.md), September 3, 2026.
-- **Fragments.** *Ke?* *Harga?* *Ponte?* — a turn of one word is what conversation is mostly made of, and nothing covers it. Whether a fragment is a legal sentence, and how it is read, is undecided; the dialogue's fragments work by accident.
+- ~~**The imperative was never granted.**~~ — granted September 3, 2026 in [sentence-types.md](sentence-types.md): a sentence that begins with a verb and has no subject is a command, and that is also what tells it from a statement. *Anda tarik ini*, *Buka ain yu*, *Otur sini* stand unchanged. Found by [the fourth text](../texts/text-4-in-madina-baru.md).
+- ~~**Fragments.**~~ — settled the same day in [sentence-types.md](sentence-types.md): any constituent may stand alone as an utterance. *Ke?* *Harga?* *Ponte?* are legal by rule now rather than by accident, and a fragment answer inherits the tense and subject of the question.
 
 - ~~Adverb position~~ — settled in [place.md](place.md): place first, then time, both at the end. *kab, porke, kaifa* stay where they are.
 - **Lesson 6 asked *Nama yu?*** with no question word. That is a yes/no-shaped question that context turns into "what is your name". The explicit form is *Nama yu es ke?* Both are allowed; whether the short form should be discouraged in teaching is open.

@@ -120,5 +120,5 @@ three; it is the example [CONTRIBUTING rule 4](../CONTRIBUTING.md) names.
 ## Open questions
 
 - ~~Whether a vowel pair is one syllable or two~~ — settled in [stress.md](stress.md) on September 3, 2026, together with the stress rule that needed it: **a vowel pair is one nucleus**, so *dunia* is two syllables and *familia* three. Counting a syllable means counting vowel groups. It affected 28 of the 300 roots.
-- Whether stress is fixed (and if so, on which syllable) is not yet decided. See [proposal-stress.md](proposal-stress.md).
+- ~~Whether stress is fixed (and if so, on which syllable)~~ — settled in [stress.md](stress.md) on September 3, 2026: **the second-to-last syllable of every word**. This bullet outlived the decision by a day, and the day is the point: [the briefing it points at](proposal-stress.md) had said *Decided* at the top of it the whole time.
 - Whether the two-consonant sequences above are the complete permitted set, or merely the ones used so far, is not yet decided.

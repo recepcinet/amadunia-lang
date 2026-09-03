@@ -8,7 +8,10 @@ This is the genre the language cannot yet write, and it was written anyway, to
 find out exactly what that costs.
 
 Written at 300 roots, with no grammar beyond Lesson 23, and **with no
-imperative**, because there is none — [the form is in use and undecided](../grammar/proposal-sentence-types.md).
+imperative**, because on the day it was written there was none. There is one
+now — [a verb with no subject is a command](../grammar/sentence-types.md) — and
+this text is what decided it. It is left in its original form on purpose; see
+[Gaps](#gaps) for what its opening would be today.
 
 ---
 

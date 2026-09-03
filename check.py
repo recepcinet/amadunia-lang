@@ -183,6 +183,36 @@ m = re.search(r"## Open questions — (\d+) of them", gi)
 check(m and int(m.group(1)) == live,
       f"grammar/README.md says {m.group(1) if m else '?'} open questions; the files have {live}")
 
+# ------------------------------------------------- a decided briefing is over
+# A briefing that has been decided is a record, not a question. Three days
+# after two of them were decided, four places still cited them as live: the
+# stress question was still open on phonology.md, the imperative and the
+# fragment were still open on questions.md, and two texts still said the form
+# was undecided. Two of the four name the briefing in a link and are caught
+# here; the other two named nothing and were found by reading, which is why
+# this check is narrow rather than a search for the word "undecided" — that
+# search returns four sentences that are correctly saying some OTHER briefing
+# is still open.
+DECIDED = {os.path.basename(p) for p in glob.glob("grammar/proposal-*.md")
+           if re.search(r"^\*\*Decided on ", read(p), re.M)}
+for p in sorted(glob.glob("grammar/*.md")):
+    body = read(p)
+    if "## Open questions" not in body: continue
+    for l in body.split("## Open questions")[1].splitlines():
+        if not l.startswith("- ") or l.startswith("- ~~"): continue
+        for t in re.findall(r"\]\(([^)]+\.md)[^)]*\)", l):
+            check(os.path.basename(t) not in DECIDED,
+                  f"{os.path.basename(p)}: a live open question points at "
+                  f"{os.path.basename(t)}, which says it was decided — strike "
+                  f"the question through or the briefing is not over")
+_UNDECIDED = re.compile(r"undecided|not yet decided|never granted|not settled", re.I)
+for p in sorted(glob.glob("**/*.md", recursive=True)):
+    for m2 in re.finditer(r"\[([^\]]+)\]\(([^)]+\.md)\)", read(p)):
+        if os.path.basename(m2.group(2)) in DECIDED and _UNDECIDED.search(m2.group(1)):
+            check(False,
+                  f"{os.path.basename(p)}: calls {os.path.basename(m2.group(2))} "
+                  f"'{m2.group(1)}' — that briefing has been decided")
+
 # ------------------------------------------------------------------- copula
 # grammar/copula.md: es goes before a noun and never before an adjective.
 # The rule was settled early and then broken thirteen times in later lessons
@@ -495,11 +525,21 @@ for path in sorted(glob.glob("lessons/lesson-*.md")):
 # elsewhere are left alone on purpose: "verb chains ran in three lessons" and
 # "thirteen errors across five lessons and three texts" are history, not
 # totals, and a check that cannot tell those apart is worse than none.
+# The map used to hold twenty, then a hand-written handful up to thirty, and a
+# token it did not know was skipped in silence. That is how the front page came
+# to say "Thirty-three questions are still open" for a day after the count fell
+# to thirty: the check read the line, did not recognise the word, and passed.
+# Every spelled number below a hundred is generated now, so an unknown token is
+# a word and not a number.
 WORD_NUM = {w: i for i, w in enumerate(
     "zero one two three four five six seven eight nine ten eleven twelve "
     "thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty".split())}
-WORD_NUM.update({"twenty-five": 25, "twenty-six": 26, "twenty-seven": 27,
-                 "twenty-eight": 28, "twenty-nine": 29, "thirty": 30})
+_TENS = "twenty thirty forty fifty sixty seventy eighty ninety".split()
+_UNITS = "one two three four five six seven eight nine".split()
+for _i, _t in enumerate(_TENS):
+    WORD_NUM[_t] = 20 + _i * 10
+    for _j, _u in enumerate(_UNITS):
+        WORD_NUM[f"{_t}-{_u}"] = 20 + _i * 10 + _j + 1
 for path in PROSE:
     for m in re.finditer(r"\[([^\]]*)\]\((?:\.\./)?grammar/README\.md\)", read(path)):
         text = m.group(1)

@@ -204,14 +204,13 @@ negation, conjunction, demonstratives, place, verb chains, comparison,
 subordination, adverbs, stress and the sentence types are settled — twenty-one rules, each recorded with its
 reasoning and with the candidates it rejected.
 
-**[Thirty-three questions are still open](grammar/README.md)**, gathered on one
+**[Thirty questions are still open](grammar/README.md)**, gathered on one
 page, ordered by [what the writing has actually asked for](grammar/README.md) —
-the imperative leads with three pages that tried and stopped, and six questions
-have never been reached for at all. Four of them were not left open on purpose:
-a mark for a name, how *r* is made, and "want to be" followed by an adjective
-are things the language had been using that no rule ever granted. A fourth, the
-imperative, was granted on September 3, 2026 — it led that list with three pages
-that had tried and stopped.
+a mark for a name now leads, and six questions have never been reached for at
+all. Four were not left open on purpose but were forms the material already
+relied on that no rule had granted: a mark for a name, how *r* is made, "want
+to be" followed by an adjective, and the imperative — which led the list with
+three pages that tried and stopped until it was granted on September 3, 2026.
 Each was found by writing something that was not a lesson — which is what the
 texts are for.
 

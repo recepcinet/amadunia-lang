@@ -98,7 +98,7 @@ Two items are not grammar at all and sit outside this order: *madad* doing two
 jobs, and the thinness of Sino-Tibetan and Japonic recorded in
 [balance.md](../dictionary/balance.md). Both are vocabulary policy.
 
-## Open questions — 33 of them
+## Open questions — 30 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
@@ -175,7 +175,7 @@ measurement with its method stated, to be re-run rather than trusted.
 **[phonology](phonology.md)**
 
 - ~~Whether a vowel pair is one syllable or two~~ — settled in [stress.md](stress.md): a vowel pair is one nucleus, so *dunia* is two syllables. Counting a syllable means counting vowel groups.
-- Whether stress is fixed (and if so, on which syllable) is not yet decided. See [proposal-stress.md](proposal-stress.md).
+- ~~Whether stress is fixed (and if so, on which syllable)~~ — settled in [stress.md](stress.md) on September 3, 2026: **the second-to-last syllable of every word**. This bullet outlived the decision by a day, and the day is the point: [the briefing it points at](proposal-stress.md) had said *Decided* at the top of it the whole time.
 - Whether the two-consonant sequences above are the complete permitted set, or merely the ones used so far, is not yet decided.
 
 **[place](place.md)**
@@ -203,8 +203,8 @@ measurement with its method stated, to be re-run rather than trusted.
 
 **[questions](questions.md)**
 
-- **The imperative was never granted.** *Anda tarik ini*, *Buka ain yu*, *Otur sini* are commands, and the lessons have used a bare verb as one since Lesson 10 — but no rule anywhere says a bare verb may be a command, or how a command differs from a statement with the subject left out. The form is in use and undecided. Found by [the fourth text](../texts/text-4-in-madina-baru.md), September 3, 2026.
-- **Fragments.** *Ke?* *Harga?* *Ponte?* — a turn of one word is what conversation is mostly made of, and nothing covers it. Whether a fragment is a legal sentence, and how it is read, is undecided; the dialogue's fragments work by accident.
+- ~~**The imperative was never granted.**~~ — granted September 3, 2026 in [sentence-types.md](sentence-types.md): a sentence that begins with a verb and has no subject is a command, and that is also what tells it from a statement. *Anda tarik ini*, *Buka ain yu*, *Otur sini* stand unchanged. Found by [the fourth text](../texts/text-4-in-madina-baru.md).
+- ~~**Fragments.**~~ — settled the same day in [sentence-types.md](sentence-types.md): any constituent may stand alone as an utterance. *Ke?* *Harga?* *Ponte?* are legal by rule now rather than by accident, and a fragment answer inherits the tense and subject of the question.
 - **Lesson 6 asked *Nama yu?*** with no question word. That is a yes/no-shaped question that context turns into "what is your name". The explicit form is *Nama yu es ke?* Both are allowed; whether the short form should be discouraged in teaching is open.
 
 **[sentence-types](sentence-types.md)**

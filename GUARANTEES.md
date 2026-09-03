@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**92 guarantees** in **42 groups**, and every one of them is
+**94 guarantees** in **43 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -48,6 +48,10 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - lessons/README.md does not link …
 - …: no '## Open questions' section — a rule records what it left open, even if that is nothing
 - grammar/README.md says … open questions; the files have …
+### a decided briefing is over
+
+- …: a live open question points at …, which says it was decided — strike the question through or the briefing is not over
+- …: calls … '…' — that briefing has been decided
 ### copula
 
 - …: 'es …' — es never goes before an adjective: …
