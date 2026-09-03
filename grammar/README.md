@@ -1,6 +1,6 @@
 # Grammar
 
-Sixteen files, one decision each. Every one records what was settled, why, which candidates were rejected and on what ground, and what it left open.
+Seventeen rules and four briefings, one decision each. Every one records what was settled, why, which candidates were rejected and on what ground, and what it left open.
 
 ## The rules
 
@@ -12,6 +12,7 @@ Sixteen files, one decision each. Every one records what was settled, why, which
 | [tense](tense.md) | *suda* past, *saufa* future, present unmarked — before the verb. The verb never changes. |
 | [plural](plural.md) | Say the noun twice. Single after a number. The unmarked noun is neutral. |
 | [possession](possession.md) | The owner follows the thing owned, with nothing added. Owner before adjective. |
+| [word-formation](word-formation.md) | Two roots join for a number or a plural, and for nothing else. No compound word exists. |
 | [questions](questions.md) | Rising tone for yes/no. The question word stays where the answer would go. |
 | [pronouns](pronouns.md) | Six forms. No case, no gender, no politeness. *mi-mi* excludes you, *kita* includes you. |
 | [copula](copula.md) | *es* before a noun, nothing before an adjective or place. At the front with no subject it means "there is". |
@@ -94,7 +95,7 @@ Two items are not grammar at all and sit outside this order: *madad* doing two
 jobs, and the thinness of Sino-Tibetan and Japonic recorded in
 [balance.md](../dictionary/balance.md). Both are vocabulary policy.
 
-## Open questions — 27 of them
+## Open questions — 28 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
@@ -171,6 +172,10 @@ Gathered from the files above so they can be read in one place. Each is recorded
 
 - Whether *suda* also covers the perfect ("I have eaten") or whether that needs its own marker.
 - Whether a habitual ("I eat every day") ever needs marking, or whether the unmarked present carries it.
+
+**[word-formation](word-formation.md)**
+
+- **Does the language form compound words at all?** It never has — all 35 hyphenated forms in the repository are numbers or doubled plurals — and the front page had been leaning on the idea that it does. Juxtaposition is already taken by possession, and the hyphen already has two jobs.
 
 **[verb-chains](verb-chains.md)**
 

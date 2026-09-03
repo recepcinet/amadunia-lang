@@ -89,6 +89,7 @@ four gaps and where they were found.
 
 Judgement, and the founder's: whether to set a family floor and where, whether
 the feelings are a deliberate theme for A2 or a coincidence of four data
-points, and whether 600 is still the right number now that compounding has
-been shown to work — *mesin ambil foto korpo* said X-ray with no new word at
-all.
+points, and whether 600 is still the right number. Note that the reason once given for a
+small dictionary does not hold: *mesin ambil foto korpo* says X-ray with no new
+root, but it is a sentence, not a compound, and [the language forms no compound
+words at all](../grammar/word-formation.md).

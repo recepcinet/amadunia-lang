@@ -178,9 +178,13 @@ are [open questions](grammar/verb-chains.md) waiting on a decision.
 🚧 Amadunia was born on **September 2, 2026** and is under active construction.
 
 **300 roots**, the A1 target, reached the next day. That target is lower than
-the ~500 words a natural language needs at A1 because compounding does the
-rest — Esperanto launched with 917 roots, and Basic English covers daily life
-in 850. Milestones passed: 80 for survival, then 180, then 300. Next is A2, at
+the ~500 words a natural language needs at A1 because things can be described
+with what is already there — Esperanto launched with 917 roots, and Basic
+English covers daily life in 850. This page used to say *compounding* does the
+rest. It does not: every hyphen in the repository was counted, and all 35 are
+either a number or a doubled plural. [No compound word has ever been
+formed](grammar/word-formation.md), and whether one may be is now an open
+question. Milestones passed: 80 for survival, then 180, then 300. Next is A2, at
 around 600 — and what those three hundred should be made of is measured in
 [a briefing](dictionary/proposal-a2.md), which makes none of the choices.
 
@@ -190,7 +194,7 @@ negation, conjunction, demonstratives, place, verb chains, comparison,
 subordination and adverbs are settled — seventeen rules, each recorded with its
 reasoning and with the candidates it rejected.
 
-**[Twenty-seven questions are still open](grammar/README.md)**, gathered on one
+**[Twenty-eight questions are still open](grammar/README.md)**, gathered on one
 page with what each one blocks. Four of them were not left open on purpose: the
 imperative, a mark for a name, how *r* is made, and "want to be" followed by an
 adjective are all things the language had been using that no rule ever granted.

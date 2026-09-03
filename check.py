@@ -440,6 +440,24 @@ check(not glossed_only,
 # madad is excluded and named: its class is undecided, so no lesson may use it
 # in a sentence yet. See grammar/verb-chains.md.
 
+# ------------------------------------------------------------ two roots joined
+# grammar/word-formation.md: two roots join for a number or for a plural, and
+# for nothing else. All 35 hyphenated forms in the repository are one or the
+# other, and the front page's argument for a 300-root dictionary now rests on
+# that being true, so it is checked rather than asserted.
+for path in PROSE:
+    body = read(path)
+    if path.startswith("texts/") and "```" in body:
+        body = "".join(body.split("```")[1::2])
+    for line, sent, toks in amadunia_runs(body):
+        if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗")): continue
+        for t in toks:
+            if "-" not in t: continue
+            parts = t.split("-")
+            check(all(p in NUMBERS for p in parts) or len(set(parts)) == 1,
+                  f"{os.path.basename(path)}: '{t}' joins two roots and is neither a "
+                  f"number nor a plural — see grammar/word-formation.md: {sent}")
+
 # ------------------------------------------------------------ root in use
 # Being taught is not the same as being used. Five roots — kulit, yanlis,
 # foto, ba, nau — sat in a "New words" table and then appeared in no sentence

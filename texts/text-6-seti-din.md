@@ -85,8 +85,9 @@ Anak go skola tena. Ta senang.
 
 **A machine takes a photo of a body.** *Mesin ambil foto korpo anak.* The
 language has no word for an X-ray and did not need one: a machine, a picture,
-a body. This is the compounding the design was betting on, and it is the one
-place in the text where nothing was lost.
+a body. Nothing was lost here — though calling it compounding, as this note
+first did, was wrong: it is a sentence, and [the language forms no compound
+words](../grammar/word-formation.md).
 
 **No copula anywhere in twelve predicates.** *Sar ta garam*, *Korpo ta kuat*,
 *Kulit garam* — every one of these is a noun and an adjective with nothing

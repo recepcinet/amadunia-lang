@@ -18,6 +18,15 @@ import io, os, re, shutil, subprocess, sys, tempfile
 # (name, file, find, replace, expect) — expect must appear in the failure output,
 # so a mutation caught by the wrong check counts as a miss. "zzugu" was first
 # caught by the alphabet rule, leaving the coverage rule still unverified.
+# The open-question count changes whenever one is settled or found, so these two
+# mutations read it instead of hard-coding it. They went stale twice in one week
+# and the harness reported NOT APPLIED both times, which is correct but is work
+# nobody needs to do again.
+_LIVE = int(re.search(r"## Open questions — (\d+) of them",
+                      io.open("grammar/README.md", encoding="utf-8").read()).group(1))
+_WORDS = {25: "Twenty-five", 26: "Twenty-six", 27: "Twenty-seven", 28: "Twenty-eight",
+          29: "Twenty-nine", 30: "Thirty"}
+
 MUTATIONS = [
     ("letter outside the alphabet", "dictionary/dictionary.md",
      "| akua | water |", "| azua | water |",
@@ -92,15 +101,18 @@ MUTATIONS = [
     ("broken link", "README.md",
      "[phrasebook.md](phrasebook.md)", "[phrasebook.md](phrasebok.md)",
      "broken link"),
+    ("a compound word invented", "texts/text-6-seti-din.md",
+     "Mesin ambil foto korpo anak.", "Mesin-foto ambil korpo anak.",
+     "neither a number nor a plural"),
     ("root glossed in a lesson but never shown", "lessons/lesson-24-the-table-and-the-city.md",
      "| Mi suda espera ba hora. | I waited eight hours. |\n", "",
      "in no lesson sentence: ba"),
     ("stale count in a link to the index", "CONTRIBUTING.md",
-     "[27 of them](grammar/README.md)", "[25 of them](grammar/README.md)",
-     "names 25 open questions; there are 27"),
+     f"[{_LIVE} of them](grammar/README.md)", "[3 of them](grammar/README.md)",
+     f"names 3 open questions; there are {_LIVE}"),
     ("stale count spelled out", "README.md",
-     "[Twenty-seven questions are still open]", "[Twenty-five questions are still open]",
-     "names 25 open questions; there are 27"),
+     f"[{_WORDS[_LIVE]} questions are still open]", "[Three questions are still open]",
+     f"names 3 open questions; there are {_LIVE}"),
     ("existence before Lesson 18", "lessons/lesson-13-weather-directions.md",
      "| Anak kimbia hayai. | The child runs fast. |",
      "| Es hotel sini. | There is a hotel here. |",
