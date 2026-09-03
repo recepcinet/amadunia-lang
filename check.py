@@ -558,6 +558,17 @@ check(_m and _names.get(_m.group(1)) == _ambiguous,
       f"proposal-names.md says {_m.group(1) if _m else '?'} sentences are formally "
       f"ambiguous; the corpus has {_ambiguous}")
 
+# ------------------------------------ the modal-adjective briefing counts itself
+# The size of that gap is three modals against every adjective, and the
+# adjective list grows with the dictionary. The page had no reproducible number
+# at all until it was measured; this keeps the one it now carries honest.
+_blocked = 3 * len(ADJECTIVES)
+_m = re.search(r"\*\*(\d+)\*\* — three modals against (\d+) adjectives",
+               read("grammar/proposal-modal-adjective.md"))
+check(_m and int(_m.group(1)) == _blocked and int(_m.group(2)) == len(ADJECTIVES),
+      f"proposal-modal-adjective.md says {_m.group(1) if _m else '?'} blocked "
+      f"combinations; three modals against {len(ADJECTIVES)} adjectives is {_blocked}")
+
 # ------------------------------------------------------------ root in use
 # Being taught is not the same as being used. Five roots — kulit, yanlis,
 # foto, ba, nau — sat in a "New words" table and then appeared in no sentence

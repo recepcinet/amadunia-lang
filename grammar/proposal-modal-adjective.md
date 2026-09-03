@@ -1,10 +1,25 @@
 # Proposal: "want to be" plus an adjective
 
-**This is not a rule.** Nothing here has been adopted. It is the fourth and
-smallest of the briefings, after [stress](proposal-stress.md),
+**This is not a rule.** Nothing here has been adopted. It is the fourth of the
+briefings, after [stress](proposal-stress.md),
 [the imperative and the fragment](proposal-sentence-types.md) and
 [marking a name](proposal-names.md). With it, all four of the questions the
 language was already relying on are prepared.
+
+It was called the smallest of the four, on the strength of two pages having
+tripped over it. Measured, it is not small.
+
+| | |
+|---|---|
+| Amadunia sentences in the repository | 1481 |
+| of those, verbless adjective predicates | **291 — one in five** |
+| modal followed by a verb, working normally | 61 |
+| modal followed by an adjective, in any file | **0, and none is possible** |
+| combinations with no legal form | **111** — three modals against 37 adjectives |
+
+The construction is not rare and the modals are not rare. They simply cannot
+meet. [`check.py`](../check.py) recounts the 111 from the dictionary, so the
+figure follows the language rather than this page.
 
 ## The gap
 
