@@ -9,3 +9,5 @@ Every one of the 300 roots now carries a sourced etymology. The last fourteen bl
 Words are grouped by theme and alphabetised within each group — except the numbers, which run in numerical order.
 
 For the other direction, see [English → Amadunia](index-english.md). It is derived from this file mechanically, so the two cannot drift apart.
+
+For which families the roots come from, and how far each one reaches, see [Where the words come from](balance.md).

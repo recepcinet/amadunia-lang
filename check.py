@@ -187,6 +187,51 @@ for path in sorted(glob.glob("lessons/*.md") + glob.glob("texts/*.md") + ["phras
             check(not (w in ("ini", "itu") and nxt in PRONOUNS),
                   f"{os.path.basename(path)}: '{w} {nxt}' — the owner goes before ini/itu: {sent}")
 
+# ------------------------------------------------------------------ balance
+# Design rule 4: no language family dominates. dictionary/balance.md states the
+# figures; they are recomputed here so the page cannot drift from the data.
+FAMILY = {
+    "Latin":"Latin/Romance","Spanish":"Latin/Romance","Portuguese":"Latin/Romance",
+    "Italian":"Latin/Romance","French":"Latin/Romance","Romanian":"Latin/Romance",
+    "Catalan":"Latin/Romance","English":"Germanic","German":"Germanic","Dutch":"Germanic",
+    "Swedish":"Germanic","Norwegian":"Germanic","Danish":"Germanic","Russian":"Slavic",
+    "Polish":"Slavic","Czech":"Slavic","Serbian":"Slavic","Croatian":"Slavic",
+    "Bulgarian":"Slavic","Ukrainian":"Slavic","Hindi":"Indo-Aryan","Urdu":"Indo-Aryan",
+    "Bengali":"Indo-Aryan","Sanskrit":"Indo-Aryan","Nepali":"Indo-Aryan","Punjabi":"Indo-Aryan",
+    "Persian":"Iranian","Greek":"Greek","Arabic":"Semitic","Hebrew":"Semitic","Maltese":"Semitic",
+    "Turkish":"Turkic","Azeri":"Turkic","Turkmen":"Turkic","Uzbek":"Turkic","Kazakh":"Turkic",
+    "Indonesian":"Austronesian","Malay":"Austronesian","Tagalog":"Austronesian",
+    "Javanese":"Austronesian","Swahili":"Niger-Congo","Zulu":"Niger-Congo","Igbo":"Niger-Congo",
+    "Yoruba":"Niger-Congo","Chinese":"Sino-Tibetan","Mandarin":"Sino-Tibetan",
+    "Japanese":"Japonic","Korean":"Koreanic","Tamil":"Dravidian","Telugu":"Dravidian",
+    "Hausa":"Afro-Asiatic","Somali":"Afro-Asiatic",
+}
+EUROPEAN = {"Latin/Romance", "Germanic", "Slavic", "Greek"}
+
+origin = {}
+for w in words:
+    fams = []
+    for lang, fam in FAMILY.items():
+        if re.search(r"\b" + lang + r"\b", source[w]) and fam not in fams: fams.append(fam)
+    if fams: origin[w] = fams[0]
+euro = sum(1 for f in origin.values() if f in EUROPEAN)
+counts = {}
+for f in origin.values(): counts[f] = counts.get(f, 0) + 1
+top = max(counts.items(), key=lambda kv: kv[1])
+
+bal = read("dictionary/balance.md")
+m = re.search(r"## All (\d+) roots", bal)
+check(m and int(m.group(1)) == len(words),
+      f"balance.md counts {m.group(1) if m else '?'} roots; the dictionary has {len(words)}")
+m = re.search(r"\*\*(\d+) of (\d+), or (\d+)%\*\*", bal)
+check(m and (int(m.group(1)), int(m.group(2)), int(m.group(3)))
+          == (euro, len(words), round(100*euro/len(words))),
+      f"balance.md's European figure is stale; recount gives {euro} of {len(words)}, "
+      f"{round(100*euro/len(words))}%")
+m = re.search(r"\*\*By origin there is a largest bloc\.\*\* (\S+) is ([\d.]+)%", bal)
+check(m and m.group(1) == top[0] and abs(float(m.group(2)) - 100*top[1]/len(words)) < 0.05,
+      f"balance.md's largest family is stale; recount gives {top[0]} at {100*top[1]/len(words):.1f}%")
+
 # ------------------------------------------------------------------- README
 # The front page states the root count by hand; it must match the dictionary.
 m = re.search(r"\*\*(\d+) roots\*\*", read("README.md"))
