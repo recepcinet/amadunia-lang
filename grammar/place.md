@@ -139,4 +139,4 @@ Nearly every short candidate collided:
   *Kita saufa kula una rat*, we will eat together at night, where *una* may be
   doing the work instead. Deciding this either blesses *in* for time or takes
   it out of six sentences.
-- *Through, without, about, before, after* — the second tier of prepositions — are for later.
+- *Through, without, about, before, after* — the second tier of prepositions — are for later. [Text 9](../texts/text-9-pagi-in-madina.md) is the first page to want one: *Mi anda por tarik*, I walk along the road, borrows *por* for a route, and nothing here grants that. The rule settles direction and location and says nothing about a path.
