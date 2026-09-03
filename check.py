@@ -157,9 +157,13 @@ PRONOUNS = {"mi","yu","ta","kita","mi-mi","yu-yu","ta-ta"}
 
 # grammar/ is included: the files that state the rules hold hundreds of example
 # sentences, and nothing was holding them to the rules they document.
-for path in sorted(glob.glob("lessons/*.md") + glob.glob("texts/*.md")
-                   + glob.glob("grammar/*.md") + ["phrasebook.md"]):
-    if path.endswith("README.md"): continue
+# Every page that shows an Amadunia sentence, including the front page and the
+# directory indexes. dictionary.md and its two derived files are data, not
+# prose, and are checked by the dictionary section above instead.
+PROSE = sorted(set(glob.glob("lessons/*.md") + glob.glob("texts/*.md")
+                   + glob.glob("grammar/*.md") + glob.glob("*.md")
+                   + ["dictionary/README.md"]))
+for path in PROSE:
     body = read(path)
     if path.startswith("texts/") and "```" in body: body = body.split("```")[1]
     for line, sent, toks in amadunia_runs(body):
