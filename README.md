@@ -182,7 +182,15 @@ are [open questions](grammar/verb-chains.md) waiting on a decision.
 **300 roots**, the A1 target, reached the next day. That target is lower than
 the ~500 words a natural language needs at A1 because things can be described
 with what is already there — Esperanto launched with 917 roots, and Basic
-English covers daily life in 850. This page used to say *compounding* does the
+English covers daily life in 850.
+
+**A root here is simply a word.** There is no conjugation, no affix and no
+compound, so nothing multiplies: 300 roots are 300 words to look up, and that
+is the whole vocabulary. The comparison with Esperanto is not like for like —
+its 917 roots are multiplied by some forty affixes into tens of thousands of
+words, and 300 against 917 flatters this language rather than the other one.
+What 300 gives beyond 300 is *forms*, not words: every noun has a doubled
+plural, and eleven number words reach a thousand. This page used to say *compounding* does the
 rest. It does not: every hyphen in the repository was counted, and all 35 are
 either a number or a doubled plural. [No compound word has ever been
 formed](grammar/word-formation.md), and whether one may be is now an open
