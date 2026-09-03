@@ -82,14 +82,71 @@ hit by real writing: [the letter](../texts/text-7-surat-por-mama.md) was
 arranged into short sentences to avoid the first three, and
 [text 6](../texts/text-6-seti-din.md) could not say "on the eighth day".
 
+## 5. The vocabulary is thin in the wrong places
+
+A1 is a level about concrete life — food, clothes, the body, the house, the
+weather, shopping, health. Counted by the dictionary's own thematic groups,
+this one is not shaped like that.
+
+| Qualities and ideas | 64 |
+| Actions | 51 |
+| Home and world | 28 |
+| People | 18 |
+| Town and money | 16 |
+| Food and water | 14 |
+| Time | 14 |
+| Body | 13 |
+| Numbers | 12 |
+| Greetings and basics | 10 |
+| Animals and plants | 8 |
+| Place | 7 |
+| Question words | 7 |
+| Already-global loans | 7 |
+| Colours | 6 |
+| Grammar particles | 6 |
+| Weather | 5 |
+| Feelings | 3 |
+| Prepositions | 3 |
+| Health | 2 |
+| Clothing | 2 |
+| This and that | 2 |
+| Play | 2 |
+
+**64 of the 300 roots — 21% — are qualities and
+ideas.** Health has two words, *bimar* and *ilac*; there is no pain and no
+fever. Clothing has two, a shirt and a shoe. Play has two. Feelings have three.
+Food has fourteen.
+
+That is the shape of a dictionary built by writing texts about ideas, which is
+what happened, and it is the opposite of what a beginner needs first. **The
+next roots should be concrete**, and the seven gaps found by writing —
+pain, love as a noun, to miss, the clock, *then*, to stand up, a coin — all sit
+in exactly those thin groups.
+
+### Which raises the number itself
+
+The front page has said 300 is enough for A1 because things can be described
+with what is already there. The stronger version of that claim — that
+compounding does the rest — [was checked and is false](../grammar/word-formation.md).
+Estimates for A1 in a natural language run to about 500 words, and Basic
+English covers daily life in 850.
+
+So **300 looks like an A1 core rather than a finished A1**, and the honest
+reading is that A1 completes somewhere near 500 with the extra two hundred
+spent on concrete vocabulary. That would move A2 as well. It is a founder's
+decision and this page does not make it; it records that the number now rests
+on a weaker argument than the one it was chosen under.
+
 ## What is measured and what is judgement
 
 Measured: the length table, the seven passing shapes, the +48 and +52, the
-four gaps and where they were found.
+gaps and where they were found, and the theme table — which `check.py`
+regenerates from the dictionary, so it cannot drift.
 
 Judgement, and the founder's: whether to set a family floor and where, whether
-the feelings are a deliberate theme for A2 or a coincidence of four data
-points, and whether 600 is still the right number. Note that the reason once given for a
+the feelings are a deliberate theme for A2 or a coincidence of the data points,
+**whether A1 finishes at 300 or nearer 500**, and whether 600 is still the
+right number. Note that the reason once given for a
 small dictionary does not hold: *mesin ambil foto korpo* says X-ray with no new
 root, but it is a sentence, not a compound, and [the language forms no compound
 words at all](../grammar/word-formation.md).

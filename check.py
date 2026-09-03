@@ -884,6 +884,21 @@ check(f"| **{_keeps}**, and they keep their beat |" in _stressmd
       f"stress.md's cost figures are stale; recount gives {_keeps} keeping "
       f"the beat and {_moves} losing it")
 
+# --------------------------------------------- the A2 briefing's theme table
+# proposal-a2.md counts the dictionary by thematic group to show that the thin
+# places are the concrete ones. Derived from the dictionary, so regenerated.
+_grpcount, _g2 = {}, None
+for _line in read("dictionary/dictionary.md").split("## Counting")[0].splitlines():
+    _h = re.match(r"\| \*\*(.+?)\*\*", _line)
+    if _h: _g2 = re.sub(r"\s*—.*", "", _h.group(1)).strip(); _grpcount[_g2] = 0; continue
+    if re.match(r"^\| [a-z]", _line) and _g2: _grpcount[_g2] += 1
+_a2 = read("dictionary/proposal-a2.md")
+_missing = [f"| {k} | {v} |" for k, v in sorted(_grpcount.items(), key=lambda kv: -kv[1])
+            if f"| {k} | {v} |" not in _a2]
+check(not _missing,
+      "proposal-a2.md's theme table has drifted from the dictionary: "
+      + ", ".join(_missing[:3]))
+
 # ------------------------------------------------------------------- README
 # The front page states the root count by hand; it must match the dictionary.
 m = re.search(r"\*\*(\d+) roots\*\*", read("README.md"))
