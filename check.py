@@ -319,7 +319,9 @@ try:
           "dictionary.json has drifted from dictionary.md — regenerate it")
 except Exception as e:
     check(False, f"dictionary.json could not be read: {e}")
-_csv = list(csv.reader(_io.StringIO(read("dictionary/dictionary.csv"))))
+_raw = read("dictionary/dictionary.csv")
+check("\r" not in _raw, "dictionary.csv has CRLF line endings; write it with lineterminator='\\n'")
+_csv = list(csv.reader(_io.StringIO(_raw)))
 check(_csv[:1] == [["word", "meaning", "group", "sources"]] and
       _csv[1:] == [[r["word"], r["meaning"], r["group"], r["sources"]] for r in _rows],
       "dictionary.csv has drifted from dictionary.md — regenerate it")
