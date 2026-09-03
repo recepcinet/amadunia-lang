@@ -262,6 +262,29 @@ for path in glob.glob("lessons/lesson-*.md"):
             check(not (a in VERBS and b in VERBS),
                   f"{os.path.basename(path)}: verb chain '{a} {b}' predates Lesson 17")
 
+# --------------------------------------------------------- verb position
+# A tense marker is followed by a verb, an adjective, a place, or es. Nothing
+# was checking what actually stood there, and a noun had slipped in: Lesson 25
+# read "Mi saufa mualim anak-anak" for "I will teach children", which invents a
+# verb "to teach" out of the noun mualim. rabota is exempt and named, not
+# because it is legal but because the course needs both of its readings at
+# once — Lesson 08 works it as a verb, Lesson 10 as a noun. See the open
+# question in grammar/verb-chains.md.
+PENDING_CLASS = {"rabota"}
+AFTER_TENSE = VERBS | ADJECTIVES | PENDING_CLASS | {
+    "es", "sini", "situ", "nali", "in", "dari", "por", "una", "no"}
+for path in PROSE:
+    body = read(path)
+    if path.startswith("texts/") and "```" in body:
+        body = "".join(body.split("```")[1::2])
+    for line, sent, toks in amadunia_runs(body):
+        if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗")): continue
+        base = [t.split("-")[0] for t in toks]
+        for a, b in zip(base, base[1:]):
+            if a in ("suda", "saufa"):
+                check(b in AFTER_TENSE,
+                      f"{os.path.basename(path)}: '{a} {b}' — {b} is not a verb: {sent}")
+
 # ------------------------------------------------------------ root in use
 # Being taught is not the same as being used. Five roots — kulit, yanlis,
 # foto, ba, nau — sat in a "New words" table and then appeared in no sentence

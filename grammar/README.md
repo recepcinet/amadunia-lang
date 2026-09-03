@@ -173,7 +173,7 @@ Gathered from the files above so they can be read in one place. Each is recorded
 
 **[verb-chains](verb-chains.md)**
 
-- **Words that are both noun and verb.** *madad* is glossed "help; to help", so *Mi mau madad* is "I want help" **or** "I want to help". The chain rule made this visible for the first time.
+- **Words that are both noun and verb.** *madad* is glossed "help; to help", so *Mi mau madad* is "I want help" **or** "I want to help". *rabota* is glossed "work" and is used as a verb in 13 sentences and as a noun in 6. Two roots, not one, and the second is a core A1 word. The chain rule made this visible for the first time.
 
 Nothing on this list has been invented to make a lesson or a text work. When something was needed and undecided, the lesson said so.
 

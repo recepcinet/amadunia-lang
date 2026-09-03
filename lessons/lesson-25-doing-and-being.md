@@ -89,13 +89,13 @@ lessons before anything taught them, and are now introduced there instead. Again
 > — Yu senang o sedih?
 > — Mi senang! Mi suda naiti rabota baru.
 > — Nali?
-> — In skola dekat ponte. Mi saufa mualim anak-anak.
+> — In skola dekat ponte. Mi saufa es mualim anak-anak.
 > — Muskil?
 > — Ya, muskil. Aur hao. Mi ama anak-anak.
 > — Mi senti yu saufa es mualim paling hao.
 
 *Are you happy or sad? — I'm happy! I've found a new job. — Where? — At the
-school near the bridge. I'll teach children. — Difficult? — Yes, difficult. And
+school near the bridge. I'll be the children's teacher. — Difficult? — Yes, difficult. And
 good. I love children. — I feel you will be the best teacher.*
 
 ## Practice
