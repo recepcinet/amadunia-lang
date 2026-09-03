@@ -3,7 +3,7 @@
 Generated from the material a learner reads — the twenty-five lessons, the
 eight texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **4409 words of running Amadunia**, and every one of the 300 roots appears
+it. **4414 words of running Amadunia**, and every one of the 300 roots appears
 at least once.
 
 [`check.py`](../check.py) regenerates this page and fails if it disagrees, so
@@ -55,13 +55,13 @@ cover half of everything.** They are the first twenty-five below.
 | 20 | *kabir* | big | 46 | 1.0% |
 | 21 | *punya* | to have | 45 | 1.0% |
 | 22 | *sol* | sun | 45 | 1.0% |
-| 23 | *dari* | from | 42 | 1.0% |
+| 23 | *dari* | from | 43 | 1.0% |
 | 24 | *saufa* | future marker (before the verb) | 42 | 1.0% |
 | 25 | *din* | day | 40 | 0.9% |
 | 26 | *doktor* | doctor | 37 | 0.8% |
 | 27 | *keci* | small | 36 | 0.8% |
-| 28 | *itu* | that | 32 | 0.7% |
-| 29 | *lebi* | more | 32 | 0.7% |
+| 28 | *lebi* | more | 33 | 0.7% |
+| 29 | *itu* | that | 32 | 0.7% |
 | 30 | *pan* | bread, food | 32 | 0.7% |
 | 31 | *libro* | book | 31 | 0.7% |
 | 32 | *sema* | to say, to speak | 31 | 0.7% |

@@ -35,12 +35,16 @@ by writing is worth more than a gap found by reading a wordlist.
 | to get up, to stand | [text 9](../texts/text-9-pagi-in-madina.md) | *Mi go dari yatak*, I go from the bed, paraphrases a position change; *otur* is to sit and has no opposite |
 | a coin, as against an amount | [text 9](../texts/text-9-pagi-in-madina.md) | *Mi beri fai pesa* is "I give five money" |
 | forever | [text 10](../texts/text-10-mila-tahun.md) | *no mati*, does not die, said it four times; the word would have been used had it existed |
-| longer, as a comparison of duration | [text 10](../texts/text-10-mila-tahun.md) | *lebi* scales adjectives and nouns; nothing scales a verb, so *lives longer than* has no form |
 
-Three of the nine are about how a person feels or where a person hurts, and
+Three of the eight are about how a person feels or where a person hurts, and
 that is where 300 roots turn out to be thinnest — not what a thematic wordlist
 would have predicted. The rest are joints rather than things: a point in the
 day, the word that puts one step after another, the opposite of sitting down,
-the difference between a coin and an amount, *forever*, and the comparison of
-one duration with another. **Not one of the nine is a noun a category would
-have suggested,** which is the whole case for finding gaps by writing.
+the difference between a coin and an amount, and *forever*. **Not one of the
+eight is a noun a category would have suggested,** which is the whole case for
+finding gaps by writing.
+
+A ninth was listed here for a day and withdrawn: comparing one duration with
+another. [comparison.md](../grammar/comparison.md) has a section headed *With
+verbs* that grants exactly that, and the claim was made without reading it. A
+gap has to be a sentence that stopped, not a sentence nobody checked.

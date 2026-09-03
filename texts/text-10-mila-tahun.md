@@ -20,6 +20,7 @@ Written at 300 roots, with no grammar beyond Lesson 23.
 
 ```
 Insan hidup sen tahun. Insan mati.
+Pahar hidup lebi dari insan.
 Pahar hidup mila tahun. Natura no mati.
 
 Insan suda katab historia. Historia no mati.
@@ -43,6 +44,7 @@ Kita punya sansi.
 |---|---|
 | Insan hidup sen tahun. | A person lives a hundred years. |
 | Insan mati. | A person dies. |
+| Pahar hidup lebi dari insan. | A mountain lives longer than a person. |
 | Pahar hidup mila tahun. | A mountain lives a thousand years. |
 | Natura no mati. | Nature does not die. |
 | Insan suda katab historia. | People wrote history. |
@@ -81,10 +83,14 @@ that in English needs a choice about whether "we" includes the reader.
 
 ## Gaps
 
-**It cannot say "longer than a person".** *Pahar hidup mila tahun* states the
-number instead of the comparison, because a comparison of duration —
-*lives longer than* — needs an adverb comparative the language does not have.
-*lebi* scales adjectives and nouns; nothing scales a verb.
+**A gap claimed here on the first draft was not one.** The draft said the
+language could not compare durations — that *lebi* scales adjectives and nouns
+and nothing scales a verb — and [comparison.md](../grammar/comparison.md) has a
+section headed *With verbs* saying exactly the opposite: the same words work on
+a verb, in the adverb slot, *Mi kara lebi dari yu*. The text now says *Pahar
+hidup lebi dari insan*, a mountain lives longer than a person, which is what it
+wanted in the first place. A gap asserted without reading the rule page is not
+a gap.
 
 **It cannot say "for a thousand years".** *mila tahun* is a bare time
 expression, and whether that means a point or a span is [the question recorded
@@ -98,4 +104,4 @@ a gap the language has not yet noticed it has.
 
 ## Roots used
 
-36 of 300.
+37 of 300.
