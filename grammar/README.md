@@ -7,6 +7,7 @@ Sixteen files, one decision each. Every one records what was settled, why, which
 | | |
 |---|---|
 | [phonology](phonology.md) | Twenty letters, one sound each. No digraph, no diacritic. At most two consonants in a row. |
+| [pronunciation](pronunciation.md) | What each of the twenty letters sounds like. *g* never softens; *s* never voices. |
 | [numbers](numbers.md) | Eleven words count to a hundred. No irregular number anywhere. |
 | [tense](tense.md) | *suda* past, *saufa* future, present unmarked — before the verb. The verb never changes. |
 | [plural](plural.md) | Say the noun twice. Single after a number. The unmarked noun is neutral. |
@@ -32,7 +33,7 @@ Every rule above appears in this one sentence, and not a word in it changes shap
 > *Mi no suda kara hao libro ini in dom rat ini porke mi sedih.*
 > I did not read this book well at home last night because I was sad.
 
-## Open questions — 22 of them
+## Open questions — 24 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
@@ -83,6 +84,11 @@ Gathered from the files above so they can be read in one place. Each is recorded
 - **Reflexives** (*myself*) and **reciprocals** (*each other*) are not yet designed.
 - Whether *mi-mi* and *ta-ta* may ever be shortened in fast speech is a question for later, once there is speech.
 
+**[pronunciation](pronunciation.md)**
+
+- **How `r` is made.** A tap (Spanish *pero*, Japanese, Turkish, Indonesian), a
+- **Where the stress falls** is open; see [phonology.md](phonology.md).
+
 **[questions](questions.md)**
 
 - **The imperative was never granted.** *Anda tarik ini*, *Buka ain yu*, *Otur sini* are commands, and the lessons have used a bare verb as one since Lesson 10 — but no rule anywhere says a bare verb may be a command, or how a command differs from a statement with the subject left out. The form is in use and undecided. Found by [the fourth text](../texts/text-4-in-madina-baru.md), September 3, 2026.
@@ -105,4 +111,4 @@ Gathered from the files above so they can be read in one place. Each is recorded
 
 Nothing on this list has been invented to make a lesson or a text work. When something was needed and undecided, the lesson said so.
 
-Two of them — the imperative and the mark for a name — are different in kind: they were not left open on purpose. They are forms the lessons had been using that no rule ever granted, and both were found by writing something that was not a lesson.
+Three of them are different in kind — the imperative, the mark for a name, and how *r* is made. They were not left open on purpose. They are things the language had been using or relying on that no rule ever granted, and all three were found by writing something that was not a lesson.

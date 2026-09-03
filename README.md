@@ -12,7 +12,7 @@
 
 > a b c d e f g h i k l m n o p r s t u y
 
-*c* is the sound of *chai* and *church* — never *k*, never *s*. That is the only letter you have to be told about.
+*c* is the sound of *chai* and *church* — never *k*, never *s*. The rest are the plain values you would guess, and [the pronunciation page](grammar/pronunciation.md) writes every one of them down.
 
 Syllables stay simple — never more than two consonants in a row, and none of the tongue-twisters other languages allow (*strengths*, *vzglyad*). If you can say "banana" and "taksi", you can say anything in Amadunia.
 
@@ -74,6 +74,7 @@ lessons/     23 lessons in order — see lessons/README.md
 ```
 
 - [grammar/phonology.md](grammar/phonology.md) — alphabet, one letter one sound, syllable shape
+- [grammar/pronunciation.md](grammar/pronunciation.md) — what each of the twenty letters actually sounds like
 - [grammar/numbers.md](grammar/numbers.md) — digits, *des* and *sen*, how numbers are built
 - [grammar/tense.md](grammar/tense.md) — tense: *suda* (past), *saufa* (future), the verb never changes
 - [grammar/plural.md](grammar/plural.md) — plural: say the noun twice; single after a number
