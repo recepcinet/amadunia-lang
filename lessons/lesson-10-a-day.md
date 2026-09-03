@@ -37,6 +37,8 @@
 | Yu suru ke? | What are you doing? |
 | Mi suru rabota. | I'm working. — *literally: I do work* |
 | Mi ambil telefon. | I take the telephone. |
+| Ta suda kupi pan. | She bought bread. |
+| Kita saufa kupi ca. | We'll buy tea. |
 
 ## Telling someone to do it
 
@@ -50,8 +52,6 @@ Leave the subject out and the sentence becomes a command. Nothing is added.
 
 *Yu otur sini* is different — it is a statement about you. A command has no
 subject at all, and that is what makes it one. [The rule](../grammar/sentence-types.md).
-| Ta suda kupi pan. | She bought bread. |
-| Kita saufa kupi ca. | We'll buy tea. |
 
 ## The body
 

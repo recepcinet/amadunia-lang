@@ -671,6 +671,27 @@ check(_pat == "X.X.X.X." and "X .    X .   X  .    X ." in _poem,
       f"text-5's closing line no longer scans as the page says: {_last.strip()} "
       f"is {_pat}")
 
+# ----------------------------------------------------------- tables render
+# A run of lines starting with "|" is a markdown table only if its second line
+# is a separator. Nothing checked that, and this file reads table rows happily
+# without one — so a table with its header cut off still passed every other
+# check while rendering as a paragraph of pipes. Two rows of Lesson 10 were
+# orphaned that way when a section was inserted above them.
+_SEP = re.compile(r"^\|(?:\s*:?-{2,}:?\s*\|)+\s*$")
+for path in md():
+    _lines = read(path).splitlines()
+    _i = 0
+    while _i < len(_lines):
+        if not _lines[_i].startswith("|"): _i += 1; continue
+        _j = _i
+        while _j < len(_lines) and _lines[_j].startswith("|"): _j += 1
+        _blk = _lines[_i:_j]
+        _seps = [_n for _n, _l in enumerate(_blk) if _SEP.match(_l)]
+        check(len(_blk) >= 2 and _seps and _seps[0] == 1,
+              f"{path}:{_i+1}: table rows with no header row above them — "
+              f"{_blk[0][:46]}")
+        _i = _j
+
 # ------------------------------------------------------------ root in use
 # Being taught is not the same as being used. Five roots — kulit, yanlis,
 # foto, ba, nau — sat in a "New words" table and then appeared in no sentence
