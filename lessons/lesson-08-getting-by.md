@@ -21,6 +21,8 @@
 
 Most of these you already know. *mersi*, *pardon*, *plis*, *market* travel the world as they are; *insan*, *madad*, *pesa* are shared across a dozen languages each. Amadunia only wrote them down.
 
+**Why *madad* is not in a sentence here.** It is glossed "help; to help", a noun and a verb at once, and it is the only root in the dictionary that is. Until that is settled, *Mi mau madad* is two sentences at the same time — *I want help* and *I want to help* — so this lesson teaches the word and waits. See the open question in [grammar/verb-chains.md](../grammar/verb-chains.md).
+
 ## The three words that open every door
 
 | | |
@@ -88,7 +90,7 @@ They work alone, and they work at either end of a sentence:
 
 1. Pardon, yu bil market nali? — *Excuse me, do you know where the market is?*
 2. Mersi, rafiki! — *Thanks, friend!*
-3. Mi mau madad, plis. — *I want help, please.*
+3. Mi mau ca, plis. — *I want tea, please.*
 4. Berapa pesa? — Tri pesa. — *How much? — Three.*
 5. Insan-insan rabota sasa. — *The people are working now.*
 6. Ca yu garam? — No, barid. — *Is your tea hot? — No, cold.*

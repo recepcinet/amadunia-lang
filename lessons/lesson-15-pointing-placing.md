@@ -101,12 +101,12 @@ Place first, then time, both at the end:
 > — Salam! Yu dari nali?
 > — Mi dari dom. Yu go nali?
 > — Mi go market. Yu lai una mi?
-> — Ya! Mi mau kupi pan o ca.
+> — Ya! Mi mau pan o ca.
 > — Pan ini hao. Pan por familia yu?
 > — Ya, por familia mi. Aur ca por mi!
 > — Kita go sasa. Market situ, kiri.
 
-*Hello! Where are you from? — From home. Where are you going? — To the market. Coming with me? — Yes! I want to buy bread or tea. — This bread is good. Bread for your family? — Yes, for my family. And tea for me! — Let's go now. The market is there, on the left.*
+*Hello! Where are you from? — From home. Where are you going? — To the market. Coming with me? — Yes! I want bread or tea. — This bread is good. Bread for your family? — Yes, for my family. And tea for me! — Let's go now. The market is there, on the left.*
 
 ## Practice
 

@@ -69,10 +69,10 @@ No *I / me*, no *she / her*, no *we / us*. One form each.
 > — Mi-mi es rafiki Sol. Sol sini?
 > — Ya, ta sini. Ta-ta rabota.
 > — Ta-ta es kim?
-> — Sol, rafiki ta, anak-anak ta. Kita go kan ta-ta?
+> — Sol, rafiki ta, anak-anak ta. Kita kan ta-ta?
 > — Ya! Mersi!
 
-*Hello! Who are you all? — We're Sol's friends. Is Sol here? — Yes, she's here. They're working. — Who are they? — Sol, her friend, her children. Shall we go see them? — Yes! Thanks!*
+*Hello! Who are you all? — We're Sol's friends. Is Sol here? — Yes, she's here. They're working. — Who are they? — Sol, her friend, her children. Shall we see them? — Yes! Thanks!*
 
 ## Practice
 

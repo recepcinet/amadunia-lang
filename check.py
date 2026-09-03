@@ -80,15 +80,6 @@ names = [os.path.basename(p) for p in glob.glob("lessons/lesson-*.md")]
 for n in names:
     check(re.match(r"lesson-\d\d-", n), f"{n}: lesson number must be two digits")
 
-# Verb chains were undecided until Lesson 17; the earlier lessons must not use them.
-VERBS = "kula|otur|kara|go|lai|studi|anda|lala|sema|kan|beri|buka|funga|fikir|kimbia|nomu|espera|katab|rabota"
-for path in glob.glob("lessons/lesson-*.md"):
-    n = int(re.search(r"lesson-(\d\d)", path).group(1))
-    if n >= 17: continue
-    body = read(path).split("## What you can already say")[0]
-    for m in re.finditer(rf"\b(bisa|mau|lasim)\s+({VERBS})\b", body):
-        check(False, f"{os.path.basename(path)}: verb chain '{m.group()}' predates Lesson 17")
-
 # ------------------------------------------------------------------ indexes
 idx = read("dictionary/index-english.md")
 indexed = set()
@@ -249,6 +240,27 @@ taught |= {w for w in words if re.search(r"\*" + w + r"\*|\| " + w + r" \|", fro
 untaught = sorted(set(words) - taught)
 check(not untaught, f"{len(untaught)} roots are taught nowhere: {', '.join(untaught[:12])}"
                     + (" ..." if len(untaught) > 12 else ""))
+
+# ---------------------------------------------------------------- no chains
+# Verb chains were undecided until Lesson 17; the earlier lessons must not use
+# them. This list used to be written out by hand. It held 19 words while the
+# dictionary held 47 verbs, so the check was blind to 29 of them — and it
+# listed rabota, which is a noun. Three real chains had sat in Lessons 08, 09
+# and 15 for as long as the check existed. The list is derived now, and the
+# pattern is any verb followed by a verb, not just a modal followed by one.
+VERBS  = {w for w in words if meaning[w].startswith("to ")}
+VERBS |= {"bisa", "lasim"}  # modals, glossed "can" and "must", not "to ..."
+VERBS |= {"madad"}          # class undecided: treat as a verb until it is settled
+for path in glob.glob("lessons/lesson-*.md"):
+    n = int(re.search(r"lesson-(\d\d)", path).group(1))
+    if n >= 17: continue
+    body = read(path).split("## What you can already say")[0]
+    for line, sent, toks in amadunia_runs(body):
+        if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗")): continue
+        base = [t.split("-")[0] for t in toks]
+        for a, b in zip(base, base[1:]):
+            check(not (a in VERBS and b in VERBS),
+                  f"{os.path.basename(path)}: verb chain '{a} {b}' predates Lesson 17")
 
 # ------------------------------------------------------------ root in use
 # Being taught is not the same as being used. Five roots — kulit, yanlis,
