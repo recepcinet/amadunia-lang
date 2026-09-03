@@ -69,7 +69,7 @@ Being honest about this is part of the design:
 
 | Missing | What it blocks |
 |---|---|
-| A mark for a name | *Sol es genc* is "Sol is young" **and** "the sun is young" |
+| A mark for a name | *Sol genc* is "Sol is young" **and** "the sun is young" |
 | *never* | only *no daima* and *no saufa*, which are weaker |
 | *all, some, none* | quantity beyond *cok* and *lebi* |
 | ordinal numbers | *first*, *second* |

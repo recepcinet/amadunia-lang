@@ -76,7 +76,7 @@ The first story had 113 roots and could not say "and", "not", "again" or where a
 
 ## What the language still could not say
 
-1. **No mark for a name.** *Sol es genc* is "Sol is young" **and** "the sun is young", because *sol* is also the word for sun. *Luma* is likewise the word for light. The story leans on capital letters, which help a reader and do nothing for a listener. Whether Amadunia wants a particle before a name, or a rule that names are simply learned, is undecided.
+1. **No mark for a name.** *Sol genc* is "Sol is young" **and** "the sun is young", because *sol* is also the word for sun. *Luma* is likewise the word for light. The story leans on capital letters, which help a reader and do nothing for a listener. Whether Amadunia wants a particle before a name, or a rule that names are simply learned, is undecided.
 
 2. **No "never".** Luma should be able to say "I will never forget this morning". *no saufa unut* is "will not forget", which is weaker and not the same.
 
