@@ -49,7 +49,8 @@ the reasoning and the alternatives that were rejected.
 | | Rule | Example | English |
 |---|---|---|---|
 | **Order** | Subject – verb – object | Mi kula pan. | I eat bread. |
-| **Adjectives** | after the noun | Dom kabir. | A big house. |
+| **Adjectives** | after the noun | dom kabir | a big house |
+| | and that phrase is already a sentence — no verb needed | Dom kabir. | The house is big. |
 | **Tense** | *suda* past, *saufa* future, before the verb; present unmarked | Ta suda lai. | She came. |
 | **Plural** | say the noun twice; singular after a number | anak-anak · tri anak | children · three children |
 | **Possession** | owner straight after the thing owned | Rafiki mi saufa lai. | My friend will come. |
@@ -63,7 +64,7 @@ the reasoning and the alternatives that were rejected.
 | **Place** | *in · dari · por* before the noun; a motion verb takes a bare goal | Mi go market. | I go to the market. |
 | **With** | *una* + noun | Yu lai una mi? | Are you coming with me? |
 | **Verb chains** | verbs simply follow one another | Mi mau kula pan. | I want to eat bread. |
-| **Comparison** | *lebi · kurang · paling* before the adjective, *dari* for "than" | Dom mi lebi kabir dari dom yu. | My house is bigger than yours. |
+| **Comparison** | *lebi · kurang · paling* in front of whatever they scale — an adjective or a noun — and *dari* for "than" | Dom mi lebi kabir dari dom yu. | My house is bigger than yours. |
 | **Clauses** | no marker at all; *porke*, *kab*, *agar* when needed | Mi fikir yu hao. | I think you are good. |
 | **Adverbs** | the adjective, straight after the verb | Mi kara hao libro. | I read the book well. |
 | **And / or** | *aur* · *o* | Mi kupi pan aur ca. | I buy bread and tea. |
@@ -183,7 +184,7 @@ negation, conjunction, demonstratives, place, verb chains, comparison,
 subordination and adverbs are settled — seventeen rules, each recorded with its
 reasoning and with the candidates it rejected.
 
-**[Twenty-six questions are still open](grammar/README.md)**, gathered on one
+**[Twenty-seven questions are still open](grammar/README.md)**, gathered on one
 page with what each one blocks. Four of them were not left open on purpose: the
 imperative, a mark for a name, how *r* is made, and "want to be" followed by an
 adjective are all things the language had been using that no rule ever granted.

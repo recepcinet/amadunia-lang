@@ -94,7 +94,7 @@ Two items are not grammar at all and sit outside this order: *madad* doing two
 jobs, and the thinness of Sino-Tibetan and Japonic recorded in
 [balance.md](../dictionary/balance.md). Both are vocabulary policy.
 
-## Open questions — 26 of them
+## Open questions — 27 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
@@ -135,6 +135,7 @@ Gathered from the files above so they can be read in one place. Each is recorded
 
 **[place](place.md)**
 
+- **Does a time expression take *in*?** Six sentences say *in pagi*; twenty-odd say *rat ini* with no preposition. Nobody decided; the two forms grew side by side.
 - *Through, without, about, before, after* — the second tier of prepositions — are for later.
 
 **[plural](plural.md)**

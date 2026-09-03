@@ -121,4 +121,20 @@ Nearly every short candidate collided:
 ## Open questions
 
 - ~~Existence~~ — settled in [copula.md](copula.md) on September 3, 2026: *es* at the front of a sentence, with no subject, means "there is".
+- **Does a time expression take *in*?** The rule above says place first, then
+  time, and stops there — it never says whether "when" carries a preposition.
+  The material has settled into two forms without anyone deciding on one:
+
+  | Form | Count | Examples |
+  |---|---|---|
+  | *in* + a bare time-of-day noun | 6 | *Mi kula **in pagi*** · *Mi lai **in aksam*** · *Mama mi sema masal por mi **in rat*** |
+  | the noun bare, carrying *ini*, *besok* or *kemarin* | 20+ | *rat ini* · *din ini* · *besok pagi* · *kemarin aksam* |
+
+  Read together they look like one pattern: a time word that points at a
+  particular time stands alone, and a plain one needs *in* to become "when".
+  That is a rule nobody wrote, and it may simply be the shape English gave the
+  hand that wrote these sentences. One case does not fit either form —
+  *Kita saufa kula una rat*, we will eat together at night, where *una* may be
+  doing the work instead. Deciding this either blesses *in* for time or takes
+  it out of six sentences.
 - *Through, without, about, before, after* — the second tier of prepositions — are for later.
