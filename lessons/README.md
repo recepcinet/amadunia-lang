@@ -1,0 +1,37 @@
+# Lessons
+
+Twenty-three lessons, in order. Each assumes the one before it and nothing else.
+
+A lesson never uses a rule that has not been decided. Where one was needed and missing, the lesson says so at the foot of the page — that is how [verb chaining](../grammar/verb-chains.md), [place marking](../grammar/place.md) and the word for *danger* were all found.
+
+| | Lesson | What it introduces |
+|---|---|---|
+| 1 | [Greetings](lesson-01-greetings.md) | The first six words, and a whole conversation made of them. |
+| 2 | [Water, food, home](lesson-02-food-and-home.md) | Subject, verb, object; the adjective after its noun. |
+| 3 | [People, day and night](lesson-03-people.md) | People, day and night. The first sentence that needed a rule the language did not have. |
+| 4 | [Yesterday, today, tomorrow](lesson-04-tense.md) | Tense: *suda* and *saufa*, and a verb that never changes. |
+| 5 | [More than one](lesson-05-plural.md) | Plural by saying the noun twice; single after a number. |
+| 6 | [Mine, yours, theirs](lesson-06-possession.md) | Possession with nothing added — *dom mi*. |
+| 7 | [Asking](lesson-07-questions.md) | Questions: rising tone, and the question word in the answer's place. |
+| 8 | [Getting by](lesson-08-getting-by.md) | Getting through a day somewhere new — please, thanks, sorry, help, money. |
+| 9 | [We, you all, they](lesson-09-pronouns.md) | The full pronoun set, built from the plural rule at no cost. |
+| 10 | [A day](lesson-10-a-day.md) | A whole day told start to finish, in one tense each way. |
+| 11 | [Being](lesson-11-being.md) | *es*, and why an adjective never takes it. |
+| 12 | [Colours and directions](lesson-12-colors-directions.md) | Colours and directions; the first deliberately wrong sentence, to drill the copula. |
+| 13 | [Weather and directions](lesson-13-weather-directions.md) | Weather and left and right; the lesson that found place marking missing. |
+| 14 | [Not, and](lesson-14-not-and.md) | *no* for not — a word from Lesson 1 doing a second job — and *aur* for and. |
+| 15 | [Pointing and placing](lesson-15-pointing-placing.md) | *ini*, *itu*, and the three prepositions. Six words that finished A1 grammar. |
+| 16 | [School and time](lesson-16-school-and-time.md) | School and time; the lesson that found verb chaining missing and held a word back. |
+| 17 | [Wanting, being able, having to](lesson-17-wanting-and-able.md) | Wanting, being able, having to — verbs simply following one another. |
+| 18 | [Comparing and joining](lesson-18-comparing-and-joining.md) | Comparing, existence, whole clauses inside sentences, and how something is done. |
+| 19 | [Home and nature](lesson-19-home-and-nature.md) | Home and nature; feelings as things you have, not things you are. |
+| 20 | [Colours and health](lesson-20-colours-and-health.md) | Colours completed, illness, and four kinds of work. |
+| 21 | [Things and ideas](lesson-21-things-and-ideas.md) | A room and its things, and the first words big enough to describe the language itself. |
+| 22 | [Doing and feeling](lesson-22-doing-and-feeling.md) | Eight verbs, the four elements, and the words a story needs. |
+| 23 | [Everything so far](lesson-23-everything-so-far.md) | The whole language on one page, and an honest list of what it still cannot do. |
+
+## After the lessons
+
+Read the [texts](../texts/) — three pieces written in Amadunia with nothing invented to make them work. [Lingua ini](../texts/text-3-lingua-ini.md) is the language explaining itself.
+
+The [grammar files](../grammar/) give the reasoning behind every rule, including the candidates that were rejected and why.

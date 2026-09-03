@@ -43,5 +43,5 @@ There are no irregular numbers. Larger numbers are written by joining smaller on
 
 ## Open questions
 
-- Words for 1000 and above are not yet decided.
+- ~~Words for 1000~~ — settled: *mila*. Above a thousand is still open.
 - Whether the separator between groups is a hyphen or a space is used inconsistently above (*du-des-uan* vs *pat-des fai*, both inherited from the README) and needs a single rule.

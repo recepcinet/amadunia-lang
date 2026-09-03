@@ -120,5 +120,5 @@ Nearly every short candidate collided:
 
 ## Open questions
 
-- **Existence** — "there is a hotel" — is still not decided; see [copula.md](copula.md).
+- ~~Existence~~ — settled in [copula.md](copula.md) on September 3, 2026: *es* at the front of a sentence, with no subject, means "there is".
 - *Through, without, about, before, after* — the second tier of prepositions — are for later.

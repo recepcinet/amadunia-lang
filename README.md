@@ -58,12 +58,14 @@ Phonology, alphabet, numbers, tense, plurals, possession, questions, pronouns, t
 ## Repository layout
 
 ```
-grammar/     phonology, numbers, tense, plural, possession, questions,
+grammar/     16 rules, each with its reasoning — see grammar/README.md
+             phonology, numbers, tense, plural, possession, questions,
              pronouns, copula, negation, conjunction, demonstratives, place,
              verb chains, comparison, subordination, adverbs
 texts/       original writing in Amadunia
 dictionary/  word | meaning | source languages
-lessons/     Lessons 1-12: greetings, food, people, tense, plural, possession,
+lessons/     23 lessons in order — see lessons/README.md
+             Lessons 1-12: greetings, food, people, tense, plural, possession,
              questions, getting by, pronouns, a day, being, colours, weather,
              not and and, pointing and placing, school and time,
              wanting and being able, comparing and joining, home and nature,

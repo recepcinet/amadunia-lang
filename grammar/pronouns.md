@@ -89,6 +89,6 @@ The inclusive / exclusive split (*kita* / *mi-mi*) is shared by Indonesian, Taga
 
 ## Open questions
 
-- **Demonstratives** (*this*, *that*) and the missing **there** are not pronouns in this sense and are still to be decided.
+- ~~Demonstratives and *there*~~ — settled: *ini* and *itu* in [demonstratives.md](demonstratives.md), *situ* in Lesson 10.
 - **Reflexives** (*myself*) and **reciprocals** (*each other*) are not yet designed.
 - Whether *mi-mi* and *ta-ta* may ever be shortened in fast speech is a question for later, once there is speech.
