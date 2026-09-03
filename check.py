@@ -69,6 +69,7 @@ for path in glob.glob("texts/*.md"):
     for w in sorted(set(re.findall(r"[a-z]+", body.split("```")[1].lower()))):
         check(w in words or w in PROPER, f"{os.path.basename(path)}: '{w}' is not in the dictionary")
     m = re.search(r"## Roots used\n\n(\d+) of", body)
+    check(m, f"{os.path.basename(path)}: no checkable '## Roots used' section")
     if m:
         real = len(set(re.findall(r"[a-z]+", body.split("```")[1].lower())) - PROPER)
         check(int(m.group(1)) == real,

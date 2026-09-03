@@ -85,3 +85,7 @@ The first story had 113 roots and could not say "and", "not", "again" or where a
 4. **No reflexive.** The last line, *Mi-mi suda lihat mi-mi*, works only because the plural pronoun repeats. "I saw myself" would be *Mi suda kan mi*, which reads as "I saw me" and is not clearly reflexive.
 
 Gaps 2, 3 and 4 are on the open list already. Gap 1 is new, and it is the largest thing the language has been missing without noticing.
+
+## Roots used
+
+76 of 300.

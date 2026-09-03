@@ -71,4 +71,4 @@ Gaps 1 and 2 are grammar decisions for the founder. Gaps 3 and 4 are partly voca
 
 ## Roots used
 
-34 roots, of the 113 that existed when this was written: angin, anak, baru, barid, beri, cang, cok, din, dunia, es, espera, faham, garam, go, hao, kabir, kan, keci, kim, kimbia, lai, luma, mi, otur, rafiki, rat, salam, sema, sini, sol, suda, upar, yu, yuki.
+34 of 300 in the dictionary today — and 34 of the 113 that existed when this was written. They were: angin, anak, baru, barid, beri, cang, cok, din, dunia, es, espera, faham, garam, go, hao, kabir, kan, keci, kim, kimbia, lai, luma, mi, otur, rafiki, rat, salam, sema, sini, sol, suda, upar, yu, yuki.

@@ -33,6 +33,43 @@ Every rule above appears in this one sentence, and not a word in it changes shap
 > *Mi no suda kara hao libro ini in dom rat ini porke mi sedih.*
 > I did not read this book well at home last night because I was sad.
 
+## Where to start
+
+The list below is grouped by file. Ordered instead by what each one unblocks,
+and by the evidence for it, the top of the list is:
+
+**1. Where the stress falls.** [The poem](../texts/text-5-uan.md) showed what
+this costs: read its first line stressing *DIN lai* and then *din LAI* — both
+are correct Amadunia and they are different poems. Two people cannot agree on
+the metre of a single line, so nothing can be sung, scanned or taught by ear.
+This blocks more than any other item here.
+
+**2, 3, 4, 5. The four the language is already using without permission.**
+These were not left open on purpose. Each is a form the material relies on that
+no rule ever granted, and each was found by writing something that was not a
+lesson:
+
+- **The imperative.** Bare verbs have been commands since Lesson 10, and half
+  the [phrasebook](../phrasebook.md)'s directions are commands. No rule says
+  they may be.
+- **Fragments.** Almost every phrasebook line is one, and three turns of
+  [the dialogue](../texts/text-4-in-madina-baru.md) are a single word.
+- **A mark for a name.** *Sol es genc* is "Sol is young" and "the sun is young"
+  alike; found by [the second story](../texts/story-2-safari-por-pahar.md).
+- **"Want to be" plus an adjective.** [Text 3](../texts/text-3-lingua-ini.md)
+  and Lesson 21 both reached for it and both were rewritten around it.
+
+**6. How `r` is made.** Less urgent than stress only because no two words in
+the language are told apart by it — any *r* is understood today.
+
+**7 onward. What the practical pages kept wanting:** *very*, which the
+phrasebook lost twice; *never*, which the second story wanted; *all, some,
+none*; and the ordinal numbers.
+
+Two items are not grammar at all and sit outside this order: *madad* doing two
+jobs, and the thinness of Sino-Tibetan and Japonic recorded in
+[balance.md](../dictionary/balance.md). Both are vocabulary policy.
+
 ## Open questions — 25 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
