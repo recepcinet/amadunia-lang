@@ -1,8 +1,10 @@
 # Lessons
 
-Twenty-three lessons, in order. Each assumes the one before it and nothing else.
+Twenty-five lessons, in order. Each assumes the one before it and nothing else.
 
 A lesson never uses a rule that has not been decided. Where one was needed and missing, the lesson says so at the foot of the page — that is how [verb chaining](../grammar/verb-chains.md), [place marking](../grammar/place.md) and the word for *danger* were all found.
+
+Between them the lessons teach every one of the 300 roots. [`check.py`](../check.py) enforces that: a word added to the dictionary without a lesson fails the build.
 
 | | Lesson | What it introduces |
 |---|---|---|
@@ -29,9 +31,11 @@ A lesson never uses a rule that has not been decided. Where one was needed and m
 | 21 | [Things and ideas](lesson-21-things-and-ideas.md) | A room and its things, and the first words big enough to describe the language itself. |
 | 22 | [Doing and feeling](lesson-22-doing-and-feeling.md) | Eight verbs, the four elements, and the words a story needs. |
 | 23 | [Everything so far](lesson-23-everything-so-far.md) | The whole language on one page, and an honest list of what it still cannot do. |
+| 24 | [The table and the city](lesson-24-the-table-and-the-city.md) | The table, the city and the calendar — thirty words that reached the dictionary without a lesson. |
+| 25 | [Doing and being](lesson-25-doing-and-being.md) | Fourteen verbs and eighteen qualities, the other half of the same gap. |
 
 ## After the lessons
 
-Read the [texts](../texts/) — three pieces written in Amadunia with nothing invented to make them work. [Lingua ini](../texts/text-3-lingua-ini.md) is the language explaining itself.
+Read the [texts](../texts/) — five pieces written in Amadunia with nothing invented to make them work: two stories, an argument, a dialogue and a poem. Each ends with what the language could not say.
 
-The [grammar files](../grammar/) give the reasoning behind every rule, including the candidates that were rejected and why.
+The [phrasebook](../phrasebook.md) is the practical page. The [grammar files](../grammar/) give the reasoning behind every rule, including the candidates that were rejected and why.

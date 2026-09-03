@@ -187,6 +187,24 @@ for path in sorted(glob.glob("lessons/*.md") + glob.glob("texts/*.md") + ["phras
             check(not (w in ("ini", "itu") and nxt in PRONOUNS),
                   f"{os.path.basename(path)}: '{w} {nxt}' — the owner goes before ini/itu: {sent}")
 
+# ----------------------------------------------------------------- coverage
+# Every root must be taught somewhere: in a lesson's "New words" table, or on
+# the front page (the founder's first words and the numbers live there). Sixty-two
+# roots once reached the dictionary with no lesson at all; this stops that.
+taught = set()
+for path in glob.glob("lessons/lesson-*.md"):
+    body = read(path)
+    if "## New word" not in body: continue
+    section = body.split("## New word")[1].split("\n## ")[0]
+    for line in section.splitlines():
+        if not line.startswith("|"): continue
+        taught |= {c.strip() for c in line.split("|")[1:-1] if c.strip() in words}
+front = read("README.md")
+taught |= {w for w in words if re.search(r"\*" + w + r"\*|\| " + w + r" \|", front)}
+untaught = sorted(set(words) - taught)
+check(not untaught, f"{len(untaught)} roots are taught nowhere: {', '.join(untaught[:12])}"
+                    + (" ..." if len(untaught) > 12 else ""))
+
 # ------------------------------------------------------------------ balance
 # Design rule 4: no language family dominates. dictionary/balance.md states the
 # figures; they are recomputed here so the page cannot drift from the data.

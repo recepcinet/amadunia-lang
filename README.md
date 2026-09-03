@@ -75,7 +75,7 @@ Follow the commits to watch a language grow in real time.
 
 | | |
 |---|---|
-| [lessons/](lessons/) | 23 lessons in order, each assuming only the one before it |
+| [lessons/](lessons/) | 25 lessons in order, teaching every one of the 300 roots |
 | [grammar/](grammar/) | 16 rules — what was settled, why, and what was rejected |
 | [dictionary/](dictionary/) | 300 roots with sourced etymologies, [the English index](dictionary/index-english.md) for writing, and [where they come from](dictionary/balance.md) |
 | [texts/](texts/) | five original pieces — two stories, an argument, a dialogue, a poem — each ending with what the language could not say |
