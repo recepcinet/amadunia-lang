@@ -73,11 +73,11 @@ There is no limit. The verbs line up, the object goes last.
 > — Yu studi ke?
 > — Mi studi Amadunia. Mi mau kara libro ini.
 > — Libro cang?
-> — Ya, cok cang. Mi lasim kara du hora.
+> — Ya, cang. Mi lasim kara du hora.
 > — Yu bisa kara in dom mi. Ca aur pan situ!
 > — Mersi! Mi saufa lai tena.
 
-*Hello! Do you want to go to the market with me? — I can't. I have to study. — What are you studying? — Amadunia. I want to read this book. — Is the book long? — Yes, very long. I have to read for two hours. — You can read at my house. Tea and bread there! — Thanks! I'll come again.*
+*Hello! Do you want to go to the market with me? — I can't. I have to study. — What are you studying? — Amadunia. I want to read this book. — Is the book long? — Yes, long. I have to read for two hours. — You can read at my house. Tea and bread there! — Thanks! I'll come again.*
 
 ## Practice
 

@@ -75,9 +75,9 @@ Adjectives and place words take the tense word themselves — no *es*:
 > — Mi es rafiki Luma. Luma sini?
 > — No, Luma situ. Ta suda es anak keci — sasa ta es doktor!
 > — Ta hao?
-> — Ya, ta cok hao.
+> — Ya, ta hao.
 
-*Hello! What's your name? — My name is Sol. I'm a doctor. You? — I'm Luma's friend. Is Luma here? — No, Luma is there. She was a small child — now she's a doctor! — Is she good? — Yes, she's very good.*
+*Hello! What's your name? — My name is Sol. I'm a doctor. You? — I'm Luma's friend. Is Luma here? — No, Luma is there. She was a small child — now she's a doctor! — Is she good? — Yes, she is good.*
 
 ## Practice
 

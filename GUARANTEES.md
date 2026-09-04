@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**128 guarantees** in **61 groups**, and every one of them is
+**129 guarantees** in **61 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -203,6 +203,7 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - texts/README.md claims a floor of '…' texts per rule; the thinnest is … in …
 ### a gloss may not claim a gap
 
+- …: a conversation is translated with '…', which the language does not have or has not settled
 - …: the gloss says '…', and … is on the list of words the language does not have: …
 ### one root, one job
 

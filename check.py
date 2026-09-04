@@ -286,6 +286,32 @@ def amadunia_runs(text):
 _MARKED = ("wrong", "careful", "never", "rejected", "reason", "cannot",
            "not legal", "misrepresent", "✗", "would be", "would read")
 
+def conversation_glosses(body):
+    """Yield (Amadunia block, its English paragraph) for every quoted exchange.
+
+    A conversation is a run of > lines followed by one italic paragraph that
+    translates the whole of it. It is the fourth shape a gloss takes and the
+    reader below cannot pair it line by line, so it is read separately — which
+    is how "Ta cok hao" came to be glossed "she's very good" in Lesson 11 and
+    "cok cang" as "very long" in Lesson 17, with nothing looking: whether cok
+    covers "very" is an open question, and a lesson may not use one.
+    """
+    _ls = body.splitlines()
+    _i = 0
+    while _i < len(_ls):
+        if _ls[_i].strip().startswith(">"):
+            _j = _i
+            while _j < len(_ls) and (_ls[_j].strip().startswith(">") or not _ls[_j].strip()):
+                _j += 1
+            if _j < len(_ls) and _ls[_j].strip().startswith("*"):
+                _para, _k = _ls[_j], _j
+                while _k + 1 < len(_ls) and _ls[_k + 1].strip() \
+                        and not _ls[_k + 1].startswith("#"):
+                    _k += 1; _para += " " + _ls[_k]
+                yield "\n".join(_ls[_i:_j]), _para
+                _i = _k
+        _i += 1
+
 def glossed_lines(body, skip_marked=False):
     """Yield (line number, Amadunia, English or None) for every glossed shape.
 
@@ -1463,6 +1489,18 @@ _GAPWORD = {
     "miss": "to miss", "missed": "to miss",
 }
 _GAPOK = {"phrasebook.md", "dictionary/README.md"}   # the pages that record them
+# "very" is not a missing word but an open question — whether cok covers it —
+# and the standing rule is that a lesson may not use an open question. It is
+# checked in the same place because the failure is the same: an English gloss
+# claiming something the language has not settled.
+_OPENWORD = {"very"}
+for _p in PROSE:
+    if _p in _GAPOK: continue
+    for _blk, _para in conversation_glosses(read(_p)):
+        for _e in set(re.findall(r"[a-z']+", _para.lower())):
+            check(_e not in _GAPWORD and _e not in _OPENWORD,
+                  f"{os.path.basename(_p)}: a conversation is translated with "
+                  f"'{_e}', which the language does not have or has not settled")
 for _p in PROSE:
     if _p in _GAPOK: continue
     for _, _ama, _eng in glossed_lines(read(_p)):
