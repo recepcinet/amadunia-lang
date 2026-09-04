@@ -223,6 +223,7 @@ Follow the commits to watch a language grow in real time.
 | If you want to | Go to |
 |---|---|
 | learn the language properly, from nothing | [Lesson 01](lessons/lesson-01-greetings.md), or [the syllabus](lessons/README.md) to see what each of the twenty-six teaches |
+| know when you can start reading | [the reading ladder](lessons/reading-ladder.md) — a quarter of the texts' words after one lesson, story 1 readable at Lesson 13 |
 | say something today | [the phrasebook](phrasebook.md) — greeting, directions, buying, trouble |
 | look a word up | [the dictionary](dictionary/dictionary.md), or [the English index](dictionary/index-english.md) to write |
 | know which words to learn first | [the frequency list](dictionary/frequency.md) — twenty-five roots cover half of everything written |

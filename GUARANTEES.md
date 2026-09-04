@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**99 guarantees** in **47 groups**, and every one of them is
+**101 guarantees** in **48 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -129,6 +129,10 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### an adjective's English name
 
 - …: the gloss says '…', which is *…*, and no such word is in the Amadunia: …
+### reading ladder
+
+- reading-ladder.md is missing or contradicts the row '…'
+- reading-ladder.md is missing or contradicts the row '…'
 ### stress
 
 - stress.md's syllable counts are stale; the dictionary gives …/…/…

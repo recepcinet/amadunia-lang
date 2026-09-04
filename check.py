@@ -259,6 +259,11 @@ def amadunia_runs(text):
         elif line.startswith(">"): cells = [line.lstrip("> —").strip()]
         else:                      cells = [line]
         for cell in cells:
+            # A cell that is a markdown link is citing a page, not saying a
+            # sentence: the reading ladder's table of text titles was read as
+            # Amadunia and reported "Pagi in madina" for putting time before
+            # place. A title is not an utterance.
+            if "](" in cell: continue
             for s in re.split(r"[.!?,:]", cell):
                 toks = re.findall(r"[a-z]+(?:-[a-z]+)*", s.lower())
                 if len(toks) >= 2 and all(t.split("-")[0] in words or t.split("-")[0] in PROPER
@@ -766,6 +771,7 @@ for path in PROSE:
         if _s.startswith(">"): _cell = _s.lstrip("> ")
         elif re.fullmatch(r"\|[^|]*\|[^|]*\|", _s): _cell = _s.split("|")[1]
         else: continue
+        if "](" in _cell: continue          # a link cites a page, it does not speak
         _t = re.findall(r"[a-z]+", _cell.lower())
         if len(_t) < 2: continue
         _unk = [x for x in _t if x not in words and x not in PROPER]
@@ -840,6 +846,50 @@ for _p in PROSE:
                       f"{os.path.basename(_p)}: the gloss says '{_e}', which is "
                       f"*{_ADJNAME[_e]}*, and no such word is in the Amadunia: "
                       f"{_m.group(1).strip()}")
+
+# --------------------------------------------------------- reading ladder
+# lessons/reading-ladder.md says how much of the texts a learner can read after
+# each lesson, and which text opens when. Both tables are derived from the
+# course, so they are regenerated here and compared — a lesson that gains or
+# loses a word moves them, and nothing else would notice.
+# The front page's teaching section is checked above; if it is missing this
+# must not be the line that dies, or that check reports nothing at all.
+_LADFRONT = (read("README.md").split("## Learn the basics")[1].split("\n## ")[0]
+             if "## Learn the basics" in read("README.md") else "")
+_LADVOC = {w for w in words
+           if re.search(r"\*" + w + r"\*|\| " + w + r" \|", _LADFRONT)}
+_LADAFTER = {}
+for _p in sorted(glob.glob("lessons/lesson-*.md")):
+    _m2 = re.search(r"lesson-(\d\d)", _p)
+    if not _m2: continue
+    _bd = read(_p)
+    if "## New word" in _bd:
+        _sec = _bd.split("## New word")[1].split("\n## ")[0]
+        _LADVOC |= {_c.strip() for _l in _sec.splitlines() if _l.startswith("|")
+                    for _c in _l.split("|")[1:-1] if _c.strip() in words}
+    _LADAFTER[int(_m2.group(1))] = set(_LADVOC)
+_LADTEXT = {}
+for _p in sorted(glob.glob("texts/*.md")):
+    if _p.endswith("README.md"): continue
+    _src = read(_p)
+    if "```" not in _src: continue
+    _tk = [_t.split("-")[0] for _t in
+           re.findall(r"[a-z]+(?:-[a-z]+)*", _src.split("```")[1].lower())]
+    _LADTEXT[os.path.basename(_p)] = (_src.splitlines()[0][2:],
+                                      [_t for _t in _tk if _t in words])
+_lad = read("lessons/reading-ladder.md")
+_allw = [_t for _, _v in _LADTEXT.values() for _t in _v]
+for _n in sorted(_LADAFTER):
+    _row = f"| {_n:02d} | {100 * sum(1 for _t in _allw if _t in _LADAFTER[_n]) / len(_allw):.0f}% |"
+    check(_row in _lad, f"reading-ladder.md is missing or contradicts the row '{_row}'")
+for _k, (_title, _ts) in _LADTEXT.items():
+    # A lesson whose name has stopped being two digits drops out of the ladder
+    # and can leave a text taught by nothing. The two-digit rule reports that;
+    # min() over an empty sequence would raise before it could.
+    _reach = [_n for _n in sorted(_LADAFTER) if all(_x in _LADAFTER[_n] for _x in _ts)]
+    if not _reach: continue
+    _row = f"| [{_title}](../texts/{_k}) | {_reach[0]:02d} |"
+    check(_row in _lad, f"reading-ladder.md is missing or contradicts the row '{_row}'")
 
 # --------------------------------------------------------------- stress
 # grammar/stress.md defines a syllable as a vowel group and states the counts
