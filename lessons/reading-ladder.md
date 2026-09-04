@@ -13,25 +13,25 @@ counted with repeats, against the words the lessons have taught by that point.
 |---|---|
 | 01 | 25% |
 | 02 | 36% |
-| 03 | 47% |
+| 03 | 48% |
 | 04 | 49% |
 | 05 | 49% |
-| 06 | 50% |
-| 07 | 51% |
+| 06 | 51% |
+| 07 | 52% |
 | 08 | 56% |
 | 09 | 56% |
 | 10 | 59% |
 | 11 | 59% |
-| 12 | 62% |
+| 12 | 63% |
 | 13 | 65% |
-| 14 | 66% |
+| 14 | 67% |
 | 15 | 72% |
-| 16 | 76% |
-| 17 | 76% |
-| 18 | 78% |
+| 16 | 77% |
+| 17 | 77% |
+| 18 | 79% |
 | 19 | 84% |
 | 20 | 88% |
-| 21 | 91% |
+| 21 | 92% |
 | 22 | 94% |
 | 23 | 94% |
 | 24 | 97% |
@@ -61,6 +61,7 @@ taught.
 |---|---|
 | [Sol lai](../texts/text-15-sol-lai.md) | 10 |
 | [Anak espera sol](../texts/story-1-anak-espera-sol.md) | 13 |
+| [In skola](../texts/text-20-in-skola.md) | 16 |
 | [Yamur aur ca](../texts/text-14-yamur-aur-ca.md) | 18 |
 | [Kamra mi](../texts/text-19-kamra-mi.md) | 21 |
 | [In madina baru](../texts/text-4-in-madina-baru.md) | 24 |
@@ -87,14 +88,17 @@ taught for twelve lessons before it offered anything to read.
 **[Story 1](../texts/story-1-anak-espera-sol.md) comes next, at Lesson 13** —
 written at 113 roots against Lessons 1–13, which is why it opens early.
 
-**[Yamur aur ca](../texts/text-14-yamur-aur-ca.md) is the third rung, at
+**[In skola](../texts/text-20-in-skola.md) is the third rung, at Lesson 16**,
+written for the five lessons between 13 and 18 that had nothing new to read.
+
+**[Yamur aur ca](../texts/text-14-yamur-aur-ca.md) is the fourth rung, at
 Lesson 18,** and it exists because this page was measured. The first version of
 this table had story 1 at 13 and then nothing until 24: eleven lessons with no
 new reading. It was written inside the 147 roots the course has taught by
 Lesson 18, to put a rung in the middle of that gap, and *Sol lai* was written
 for the gap below it.
 
-**[Kamra mi](../texts/text-19-kamra-mi.md) is the fourth rung, at Lesson 21**,
+**[Kamra mi](../texts/text-19-kamra-mi.md) is the fifth rung, at Lesson 21**,
 written for what was then the largest gap left in this table — six lessons
 between 18 and 24 with nothing new to read.
 

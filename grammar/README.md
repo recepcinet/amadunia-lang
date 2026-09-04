@@ -33,7 +33,7 @@ Twenty-one rules and four briefings, one decision each. Two of the briefings are
 | | |
 |---|---|
 | [proposal-two-jobs.md](proposal-two-jobs.md) | May a root hold two jobs? *madad* has never been used in a sentence, so its decision is free; *rabota* has eighteen at stake. **Open — the founder's call.** |
-| [proposal-frequency.md](proposal-frequency.md) | Where *daima* and *kadang* stand. Thirteen uses in three positions; *tena* settled itself 21 of 21. **Open — the founder's call.** |
+| [proposal-frequency.md](proposal-frequency.md) | Where *daima* and *kadang* stand. Thirteen uses in three positions; *tena* settled itself 23 of 23. **Open — the founder's call.** |
 | [proposal-but.md](proposal-but.md) | A word for "but". Six pages wanted one and Lesson 12 invented one; *lakin* reaches five families. **Open — the founder's call.** |
 | [proposal-stress.md](proposal-stress.md) | The briefing the open questions put first. **Decided September 3, 2026** — the rule is [stress.md](stress.md); this is the record of what it was decided on. |
 | [proposal-sentence-types.md](proposal-sentence-types.md) | The imperative and the fragment. **Decided September 3, 2026** — the rules are [sentence-types.md](sentence-types.md). |

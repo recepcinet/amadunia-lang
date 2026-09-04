@@ -70,6 +70,12 @@ _FRONTROW = re.search(r"^\| Austronesian \| .*$",
 _FRONTROW_OFF = re.sub(r"^\| Austronesian \| (\d+)",
                        lambda m: f"| Austronesian | {int(m.group(1)) - 7}", _FRONTROW)
 
+# tena's count moves whenever a text uses it, so this mutation reads the
+# sentence instead of naming the number. Tenth site of that kind.
+_TENA = re.search(r"\*\*(\d+) of its (\d+) uses are last in the sentence\*\*",
+                  io.open("grammar/proposal-frequency.md", encoding="utf-8").read()).group(0)
+_TENA_OFF = re.sub(r"^\*\*(\d+)", lambda m: f"**{int(m.group(1)) - 1}", _TENA)
+
 _LIVE = int(re.search(r"## Open questions — (\d+) of them",
                       io.open("grammar/README.md", encoding="utf-8").read()).group(1))
 _WORDS = {25: "Twenty-five", 26: "Twenty-six", 27: "Twenty-seven", 28: "Twenty-eight",
@@ -268,8 +274,7 @@ MUTATIONS = [
      "| **before the verb** | 5 |", "| **before the verb** | 4 |",
      "row for 'before the verb' is stale"),
     ("the tena figure gone stale", "grammar/proposal-frequency.md",
-     "**21 of its 21 uses are last in the sentence**",
-     "**20 of its 21 uses are last in the sentence**",
+     _TENA, _TENA_OFF,
      "tena figure is stale"),
     ("madad used in a sentence", "texts/text-18-gusa-in-tarik.md",
      "Polisi lai. Ta sema:", "Polisi madad sofer. Ta sema:",
