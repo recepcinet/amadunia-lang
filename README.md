@@ -222,7 +222,7 @@ Follow the commits to watch a language grow in real time.
 
 | If you want to | Go to |
 |---|---|
-| learn the language properly, from nothing | [Lesson 01](lessons/lesson-01-greetings.md), or [the syllabus](lessons/README.md) to see what each of the twenty-five teaches |
+| learn the language properly, from nothing | [Lesson 01](lessons/lesson-01-greetings.md), or [the syllabus](lessons/README.md) to see what each of the twenty-six teaches |
 | say something today | [the phrasebook](phrasebook.md) — greeting, directions, buying, trouble |
 | look a word up | [the dictionary](dictionary/dictionary.md), or [the English index](dictionary/index-english.md) to write |
 | know which words to learn first | [the frequency list](dictionary/frequency.md) — twenty-five roots cover half of everything written |
@@ -235,7 +235,7 @@ Follow the commits to watch a language grow in real time.
 
 | | |
 |---|---|
-| [lessons/](lessons/) | 25 lessons in order, teaching every one of the 300 roots |
+| [lessons/](lessons/) | 26 lessons in order, teaching every one of the 300 roots |
 | [grammar/](grammar/) | 17 rules — what was settled, why, and what was rejected — and the decisions still to make |
 | [dictionary/](dictionary/) | 300 roots with sourced etymologies, [the English index](dictionary/index-english.md) for writing, and [where they come from](dictionary/balance.md) |
 | [texts/](texts/) | twelve original pieces — five stories, two arguments, a dialogue, a poem, a letter, a recipe, a walk to school — each ending with what the language could not say |

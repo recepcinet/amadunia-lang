@@ -1,6 +1,6 @@
 # Lessons
 
-Twenty-five lessons, in order. Each assumes the one before it and nothing else.
+Twenty-six lessons, in order. Each assumes the one before it and nothing else.
 
 A lesson never uses a rule that has not been decided. Where one was needed and missing, the lesson says so at the foot of the page — that is how [verb chaining](../grammar/verb-chains.md), [place marking](../grammar/place.md) and the word for *danger* were all found.
 
@@ -33,10 +33,11 @@ Between them the lessons teach every one of the 300 roots. [`check.py`](../check
 | 23 | [Everything so far](lesson-23-everything-so-far.md) | The whole language on one page, and an honest list of what it still cannot do. |
 | 24 | [The table and the city](lesson-24-the-table-and-the-city.md) | The table, the city and the calendar — thirty words that reached the dictionary without a lesson. |
 | 25 | [Doing and being](lesson-25-doing-and-being.md) | Fourteen verbs and eighteen qualities, the other half of the same gap. |
+| 26 | [Telling and answering](lesson-26-telling-and-answering.md) | No new words: the command and the one-word answer, both used since Lesson 1 and neither taught until the rules were granted. |
 
 ## After the lessons
 
-Read the [texts](../texts/) — eleven pieces written in Amadunia with nothing invented to make them work: five stories, two arguments, a dialogue, a poem, a letter and a recipe. Each ends with what the language could not say.
+Read the [texts](../texts/) — twelve pieces written in Amadunia with nothing invented to make them work: five stories, two arguments, a dialogue, a poem, a letter, a recipe and a walk to school. Each ends with what the language could not say.
 
 The [phrasebook](../phrasebook.md) is the practical page. The [grammar files](../grammar/) give the reasoning behind every rule, including the candidates that were rejected and why.
 
@@ -47,7 +48,7 @@ lesson using a word no lesson has taught. Five rules arrive with no word at all 
 verb chains ran in three lessons before Lesson 17 granted them, and Lesson 18
 introduced the adverb rule with a sentence Lesson 12 had already used.
 
-This table is the single place those four numbers live. `check.py` reads it
+This table is the single place those five numbers live. `check.py` reads it
 and holds every earlier lesson to it, so the syllabus and the checker cannot
 disagree.
 

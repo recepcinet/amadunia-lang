@@ -109,5 +109,5 @@ good. I love children. — I feel you will be the best teacher.*
 
 ## What you can already say
 
-Twenty-five lessons and **300 roots** — every one now taught somewhere. [`check.py`](../check.py) enforces that from here on: a word added
+Twenty-five lessons and **300 roots** — every one now taught somewhere. [Lesson 26](lesson-26-telling-and-answering.md) adds no words and teaches the two rules that were granted after this page was written. [`check.py`](../check.py) enforces that from here on: a word added
 to the dictionary without a lesson will fail the build.
