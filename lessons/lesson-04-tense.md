@@ -8,8 +8,18 @@
 |---|---|
 | suda | past marker — put it before the verb |
 | saufa | future marker — put it before the verb |
+| kemarin | yesterday |
+| besok | tomorrow |
 
-Two words. That is the entire tense system of Amadunia.
+**Two of them are the entire tense system of Amadunia.** The other two are the
+words that say when, and this lesson kept its name for twenty lessons without
+them: *kemarin* used to arrive in Lesson 24 and *besok* in Lesson 18, so a
+learner met the past marker twenty lessons before the word *yesterday*.
+Corrected on September 4, 2026.
+
+There is no word for **today**. It is *din ini*, this day, and *ini* arrives in
+[Lesson 15](lesson-15-pointing-placing.md) — so of the three words in this
+lesson's title, two are here and the third is a phrase you can build later.
 
 ## The verb never changes
 
@@ -41,6 +51,22 @@ Directly before the verb, after the subject. Nowhere else.
 - Rafiki **suda** lai. — The friend came.
 - Anak **saufa** nomu akua. — The child will drink water.
 - Doktor **suda** kan ta. — The doctor saw her.
+
+## Saying when
+
+The particle says *whether* it has happened; the time word says *when*. They
+sit at opposite ends of the sentence — the particle before the verb, the time
+word at the end.
+
+| Amadunia | English |
+|---|---|
+| Mi suda kula pan kemarin. | I ate bread yesterday. |
+| Mi saufa kula pan besok. | I will eat bread tomorrow. |
+| Rafiki suda lai kemarin. | The friend came yesterday. |
+| Kita saufa go besok. | We will go tomorrow. |
+
+Both words are optional. *Mi suda kula pan* is already past; *kemarin* only says
+which past.
 
 ## A conversation
 

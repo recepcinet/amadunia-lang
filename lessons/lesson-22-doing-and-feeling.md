@@ -120,7 +120,7 @@ They are opposites and they behave the same:
 
 ## What you can already say
 
-Twenty-two lessons, **255 roots**. Eight more verbs, the four elements, a dog and a horse, and the words for what a face and a voice are — enough to tell someone a story.
+Twenty-two lessons, **256 roots**. Eight more verbs, the four elements, a dog and a horse, and the words for what a face and a voice are — enough to tell someone a story.
 
 What is still open is kept in one place: [the open questions](../grammar/README.md).
 

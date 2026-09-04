@@ -113,6 +113,6 @@ ending to add, the way English adds *-ly*.
 
 ## What you can already say
 
-Twelve lessons, **101 roots** — past one hundred. You can colour things, place them above and below, call them new or old or fast, read, write, walk, and talk about your sibling without ever naming a gender.
+Twelve lessons, **103 roots** — past one hundred. You can colour things, place them above and below, call them new or old or fast, read, write, walk, and talk about your sibling without ever naming a gender.
 
 *not* is covered in [Lesson 14](lesson-14-not-and.md), *this* and *that* in [Lesson 15](lesson-15-pointing-placing.md).

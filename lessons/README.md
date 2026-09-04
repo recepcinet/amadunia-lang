@@ -35,6 +35,22 @@ Between them the lessons teach every one of the 300 roots. [`check.py`](../check
 | 25 | [Doing and being](lesson-25-doing-and-being.md) | Fourteen verbs and eighteen qualities, the other half of the same gap. |
 | 26 | [Telling and answering](lesson-26-telling-and-answering.md) | No new words: the command and the one-word answer, both used since Lesson 1 and neither taught until the rules were granted. |
 
+## One thing the order still does oddly
+
+*din* and *rat* — day and night — are taught in Lesson 03. **The parts of the
+day are not: *pagi* arrives in Lesson 22 and *aksam* in Lesson 24**, nineteen
+and twenty-one lessons later, for words of exactly the same kind. It shows in
+the material: [text 15](../texts/text-15-sol-lai.md), written for Lesson 10,
+opens *Sol lai* — the sun comes — because it cannot say *in pagi*, and
+[text 19](../texts/text-19-kamra-mi.md) was written against Lesson 21 and opens
+one lesson later for the sake of that single word.
+
+*kemarin* and *besok* were in the same state until September 4, 2026, when they
+were moved into [Lesson 04](lesson-04-tense.md) — the lesson called *Yesterday,
+today, tomorrow*, which had taught the tense markers and neither time word for
+twenty lessons. Whether *pagi* and *aksam* should move to Lesson 03 beside *din*
+and *rat* is a syllabus question and is left open rather than answered here.
+
 ## When you can start reading
 
 [The reading ladder](reading-ladder.md) measures it: after one lesson you know

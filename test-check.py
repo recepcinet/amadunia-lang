@@ -52,6 +52,13 @@ _A1TOT = re.search(r"\*\*(\d+) of (\d+) are present",
                    io.open("dictionary/proposal-a2.md", encoding="utf-8").read()).group(0)
 _A1TOT_OFF = re.sub(r"^\*\*(\d+)", lambda m: f"**{int(m.group(1)) + 1}", _A1TOT)
 
+# A lesson's cumulative root count moves whenever a word is taught earlier or
+# later — moving kemarin and besok into Lesson 04 shifted twelve of them at
+# once — so this mutation reads the line instead of naming it. Seventh site.
+_L20 = re.search(r"Twenty lessons, \*\*(\d+) roots\*\*",
+                 io.open("lessons/lesson-20-colours-and-health.md", encoding="utf-8").read()).group(0)
+_L20_OFF = re.sub(r"(\d+)", lambda m: str(int(m.group(1)) + 30), _L20, count=1)
+
 _LIVE = int(re.search(r"## Open questions — (\d+) of them",
                       io.open("grammar/README.md", encoding="utf-8").read()).group(1))
 _WORDS = {25: "Twenty-five", 26: "Twenty-six", 27: "Twenty-seven", 28: "Twenty-eight",
@@ -103,7 +110,7 @@ MUTATIONS = [
      "| Anak-anak kula fruta. | The children eat fruit. |",
      "before any lesson teaches it"),
     ("lesson overstates what it has taught", "lessons/lesson-20-colours-and-health.md",
-     "Twenty lessons, **204 roots**", "Twenty lessons, **234 roots**",
+     _L20, _L20_OFF,
      "roots taught by here"),
     ("wrong prerequisite", "lessons/lesson-07-questions.md",
      "*Prerequisite: [Lesson 6]", "*Prerequisite: [Lesson 4]",

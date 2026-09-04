@@ -119,6 +119,6 @@ Place first, then time, both at the end:
 
 ## What you can already say
 
-Fifteen lessons, **120 roots**. You can point at things, place them, say where they came from and who they are for, offer a choice, go somewhere with someone, and answer any question without ambiguity. That is the grammar of A1, and it is done.
+Fifteen lessons, **122 roots**. You can point at things, place them, say where they came from and who they are for, offer a choice, go somewhere with someone, and answer any question without ambiguity. That is the grammar of A1, and it is done.
 
 Existence — how to say "there is" — and comparison were both settled the next day; see [Lesson 18](lesson-18-comparing-and-joining.md).

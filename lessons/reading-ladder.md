@@ -24,14 +24,14 @@ counted with repeats, against the words the lessons have taught by that point.
 | 11 | 58% |
 | 12 | 62% |
 | 13 | 64% |
-| 14 | 65% |
+| 14 | 66% |
 | 15 | 71% |
 | 16 | 75% |
-| 17 | 75% |
+| 17 | 76% |
 | 18 | 77% |
 | 19 | 83% |
 | 20 | 87% |
-| 21 | 90% |
+| 21 | 91% |
 | 22 | 93% |
 | 23 | 93% |
 | 24 | 97% |
@@ -94,9 +94,10 @@ new reading. It was written inside the 147 roots the course has taught by
 Lesson 18, to put a rung in the middle of that gap, and *Sol lai* was written
 for the gap below it.
 
-**[Kamra mi](../texts/text-19-kamra-mi.md) is the fourth rung, at Lesson 21**,
+**[Kamra mi](../texts/text-19-kamra-mi.md) is the fourth rung, at Lesson 22**,
 written for what was then the largest gap left in this table — six lessons
-between 18 and 24 with nothing new to read.
+between 18 and 24 with nothing new to read. It was written against Lesson 21
+and opens one lesson later, because *pagi*, morning, is not taught until 22.
 
 Everything else waits for Lesson 24 or 25, because every other text was written
 at 300 roots. That is a fact about how the texts were made, not about how hard

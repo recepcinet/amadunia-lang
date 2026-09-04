@@ -4,9 +4,12 @@
 
 The nineteenth text, written for the largest gap left on [the reading
 ladder](../lessons/reading-ladder.md): between Lesson 18 and Lesson 24 there
-was nothing to read. It uses **only the 230 roots taught by Lesson 21**, and
-that lesson is where a room and its things arrive — so a learner who has just
-finished it reads a page made of what they have just learned.
+was nothing to read. It uses **only the roots taught by Lesson 22** — 256 of them — and Lesson 21
+is where a room and its things arrive, so a learner who has just finished that
+lesson reads a page made almost entirely of what they have just learned. The
+one word that carries it past 21 is *pagi*, morning, which the course did not
+teach until Lesson 22; [the ladder](../lessons/reading-ladder.md) computed 22
+and the draft of this page had claimed 21.
 
 ---
 

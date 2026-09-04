@@ -24,7 +24,7 @@ gap. No new grammar — everything here uses rules you already have.
 | kalb | heart | | mausim | season |
 | korpo | body | | aksam | evening |
 | mulut | mouth | | besok | tomorrow |
-| nasab | relative | | kemarin | yesterday |
+| nasab | relative | | | |
 | tempo | time | | momen | moment |
 
 **Also introduced here** — these appear in the sentences below, and nothing before this lesson has taught them:
