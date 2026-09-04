@@ -1215,6 +1215,26 @@ check(not unused, f"{len(unused)} roots are never used in a sentence, only "
                   f"glossed: {', '.join(unused[:12])}"
                   + (" ..." if len(unused) > 12 else ""))
 
+# ---------------------------------------------------- one root, one job
+# CONTRIBUTING rule 8 says a word is a noun or a verb and never both, and
+# CONTRIBUTING also said check.py enforces it. It did not: the only thing
+# holding the rule was an audit run by hand, and the one check that mentioned
+# it named madad alone. Enforced now, so a root added in A2 cannot arrive
+# holding two jobs the way the three below did.
+_TWOJOB_OK = {
+    "madad",           # the open question itself — see proposal-two-jobs.md
+    "bisa", "lasim",   # one modal verb under two English glosses, not two jobs
+}
+for _w in sorted(words):
+    _head = meaning[_w].split("—")[0]
+    _senses = [_s.strip() for _s in re.split(r"[;,]", _head) if _s.strip()]
+    _verbish = any(_s.startswith("to ") for _s in _senses)
+    _nounish = any(not _s.startswith("to ") and not _s.startswith("*")
+                   for _s in _senses)
+    check(not (_verbish and _nounish) or _w in _TWOJOB_OK,
+          f"dictionary.md: '{_w}' is glossed as both a noun and a verb "
+          f"({meaning[_w]}) — one root, one job, see CONTRIBUTING rule 8")
+
 # ------------------------------------ the front page teaches every rule
 # README.md says "here is all of it" over the grammar table, and two settled
 # rules were not in it: commands and fragments, granted on September 3 and

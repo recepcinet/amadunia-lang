@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**112 guarantees** in **53 groups**, and every one of them is
+**113 guarantees** in **54 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -176,6 +176,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### root in use
 
 - …
+### one root, one job
+
+- dictionary.md: '…' is glossed as both a noun and a verb (…) — one root, one job, see CONTRIBUTING rule 8
 ### the front page teaches every rule
 
 - … is settled and the front page has no row for it — add one and name it in check.py's _FRONT_LABEL

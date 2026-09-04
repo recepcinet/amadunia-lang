@@ -74,7 +74,8 @@ does not — it is glossed as one noun and then used as a verb in 13 sentences.
 The first audit read the glosses and missed the second one entirely.
 
 **9. A real, sourced etymology,** and from a family that is not already
-crowding the dictionary. Every root names its sources; none says "invented".
+crowding the dictionary. Every root names its sources; none says "invented",
+and [`check.py`](check.py) refuses a root whose sources name no language.
 
 **10. Run the checker.** [What it refuses](GUARANTEES.md) is listed in full, generated from the checker itself.
 
@@ -82,7 +83,10 @@ crowding the dictionary. Every root names its sources; none says "invented".
 python3 check.py
 ```
 
-It enforces 1 through 6 and 8, plus everything else the repository promises.
+It enforces 1 through 6, 8 and 9, plus everything else the repository
+promises. Rule 8 was on this list before anything enforced it: until
+September 4, 2026 the only thing holding one root to one job was an audit run
+by hand. Rule 7 is the one a machine cannot judge.
 `python3 test-check.py` then checks the checker, by breaking each guarantee and
 requiring `check.py` to reject it.
 It has caught a collision in five consecutive batches of new words, every time
@@ -102,6 +106,13 @@ them were not gaps left on purpose but holes found later — the imperative, the
 mark for a name, how `r` is made, and "want to be" plus an adjective. The
 imperative was settled on September 3, 2026; the other three are the most
 useful to answer.
+
+**Five of the thirty-two already have a briefing**, each one measured rather
+than argued: [a mark for a name](grammar/proposal-names.md), ["want to be" plus
+an adjective](grammar/proposal-modal-adjective.md), [a word for
+"but"](grammar/proposal-but.md), [where a frequency adverb
+stands](grammar/proposal-frequency.md), and [whether a root may hold two
+jobs](grammar/proposal-two-jobs.md). None of them makes the choice.
 
 A proposal that is easy to accept looks like the files in [grammar/](grammar/):
 
