@@ -32,6 +32,7 @@ Twenty-one rules and four briefings, one decision each. Two of the briefings are
 
 | | |
 |---|---|
+| [proposal-but.md](proposal-but.md) | A word for "but". Six pages wanted one and Lesson 12 invented one; *lakin* reaches five families. **Open — the founder's call.** |
 | [proposal-stress.md](proposal-stress.md) | The briefing the open questions put first. **Decided September 3, 2026** — the rule is [stress.md](stress.md); this is the record of what it was decided on. |
 | [proposal-sentence-types.md](proposal-sentence-types.md) | The imperative and the fragment. **Decided September 3, 2026** — the rules are [sentence-types.md](sentence-types.md). |
 | [proposal-names.md](proposal-names.md) | Marking a name. Thirty-six sentences are ambiguous today, and capital letters cannot be spoken. |

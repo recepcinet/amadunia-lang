@@ -766,7 +766,15 @@ for path in PROSE:
 # lessons, the grammar and the phrasebook it returned those three and nothing
 # else.
 for path in PROSE:
-    for _n, _l in enumerate(read(path).splitlines(), 1):
+    _body = read(path)
+    # A briefing exists to show a word that does not exist yet. It may use one
+    # in an example, but only if it declares the word as a row of its own
+    # candidates table — a bold word anywhere on the page was the first
+    # version of this and it let the example authorise itself, so a typo in
+    # the example passed as a proposal.
+    _proposed = (set(re.findall(r"^\| \*\*([a-z]{2,})\*\* \|", _body, re.M))
+                 if os.path.basename(path).startswith("proposal-") else set())
+    for _n, _l in enumerate(_body.splitlines(), 1):
         _s = _l.strip()
         if _s.startswith(">"): _cell = _s.lstrip("> ")
         elif re.fullmatch(r"\|[^|]*\|[^|]*\|", _s): _cell = _s.split("|")[1]
@@ -774,7 +782,8 @@ for path in PROSE:
         if "](" in _cell: continue          # a link cites a page, it does not speak
         _t = re.findall(r"[a-z]+", _cell.lower())
         if len(_t) < 2: continue
-        _unk = [x for x in _t if x not in words and x not in PROPER]
+        _unk = [x for x in _t if x not in words and x not in PROPER
+                and x not in _proposed]
         if _unk and len(_t) - len(_unk) >= len(_t) * 0.6:
             check(False, f"{os.path.basename(path)} line {_n}: '{_unk[0]}' is not a "
                          f"word in the dictionary: {_cell.strip()}")
@@ -1205,6 +1214,28 @@ unused = sorted(set(words) - in_use)
 check(not unused, f"{len(unused)} roots are never used in a sentence, only "
                   f"glossed: {', '.join(unused[:12])}"
                   + (" ..." if len(unused) > 12 else ""))
+
+# ---------------------------------------- the but briefing cites real pages
+# proposal-but.md rests on six pages that wanted the word, each quoted with the
+# sentence that stopped. A quotation is a claim about another file, so each one
+# is checked against that file: if a text is rewritten, the evidence has to
+# move with it or be withdrawn. The names briefing recounts a number; this one
+# has to recount the sentences, because the sentences are the argument.
+_but = read("grammar/proposal-but.md")
+_butrows = re.findall(r"^\| \[([^\]]+)\]\(([^)]+)\) \| \*([^*]+)\* \|", _but, re.M)
+_m4 = re.search(r"The evidence is (\w+) pages", _but)
+check(_m4 and WORD_NUM.get(_m4.group(1).lower()) == len(_butrows),
+      f"proposal-but.md says '{_m4.group(1) if _m4 else '?'} pages' but its "
+      f"evidence table has {len(_butrows)} rows")
+for _name, _rel, _quote in _butrows:
+    _target = os.path.normpath(os.path.join("grammar", _rel))
+    if not os.path.exists(_target):
+        check(False, f"proposal-but.md cites {_rel}, which does not exist")
+        continue
+    _q = _quote.replace("— ", "").strip()
+    check(_q in read(_target).replace("— ", ""),
+          f"proposal-but.md quotes '{_quote}' from {os.path.basename(_target)}, "
+          f"which no longer contains it")
 
 # ------------------------------------------------ used by a text, not a lesson
 # Being taught is not being used. 55 roots had appeared in no text at all, and
