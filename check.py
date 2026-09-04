@@ -1220,9 +1220,16 @@ for _p in sorted(glob.glob("texts/*.md")):
         _INTEXT.update(_t.split("-"))
 _NEVER = sorted(set(words) - _INTEXT)
 _m3 = re.search(r"\*\*(\w+[- ]?\w*) are still unused\*\*", read("dictionary/proposal-a2.md"))
-_WORDNUM = {"thirty-four": 34, "thirty-three": 33, "thirty-two": 32, "thirty-one": 31,
-            "thirty": 30, "twenty-nine": 29, "twenty-eight": 28, "twenty-seven": 27,
-            "twenty-six": 26, "twenty-five": 25, "twenty": 20, "ten": 10, "none": 0}
+# Two texts took the number from 55 to 7 in a day, so the map has to cover
+# the whole way down as well as the way up. It reached "thirty-four" and
+# stopped, and the first count below twenty failed the check by being right.
+_WORDNUM = {w: i for i, w in enumerate(
+    "none one two three four five six seven eight nine ten eleven twelve "
+    "thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty".split())}
+for _i, _t in enumerate("twenty thirty forty fifty".split()):
+    _WORDNUM[_t] = 20 + _i * 10
+    for _j, _u in enumerate("one two three four five six seven eight nine".split()):
+        _WORDNUM[f"{_t}-{_u}"] = 20 + _i * 10 + _j + 1
 check(_m3 and _WORDNUM.get(_m3.group(1).lower()) == len(_NEVER),
       f"proposal-a2.md says '{_m3.group(1) if _m3 else '?'} are still unused'; "
       f"{len(_NEVER)} roots appear in no text")

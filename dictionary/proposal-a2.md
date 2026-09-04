@@ -79,25 +79,24 @@ language: *o* (or), *kadar* (as … as), *kurang* (less), *lasim* (must),
 *berapa* (how many), *kaifa* (how), *fikir* (to think). A rule can be exercised
 by a text while the word that carries it is not.
 
-[Text 16](../texts/text-16-berapa-harga.md) was written for them and reached
-twenty-one. **Thirty-four are still unused**, and `check.py` recounts the
-number so this paragraph cannot drift:
+[Text 16](../texts/text-16-berapa-harga.md) took twenty-one of them and
+[text 17](../texts/text-17-tren-aur-farasi.md) took twenty-seven more.
+**Seven are still unused**, and `check.py` recounts the number so this
+paragraph cannot drift:
 
-*anahtar*, *animal*, *asul*, *bage*, *burun*, *cehra*, *dekat*, *duan*,
-*farasi*, *gusa*, *habari*, *kadang*, *kamisa*, *kiri*, *kisan*, *kucing*,
-*kultura*, *madad*, *mensis*, *mimpi*, *musik*, *muskil*, *nasab*, *negara*,
-*pat*, *petra*, *polisi*, *rambut*, *regalo*, *safari*, *sub*, *taksi*, *tren*,
-*uhuru*.
+*burun*, *dekat*, *gusa*, *kadang*, *kiri*, *madad*, *polisi*.
 
-Two of them are worth naming on their own. *madad* is the root whose class is
-undecided, and nothing has ever written it in a sentence of its own — the
-question has no evidence because the word has no use. *pat*, four, is the only
-digit in the list: the numbers were shown in
-[text 6](../texts/text-6-seti-din.md) and four was the one it did not need.
+**Two of the seven cannot be written at all**, and that is the finding worth
+keeping. *madad*'s class is undecided, so any sentence using it would answer
+[the open question](../grammar/verb-chains.md) by accident — the question has
+no evidence because the word has no use, and it can have no use until the
+question is answered. *kadang* is the same shape: where a frequency adverb
+stands is [open](../grammar/adverbs.md), so the word cannot appear in a
+sentence without settling it.
 
-This is not an argument for cutting them. It is a measurement of where the
-material is thin, and it belongs beside the theme table below: a word no text
-has reached for in sixteen tries is a word a learner will not meet in use.
+The open questions are not only holes in what can be said. They are holes in
+what can be *practised*, and after two texts written to sweep the vocabulary
+they are what is left.
 
 ## 4. What A2 content is blocked on
 
