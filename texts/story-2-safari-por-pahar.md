@@ -7,7 +7,7 @@ The second story written in Amadunia, and the first with the full A1 vocabulary 
 ---
 
 ```
-Pagi. Anak-anak du sini: Sol aur Luma.
+Pagi. Du anak sini: Sol aur Luma.
 Sol genc. Luma lebi genc dari Sol.
 Ta-ta mau go pahar.
 
@@ -44,7 +44,7 @@ Luma sema: "Mi-mi suda lihat mi-mi."
 
 | Amadunia | English |
 |---|---|
-| Pagi. Anak-anak du sini: Sol aur Luma. | Morning. Two children here: Sol and Luma. |
+| Pagi. Du anak sini: Sol aur Luma. | Morning. Two children here: Sol and Luma. |
 | Sol genc. Luma lebi genc dari Sol. | Sol is young. Luma is younger than Sol. |
 | Ta-ta mau go pahar. | They want to go to the mountain. |
 | Mama ta-ta sema: "Pahar amik. Es bahaya." | Their mother says: "The mountain is deep. There is danger." |

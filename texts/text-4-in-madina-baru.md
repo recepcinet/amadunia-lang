@@ -14,7 +14,7 @@ Written at 300 roots, with no grammar beyond Lesson 23.
 — Pardon! Yu punya tempo?
 — Ya. Ke?
 — Mi baru in madina ini. Mi naiti hotel.
-— Es hotel du sini. Uan lebi kabir, uan lebi keci.
+— Es du hotel sini. Uan lebi kabir, uan lebi keci.
 — Harga?
 — Hotel kabir: sis-des pesa por uan rat. Hotel keci: tri-des.
 — Mi mau hotel keci. Ta nali?
@@ -38,7 +38,7 @@ Written at 300 roots, with no grammar beyond Lesson 23.
 | — Pardon! Yu punya tempo? | Excuse me! Do you have time? |
 | — Ya. Ke? | Yes. What? |
 | — Mi baru in madina ini. Mi naiti hotel. | I am new in this city. I am looking for a hotel. |
-| — Es hotel du sini. Uan lebi kabir, uan lebi keci. | There are two hotels here. One bigger, one smaller. |
+| — Es du hotel sini. Uan lebi kabir, uan lebi keci. | There are two hotels here. One bigger, one smaller. |
 | — Harga? | The price? |
 | — Hotel kabir: sis-des pesa por uan rat. Hotel keci: tri-des. | The big hotel: sixty for one night. The small one: thirty. |
 | — Mi mau hotel keci. Ta nali? | I want the small hotel. Where is it? |

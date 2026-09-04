@@ -1076,6 +1076,29 @@ for path in md():
               f"{path}: '{_raw}' marks the wrong syllable; the beat is on "
               f"'{_parts[_idx] if _idx is not None else '?'}'")
 
+# --------------------------------------------- the number comes first
+# plural.md: a number stands before its noun and the noun stays single — tri
+# anak, du dom. The existing check tests the second half in one direction, a
+# number followed by a doubled noun. Nothing tested the order itself, and two
+# sentences had the number after: "Anak-anak du sini" in story 2, which also
+# doubled the noun, and "Es hotel du sini" in text 4.
+# A number is skipped when a noun follows it, because there it belongs to what
+# comes next — ilac ba din is medicine for eight days, not eight medicines.
+_NUMNOUNS = (set(words) - ADJECTIVES - VERBS - NUMBERS - FUNCTION
+             - {"mi", "yu", "ta", "kita"})
+for path in PROSE:
+    body = read(path)
+    if path.startswith("texts/") and "```" in body:
+        body = "".join(body.split("```")[1::2])
+    for line, sent, toks in amadunia_runs(body):
+        if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗")): continue
+        base = [t.split("-")[0] for t in toks]
+        for _i in range(len(base) - 1):
+            if base[_i] in _NUMNOUNS and base[_i + 1] in NUMBERS:
+                if _i + 2 < len(base) and base[_i + 2] in _NUMNOUNS: continue
+                check(False, f"{os.path.basename(path)}: '{toks[_i]} {toks[_i+1]}' — "
+                             f"the number goes before its noun: {sent}")
+
 # ------------------------------------------------------ the adjective follows
 # The adjective goes after its noun. Nothing checked it, and three pages were
 # using dekat, near, as though it were a preposition — Dekat ponte, near the
