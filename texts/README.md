@@ -51,4 +51,4 @@ These are original compositions, not translations. Translating an existing book 
 | [Berapa harga](text-16-berapa-harga.md) | 62 | 300 roots, Lessons 1-26 — bargaining at the market, written for the words no text had ever used |
 | [Tren aur farasi](text-17-tren-aur-farasi.md) | 73 | 300 roots, Lessons 1-26 — a journey to a farm, written for the same reason and reaching 27 more |
 | [Gusa in tarik](text-18-gusa-in-tarik.md) | 43 | 300 roots, Lessons 1-26 — a blocked street, the last five roots that could be written |
-| [Kamra mi](text-19-kamra-mi.md) | 49 | **256 roots, Lessons 1-22** — a room, written for the largest gap left on the reading ladder |
+| [Kamra mi](text-19-kamra-mi.md) | 49 | **232 roots, Lessons 1-21** — a room, written for the largest gap left on the reading ladder |

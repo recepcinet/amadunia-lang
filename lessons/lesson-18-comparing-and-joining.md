@@ -141,6 +141,6 @@ Keep it against the verb, before the object — that is what keeps it clear:
 
 ## What you can already say
 
-Eighteen lessons, **148 roots**. You can compare anything, say what exists, put a whole thought inside a sentence, and give a reason, a time or a condition. That is the grammar of A2.
+Eighteen lessons, **150 roots**. You can compare anything, say what exists, put a whole thought inside a sentence, and give a reason, a time or a condition. That is the grammar of A2.
 
 What is still open is kept in one place, with what each one blocks and how often the material has actually reached for it: [the open questions](../grammar/README.md).

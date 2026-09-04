@@ -90,6 +90,6 @@ Because you already learned what that means. Two nouns together is possession �
 
 ## What you can already say
 
-Fourteen lessons, **116 roots**. With one new word and one old word doing new work, you can now deny anything and join anything — the two things a language cannot do without.
+Fourteen lessons, **118 roots**. With one new word and one old word doing new work, you can now deny anything and join anything — the two things a language cannot do without.
 
 *This*, *that*, place marking and answering a negative question are all covered in [Lesson 15](lesson-15-pointing-placing.md).

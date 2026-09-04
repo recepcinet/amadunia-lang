@@ -845,9 +845,16 @@ for _w in ADJECTIVES:
         _ADJNAME[_g] = _w
 for _p in PROSE:
     for _l in read(_p).splitlines():
-        _m = re.fullmatch(r"\| ([^|]+) \| ([^|]+) \|", _l.strip())
+        # A numbered practice item is a glossed sentence like any table row.
+        # This read only tables until September 4, 2026, and Lesson 03's fifth
+        # practice item had glossed "Din kabir, rat keci" as "the day is long,
+        # the night is short" — kabir is big, keci is small — since the lesson
+        # was written.
+        _m = (re.fullmatch(r"\| ([^|]+) \| ([^|]+) \|", _l.strip())
+              or re.match(r"(\d+\. [^—]+)— \*([^*]+)\*", _l.strip()))
         if not _m: continue
-        _a = set(re.findall(r"[a-z]+", _m.group(1).lower()))
+        _a = set(re.findall(r"[a-z]+",
+                            re.sub(r"^\d+\.\s*", "", _m.group(1)).lower()))
         if not _a or not all(_t in words for _t in _a): continue
         for _e in set(re.findall(r"[a-z]+", _m.group(2).lower())):
             if _e in _ADJNAME and _ADJNAME[_e] not in _a:

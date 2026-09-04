@@ -126,6 +126,6 @@ Remember: after a number the noun stays single. *Tri hora*, never *tri hora-hora
 
 ## What you can already say
 
-Sixteen lessons, **134 roots**. School, books, roads, hours, years, rain — and *tena*, which lets anything happen twice.
+Sixteen lessons, **136 roots**. School, books, roads, hours, years, rain — and *tena*, which lets anything happen twice.
 
 **A word this lesson could not add.** *bisa* — "can, be able" — was chosen for this batch and dropped, because *Yu bisa otur* would have put one verb in front of another and that had never been decided. It was settled the next day: see [Lesson 17](lesson-17-wanting-and-able.md). Every lesson up to this one keeps to one verb at a time.

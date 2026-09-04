@@ -103,6 +103,6 @@ Nothing new. The particle goes before the verb, and the verb never changes:
 
 ## What you can already say
 
-Thirteen lessons, **115 roots**. Weather, directions, and four verbs that carry a lot: open, understand, learn, wait. You can now say you are learning the language, in the language.
+Thirteen lessons, **117 roots**. Weather, directions, and four verbs that carry a lot: open, understand, learn, wait. You can now say you are learning the language, in the language.
 
 *not* and *and* are covered in [Lesson 14](lesson-14-not-and.md); *this*, *that* and place marking in [Lesson 15](lesson-15-pointing-placing.md).

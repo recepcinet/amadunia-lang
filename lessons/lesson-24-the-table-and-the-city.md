@@ -22,7 +22,7 @@ gap. No new grammar — everything here uses rules you already have.
 | sikin | knife | | restoran | restaurant |
 | kaki | foot, leg | | hafta | week |
 | kalb | heart | | mausim | season |
-| korpo | body | | aksam | evening |
+| korpo | body | | | |
 | mulut | mouth | | besok | tomorrow |
 | nasab | relative | | | |
 | tempo | time | | momen | moment |

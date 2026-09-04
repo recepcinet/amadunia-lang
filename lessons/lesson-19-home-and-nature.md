@@ -136,6 +136,6 @@ They stand in the adverb slot, straight after the verb:
 
 ## What you can already say
 
-Nineteen lessons, **176 roots**. A house with doors and windows, a mountain with trees, animals, ways of travelling, and the first three feelings.
+Nineteen lessons, **178 roots**. A house with doors and windows, a mountain with trees, animals, ways of travelling, and the first three feelings.
 
 What is still open is kept in one place: [the open questions](../grammar/README.md).

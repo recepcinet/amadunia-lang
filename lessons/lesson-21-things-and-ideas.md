@@ -113,6 +113,6 @@
 
 ## What you can already say
 
-Twenty-one lessons, **231 roots**. A room with its things, a garden and a forest, buying and sending, and the words a language needs before it can talk about itself — *lingua*, *legis*, *arte*, *amani*, *umid*.
+Twenty-one lessons, **233 roots**. A room with its things, a garden and a forest, buying and sending, and the words a language needs before it can talk about itself — *lingua*, *legis*, *arte*, *amani*, *umid*.
 
 What is still open is kept in one place: [the open questions](../grammar/README.md).

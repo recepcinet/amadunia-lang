@@ -10,6 +10,8 @@
 | rafiki | friend |
 | din | day |
 | rat | night |
+| pagi | morning |
+| aksam | evening |
 | kan | to see |
 | sema | to say, to speak |
 | bil | to know |
@@ -43,13 +45,30 @@ A quality word follows what it describes:
 
 There is no separate word for *is*. *Dom kabir* is complete as it stands.
 
-## Day and night
+## The parts of the day
 
 > — Din hao?
 > — Ya, din hao. Sol kabir!
 
 > — Rat hao?
 > — No. Rat mal.
+
+| Amadunia | English |
+|---|---|
+| Pagi hao. | The morning is good. |
+| Aksam hao. Rat mal. | The evening is good. The night is bad. |
+
+**Four words for the day, and until September 4, 2026 this lesson had two.**
+*pagi* used to arrive in Lesson 22 and *aksam* in Lesson 24 — nineteen and
+twenty-one lessons after *din* and *rat*, for words of exactly the same kind.
+[Text 15](../texts/text-15-sol-lai.md), written for Lesson 10, opens *Sol lai*
+— the sun comes — because it could not say *in pagi*.
+
+**Saying *in the morning* cannot be done yet:** *Sol kabir in pagi* needs *in*,
+which arrives in [Lesson 15](lesson-15-pointing-placing.md), and
+[`check.py`](../check.py) refused this lesson when the sentence was first put
+in it. Until Lesson 15 these four words stand as subjects and as things
+described: *Pagi hao*, *Rat mal*.
 
 ## Asking for help
 
@@ -62,7 +81,7 @@ There is no separate word for *is*. *Dom kabir* is complete as it stands.
 2. Rafiki nomu ca. — *The friend drinks tea.*
 3. Doktor bil. — *The doctor knows.*
 4. Dom keci. — *The house is small.*
-5. Din kabir, rat keci. — *The day is long, the night is short.*
+5. Din kabir, rat keci. — *The day is big, the night is small.* — *cang* and *duan*, long and short, arrive in Lessons 13 and 16.
 
 ## What is still open
 

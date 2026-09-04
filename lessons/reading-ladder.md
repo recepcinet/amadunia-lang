@@ -14,26 +14,26 @@ counted with repeats, against the words the lessons have taught by that point.
 | 01 | 25% |
 | 02 | 36% |
 | 03 | 47% |
-| 04 | 48% |
-| 05 | 48% |
+| 04 | 49% |
+| 05 | 49% |
 | 06 | 50% |
 | 07 | 51% |
-| 08 | 55% |
-| 09 | 55% |
-| 10 | 58% |
-| 11 | 58% |
+| 08 | 56% |
+| 09 | 56% |
+| 10 | 59% |
+| 11 | 59% |
 | 12 | 62% |
-| 13 | 64% |
+| 13 | 65% |
 | 14 | 66% |
-| 15 | 71% |
-| 16 | 75% |
+| 15 | 72% |
+| 16 | 76% |
 | 17 | 76% |
-| 18 | 77% |
-| 19 | 83% |
-| 20 | 87% |
+| 18 | 78% |
+| 19 | 84% |
+| 20 | 88% |
 | 21 | 91% |
-| 22 | 93% |
-| 23 | 93% |
+| 22 | 94% |
+| 23 | 94% |
 | 24 | 97% |
 | 25 | 100% |
 | 26 | 100% |
@@ -62,7 +62,7 @@ taught.
 | [Sol lai](../texts/text-15-sol-lai.md) | 10 |
 | [Anak espera sol](../texts/story-1-anak-espera-sol.md) | 13 |
 | [Yamur aur ca](../texts/text-14-yamur-aur-ca.md) | 18 |
-| [Kamra mi](../texts/text-19-kamra-mi.md) | 22 |
+| [Kamra mi](../texts/text-19-kamra-mi.md) | 21 |
 | [In madina baru](../texts/text-4-in-madina-baru.md) | 24 |
 | [Lingua ini](../texts/text-3-lingua-ini.md) | 24 |
 | [Uan](../texts/text-5-uan.md) | 24 |
@@ -94,10 +94,9 @@ new reading. It was written inside the 147 roots the course has taught by
 Lesson 18, to put a rung in the middle of that gap, and *Sol lai* was written
 for the gap below it.
 
-**[Kamra mi](../texts/text-19-kamra-mi.md) is the fourth rung, at Lesson 22**,
+**[Kamra mi](../texts/text-19-kamra-mi.md) is the fourth rung, at Lesson 21**,
 written for what was then the largest gap left in this table — six lessons
-between 18 and 24 with nothing new to read. It was written against Lesson 21
-and opens one lesson later, because *pagi*, morning, is not taught until 22.
+between 18 and 24 with nothing new to read.
 
 Everything else waits for Lesson 24 or 25, because every other text was written
 at 300 roots. That is a fact about how the texts were made, not about how hard

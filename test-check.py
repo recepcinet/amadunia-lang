@@ -282,6 +282,11 @@ MUTATIONS = [
     ("a checklist domain row gone stale", "dictionary/proposal-a2.md",
      "| clothing | 2 of 9 |", "| clothing | 3 of 9 |",
      "checklist row for 'clothing' is stale"),
+    ("an adjective glossed by another adjective's name, in a practice item",
+     "lessons/lesson-03-people.md",
+     "5. Din kabir, rat keci. — *The day is big, the night is small.*",
+     "5. Din kabir, rat keci. — *The day is long, the night is short.*",
+     "which is *cang*"),
     ("the joined-form count gone stale", "grammar/word-formation.md",
      "There are **36**", "There are **35**",
      "word-formation.md's count is stale"),
@@ -522,11 +527,17 @@ def main():
     print(f"{reached} of {len(guarantees)} guarantees in check.py were reached by a mutation.")
     for n in sorted(guarantees - FIRED):
         print(f"  line {n} is never exercised")
+    # The verdict is the last line on purpose. Twice now a run of this file
+    # was piped into `tail`, which masks the exit code, and a red run was read
+    # as green because the explanation was the last thing on screen. Whatever
+    # a reader truncates to, the final line says which it was.
     if missed or notapplied:
         print("A mutation that is not caught means the check is inert or absent.")
         print("A mutation that is not applied means this test is stale, not that the check works.")
+        print(f"FAIL — {missed} not caught, {notapplied} not applied")
         return 1
     print("Every mutation was rejected.")
+    print(f"PASS — {len(MUTATIONS)} mutations, {len(guarantees)} guarantees")
     return 0
 
 if __name__ == "__main__":
