@@ -88,6 +88,11 @@ _FRONTJOIN = re.search(r"and all (\d+) are",
                        io.open("README.md", encoding="utf-8").read()).group(0)
 _FRONTJOIN_OFF = re.sub(r"(\d+)", lambda m: str(int(m.group(1)) - 1), _FRONTJOIN)
 
+# The shape count moves whenever anything is written, so it is read.
+_SHAPES = re.search(r"\*\*(\d+) sentences, (\d+) distinct shapes\*\*",
+                    io.open("texts/README.md", encoding="utf-8").read()).group(0)
+_SHAPES_OFF = re.sub(r"^\*\*(\d+)", lambda m: f"**{int(m.group(1)) + 4}", _SHAPES)
+
 _LIVE = int(re.search(r"## Open questions — (\d+) of them",
                       io.open("grammar/README.md", encoding="utf-8").read()).group(1))
 _WORDS = {25: "Twenty-five", 26: "Twenty-six", 27: "Twenty-seven", 28: "Twenty-eight",
@@ -357,6 +362,9 @@ MUTATIONS = [
     ("a verb chain in an early lesson's closing section", "lessons/lesson-05-plural.md",
      "## What you can already say", "## What you can already say\n\n> Mi mau kula pan.\n",
      "verb chain"),
+    ("the sentence-shape count gone stale", "texts/README.md",
+     _SHAPES, _SHAPES_OFF,
+     "shape count is stale"),
     ("the joined-form count gone stale", "grammar/word-formation.md",
      _JOIN, _JOIN_OFF,
      "word-formation.md's count is stale"),
@@ -384,8 +392,11 @@ MUTATIONS = [
     ("a text with no code block", "texts/text-10-mila-tahun.md",
      '```\nInsan hidup sen tahun. Insan mati.\nPahar hidup lebi dari insan.\nPahar hidup mila tahun. Natura no mati.\n\nInsan suda katab historia. Historia no mati.\nArte in dom eski. Kalima in libro eski.\n\nLegis lai dari insan. Legis no lai dari natura.\nAmani lai dari insan.\n\nNumero no mati. Uan es uan in dunia.\nLingua mati kab insan stop sema.\n\nMi proba sema. Yu proba sema.\nKita punya sansi.\n```', "",
      "no code block"),
+    # Locked to the table row: the index's prose links the same file, and a
+    # bare filename replacement hit the prose first and produced a broken link
+    # instead of an index error.
     ("the index naming a text that is gone", "texts/README.md",
-     "text-5-uan.md", "text-99-missing.md",
+     "| [Uan](text-5-uan.md) |", "| [Uan](text-99-missing.md) |",
      "which does not exist"),
     ("the front page losing its teaching section", "README.md",
      "## Learn the basics in 2 minutes", "## Basics in 2 minutes",

@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**125 guarantees** in **59 groups**, and every one of them is
+**126 guarantees** in **60 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -182,6 +182,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - proposal-a2.md's checklist row for '…' is stale; the dictionary has … of …
 - proposal-a2.md's checklist total is stale; recount gives … of …
+### how many sentence shapes
+
+- texts/README.md's shape count is stale; the material has … sentences in … distinct shapes
 ### a text's table repeats its own text
 
 - …: the line-by-line table has a sentence the text does not: …

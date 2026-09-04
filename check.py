@@ -1287,6 +1287,42 @@ check(f"**{_a1present} of {_a1tot} are present" in _a2,
       f"proposal-a2.md's checklist total is stale; recount gives "
       f"{_a1present} of {_a1tot}")
 
+# ---------------------------------------------- how many sentence shapes
+# texts/README.md counts sentence shapes as well as words: every sentence
+# reduced to its parts of speech. The two headline numbers move whenever
+# anything is written, so they are recounted rather than trusted.
+_SPRON = {"mi", "yu", "ta", "kita", "mi-mi", "yu-yu", "ta-ta"}
+_SPREP = {"in", "dari", "por", "una"}
+_SPLACE = {"sini", "situ", "upar", "sub", "yamin", "kiri"}
+_SFUNC = {"no", "aur", "o", "es", "suda", "saufa", "ini", "itu", "plis", "ya",
+          "bas", "ok", "kab", "porke", "agar", "lebi", "kurang", "paling",
+          "kadar", "cok", "tena", "daima"}
+def _shape_tag(_t):
+    _r = _t.split("-")[0]
+    if _t in _SPRON or _r in _SPRON: return "R"
+    if _r in NUMBERS: return "#"
+    if _r in _SPREP: return "P"
+    if _r in _SPLACE: return "L"
+    if _r in _SFUNC: return "f"
+    if _r in VERBS: return "V"
+    if _r in ADJECTIVES: return "A"
+    if _r in words: return "N"
+    return "?"
+_shapes = defaultdict(int)
+for _p in (sorted(glob.glob("texts/*.md")) + sorted(glob.glob("lessons/lesson-*.md"))
+           + ["phrasebook.md"]):
+    # The index is about the texts, not one of them. It quotes example shapes,
+    # and counting them made the material one sentence longer than it is.
+    if _p.endswith("texts/README.md"): continue
+    _sb = read(_p)
+    if _p.startswith("texts/") and "```" in _sb: _sb = "".join(_sb.split("```")[1::2])
+    for _line, _sent, _toks in amadunia_runs(_sb):
+        _shapes["".join(_shape_tag(_t) for _t in _toks)] += 1
+_stot = sum(_shapes.values())
+check(f"**{_stot} sentences, {len(_shapes)} distinct shapes**" in read("texts/README.md"),
+      f"texts/README.md's shape count is stale; the material has {_stot} "
+      f"sentences in {len(_shapes)} distinct shapes")
+
 # ------------------------------------ a text's table repeats its own text
 # Every text prints its Amadunia twice: once in the code block and once, line
 # by line, beside the English. Only the block was ever checked for grammar —

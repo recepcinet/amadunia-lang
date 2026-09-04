@@ -27,6 +27,26 @@ the material had started using them, and writing a page for each is what
 turned that round. *una* was the third, at 21 sentences, and
 [text 13](text-13-kula-una.md) answered it.
 
+## How many shapes the language actually uses
+
+Vocabulary has been counted since the beginning; sentence *shape* never had
+been. Every sentence in the lessons, the texts and the phrasebook was reduced
+to its parts of speech — R for a pronoun, V a verb, N a noun, A an adjective,
+P a preposition, and so on — and the shapes counted.
+
+**1666 sentences, 411 distinct shapes**, and the fifteen commonest cover 43%
+of them. The leaders are *RVN* at 8.6% (*Ta-ta lihat stela-stela*), *NA* at
+7.5% (*Sol kabir*) and *NV* at 4.8% (*Anak sema*). [`check.py`](../check.py)
+recounts the two headline numbers.
+
+The measurement was made to test a claim and refuted it.
+[Text 21](text-21-uan-umur.md), the long one, said at first that the shapes
+drone at that length. They do not: it uses 56 distinct shapes, more than any
+other text, and only 8% of its adjacent sentence pairs share a shape, which
+puts it eleventh of twenty-one. The most repetitive pages are
+[the recipe](text-8-kaifa-suru-ca.md) at 28% and [the poem](text-5-uan.md) at
+25%, both of which repeat on purpose.
+
 **A gap has to be a sentence that stopped.** Before a text records one, the
 rule page that would grant the thing has to be read. [Text
 10](text-10-mila-tahun.md) claimed the language could not compare one duration

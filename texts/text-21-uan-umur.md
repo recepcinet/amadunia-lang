@@ -185,11 +185,21 @@ have been correct and unreadable. That the unmarked present carries a whole
 life is [an open question answered by use](../grammar/tense.md) rather than by
 decision, and it is worth saying out loud.
 
-**The drone is real.** Subject-verb-object, adjective after noun, and nothing
-else: at this length the shapes repeat audibly. Three things break it — the
-fragment (*Dom sukut.*), the quoted line, and the list (*flor, pohon aur
-tair*) — and they are the whole of the variety available. A longer text than
-this one would need something the language does not have.
+**The drone is not real, and I claimed it was.** Writing this page it felt
+like subject-verb-object over and over, so the first version of this section
+said so. Then it was measured, and the measurement disagrees twice.
+
+By sentence shape — every sentence reduced to its parts of speech — this text
+uses **56 distinct shapes**, more than any other text in the language; the
+next highest is story 2 with 27. Its three commonest shapes cover 31% of it,
+which makes it the fifth *least* repetitive of twenty-one texts. And 8% of
+adjacent sentence pairs share a shape, eleventh of twenty-one: the recipe is
+28% and the poem 25%, both for good reasons.
+
+So length did not flatten the language. It did the opposite — a long text
+visits more situations and reaches for more shapes. The drone was in the
+writing of it, not in the reading, and the honest record of that is this
+paragraph rather than the one it replaced.
 
 ## Gaps
 
