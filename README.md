@@ -70,6 +70,9 @@ the reasoning and the alternatives that were rejected.
 | **Clauses** | no marker at all; *porke*, *kab*, *agar* when needed | Mi fikir yu hao. | I think you are good. |
 | **Adverbs** | the adjective, straight after the verb | Mi kara hao libro. | I read the book well. |
 | **And / or** | *aur* · *o* | Mi kupi pan aur ca. | I buy bread and tea. |
+| **Commands** | a verb with no subject — nothing is added | Kula pan. | Eat bread. |
+| | and *no* denies it the same way it denies anything | No go! | Do not go! |
+| **Fragments** | any phrase may stand alone when the question is clear | — Yu mau ke? — Ca. | — What do you want? — Tea. |
 
 **Everything in one sentence.** The full order is subject → *no* → tense →
 verb → adverb → object → place → time → clause, and a sentence that uses all
@@ -155,7 +158,8 @@ here](dictionary/balance.md), and what it means for the next three hundred is
 
 Nine rules, then the checker. They are strict enough that most candidates die,
 and the ones that died are kept — [CONTRIBUTING.md](CONTRIBUTING.md) records
-all ten rules with the real words each has rejected.
+all nine with the real words each has rejected, and running the checker as the
+tenth step.
 
 | Rejected | Because of | What was lost |
 |---|---|---|
@@ -191,7 +195,7 @@ its 917 roots are multiplied by some forty affixes into tens of thousands of
 words, and 300 against 917 flatters this language rather than the other one.
 What 300 gives beyond 300 is *forms*, not words: every noun has a doubled
 plural, and eleven number words reach a thousand. This page used to say *compounding* does the
-rest. It does not: every hyphen in the repository was counted, and all 35 are
+rest. It does not: every hyphen in the repository was counted, and all 36 are
 either a number or a doubled plural. [No compound word has ever been
 formed](grammar/word-formation.md), and whether one may be is now an open
 question. Milestones passed: 80 for survival, then 180, then 300. Next is A2, at

@@ -1215,6 +1215,48 @@ check(not unused, f"{len(unused)} roots are never used in a sentence, only "
                   f"glossed: {', '.join(unused[:12])}"
                   + (" ..." if len(unused) > 12 else ""))
 
+# ------------------------------------ the front page teaches every rule
+# README.md says "here is all of it" over the grammar table, and two settled
+# rules were not in it: commands and fragments, granted on September 3 and
+# never added to the page that claims to be complete. A reader who trusts the
+# front page could not learn the imperative from it.
+# The map is by hand because the table's labels are not the file names — "And /
+# or" is conjunction, "This/that" is demonstratives, "Clauses" is
+# subordination — but every settled rule must have an entry, so a new rule
+# cannot be settled without landing on the front page.
+_FRONT_LABEL = {
+    "phonology.md": "Alphabet — 20 letters", "stress.md": "**Stress —",
+    "numbers.md": "**Numbers:**", "tense.md": "| **Tense**",
+    "plural.md": "| **Plural**", "possession.md": "| **Possession**",
+    "copula.md": "| **Copula**", "negation.md": "| **Negation**",
+    "questions.md": "| **Questions**", "pronouns.md": "| **Pronouns**",
+    "demonstratives.md": "| **This/that**", "place.md": "| **Place**",
+    "verb-chains.md": "| **Verb chains**", "comparison.md": "| **Comparison**",
+    "subordination.md": "| **Clauses**", "adverbs.md": "| **Adverbs**",
+    "conjunction.md": "| **And / or**", "sentence-types.md": "| **Commands**",
+}
+_frontmd = read("README.md")
+for _p in sorted(glob.glob("grammar/*.md")):
+    if not re.search(r"^\*Status: settled", read(_p), re.M): continue
+    _n = os.path.basename(_p)
+    if _n not in _FRONT_LABEL:
+        check(False, f"{_n} is settled and the front page has no row for it — "
+                     f"add one and name it in check.py's _FRONT_LABEL")
+        continue
+    check(_FRONT_LABEL[_n] in _frontmd,
+          f"README.md no longer teaches {_n}: '{_FRONT_LABEL[_n]}' is gone from "
+          f"the page that says it is all of the grammar")
+
+# The joined-form count lives on three pages and only one of them was checked,
+# so the front page and the grammar index both said 35 while the count was 36.
+for _p in PROSE:
+    for _s in re.split(r"(?<=[.!?])\s+", read(_p).replace("\n", " ")):
+        if "hyphen" not in _s.lower(): continue
+        for _mn in re.finditer(r"\ball (\d+) (?:are|hyphenated)", _s):
+            check(int(_mn.group(1)) == len(_joined),
+                  f"{os.path.basename(_p)}: says 'all {_mn.group(1)}' hyphenated "
+                  f"forms; the repository has {len(_joined)}")
+
 # ------------------------------------------- madad is still held back
 # proposal-two-jobs.md rests on madad appearing in no sentence anywhere, which
 # is what makes its decision free. The moment anything writes a sentence with

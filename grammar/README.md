@@ -239,7 +239,7 @@ measurement with its method stated, to be re-run rather than trusted.
 
 **[word-formation](word-formation.md)**
 
-- **Does the language form compound words at all?** It never has — all 35 hyphenated forms in the repository are numbers or doubled plurals — and the front page had been leaning on the idea that it does. Juxtaposition is already taken by possession, and the hyphen already has two jobs.
+- **Does the language form compound words at all?** It never has — all 36 hyphenated forms in the repository are numbers or doubled plurals — and the front page had been leaning on the idea that it does. Juxtaposition is already taken by possession, and the hyphen already has two jobs.
 
 **[verb-chains](verb-chains.md)**
 
