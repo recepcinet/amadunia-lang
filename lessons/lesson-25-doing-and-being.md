@@ -3,31 +3,49 @@
 *Prerequisite: [Lesson 24](lesson-24-the-table-and-the-city.md).*
 
 The other half of the words that entered at 180 roots without a lesson of
-their own — fourteen verbs and eighteen qualities. A few appeared in earlier
-lessons before anything taught them, and are now introduced there instead. Again, no new grammar.
+their own. Again, no new grammar.
+
+Twenty words are new here: nine verbs and eleven qualities. Twelve more are
+gathered with them because this is where they group — you met each of those
+earlier, and they are listed apart, under the lesson that taught them. Until
+September 5, 2026 all thirty-two sat in one table headed **New words**.
 
 ## New words
 
 | Word | Meaning | | Word | Meaning |
 |---|---|---|---|---|
-| lihat | to look, to watch | | plen | full |
-| dengar | to hear | | kosong | empty |
-| senti | to feel | | safi | clean |
-| punya | to have | | kotor | dirty |
-| tanya | to ask | | dekat | near |
-| respon | to answer | | baid | far |
-| beca | to sell | | kuat | strong |
-| leta | to bring | | muskil | difficult |
-| pone | to put | | senang | happy |
-| kanta | to sing | | sedih | sad |
-| hidup | to live | | yanlis | wrong |
+| dengar | to hear | | plen | full |
+| senti | to feel | | kosong | empty |
+| tanya | to ask | | safi | clean |
+| respon | to answer | | muskil | difficult |
+| leta | to bring | | senang | happy |
+| pone | to put | | yanlis | wrong |
 | mati | to die | | bahaya | danger |
 | start | to begin | | sukut | silence |
-| stop | to stop | | ide | idea |
-| | | | problema | problem |
-| | | | historia | history |
+| stop | to stop | | historia | history |
 | | | | kultura | culture |
 | | | | natura | nature |
+
+## Words you already have
+
+| Word | Meaning | Taught in |
+|---|---|---|
+| kanta | to sing | [Lesson 18](lesson-18-comparing-and-joining.md) |
+| kotor | dirty | [Lesson 18](lesson-18-comparing-and-joining.md) |
+| problema | problem | [Lesson 18](lesson-18-comparing-and-joining.md) |
+| sedih | sad | [Lesson 18](lesson-18-comparing-and-joining.md) |
+| baid | far | [Lesson 19](lesson-19-home-and-nature.md) |
+| hidup | to live | [Lesson 19](lesson-19-home-and-nature.md) |
+| punya | to have | [Lesson 19](lesson-19-home-and-nature.md) |
+| beca | to sell | [Lesson 20](lesson-20-colours-and-health.md) |
+| ide | idea | [Lesson 20](lesson-20-colours-and-health.md) |
+| kuat | strong | [Lesson 21](lesson-21-things-and-ideas.md) |
+| dekat | near | [Lesson 24](lesson-24-the-table-and-the-city.md) |
+| lihat | to look, to watch | [Lesson 24](lesson-24-the-table-and-the-city.md) |
+
+The two from Lesson 24 are the sharpest case: that lesson says in as many words
+that **nothing before it** has taught *dekat* and *lihat*, and then this page,
+the very next one, called them new again.
 
 ## Fourteen verbs
 

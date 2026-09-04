@@ -85,6 +85,6 @@ No *I / me*, no *she / her*, no *we / us*. One form each.
 
 ## What you can already say
 
-Nine lessons, 76 roots. You can now talk about anyone — one person or many, with you or without you, a person or a thing — and the words for them have never once changed their shape.
+Nine lessons, **81 roots**. You can now talk about anyone — one person or many, with you or without you, a person or a thing — and the words for them have never once changed their shape.
 
 *there* is covered in [Lesson 10](lesson-10-a-day.md), the copula in [Lesson 11](lesson-11-being.md), *not* in [Lesson 14](lesson-14-not-and.md), *this* and *that* in [Lesson 15](lesson-15-pointing-placing.md).

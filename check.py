@@ -40,6 +40,12 @@ def check(ok, msg):
     if not ok: fails.append(msg)
 
 def read(p): return io.open(p, encoding="utf-8").read()
+
+# A lesson whose name is not two digits is reported by the naming check; do not
+# crash here, or that report never prints. This exact line ate it once.
+def _lesson_no(_p):
+    _m = re.search(r"lesson-(\d\d)", _p)
+    return int(_m.group(1)) if _m else None
 def md(): return sorted(glob.glob("**/*.md", recursive=True))
 
 # ---------------------------------------------------------------- dictionary
@@ -409,7 +415,13 @@ for path in sorted(glob.glob("lessons/lesson-*.md")):
     # A lesson that states a root count is telling the learner what they now
     # know. Six lessons stated the dictionary's size instead, overstating by up
     # to forty-five.
-    m = re.search(r"\*\*(\d+) roots\*\*", body)
+    # The pattern required the number to be bold, and seven lessons — 05 to 11,
+    # the whole beginner half of the course — stated theirs in plain text. Every
+    # one of the seven was wrong, by two to five roots, for as long as the check
+    # existed. A check that only reads the formatting it expects is not a check.
+    # "entered at 180 roots" is history, not a claim, so the count must follow
+    # the word "lessons".
+    m = re.search(r"lessons,? (?:and )?\*{0,2}(\d+)\*{0,2} roots", body)
     if m:
         check(int(m.group(1)) == len(vocab),
               f"{os.path.basename(path)}: claims {m.group(1)} roots taught by here; "
@@ -423,6 +435,32 @@ for path in sorted(glob.glob("lessons/lesson-*.md")):
     check((n == 1 and not pm) or (pm and int(pm.group(1)) == n - 1),
           f"{os.path.basename(path)}: prerequisite should be Lesson {n-1}")
 
+
+# ------------------------------------------------- one root, one introduction
+# Coverage below asks whether every root is taught somewhere. Nothing asked
+# whether one was taught twice, and twenty were: Lessons 24 and 25 were written
+# to catch up the roots that had no lesson, and their New-words tables kept
+# roots that later moves had given a home. Lesson 24 said in as many words that
+# nothing before it taught *dekat* and *lihat*; Lesson 25, the next page, called
+# both new again. *besok* was moved to Lesson 04 on September 4 and stayed new
+# in Lesson 24. *es* was new in Lesson 06 and new again in Lesson 11.
+# A root read as new in two places is a learner told twice that it is new.
+_intro = defaultdict(set)
+for _p in sorted(glob.glob("lessons/lesson-*.md")):
+    _b = read(_p)
+    if "## New word" not in _b: continue
+    _sec = _b.split("## New word")[1].split("\n## ")[0]
+    # A gloss may repeat the headword (hotel, ok, no), so collect per lesson as
+    # a set: a row cannot make its own lesson a second introducer.
+    for _w in {_c.strip() for _l in _sec.splitlines() if _l.startswith("|")
+               for _c in _l.split("|")[1:-1] if _c.strip() in words}:
+        if _lesson_no(_p) is not None: _intro[_w].add(_lesson_no(_p))
+_twice = sorted((_w, sorted(_ns)) for _w, _ns in _intro.items() if len(_ns) > 1)
+check(not _twice,
+      f"{len(_twice)} roots are introduced as new by two lessons: "
+      + "; ".join(f"{_w} in {' and '.join('%02d' % _n for _n in _ns)}"
+                  for _w, _ns in _twice[:6])
+      + (" ..." if len(_twice) > 6 else ""))
 
 # ----------------------------------------------------------------- coverage
 # Every root must be taught somewhere: in a lesson's "New words" table, or on
@@ -455,6 +493,30 @@ check(len(INTRO) == 5, f"lessons/README.md: the wordless-rule table is incomplet
 # running and lets this one be the message that appears.
 for _k in ("possession", "adverb", "verb chain", "existence", "command"):
     INTRO.setdefault(_k, 99)
+
+# ------------------------------- the syllabus may not credit a late lesson
+# with a device an earlier lesson already uses. The index called Lesson 07
+# "Questions: rising tone, and the question word in the answer's place", but
+# Lesson 02 says in its own words that Lesson 1 asked by tone alone, and
+# Lesson 07 opens with "Since Lesson 1 you have been raising your voice".
+# Three pages, one of them disagreeing. The rising-tone question is not in the
+# wordless-rule table above and should not be: a question mark is on the page,
+# so a learner can spot it. That is exactly why nothing was holding it.
+_first_q = min([_n for _p in glob.glob("lessons/lesson-*.md")
+                if "?" in read(_p) and (_n := _lesson_no(_p)) is not None] or [99])
+for _m in re.finditer(r"^\| (\d+) \| \[[^\]]+\]\(lesson-\d\d[^)]*\) \| (.+) \|$",
+                      read("lessons/README.md"), re.M):
+    _n, _desc = int(_m.group(1)), _m.group(2)
+    if not re.search(r"rising tone|by tone|tone alone", _desc): continue
+    # A row may name the device if it hands the credit back to the lesson that
+    # really introduced it — "in use since Lesson 1" is a correction, not a claim.
+    _credits_earlier = any(int(_e) <= _first_q
+                           for _e in re.findall(r"Lesson (\d+)", _desc))
+    if _n > _first_q and not _credits_earlier:
+        check(False,
+              f"lessons/README.md credits Lesson {_n:02d} with the rising-tone "
+              f"question; Lesson {_first_q:02d} already asks one, and that lesson "
+              f"page says so itself")
 
 # ---------------------------------------------------------------- no chains
 # Verb chains were undecided until Lesson 17; the earlier lessons must not use
@@ -791,14 +853,25 @@ for path in PROSE:
         body = "".join(body.split("```")[1::2])
     for line, sent, toks in amadunia_runs(body):
         if toks[0] in ("sol", "luma"): _ambiguous += 1
-_m = re.search(r"\*\*([A-Za-z-]+) sentences are formally ambiguous",
-               read("grammar/proposal-names.md"))
+_namesbody = read("grammar/proposal-names.md")
+_m = re.search(r"\*\*([A-Za-z-]+) sentences are formally ambiguous", _namesbody)
 _names = {"Thirty-four": 34, "Thirty-five": 35, "Thirty-six": 36, "Thirty-seven": 37,
           "Thirty-eight": 38, "Thirty-nine": 39, "Forty": 40, "Forty-one": 41,
           "Forty-two": 42, "Forty-three": 43}
 check(_m and _names.get(_m.group(1)) == _ambiguous,
       f"proposal-names.md says {_m.group(1) if _m else '?'} sentences are formally "
       f"ambiguous; the corpus has {_ambiguous}")
+
+# The headline was fixed on September 4 and the closing section was not: the
+# page said forty-two in one paragraph and thirty-six in another. One spelled
+# count on a decision page is a fact; two are a contradiction, and checking
+# only the first is a check weaker than its own message. Every spelled count
+# of that set on the page is now held to the same recount.
+_spelled = re.findall(r"([A-Za-z][a-z]+(?:-[a-z]+)?) sentences "
+                      r"(?:are formally ambiguous|already written)", _namesbody)
+check(_spelled and all(_names.get(_w.capitalize()) == _ambiguous for _w in _spelled),
+      f"proposal-names.md counts the ambiguous sentences more than once and the "
+      f"counts do not agree: {_spelled} against a recount of {_ambiguous}")
 
 # ------------------------------------ the modal-adjective briefing counts itself
 # The size of that gap is three modals against every adjective, and the

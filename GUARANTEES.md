@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**135 guarantees** in **67 groups**, and every one of them is
+**138 guarantees** in **69 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -65,10 +65,16 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - …: uses '…' before any lesson teaches it: …
 - …: claims … roots taught by here; the lessons have taught …
 - …: prerequisite should be Lesson …
+### one root, one introduction
+
+- …
 ### coverage
 
 - …
 - lessons/README.md: the wordless-rule table is incomplete: …
+### the syllabus may not credit a late lesson
+
+- lessons/README.md credits Lesson … with the rising-tone question; Lesson … already asks one, and that lesson page says so itself
 ### no chains
 
 - …: verb chain '… …' predates Lesson …
@@ -115,6 +121,7 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### the names briefing counts itself
 
 - proposal-names.md says … sentences are formally ambiguous; the corpus has …
+- proposal-names.md counts the ambiguous sentences more than once and the counts do not agree: … against a recount of …
 ### the modal-adjective briefing counts itself
 
 - proposal-modal-adjective.md says … blocked combinations; three modals against … adjectives is …

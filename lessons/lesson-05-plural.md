@@ -72,6 +72,6 @@ A plain noun is neither singular nor plural — it is just the thing. *Mi kan an
 
 ## What you can already say
 
-Five lessons, 57 roots. Past, present, future; one thing or many; and a grammar in which no word has ever changed its shape.
+Five lessons, **59 roots**. Past, present, future; one thing or many; and a grammar in which no word has ever changed its shape.
 
 Possession is covered in [Lesson 6](lesson-06-possession.md), questions in [Lesson 7](lesson-07-questions.md).

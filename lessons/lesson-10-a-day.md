@@ -96,6 +96,6 @@ Every verb in that story is in its one and only form. Not one of them changed fo
 
 ## What you can already say
 
-Ten lessons, 88 roots — past the first milestone of 80. You can now tell the story of a whole day, name the body, point here and there, buy and take and make and sleep.
+Ten lessons, **93 roots** — past the first milestone of 80. You can now tell the story of a whole day, name the body, point here and there, buy and take and make and sleep.
 
 **A note on word order.** *situ*, like *sini* and *sasa*, sits at the end of its sentence — place before time. This became the rule in [Lesson 15](lesson-15-pointing-placing.md).

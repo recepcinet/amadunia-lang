@@ -218,6 +218,26 @@ MUTATIONS = [
     ("the names briefing gone stale", "grammar/proposal-names.md",
      f"**{_NAMES} sentences", "**Zero sentences",   # Zero can never be the true count
      "sentences are formally ambiguous; the corpus has"),
+    # The headline count and the closing count are separate strings, so the
+    # headline mutation above cannot reach this one: break only the closing
+    # figure and the second check must still speak.
+    ("the names briefing's second count gone stale", "grammar/proposal-names.md",
+     "sentences already written", "hundred sentences already written",
+     "counts the ambiguous sentences more than once"),
+    ("the syllabus crediting a late lesson with the tone question",
+     "lessons/README.md",
+     "The question words, each standing where its answer would. The yes/no "
+     "question by tone has been in use since Lesson 1.",
+     "Questions: rising tone, and the question word in the answer's place.",
+     "credits Lesson 07 with the rising-tone question"),
+    ("a root introduced as new by two lessons", "lessons/lesson-25-doing-and-being.md",
+     "| dengar | to hear |", "| dengar | to hear |\n| kuat | strong |",
+     "roots are introduced as new by two lessons"),
+    # A plain, unbolded count. Seven lessons stated theirs this way and the
+    # check could not see any of them; bolding is not what makes a claim.
+    ("a lesson's root count wrong and not in bold", "lessons/lesson-05-plural.md",
+     "Five lessons, **59 roots**.", "Five lessons, 57 roots.",
+     "roots taught by here"),
     ("consonant pair missing from phonology.md", "grammar/phonology.md",
      "- `fr` \u2014 *fruta* (fruit), word-initial like *tr*\n", "",
      "does not list the consonant pair 'fr'"),

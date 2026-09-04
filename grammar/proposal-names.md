@@ -97,8 +97,15 @@ own name.
 Whether the marker appears with every name or only where ambiguity is possible;
 whether it also marks place names (*Amadunia* itself is a name and appears
 unmarked five times in [text 3](../texts/text-3-lingua-ini.md)); whether it is
-stressed; and what happens to the thirty-six sentences already written — most
+stressed; and what happens to the forty-two sentences already written — most
 of which, on inspection, would simply gain one word.
+
+That last number was **thirty-six** on this page until September 5, 2026, while
+the paragraph six screens above it said thirty-nine and then forty-two. The
+page that exists to give the founder one reproducible figure was carrying two,
+and [`check.py`](../check.py) was holding only the first of them. It now holds
+every spelled count on the page to the same recount, which is what should have
+happened the day the headline was fixed.
 
 ## The other question still waiting
 

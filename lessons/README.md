@@ -14,7 +14,7 @@ Between them the lessons teach every one of the 300 roots. [`check.py`](../check
 | 4 | [Yesterday, today, tomorrow](lesson-04-tense.md) | Tense: *suda* and *saufa*, and a verb that never changes. |
 | 5 | [More than one](lesson-05-plural.md) | Plural by saying the noun twice; single after a number. |
 | 6 | [Mine, yours, theirs](lesson-06-possession.md) | Possession with nothing added — *dom mi*. |
-| 7 | [Asking](lesson-07-questions.md) | Questions: rising tone, and the question word in the answer's place. |
+| 7 | [Asking](lesson-07-questions.md) | The question words, each standing where its answer would. The yes/no question by tone has been in use since Lesson 1. |
 | 8 | [Getting by](lesson-08-getting-by.md) | Getting through a day somewhere new — please, thanks, sorry, help, money. |
 | 9 | [We, you all, they](lesson-09-pronouns.md) | The full pronoun set, built from the plural rule at no cost. |
 | 10 | [A day](lesson-10-a-day.md) | A whole day told start to finish, in one tense each way. |
@@ -31,8 +31,8 @@ Between them the lessons teach every one of the 300 roots. [`check.py`](../check
 | 21 | [Things and ideas](lesson-21-things-and-ideas.md) | A room and its things, and the first words big enough to describe the language itself. |
 | 22 | [Doing and feeling](lesson-22-doing-and-feeling.md) | Eight verbs, the four elements, and the words a story needs. |
 | 23 | [Everything so far](lesson-23-everything-so-far.md) | The whole language on one page, and an honest list of what it still cannot do. |
-| 24 | [The table and the city](lesson-24-the-table-and-the-city.md) | The table, the city and the calendar — thirty words that reached the dictionary without a lesson. |
-| 25 | [Doing and being](lesson-25-doing-and-being.md) | Fourteen verbs and eighteen qualities, the other half of the same gap. |
+| 24 | [The table and the city](lesson-24-the-table-and-the-city.md) | The table, the city and the calendar — twenty-three words that reached the dictionary without a lesson, and seven more revisited. |
+| 25 | [Doing and being](lesson-25-doing-and-being.md) | Nine verbs and eleven qualities, the other half of the same gap, with twelve earlier words gathered beside them. |
 | 26 | [Telling and answering](lesson-26-telling-and-answering.md) | No new words: the command and the one-word answer, both used since Lesson 1 and neither taught until the rules were granted. |
 
 ## Four words that were in the wrong lessons

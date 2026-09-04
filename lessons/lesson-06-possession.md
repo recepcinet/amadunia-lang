@@ -97,6 +97,6 @@ Double the noun, then add the owner:
 
 ## What you can already say
 
-Six lessons, 57 roots, and still not one word has changed its shape. You can now say whose anything is, to any depth, using only words you already had.
+Six lessons, **60 roots**, and still not one word has changed its shape. You can now say whose anything is, to any depth, using only words you already had.
 
 Questions are covered in [Lesson 7](lesson-07-questions.md).

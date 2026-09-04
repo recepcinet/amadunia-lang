@@ -3,29 +3,31 @@
 *Prerequisite: [Lesson 23](lesson-23-everything-so-far.md).*
 
 These words entered the dictionary when it passed 180 roots and never got a
-lesson of their own. A few you have already met, because the later lessons
-used them before anything taught them; the rest are new here. This one and [the next](lesson-25-doing-and-being.md) close that
-gap. No new grammar — everything here uses rules you already have.
+lesson of their own. This one and [the next](lesson-25-doing-and-being.md)
+close that gap. No new grammar — everything here uses rules you already have.
+
+Twenty-three words are new here. Seven more are in the sentences below because
+this is where they group, and they are listed apart, under the lesson that
+actually taught them. Until September 5, 2026 all thirty sat in one table
+headed **New words**, which told a learner that a word from Lesson 18 was new
+in Lesson 24.
 
 ## New words
 
 | Word | Meaning | | Word | Meaning |
 |---|---|---|---|---|
-| fruta | fruit | | bulan | moon |
-| nyama | meat | | stela | star |
-| risi | rice | | madina | city |
-| namak | salt | | negara | country |
-| sukar | sugar | | tempat | place |
-| kafe | coffee | | ponte | bridge |
+| nyama | meat | | bulan | moon |
+| risi | rice | | stela | star |
+| namak | salt | | tempat | place |
+| sukar | sugar | | ponte | bridge |
 | gelas | glass | | banka | bank |
 | piring | plate | | hospital | hospital |
 | sikin | knife | | restoran | restaurant |
-| kaki | foot, leg | | hafta | week |
-| kalb | heart | | mausim | season |
+| kaki | foot, leg | | mausim | season |
+| kalb | heart | | momen | moment |
 | korpo | body | | | |
-| mulut | mouth | | besok | tomorrow |
 | nasab | relative | | | |
-| tempo | time | | momen | moment |
+| tempo | time | | | |
 
 **Also introduced here** — these appear in the sentences below, and nothing before this lesson has taught them:
 
@@ -33,6 +35,26 @@ gap. No new grammar — everything here uses rules you already have.
 |---|---|
 | dekat | near |
 | lihat | to look, to watch |
+## Words you already have
+
+Seven of the words in this lesson are not new. They belong to the table and the
+city as much as the rest, so they appear in the sentences below — but you met
+each of them earlier, and this is where each was taught.
+
+| Word | Meaning | Taught in |
+|---|---|---|
+| besok | tomorrow | [Lesson 4](lesson-04-tense.md) |
+| hafta | week | [Lesson 18](lesson-18-comparing-and-joining.md) |
+| kafe | coffee | [Lesson 18](lesson-18-comparing-and-joining.md) |
+| madina | city | [Lesson 18](lesson-18-comparing-and-joining.md) |
+| negara | country | [Lesson 18](lesson-18-comparing-and-joining.md) |
+| fruta | fruit | [Lesson 20](lesson-20-colours-and-health.md) |
+| mulut | mouth | [Lesson 20](lesson-20-colours-and-health.md) |
+
+*besok* is the plainest of them: it was moved to Lesson 4 on September 4, 2026,
+because that lesson is called *Yesterday, today, tomorrow*. The move was made
+and this table was not trimmed, so for a day the word was new in two places.
+
 ## On the table
 
 | | |

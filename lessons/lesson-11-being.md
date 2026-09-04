@@ -2,13 +2,20 @@
 
 *Prerequisite: [Lesson 10](lesson-10-a-day.md).*
 
-## New word
+## No new word
 
-| Word | Meaning |
-|---|---|
-| es | is, am, are — before a noun |
+| Word | Meaning | Taught in |
+|---|---|---|
+| es | is, am, are — before a noun | [Lesson 6](lesson-06-possession.md) |
 
-One word. It is the most widely shared word on Earth: Spanish *es*, English *is*, German *ist*, Russian *est'*, Hindi *hai*, Persian *ast*, Latin *est*. You already know it.
+Nothing new here. *es* arrived five lessons ago, in one line at the foot of the
+possession lesson, because Lesson 7 could not ask *Yu es kim?* without it. It is
+the most widely shared word on Earth — Spanish *es*, English *is*, German *ist*,
+Russian *est'*, Hindi *hai*, Persian *ast*, Latin *est* — and you have been
+using it since. This lesson is where it gets its rule stated in full.
+
+This page called it a new word until September 5, 2026, which meant a learner
+was told twice that the same word was new.
 
 ## Before a noun: es
 
@@ -90,6 +97,6 @@ Adjectives and place words take the tense word themselves — no *es*:
 
 ## What you can already say
 
-Eleven lessons, 89 roots. You can say what anything is, was or will be, and what it is like — and you have learned exactly one word to do it.
+Eleven lessons, **93 roots** — not one of them new on this page. You can say what anything is, was or will be, and what it is like, and the whole of it rests on one word you already had.
 
 Negation is covered in [Lesson 14](lesson-14-not-and.md) — *Mi no es doktor*. See the open questions in [grammar/](../grammar/).
