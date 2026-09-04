@@ -109,7 +109,17 @@ they are: [*Uan*](../texts/text-5-uan.md) uses 21 roots and
 [*Kaifa suru ca*](../texts/text-8-kaifa-suru-ca.md) uses 19, but each reaches
 for one word that arrives late.
 
-**Knowing every word is not the same as understanding the sentence.** This page
-measures vocabulary only. A text may also use a rule a learner has not met —
-the verb chain does not arrive until Lesson 17 — so the lesson named here is the
-earliest a text becomes *possible*, not the point at which it becomes easy.
+**Knowing every word is not the same as understanding the sentence**, and this
+page measures vocabulary. The obvious worry is that a text might also need a
+rule the learner has not met — the verb chain does not arrive until Lesson 17,
+existence and comparison until 18.
+
+**Measured on September 5, 2026: it never happens.** For all twenty-one texts
+the latest rule a text uses arrives no later than its latest word, so the
+number in this table is the binding constraint and not half of one. The widest
+margin is [text 17](../texts/text-17-tren-aur-farasi.md), which needs nothing
+after Lesson 15 and waits until 25 for a word.
+
+That is a fact about how the texts were written rather than a law, so
+[`check.py`](../check.py) holds it: a text whose grammar outran its vocabulary
+would make this table understate what a reader needs.

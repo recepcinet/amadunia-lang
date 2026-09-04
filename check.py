@@ -1094,6 +1094,54 @@ for path in PROSE:
                          f"question word stands where the answer will stand, so it "
                          f"follows es: {sent}")
 
+# ------------------------------- the ladder's number is the binding one
+# reading-ladder.md counts vocabulary, and the worry it names is that a text
+# might need a rule later than its last word — which would make every row an
+# understatement. Measured across all twenty-one texts, it never happens, so
+# the page says so and this holds it. The rule-to-lesson map is the one
+# lessons/README.md publishes for the wordless rules, extended with the rules
+# that arrive with a word of their own.
+_RULE_LESSON = {"tense": 4, "plural": 5, "possession": 6, "question": 7,
+                "command": 10, "copula": 11, "adverb": 12, "negation": 14,
+                "conjunction": 14, "demonstrative": 15, "place": 15, "una": 15,
+                "verb chain": 17, "existence": 18, "comparison": 18,
+                "subordination": 18}
+_ladrows = {}
+for _l in read("lessons/reading-ladder.md").splitlines():
+    _m = re.match(r"\| \[([^\]]+)\]\(\.\./texts/([^)]+)\) \| (\d+) \|", _l)
+    if _m: _ladrows[_m.group(2)] = int(_m.group(3))
+for _p in sorted(glob.glob("texts/*.md")):
+    _f = os.path.basename(_p)
+    if _f not in _ladrows: continue
+    _tb = read(_p)
+    if "```" not in _tb: continue
+    _need = set()
+    for _line, _sent, _toks in amadunia_runs("".join(_tb.split("```")[1::2])):
+        _t = [_x.lower() for _x in _toks]
+        if {"suda", "saufa"} & set(_t): _need.add("tense")
+        if any("-" in _x and _x.split("-")[0] == _x.split("-")[-1] for _x in _toks):
+            _need.add("plural")
+        if "es" in _t: _need.add("copula")
+        if _t[0] == "es" or (len(_t) > 1 and _t[0] == "no" and _t[1] == "es"):
+            _need.add("existence")
+        if "no" in _t: _need.add("negation")
+        if {"aur", "o"} & set(_t): _need.add("conjunction")
+        if "?" in _line: _need.add("question")
+        if {"ini", "itu"} & set(_t): _need.add("demonstrative")
+        if {"in", "dari", "por"} & set(_t): _need.add("place")
+        if "una" in _t: _need.add("una")
+        if any(_a in VERBS and _b in VERBS for _a, _b in zip(_t, _t[1:])):
+            _need.add("verb chain")
+        if {"lebi", "kurang", "paling", "kadar"} & set(_t): _need.add("comparison")
+        if {"porke", "kab", "agar"} & set(_t): _need.add("subordination")
+        if any(_a in VERBS and _b in ADJECTIVES for _a, _b in zip(_t, _t[1:])):
+            _need.add("adverb")
+        if _t[0] in VERBS and _t[0] != "es": _need.add("command")
+    _g = max([_RULE_LESSON[_k] for _k in _need] + [0])
+    check(_g <= _ladrows[_f],
+          f"{_f}: the reading ladder says Lesson {_ladrows[_f]}, but the text "
+          f"uses a rule that arrives in Lesson {_g} — the row understates it")
+
 # --------------------------------------------- the number comes first
 # plural.md: a number stands before its noun and the noun stays single — tri
 # anak, du dom. The existing check tests the second half in one direction, a
