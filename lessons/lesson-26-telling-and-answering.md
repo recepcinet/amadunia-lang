@@ -108,7 +108,7 @@ Seven of those eleven sentences are commands or one-word turns — four commands
 2. No nomu akua itu. — *Do not drink that water.*
 3. Lai sini aur otur. — *Come here and sit.*
 4. — Yu mau ca o kafe? — Ca. — *Do you want tea or coffee? — Tea.*
-5. Kara libro ini hao. — *Read this book well.*
+5. Kara hao libro ini. — *Read this book well.* — the adverb stays with its verb; *Kara libro ini hao* would be "read this good book".
 6. Yu kara libro ini. — *You read this book.* — a statement, because it has a subject.
 
 ## What this lesson could not do

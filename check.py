@@ -773,6 +773,39 @@ for path in PROSE:
             check(False, f"{os.path.basename(path)} line {_n}: '{_unk[0]}' is not a "
                          f"word in the dictionary: {_cell.strip()}")
 
+# ------------------------------------------------ the adverb keeps its verb
+# adverbs.md: the adjective goes straight after the verb and before the
+# object, because after the object it attaches to the object instead — the
+# page states the pair itself, *Mi kara hao libro* against *Mi kara libro
+# hao*, "I read a book well" against "I read a good book". Lesson 26 printed
+# the second and glossed it as the first, in a practice item, one turn after
+# that lesson was written. Nothing could see it: every other adverb check asks
+# where the adjective is, not what the English claims it means.
+# A gloss naming an adverb is the evidence, so the check needs both halves.
+# Measured before it was narrowed: without splitting a cell into sentences and
+# without excluding subordinate clauses it returns five lines and one is real.
+_ADVGLOSS = re.compile(r"\b(well|fast|quickly|slowly|badly|strongly|loudly)\b", re.I)
+_SUBORD = {"porke", "kab", "agar"}
+for _p in PROSE:
+    for _l in read(_p).splitlines():
+        _s = _l.strip()
+        # re.match, not fullmatch: a practice line may carry a note after the
+        # gloss, and the first mutation written for this check added one and
+        # so slipped past the pattern rather than past the rule.
+        _m = (re.fullmatch(r"\|([^|]+)\|([^|]+)\|", _s)
+              or re.match(r"(\d+\. [^—]+)— \*([^*]+)\*", _s))
+        if not _m or not _ADVGLOSS.search(_m.group(2)): continue
+        for _piece in re.split(r"[.!?]", re.sub(r"^\d+\.\s*", "", _m.group(1))):
+            _t = re.findall(r"[a-z]+", _piece.lower())
+            if len(_t) < 3 or not all(_x in words for _x in _t): continue
+            if set(_t) & _SUBORD or _t[-1] not in ADJECTIVES: continue
+            _vi = [_i for _i, _x in enumerate(_t) if _x in VERBS and _x != "es"]
+            if not _vi or _vi[-1] == len(_t) - 2: continue
+            check(False,
+                  f"{os.path.basename(_p)}: '{_piece.strip()}' is glossed as an "
+                  f"adverb but *{_t[-1]}* stands after the object, where it "
+                  f"describes the object: {_m.group(2).strip()}")
+
 # ------------------------------------------- an adjective's English name
 # Nothing here checks a translation, and a wrong one is invisible to every
 # other rule: Lesson 13 glossed *Rat cang, din keci* as "the night is long,
