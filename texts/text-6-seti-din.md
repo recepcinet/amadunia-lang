@@ -34,7 +34,7 @@ Mesin ambil foto korpo anak. Doktor lihat foto.
 Mama tanya: "Kalb anak mal?"
 Doktor respon: "No. Kalb anak hao.
 Korpo ta kuat. Ide yu yanlis."
-Doktor beri ilac mama.
+Doktor beri ilac por mama.
 "Anak nomu ilac ba din."
 
 Anak nomu ilac ba din. Ta lala cok. Ta kula tena.
@@ -72,7 +72,7 @@ Anak go skola tena. Ta senang.
 | Kalb anak hao. | The child's heart is good. |
 | Korpo ta kuat. | His body is strong. |
 | Ide yu yanlis. | Your idea is wrong. |
-| Doktor beri ilac mama. | The doctor gives the mother medicine. |
+| Doktor beri ilac por mama. | The doctor gives the mother medicine. |
 | "Anak nomu ilac ba din." | "The child drinks the medicine for eight days." |
 | Ta lala cok. | He sleeps a lot. |
 | Ta kula tena. | He eats again. |
@@ -129,4 +129,4 @@ what the absence cost.
 
 ## Roots used
 
-57 of 300.
+58 of 300.

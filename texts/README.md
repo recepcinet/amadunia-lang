@@ -39,7 +39,7 @@ of them. The leaders are *RVN* at 8.6% (*Ta-ta lihat stela-stela*), *NA* at
 7.5% (*Sol kabir*) and *NV* at 4.8% (*Anak sema*). [`check.py`](../check.py)
 recounts the two headline numbers.
 
-**1404 of the 1665 are distinct — 84%.** The corpus is not padded with
+**1403 of the 1665 are distinct — 84%.** The corpus is not padded with
 repeats: the most repeated sentence appears seven times across four files and
 is *Mi sema*, "I say", which is a quotation frame rather than a sentence
 anybody is making. That matters for
@@ -73,7 +73,7 @@ These are original compositions, not translations. Translating an existing book 
 | [Lingua ini](text-3-lingua-ini.md) | 43 | 300 roots, Lessons 1-23 — an argument, not a story |
 | [In madina baru](text-4-in-madina-baru.md) | 63 | 300 roots, Lessons 1-23 — a dialogue |
 | [Uan](text-5-uan.md) | 21 | 300 roots, Lessons 1-23 — a poem |
-| [Seti din](text-6-seti-din.md) | 57 | 300 roots, Lessons 1-23 — a story, written to reach the unreached roots |
+| [Seti din](text-6-seti-din.md) | 58 | 300 roots, Lessons 1-23 — a story, written to reach the unreached roots |
 | [Surat por mama](text-7-surat-por-mama.md) | 54 | 300 roots, Lessons 1-23 — a letter |
 | [Kaifa suru ca](text-8-kaifa-suru-ca.md) | 19 | 300 roots, Lessons 1-23 — instructions, written without the imperative the language lacks |
 | [Pagi in madina](text-9-pagi-in-madina.md) | 56 | 300 roots, Lessons 1-23 — an errand, written from the frequency list to reach the tail |

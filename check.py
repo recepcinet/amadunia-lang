@@ -1142,6 +1142,28 @@ for _p in sorted(glob.glob("texts/*.md")):
           f"{_f}: the reading ladder says Lesson {_ladrows[_f]}, but the text "
           f"uses a rule that arrives in Lesson {_g} — the row understates it")
 
+# ------------------------------------------- giving needs por
+# place.md states it with its reasoning: "Mi beri pan dugu mi" reads, by the
+# possession rule, as "I give my sibling's bread". The recipient needs por to
+# stay apart from an owner. Nothing held it, and text 6 had "Doktor beri ilac
+# mama" — the mother's medicine — since it was written.
+_GIVENOUNS = (set(words) - ADJECTIVES - VERBS - NUMBERS - FUNCTION) | {"mi", "yu", "ta", "kita"}
+for path in PROSE:
+    body = read(path)
+    if path.startswith("texts/") and "```" in body:
+        body = "".join(body.split("```")[1::2])
+    for line, sent, toks in amadunia_runs(body):
+        if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗")): continue
+        base = [t.split("-")[0] for t in toks]
+        for _i, _w in enumerate(base):
+            if _w != "beri": continue
+            _rest = base[_i + 1:]
+            _ns = [_j for _j, _x in enumerate(_rest) if _x in _GIVENOUNS]
+            if len(_ns) >= 2 and _ns[1] == _ns[0] + 1 and "por" not in _rest[:_ns[1] + 1]:
+                check(False, f"{os.path.basename(path)}: '{_rest[_ns[0]]} {_rest[_ns[1]]}' "
+                             f"after beri — a recipient takes por, or it reads as an "
+                             f"owner: {sent}")
+
 # --------------------------------------------- the number comes first
 # plural.md: a number stands before its noun and the noun stays single — tri
 # anak, du dom. The existing check tests the second half in one direction, a

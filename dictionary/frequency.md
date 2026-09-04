@@ -3,7 +3,7 @@
 Generated from the material a learner reads — the twenty-six lessons, the
 twenty texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **5769 words of running Amadunia**, and every one of the 300 roots appears
+it. **5770 words of running Amadunia**, and every one of the 300 roots appears
 at least once.
 
 [`check.py`](../check.py) regenerates this page and fails if it disagrees, so
@@ -68,10 +68,10 @@ cover half of everything.** They are the first twenty-five below.
 | 33 | *doktor* | doctor | 37 | 0.6% |
 | 34 | *sasa* | now | 37 | 0.6% |
 | 35 | *sini* | here | 37 | 0.6% |
-| 36 | *una* | together; *una* + noun = with — see [grammar/place.md](../grammar/place.md) | 36 | 0.6% |
-| 37 | *akua* | water | 35 | 0.6% |
-| 38 | *insan* | person, human | 35 | 0.6% |
-| 39 | *por* | to, for | 35 | 0.6% |
+| 36 | *por* | to, for | 36 | 0.6% |
+| 37 | *una* | together; *una* + noun = with — see [grammar/place.md](../grammar/place.md) | 36 | 0.6% |
+| 38 | *akua* | water | 35 | 0.6% |
+| 39 | *insan* | person, human | 35 | 0.6% |
 | 40 | *skola* | school | 35 | 0.6% |
 
 ## Used exactly once

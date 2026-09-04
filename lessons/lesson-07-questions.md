@@ -42,10 +42,16 @@ Take the sentence that would be the answer. Replace the thing you do not know wi
 | **Rafiki** lai. | **Kim** lai? | Who is coming? |
 | Yu go **dom**. | Yu go **nali**? | Where are you going? |
 | Yu lai **din**. | Yu lai **kab**? | When do you come? |
-| Yu go **taksi**. | Yu go **kaifa**? | How do you go? |
+| — | Yu go **kaifa**? | How do you go? |
 | Yu kan **tri** anak. | Yu kan **berapa** anak? | How many children do you see? |
 
 Look down the two columns. Every question is its own answer with one word changed. There is no other pattern to learn.
+
+**One row has no answer yet, and that is honest.** *Yu go kaifa?* asks how, and
+the language cannot yet say *by taxi* or *quickly*: the adverb arrives in
+[Lesson 12](lesson-12-colors-directions.md) and *una*, with, in
+[Lesson 15](lesson-15-pointing-placing.md). The question word is taught here
+because it belongs with the others; its answers come later.
 
 ## Why
 
@@ -84,10 +90,10 @@ Both are correct. The short one leans on tone; the full one does not need it.
 > — Sol suda go dom.
 > — Ta saufa lai kab?
 > — Rat. Yu mau ca?
-> — Ya! Yu suda beri ca berapa rafiki?
+> — Ya! Berapa rafiki suda nomu ca yu?
 > — Cok! Cok rafiki suda nomu ca mi.
 
-*Hello! What's your name? — My name is Luma. Who are you? — I'm Sol's friend. Where is Sol? — Sol went home. — When will she come? — Tonight. Do you want tea? — Yes! How many friends did you give tea to? — Many! Many friends drank my tea.*
+*Hello! What's your name? — My name is Luma. Who are you? — I'm Sol's friend. Where is Sol? — Sol went home. — When will she come? — Tonight. Do you want tea? — Yes! How many friends drank your tea? — Many! Many friends drank my tea.*
 
 ## Practice
 
