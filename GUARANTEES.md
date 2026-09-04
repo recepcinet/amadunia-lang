@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**116 guarantees** in **55 groups**, and every one of them is
+**118 guarantees** in **55 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -154,6 +154,8 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - …: '… … …' — the owner comes before the adjective: …
 ### numbers parse
 
+- the dictionary gives … roots glossed as a bare number; the number system is eleven digits and bases plus mila
+- …: the digit table does not match the dictionary, which gives …
 - …: '…' does not build a number — …
 ### the guarantee list
 

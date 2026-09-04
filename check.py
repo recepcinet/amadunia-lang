@@ -1048,8 +1048,25 @@ for path in PROSE:
 # (du-des, twenty), a digit after it adds to it (des-uan, eleven). Nothing
 # checked the order, so uan-des — a second spelling of ten — would have passed.
 # Sixteen compounds are in use and all sixteen parse.
-_VAL = {"uan": 1, "du": 2, "tri": 3, "pat": 4, "fai": 5, "sis": 6, "seti": 7,
-        "ba": 8, "nau": 9, "des": 10, "sen": 100, "mila": 1000}
+# This map used to be written out here, which made the digits a fourth copy of
+# the same data — the dictionary, the front page, numbers.md and this file. A
+# digit changed in the dictionary would have left the checker measuring the
+# old value in silence. Derived from the glosses now: a root glossed with
+# nothing but digits is a number and is worth what it says.
+_VAL = {_w: int(meaning[_w]) for _w in words
+        if re.fullmatch(r"\d+", meaning[_w].strip())}
+check(len(_VAL) == 12,
+      f"the dictionary gives {len(_VAL)} roots glossed as a bare number; the "
+      f"number system is eleven digits and bases plus mila")
+
+# The digit table is printed twice, on the front page and in numbers.md, and
+# neither copy was tied to the dictionary. Both are checked against it.
+_DIGITS = " | ".join(_w for _w, _v in sorted(_VAL.items(), key=lambda kv: kv[1])
+                     if _v <= 10)
+for _p in ("README.md", "grammar/numbers.md"):
+    check(f"| {_DIGITS} |" in read(_p),
+          f"{_p}: the digit table does not match the dictionary, which gives "
+          f"{_DIGITS}")
 _SHOWING = ("would be", "wrong", "never written", "not written",
             "second spelling", "✗")
 
