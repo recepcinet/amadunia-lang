@@ -153,10 +153,16 @@ check(not (indexed - set(words)), f"index-english lists non-words: {sorted(index
 check(not (set(words) - indexed), f"index-english is missing: {sorted(set(words) - indexed)}")
 
 gi = read("grammar/README.md")
+# The link has to be in the index's own table, not merely somewhere on the
+# page. Asking only whether the name appears anywhere made the check pass
+# after a row lost its link, because the opening paragraph names the briefings
+# too — and the mutation for it stopped firing without the check changing.
+_girows = [_l for _l in gi.splitlines() if _l.startswith("| ")]
 for p in glob.glob("grammar/*.md"):
     b = os.path.basename(p)
     if b != "README.md":
-        check(f"]({b})" in gi, f"grammar/README.md does not link {b}")
+        check(any(f"]({b})" in _r for _r in _girows),
+              f"grammar/README.md does not link {b} from its table")
 li = read("lessons/README.md")
 for p in glob.glob("lessons/*.md"):
     b = os.path.basename(p)
@@ -1269,6 +1275,30 @@ for _m in re.finditer(r"^## (.+)\n\n(.+)$", read("dictionary/a1-checklist.md"), 
 check(f"**{_a1present} of {_a1tot} are present" in _a2,
       f"proposal-a2.md's checklist total is stale; recount gives "
       f"{_a1present} of {_a1tot}")
+
+# --------------------------------------- how many rules, how many briefings
+# The front page said 17 rules while its own status section said twenty-one
+# and the directory held twenty-one, and the grammar index said four briefings
+# when there were seven. Both numbers are counted from the files now: a rule
+# page is a grammar page that is not the index and not a briefing, and a
+# briefing is a proposal-*.md.
+_RULEFILES = [os.path.basename(_p) for _p in glob.glob("grammar/*.md")
+              if os.path.basename(_p) != "README.md"
+              and not os.path.basename(_p).startswith("proposal-")]
+_BRIEFS = [os.path.basename(_p) for _p in glob.glob("grammar/proposal-*.md")]
+_OPENBRIEFS = [_f for _f in _BRIEFS
+               if not re.search(r"^\*\*Decided on ", read("grammar/" + _f), re.M)]
+check(f"| {len(_RULEFILES)} rules —" in read("README.md"),
+      f"README.md's directory table does not say '{len(_RULEFILES)} rules'; "
+      f"grammar/ holds that many rule pages")
+check(f"and {len(_BRIEFS)} briefings" in read("README.md"),
+      f"README.md's directory table does not say '{len(_BRIEFS)} briefings'; "
+      f"grammar/ holds that many")
+_gh = read("grammar/README.md")
+check(f"and {['zero','one','two','three','four','five','six','seven','eight','nine','ten'][len(_BRIEFS)]} briefings" in _gh.lower(),
+      f"grammar/README.md does not say there are {len(_BRIEFS)} briefings")
+check(f"**{['Zero','One','Two','Three','Four','Five','Six','Seven'][len(_OPENBRIEFS)]} briefings are open**" in _gh,
+      f"grammar/README.md does not say {len(_OPENBRIEFS)} briefings are open")
 
 # ------------------------------------- every rule is exercised, not just used
 # texts/README.md says every settled rule is exercised by the texts. The first

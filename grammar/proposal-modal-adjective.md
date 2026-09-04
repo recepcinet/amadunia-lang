@@ -106,6 +106,6 @@ is a verb taking a noun, is affected at all.
 
 ---
 
-**All four briefings are now written.** None decides anything. Together with
+**All the briefings are now written** — four then, seven now. None decides anything. Together with
 [the ordering](README.md) they are what the founder needs to settle the four
 places where Amadunia has been using something it never granted itself.

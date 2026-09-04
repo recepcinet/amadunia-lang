@@ -236,14 +236,14 @@ Follow the commits to watch a language grow in real time.
 | know why a rule is the way it is | [grammar/](grammar/) — each page ends with what it rejected |
 | read the language, not lessons about it | [texts/](texts/) — twenty original pieces |
 | add a word | [CONTRIBUTING.md](CONTRIBUTING.md) |
-| answer one of the open questions | [grammar/README.md](grammar/README.md) |
+| answer one of the open questions | [grammar/README.md](grammar/README.md) — and five of the thirty-two already have [a briefing](grammar/) that measures the evidence without making the choice |
 
 ## What's here
 
 | | |
 |---|---|
 | [lessons/](lessons/) | 26 lessons in order, teaching every one of the 300 roots |
-| [grammar/](grammar/) | 17 rules — what was settled, why, and what was rejected — and the decisions still to make |
+| [grammar/](grammar/) | 21 rules — what was settled, why, and what was rejected — and 7 briefings, five of them waiting on a decision |
 | [dictionary/](dictionary/) | 300 roots with sourced etymologies, [the English index](dictionary/index-english.md) for writing, and [where they come from](dictionary/balance.md) |
 | [texts/](texts/) | twenty original pieces — ten stories, two arguments, two dialogues, a poem, a letter, a recipe, a walk to school, a shared meal, a room — each ending with what the language could not say |
 | [phrasebook.md](phrasebook.md) | the practical page — greeting, directions, buying, trouble |

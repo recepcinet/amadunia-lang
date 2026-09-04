@@ -1,6 +1,6 @@
 # Grammar
 
-Twenty-one rules and four briefings, one decision each. Two of the briefings are still open; [stress](proposal-stress.md) and [the imperative and the fragment](proposal-sentence-types.md) were decided on September 3, 2026. Every one records what was settled, why, which candidates were rejected and on what ground, and what it left open.
+Twenty-one rules and seven briefings, one decision each. **Five briefings are open**: [a mark for a name](proposal-names.md), ["want to be" plus an adjective](proposal-modal-adjective.md), [a word for "but"](proposal-but.md), [where a frequency adverb stands](proposal-frequency.md) and [whether a root may hold two jobs](proposal-two-jobs.md). Two are closed: [stress](proposal-stress.md) and [the imperative and the fragment](proposal-sentence-types.md), both decided on September 3, 2026. Every page records what was settled, why, which candidates were rejected and on what ground, and what it left open.
 
 ## The rules
 

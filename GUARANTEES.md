@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**120 guarantees** in **57 groups**, and every one of them is
+**124 guarantees** in **58 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -44,7 +44,7 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - index-english lists non-words: …
 - index-english is missing: …
-- grammar/README.md does not link …
+- grammar/README.md does not link … from its table
 - lessons/README.md does not link …
 - …: no '## Open questions' section — a rule records what it left open, even if that is nothing
 - grammar/README.md lists … open questions under …; ….md has …
@@ -182,6 +182,12 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - proposal-a2.md's checklist row for '…' is stale; the dictionary has … of …
 - proposal-a2.md's checklist total is stale; recount gives … of …
+### how many rules, how many briefings
+
+- README.md's directory table does not say '… rules'; grammar/ holds that many rule pages
+- README.md's directory table does not say '… briefings'; grammar/ holds that many
+- grammar/README.md does not say there are … briefings
+- grammar/README.md does not say … briefings are open
 ### every rule is exercised, not just used
 
 - texts/README.md claims a floor of '…' texts per rule; the thinnest is … in …
