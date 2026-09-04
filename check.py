@@ -1215,6 +1215,25 @@ check(not unused, f"{len(unused)} roots are never used in a sentence, only "
                   f"glossed: {', '.join(unused[:12])}"
                   + (" ..." if len(unused) > 12 else ""))
 
+# ------------------------------------------- madad is still held back
+# proposal-two-jobs.md rests on madad appearing in no sentence anywhere, which
+# is what makes its decision free. The moment anything writes a sentence with
+# it, the open question is being answered by use rather than by decision, and
+# the briefing's central claim stops being true. The phrasebook's list of bare
+# words separated by dots is a list, not an utterance, and is not a sentence.
+_madad = []
+for _p in (sorted(glob.glob("lessons/lesson-*.md"))
+           + sorted(glob.glob("texts/*.md")) + ["phrasebook.md"]):
+    _mb = read(_p)
+    if _p.startswith("texts/") and "```" in _mb: _mb = "".join(_mb.split("```")[1::2])
+    for _line, _sent, _toks in amadunia_runs(_mb):
+        if "·" in _line: continue
+        if "madad" in [_x.lower() for _x in _toks]:
+            _madad.append(f"{os.path.basename(_p)}: {_sent.strip()}")
+check(not _madad,
+      f"madad is used in {len(_madad)} sentence(s) — {_madad[0] if _madad else ''} "
+      f"— which answers the open question by use; see proposal-two-jobs.md")
+
 # ------------------------------------ the frequency briefing counts itself
 # proposal-frequency.md rests on a count of where daima and kadang stand, and
 # the count is what adverbs.md got wrong: it said they sit in the adverb slot

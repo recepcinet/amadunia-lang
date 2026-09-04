@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**108 guarantees** in **51 groups**, and every one of them is
+**109 guarantees** in **52 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -176,6 +176,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### root in use
 
 - …
+### madad is still held back
+
+- madad is used in … sentence(s) — … — which answers the open question by use; see proposal-two-jobs.md
 ### the frequency briefing counts itself
 
 - proposal-frequency.md's row for '…' is stale; the corpus has …

@@ -98,7 +98,7 @@ And every candidate collided anyway:
 ## Open questions
 
 - ~~A different subject~~ — settled in [subordination.md](subordination.md): *Mi mau yu kula* is a clause standing where an object stands, and needs no marker.
-- **Words that are both noun and verb.** *madad* is glossed "help; to help", so *Mi mau madad* is "I want help" **or** "I want to help". The chain rule made this visible for the first time.
+- **Words that are both noun and verb.** *madad* is glossed "help; to help", so *Mi mau madad* is "I want help" **or** "I want to help". The chain rule made this visible for the first time. [A briefing now separates the two roots](proposal-two-jobs.md): *madad* has never been used in a sentence at all, so its decision costs nothing, while *rabota* has eighteen sentences at stake.
 
   The dictionary was audited on September 3, 2026 by reading glosses, and that audit said madad was the only case in all 300 roots. **It was wrong,** because it read the dictionary and not the sentences. *rabota* is glossed "work", one noun, and is used as a verb in 13 places and as a noun in 6 — *Mi rabota sini* is I work here, *Kita finis rabota* is we finish the work. It reproduces the madad problem exactly: *Ta suda lasim rabota* is both "she had to work" and "she had to have work." Two others looked like cases and are not: *bisa* ("can, to be able") and *lasim* ("must, to have to") are one modal verb under two English glosses, not a noun beside a verb.
 
