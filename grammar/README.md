@@ -32,6 +32,7 @@ Twenty-one rules and four briefings, one decision each. Two of the briefings are
 
 | | |
 |---|---|
+| [proposal-frequency.md](proposal-frequency.md) | Where *daima* and *kadang* stand. Thirteen uses in three positions; *tena* settled itself 21 of 21. **Open — the founder's call.** |
 | [proposal-but.md](proposal-but.md) | A word for "but". Six pages wanted one and Lesson 12 invented one; *lakin* reaches five families. **Open — the founder's call.** |
 | [proposal-stress.md](proposal-stress.md) | The briefing the open questions put first. **Decided September 3, 2026** — the rule is [stress.md](stress.md); this is the record of what it was decided on. |
 | [proposal-sentence-types.md](proposal-sentence-types.md) | The imperative and the fragment. **Decided September 3, 2026** — the rules are [sentence-types.md](sentence-types.md). |
@@ -147,7 +148,7 @@ measurement with its method stated, to be re-run rather than trusted.
 
 - **Adverbs of degree on adverbs** — "very quickly" — needs a word for "very". *cok* is "much"; whether it covers "very" is untested.
 - **Whether *daima* covers "forever".** Glossed "always", from Arabic *dāʾiman*, which carries both. *Natura hidup daima* would say nature lives forever. One word for habit and endlessness, where most languages use two.
-- **Frequency adverbs.** *daima* (always) and *kadang* (sometimes) are adverbs by meaning but not adjectives, and they sit in the adverb slot with everything else — *Mi kula daima pan*. Most languages put frequency before the verb instead. Whether Amadunia should make an exception for them is not yet decided; until it is, they follow the ordinary rule.
+- **Frequency adverbs.** *daima* (always) and *kadang* (sometimes) are adverbs by meaning but not adjectives. This page used to say they sit in the adverb slot with everything else; **counted on September 4, 2026, two of their thirteen uses do.** Five stand before the verb and six after the object, and Lesson 19 alone uses all three positions. [A briefing measures it and costs the three answers](proposal-frequency.md). Until it is decided the word *kadang* cannot be written at all, because any sentence using it would settle the question by accident.
 
 **[comparison](comparison.md)**
 

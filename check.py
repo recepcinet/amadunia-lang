@@ -1215,6 +1215,47 @@ check(not unused, f"{len(unused)} roots are never used in a sentence, only "
                   f"glossed: {', '.join(unused[:12])}"
                   + (" ..." if len(unused) > 12 else ""))
 
+# ------------------------------------ the frequency briefing counts itself
+# proposal-frequency.md rests on a count of where daima and kadang stand, and
+# the count is what adverbs.md got wrong: it said they sit in the adverb slot
+# and two of thirteen do. A page that corrects a miscount has to be recounted
+# itself, so the three positions and tena's 33 of 34 are derived here.
+_FREQPOS = {"before the verb": 0, "the adverb slot": 0, "after the object": 0}
+_TENA = [0, 0]                                  # final, not final
+# Scope is the material — the lessons, the texts and the phrasebook — and not
+# the grammar pages, which quote these sentences to discuss them. Counting
+# those too made the briefing count itself the moment it was written: 22 uses
+# instead of 13, because every example it prints came back as evidence.
+_seen4 = set()
+for _p in (sorted(glob.glob("lessons/lesson-*.md"))
+           + sorted(glob.glob("texts/*.md")) + ["phrasebook.md"]):
+    _fb = read(_p)
+    if _p.startswith("texts/") and "```" in _fb: _fb = "".join(_fb.split("```")[1::2])
+    for _line, _sent, _toks in amadunia_runs(_fb):
+        _t = [_x.lower() for _x in _toks]
+        _key = (_p, _sent.strip())
+        if _key in _seen4: continue
+        if "tena" in _t:
+            _TENA[0 if _t[-1] == "tena" else 1] += 1
+            _seen4.add(_key)
+        for _w in ("daima", "kadang"):
+            if _w not in _t: continue
+            _seen4.add(_key)
+            _i = _t.index(_w)
+            _vi = [_k for _k, _x in enumerate(_t) if _x in VERBS and _x != "es"]
+            if not _vi:                    _FREQPOS["after the object"] += 1
+            elif _i < _vi[0]:              _FREQPOS["before the verb"] += 1
+            elif _i == _vi[0] + 1:         _FREQPOS["the adverb slot"] += 1
+            else:                          _FREQPOS["after the object"] += 1
+_fq = read("grammar/proposal-frequency.md")
+for _label, _n in _FREQPOS.items():
+    check(re.search(r"\*\*" + _label + r"\*\* \| " + str(_n) + r" \|", _fq),
+          f"proposal-frequency.md's row for '{_label}' is stale; the corpus has {_n}")
+check(f"**{_TENA[0]} of its {sum(_TENA)} uses are last in the sentence**" in _fq,
+      f"proposal-frequency.md's tena figure is stale; recount gives "
+      f"{_TENA[0]} of {sum(_TENA)}")
+
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one
