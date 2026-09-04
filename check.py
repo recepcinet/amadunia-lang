@@ -1206,6 +1206,27 @@ check(not unused, f"{len(unused)} roots are never used in a sentence, only "
                   f"glossed: {', '.join(unused[:12])}"
                   + (" ..." if len(unused) > 12 else ""))
 
+# ------------------------------------------------ used by a text, not a lesson
+# Being taught is not being used. 55 roots had appeared in no text at all, and
+# they were not obscure nouns but the joints of the language — o, kadar,
+# kurang, lasim, berapa, kaifa, fikir. The A2 briefing states the remaining
+# number and it moves every time a text is written, so it is recounted here.
+_INTEXT = set()
+for _p in sorted(glob.glob("texts/*.md")):
+    if _p.endswith("README.md"): continue
+    _src = read(_p)
+    if "```" not in _src: continue
+    for _t in re.findall(r"[a-z]+(?:-[a-z]+)*", _src.split("```")[1].lower()):
+        _INTEXT.update(_t.split("-"))
+_NEVER = sorted(set(words) - _INTEXT)
+_m3 = re.search(r"\*\*(\w+[- ]?\w*) are still unused\*\*", read("dictionary/proposal-a2.md"))
+_WORDNUM = {"thirty-four": 34, "thirty-three": 33, "thirty-two": 32, "thirty-one": 31,
+            "thirty": 30, "twenty-nine": 29, "twenty-eight": 28, "twenty-seven": 27,
+            "twenty-six": 26, "twenty-five": 25, "twenty": 20, "ten": 10, "none": 0}
+check(_m3 and _WORDNUM.get(_m3.group(1).lower()) == len(_NEVER),
+      f"proposal-a2.md says '{_m3.group(1) if _m3 else '?'} are still unused'; "
+      f"{len(_NEVER)} roots appear in no text")
+
 # ------------------------------------------------------- derived documents
 # texts/README.md restates each text's root count; it is not the text's own
 # claim and had nothing checking it.

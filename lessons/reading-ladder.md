@@ -12,24 +12,24 @@ counted with repeats, against the words the lessons have taught by that point.
 | After lesson | Share of the texts' words you know |
 |---|---|
 | 01 | 26% |
-| 02 | 39% |
-| 03 | 50% |
-| 04 | 51% |
-| 05 | 52% |
-| 06 | 53% |
-| 07 | 54% |
-| 08 | 59% |
-| 09 | 59% |
-| 10 | 62% |
-| 11 | 62% |
-| 12 | 65% |
-| 13 | 68% |
-| 14 | 69% |
-| 15 | 75% |
-| 16 | 78% |
-| 17 | 78% |
-| 18 | 80% |
-| 19 | 84% |
+| 02 | 38% |
+| 03 | 49% |
+| 04 | 50% |
+| 05 | 50% |
+| 06 | 52% |
+| 07 | 53% |
+| 08 | 58% |
+| 09 | 58% |
+| 10 | 61% |
+| 11 | 61% |
+| 12 | 64% |
+| 13 | 66% |
+| 14 | 68% |
+| 15 | 73% |
+| 16 | 77% |
+| 17 | 77% |
+| 18 | 79% |
+| 19 | 83% |
 | 20 | 87% |
 | 21 | 90% |
 | 22 | 93% |
@@ -66,6 +66,7 @@ taught.
 | [Lingua ini](../texts/text-3-lingua-ini.md) | 24 |
 | [Uan](../texts/text-5-uan.md) | 24 |
 | [Anak katab](../texts/text-11-anak-katab.md) | 25 |
+| [Berapa harga](../texts/text-16-berapa-harga.md) | 25 |
 | [Kaifa suru ca](../texts/text-8-kaifa-suru-ca.md) | 25 |
 | [Kula una](../texts/text-13-kula-una.md) | 25 |
 | [Mila tahun](../texts/text-10-mila-tahun.md) | 25 |

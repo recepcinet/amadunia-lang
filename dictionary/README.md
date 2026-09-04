@@ -36,16 +36,18 @@ by writing is worth more than a gap found by reading a wordlist.
 | a coin, as against an amount | [text 9](../texts/text-9-pagi-in-madina.md) | *Mi beri fai pesa* is "I give five money" |
 | slowly | [text 11](../texts/text-11-anak-katab.md) | *hayai* is fast and has no opposite, so a child writing *slowly* had to be written as writing *badly* |
 | but | [Lesson 12](../lessons/lesson-12-colors-directions.md) | *— No, eski. Ma hao!* — "no, old, but good". *ma* was invented on the spot and stood in the lesson unnoticed until September 4; the line now reads *No, eski. Hao!* and the contrast is gone |
+| cheap, dear | [text 16](../texts/text-16-berapa-harga.md) | a whole bargaining scene runs on *kabir* and *kurang* — big and less — and says *this price is as big as the price in the new city* where a person would say *this is dear* |
 
-Three of the eight are about how a person feels or where a person hurts, and
+Three of the ten are about how a person feels or where a person hurts, and
 that is where 300 roots turn out to be thinnest — not what a thematic wordlist
 would have predicted. The rest are joints rather than things: a point in the
 day, the word that puts one step after another, the opposite of sitting down,
-the difference between a coin and an amount, and the opposite of *fast*. **Not
-one of the eight is a noun a category would have suggested,** which is the
+the difference between a coin and an amount, the opposite of *fast*, the word
+that contrasts two clauses, and the pair that prices a thing. **Not
+one of the ten is a noun a category would have suggested,** which is the
 whole case for finding gaps by writing.
 
-Seven of the eight were re-checked against the dictionary on September 3,
+The first eight were re-checked against the dictionary on September 3,
 2026, and two entries did not survive it. Comparing one duration with another
 is granted by [comparison.md](../grammar/comparison.md) under a heading called
 *With verbs*. A word for *forever* may already be *daima*, always — whether it

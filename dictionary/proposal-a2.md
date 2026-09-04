@@ -58,7 +58,7 @@ calculation.
 
 ## 3. What the writing has asked for
 
-Seven gaps were found by trying to write something and failing, not by reading
+Ten gaps were found by trying to write something and failing, not by reading
 a list. [They are recorded with the sentence that stopped in each case](README.md#words-the-writing-has-asked-for):
 pain, love as a noun, to miss someone, the clock, a word for *then*, standing
 up, and a coin as against an amount.
@@ -67,6 +67,37 @@ Three of the seven are about how a person feels or where a person hurts. No
 thematic wordlist predicted that, and it is the strongest evidence available
 about where 300 roots are actually thin. Two more were claimed and withdrawn on
 checking, which is why the list is audited rather than appended to.
+
+## 3b. Thirty-four roots have never been used
+
+Being taught is not being used. Counted on September 4, 2026: **55 of the 300
+roots appeared in no text at all** — met once in a lesson's word table, drilled
+in that lesson, and never written again.
+
+What they were is the finding. Not obscure nouns but the joints of the
+language: *o* (or), *kadar* (as … as), *kurang* (less), *lasim* (must),
+*berapa* (how many), *kaifa* (how), *fikir* (to think). A rule can be exercised
+by a text while the word that carries it is not.
+
+[Text 16](../texts/text-16-berapa-harga.md) was written for them and reached
+twenty-one. **Thirty-four are still unused**, and `check.py` recounts the
+number so this paragraph cannot drift:
+
+*anahtar*, *animal*, *asul*, *bage*, *burun*, *cehra*, *dekat*, *duan*,
+*farasi*, *gusa*, *habari*, *kadang*, *kamisa*, *kiri*, *kisan*, *kucing*,
+*kultura*, *madad*, *mensis*, *mimpi*, *musik*, *muskil*, *nasab*, *negara*,
+*pat*, *petra*, *polisi*, *rambut*, *regalo*, *safari*, *sub*, *taksi*, *tren*,
+*uhuru*.
+
+Two of them are worth naming on their own. *madad* is the root whose class is
+undecided, and nothing has ever written it in a sentence of its own — the
+question has no evidence because the word has no use. *pat*, four, is the only
+digit in the list: the numbers were shown in
+[text 6](../texts/text-6-seti-din.md) and four was the one it did not need.
+
+This is not an argument for cutting them. It is a measurement of where the
+material is thin, and it belongs beside the theme table below: a word no text
+has reached for in sixteen tries is a word a learner will not meet in use.
 
 ## 4. What A2 content is blocked on
 
