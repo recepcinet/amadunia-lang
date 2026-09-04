@@ -712,6 +712,45 @@ _gone = [w for w, n in _order[:40]
          if f"| *{w}* |" not in _fr or f"| {n} |" not in _fr]
 check(not _gone, f"frequency.md's top forty has drifted: {', '.join(_gone[:6])}")
 
+# --------------------------------------------- es before a preposition
+# The copula rule is "before a noun, es; before anything else, nothing", and
+# a prepositional phrase is not a noun: *Mi in dom* takes no es and neither
+# should *Mi una yu*. The existing copula check only knew about adjectives,
+# so "Mi es una yu" stood in a lesson and twice in story 2 — found on
+# September 4 while measuring which settled rule was least exercised, which
+# turned out to be *una* with 21 sentences.
+_AFTER_ES = {"in", "dari", "por", "una", "sini", "situ", "upar", "sub"}
+for path in PROSE:
+    for line, sent, toks in amadunia_runs(read(path)):
+        low = [t.lower() for t in toks]
+        for _a, _b in zip(low, low[1:]):
+            check(not (_a == "es" and _b in _AFTER_ES),
+                  f"{os.path.basename(path)}: 'es {_b}' — es stands before a noun "
+                  f"and before nothing else: {sent}")
+
+# ------------------------------------------------ a word nobody invented
+# amadunia_runs only yields a sentence when every word in it is in the
+# dictionary, so a sentence containing an invented word is invisible to every
+# check built on it — including the one that exists to catch invented words.
+# Three had been sitting in the lessons: dormi for lala, ma for a word for
+# "but" that does not exist, and hatari for bahaya. This reads the same lines
+# by hand and reports a word that is not a word when most of its neighbours
+# are. The 60% floor is what keeps English prose out; measured across the
+# lessons, the grammar and the phrasebook it returned those three and nothing
+# else.
+for path in PROSE:
+    for _n, _l in enumerate(read(path).splitlines(), 1):
+        _s = _l.strip()
+        if _s.startswith(">"): _cell = _s.lstrip("> ")
+        elif re.fullmatch(r"\|[^|]*\|[^|]*\|", _s): _cell = _s.split("|")[1]
+        else: continue
+        _t = re.findall(r"[a-z]+", _cell.lower())
+        if len(_t) < 2: continue
+        _unk = [x for x in _t if x not in words and x not in PROPER]
+        if _unk and len(_t) - len(_unk) >= len(_t) * 0.6:
+            check(False, f"{os.path.basename(path)} line {_n}: '{_unk[0]}' is not a "
+                         f"word in the dictionary: {_cell.strip()}")
+
 # ------------------------------------------- an adjective's English name
 # Nothing here checks a translation, and a wrong one is invisible to every
 # other rule: Lesson 13 glossed *Rat cang, din keci* as "the night is long,

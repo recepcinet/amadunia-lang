@@ -98,7 +98,7 @@ Two items are not grammar at all and sit outside this order: *madad* doing two
 jobs, and the thinness of Sino-Tibetan and Japonic recorded in
 [balance.md](../dictionary/balance.md). Both are vocabulary policy.
 
-## Open questions — 30 of them
+## Open questions — 31 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
@@ -155,6 +155,7 @@ measurement with its method stated, to be re-run rather than trusted.
 **[conjunction](conjunction.md)**
 
 - **Joining more than two clauses** — whether long chains want a different rhythm — is a question for when there is more prose.
+- **There is no word for "but".** *aur* joins and *o* chooses; nothing contrasts. Found on September 4, 2026 in [Lesson 12](../lessons/lesson-12-colors-directions.md), which had been saying *Ma hao!* — an invented word — for "but good!". The lesson now says *Hao!* and says less.
 
 **[copula](copula.md)**
 

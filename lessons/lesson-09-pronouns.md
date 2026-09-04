@@ -48,7 +48,7 @@ The last line uses *kita* because the speaker means everyone — both groups.
 |---|---|
 | Doktor lai. Ta hao. | The doctor is coming. She is good. |
 | Ca garam. Mi mau ta. | The tea is hot. I want it. |
-| Anak keci. Ta suda dormi? | The child is small. Has he slept? |
+| Anak keci. Ta suda kula? | The child is small. Has he eaten? |
 
 ## Nothing changes
 

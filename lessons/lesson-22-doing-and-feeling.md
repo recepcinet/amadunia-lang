@@ -105,9 +105,9 @@ They are opposites and they behave the same:
 > — Mersi! Kanis mi lai una kita?
 > — Ya. Ta genc aur ta mau kimbia.
 > — Hutan itu amik. Mi punya korku keci.
-> — Mi es una yu. No es hatari — mi ingat tarik.
+> — Mi una yu. No korku — mi ingat tarik.
 
-*Good morning! Do you remember we're going to the forest today? — I forgot! I have to wash and eat. — I'll cook soup. You eat, then we go. — Thanks! Is my dog coming with us? — Yes. He's young and he wants to run. — That forest is deep. I have a little fear. — I'm with you. There's no danger — I remember the way.*
+*Good morning! Do you remember we're going to the forest today? — I forgot! I have to wash and eat. — I'll cook soup. You eat, now we go. — Thanks! Is my dog coming with us? — Yes. He's young and he wants to run. — That forest is deep. I have a little fear. — I'm with you. No fear — I remember the way.*
 
 ## Practice
 

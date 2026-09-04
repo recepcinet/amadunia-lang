@@ -22,7 +22,7 @@ Kanis keci lai una ta-ta.
 Din finis. Aksam lai. Asman siya.
 Ta-ta lihat stela-stela. Ta-ta lihat bulan putih.
 Luma sema: "Mi punya korku."
-Sol sema: "Mi es una yu."
+Sol sema: "Mi una yu."
 Aur sukut lai.
 
 Ates keci garam. Ta-ta lala in tanah.
@@ -56,7 +56,7 @@ Luma sema: "Mi-mi suda lihat mi-mi."
 | Din finis. Aksam lai. Asman siya. | The day finishes. Evening comes. The sky is black. |
 | Ta-ta lihat stela-stela. Ta-ta lihat bulan putih. | They look at the stars. They look at the white moon. |
 | Luma sema: "Mi punya korku." | Luma says: "I have fear." |
-| Sol sema: "Mi es una yu." | Sol says: "I am with you." |
+| Sol sema: "Mi una yu." | Sol says: "I am with you." |
 | Aur sukut lai. | And silence comes. |
 | Ates keci garam. Ta-ta lala in tanah. | A small fire is hot. They sleep on the ground. |
 | Pagi baru lai. Sol asfar in asman. | A new morning comes. The sun is yellow in the sky. |

@@ -3,7 +3,7 @@
 Generated from the material a learner reads — the twenty-six lessons, the
 twelve texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **4650 words of running Amadunia**, and every one of the 300 roots appears
+it. **4656 words of running Amadunia**, and every one of the 300 roots appears
 at least once.
 
 [`check.py`](../check.py) regenerates this page and fails if it disagrees, so
@@ -33,23 +33,23 @@ cover half of everything.** They are the first twenty-five below.
 
 | | Root | Meaning | Uses | Share |
 |---|---|---|---|---|
-| 1 | *mi* | I, me | 470 | 10.1% |
+| 1 | *mi* | I, me | 471 | 10.1% |
 | 2 | *yu* | you — one form for everyone | 215 | 4.6% |
-| 3 | *ta* | he, she, it — no gender | 135 | 2.9% |
+| 3 | *ta* | he, she, it — no gender | 136 | 2.9% |
 | 4 | *in* | at, in, on | 120 | 2.6% |
-| 5 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 114 | 2.5% |
+| 5 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 112 | 2.4% |
 | 6 | *ini* | this — after the noun, last in the phrase | 97 | 2.1% |
 | 7 | *anak* | child | 95 | 2.0% |
-| 8 | *no* | no; **not** — before the predicate, see [grammar/negation.md](../grammar/negation.md) | 89 | 1.9% |
+| 8 | *no* | no; **not** — before the predicate, see [grammar/negation.md](../grammar/negation.md) | 90 | 1.9% |
 | 9 | *dom* | house, home | 86 | 1.8% |
-| 10 | *mau* | to want | 84 | 1.8% |
-| 11 | *suda* | past marker (before the verb) | 84 | 1.8% |
+| 10 | *suda* | past marker (before the verb) | 85 | 1.8% |
+| 11 | *mau* | to want | 84 | 1.8% |
 | 12 | *lai* | to come | 83 | 1.8% |
 | 13 | *go* | to go | 77 | 1.7% |
 | 14 | *hao* | good | 76 | 1.6% |
 | 15 | *ca* | tea | 71 | 1.5% |
 | 16 | *aur* | and | 68 | 1.5% |
-| 17 | *kula* | to eat | 56 | 1.2% |
+| 17 | *kula* | to eat | 57 | 1.2% |
 | 18 | *rafiki* | friend | 52 | 1.1% |
 | 19 | *kita* | we, including you — see [grammar/pronouns.md](../grammar/pronouns.md) | 48 | 1.0% |
 | 20 | *kabir* | big | 46 | 1.0% |
