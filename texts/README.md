@@ -4,21 +4,28 @@ Original writing in Amadunia.
 
 Every text here is written using **only** the roots in the [dictionary](../dictionary/dictionary.md) and **only** the grammar that has been settled in [grammar/](../grammar/). Nothing is invented to make a sentence work. When a text cannot say something, that is recorded at the end of it as a gap — which is the point. A lesson shows what the language can do; a text finds out what it cannot.
 
-**Every settled rule is exercised here.** Counted on September 3, 2026: each of
-the seventeen rules that can be spotted in a sentence — tense, plural,
-possession, the copula, existence, negation, conjunction, questions,
-demonstratives, place, *una*, verb chains, comparison, subordination, adverbs,
-commands, numbers — appears in at least one of these twenty texts.
+**Every settled rule is exercised here, and none of them thinly.** Recounted on
+September 4, 2026 across all twenty texts: the fifteen rules a scanner can spot
+in a sentence each stand in **at least five** texts. Place leads at eighteen;
+subordination is the thinnest at five, then comparison and commands at six and
+the adverb rule at seven.
 
-**Two rules were thin and each was given a text of its own.** The adverb rule
-stood in one text until [text 11](text-11-anak-katab.md) was written for it and
-used it eleven times in eighteen sentences. Commands stood in two — once in
+That is a different sentence from the one this page carried for a day. The
+first count asked whether each rule appeared *at all*, and the answer was yes
+while two rules stood in one text and two, which is not the same as being
+exercised.
+
+**Two rules were thin and each was given a text of its own**, which is how the
+floor got to five. The adverb rule stood in one text until
+[text 11](text-11-anak-katab.md) was written for it and used it eleven times in
+eighteen sentences. Commands stood in two — once in
 [text 4](text-4-in-madina-baru.md), and once only as an illustration of what
 [text 8](text-8-kaifa-suru-ca.md) *would* say — until
 [text 12](text-12-tarik-por-skola.md) was written for them and used eleven in
 twenty-seven sentences. Both rules were introduced by the lessons well after
 the material had started using them, and writing a page for each is what
-turned that round.
+turned that round. *una* was the third, at 21 sentences, and
+[text 13](text-13-kula-una.md) answered it.
 
 **A gap has to be a sentence that stopped.** Before a text records one, the
 rule page that would grant the thing has to be read. [Text

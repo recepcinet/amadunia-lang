@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**119 guarantees** in **56 groups**, and every one of them is
+**120 guarantees** in **57 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -182,6 +182,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - proposal-a2.md's checklist row for '…' is stale; the dictionary has … of …
 - proposal-a2.md's checklist total is stale; recount gives … of …
+### every rule is exercised, not just used
+
+- texts/README.md claims a floor of '…' texts per rule; the thinnest is … in …
 ### a gloss may not claim a gap
 
 - …: the gloss says '…', and … is on the list of words the language does not have: …

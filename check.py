@@ -1270,6 +1270,48 @@ check(f"**{_a1present} of {_a1tot} are present" in _a2,
       f"proposal-a2.md's checklist total is stale; recount gives "
       f"{_a1present} of {_a1tot}")
 
+# ------------------------------------- every rule is exercised, not just used
+# texts/README.md says every settled rule is exercised by the texts. The first
+# version of that claim asked only whether each rule appeared at all, and it
+# was true while the adverb rule stood in one text and commands in two —
+# appearing is not being exercised. The claim now names a floor, and the floor
+# is recounted here.
+_RULETEXT = defaultdict(set)
+for _p in sorted(glob.glob("texts/*.md")):
+    if _p.endswith("README.md"): continue
+    _src = read(_p)
+    if "```" not in _src: continue
+    _f = os.path.basename(_p)
+    for _line, _sent, _toks in amadunia_runs("".join(_src.split("```")[1::2])):
+        _t = [_x.lower() for _x in _toks]
+        if {"suda", "saufa"} & set(_t): _RULETEXT["tense"].add(_f)
+        if any("-" in _x and _x.split("-")[0] == _x.split("-")[-1] for _x in _toks):
+            _RULETEXT["plural"].add(_f)
+        if "es" in _t: _RULETEXT["copula"].add(_f)
+        if _t[0] == "es" or (len(_t) > 1 and _t[0] == "no" and _t[1] == "es"):
+            _RULETEXT["existence"].add(_f)
+        if "no" in _t: _RULETEXT["negation"].add(_f)
+        if {"aur", "o"} & set(_t): _RULETEXT["conjunction"].add(_f)
+        if "?" in _sent: _RULETEXT["question"].add(_f)
+        if {"ini", "itu"} & set(_t): _RULETEXT["demonstrative"].add(_f)
+        if {"in", "dari", "por"} & set(_t): _RULETEXT["place"].add(_f)
+        if "una" in _t: _RULETEXT["una"].add(_f)
+        if any(_a in VERBS and _b in VERBS for _a, _b in zip(_t, _t[1:])):
+            _RULETEXT["verb chain"].add(_f)
+        if {"lebi", "kurang", "paling", "kadar"} & set(_t): _RULETEXT["comparison"].add(_f)
+        if {"porke", "kab", "agar"} & set(_t): _RULETEXT["subordination"].add(_f)
+        if any(_a in VERBS and _b in ADJECTIVES for _a, _b in zip(_t, _t[1:])):
+            _RULETEXT["adverb"].add(_f)
+        if (_t[0] in VERBS and _t[0] != "es") or (_t[0] == "no" and len(_t) > 1
+                and _t[1] in VERBS and _t[1] != "es"):
+            _RULETEXT["command"].add(_f)
+        if set(_t) & NUMBERS: _RULETEXT["number"].add(_f)
+_thin = min(_RULETEXT.items(), key=lambda kv: len(kv[1]))
+_m5 = re.search(r"each stand in \*\*at least (\w+)\*\* texts", read("texts/README.md"))
+check(_m5 and WORD_NUM.get(_m5.group(1).lower()) == len(_thin[1]),
+      f"texts/README.md claims a floor of '{_m5.group(1) if _m5 else '?'}' texts "
+      f"per rule; the thinnest is {_thin[0]} in {len(_thin[1])}")
+
 # ------------------------------------------ a gloss may not claim a gap
 # The list of words the writing has asked for names what the language cannot
 # say. A gloss that uses one of those English words is claiming it anyway:
@@ -1279,11 +1321,19 @@ check(f"**{_a1present} of {_a1tot} are present" in _a2,
 # say either sentence expecting to be understood.
 # Only the clause before an em-dash is read, because the note after one is
 # where a page explains the gap and has to name it.
+# The list is the whole of dictionary/README.md's gap table, except one entry.
+# "love as a noun" cannot be added: ama is the verb and a gloss saying "I love
+# you" is correct, so a word list cannot tell the missing noun from the verb
+# the language has. Everything else costs nothing — measured across every
+# gloss in the repository, these eight added zero failures.
 _GAPWORD = {
     "hurts": "pain", "hurt": "pain", "pain": "pain", "slowly": "slowly",
     "cheap": "cheap or dear", "expensive": "cheap or dear",
     "wall": "a wall", "floor": "a floor", "fluently": "fluent",
     "coin": "a coin", "clock": "a clock", "o'clock": "a clock",
+    "then": "then or next", "next": "then or next", "but": "but",
+    "stand": "to stand up", "stands": "to stand up", "stood": "to stand up",
+    "miss": "to miss", "missed": "to miss",
 }
 _GAPOK = {"phrasebook.md", "dictionary/README.md"}   # the pages that record them
 for _p in PROSE:
