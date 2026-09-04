@@ -51,14 +51,14 @@ Anak lala.
 | Papa mi nomu ca. | My father drinks tea. |
 | Mama sema: "Kula pan!" | Mother says: "Eat bread!" |
 | Anak keci lala. | The small child sleeps. |
-| Mi kan ta. | I look at him. |
+| Mi kan ta. | I see him. |
 | Mi sema: "Sasa, anak! Sol lai." | I say: "Now, child! The sun is up." |
 | Anak ambil mano mi. | The child takes my hand. |
 | Kita go market. | We go to the market. |
 | Market kabir. | The market is big. |
 | Cok insan situ. | There are many people there. |
 | Mi kupi ca. | I buy tea. |
-| Anak kan foto. | The child looks at a photograph. |
+| Anak kan foto. | The child sees a photograph. |
 | Pesa mi keci sasa. | My money is small now. |
 | Rafiki mi lai. | My friend comes. |
 | Ta sema: "Hi! Yu hao?" | She says: "Hello! Are you well?" |

@@ -92,7 +92,7 @@ English does — do not let an unstressed vowel slide toward *uh*.
 | Mi mau kupi ini. | I want to buy this. |
 | Mi mau ini, no itu. | I want this, not that. |
 | Es kamisa lebi keci? | Is there a smaller shirt? |
-| Mi punya des pesa. | I have ten pesa. |
+| Mi punya des pesa. | I have ten money. — *pesa* is the substance, not a coin; [the gap is recorded](dictionary/README.md#words-the-writing-has-asked-for) |
 | Ok, mi kupi. | Ok, I'll buy it. |
 | Mersi! Yu hao. | Thank you! You are good. |
 
@@ -128,7 +128,7 @@ English does — do not let an unstressed vowel slide toward *uh*.
 |---|---|
 | Madad! | Help! |
 | Mi bimar. | I am sick. |
-| Sar mi garam. | My head hurts. |
+| Sar mi garam. | My head is hot. — the nearest the language gets to *my head hurts*; [pain has no word](dictionary/README.md#words-the-writing-has-asked-for) |
 | Mi mau doktor. | I want a doctor. |
 | Hospital nali? | Where is the hospital? |
 | Mi suda unut anahtar mi. | I have forgotten my key. |
@@ -161,7 +161,8 @@ With these and a pointing finger you can cross a city.
 
 A phrasebook is a hard test, because it is made of the things people actually
 say rather than the things a grammar has got round to. Four gaps showed up
-immediately:
+immediately, and a fifth was found later by reading this page against the
+lessons:
 
 - **No word for "very".** *Thank you very much* and *this is very good* both had
   to lose the "very". *cok* means "much" and whether it can carry "very" is
@@ -175,6 +176,12 @@ immediately:
   a command. Neither line changed; the rule caught up with them.
 - **The clock cannot be asked.** *Berapa hora* is "how many hours", not "what
   time"; the language has no word for a clock or an hour of the day.
+- **Pain cannot be said.** *Sar mi garam* is "my head is hot", which is the
+  nearest a traveller gets to *my head hurts*. This page glossed it as *my head
+  hurts* until September 4, 2026 — translating around a gap the repository had
+  already recorded, which is the one thing a phrasebook must not do. The gloss
+  says what the words say now, and [the missing word is on the
+  list](dictionary/README.md#words-the-writing-has-asked-for).
 
 Nothing was invented to paper over any of them. Four checks in
 [`check.py`](check.py) also caught four copula slips in the first draft of this
