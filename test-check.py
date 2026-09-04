@@ -98,6 +98,20 @@ _DISTINCT = re.search(r"\*\*(\d+) of the (\d+) are distinct",
                       io.open("texts/README.md", encoding="utf-8").read()).group(0)
 _DISTINCT_OFF = re.sub(r"^\*\*(\d+)", lambda m: f"**{int(m.group(1)) - 3}", _DISTINCT)
 
+# The briefing counts move whenever a briefing is written or decided. Three
+# mutations quoted them and all three went stale in one turn; a fourth, added
+# the same turn, would have gone stale next. All four read the files now —
+# fourteenth through seventeenth site of that kind.
+_FRONTB = re.search(r"and \d+ briefings",
+                    io.open("README.md", encoding="utf-8").read()).group(0)
+_FRONTB_OFF = re.sub(r"\d+", lambda m: str(int(m.group(0)) - 3), _FRONTB)
+_GIB = re.search(r"Twenty-one rules and (\w+) briefings",
+                 io.open("grammar/README.md", encoding="utf-8").read()).group(0)
+_GIB_OFF = _GIB.replace(_GIB.split()[-2], "zero")
+_GIOPEN = re.search(r"\*\*(\w+) briefings are open\*\*",
+                    io.open("grammar/README.md", encoding="utf-8").read()).group(0)
+_GIOPEN_OFF = _GIOPEN.replace(_GIOPEN.split()[0].lstrip("*"), "Zero")
+
 _LIVE = int(re.search(r"## Open questions — (\d+) of them",
                       io.open("grammar/README.md", encoding="utf-8").read()).group(1))
 _WORDS = {25: "Twenty-five", 26: "Twenty-six", 27: "Twenty-seven", 28: "Twenty-eight",
@@ -353,14 +367,14 @@ MUTATIONS = [
      "| 21 rules —", "| 17 rules —",
      "does not say '21 rules'"),
     ("the front page's briefing count gone stale", "README.md",
-     "and 7 briefings", "and 4 briefings",
-     "does not say '7 briefings'"),
+     _FRONTB, _FRONTB_OFF,
+     "briefings'; grammar/ holds that many"),
     ("the grammar index's briefing count gone stale", "grammar/README.md",
-     "Twenty-one rules and seven briefings", "Twenty-one rules and four briefings",
-     "does not say there are 7 briefings"),
+     _GIB, _GIB_OFF,
+     "does not say there are"),
     ("the grammar index's open-briefing count gone stale", "grammar/README.md",
-     "**Five briefings are open**", "**Four briefings are open**",
-     "does not say 5 briefings are open"),
+     _GIOPEN, _GIOPEN_OFF,
+     "briefings are open"),
     ("an adjective in front of a time noun", "lessons/lesson-03-people.md",
      "> — Din hao?", "> — Hao din?",
      "'hao din' — the adjective goes after its noun"),

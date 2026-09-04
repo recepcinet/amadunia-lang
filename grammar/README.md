@@ -1,6 +1,6 @@
 # Grammar
 
-Twenty-one rules and seven briefings, one decision each. **Five briefings are open**: [a mark for a name](proposal-names.md), ["want to be" plus an adjective](proposal-modal-adjective.md), [a word for "but"](proposal-but.md), [where a frequency adverb stands](proposal-frequency.md) and [whether a root may hold two jobs](proposal-two-jobs.md). Two are closed: [stress](proposal-stress.md) and [the imperative and the fragment](proposal-sentence-types.md), both decided on September 3, 2026. Every page records what was settled, why, which candidates were rejected and on what ground, and what it left open.
+Twenty-one rules and eight briefings, one decision each. **Six briefings are open**: [a mark for a name](proposal-names.md), ["want to be" plus an adjective](proposal-modal-adjective.md), [a word for "but"](proposal-but.md), [where a frequency adverb stands](proposal-frequency.md), [whether a root may hold two jobs](proposal-two-jobs.md) and [first, second, eighth](proposal-ordinals.md). Two are closed: [stress](proposal-stress.md) and [the imperative and the fragment](proposal-sentence-types.md), both decided on September 3, 2026. Every page records what was settled, why, which candidates were rejected and on what ground, and what it left open.
 
 ## The rules
 
@@ -32,6 +32,7 @@ Twenty-one rules and seven briefings, one decision each. **Five briefings are op
 
 | | |
 |---|---|
+| [proposal-ordinals.md](proposal-ordinals.md) | First, second, eighth. No affix is possible, so the choice is position or a particle; answering it would remove the need for nineteen roots. **Open — the founder's call.** |
 | [proposal-two-jobs.md](proposal-two-jobs.md) | May a root hold two jobs? *madad* has never been used in a sentence, so its decision is free; *rabota* has eighteen at stake. **Open — the founder's call.** |
 | [proposal-frequency.md](proposal-frequency.md) | Where *daima* and *kadang* stand. Thirteen uses in three positions; *tena* settled itself 29 of 29. **Open — the founder's call.** |
 | [proposal-but.md](proposal-but.md) | A word for "but". Six pages wanted one and Lesson 12 invented one; *lakin* reaches five families. **Open — the founder's call.** |

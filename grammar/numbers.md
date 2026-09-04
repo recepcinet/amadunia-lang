@@ -76,8 +76,9 @@ needed turned out not to be the rule that was written down.
   *week-one* for Monday, and that would cost no roots at all. It cannot,
   because numbering the second day is naming an ordinal.
   [Measured with the other closed sets](../dictionary/proposal-a2.md) on
-  September 4, 2026: answering this one question would remove the need for
-  about a dozen roots, which no other open question on the list can say.
+  September 4, 2026: seven weekday names and twelve month names is nineteen
+  roots that numbering would make unnecessary, which no other open question on
+  the list can say. [The briefing is written](proposal-ordinals.md).
 
 - ~~Words for 1000~~ — settled: *mila*. Above a thousand is still open.
 - Whether the separator between groups is a hyphen or a space is used inconsistently above (*du-des-uan* vs *pat-des fai*, both inherited from the README) and needs a single rule.
