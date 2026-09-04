@@ -44,7 +44,7 @@ Written at 300 roots, with no grammar beyond Lesson 23.
 | — Mi mau hotel keci. Ta nali? | I want the small hotel. Where is it? |
 | — Anda tarik ini. Kab yu lihat ponte, go yamin. | Walk this road. When you see a bridge, go right. |
 | — Ponte? | A bridge? |
-| — Ya. Ponte in sungai. Yu no bisa unut ta — ta merah. | Yes. The bridge on the river. You cannot miss it — it is red. |
+| — Ya. Ponte in sungai. Yu no bisa unut ta — ta merah. | Yes. The bridge on the river. You cannot forget it — it is red. |
 | — Mersi! Aur es restoran in tempat ini? | Thanks! And is there a restaurant in this place? |
 | — Es. Restoran keci. Corba situ paling hao in madina. | There is. A small restaurant. The soup there is the best in the city. |
 | — Yu sema benar? | Are you telling the truth? |

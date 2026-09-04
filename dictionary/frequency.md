@@ -16,7 +16,7 @@ the numbers follow the corpus rather than the other way round.
 | first 10 | 32% |
 | first 25 | 51% |
 | first 50 | 66% |
-| first 100 | 81% |
+| first 100 | 82% |
 | first 150 | 90% |
 | first 200 | 95% |
 | first 300 | 100% |
@@ -56,7 +56,7 @@ cover half of everything.** They are the first twenty-five below.
 | 21 | *kabir* | big | 53 | 1.0% |
 | 22 | *punya* | to have | 50 | 0.9% |
 | 23 | *saufa* | future marker (before the verb) | 49 | 0.9% |
-| 24 | *sol* | sun | 48 | 0.9% |
+| 24 | *sol* | sun | 49 | 0.9% |
 | 25 | *keci* | small | 46 | 0.9% |
 | 26 | *dari* | from | 45 | 0.8% |
 | 27 | *pan* | bread, food | 41 | 0.8% |

@@ -26,7 +26,7 @@ Mi no faham. Mi sema: "Kaifa?"
 Rafiki mi sema: "Kan ini."
 Mi kan. Sasa mi faham.
 
-Hora du. Kita kula pan in skola.
+Sol upar. Kita kula pan in skola.
 Anak-anak kimbia in tarik.
 
 Aksam. Mi go dom.
@@ -52,7 +52,7 @@ Besok mi saufa go skola tena.
 | Mi sema: "Kaifa?" | I say: "How?" |
 | Rafiki mi sema: "Kan ini." | My friend says: "Look at this." |
 | Mi kan. Sasa mi faham. | I look. Now I understand. |
-| Hora du. Kita kula pan in skola. | Two o'clock. We eat bread at school. |
+| Sol upar. Kita kula pan in skola. | The sun is up. We eat bread at school. |
 | Anak-anak kimbia in tarik. | The children run in the road. |
 | Aksam. Mi go dom. | Evening. I go home. |
 | Mi kara libro tena. Mi studi. | I read the book again. I study. |
@@ -75,6 +75,12 @@ other absence in this page is the same shape: the rule arrives one or two
 lessons later.
 
 ## Gaps
+
+**Noon cannot be named.** The draft wrote *Hora du* for "two o'clock", which
+is "hour two" and claims a clock the language does not have —
+[the gap is on the list](../dictionary/README.md#words-the-writing-has-asked-for).
+The line says *Sol upar*, the sun is up, which is what a school day at 136
+roots can say about the middle of it.
 
 **A school with no teacher.** *mualim* is not taught until Lesson 19, so the
 only people in this school are children and a friend. Lesson 16 is called

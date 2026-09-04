@@ -25,7 +25,7 @@ counted with repeats, against the words the lessons have taught by that point.
 | 12 | 63% |
 | 13 | 65% |
 | 14 | 67% |
-| 15 | 72% |
+| 15 | 73% |
 | 16 | 77% |
 | 17 | 77% |
 | 18 | 79% |

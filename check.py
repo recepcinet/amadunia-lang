@@ -1270,6 +1270,34 @@ check(f"**{_a1present} of {_a1tot} are present" in _a2,
       f"proposal-a2.md's checklist total is stale; recount gives "
       f"{_a1present} of {_a1tot}")
 
+# ------------------------------------------ a gloss may not claim a gap
+# The list of words the writing has asked for names what the language cannot
+# say. A gloss that uses one of those English words is claiming it anyway:
+# the phrasebook glossed "Sar mi garam" as "my head hurts" when the words say
+# "my head is hot" and pain is the first entry on that list, and "Harga kabir"
+# as "that's expensive" when there is no word for expensive. A traveller would
+# say either sentence expecting to be understood.
+# Only the clause before an em-dash is read, because the note after one is
+# where a page explains the gap and has to name it.
+_GAPWORD = {
+    "hurts": "pain", "hurt": "pain", "pain": "pain", "slowly": "slowly",
+    "cheap": "cheap or dear", "expensive": "cheap or dear",
+    "wall": "a wall", "floor": "a floor", "fluently": "fluent",
+    "coin": "a coin", "clock": "a clock", "o'clock": "a clock",
+}
+_GAPOK = {"phrasebook.md", "dictionary/README.md"}   # the pages that record them
+for _p in PROSE:
+    if _p in _GAPOK: continue
+    for _, _ama, _eng in glossed_lines(read(_p)):
+        if not _eng: continue
+        _a = set(re.findall(r"[a-z]+", _ama.lower()))
+        if not _a or not all(_t in words for _t in _a): continue
+        for _e in set(re.findall(r"[a-z']+", _eng.split("—")[0].lower())):
+            check(_e not in _GAPWORD,
+                  f"{os.path.basename(_p)}: the gloss says '{_e}', and "
+                  f"{_GAPWORD.get(_e, _e)} is on the list of words the language "
+                  f"does not have: {_ama}")
+
 # ---------------------------------------------------- one root, one job
 # CONTRIBUTING rule 8 says a word is a noun or a verb and never both, and
 # CONTRIBUTING also said check.py enforces it. It did not: the only thing
