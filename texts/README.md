@@ -5,7 +5,7 @@ Original writing in Amadunia.
 Every text here is written using **only** the roots in the [dictionary](../dictionary/dictionary.md) and **only** the grammar that has been settled in [grammar/](../grammar/). Nothing is invented to make a sentence work. When a text cannot say something, that is recorded at the end of it as a gap — which is the point. A lesson shows what the language can do; a text finds out what it cannot.
 
 **Every settled rule is exercised here, and none of them thinly.** Recounted on
-September 4, 2026 across all twenty texts: the fifteen rules a scanner can spot
+September 4, 2026 across all twenty-one texts: the fifteen rules a scanner can spot
 in a sentence each stand in **at least five** texts. Place leads at eighteen;
 subordination is the thinnest at five, then comparison and commands at six and
 the adverb rule at seven.
@@ -60,3 +60,4 @@ These are original compositions, not translations. Translating an existing book 
 | [Gusa in tarik](text-18-gusa-in-tarik.md) | 43 | 300 roots, Lessons 1-26 — a blocked street, the last five roots that could be written |
 | [Kamra mi](text-19-kamra-mi.md) | 49 | **232 roots, Lessons 1-21** — a room, written for the largest gap left on the reading ladder |
 | [In skola](text-20-in-skola.md) | 42 | **136 roots, Lessons 1-16** — a school day, written for the gap between Lessons 13 and 18 |
+| [Uan umur](text-21-uan-umur.md) | 122 | 300 roots, Lessons 1-26 — a whole life, and **the first long text**: 88 sentences against a previous longest of 34 |

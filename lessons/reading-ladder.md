@@ -11,27 +11,27 @@ counted with repeats, against the words the lessons have taught by that point.
 
 | After lesson | Share of the texts' words you know |
 |---|---|
-| 01 | 25% |
-| 02 | 36% |
-| 03 | 48% |
-| 04 | 49% |
-| 05 | 49% |
-| 06 | 51% |
-| 07 | 52% |
-| 08 | 56% |
-| 09 | 56% |
-| 10 | 59% |
-| 11 | 59% |
-| 12 | 63% |
-| 13 | 65% |
-| 14 | 67% |
-| 15 | 73% |
-| 16 | 77% |
-| 17 | 77% |
-| 18 | 79% |
-| 19 | 84% |
-| 20 | 88% |
-| 21 | 92% |
+| 01 | 23% |
+| 02 | 34% |
+| 03 | 46% |
+| 04 | 47% |
+| 05 | 48% |
+| 06 | 49% |
+| 07 | 50% |
+| 08 | 55% |
+| 09 | 55% |
+| 10 | 58% |
+| 11 | 58% |
+| 12 | 61% |
+| 13 | 64% |
+| 14 | 65% |
+| 15 | 71% |
+| 16 | 76% |
+| 17 | 76% |
+| 18 | 78% |
+| 19 | 83% |
+| 20 | 87% |
+| 21 | 91% |
 | 22 | 94% |
 | 23 | 94% |
 | 24 | 97% |
@@ -79,6 +79,7 @@ taught.
 | [Surat por mama](../texts/text-7-surat-por-mama.md) | 25 |
 | [Tarik por skola](../texts/text-12-tarik-por-skola.md) | 25 |
 | [Tren aur farasi](../texts/text-17-tren-aur-farasi.md) | 25 |
+| [Uan umur](../texts/text-21-uan-umur.md) | 25 |
 
 **[Sol lai](../texts/text-15-sol-lai.md) is the first thing a learner can
 read, at Lesson 10** — 89 roots, no prepositions, no *ini* or *itu*, no verb

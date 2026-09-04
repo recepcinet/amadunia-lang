@@ -33,7 +33,7 @@ Twenty-one rules and seven briefings, one decision each. **Five briefings are op
 | | |
 |---|---|
 | [proposal-two-jobs.md](proposal-two-jobs.md) | May a root hold two jobs? *madad* has never been used in a sentence, so its decision is free; *rabota* has eighteen at stake. **Open — the founder's call.** |
-| [proposal-frequency.md](proposal-frequency.md) | Where *daima* and *kadang* stand. Thirteen uses in three positions; *tena* settled itself 23 of 23. **Open — the founder's call.** |
+| [proposal-frequency.md](proposal-frequency.md) | Where *daima* and *kadang* stand. Thirteen uses in three positions; *tena* settled itself 29 of 29. **Open — the founder's call.** |
 | [proposal-but.md](proposal-but.md) | A word for "but". Six pages wanted one and Lesson 12 invented one; *lakin* reaches five families. **Open — the founder's call.** |
 | [proposal-stress.md](proposal-stress.md) | The briefing the open questions put first. **Decided September 3, 2026** — the rule is [stress.md](stress.md); this is the record of what it was decided on. |
 | [proposal-sentence-types.md](proposal-sentence-types.md) | The imperative and the fragment. **Decided September 3, 2026** — the rules are [sentence-types.md](sentence-types.md). |
@@ -239,7 +239,7 @@ measurement with its method stated, to be re-run rather than trusted.
 
 **[word-formation](word-formation.md)**
 
-- **Does the language form compound words at all?** It never has — all 36 hyphenated forms in the repository are numbers or doubled plurals — and the front page had been leaning on the idea that it does. Juxtaposition is already taken by possession, and the hyphen already has two jobs.
+- **Does the language form compound words at all?** It never has — all 37 hyphenated forms in the repository are numbers or doubled plurals — and the front page had been leaning on the idea that it does. Juxtaposition is already taken by possession, and the hyphen already has two jobs.
 
 **[verb-chains](verb-chains.md)**
 

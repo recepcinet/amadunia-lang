@@ -76,6 +76,18 @@ _TENA = re.search(r"\*\*(\d+) of its (\d+) uses are last in the sentence\*\*",
                   io.open("grammar/proposal-frequency.md", encoding="utf-8").read()).group(0)
 _TENA_OFF = re.sub(r"^\*\*(\d+)", lambda m: f"**{int(m.group(1)) - 1}", _TENA)
 
+# Three counts that a new text moves: the but briefing's page count, the
+# hyphenated-form total on two pages. Read, not quoted — eleventh, twelfth
+# and thirteenth sites of that kind.
+_BUTP = re.search(r"The evidence is (\w+) pages",
+                  io.open("grammar/proposal-but.md", encoding="utf-8").read()).group(0)
+_JOIN = re.search(r"There are \*\*(\d+)\*\*",
+                  io.open("grammar/word-formation.md", encoding="utf-8").read()).group(0)
+_JOIN_OFF = re.sub(r"(\d+)", lambda m: str(int(m.group(1)) - 1), _JOIN)
+_FRONTJOIN = re.search(r"and all (\d+) are",
+                       io.open("README.md", encoding="utf-8").read()).group(0)
+_FRONTJOIN_OFF = re.sub(r"(\d+)", lambda m: str(int(m.group(1)) - 1), _FRONTJOIN)
+
 _LIVE = int(re.search(r"## Open questions — (\d+) of them",
                       io.open("grammar/README.md", encoding="utf-8").read()).group(1))
 _WORDS = {25: "Twenty-five", 26: "Twenty-six", 27: "Twenty-seven", 28: "Twenty-eight",
@@ -259,7 +271,7 @@ MUTATIONS = [
      "Burun ta barid.", "Sar ta barid.",
      "nothing forbids writing them: burun"),
     ("the but briefing's page count gone stale", "grammar/proposal-but.md",
-     "The evidence is six pages", "The evidence is five pages",
+     _BUTP, "The evidence is zero pages",
      "but its evidence table has"),
     ("the but briefing quoting a sentence that moved", "grammar/proposal-but.md",
      "| *Nyama lebi eski.* |", "| *Nyama lebi baru.* |",
@@ -287,8 +299,8 @@ MUTATIONS = [
      "| **Commands** | a verb with no subject", "| **Orders** | a verb with no subject",
      "README.md no longer teaches sentence-types.md"),
     ("the front page's hyphen count gone stale", "README.md",
-     "and all 36 are", "and all 35 are",
-     "says 'all 35' hyphenated forms"),
+     _FRONTJOIN, _FRONTJOIN_OFF,
+     "hyphenated forms; the repository has"),
     ("a root glossed as both a noun and a verb", "dictionary/dictionary.md",
      "| kanta | to sing |", "| kanta | song, to sing |",
      "one root, one job"),
@@ -346,7 +358,7 @@ MUTATIONS = [
      "## What you can already say", "## What you can already say\n\n> Mi mau kula pan.\n",
      "verb chain"),
     ("the joined-form count gone stale", "grammar/word-formation.md",
-     "There are **36**", "There are **35**",
+     _JOIN, _JOIN_OFF,
      "word-formation.md's count is stale"),
     ("time placed before place", "lessons/lesson-15-pointing-placing.md",
      "| Mi kula pan in dom din ini. | I eat bread at home today. |",

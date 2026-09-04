@@ -8,7 +8,7 @@ for a decision that is the founder's.
 [conjunction.md](conjunction.md) records that as open, with the honest
 possibility that the language may not need one.
 
-## The evidence is six pages, and it is the strongest on the open list
+## The evidence is seven pages, and it is the strongest on the open list
 
 Every one of these is a sentence that stopped, not a line on a wordlist.
 
@@ -20,13 +20,14 @@ Every one of these is a sentence that stopped, not a line on a wordlist.
 | [Text 16](../texts/text-16-berapa-harga.md) | *Nyama lebi eski.* | the meat is cheaper **but** older |
 | [Text 17](../texts/text-17-tren-aur-farasi.md) | *Tarik duan aur safari no muskil.* | the road was short **but** the journey was not easy |
 | [Text 18](../texts/text-18-gusa-in-tarik.md) | *Tarik baru duan.* | the new road was short **but** slow |
+| [Text 21](../texts/text-21-uan-umur.md) | *Pesa keci.* | the money was little **but** the bread was good — written as *lakin* twice in draft, by reflex |
 
 Lesson 12 is the one that matters most. It did not work around the gap — it
 **invented a word**, *ma*, and that word sat in the course unnoticed until
 September 4, 2026. A gap that makes a careful writer invent is a different kind
 of gap from one that makes a writer rephrase.
 
-Five of the six are a bargain, a meal or a road: ordinary speech, not argument.
+Five of the seven are a bargain, a meal or a road: ordinary speech, not argument. The seventh is the one that matters most after Lesson 12's: writing the longest text in the language, I typed *lakin* twice without deciding to, and the checker refused it both times.
 The contrast is not a literary device here. It is what people say about weather
 and prices.
 
@@ -90,7 +91,7 @@ lesson. That is what a real gap does.
 
 ## What is measured and what is judgement
 
-Measured: the six pages and their sentences, which `check.py` recounts; the
+Measured: the seven pages and their sentences, which `check.py` recounts; the
 candidates' pass or failure against the phonotactic rules; the family reach.
 
 Judgement, and the founder's: whether the language takes a contrast word at

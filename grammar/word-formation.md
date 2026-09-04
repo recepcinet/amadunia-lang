@@ -15,10 +15,10 @@ elsewhere. There is no third way, and no compound word exists.**
 Every hyphenated form in the repository is collected and counted by
 [`check.py`](../check.py) on every run, so this page cannot fall behind the
 corpus — it did once, by one form, when three texts were written after it.
-There are **36**, and every single one is a number or a reduplicated plural:
+There are **37**, and every single one is a number or a reduplicated plural:
 
 - 17 number shapes: *des-du*, *du-des*, *ba-des*, *du-sen*, *du-mila* …
-- 19 reduplications: *anak-anak*, *ain-ain*, *doktor-doktor*, *hora-hora* …
+- 20 reduplications: *anak-anak*, *ain-ain*, *doktor-doktor*, *hora-hora* …
 - nothing else.
 
 File names are not counted. *surat-por-mama* and *anak-katab* are hyphenated
