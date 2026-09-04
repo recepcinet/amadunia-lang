@@ -58,8 +58,9 @@ calculation.
 
 ## 3. What the writing has asked for
 
-Eleven gaps were found by trying to write something and failing, not by reading
-a list. [They are recorded with the sentence that stopped in each case](README.md#words-the-writing-has-asked-for):
+Twelve gaps were found by trying to write something and failing, not by reading
+a list — with the twelfth found a third way, by translating one sentence
+somebody asked for. [They are recorded with the sentence that stopped in each case](README.md#words-the-writing-has-asked-for):
 pain, love as a noun, to miss someone, the clock, a word for *then*, standing
 up, and a coin as against an amount.
 
@@ -105,11 +106,11 @@ Every gap in section 3 was found by writing. [Text
 19](../texts/text-19-kamra-mi.md) showed the blind spot in that method — a wall
 and a floor are exactly what a thematic list would have contained, and nineteen
 texts went past them. So the other method was run once, kept separate, and
-written down: [a hand-made list of 253 ordinary A1 concepts by
+written down: [a hand-made list of 254 ordinary A1 concepts by
 domain](a1-checklist.md), each looked up in the English index by
 [`check.py`](../check.py).
 
-**169 of 253 are present. Eighty-four are not.**
+**169 of 254 are present. Eighty-five are not.**
 
 | Domain | Present | Missing |
 |---|---|---|
@@ -121,7 +122,7 @@ domain](a1-checklist.md), each looked up in the English index by
 | time | 13 of 17 | minute, today, late, early |
 | weather | 8 of 10 | storm, ice |
 | actions | 44 of 60 | play, stand, lose, carry, laugh, cry, dance, jump, fall, push, pull, break, build, meet, hold, throw |
-| qualities | 27 of 42 | slow, weak, angry, tired, hungry, thirsty, free, cheap, expensive, dark, bright, soft, hard, wet, dry |
+| qualities | 27 of 43 | slow, weak, angry, tired, hungry, thirsty, free, cheap, expensive, dark, bright, soft, hard, wet, dry, fluent |
 | basics | 20 of 31 | but, all, some, none, every, few, also, only, very, then, never |
 
 **Clothing is two of nine** — a shirt and a shoe — and is the thinnest domain in
@@ -129,10 +130,10 @@ the language by a distance. The everyday adjectives are close behind: there is
 no *slow*, no *angry*, no *tired*, no *hungry*, no *dark* and no *wet*, so a
 person can be sick or sad but not tired, and a night can be cold but not dark.
 
-**The two methods agree where they overlap.** Four of the eleven gaps found by
-writing — *slowly*, *to stand up*, *cheap*, *the clock* — are on this list too,
-which is the check that matters: the checklist reproduces what writing found
-and adds about eighty more. What it cannot do is say which of the eighty-four
+**The two methods agree where they overlap.** Five of the twelve gaps found by
+writing — *slowly*, *to stand up*, *cheap*, *the clock*, *fluent* — are on this
+list too, which is the check that matters: the checklist reproduces what
+writing found and adds about eighty more. What it cannot do is say which of the eighty-four
 matter, and that is exactly what writing does say. Neither list replaces the
 other and this page keeps both.
 

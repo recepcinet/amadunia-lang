@@ -49,7 +49,7 @@ eat, drink, sleep, walk, run, go, come, see, hear, speak, read, write, give, tak
 
 ## qualities
 
-big, small, long, short, new, old, good, bad, fast, slow, clean, dirty, full, empty, strong, weak, easy, difficult, near, far, heavy, light, beautiful, young, happy, sad, angry, tired, hungry, thirsty, sick, free, true, wrong, cheap, expensive, dark, bright, soft, hard, wet, dry
+big, small, long, short, new, old, good, bad, fast, slow, clean, dirty, full, empty, strong, weak, easy, difficult, near, far, heavy, light, beautiful, young, happy, sad, angry, tired, hungry, thirsty, sick, free, true, wrong, cheap, expensive, dark, bright, soft, hard, wet, dry, fluent
 
 ## basics
 

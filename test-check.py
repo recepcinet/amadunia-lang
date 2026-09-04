@@ -46,6 +46,12 @@ _LADDER_OFF = re.sub(r"(\d+)%", lambda m: f"{int(m.group(1)) + 5}%", _LADDER)
 _NAMES = re.search(r"\*\*([A-Z][a-z]+(?:-[a-z]+)?) sentences are formally ambiguous",
                    io.open("grammar/proposal-names.md", encoding="utf-8").read()).group(1)
 
+# The checklist total moves whenever a concept is added or a root arrives, so
+# this mutation reads the line instead of naming it. Sixth site to need this.
+_A1TOT = re.search(r"\*\*(\d+) of (\d+) are present",
+                   io.open("dictionary/proposal-a2.md", encoding="utf-8").read()).group(0)
+_A1TOT_OFF = re.sub(r"^\*\*(\d+)", lambda m: f"**{int(m.group(1)) + 1}", _A1TOT)
+
 _LIVE = int(re.search(r"## Open questions — (\d+) of them",
                       io.open("grammar/README.md", encoding="utf-8").read()).group(1))
 _WORDS = {25: "Twenty-five", 26: "Twenty-six", 27: "Twenty-seven", 28: "Twenty-eight",
@@ -264,7 +270,7 @@ MUTATIONS = [
      "| kanta | to sing |", "| kanta | song, to sing |",
      "one root, one job"),
     ("the A1 checklist total gone stale", "dictionary/proposal-a2.md",
-     "**169 of 253 are present", "**170 of 253 are present",
+     _A1TOT, _A1TOT_OFF,
      "checklist total is stale"),
     ("a checklist domain row gone stale", "dictionary/proposal-a2.md",
      "| clothing | 2 of 9 |", "| clothing | 3 of 9 |",

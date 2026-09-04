@@ -147,7 +147,7 @@ measurement with its method stated, to be re-run rather than trusted.
 
 **[adverbs](adverbs.md)**
 
-- **Adverbs of degree on adverbs** — "very quickly" — needs a word for "very". *cok* is "much"; whether it covers "very" is untested.
+- **Adverbs of degree on adverbs** — "very quickly" — needs a word for "very". *cok* is "much"; whether it covers "very" is untested. Wanted twice now: by [the phrasebook](../phrasebook.md), which lost it from "thank you very much", and on September 4, 2026 by *Mi parolas Esperanton tre flue*, which came out as *Mi sema hao Amadunia* — I speak Amadunia well, with both the degree and the manner gone.
 - **Whether *daima* covers "forever".** Glossed "always", from Arabic *dāʾiman*, which carries both. *Natura hidup daima* would say nature lives forever. One word for habit and endlessness, where most languages use two.
 - **Frequency adverbs.** *daima* (always) and *kadang* (sometimes) are adverbs by meaning but not adjectives. This page used to say they sit in the adverb slot with everything else; **counted on September 4, 2026, two of their thirteen uses do.** Five stand before the verb and six after the object, and Lesson 19 alone uses all three positions. [A briefing measures it and costs the three answers](proposal-frequency.md). Until it is decided the word *kadang* cannot be written at all, because any sentence using it would settle the question by accident.
 
