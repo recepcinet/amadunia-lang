@@ -8,11 +8,17 @@ Every text here is written using **only** the roots in the [dictionary](../dicti
 the seventeen rules that can be spotted in a sentence — tense, plural,
 possession, the copula, existence, negation, conjunction, questions,
 demonstratives, place, *una*, verb chains, comparison, subordination, adverbs,
-commands, numbers — appears in at least one of these eleven texts. One is thin: commands are in
-two. The adverb rule was in one until [text 11](text-11-anak-katab.md) was
-written for it, and uses it eleven times in eighteen sentences. That is the rule the
-lessons introduced six lessons after they started using it, and it is still the
-least exercised thing in the language.
+commands, numbers — appears in at least one of these twelve texts.
+
+**Two rules were thin and each was given a text of its own.** The adverb rule
+stood in one text until [text 11](text-11-anak-katab.md) was written for it and
+used it eleven times in eighteen sentences. Commands stood in two — once in
+[text 4](text-4-in-madina-baru.md), and once only as an illustration of what
+[text 8](text-8-kaifa-suru-ca.md) *would* say — until
+[text 12](text-12-tarik-por-skola.md) was written for them and used eleven in
+twenty-seven sentences. Both rules were introduced by the lessons well after
+the material had started using them, and writing a page for each is what
+turned that round.
 
 **A gap has to be a sentence that stopped.** Before a text records one, the
 rule page that would grant the thing has to be read. [Text
@@ -38,3 +44,4 @@ These are original compositions, not translations. Translating an existing book 
 | [Pagi in madina](text-9-pagi-in-madina.md) | 56 | 300 roots, Lessons 1-23 — an errand, written from the frequency list to reach the tail |
 | [Mila tahun](text-10-mila-tahun.md) | 37 | 300 roots, Lessons 1-23 — an argument, for the abstract words a scene cannot reach |
 | [Anak katab](text-11-anak-katab.md) | 31 | 300 roots, Lessons 1-23 — a portrait, written for the least-exercised rule |
+| [Tarik por skola](text-12-tarik-por-skola.md) | 36 | 300 roots, Lessons 1-25 — a walk to school, written for the imperative granted the day before |

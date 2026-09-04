@@ -142,4 +142,9 @@ would make the phrasebook impossible to write.
   taken by the existential — there is a doctor — so *be a doctor*, *be quick*,
   *be careful* have no form. Every language has these and they are among the
   commonest things anyone says. Found on September 3, 2026 by asking what the
-  command rule does to *es*, the day the command rule was made.
+  command rule does to *es*, the day the command rule was made. **Evidenced by
+  writing on September 4**: [text 12](../texts/text-12-tarik-por-skola.md), a
+  mother walking a child to a road, wanted it three times on one page — *be
+  careful*, *be quick*, *do not be afraid* — and wrote two commands, a time
+  word, and nothing at all in their places. *Do not be afraid* fails twice
+  over, because *korku* is a noun as well.
