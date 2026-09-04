@@ -1020,7 +1020,14 @@ for path in PROSE:
         base = [t.split("-")[0] for t in toks]
         for _i in range(len(base) - 1):
             _a, _b = base[_i], base[_i + 1]
-            if _a in ADJECTIVES and _b in _NOUNS and _b not in _TIMEG:
+            # A time noun was skipped outright, which protected "Asman asul
+            # din ini" — a predicate adjective followed by a time expression —
+            # and hid "Hao din", an adjective in front of its noun, which is
+            # the error this check exists for. The skip is now only for a time
+            # noun that ini or itu marks as an expression of its own.
+            _pointed = (_b in _TIMEG and _i + 2 < len(base)
+                        and base[_i + 2] in ("ini", "itu"))
+            if _a in ADJECTIVES and _b in _NOUNS and not _pointed:
                 if _i and base[_i - 1] in VERBS: continue   # the adverb slot
                 check(False, f"{os.path.basename(path)}: '{_a} {_b}' — the adjective "
                              f"goes after its noun: {sent}")
