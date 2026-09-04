@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**97 guarantees** in **46 groups**, and every one of them is
+**98 guarantees** in **46 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -47,6 +47,7 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - grammar/README.md does not link …
 - lessons/README.md does not link …
 - …: no '## Open questions' section — a rule records what it left open, even if that is nothing
+- grammar/README.md lists … open questions under …; ….md has …
 - grammar/README.md says … open questions; the files have …
 ### a decided briefing is over
 

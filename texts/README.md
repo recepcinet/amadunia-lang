@@ -8,7 +8,7 @@ Every text here is written using **only** the roots in the [dictionary](../dicti
 the seventeen rules that can be spotted in a sentence — tense, plural,
 possession, the copula, existence, negation, conjunction, questions,
 demonstratives, place, *una*, verb chains, comparison, subordination, adverbs,
-commands, numbers — appears in at least one of these twelve texts.
+commands, numbers — appears in at least one of these thirteen texts.
 
 **Two rules were thin and each was given a text of its own.** The adverb rule
 stood in one text until [text 11](text-11-anak-katab.md) was written for it and
@@ -45,3 +45,4 @@ These are original compositions, not translations. Translating an existing book 
 | [Mila tahun](text-10-mila-tahun.md) | 37 | 300 roots, Lessons 1-23 — an argument, for the abstract words a scene cannot reach |
 | [Anak katab](text-11-anak-katab.md) | 31 | 300 roots, Lessons 1-23 — a portrait, written for the least-exercised rule |
 | [Tarik por skola](text-12-tarik-por-skola.md) | 36 | 300 roots, Lessons 1-25 — a walk to school, written for the imperative granted the day before |
+| [Kula una](text-13-kula-una.md) | 42 | 300 roots, Lessons 1-26 — a shared meal, written for *una*, the rule that had become the thinnest |

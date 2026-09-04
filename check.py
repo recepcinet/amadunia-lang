@@ -179,6 +179,28 @@ for p in sorted(glob.glob("grammar/*.md")):
     if "## Open questions" not in body: continue
     live += sum(1 for l in body.split("## Open questions")[1].splitlines()
                 if l.startswith("- ") and not l.startswith("- ~~"))
+# The index gathers the questions file by file, and the total above only
+# proves the files were counted — not that the index lists them. Three were
+# missing from it while the total was right: the ordinals, "all, some, none",
+# and the una collision found the same day. Both of the first two are on the
+# founder's own open list, and the page that claims to gather every question
+# had never shown them.
+_IDXSEC = re.split(r"\n\*\*\[([a-z-]+)\]\([a-z-]+\.md\)\*\*\n",
+                   gi.split("## Open questions")[1])
+_IDX = {_IDXSEC[_i]: sum(1 for _l in _IDXSEC[_i + 1].splitlines()
+                         if _l.startswith("- ") and not _l.startswith("- ~~"))
+        for _i in range(1, len(_IDXSEC), 2)}
+for _p in sorted(glob.glob("grammar/*.md")):
+    _n = os.path.basename(_p)[:-3]
+    if _n == "README": continue
+    _b = read(_p)
+    if "## Open questions" not in _b: continue
+    _live = sum(1 for _l in _b.split("## Open questions")[1].splitlines()
+                if _l.startswith("- ") and not _l.startswith("- ~~"))
+    check(_IDX.get(_n, 0) == _live,
+          f"grammar/README.md lists {_IDX.get(_n, 0)} open questions under "
+          f"{_n}; {_n}.md has {_live}")
+
 m = re.search(r"## Open questions — (\d+) of them", gi)
 check(m and int(m.group(1)) == live,
       f"grammar/README.md says {m.group(1) if m else '?'} open questions; the files have {live}")

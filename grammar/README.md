@@ -98,7 +98,7 @@ Two items are not grammar at all and sit outside this order: *madad* doing two
 jobs, and the thinness of Sino-Tibetan and Japonic recorded in
 [balance.md](../dictionary/balance.md). Both are vocabulary policy.
 
-## Open questions — 31 of them
+## Open questions — 32 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
@@ -171,6 +171,7 @@ measurement with its method stated, to be re-run rather than trusted.
 
 **[numbers](numbers.md)**
 
+- **Ordinal numbers have no form.** *First, second, eighth* cannot be built, and nothing in the cardinal system suggests a derivation. [Text 6](../texts/text-6-seti-din.md) is the clearest case: a story that runs on days wanted *on the eighth day* and could only say *for eight days*.
 - Whether the separator between groups is a hyphen or a space is used inconsistently above (*du-des-uan* vs *pat-des fai*, both inherited from the README) and needs a single rule.
 
 **[phonology](phonology.md)**
@@ -182,10 +183,12 @@ measurement with its method stated, to be re-run rather than trusted.
 **[place](place.md)**
 
 - **Does a time expression take *in*?** Six sentences say *in pagi*; twenty-odd say *rat ini* with no preposition. Nobody decided; the two forms grew side by side.
-- *Through, without, about, before, after* — the second tier of prepositions — are for later.
+- **With an object, the two jobs of *una* collide.** Alone after a verb it is "together" — *Kita kula una* — and before a noun it is "with". Put an object in and the reading flips: *Kita kula una pan* is "we eat with bread", never "we eat the bread together". Found by [text 13](../texts/text-13-kula-una.md), September 4, 2026.
+- *Through, without, about, before, after, **near*** — the second tier of prepositions — are for later. **near** has been wanted by three pages and again by [text 12](../texts/text-12-tarik-por-skola.md).
 
 **[plural](plural.md)**
 
+- **All, some, none.** *cok* covers "many" and stands before the noun; there is nothing for *all*, *some* or *none*, and nothing has yet tried to say them.
 - Whether doubling may also carry the distributive sense some source languages give it (*din-din* = "every day"), or stays strictly plural.
 
 **[possession](possession.md)**
