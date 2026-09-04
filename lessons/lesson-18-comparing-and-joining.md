@@ -122,13 +122,13 @@ Keep it against the verb, before the object — that is what keeps it clear:
 > — Salam! Es kafe in madina ini?
 > — Ya, es. Kafe itu paling hao.
 > — Lebi hao dari kafe in tarik mi?
-> — Cok lebi hao! Aur kurang kotor.
+> — Lebi hao! Aur kurang kotor.
 > — Mi fikir yu es rafiki hao.
 > — Mi lai una yu agar yu mau.
 > — Mi mau! Kita go kab yu bisa.
-> — Sasa. Mi no rabota din ini porke din ini hafta besok.
+> — Sasa. Mi no rabota din ini porke hafta baru lai besok.
 
-*Hello! Is there a café in this city? — Yes, there is. That café is the best. — Better than the café on my street? — Much better! And less dirty. — I think you're a good friend. — I'll come with you if you want. — I want to! Let's go when you can. — Now. I'm not working today because today is the week's end.*
+*Hello! Is there a café in this city? — Yes, there is. That café is the best. — Better than the café on my street? — Better! And less dirty. — I think you're a good friend. — I'll come with you if you want. — I want to! Let's go when you can. — Now. I'm not working today because a new week comes tomorrow.*
 
 ## Practice
 

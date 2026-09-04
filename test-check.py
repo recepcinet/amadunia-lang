@@ -246,10 +246,14 @@ MUTATIONS = [
     ("stale count spelled out", "README.md",
      f"[{_WORDS[_LIVE]} questions are still open]", "[Three questions are still open]",
      f"names 3 open questions; there are {_LIVE}"),
+    # The wrong value is derived here too. It used to name Thirty-three, and
+    # the day the count reached thirty-three the mutation wrote the true
+    # figure and replaced the line with itself — reported NOT CAUGHT, and the
+    # check was fine. A compound one below the real count is always wrong.
     ("a spelled compound number gone stale", "README.md",
      f"[{_WORDS[_LIVE]} questions are still open]",
-     "[Thirty-three questions are still open]",
-     f"names 33 open questions; there are {_LIVE}"),
+     f"[{_WORDS[_LIVE - 1]} questions are still open]",
+     f"names {_LIVE - 1} open questions; there are {_LIVE}"),
     ("an adjective glossed by another adjective's name", "lessons/lesson-13-weather-directions.md",
      "| Rat cang. Mi espera. | The night is long. I wait. |",
      "| Rat cang, din keci. | The night is long, the day is short. |",
@@ -373,6 +377,9 @@ MUTATIONS = [
     ("the repetition figure gone stale", "texts/README.md",
      _DISTINCT, _DISTINCT_OFF,
      "repetition figure is stale"),
+    ("a noun predicate after ini with no es", "lessons/lesson-18-comparing-and-joining.md",
+     "porke hafta baru lai besok", "porke din ini hafta besok",
+     "ini and itu close a phrase"),
     ("the joined-form count gone stale", "grammar/word-formation.md",
      _JOIN, _JOIN_OFF,
      "word-formation.md's count is stale"),

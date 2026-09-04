@@ -45,3 +45,4 @@ The same words work on a verb, in the adverb slot:
 ## Open questions
 
 - **Superlative among a named group** — "the biggest of the three" — has no form yet. *paling kabir dari tri* is untested.
+- **Whether two degree words may stack.** Lesson 18's conversation read *Cok lebi hao* for "much better" until September 4, 2026. *cok*, *lebi*, *kurang* and *paling* all stand in the same slot in front of what they scale, and nothing grants putting two there at once. The line now reads *Lebi hao*, which says less. Found by reading the lesson rather than by a check, and left open rather than granted.

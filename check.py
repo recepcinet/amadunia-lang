@@ -518,6 +518,28 @@ for path in PROSE:
             check(False, f"{os.path.basename(path)}: '{base[0]} {base[1]}' — a noun "
                          f"predicate needs es before it: {sent}")
 
+# ------------------------------------------ a noun after ini closes nothing
+# The mandatory-copula check above only fires when a sentence opens with a
+# pronoun, because a noun at the front may be an owner rather than a subject —
+# dom mi is a phrase, not a missing es. That left a whole shape unchecked, and
+# Lesson 18's conversation had been reading "din ini hafta besok" for "today
+# is the week's end" since it was written: no es, and no word for end either.
+# ini and itu close a noun phrase, so a noun straight after one starts a new
+# constituent and is a predicate. One hit in the whole repository, the sentence
+# that prompted the rule.
+for path in PROSE:
+    body = read(path)
+    if path.startswith("texts/") and "```" in body:
+        body = "".join(body.split("```")[1::2])
+    for line, sent, toks in amadunia_runs(body):
+        if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗")): continue
+        base = [t.split("-")[0] for t in toks]
+        for _a, _b in zip(base, base[1:]):
+            if _a in ("ini", "itu") and _b in words and _b not in PREDICATE_OK:
+                check(False, f"{os.path.basename(path)}: '{_a} {_b}' — ini and itu "
+                             f"close a phrase, so a noun after one is a predicate "
+                             f"and needs es: {sent}")
+
 # -------------------------------------------------------- dictionary order
 # Each thematic group is alphabetical inside itself, and the numbers run in
 # numerical order rather than alphabetical. Both were asked for and both held,

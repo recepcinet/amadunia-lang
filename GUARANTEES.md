@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**127 guarantees** in **60 groups**, and every one of them is
+**128 guarantees** in **61 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -78,6 +78,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### the other copula
 
 - …: '… …' — a noun predicate needs es before it: …
+### a noun after ini closes nothing
+
+- …: '… …' — ini and itu close a phrase, so a noun after one is a predicate and needs es: …
 ### dictionary order
 
 - dictionary.md: the … group is not in numerical order

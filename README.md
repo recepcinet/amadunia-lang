@@ -210,7 +210,7 @@ negation, conjunction, demonstratives, place, verb chains, comparison,
 subordination, adverbs, stress and the sentence types are settled — twenty-one rules, each recorded with its
 reasoning and with the candidates it rejected.
 
-**[Thirty-two questions are still open](grammar/README.md)**, gathered on one
+**[Thirty-three questions are still open](grammar/README.md)**, gathered on one
 page, ordered by [what the writing has actually asked for](grammar/README.md) —
 a mark for a name now leads, and six questions have never been reached for at
 all. Four were not left open on purpose but were forms the material already
@@ -236,7 +236,7 @@ Follow the commits to watch a language grow in real time.
 | know why a rule is the way it is | [grammar/](grammar/) — each page ends with what it rejected |
 | read the language, not lessons about it | [texts/](texts/) — twenty original pieces |
 | add a word | [CONTRIBUTING.md](CONTRIBUTING.md) |
-| answer one of the open questions | [grammar/README.md](grammar/README.md) — and five of the thirty-two already have [a briefing](grammar/) that measures the evidence without making the choice |
+| answer one of the open questions | [grammar/README.md](grammar/README.md) — and five of the thirty-three already have [a briefing](grammar/) that measures the evidence without making the choice |
 
 ## What's here
 

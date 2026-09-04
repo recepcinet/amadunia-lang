@@ -6,7 +6,7 @@ Two kinds of contribution are possible, and they work differently.
 [`check.py`](check.py) will tell you which one before a human has to.
 
 **Answering an open question** is a language decision. There are
-[32 of them](grammar/README.md), and each is the founder's call — but a good
+[33 of them](grammar/README.md), and each is the founder's call — but a good
 proposal makes the call easy.
 
 ---
@@ -101,13 +101,13 @@ it. That is the part worth arguing about in an Issue.
 
 ## Answering an open question
 
-The [32 open questions](grammar/README.md) are gathered in one place. Four of
+The [33 open questions](grammar/README.md) are gathered in one place. Four of
 them were not gaps left on purpose but holes found later — the imperative, the
 mark for a name, how `r` is made, and "want to be" plus an adjective. The
 imperative was settled on September 3, 2026; the other three are the most
 useful to answer.
 
-**Five of the thirty-two already have a briefing**, each one measured rather
+**Five of the thirty-three already have a briefing**, each one measured rather
 than argued: [a mark for a name](grammar/proposal-names.md), ["want to be" plus
 an adjective](grammar/proposal-modal-adjective.md), [a word for
 "but"](grammar/proposal-but.md), [where a frequency adverb

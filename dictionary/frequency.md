@@ -3,7 +3,7 @@
 Generated from the material a learner reads — the twenty-six lessons, the
 twenty texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **5772 words of running Amadunia**, and every one of the 300 roots appears
+it. **5771 words of running Amadunia**, and every one of the 300 roots appears
 at least once.
 
 [`check.py`](../check.py) regenerates this page and fails if it disagrees, so
@@ -39,10 +39,10 @@ cover half of everything.** They are the first twenty-five below.
 | 4 | *in* | at, in, on | 169 | 2.9% |
 | 5 | *anak* | child | 132 | 2.3% |
 | 6 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 122 | 2.1% |
-| 7 | *ini* | this — after the noun, last in the phrase | 109 | 1.9% |
+| 7 | *ini* | this — after the noun, last in the phrase | 108 | 1.9% |
 | 8 | *dom* | house, home | 104 | 1.8% |
-| 9 | *no* | no; **not** — before the predicate, see [grammar/negation.md](../grammar/negation.md) | 103 | 1.8% |
-| 10 | *lai* | to come | 102 | 1.8% |
+| 9 | *lai* | to come | 103 | 1.8% |
+| 10 | *no* | no; **not** — before the predicate, see [grammar/negation.md](../grammar/negation.md) | 103 | 1.8% |
 | 11 | *go* | to go | 99 | 1.7% |
 | 12 | *suda* | past marker (before the verb) | 92 | 1.6% |
 | 13 | *aur* | and | 90 | 1.6% |
@@ -61,8 +61,8 @@ cover half of everything.** They are the first twenty-five below.
 | 26 | *dari* | from | 45 | 0.8% |
 | 27 | *kan* | to see | 44 | 0.8% |
 | 28 | *libro* | book | 44 | 0.8% |
-| 29 | *din* | day | 43 | 0.7% |
-| 30 | *pan* | bread, food | 43 | 0.7% |
+| 29 | *pan* | bread, food | 43 | 0.7% |
+| 30 | *din* | day | 42 | 0.7% |
 | 31 | *market* | market, shop | 38 | 0.7% |
 | 32 | *tarik* | road, way | 38 | 0.7% |
 | 33 | *doktor* | doctor | 37 | 0.6% |

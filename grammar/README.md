@@ -101,7 +101,7 @@ Two items are not grammar at all and sit outside this order: *madad* doing two
 jobs, and the thinness of Sino-Tibetan and Japonic recorded in
 [balance.md](../dictionary/balance.md). Both are vocabulary policy.
 
-## Open questions — 32 of them
+## Open questions — 33 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
@@ -154,6 +154,7 @@ measurement with its method stated, to be re-run rather than trusted.
 **[comparison](comparison.md)**
 
 - **Superlative among a named group** — "the biggest of the three" — has no form yet. *paling kabir dari tri* is untested.
+- **Whether two degree words may stack.** Lesson 18's conversation read *Cok lebi hao* for "much better" until September 4, 2026. *cok*, *lebi*, *kurang* and *paling* all stand in the same slot in front of what they scale, and nothing grants putting two there at once. The line now reads *Lebi hao*, which says less. Found by reading the lesson rather than by a check, and left open rather than granted.
 
 **[conjunction](conjunction.md)**
 
