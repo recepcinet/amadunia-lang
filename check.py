@@ -270,6 +270,35 @@ def amadunia_runs(text):
                                           or t.split("-")[0] in {"sol", "luma"} for t in toks):
                     yield line, s.strip(), toks
 
+# The material shows a glossed sentence in three shapes: a row of a two-column
+# table, a line of a quoted conversation, and a numbered practice item. Three
+# checks each read a different subset of them, and each subset was chosen by
+# accident: the adjective-gloss check read tables only, and a mistranslation
+# sat in Lesson 03's fifth practice item from the day it was written until
+# September 4, 2026. They share one reader now, so a shape cannot be invisible
+# to one check and visible to another.
+_MARKED = ("wrong", "careful", "never", "rejected", "reason", "cannot",
+           "not legal", "misrepresent", "✗", "would be", "would read")
+
+def glossed_lines(body, skip_marked=False):
+    """Yield (line number, Amadunia, English or None) for every glossed shape.
+
+    skip_marked drops the lines the repository marks as deliberately not legal
+    — Lesson 19 prints *mila metro* to show that metro is not a word yet.
+    """
+    for _n, _l in enumerate(body.splitlines(), 1):
+        _s = _l.strip()
+        if skip_marked and any(_x in _s.lower() for _x in _MARKED): continue
+        _m = re.fullmatch(r"\|([^|]*)\|([^|]*)\|", _s)
+        if _m: _ama, _eng = _m.group(1), _m.group(2)
+        elif _s.startswith(">"): _ama, _eng = _s.lstrip("> —"), None
+        else:
+            _m = re.match(r"(\d+\.\s*[^—]+)—\s*\*([^*]+)\*", _s)
+            if not _m: continue
+            _ama, _eng = re.sub(r"^\d+\.\s*", "", _m.group(1)), _m.group(2)
+        if "](" in _ama: continue      # a link cites a page, it does not speak
+        yield _n, _ama.strip(), (_eng.strip() if _eng else None)
+
 NUMBERS  = {"uan","du","tri","pat","fai","sis","seti","ba","nau","des","sen","mila"}
 QUANTITY = NUMBERS | {"cok","lebi","kurang","berapa"}
 PRONOUNS = {"mi","yu","ta","kita","mi-mi","yu-yu","ta-ta"}
@@ -774,12 +803,7 @@ for path in PROSE:
     # the example passed as a proposal.
     _proposed = (set(re.findall(r"^\| \*\*([a-z]{2,})\*\* \|", _body, re.M))
                  if os.path.basename(path).startswith("proposal-") else set())
-    for _n, _l in enumerate(_body.splitlines(), 1):
-        _s = _l.strip()
-        if _s.startswith(">"): _cell = _s.lstrip("> ")
-        elif re.fullmatch(r"\|[^|]*\|[^|]*\|", _s): _cell = _s.split("|")[1]
-        else: continue
-        if "](" in _cell: continue          # a link cites a page, it does not speak
+    for _n, _cell, _ in glossed_lines(_body, skip_marked=True):
         _t = re.findall(r"[a-z]+", _cell.lower())
         if len(_t) < 2: continue
         _unk = [x for x in _t if x not in words and x not in PROPER
@@ -802,15 +826,9 @@ for path in PROSE:
 _ADVGLOSS = re.compile(r"\b(well|fast|quickly|slowly|badly|strongly|loudly)\b", re.I)
 _SUBORD = {"porke", "kab", "agar"}
 for _p in PROSE:
-    for _l in read(_p).splitlines():
-        _s = _l.strip()
-        # re.match, not fullmatch: a practice line may carry a note after the
-        # gloss, and the first mutation written for this check added one and
-        # so slipped past the pattern rather than past the rule.
-        _m = (re.fullmatch(r"\|([^|]+)\|([^|]+)\|", _s)
-              or re.match(r"(\d+\. [^—]+)— \*([^*]+)\*", _s))
-        if not _m or not _ADVGLOSS.search(_m.group(2)): continue
-        for _piece in re.split(r"[.!?]", re.sub(r"^\d+\.\s*", "", _m.group(1))):
+    for _, _ama, _eng in glossed_lines(read(_p)):
+        if not _eng or not _ADVGLOSS.search(_eng): continue
+        for _piece in re.split(r"[.!?]", _ama):
             _t = re.findall(r"[a-z]+", _piece.lower())
             if len(_t) < 3 or not all(_x in words for _x in _t): continue
             if set(_t) & _SUBORD or _t[-1] not in ADJECTIVES: continue
@@ -844,24 +862,16 @@ for _w in ADJECTIVES:
        len(re.findall(r"\b" + _g + r"\b", _ALLGLOSS)) == 1:
         _ADJNAME[_g] = _w
 for _p in PROSE:
-    for _l in read(_p).splitlines():
-        # A numbered practice item is a glossed sentence like any table row.
-        # This read only tables until September 4, 2026, and Lesson 03's fifth
-        # practice item had glossed "Din kabir, rat keci" as "the day is long,
-        # the night is short" — kabir is big, keci is small — since the lesson
-        # was written.
-        _m = (re.fullmatch(r"\| ([^|]+) \| ([^|]+) \|", _l.strip())
-              or re.match(r"(\d+\. [^—]+)— \*([^*]+)\*", _l.strip()))
-        if not _m: continue
-        _a = set(re.findall(r"[a-z]+",
-                            re.sub(r"^\d+\.\s*", "", _m.group(1)).lower()))
+    for _, _ama, _eng in glossed_lines(read(_p)):
+        if not _eng: continue
+        _a = set(re.findall(r"[a-z]+", _ama.lower()))
         if not _a or not all(_t in words for _t in _a): continue
-        for _e in set(re.findall(r"[a-z]+", _m.group(2).lower())):
+        for _e in set(re.findall(r"[a-z]+", _eng.lower())):
             if _e in _ADJNAME and _ADJNAME[_e] not in _a:
                 check(False,
                       f"{os.path.basename(_p)}: the gloss says '{_e}', which is "
                       f"*{_ADJNAME[_e]}*, and no such word is in the Amadunia: "
-                      f"{_m.group(1).strip()}")
+                      f"{_ama}")
 
 # --------------------------------------------------------- reading ladder
 # lessons/reading-ladder.md says how much of the texts a learner can read after
