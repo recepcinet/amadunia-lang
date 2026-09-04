@@ -37,15 +37,22 @@ by writing is worth more than a gap found by reading a wordlist.
 | slowly | [text 11](../texts/text-11-anak-katab.md) | *hayai* is fast and has no opposite, so a child writing *slowly* had to be written as writing *badly* |
 | but | [Lesson 12](../lessons/lesson-12-colors-directions.md) | *— No, eski. Ma hao!* — "no, old, but good". *ma* was invented on the spot and stood in the lesson unnoticed until September 4; the line now reads *No, eski. Hao!* and the contrast is gone |
 | cheap, dear | [text 16](../texts/text-16-berapa-harga.md) | a whole bargaining scene runs on *kabir* and *kurang* — big and less — and says *this price is as big as the price in the new city* where a person would say *this is dear* |
+| a wall, a floor | [text 19](../texts/text-19-kamra-mi.md) | the dictionary has a house, a room, a door, a window, a bed, a table, a chair and a lamp, and not one surface to put them against; a description of a room can only list its contents |
 
-Three of the ten are about how a person feels or where a person hurts, and
+Three of the eleven are about how a person feels or where a person hurts, and
 that is where 300 roots turn out to be thinnest — not what a thematic wordlist
 would have predicted. The rest are joints rather than things: a point in the
 day, the word that puts one step after another, the opposite of sitting down,
 the difference between a coin and an amount, the opposite of *fast*, the word
-that contrasts two clauses, and the pair that prices a thing. **Not
-one of the ten is a noun a category would have suggested,** which is the
-whole case for finding gaps by writing.
+that contrasts two clauses, and the pair that prices a thing.
+
+**Ten of the eleven are not nouns a category would have suggested,** which was
+the whole case for finding gaps by writing. The eleventh is the exception and
+it is worth the correction: a wall and a floor are exactly what a wordlist
+headed *the house* would have contained, and eighteen texts went past them
+without noticing, because no one had described a room until
+[text 19](../texts/text-19-kamra-mi.md). Writing found it in the end; a list
+would have found it sooner.
 
 The first eight were re-checked against the dictionary on September 3,
 2026, and two entries did not survive it. Comparing one duration with another

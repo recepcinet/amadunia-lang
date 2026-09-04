@@ -15,20 +15,20 @@ counted with repeats, against the words the lessons have taught by that point.
 | 02 | 36% |
 | 03 | 47% |
 | 04 | 48% |
-| 05 | 49% |
+| 05 | 48% |
 | 06 | 50% |
 | 07 | 51% |
-| 08 | 56% |
-| 09 | 56% |
-| 10 | 59% |
-| 11 | 59% |
+| 08 | 55% |
+| 09 | 55% |
+| 10 | 58% |
+| 11 | 58% |
 | 12 | 62% |
-| 13 | 65% |
-| 14 | 66% |
+| 13 | 64% |
+| 14 | 65% |
 | 15 | 71% |
 | 16 | 75% |
-| 17 | 76% |
-| 18 | 78% |
+| 17 | 75% |
+| 18 | 77% |
 | 19 | 83% |
 | 20 | 87% |
 | 21 | 90% |
@@ -62,6 +62,7 @@ taught.
 | [Sol lai](../texts/text-15-sol-lai.md) | 10 |
 | [Anak espera sol](../texts/story-1-anak-espera-sol.md) | 13 |
 | [Yamur aur ca](../texts/text-14-yamur-aur-ca.md) | 18 |
+| [Kamra mi](../texts/text-19-kamra-mi.md) | 22 |
 | [In madina baru](../texts/text-4-in-madina-baru.md) | 24 |
 | [Lingua ini](../texts/text-3-lingua-ini.md) | 24 |
 | [Uan](../texts/text-5-uan.md) | 24 |
@@ -92,6 +93,10 @@ this table had story 1 at 13 and then nothing until 24: eleven lessons with no
 new reading. It was written inside the 147 roots the course has taught by
 Lesson 18, to put a rung in the middle of that gap, and *Sol lai* was written
 for the gap below it.
+
+**[Kamra mi](../texts/text-19-kamra-mi.md) is the fourth rung, at Lesson 21**,
+written for what was then the largest gap left in this table — six lessons
+between 18 and 24 with nothing new to read.
 
 Everything else waits for Lesson 24 or 25, because every other text was written
 at 300 roots. That is a fact about how the texts were made, not about how hard

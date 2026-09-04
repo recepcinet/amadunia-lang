@@ -1,9 +1,9 @@
 # How often each root is actually used
 
 Generated from the material a learner reads — the twenty-six lessons, the
-eighteen texts and the phrasebook — counting every word inside an Amadunia
+nineteen texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **5197 words of running Amadunia**, and every one of the 300 roots appears
+it. **5293 words of running Amadunia**, and every one of the 300 roots appears
 at least once.
 
 [`check.py`](../check.py) regenerates this page and fails if it disagrees, so
@@ -14,7 +14,7 @@ the numbers follow the corpus rather than the other way round.
 | | Share of all running words |
 |---|---|
 | first 10 | 32% |
-| first 25 | 51% |
+| first 25 | 50% |
 | first 50 | 66% |
 | first 100 | 81% |
 | first 150 | 89% |
@@ -33,43 +33,43 @@ cover half of everything.** They are the first twenty-five below.
 
 | | Root | Meaning | Uses | Share |
 |---|---|---|---|---|
-| 1 | *mi* | I, me | 536 | 10.3% |
-| 2 | *yu* | you — one form for everyone | 219 | 4.2% |
-| 3 | *ta* | he, she, it — no gender | 164 | 3.2% |
-| 4 | *in* | at, in, on | 136 | 2.6% |
-| 5 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 116 | 2.2% |
-| 6 | *ini* | this — after the noun, last in the phrase | 104 | 2.0% |
+| 1 | *mi* | I, me | 549 | 10.4% |
+| 2 | *yu* | you — one form for everyone | 219 | 4.1% |
+| 3 | *ta* | he, she, it — no gender | 165 | 3.1% |
+| 4 | *in* | at, in, on | 144 | 2.7% |
+| 5 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 118 | 2.2% |
+| 6 | *ini* | this — after the noun, last in the phrase | 105 | 2.0% |
 | 7 | *anak* | child | 101 | 1.9% |
 | 8 | *no* | no; **not** — before the predicate, see [grammar/negation.md](../grammar/negation.md) | 99 | 1.9% |
-| 9 | *dom* | house, home | 97 | 1.9% |
-| 10 | *lai* | to come | 93 | 1.8% |
+| 9 | *dom* | house, home | 97 | 1.8% |
+| 10 | *lai* | to come | 95 | 1.8% |
 | 11 | *suda* | past marker (before the verb) | 89 | 1.7% |
 | 12 | *go* | to go | 88 | 1.7% |
-| 13 | *mau* | to want | 86 | 1.7% |
-| 14 | *hao* | good | 82 | 1.6% |
-| 15 | *aur* | and | 76 | 1.5% |
-| 16 | *ca* | tea | 76 | 1.5% |
-| 17 | *kita* | we, including you — see [grammar/pronouns.md](../grammar/pronouns.md) | 61 | 1.2% |
-| 18 | *kula* | to eat | 60 | 1.2% |
-| 19 | *rafiki* | friend | 55 | 1.1% |
-| 20 | *sema* | to say, to speak | 52 | 1.0% |
-| 21 | *kabir* | big | 50 | 1.0% |
-| 22 | *punya* | to have | 50 | 1.0% |
-| 23 | *sol* | sun | 47 | 0.9% |
+| 13 | *mau* | to want | 86 | 1.6% |
+| 14 | *hao* | good | 84 | 1.6% |
+| 15 | *aur* | and | 81 | 1.5% |
+| 16 | *ca* | tea | 77 | 1.5% |
+| 17 | *kita* | we, including you — see [grammar/pronouns.md](../grammar/pronouns.md) | 63 | 1.2% |
+| 18 | *kula* | to eat | 60 | 1.1% |
+| 19 | *rafiki* | friend | 56 | 1.1% |
+| 20 | *sema* | to say, to speak | 53 | 1.0% |
+| 21 | *kabir* | big | 52 | 1.0% |
+| 22 | *punya* | to have | 50 | 0.9% |
+| 23 | *sol* | sun | 48 | 0.9% |
 | 24 | *saufa* | future marker (before the verb) | 46 | 0.9% |
 | 25 | *dari* | from | 45 | 0.9% |
-| 26 | *keci* | small | 41 | 0.8% |
+| 26 | *keci* | small | 45 | 0.9% |
 | 27 | *din* | day | 40 | 0.8% |
 | 28 | *pan* | bread, food | 38 | 0.7% |
 | 29 | *doktor* | doctor | 37 | 0.7% |
-| 30 | *sini* | here | 35 | 0.7% |
-| 31 | *itu* | that | 34 | 0.7% |
-| 32 | *kan* | to see | 34 | 0.7% |
-| 33 | *lebi* | more | 34 | 0.7% |
-| 34 | *libro* | book | 34 | 0.7% |
-| 35 | *market* | market, shop | 34 | 0.7% |
-| 36 | *por* | to, for | 34 | 0.7% |
-| 37 | *akua* | water | 33 | 0.6% |
+| 30 | *sini* | here | 36 | 0.7% |
+| 31 | *kan* | to see | 35 | 0.7% |
+| 32 | *libro* | book | 35 | 0.7% |
+| 33 | *por* | to, for | 35 | 0.7% |
+| 34 | *akua* | water | 34 | 0.6% |
+| 35 | *itu* | that | 34 | 0.6% |
+| 36 | *lebi* | more | 34 | 0.6% |
+| 37 | *market* | market, shop | 34 | 0.6% |
 | 38 | *tarik* | road, way | 33 | 0.6% |
 | 39 | *una* | together; *una* + noun = with — see [grammar/place.md](../grammar/place.md) | 33 | 0.6% |
 | 40 | *garam* | hot | 32 | 0.6% |

@@ -58,7 +58,7 @@ calculation.
 
 ## 3. What the writing has asked for
 
-Ten gaps were found by trying to write something and failing, not by reading
+Eleven gaps were found by trying to write something and failing, not by reading
 a list. [They are recorded with the sentence that stopped in each case](README.md#words-the-writing-has-asked-for):
 pain, love as a noun, to miss someone, the clock, a word for *then*, standing
 up, and a coin as against an amount.
