@@ -100,7 +100,7 @@ ending to add, the way English adds *-ly*.
 > — Dugu yu situ?
 > — Ya. Ta kara, mi katab. Kita ama musik.
 
-*Hello! Where is your house? — My house is there, above. The red house. — Is it new? — No, old. Good! — Is your sibling there? — Yes. She reads, I write. We love music.*
+*Hello! Where is your house? — My house is there, above. The house is red. — Is it new? — No, old. Good! — Is your sibling there? — Yes. She reads, I write. We love music.*
 
 ## Practice
 

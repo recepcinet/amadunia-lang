@@ -38,7 +38,7 @@ Twenty-one rules and eight briefings, one decision each. **Six briefings are ope
 | [proposal-but.md](proposal-but.md) | A word for "but". Six pages wanted one and Lesson 12 invented one; *lakin* reaches five families. **Open — the founder's call.** |
 | [proposal-stress.md](proposal-stress.md) | The briefing the open questions put first. **Decided September 3, 2026** — the rule is [stress.md](stress.md); this is the record of what it was decided on. |
 | [proposal-sentence-types.md](proposal-sentence-types.md) | The imperative and the fragment. **Decided September 3, 2026** — the rules are [sentence-types.md](sentence-types.md). |
-| [proposal-names.md](proposal-names.md) | Marking a name. Thirty-six sentences are ambiguous today, and capital letters cannot be spoken. |
+| [proposal-names.md](proposal-names.md) | Marking a name. Forty-two sentences are ambiguous today, and capital letters cannot be spoken. **Open — the founder's call.** |
 | [proposal-modal-adjective.md](proposal-modal-adjective.md) | "Want to be" plus an adjective — the smallest of the four, and the language already contains the shape that fixes it. |
 
 **The full order of a sentence:**
@@ -102,7 +102,7 @@ Two items are not grammar at all and sit outside this order: *madad* doing two
 jobs, and the thinness of Sino-Tibetan and Japonic recorded in
 [balance.md](../dictionary/balance.md). Both are vocabulary policy.
 
-## Open questions — 33 of them
+## Open questions — 34 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
@@ -165,6 +165,8 @@ measurement with its method stated, to be re-run rather than trusted.
 **[copula](copula.md)**
 
 - **"want to be" plus an adjective has no form.** *es* is a verb and can be chained — *mau es doktor*, "want to be a doctor". An adjective is its own predicate and takes no verb, so *mau* has nothing to attach to: "wants to be the easiest" cannot be built. Both [text 3](../texts/text-3-lingua-ini.md) and Lesson 21 hit this and both were rewritten around it — text 3 by supplying a noun (*mau es lingua paling asan*), Lesson 21 by dropping the modal. Whether *es* is allowed before an adjective inside a verb chain, or something else is needed, is undecided. Found September 3, 2026 by checking every sentence in the repository against the copula rule.
+
+- **A noun with an adjective is now both a sentence and a phrase.** *Dom merah* is "the house is red" by the copula rule, and since [the fragment rule](sentence-types.md) of September 3, 2026 it is also "the red house" standing alone. 139 two-word utterances in the repository have this shape. Found September 5, 2026 by reading Lesson 12 end to end: its table glosses *Dom merah.* one way and its conversation glossed the same string the other way, eighty lines apart. Recorded, not briefed — context has carried it everywhere else.
 
 **[demonstratives](demonstratives.md)**
 

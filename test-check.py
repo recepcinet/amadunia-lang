@@ -112,6 +112,12 @@ _GIOPEN = re.search(r"\*\*(\w+) briefings are open\*\*",
                     io.open("grammar/README.md", encoding="utf-8").read()).group(0)
 _GIOPEN_OFF = _GIOPEN.replace(_GIOPEN.split()[0].lstrip("*"), "Zero")
 
+# The noun-with-adjective figure moves whenever anything writes one, so this
+# mutation reads it instead of naming it. Eighteenth site of that kind.
+_NADJ = re.search(r"(\d+) two-word utterances",
+                  io.open("grammar/copula.md", encoding="utf-8").read()).group(0)
+_NADJ_OFF = re.sub(r"\d+", lambda m: str(int(m.group(0)) + 2), _NADJ)
+
 _LIVE = int(re.search(r"## Open questions — (\d+) of them",
                       io.open("grammar/README.md", encoding="utf-8").read()).group(1))
 _WORDS = {25: "Twenty-five", 26: "Twenty-six", 27: "Twenty-seven", 28: "Twenty-eight",
@@ -223,7 +229,7 @@ MUTATIONS = [
     # figure and the second check must still speak.
     ("the names briefing's second count gone stale", "grammar/proposal-names.md",
      "sentences already written", "hundred sentences already written",
-     "counts the ambiguous sentences more than once"),
+     "the ambiguous-name count is stale where it is written"),
     ("the syllabus crediting a late lesson with the tone question",
      "lessons/README.md",
      "The question words, each standing where its answer would. The yes/no "
@@ -238,6 +244,14 @@ MUTATIONS = [
     ("a lesson's root count wrong and not in bold", "lessons/lesson-05-plural.md",
      "Five lessons, **59 roots**.", "Five lessons, 57 roots.",
      "roots taught by here"),
+    # The count lives on two pages; break the one that does not own it, because
+    # that is the copy the September 5 fix missed.
+    ("the ambiguous-name count stale on the grammar index", "grammar/README.md",
+     f"{_NAMES} sentences are ambiguous today", "Zero sentences are ambiguous today",
+     "the ambiguous-name count is stale where it is written"),
+    ("the noun-with-adjective figure gone stale", "grammar/copula.md",
+     _NADJ, _NADJ_OFF,
+     "two-word utterances are a noun with an adjective"),
     ("consonant pair missing from phonology.md", "grammar/phonology.md",
      "- `fr` \u2014 *fruta* (fruit), word-initial like *tr*\n", "",
      "does not list the consonant pair 'fr'"),

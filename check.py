@@ -867,11 +867,42 @@ check(_m and _names.get(_m.group(1)) == _ambiguous,
 # count on a decision page is a fact; two are a contradiction, and checking
 # only the first is a check weaker than its own message. Every spelled count
 # of that set on the page is now held to the same recount.
-_spelled = re.findall(r"([A-Za-z][a-z]+(?:-[a-z]+)?) sentences "
-                      r"(?:are formally ambiguous|already written)", _namesbody)
-check(_spelled and all(_names.get(_w.capitalize()) == _ambiguous for _w in _spelled),
-      f"proposal-names.md counts the ambiguous sentences more than once and the "
-      f"counts do not agree: {_spelled} against a recount of {_ambiguous}")
+# The number lives on the grammar index too, and fixing the briefing on
+# September 5 did not reach it: the index still said thirty-six the next day.
+# Every page that states this count is now held to the recount, not just the
+# page that owns it — a number is stale wherever it is written.
+_spelled = [(_f, _w) for _f in ("grammar/proposal-names.md", "grammar/README.md")
+            for _w in re.findall(r"([A-Za-z][a-z]+(?:-[a-z]+)?) sentences "
+                                 r"(?:are formally ambiguous|are ambiguous|already written)",
+                                 read(_f))]
+_wrong = [f"{_f} says {_w}" for _f, _w in _spelled if _names.get(_w.capitalize()) != _ambiguous]
+check(_spelled and not _wrong,
+      f"the ambiguous-name count is stale where it is written: "
+      f"{'; '.join(_wrong)} against a recount of {_ambiguous}")
+
+# ------------------------------- the adjective-fragment count counts itself
+# copula.md and the grammar index both state how many utterances are a noun
+# followed by an adjective — formally a sentence and, since the fragment rule,
+# also a noun phrase. Every claim of that kind in this repository has gone
+# stale at least once, so it is recounted here before it can.
+# The first draft of this check counted the example inside the very sentence
+# that states the figure, so writing "142" made the true number 143. The names
+# recount had already learned this and excludes its own page; so does this one.
+_STATERS = ("grammar/copula.md", "grammar/README.md")
+_nounadj = 0
+for path in PROSE:
+    if path in _STATERS: continue
+    body = read(path)
+    if path.startswith("texts/") and "```" in body:
+        body = "".join(body.split("```")[1::2])
+    for line, sent, toks in amadunia_runs(body):
+        if len(toks) == 2 and toks[0].split("-")[0] in NOUNS and toks[1] in ADJECTIVES:
+            _nounadj += 1
+for _f in _STATERS:
+    _m = re.search(r"(\d+) two-word utterances", read(_f))
+    check(_m and int(_m.group(1)) == _nounadj,
+          f"{_f} says {_m.group(1) if _m else 'nothing'} two-word utterances are a "
+          f"noun with an adjective; the corpus has {_nounadj}")
 
 # ------------------------------------ the modal-adjective briefing counts itself
 # The size of that gap is three modals against every adjective, and the

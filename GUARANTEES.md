@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**138 guarantees** in **69 groups**, and every one of them is
+**139 guarantees** in **70 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -121,7 +121,10 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### the names briefing counts itself
 
 - proposal-names.md says … sentences are formally ambiguous; the corpus has …
-- proposal-names.md counts the ambiguous sentences more than once and the counts do not agree: … against a recount of …
+- the ambiguous-name count is stale where it is written: … against a recount of …
+### the adjective-fragment count counts itself
+
+- … says … two-word utterances are a noun with an adjective; the corpus has …
 ### the modal-adjective briefing counts itself
 
 - proposal-modal-adjective.md says … blocked combinations; three modals against … adjectives is …
