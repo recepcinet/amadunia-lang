@@ -3,7 +3,7 @@
 Generated from the material a learner reads — the twenty-six lessons, the
 twenty texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **5768 words of running Amadunia**, and every one of the 300 roots appears
+it. **5769 words of running Amadunia**, and every one of the 300 roots appears
 at least once.
 
 [`check.py`](../check.py) regenerates this page and fails if it disagrees, so
@@ -38,7 +38,7 @@ cover half of everything.** They are the first twenty-five below.
 | 3 | *ta* | he, she, it — no gender | 179 | 3.1% |
 | 4 | *in* | at, in, on | 169 | 2.9% |
 | 5 | *anak* | child | 132 | 2.3% |
-| 6 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 122 | 2.1% |
+| 6 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 123 | 2.1% |
 | 7 | *ini* | this — after the noun, last in the phrase | 108 | 1.9% |
 | 8 | *dom* | house, home | 104 | 1.8% |
 | 9 | *lai* | to come | 103 | 1.8% |

@@ -23,7 +23,7 @@ Papa katab nama anak in libro.
 
 Din-din go. Anak anda. Anak kimbia in bage.
 Anak kan flor, pohon aur tair in asman.
-Anak tanya: "Ke ini?" Mama respon.
+Anak tanya: "Ini es ke?" Mama respon.
 Anak tanya tena: "Porke?" Papa kanta.
 
 Anak go skola. Skola in madina keci.
@@ -104,7 +104,7 @@ Anak keci sema nama tena.
 | Din-din go. | The days go. |
 | Anak anda. Anak kimbia in bage. | The child walks. The child runs in the garden. |
 | Anak kan flor, pohon aur tair in asman. | The child sees flowers, trees and a bird in the sky. |
-| Anak tanya: "Ke ini?" Mama respon. | The child asks: "What is this?" The mother answers. |
+| Anak tanya: "Ini es ke?" Mama respon. | The child asks: "What is this?" The mother answers. |
 | Anak tanya tena: "Porke?" Papa kanta. | The child asks again: "Why?" The father sings. |
 | Anak go skola. Skola in madina keci. | The child goes to school. The school is in a small town. |
 | Mualim beri libro. Anak buka libro. | The teacher gives a book. The child opens the book. |

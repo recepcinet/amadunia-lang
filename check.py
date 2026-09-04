@@ -1076,6 +1076,24 @@ for path in md():
               f"{path}: '{_raw}' marks the wrong syllable; the beat is on "
               f"'{_parts[_idx] if _idx is not None else '?'}'")
 
+# ---------------------------------------- the question word keeps its place
+# questions.md: the question word stands where the answer will stand. kim and
+# berapa satisfy it at the front — the answer to "Kim lai" is the subject, and
+# berapa sits where a number sits — and kab, porke and kaifa are exempt by the
+# note settled in place.md. ke is not: the answer to "what is this" comes
+# after es, so the form is "Ini es ke". Two sentences had fronted it, one of
+# them written by me two days ago, and nothing was looking.
+for path in PROSE:
+    body = read(path)
+    if path.startswith("texts/") and "```" in body:
+        body = "".join(body.split("```")[1::2])
+    for line, sent, toks in amadunia_runs(body):
+        if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗")): continue
+        if [t.lower() for t in toks][:1] == ["ke"] and len(toks) > 1:
+            check(False, f"{os.path.basename(path)}: 'ke' opens the sentence — the "
+                         f"question word stands where the answer will stand, so it "
+                         f"follows es: {sent}")
+
 # --------------------------------------------- the number comes first
 # plural.md: a number stands before its noun and the noun stays single — tri
 # anak, du dom. The existing check tests the second half in one direction, a

@@ -90,7 +90,7 @@
 ## A conversation
 
 > — Yu suda kan habari?
-> — No. Ke suda es?
+> — No. Suda es ke?
 > — Mualim mi saufa go safari. Ta go hutan in pahar.
 > — Berapa din?
 > — Des din. Ta punya umid ta kan animal-animal situ.

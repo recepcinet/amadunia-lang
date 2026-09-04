@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**132 guarantees** in **64 groups**, and every one of them is
+**133 guarantees** in **65 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -154,6 +154,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### stress marks are right
 
 - …: '…' marks the wrong syllable; the beat is on '…'
+### the question word keeps its place
+
+- …: 'ke' opens the sentence — the question word stands where the answer will stand, so it follows es: …
 ### the number comes first
 
 - …: '… …' — the number goes before its noun: …
