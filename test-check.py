@@ -34,6 +34,12 @@ _GCOUNT = re.search(r"\*\*\d+ guarantees\*\* in \*\*\d+ groups\*\*",
                     io.open("GUARANTEES.md", encoding="utf-8").read()).group(0)
 _GCOUNT_OFF = re.sub(r"^\*\*(\d+)", lambda m: f"**{int(m.group(1)) - 5}", _GCOUNT)
 
+# The ladder's percentages move whenever a lesson or a text changes, so this
+# mutation reads the row instead of naming it. Fourth site to need this.
+_LADDER = re.search(r"\| 13 \| (\d+)% \|",
+                    io.open("lessons/reading-ladder.md", encoding="utf-8").read()).group(0)
+_LADDER_OFF = re.sub(r"(\d+)%", lambda m: f"{int(m.group(1)) + 5}%", _LADDER)
+
 _LIVE = int(re.search(r"## Open questions — (\d+) of them",
                       io.open("grammar/README.md", encoding="utf-8").read()).group(1))
 _WORDS = {25: "Twenty-five", 26: "Twenty-six", 27: "Twenty-seven", 28: "Twenty-eight",
@@ -204,7 +210,7 @@ MUTATIONS = [
      "5. Kara libro ini hao. — *Read this book well.* — the adverb stays",
      "stands after the object"),
     ("the reading ladder gone stale", "lessons/reading-ladder.md",
-     "| 13 | 65% |", "| 13 | 70% |",
+     _LADDER, _LADDER_OFF,
      "reading-ladder.md is missing or contradicts"),
     ("a text opening at the wrong lesson", "lessons/reading-ladder.md",
      "| [Anak espera sol](../texts/story-1-anak-espera-sol.md) | 13 |",

@@ -11,29 +11,29 @@ counted with repeats, against the words the lessons have taught by that point.
 
 | After lesson | Share of the texts' words you know |
 |---|---|
-| 01 | 25% |
-| 02 | 37% |
-| 03 | 48% |
-| 04 | 49% |
-| 05 | 49% |
-| 06 | 51% |
-| 07 | 52% |
-| 08 | 56% |
-| 09 | 56% |
-| 10 | 58% |
-| 11 | 58% |
-| 12 | 62% |
-| 13 | 65% |
-| 14 | 66% |
-| 15 | 72% |
-| 16 | 75% |
-| 17 | 75% |
-| 18 | 77% |
-| 19 | 81% |
-| 20 | 85% |
-| 21 | 89% |
-| 22 | 92% |
-| 23 | 92% |
+| 01 | 26% |
+| 02 | 38% |
+| 03 | 49% |
+| 04 | 50% |
+| 05 | 50% |
+| 06 | 52% |
+| 07 | 53% |
+| 08 | 57% |
+| 09 | 57% |
+| 10 | 60% |
+| 11 | 60% |
+| 12 | 63% |
+| 13 | 66% |
+| 14 | 67% |
+| 15 | 73% |
+| 16 | 77% |
+| 17 | 77% |
+| 18 | 79% |
+| 19 | 83% |
+| 20 | 86% |
+| 21 | 90% |
+| 22 | 93% |
+| 23 | 93% |
 | 24 | 97% |
 | 25 | 100% |
 | 26 | 100% |
@@ -60,6 +60,7 @@ taught.
 | Text | Readable after |
 |---|---|
 | [Anak espera sol](../texts/story-1-anak-espera-sol.md) | 13 |
+| [Yamur aur ca](../texts/text-14-yamur-aur-ca.md) | 18 |
 | [In madina baru](../texts/text-4-in-madina-baru.md) | 24 |
 | [Lingua ini](../texts/text-3-lingua-ini.md) | 24 |
 | [Uan](../texts/text-5-uan.md) | 24 |
@@ -73,12 +74,17 @@ taught.
 | [Surat por mama](../texts/text-7-surat-por-mama.md) | 25 |
 | [Tarik por skola](../texts/text-12-tarik-por-skola.md) | 25 |
 
-**[Story 1](../texts/story-1-anak-espera-sol.md) is the one to read first,** and
-it opens eleven lessons before anything else — it was written at 113 roots,
-against Lessons 1–13, and it is the only text in the collection that a learner
-halfway through the course can read at all.
+**[Story 1](../texts/story-1-anak-espera-sol.md) is the one to read first,** at
+Lesson 13 — written at 113 roots against Lessons 1–13, which is why it opens so
+early.
 
-Everything else waits for Lesson 24 or 25, because every later text was written
+**[Yamur aur ca](../texts/text-14-yamur-aur-ca.md) is the second rung, at
+Lesson 18,** and it exists because this page was measured. The first version of
+this table had story 1 at 13 and then nothing until 24: eleven lessons with no
+new reading. That text was written afterwards, inside the 147 roots the course
+has taught by Lesson 18, to put a rung in the middle of the gap.
+
+Everything else waits for Lesson 24 or 25, because every other text was written
 at 300 roots. That is a fact about how the texts were made, not about how hard
 they are: [*Uan*](../texts/text-5-uan.md) uses 21 roots and
 [*Kaifa suru ca*](../texts/text-8-kaifa-suru-ca.md) uses 19, but each reaches

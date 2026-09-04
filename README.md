@@ -228,7 +228,7 @@ Follow the commits to watch a language grow in real time.
 | look a word up | [the dictionary](dictionary/dictionary.md), or [the English index](dictionary/index-english.md) to write |
 | know which words to learn first | [the frequency list](dictionary/frequency.md) — twenty-five roots cover half of everything written |
 | know why a rule is the way it is | [grammar/](grammar/) — each page ends with what it rejected |
-| read the language, not lessons about it | [texts/](texts/) — thirteen original pieces |
+| read the language, not lessons about it | [texts/](texts/) — fourteen original pieces |
 | add a word | [CONTRIBUTING.md](CONTRIBUTING.md) |
 | answer one of the open questions | [grammar/README.md](grammar/README.md) |
 
@@ -239,7 +239,7 @@ Follow the commits to watch a language grow in real time.
 | [lessons/](lessons/) | 26 lessons in order, teaching every one of the 300 roots |
 | [grammar/](grammar/) | 17 rules — what was settled, why, and what was rejected — and the decisions still to make |
 | [dictionary/](dictionary/) | 300 roots with sourced etymologies, [the English index](dictionary/index-english.md) for writing, and [where they come from](dictionary/balance.md) |
-| [texts/](texts/) | thirteen original pieces — five stories, two arguments, a dialogue, a poem, a letter, a recipe, a walk to school, a shared meal — each ending with what the language could not say |
+| [texts/](texts/) | fourteen original pieces — six stories, two arguments, a dialogue, a poem, a letter, a recipe, a walk to school, a shared meal — each ending with what the language could not say |
 | [phrasebook.md](phrasebook.md) | the practical page — greeting, directions, buying, trouble |
 | [check.py](check.py) | every rule above, tested on every push — [and what it refuses](GUARANTEES.md), listed |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | how to propose a word, and what has already been rejected |
