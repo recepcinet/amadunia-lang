@@ -12,25 +12,25 @@ counted with repeats, against the words the lessons have taught by that point.
 | After lesson | Share of the texts' words you know |
 |---|---|
 | 01 | 26% |
-| 02 | 38% |
-| 03 | 49% |
-| 04 | 50% |
-| 05 | 50% |
-| 06 | 52% |
-| 07 | 53% |
-| 08 | 57% |
-| 09 | 57% |
-| 10 | 60% |
-| 11 | 60% |
-| 12 | 63% |
-| 13 | 66% |
-| 14 | 67% |
-| 15 | 73% |
-| 16 | 77% |
-| 17 | 77% |
-| 18 | 79% |
-| 19 | 83% |
-| 20 | 86% |
+| 02 | 39% |
+| 03 | 50% |
+| 04 | 51% |
+| 05 | 52% |
+| 06 | 53% |
+| 07 | 54% |
+| 08 | 59% |
+| 09 | 59% |
+| 10 | 62% |
+| 11 | 62% |
+| 12 | 65% |
+| 13 | 68% |
+| 14 | 69% |
+| 15 | 75% |
+| 16 | 78% |
+| 17 | 78% |
+| 18 | 80% |
+| 19 | 84% |
+| 20 | 87% |
 | 21 | 90% |
 | 22 | 93% |
 | 23 | 93% |
@@ -59,6 +59,7 @@ taught.
 
 | Text | Readable after |
 |---|---|
+| [Sol lai](../texts/text-15-sol-lai.md) | 10 |
 | [Anak espera sol](../texts/story-1-anak-espera-sol.md) | 13 |
 | [Yamur aur ca](../texts/text-14-yamur-aur-ca.md) | 18 |
 | [In madina baru](../texts/text-4-in-madina-baru.md) | 24 |
@@ -74,15 +75,20 @@ taught.
 | [Surat por mama](../texts/text-7-surat-por-mama.md) | 25 |
 | [Tarik por skola](../texts/text-12-tarik-por-skola.md) | 25 |
 
-**[Story 1](../texts/story-1-anak-espera-sol.md) is the one to read first,** at
-Lesson 13 — written at 113 roots against Lessons 1–13, which is why it opens so
-early.
+**[Sol lai](../texts/text-15-sol-lai.md) is the first thing a learner can
+read, at Lesson 10** — 89 roots, no prepositions, no *ini* or *itu*, no verb
+chain and no *porke*. It was written after this table showed that the course
+taught for twelve lessons before it offered anything to read.
 
-**[Yamur aur ca](../texts/text-14-yamur-aur-ca.md) is the second rung, at
+**[Story 1](../texts/story-1-anak-espera-sol.md) comes next, at Lesson 13** —
+written at 113 roots against Lessons 1–13, which is why it opens early.
+
+**[Yamur aur ca](../texts/text-14-yamur-aur-ca.md) is the third rung, at
 Lesson 18,** and it exists because this page was measured. The first version of
 this table had story 1 at 13 and then nothing until 24: eleven lessons with no
-new reading. That text was written afterwards, inside the 147 roots the course
-has taught by Lesson 18, to put a rung in the middle of the gap.
+new reading. It was written inside the 147 roots the course has taught by
+Lesson 18, to put a rung in the middle of that gap, and *Sol lai* was written
+for the gap below it.
 
 Everything else waits for Lesson 24 or 25, because every other text was written
 at 300 roots. That is a fact about how the texts were made, not about how hard

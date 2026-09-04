@@ -16,11 +16,18 @@ name-use from a sun-use is a judgement, not a measurement, and it is exactly
 the judgement no rule currently supports. Counting every occurrence instead
 gives Sol 51 and Luma 19.
 
-**Thirty-nine sentences are formally ambiguous.** That number *is* reproducible,
+**Forty-one sentences are formally ambiguous.** That number *is* reproducible,
 and [`check.py`](../check.py) now recounts it: a sentence whose first word is
 *Sol* or *Luma*, where every word in it is a dictionary word and nothing says
 which reading is meant. Ten are in each of the two stories, four in Lesson 12,
-three in Lesson 11, and the rest scattered across nine more files.
+three in Lesson 11, and the rest scattered across ten more files.
+
+It was thirty-nine until September 4, 2026, when
+[text 15](../texts/text-15-sol-lai.md) was written for Lesson 10 and opened
+with *Sol lai* — the sun comes, or Sol comes. The text was not written about
+this question and reached the ambiguity twice on its own, which is the
+strongest argument on this page: the collision is not in the old material, it
+is in the words.
 
 | | Reading A | Reading B |
 |---|---|---|

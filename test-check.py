@@ -40,6 +40,12 @@ _LADDER = re.search(r"\| 13 \| (\d+)% \|",
                     io.open("lessons/reading-ladder.md", encoding="utf-8").read()).group(0)
 _LADDER_OFF = re.sub(r"(\d+)%", lambda m: f"{int(m.group(1)) + 5}%", _LADDER)
 
+# The ambiguous-name count moves whenever anything writes Sol or Luma at the
+# head of a sentence — text 15 moved it by two without meaning to — so this
+# mutation reads the words instead of naming them. Fifth site to need it.
+_NAMES = re.search(r"\*\*([A-Z][a-z]+(?:-[a-z]+)?) sentences are formally ambiguous",
+                   io.open("grammar/proposal-names.md", encoding="utf-8").read()).group(1)
+
 _LIVE = int(re.search(r"## Open questions — (\d+) of them",
                       io.open("grammar/README.md", encoding="utf-8").read()).group(1))
 _WORDS = {25: "Twenty-five", 26: "Twenty-six", 27: "Twenty-seven", 28: "Twenty-eight",
@@ -144,8 +150,8 @@ MUTATIONS = [
      "**108** \u2014 three modals against 36 adjectives",
      "three modals against 37 adjectives is 111"),
     ("the names briefing gone stale", "grammar/proposal-names.md",
-     "**Thirty-nine sentences", "**Thirty-six sentences",
-     "the corpus has 39"),
+     f"**{_NAMES} sentences", "**Zero sentences",   # Zero can never be the true count
+     "sentences are formally ambiguous; the corpus has"),
     ("consonant pair missing from phonology.md", "grammar/phonology.md",
      "- `fr` \u2014 *fruta* (fruit), word-initial like *tr*\n", "",
      "does not list the consonant pair 'fr'"),
