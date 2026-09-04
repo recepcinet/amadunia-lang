@@ -101,7 +101,7 @@ substance and there is no coin. [Recorded from text
 makes it worse, because bargaining is entirely about the difference between an
 amount and a price.
 
-**No word for *cheap* or *expensive*.** The whole exchange runs on *kabir* and
+**No word for *cheap* or *expensive*.** ([the list](../dictionary/README.md#words-the-writing-has-asked-for).) The whole exchange runs on *kabir* and
 *kurang* — big and less — and says *this price is as big as the price in the
 new city* where a person would say *this is dear*. Found here, and the first
 time a text has wanted it.

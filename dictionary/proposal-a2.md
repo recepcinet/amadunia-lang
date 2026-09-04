@@ -106,11 +106,11 @@ Every gap in section 3 was found by writing. [Text
 19](../texts/text-19-kamra-mi.md) showed the blind spot in that method — a wall
 and a floor are exactly what a thematic list would have contained, and nineteen
 texts went past them. So the other method was run once, kept separate, and
-written down: [a hand-made list of 254 ordinary A1 concepts by
+written down: [a hand-made list of 263 ordinary A1 concepts by
 domain](a1-checklist.md), each looked up in the English index by
 [`check.py`](../check.py).
 
-**169 of 254 are present. Eighty-five are not.**
+**169 of 263 are present. Ninety-four are not.**
 
 | Domain | Present | Missing |
 |---|---|---|
@@ -118,7 +118,7 @@ domain](a1-checklist.md), each looked up in the English index by
 | the body | 13 of 20 | arm, finger, back, stomach, blood, bone, neck |
 | food | 15 of 21 | apple, cheese, butter, potato, onion, banana |
 | clothing | 2 of 9 | trousers, coat, hat, dress, sock, button, cloth |
-| people | 14 of 18 | man, woman, baby, neighbour |
+| people | 14 of 27 | man, woman, baby, neighbour, uncle, aunt, grandmother, grandfather, cousin, son, daughter, husband, wife |
 | time | 13 of 17 | minute, today, late, early |
 | weather | 8 of 10 | storm, ice |
 | actions | 44 of 60 | play, stand, lose, carry, laugh, cry, dance, jump, fall, push, pull, break, build, meet, hold, throw |
@@ -126,7 +126,13 @@ domain](a1-checklist.md), each looked up in the English index by
 | basics | 20 of 31 | but, all, some, none, every, few, also, only, very, then, never |
 
 **Clothing is two of nine** — a shirt and a shoe — and is the thinnest domain in
-the language by a distance. The everyday adjectives are close behind: there is
+the language by a distance. **Kinship is fourteen of twenty-seven**, and the
+missing half is the whole of the extended family: no uncle, aunt, grandmother,
+grandfather or cousin, and no son, daughter, husband or wife. The founder
+noticed this on September 4, 2026 by asking how to say *uncle*; the checklist
+had listed eighteen people-words and none of those nine, which is the second
+time a hole in the checklist has been found by somebody simply wanting to say
+something. The everyday adjectives are close behind: there is
 no *slow*, no *angry*, no *tired*, no *hungry*, no *dark* and no *wet*, so a
 person can be sick or sad but not tired, and a night can be cold but not dark.
 

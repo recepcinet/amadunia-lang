@@ -93,7 +93,7 @@ hot **but** the bread was old", which is the sentence a shared meal actually
 produces. [The ninth gap the writing has asked for](../dictionary/README.md#words-the-writing-has-asked-for),
 found the same day in Lesson 12.
 
-**No word for *then*.** The child falls asleep and is carried to bed; the order
+**No word for *then*** ([the list](../dictionary/README.md#words-the-writing-has-asked-for))**.** The child falls asleep and is carried to bed; the order
 on the page is again doing what the grammar cannot.
 
 ## Roots used

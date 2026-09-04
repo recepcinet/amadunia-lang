@@ -82,7 +82,7 @@ is "hour two" and claims a clock the language does not have —
 The line says *Sol upar*, the sun is up, which is what a school day at 136
 roots can say about the middle of it.
 
-**A school with no teacher.** *mualim* is not taught until Lesson 19, so the
+**A school with no teacher.** ([The syllabus](../lessons/README.md) records which lesson teaches what.) *mualim* is not taught until Lesson 19, so the
 only people in this school are children and a friend. Lesson 16 is called
 *School and time* and gives the building, the book and the chair; the person
 who teaches is filed in Lesson 19 among doors, windows, trees and animals.

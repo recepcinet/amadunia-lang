@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**130 guarantees** in **62 groups**, and every one of them is
+**131 guarantees** in **63 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -78,6 +78,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### the other copula
 
 - …: '… …' — a noun predicate needs es before it: …
+### a gap claim must cite a page
+
+- …: a gap claim cites no page — …
 ### a lesson may not teach an open form silently
 
 - …: uses daima or kadang, whose position is an open question, without linking the briefing that says so

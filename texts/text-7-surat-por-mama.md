@@ -81,7 +81,7 @@ added for the combination.
 
 Four things this letter wanted and could not have. None was invented.
 
-**A letter cannot be signed.** *With love* has no form: *ama* is the verb to
+**A letter cannot be signed.** (*Love as a noun* is on [the list](../dictionary/README.md#words-the-writing-has-asked-for).) *With love* has no form: *ama* is the verb to
 love, and there is no noun for love. One root does one job, so the verb cannot
 be borrowed as a noun the way English borrows it — that is the rule working as
 designed, and the cost is that the most common closing in the world's
@@ -95,7 +95,7 @@ for pain that [text 6](text-6-seti-din.md) found. Both were found by writing,
 which is now the second time that has happened and the first time it has
 happened twice to the same kind of word — the ones about how a person feels.
 
-**It cannot say "before I came" or "after I arrive".** A letter is made of
+**It cannot say "before I came" or "after I arrive".** ([subordination.md](../grammar/subordination.md) keeps *although, before, after, until* open.) A letter is made of
 those. *although*, *before*, *after* and *until* are all on the open list, so
 every sentence here had to be arranged so that no clause needed one. That is
 why the middle of the letter is four short sentences instead of two long ones.

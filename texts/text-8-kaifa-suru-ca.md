@@ -97,7 +97,7 @@ here says which step follows which — the order on the page is doing work that
 the grammar is not. Recorded as a vocabulary gap alongside
 [the others found by writing](../dictionary/README.md#words-the-writing-has-asked-for).
 
-**It cannot say "wait until it is hot".** *until* is on the open list, so the
+**It cannot say "wait until it is hot".** ([subordination.md](../grammar/subordination.md).) *until* is on the open list, so the
 text says *Yu espera* and then, separately, *Akua garam sasa* — the water is
 hot now. Two sentences where every language on Earth uses one.
 

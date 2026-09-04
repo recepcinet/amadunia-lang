@@ -103,7 +103,7 @@ cang*.
 
 ## Gaps
 
-**No word for a station.** The taxi brings me *por tren*, to the train, because
+**No word for a station.** (Not on [the list](../dictionary/README.md#words-the-writing-has-asked-for) and not in [the A1 checklist](../dictionary/a1-checklist.md) either — a station is a thing neither method had reached.) The taxi brings me *por tren*, to the train, because
 there is nowhere for a train to be. Every journey text will hit this.
 
 **Duration has no marker.** *Tren anda pat hora* is "the train goes four hours",

@@ -76,13 +76,13 @@ the sentence would be about the book.
 
 ## Gaps
 
-**There is no word for *slowly*.** The child writing badly is the point of the
+**There is no word for *slowly*.** ([the list](../dictionary/README.md#words-the-writing-has-asked-for).) The child writing badly is the point of the
 first half, and the natural sentence is that the child writes *slowly* rather
 than badly, which is not the same thing and not unkind in the same way.
 *hayai* is fast and has no opposite. The text used *mal*, bad, which says more
 than it means to.
 
-**It cannot say "better than before".** *lebi hao* is better, and comparing it
+**It cannot say "better than before".** ([comparison.md](../grammar/comparison.md) grants comparing with *dari*; what is missing is a word for the earlier moment.) *lebi hao* is better, and comparing it
 to an earlier state needs *dari* with something to point at — a moment rather
 than a thing. The text says *Anak katab hao sasa*, the child writes well now,
 and lets *sasa* carry the change.

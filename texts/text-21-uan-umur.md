@@ -211,11 +211,11 @@ both, correctly: a text invents nothing. That makes seven pages that have
 wanted the word, and this is the first time it arrived in a draft by reflex
 rather than by argument.
 
-**No word for *then*, over eighty-eight sentences.** A life is a sequence and
+**No word for *then*, over eighty-eight sentences** ([the list](../dictionary/README.md#words-the-writing-has-asked-for))**.** A life is a sequence and
 the page can only set its parts side by side. Every paragraph break in the
 block is doing work the grammar cannot.
 
-**Nothing for growing old.** *eski* is old of things; a person is *no genc*,
+**Nothing for growing old.** (Neither on [the list](../dictionary/README.md#words-the-writing-has-asked-for) nor in [the checklist](../dictionary/a1-checklist.md); it is recorded here as a judgement rather than a hole.) *eski* is old of things; a person is *no genc*,
 not young, which is what the text says. Whether that is a gap or a language
 choosing not to have one is a judgement, and it is recorded here rather than
 claimed as a hole.

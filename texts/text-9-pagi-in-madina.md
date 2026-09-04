@@ -92,7 +92,7 @@ were never the words a category would have suggested.
 
 ## Gaps
 
-**It cannot say "I got up".** *Mi go dari yatak*, I go from the bed, is a
+**It cannot say "I got up".** (*To get up, to stand* is on [the list](../dictionary/README.md#words-the-writing-has-asked-for).) *Mi go dari yatak*, I go from the bed, is a
 paraphrase of a position change the language has no verb for. Rising, standing,
 sitting down — *otur* is to sit, and there is nothing for its opposite.
 

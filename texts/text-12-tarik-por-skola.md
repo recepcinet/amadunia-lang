@@ -103,7 +103,7 @@ The two stand in consecutive lines of the dialogue and no reader can mix them.
 
 ## Gaps
 
-**There is still no way to tell someone to *be* something,** and this page
+**There is still no way to tell someone to *be* something** ([sentence-types.md](../grammar/sentence-types.md) records it), and this page
 wanted it three times:
 
 - *Be careful* at the road — written as *Stop! Lihat tarik*, two commands for

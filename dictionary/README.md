@@ -39,6 +39,7 @@ by writing is worth more than a gap found by reading a wordlist.
 | cheap, dear | [text 16](../texts/text-16-berapa-harga.md) | a whole bargaining scene runs on *kabir* and *kurang* — big and less — and says *this price is as big as the price in the new city* where a person would say *this is dear* |
 | a wall, a floor | [text 19](../texts/text-19-kamra-mi.md) | the dictionary has a house, a room, a door, a window, a bed, a table, a chair and a lamp, and not one surface to put them against; a description of a room can only list its contents |
 | fluent, fluently | [a sentence someone asked for](#a-third-way-of-finding-one) | *Mi parolas Esperanton tre flue* came out as *Mi sema hao Amadunia* — I speak Amadunia well. *hao* carries most of it, which is why this one is weaker than the others on the list |
+| uncle, aunt, grandmother, cousin | [a question someone asked](#a-third-way-of-finding-one) | the whole kinship set is six words — *mama*, *papa*, *anak*, *dugu*, *familia*, *nasab*. *dugu mama* is the mother's sibling and works today; whether the language wants its own root is A2's call |
 
 ### A third way of finding one
 

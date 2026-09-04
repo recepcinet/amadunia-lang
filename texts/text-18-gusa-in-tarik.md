@@ -89,7 +89,7 @@ tarik funga*, sometimes the road is closed, is what the officer would say.
 Two open questions, two sentences, and the words sitting in the dictionary
 unable to work.
 
-**No word for *but*, a fifth time.** *Tarik baru duan* wants "the new road was
+**No word for *but*, a fifth time** ([the briefing](../grammar/proposal-but.md))**.** *Tarik baru duan* wants "the new road was
 short **but** slow".
 
 ## Roots used

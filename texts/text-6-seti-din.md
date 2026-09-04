@@ -104,7 +104,7 @@ whole claim of the number system and had never actually been shown.
 Three things this text wanted to say and could not. None of them was invented
 to make the text work.
 
-**There is no word for pain.** The child is ill for seven days and never says
+**There is no word for pain.** (First on [the list](../dictionary/README.md#words-the-writing-has-asked-for).) The child is ill for seven days and never says
 where it hurts, because there is no way to. The nearest root is *mal*, bad,
 which is not the same thing — a bad leg is not a leg that hurts. This is a
 dictionary gap, not a grammar gap, and it is the first one found by writing

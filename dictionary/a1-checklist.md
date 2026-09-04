@@ -33,7 +33,7 @@ shirt, shoe, trousers, coat, hat, dress, sock, button, cloth
 
 ## people
 
-person, child, mother, father, sibling, friend, teacher, doctor, farmer, merchant, driver, police, man, woman, baby, neighbour, name, family
+person, child, mother, father, sibling, friend, teacher, doctor, farmer, merchant, driver, police, man, woman, baby, neighbour, name, family, uncle, aunt, grandmother, grandfather, cousin, son, daughter, husband, wife
 
 ## time
 

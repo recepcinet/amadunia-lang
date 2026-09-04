@@ -544,6 +544,21 @@ for path in PROSE:
             check(False, f"{os.path.basename(path)}: '{base[0]} {base[1]}' — a noun "
                          f"predicate needs es before it: {sent}")
 
+# ------------------------------------------- a gap claim must cite a page
+# texts/README.md states the discipline: before a text records a gap, the rule
+# page that would grant the thing has to be read. Two claims were withdrawn
+# for want of that — the language could compare durations all along, and
+# forever may be daima. Whether a claim is TRUE cannot be checked; whether it
+# cites the page it should have read can. Fifteen of forty cited nothing.
+for _p in sorted(glob.glob("texts/*.md")):
+    _tb = read(_p)
+    if "## Gaps" not in _tb: continue
+    for _para in re.split(r"\n\s*\n", _tb.split("## Gaps")[1].split("\n## ")[0]):
+        if not _para.strip().startswith("**"): continue
+        check("](" in _para,
+              f"{os.path.basename(_p)}: a gap claim cites no page — "
+              f"{' '.join(_para.split())[:60]}")
+
 # ------------------------------ a lesson may not teach an open form silently
 # The standing rule is that a lesson does not use an open question. daima and
 # kadang cannot obey it — every root must be taught somewhere, and where these
