@@ -445,7 +445,11 @@ for path in glob.glob("lessons/lesson-*.md"):
     if not _num: continue          # the two-digit rule reports it; do not crash here
     n = int(_num.group(1))
     if n >= INTRO["verb chain"]: continue
-    body = read(path).split("## What you can already say")[0]
+    # The closing section used to be cut off here. It holds no Amadunia
+    # sentence in any lesson — counted, all twenty-six — so the cut hid
+    # nothing, but a sentence put there later would have been invisible to
+    # this rule and to the one below it.
+    body = read(path)
     for line, sent, toks in amadunia_runs(body):
         if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗")): continue
         base = [t.split("-")[0] for t in toks]
@@ -551,7 +555,7 @@ for path in sorted(glob.glob("lessons/lesson-*.md")):
     _num = re.search(r"lesson-(\d\d)", path)
     if not _num: continue          # the two-digit rule reports it; do not crash here
     n = int(_num.group(1))
-    body = read(path).split("## What you can already say")[0]
+    body = read(path)      # the closing section is read too, see above
     for line, sent, toks in amadunia_runs(body):
         if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗")): continue
         base = [t.split("-")[0] for t in toks]
@@ -1282,6 +1286,30 @@ for _m in re.finditer(r"^## (.+)\n\n(.+)$", read("dictionary/a1-checklist.md"), 
 check(f"**{_a1present} of {_a1tot} are present" in _a2,
       f"proposal-a2.md's checklist total is stale; recount gives "
       f"{_a1present} of {_a1tot}")
+
+# ------------------------------------ a text's table repeats its own text
+# Every text prints its Amadunia twice: once in the code block and once, line
+# by line, beside the English. Only the block was ever checked for grammar —
+# the copula, the adjective order, everything — so a sentence that exists only
+# in the table was invisible to all of it, and the table is the half a reader
+# actually reads. Rather than run every rule over the table too, the two
+# copies are required to agree: a line-by-line row must appear in the text it
+# glosses. 413 rows, all of them found today.
+def _tnorm(_s):
+    _s = re.sub(r"[*_`\"]", "", _s)
+    return " ".join(re.findall(r"[a-z]+(?:-[a-z]+)*", _s.lower()))
+for _p in sorted(glob.glob("texts/*.md")):
+    _src = read(_p)
+    if "```" not in _src or "## Line by line" not in _src: continue
+    _blk = _tnorm(_src.split("```")[1])
+    for _l in _src.split("## Line by line")[1].split("\n## ")[0].splitlines():
+        _m = re.fullmatch(r"\|([^|]+)\|([^|]+)\|", _l.strip())
+        if not _m: continue
+        _a = _tnorm(_m.group(1))
+        if not _a or _a == "amadunia": continue      # the table's header row
+        check(_a in _blk,
+              f"{os.path.basename(_p)}: the line-by-line table has a sentence "
+              f"the text does not: {_m.group(1).strip()}")
 
 # --------------------------------------- how many rules, how many briefings
 # The front page said 17 rules while its own status section said twenty-one
