@@ -106,11 +106,11 @@ Every gap in section 3 was found by writing. [Text
 19](../texts/text-19-kamra-mi.md) showed the blind spot in that method — a wall
 and a floor are exactly what a thematic list would have contained, and nineteen
 texts went past them. So the other method was run once, kept separate, and
-written down: [a hand-made list of 263 ordinary A1 concepts by
+written down: [a hand-made list of 274 ordinary A1 concepts by
 domain](a1-checklist.md), each looked up in the English index by
 [`check.py`](../check.py).
 
-**169 of 263 are present. Ninety-four are not.**
+**169 of 274 are present. A hundred and five are not.**
 
 | Domain | Present | Missing |
 |---|---|---|
@@ -119,11 +119,38 @@ domain](a1-checklist.md), each looked up in the English index by
 | food | 15 of 21 | apple, cheese, butter, potato, onion, banana |
 | clothing | 2 of 9 | trousers, coat, hat, dress, sock, button, cloth |
 | people | 14 of 27 | man, woman, baby, neighbour, uncle, aunt, grandmother, grandfather, cousin, son, daughter, husband, wife |
-| time | 13 of 17 | minute, today, late, early |
-| weather | 8 of 10 | storm, ice |
+| time | 13 of 22 | minute, today, late, early, Monday, Sunday, January, summer, winter |
+| weather | 8 of 14 | storm, ice, north, south, east, west |
 | actions | 44 of 60 | play, stand, lose, carry, laugh, cry, dance, jump, fall, push, pull, break, build, meet, hold, throw |
-| qualities | 27 of 43 | slow, weak, angry, tired, hungry, thirsty, free, cheap, expensive, dark, bright, soft, hard, wet, dry, fluent |
+| qualities | 27 of 45 | slow, weak, angry, tired, hungry, thirsty, free, cheap, expensive, dark, bright, soft, hard, wet, dry, fluent, brown, grey |
 | basics | 20 of 31 | but, all, some, none, every, few, also, only, very, then, never |
+
+### The sets a language has to close
+
+Kinship was not an isolated hole. Checked on September 4, 2026, four more
+closed sets are missing entire, and none was on the checklist either:
+
+| Set | In the dictionary |
+|---|---|
+| the compass — north, south, east, west | **nothing**; the language has left, right, up, down |
+| the days of the week | **nothing**; it has *hafta*, week, and *din*, day |
+| the months | **nothing**; it has *mensis* |
+| the seasons | **nothing**; it has *mausim* |
+| the colours | six — *merah*, *asul*, *siya*, *putih*, *asfar*, *yesil*; no brown, grey, orange, purple or pink |
+
+**Three of the five may not need roots at all**, and that is the interesting
+part. Chinese names its weekdays by number — 星期一 is week-one — and its
+months the same way, and a language built on economy should probably do the
+same: *din du* for the second day, *mensis tri* for the third month.
+
+**But it cannot, yet.** Numbering a day or a month is naming an ordinal —
+first, second, third — and [ordinals have no form](../grammar/numbers.md).
+That open question, filed since text 6 wanted "on the eighth day", turns out to
+block two whole vocabulary sets as well as a sentence. It is the first case
+where answering one open question would remove the need for a dozen roots.
+
+The compass is the opposite: four directions that no number can build, and no
+root for any of them.
 
 **Clothing is two of nine** — a shirt and a shoe — and is the thinnest domain in
 the language by a distance. **Kinship is fourteen of twenty-seven**, and the

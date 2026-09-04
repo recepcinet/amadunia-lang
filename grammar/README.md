@@ -175,7 +175,7 @@ measurement with its method stated, to be re-run rather than trusted.
 
 **[numbers](numbers.md)**
 
-- **Ordinal numbers have no form.** *First, second, eighth* cannot be built, and nothing in the cardinal system suggests a derivation. [Text 6](../texts/text-6-seti-din.md) is the clearest case: a story that runs on days wanted *on the eighth day* and could only say *for eight days*.
+- **Ordinal numbers have no form.** *First, second, eighth* cannot be built, and nothing in the cardinal system suggests a derivation. [Text 6](../texts/text-6-seti-din.md) is the clearest case: a story that runs on days wanted *on the eighth day* and could only say *for eight days*. **It also blocks two whole vocabulary sets**: the language names no weekday and no month, and numbering them — the economical answer, and Chinese's — needs an ordinal. Answering this question would remove the need for about a dozen roots.
 - Whether the separator between groups is a hyphen or a space is used inconsistently above (*du-des-uan* vs *pat-des fai*, both inherited from the README) and needs a single rule.
 
 **[phonology](phonology.md)**

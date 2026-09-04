@@ -37,11 +37,11 @@ person, child, mother, father, sibling, friend, teacher, doctor, farmer, merchan
 
 ## time
 
-day, night, morning, evening, week, month, year, hour, minute, moment, today, tomorrow, yesterday, now, season, late, early
+day, night, morning, evening, week, month, year, hour, minute, moment, today, tomorrow, yesterday, now, season, late, early, Monday, Sunday, January, summer, winter
 
 ## weather
 
-rain, snow, wind, sun, cloud, sky, hot, cold, storm, ice
+rain, snow, wind, sun, cloud, sky, hot, cold, storm, ice, north, south, east, west
 
 ## actions
 
@@ -49,7 +49,7 @@ eat, drink, sleep, walk, run, go, come, see, hear, speak, read, write, give, tak
 
 ## qualities
 
-big, small, long, short, new, old, good, bad, fast, slow, clean, dirty, full, empty, strong, weak, easy, difficult, near, far, heavy, light, beautiful, young, happy, sad, angry, tired, hungry, thirsty, sick, free, true, wrong, cheap, expensive, dark, bright, soft, hard, wet, dry, fluent
+big, small, long, short, new, old, good, bad, fast, slow, clean, dirty, full, empty, strong, weak, easy, difficult, near, far, heavy, light, beautiful, young, happy, sad, angry, tired, hungry, thirsty, sick, free, true, wrong, cheap, expensive, dark, bright, soft, hard, wet, dry, fluent, brown, grey
 
 ## basics
 
