@@ -59,6 +59,17 @@ _L20 = re.search(r"Twenty lessons, \*\*(\d+) roots\*\*",
                  io.open("lessons/lesson-20-colours-and-health.md", encoding="utf-8").read()).group(0)
 _L20_OFF = re.sub(r"(\d+)", lambda m: str(int(m.group(1)) + 30), _L20, count=1)
 
+# The balance table moves whenever an etymology names another language, so
+# both of these read the row instead of naming it. Eighth and ninth sites.
+_BALROW = re.search(r"^\| Turkic \| .*$",
+                    io.open("dictionary/balance.md", encoding="utf-8").read(), re.M).group(0)
+_BALROW_OFF = re.sub(r"(\d+) \| ([\d.]+)% \|$",
+                     lambda m: f"{int(m.group(1)) + 1} | {float(m.group(2)) + 0.3:.1f}% |", _BALROW)
+_FRONTROW = re.search(r"^\| Austronesian \| .*$",
+                      io.open("README.md", encoding="utf-8").read(), re.M).group(0)
+_FRONTROW_OFF = re.sub(r"^\| Austronesian \| (\d+)",
+                       lambda m: f"| Austronesian | {int(m.group(1)) - 7}", _FRONTROW)
+
 _LIVE = int(re.search(r"## Open questions — (\d+) of them",
                       io.open("grammar/README.md", encoding="utf-8").read()).group(1))
 _WORDS = {25: "Twenty-five", 26: "Twenty-six", 27: "Twenty-seven", 28: "Twenty-eight",
@@ -184,7 +195,7 @@ MUTATIONS = [
      "| Health | 2 |", "| Health | 3 |",
      "theme table has drifted from the dictionary"),
     ("balance table drifted from the dictionary", "dictionary/balance.md",
-     "| Turkic | 23 | 7.7% | 90 | 30.0% |", "| Turkic | 23 | 7.7% | 91 | 30.3% |",
+     _BALROW, _BALROW_OFF,
      "family table has drifted"),
     ("an etymology naming no language", "dictionary/dictionary.md",
      "| taksi | taxi | French *taxi*, from *taxim\u00e8tre* \u2014 Turkish *taksi*, "
@@ -290,6 +301,9 @@ MUTATIONS = [
     ("an invented word in a practice item", "lessons/lesson-19-home-and-nature.md",
      "1. Pencere mi lebi keci dari pintu.", "1. Pencere mi lebi keci dari pinto.",
      "is not a word in the dictionary"),
+    ("the front page's balance table gone stale", "README.md",
+     _FRONTROW, _FRONTROW_OFF,
+     "README.md's balance table has drifted"),
     ("the joined-form count gone stale", "grammar/word-formation.md",
      "There are **36**", "There are **35**",
      "word-formation.md's count is stale"),

@@ -127,23 +127,25 @@ family would recognise, since a word like *dunia* is at home in five families
 at once.
 
 | Family | Origin | | Reach | |
-|---|---|---|---|---|
-| Latin/Romance | 85 | 28.3% | 85 | 28.3% |
-| Indo-Aryan | 63 | 21.0% | 81 | 27.0% |
-| Austronesian | 60 | 20.0% | 108 | 36.0% |
-| Turkic | 18 | 6.0% | 86 | 28.7% |
-| Semitic | 18 | 6.0% | 68 | 22.7% |
-| Germanic | 13 | 4.3% | 34 | 11.3% |
-| Niger-Congo | 10 | 3.3% | 62 | 20.7% |
-| Slavic | 8 | 2.7% | 38 | 12.7% |
-| Sino-Tibetan | 8 | 2.7% | 11 | 3.7% |
-| Greek | 5 | 1.7% | 16 | 5.3% |
-| Japonic | 4 | 1.3% | 6 | 2.0% |
-| Iranian | 2 | 0.7% | 36 | 12.0% |
+|---|---:|---:|---:|---:|
+| Austronesian | 67 | 22.3% | 115 | 38.3% |
+| Turkic | 23 | 7.7% | 94 | 31.3% |
+| Latin/Romance | 75 | 25.0% | 90 | 30.0% |
+| Indo-Aryan | 22 | 7.3% | 83 | 27.7% |
+| Semitic | 49 | 16.3% | 68 | 22.7% |
+| Niger-Congo | 14 | 4.7% | 64 | 21.3% |
+| Slavic | 5 | 1.7% | 48 | 16.0% |
+| Germanic | 13 | 4.3% | 46 | 15.3% |
+| Iranian | 9 | 3.0% | 36 | 12.0% |
+| Greek | 8 | 2.7% | 17 | 5.7% |
+| Sino-Tibetan | 11 | 3.7% | 12 | 4.0% |
+| Japonic | 4 | 1.3% | 8 | 2.7% |
+| Koreanic | 0 | 0.0% | 2 | 0.7% |
 
 **European roots are 34% of the dictionary**, against Esperanto's ~95% — both
-counted the same way, by where a root came from. By reach, nothing exceeds 38%. The thin spot is real and named rather than hidden:
-Sino-Tibetan and Japonic sit at 2.7% and 1.3%. That was recorded as structural
+counted the same way, by where a root came from. By reach the largest is
+Austronesian at 38.3%. The thin spot is real and named rather than hidden:
+**by reach**, Sino-Tibetan is 4.0% and Japonic 2.7%. That was recorded as structural
 — their words are short, and the short space is full — and the explanation
 turned out to be wrong: modern Chinese and Japanese words are mostly two
 syllables, which is exactly what the four-letter rule wants. Seven of ten

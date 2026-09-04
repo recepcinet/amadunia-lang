@@ -7,15 +7,15 @@ Two numbers are worth separating. **Origin** is the family a root came from — 
 ## All 300 roots
 
 | Family | Origin | | Reach | |
-|---|---:|---:|---:|---:|
-| Austronesian | 67 | 22.3% | 112 | 37.3% |
-| Turkic | 23 | 7.7% | 90 | 30.0% |
-| Latin/Romance | 75 | 25.0% | 89 | 29.7% |
+|---|---|---|---|---|
+| Austronesian | 67 | 22.3% | 115 | 38.3% |
+| Turkic | 23 | 7.7% | 94 | 31.3% |
+| Latin/Romance | 75 | 25.0% | 90 | 30.0% |
 | Indo-Aryan | 22 | 7.3% | 83 | 27.7% |
 | Semitic | 49 | 16.3% | 68 | 22.7% |
-| Niger-Congo | 14 | 4.7% | 63 | 21.0% |
-| Slavic | 5 | 1.7% | 42 | 14.0% |
-| Germanic | 13 | 4.3% | 39 | 13.0% |
+| Niger-Congo | 14 | 4.7% | 64 | 21.3% |
+| Slavic | 5 | 1.7% | 48 | 16.0% |
+| Germanic | 13 | 4.3% | 46 | 15.3% |
 | Iranian | 9 | 3.0% | 36 | 12.0% |
 | Greek | 8 | 2.7% | 17 | 5.7% |
 | Sino-Tibetan | 11 | 3.7% | 12 | 4.0% |

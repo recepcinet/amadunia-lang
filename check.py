@@ -1607,6 +1607,18 @@ check(_have[:len(_want)] == _want,
       + (f"\n    want: {_want[2] if len(_want) > 2 else ''}"
          f"\n    have: {_have[2] if len(_have) > 2 else '(missing)'}"))
 
+# The front page prints the same table. Only balance.md's copy was checked,
+# and README's had been computed by the origin method this file corrected on
+# September 3 — it said Indo-Aryan 63 against 22 and Semitic 18 against 49,
+# and nothing could see it. Both copies are compared against one recount now.
+_frontbal = [_l for _l in read("README.md").splitlines()
+             if _l.startswith("| ") and _l.count("|") == 6]
+check(_frontbal[:len(_want)] == _want,
+      "README.md's balance table has drifted from the dictionary — it is the "
+      "same table as balance.md's and is regenerated the same way"
+      + (f"\n    want: {_want[1] if len(_want) > 1 else ''}"
+         f"\n    have: {_frontbal[1] if len(_frontbal) > 1 else '(missing)'}"))
+
 m = re.search(r"\*\*By origin there is a largest bloc\.\*\* (\S+) is ([\d.]+)%", bal)
 check(m and m.group(1) == top[0] and abs(float(m.group(2)) - 100*top[1]/len(words)) < 0.05,
       f"balance.md's largest family is stale; recount gives {top[0]} at {100*top[1]/len(words):.1f}%")

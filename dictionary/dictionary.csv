@@ -110,7 +110,7 @@ hora,hour,Time,"Spanish/Portuguese hora, Italian ora, Latin hora, Greek hōra �
 kemarin,yesterday,Time,Indonesian/Malay kemarin
 mausim,season,Time,"Arabic mawsim (موسم) → Indonesian musim, Turkish mevsim, Urdu mausam, Swahili msimu — the source of monsoon"
 mensis,month,Time,"Latin mēnsis → Spanish mes, Italian mese, Portuguese mês, French mois — global through bimonthly, menstrual"
-momen,moment,Time,"Latin momentum — global: moment, momento, Moment, moment"
+momen,moment,Time,"Latin momentum — English moment, Spanish momento, German Moment, Russian moment, Indonesian momen"
 pagi,morning,Time,Indonesian/Malay pagi
 rat,night,Time,"Hindi/Urdu raat, Bengali raat, Sanskrit rātri"
 sasa,now,Time,Swahili sasa
@@ -179,7 +179,7 @@ unut,to forget,Actions,"Turkish unut-, Azeri unut-, Turkmen unut-"
 bola,ball,Play,"Portuguese/Spanish bola, Indonesian/Malay bola, Tagalog bola, Swahili boli"
 oyun,game,Play,"Turkish oyun, Azeri oyun, Turkmen oýun"
 auto,car,Town and money,"German Auto, Spanish auto, Turkish/Indonesian oto, Russian avto — global"
-banka,bank,Town and money,"Italian banca — global: bank, banco, banka, banki"
+banka,bank,Town and money,"Italian banca — English bank, Spanish banco, Turkish banka, Russian bank, Indonesian bank, Swahili benki"
 harga,price,Town and money,"Indonesian/Malay harga, from Sanskrit argha"
 hospital,hospital,Town and money,"Latin hospitale — global: hospital, hôpital, hospitalis, Indonesian hospital"
 kertas,paper,Town and money,"Greek chártēs → Arabic qirṭās → Indonesian/Malay kertas, Swahili karatasi"
@@ -234,21 +234,21 @@ keci,small,Qualities and ideas,"Indonesian/Malay kecil, Turkish küçük"
 kosong,empty,Qualities and ideas,Indonesian/Malay kosong
 kotor,dirty,Qualities and ideas,Indonesian/Malay kotor
 kuat,strong,Qualities and ideas,Indonesian/Malay kuat
-kultura,culture,Qualities and ideas,"Latin cultura — global: culture, cultura, Kultur, kultura"
+kultura,culture,Qualities and ideas,"Latin cultura — English culture, Spanish/Italian cultura, German Kultur, Russian kultura, Turkish kültür"
 kurang,less,Qualities and ideas,Indonesian/Malay kurang
 lebi,more,Qualities and ideas,Indonesian/Malay lebih
-legis,law,Qualities and ideas,"Latin lēgis — global through legal, ley, legge, legislation"
+legis,law,Qualities and ideas,"Latin lēgis — English legal, Spanish ley, Italian legge, French loi"
 lingua,language,Qualities and ideas,"Latin lingua → Italian/Portuguese lingua, Spanish lengua, French langue — global through linguistics, lingua franca"
 luma,light,Qualities and ideas,"Latin lūmen → Spanish lumbre, Italian/Portuguese lume — global through luminous, illuminate"
 mal,bad,Qualities and ideas,"Latin malus, Spanish/French mal, already-global via malaria"
 masal,story,Qualities and ideas,"Turkish masal, from Arabic mathal; Azeri masal"
 mimpi,dream,Qualities and ideas,Indonesian/Malay mimpi
 muskil,difficult,Qualities and ideas,"Arabic mushkil (مشكل), Turkish müşkül, Urdu/Hindi mushkil, Persian moshkel — written with s, the alphabet having no sh"
-natura,nature,Qualities and ideas,"Latin natura — global: nature, natura, Natur, natura"
-numero,number,Qualities and ideas,"Latin numerus → global: number, número, numero, Nummer, nomer"
+natura,nature,Qualities and ideas,"Latin natura — English nature, Spanish/Italian natura, German Natur, Russian natura"
+numero,number,Qualities and ideas,"Latin numerus — English number, Spanish número, Italian numero, German Nummer, Russian nomer, Turkish numara"
 paling,"most — the superlative, before the adjective",Qualities and ideas,Indonesian/Malay paling
 plen,full,Qualities and ideas,"Latin plēnus, Spanish lleno, French plein, English plenty"
-problema,problem,Qualities and ideas,"Greek próblēma — global: problem, problema, Problem, problema"
+problema,problem,Qualities and ideas,"Greek próblēma — English problem, Spanish/Italian problema, German Problem, Russian problema, Turkish problem, Indonesian problema"
 safari,journey,Qualities and ideas,"Arabic safar (سفر) → Swahili safari, and global in English"
 safi,clean,Qualities and ideas,"Arabic ṣāfī (صافي), Swahili safi, Hindi/Urdu sāf, Turkish saf"
 sakil,heavy,Qualities and ideas,"Arabic thaqīl (ثقيل), Turkish sakil, Urdu saqīl"

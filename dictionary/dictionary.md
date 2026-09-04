@@ -126,7 +126,7 @@
 | kemarin | yesterday | Indonesian/Malay *kemarin* |
 | mausim | season | Arabic *mawsim* (موسم) → Indonesian *musim*, Turkish *mevsim*, Urdu *mausam*, Swahili *msimu* — the source of *monsoon* |
 | mensis | month | Latin *mēnsis* → Spanish *mes*, Italian *mese*, Portuguese *mês*, French *mois* — global through *bimonthly*, *menstrual* |
-| momen | moment | Latin *momentum* — global: *moment*, *momento*, *Moment*, *moment* |
+| momen | moment | Latin *momentum* — English *moment*, Spanish *momento*, German *Moment*, Russian *moment*, Indonesian *momen* |
 | pagi | morning | Indonesian/Malay *pagi* |
 | rat | night | Hindi/Urdu *raat*, Bengali *raat*, Sanskrit *rātri* |
 | sasa | now | Swahili *sasa* |
@@ -200,7 +200,7 @@
 | oyun | game | Turkish *oyun*, Azeri *oyun*, Turkmen *oýun* |
 | **Town and money** | | |
 | auto | car | German *Auto*, Spanish *auto*, Turkish/Indonesian *oto*, Russian *avto* — global |
-| banka | bank | Italian *banca* — global: *bank*, *banco*, *banka*, *banki* |
+| banka | bank | Italian *banca* — English *bank*, Spanish *banco*, Turkish *banka*, Russian *bank*, Indonesian *bank*, Swahili *benki* |
 | harga | price | Indonesian/Malay *harga*, from Sanskrit *argha* |
 | hospital | hospital | Latin *hospitale* — global: *hospital*, *hôpital*, *hospitalis*, Indonesian *hospital* |
 | kertas | paper | Greek *chártēs* → Arabic *qirṭās* → Indonesian/Malay *kertas*, Swahili *karatasi* |
@@ -257,21 +257,21 @@
 | kosong | empty | Indonesian/Malay *kosong* |
 | kotor | dirty | Indonesian/Malay *kotor* |
 | kuat | strong | Indonesian/Malay *kuat* |
-| kultura | culture | Latin *cultura* — global: *culture*, *cultura*, *Kultur*, *kultura* |
+| kultura | culture | Latin *cultura* — English *culture*, Spanish/Italian *cultura*, German *Kultur*, Russian *kultura*, Turkish *kültür* |
 | kurang | less | Indonesian/Malay *kurang* |
 | lebi | more | Indonesian/Malay *lebih* |
-| legis | law | Latin *lēgis* — global through *legal*, *ley*, *legge*, *legislation* |
+| legis | law | Latin *lēgis* — English *legal*, Spanish *ley*, Italian *legge*, French *loi* |
 | lingua | language | Latin *lingua* → Italian/Portuguese *lingua*, Spanish *lengua*, French *langue* — global through *linguistics*, *lingua franca* |
 | luma | light | Latin *lūmen* → Spanish *lumbre*, Italian/Portuguese *lume* — global through *luminous*, *illuminate* |
 | mal | bad | Latin *malus*, Spanish/French *mal*, already-global via *malaria* |
 | masal | story | Turkish *masal*, from Arabic *mathal*; Azeri *masal* |
 | mimpi | dream | Indonesian/Malay *mimpi* |
 | muskil | difficult | Arabic *mushkil* (مشكل), Turkish *müşkül*, Urdu/Hindi *mushkil*, Persian *moshkel* — written with *s*, the alphabet having no *sh* |
-| natura | nature | Latin *natura* — global: *nature*, *natura*, *Natur*, *natura* |
-| numero | number | Latin *numerus* → global: *number*, *número*, *numero*, *Nummer*, *nomer* |
+| natura | nature | Latin *natura* — English *nature*, Spanish/Italian *natura*, German *Natur*, Russian *natura* |
+| numero | number | Latin *numerus* — English *number*, Spanish *número*, Italian *numero*, German *Nummer*, Russian *nomer*, Turkish *numara* |
 | paling | most — the superlative, before the adjective | Indonesian/Malay *paling* |
 | plen | full | Latin *plēnus*, Spanish *lleno*, French *plein*, English *plenty* |
-| problema | problem | Greek *próblēma* — global: *problem*, *problema*, *Problem*, *problema* |
+| problema | problem | Greek *próblēma* — English *problem*, Spanish/Italian *problema*, German *Problem*, Russian *problema*, Turkish *problem*, Indonesian *problema* |
 | safari | journey | Arabic *safar* (سفر) → Swahili *safari*, and global in English |
 | safi | clean | Arabic *ṣāfī* (صافي), Swahili *safi*, Hindi/Urdu *sāf*, Turkish *saf* |
 | sakil | heavy | Arabic *thaqīl* (ثقيل), Turkish *sakil*, Urdu *saqīl* |
