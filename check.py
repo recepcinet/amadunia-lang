@@ -1234,6 +1234,16 @@ check(_m3 and _WORDNUM.get(_m3.group(1).lower()) == len(_NEVER),
       f"proposal-a2.md says '{_m3.group(1) if _m3 else '?'} are still unused'; "
       f"{len(_NEVER)} roots appear in no text")
 
+# Three texts brought the unused count to two, and those two are the only
+# roots an open question forbids writing: madad's class is undecided, and
+# where a frequency adverb stands is open. Any other root missing from the
+# texts is a root that fell out of use. If one of those two questions is ever
+# settled, this line is what asks for the word to be written.
+_BLOCKED = {"madad", "kadang"}
+check(set(_NEVER) <= _BLOCKED,
+      f"{len(set(_NEVER) - _BLOCKED)} roots are in no text and nothing forbids "
+      f"writing them: {', '.join(sorted(set(_NEVER) - _BLOCKED))}")
+
 # ------------------------------------------------------- derived documents
 # texts/README.md restates each text's root count; it is not the text's own
 # claim and had nothing checking it.

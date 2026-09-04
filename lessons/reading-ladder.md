@@ -11,22 +11,22 @@ counted with repeats, against the words the lessons have taught by that point.
 
 | After lesson | Share of the texts' words you know |
 |---|---|
-| 01 | 26% |
-| 02 | 37% |
-| 03 | 48% |
-| 04 | 49% |
+| 01 | 25% |
+| 02 | 36% |
+| 03 | 47% |
+| 04 | 48% |
 | 05 | 49% |
-| 06 | 51% |
-| 07 | 52% |
+| 06 | 50% |
+| 07 | 51% |
 | 08 | 56% |
 | 09 | 56% |
 | 10 | 59% |
 | 11 | 59% |
-| 12 | 63% |
-| 13 | 66% |
-| 14 | 67% |
-| 15 | 72% |
-| 16 | 76% |
+| 12 | 62% |
+| 13 | 65% |
+| 14 | 66% |
+| 15 | 71% |
+| 16 | 75% |
 | 17 | 76% |
 | 18 | 78% |
 | 19 | 83% |
@@ -67,6 +67,7 @@ taught.
 | [Uan](../texts/text-5-uan.md) | 24 |
 | [Anak katab](../texts/text-11-anak-katab.md) | 25 |
 | [Berapa harga](../texts/text-16-berapa-harga.md) | 25 |
+| [Gusa in tarik](../texts/text-18-gusa-in-tarik.md) | 25 |
 | [Kaifa suru ca](../texts/text-8-kaifa-suru-ca.md) | 25 |
 | [Kula una](../texts/text-13-kula-una.md) | 25 |
 | [Mila tahun](../texts/text-10-mila-tahun.md) | 25 |

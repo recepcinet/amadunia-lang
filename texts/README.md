@@ -8,7 +8,7 @@ Every text here is written using **only** the roots in the [dictionary](../dicti
 the seventeen rules that can be spotted in a sentence — tense, plural,
 possession, the copula, existence, negation, conjunction, questions,
 demonstratives, place, *una*, verb chains, comparison, subordination, adverbs,
-commands, numbers — appears in at least one of these seventeen texts.
+commands, numbers — appears in at least one of these eighteen texts.
 
 **Two rules were thin and each was given a text of its own.** The adverb rule
 stood in one text until [text 11](text-11-anak-katab.md) was written for it and
@@ -50,3 +50,4 @@ These are original compositions, not translations. Translating an existing book 
 | [Sol lai](text-15-sol-lai.md) | 42 | **89 roots, Lessons 1-10** — a day at home and at the market, the lowest rung on the reading ladder |
 | [Berapa harga](text-16-berapa-harga.md) | 62 | 300 roots, Lessons 1-26 — bargaining at the market, written for the words no text had ever used |
 | [Tren aur farasi](text-17-tren-aur-farasi.md) | 73 | 300 roots, Lessons 1-26 — a journey to a farm, written for the same reason and reaching 27 more |
+| [Gusa in tarik](text-18-gusa-in-tarik.md) | 43 | 300 roots, Lessons 1-26 — a blocked street, the last five roots that could be written |

@@ -79,15 +79,16 @@ language: *o* (or), *kadar* (as … as), *kurang* (less), *lasim* (must),
 *berapa* (how many), *kaifa* (how), *fikir* (to think). A rule can be exercised
 by a text while the word that carries it is not.
 
-[Text 16](../texts/text-16-berapa-harga.md) took twenty-one of them and
-[text 17](../texts/text-17-tren-aur-farasi.md) took twenty-seven more.
-**Seven are still unused**, and `check.py` recounts the number so this
-paragraph cannot drift:
+Three texts were written for them: [16](../texts/text-16-berapa-harga.md) took
+twenty-one, [17](../texts/text-17-tren-aur-farasi.md) twenty-seven, and
+[18](../texts/text-18-gusa-in-tarik.md) the last five that could be written.
+**Two are still unused**, and `check.py` recounts the number so this paragraph
+cannot drift:
 
-*burun*, *dekat*, *gusa*, *kadang*, *kiri*, *madad*, *polisi*.
+*kadang*, *madad*.
 
-**Two of the seven cannot be written at all**, and that is the finding worth
-keeping. *madad*'s class is undecided, so any sentence using it would answer
+**Neither can be written at all**, which is why they are the two that are
+left. *madad*'s class is undecided, so any sentence using it would answer
 [the open question](../grammar/verb-chains.md) by accident — the question has
 no evidence because the word has no use, and it can have no use until the
 question is answered. *kadang* is the same shape: where a frequency adverb
