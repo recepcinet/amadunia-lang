@@ -43,6 +43,9 @@ They are opposites and they behave the same:
 | Mi no unut yu. | I do not forget you. |
 | Ta suda unut kalima ini. | She forgot this word. |
 
+*Where* daima *stands is [not settled](../grammar/proposal-frequency.md): this
+course uses three positions and none of them is the rule yet.*
+
 ## Two animals
 
 | | |

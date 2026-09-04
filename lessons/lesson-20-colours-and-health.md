@@ -83,6 +83,9 @@ Colours follow the noun, like every adjective, and take no *es*:
 | Es telur aur legum in dom? | Are there eggs and vegetables at home? |
 | Anak-anak kula telur kadang. | The children sometimes eat eggs. |
 
+*Where *daima* and *kadang* stand is [not settled](../grammar/proposal-frequency.md); this course uses three positions and none of them is the rule yet.*
+
+
 ## Playing
 
 | | |

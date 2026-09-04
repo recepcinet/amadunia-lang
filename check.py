@@ -544,6 +544,21 @@ for path in PROSE:
             check(False, f"{os.path.basename(path)}: '{base[0]} {base[1]}' — a noun "
                          f"predicate needs es before it: {sent}")
 
+# ------------------------------ a lesson may not teach an open form silently
+# The standing rule is that a lesson does not use an open question. daima and
+# kadang cannot obey it — every root must be taught somewhere, and where these
+# two stand is exactly what is open — so the lessons that use them must say so
+# and point at the briefing. Lesson 19 taught them with no note at all, in
+# three positions, one paragraph after claiming they stand in the adverb slot.
+for path in sorted(glob.glob("lessons/lesson-*.md")):
+    body = read(path)
+    _uses = any("daima" in [_t.lower() for _t in toks] or "kadang" in [_t.lower() for _t in toks]
+                for _l, _s, toks in amadunia_runs(body))
+    if not _uses: continue
+    check("proposal-frequency.md" in body,
+          f"{os.path.basename(path)}: uses daima or kadang, whose position is an "
+          f"open question, without linking the briefing that says so")
+
 # ------------------------------------------ a noun after ini closes nothing
 # The mandatory-copula check above only fires when a sentence opens with a
 # pronoun, because a noun at the front may be an owner rather than a subject —

@@ -97,13 +97,26 @@
 
 ## Always and sometimes
 
-They stand in the adverb slot, straight after the verb:
+The adverb rule would put them straight after the verb. The course does not, consistently — see below:
 
 | | |
 |---|---|
 | Mi kula daima pan. | I always eat bread. |
 | Ta kadang lai. | She sometimes comes. |
 | Kita rabota daima in skola. | We always work at school. |
+
+**Where these two stand is not settled, and this lesson shows three
+positions.** One sentence above puts the word before its verb, one in the
+adverb slot after it, and [Lesson 20](lesson-20-colours-and-health.md) puts
+one after the object. Thirteen sentences across the course, three positions,
+because nobody has decided which is right.
+[The briefing measures it](../grammar/proposal-frequency.md) and costs the
+three answers. Until it is decided, read all three as correct and do not copy
+one over the others.
+
+*The examples are named by position rather than quoted here on purpose: the
+briefing counts every sentence that uses these words, and a note quoting one
+would count itself as evidence.*
 
 ## A thousand
 
