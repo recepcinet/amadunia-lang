@@ -94,8 +94,8 @@ lessons before anything taught them, and are now introduced there instead. Again
 > — Ya, muskil. Aur hao. Mi ama anak-anak.
 > — Mi senti yu saufa es mualim paling hao.
 
-*Are you happy or sad? — I'm happy! I've found a new job. — Where? — At the
-school near the bridge. I'll be the children's teacher. — Difficult? — Yes, difficult. And
+*Are you happy or sad? — I'm happy! I've found a new job. — Where? — At a new
+school. I'll be the children's teacher. — Difficult? — Yes, difficult. And
 good. I love children. — I feel you will be the best teacher.*
 
 ## Practice

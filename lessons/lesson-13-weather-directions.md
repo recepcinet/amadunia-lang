@@ -52,7 +52,7 @@ But say **what** something is, and *es* comes back:
 | | |
 |---|---|
 | Din cang. | The day is long. |
-| Rat cang, din keci. | The night is long, the day is short. |
+| Rat cang. Mi espera. | The night is long. I wait. |
 | Dugu mi sundar. | My sibling is beautiful. |
 | Amadunia asan! | Amadunia is easy! |
 

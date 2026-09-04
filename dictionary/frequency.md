@@ -33,7 +33,7 @@ cover half of everything.** They are the first twenty-five below.
 
 | | Root | Meaning | Uses | Share |
 |---|---|---|---|---|
-| 1 | *mi* | I, me | 465 | 10.2% |
+| 1 | *mi* | I, me | 466 | 10.2% |
 | 2 | *yu* | you — one form for everyone | 206 | 4.5% |
 | 3 | *ta* | he, she, it — no gender | 135 | 3.0% |
 | 4 | *in* | at, in, on | 119 | 2.6% |
@@ -57,9 +57,9 @@ cover half of everything.** They are the first twenty-five below.
 | 22 | *sol* | sun | 45 | 1.0% |
 | 23 | *dari* | from | 44 | 1.0% |
 | 24 | *saufa* | future marker (before the verb) | 42 | 0.9% |
-| 25 | *din* | day | 40 | 0.9% |
+| 25 | *din* | day | 39 | 0.9% |
 | 26 | *doktor* | doctor | 37 | 0.8% |
-| 27 | *keci* | small | 36 | 0.8% |
+| 27 | *keci* | small | 35 | 0.8% |
 | 28 | *lebi* | more | 33 | 0.7% |
 | 29 | *pan* | bread, food | 33 | 0.7% |
 | 30 | *sema* | to say, to speak | 33 | 0.7% |

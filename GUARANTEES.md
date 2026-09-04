@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**94 guarantees** in **43 groups**, and every one of them is
+**95 guarantees** in **44 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -116,6 +116,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - frequency.md's total is stale; the corpus has … running words
 - frequency.md is missing or contradicts the row '…'
 - frequency.md's top forty has drifted: …
+### an adjective's English name
+
+- …: the gloss says '…', which is *…*, and no such word is in the Amadunia: …
 ### stress
 
 - stress.md's syllable counts are stale; the dictionary gives …/…/…

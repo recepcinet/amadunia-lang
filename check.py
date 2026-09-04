@@ -712,6 +712,41 @@ _gone = [w for w, n in _order[:40]
          if f"| *{w}* |" not in _fr or f"| {n} |" not in _fr]
 check(not _gone, f"frequency.md's top forty has drifted: {', '.join(_gone[:6])}")
 
+# ------------------------------------------- an adjective's English name
+# Nothing here checks a translation, and a wrong one is invisible to every
+# other rule: Lesson 13 glossed *Rat cang, din keci* as "the night is long,
+# the day is short", where keci is "small" and the word for short — duan —
+# is not taught until Lesson 16. The general form of this check is unusable.
+# Matching every English word in a gloss against the dictionary returns fifty
+# lines, and forty-eight are the existential "there is", "how many" for
+# berapa, or an English homograph — "stop" the English verb against bas, or
+# "light" against hafif, which is glossed "light in weight". Narrowed to the
+# adjectives, and only to names no other gloss mentions, it returned two
+# lines and both were real errors.
+_ADJNAME = {}
+_ALLGLOSS = " ".join(meaning[_x].lower() for _x in words)
+for _w in ADJECTIVES:
+    # ADJECTIVES is a hand list; a mutation that renames a root out of the
+    # dictionary used to make this line raise KeyError, and a crash reports
+    # nothing at all. Missing words are another check's business.
+    if _w not in meaning: continue
+    _g = meaning[_w].strip().lower()
+    if re.fullmatch(r"[a-z]{4,}", _g) and \
+       len(re.findall(r"\b" + _g + r"\b", _ALLGLOSS)) == 1:
+        _ADJNAME[_g] = _w
+for _p in PROSE:
+    for _l in read(_p).splitlines():
+        _m = re.fullmatch(r"\| ([^|]+) \| ([^|]+) \|", _l.strip())
+        if not _m: continue
+        _a = set(re.findall(r"[a-z]+", _m.group(1).lower()))
+        if not _a or not all(_t in words for _t in _a): continue
+        for _e in set(re.findall(r"[a-z]+", _m.group(2).lower())):
+            if _e in _ADJNAME and _ADJNAME[_e] not in _a:
+                check(False,
+                      f"{os.path.basename(_p)}: the gloss says '{_e}', which is "
+                      f"*{_ADJNAME[_e]}*, and no such word is in the Amadunia: "
+                      f"{_m.group(1).strip()}")
+
 # --------------------------------------------------------------- stress
 # grammar/stress.md defines a syllable as a vowel group and states the counts
 # that follow from it. They are derived from the dictionary, so they are

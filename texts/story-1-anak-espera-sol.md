@@ -41,7 +41,7 @@ Anak otur. Anak kan sol. Anak hao.
 | Anak sema: "Yu es rafiki mi?" | The child says: "Are you my friend?" |
 | Sol beri luma. Din cang. Sol beri luma. | The sun gives light. The day is long. The sun gives light. |
 | Rat lai. Sol go. Dunia barid. | Night comes. The sun goes. The world is cold. |
-| Anak espera. Anak espera cok. | The child waits. The child waits a long time. |
+| Anak espera. Anak espera cok. | The child waits. The child waits a lot. |
 | Angin lai. Yuki lai. Anak keci sini. | Wind comes. Snow comes. The small child is here. |
 | Din baru lai. Sol lai upar. | A new day comes. The sun comes above. |
 | Anak kimbia. Anak sema: "Salam! Mi suda espera yu!" | The child runs. The child says: "Hello! I waited for you!" |
