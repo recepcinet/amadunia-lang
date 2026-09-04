@@ -39,6 +39,14 @@ of them. The leaders are *RVN* at 8.6% (*Ta-ta lihat stela-stela*), *NA* at
 7.5% (*Sol kabir*) and *NV* at 4.8% (*Anak sema*). [`check.py`](../check.py)
 recounts the two headline numbers.
 
+**1407 of the 1666 are distinct — 84%.** The corpus is not padded with
+repeats: the most repeated sentence appears seven times across four files and
+is *Mi sema*, "I say", which is a quotation frame rather than a sentence
+anybody is making. That matters for
+[the frequency list](../dictionary/frequency.md), which counts every
+occurrence: if a sixth of the material were copies of itself the curve would
+be measuring the copying.
+
 The measurement was made to test a claim and refuted it.
 [Text 21](text-21-uan-umur.md), the long one, said at first that the shapes
 drone at that length. They do not: it uses 56 distinct shapes, more than any

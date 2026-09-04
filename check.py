@@ -1308,7 +1308,7 @@ def _shape_tag(_t):
     if _r in ADJECTIVES: return "A"
     if _r in words: return "N"
     return "?"
-_shapes = defaultdict(int)
+_shapes, _sents = defaultdict(int), set()
 for _p in (sorted(glob.glob("texts/*.md")) + sorted(glob.glob("lessons/lesson-*.md"))
            + ["phrasebook.md"]):
     # The index is about the texts, not one of them. It quotes example shapes,
@@ -1318,10 +1318,14 @@ for _p in (sorted(glob.glob("texts/*.md")) + sorted(glob.glob("lessons/lesson-*.
     if _p.startswith("texts/") and "```" in _sb: _sb = "".join(_sb.split("```")[1::2])
     for _line, _sent, _toks in amadunia_runs(_sb):
         _shapes["".join(_shape_tag(_t) for _t in _toks)] += 1
+        _sents.add(" ".join(_t.lower() for _t in _toks))
 _stot = sum(_shapes.values())
 check(f"**{_stot} sentences, {len(_shapes)} distinct shapes**" in read("texts/README.md"),
       f"texts/README.md's shape count is stale; the material has {_stot} "
       f"sentences in {len(_shapes)} distinct shapes")
+check(f"**{len(_sents)} of the {_stot} are distinct" in read("texts/README.md"),
+      f"texts/README.md's repetition figure is stale; {len(_sents)} of "
+      f"{_stot} sentences are distinct")
 
 # ------------------------------------ a text's table repeats its own text
 # Every text prints its Amadunia twice: once in the code block and once, line

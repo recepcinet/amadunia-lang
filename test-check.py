@@ -93,6 +93,11 @@ _SHAPES = re.search(r"\*\*(\d+) sentences, (\d+) distinct shapes\*\*",
                     io.open("texts/README.md", encoding="utf-8").read()).group(0)
 _SHAPES_OFF = re.sub(r"^\*\*(\d+)", lambda m: f"**{int(m.group(1)) + 4}", _SHAPES)
 
+# The repetition figure moves with every sentence written, so it is read.
+_DISTINCT = re.search(r"\*\*(\d+) of the (\d+) are distinct",
+                      io.open("texts/README.md", encoding="utf-8").read()).group(0)
+_DISTINCT_OFF = re.sub(r"^\*\*(\d+)", lambda m: f"**{int(m.group(1)) - 3}", _DISTINCT)
+
 _LIVE = int(re.search(r"## Open questions — (\d+) of them",
                       io.open("grammar/README.md", encoding="utf-8").read()).group(1))
 _WORDS = {25: "Twenty-five", 26: "Twenty-six", 27: "Twenty-seven", 28: "Twenty-eight",
@@ -365,6 +370,9 @@ MUTATIONS = [
     ("the sentence-shape count gone stale", "texts/README.md",
      _SHAPES, _SHAPES_OFF,
      "shape count is stale"),
+    ("the repetition figure gone stale", "texts/README.md",
+     _DISTINCT, _DISTINCT_OFF,
+     "repetition figure is stale"),
     ("the joined-form count gone stale", "grammar/word-formation.md",
      _JOIN, _JOIN_OFF,
      "word-formation.md's count is stale"),
@@ -545,7 +553,13 @@ def main():
         original = io.open(full, encoding="utf-8", newline="").read()
         if find not in original:
             print(f"  NOT APPLIED  {name}  (target missing in {path})"); notapplied += 1; continue
-        io.open(full, "w", encoding="utf-8", newline="").write(original.replace(find, repl, 1))
+        # Every occurrence, not the first. A target that appears twice — a
+        # sentence in a text's block and again in its line-by-line table, a
+        # file named in an index's prose and in its row — used to be mutated
+        # in whichever copy came first, and twice in two days a sentence added
+        # to a page moved that copy and quietly changed what the mutation
+        # tested. Mutating all of them removes the question.
+        io.open(full, "w", encoding="utf-8", newline="").write(original.replace(find, repl))
         code, out = run(work)
         io.open(full, "w", encoding="utf-8", newline="").write(original)
         if code == 0:
