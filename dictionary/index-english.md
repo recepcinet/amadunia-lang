@@ -23,6 +23,7 @@ Derived mechanically from the dictionary, so it cannot drift out of step with it
 | ball | bola |
 | bank | banka |
 | beautiful | sundar |
+| because | porke |
 | bed | yatak |
 | below | sub |
 | big | kabir |

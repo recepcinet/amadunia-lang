@@ -294,7 +294,7 @@
 | ke | what | Spanish *qué*, Portuguese *que*, Italian *che*, French *que* |
 | kim | who | Turkish, Azeri, Uzbek, Kazakh *kim* |
 | nali | where | Chinese *nǎlǐ* (哪里) |
-| porke | why | Spanish *por qué*, Italian *perché*, French *pourquoi* — "for what" |
+| porke | why; because | Spanish *por qué*, Italian *perché*, French *pourquoi* — "for what" |
 | **Prepositions** — before the noun | | |
 | dari | from | Indonesian/Malay *dari* |
 | in | at, in, on | Latin, English, German, Italian, Dutch *in* |

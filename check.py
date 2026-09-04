@@ -1215,6 +1215,27 @@ check(not unused, f"{len(unused)} roots are never used in a sentence, only "
                   f"glossed: {', '.join(unused[:12])}"
                   + (" ..." if len(unused) > 12 else ""))
 
+# --------------------------------------------------- the A1 checklist
+# dictionary/a1-checklist.md is the wordlist method, kept beside the gaps found
+# by writing. The concepts are judgement and live in that file; the arithmetic
+# is not, so the totals quoted in the A2 briefing are recomputed here. A root
+# added to the dictionary moves them.
+_a1head = {_m.group(1).strip().lower() for _m in
+           re.finditer(r"^\| ([^|]+) \| [^|]+ \|$", read("dictionary/index-english.md"), re.M)}
+_a1head.discard("english")
+_a1tot = _a1present = 0
+_a2 = read("dictionary/proposal-a2.md")
+for _m in re.finditer(r"^## (.+)\n\n(.+)$", read("dictionary/a1-checklist.md"), re.M):
+    _ws = [_x.strip() for _x in _m.group(2).split(",")]
+    _have = [_x for _x in _ws if _x in _a1head or f"to {_x}" in _a1head]
+    _a1tot += len(_ws); _a1present += len(_have)
+    check(f"| {_m.group(1)} | {len(_have)} of {len(_ws)} |" in _a2,
+          f"proposal-a2.md's checklist row for '{_m.group(1)}' is stale; "
+          f"the dictionary has {len(_have)} of {len(_ws)}")
+check(f"**{_a1present} of {_a1tot} are present" in _a2,
+      f"proposal-a2.md's checklist total is stale; recount gives "
+      f"{_a1present} of {_a1tot}")
+
 # ---------------------------------------------------- one root, one job
 # CONTRIBUTING rule 8 says a word is a noun or a verb and never both, and
 # CONTRIBUTING also said check.py enforces it. It did not: the only thing
