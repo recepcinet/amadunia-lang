@@ -3,7 +3,7 @@
 Every gap in [the list the writing has asked for](README.md#words-the-writing-has-asked-for)
 was found by trying to say something and failing. That method has a blind spot,
 and [text 19](../texts/text-19-kamra-mi.md) found it: a wall and a floor are
-exactly what a thematic wordlist would have contained, and nineteen texts went
+exactly what a thematic wordlist would have contained, and eighteen texts went
 past them because none had described a room.
 
 So this page is the other method, kept deliberately separate. It is a hand-made

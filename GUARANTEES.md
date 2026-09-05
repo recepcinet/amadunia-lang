@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**168 guarantees** in **85 groups**, and every one of them is
+**171 guarantees** in **86 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -305,6 +305,11 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - reading-ladder.md's list of lessons that move nothing is stale; the table gives …: …
 - reading-ladder.md: Lessons 24 and 25 carry …% to …%
 - …: '…' — the ladder first reaches …% at Lesson …
+### the gap list counts its own two methods
+
+- dictionary/README.md: … gaps came from writing, and the page does not say so
+- dictionary/README.md: the … gaps found by a question are not named as numbers … to …
+- dictionary/README.md: the feelings count is not stated against … gaps
 ### the but briefing cites real pages
 
 - proposal-but.md says '… pages' but its evidence table has … rows

@@ -2418,6 +2418,33 @@ if _rows:
                   f"{os.path.basename(_p2)}: '{re.sub(chr(10), ' ', _m9.group(0))}' — "
                   f"the ladder first reaches {_pct}% at Lesson {_first:02d}")
 
+# ------------------------------------- the gap list counts its own two methods
+# dictionary/README.md splits its gaps into the ones found by writing and the
+# ones found by a question someone asked, and says so in words: "The first
+# eleven came from writing ... The twelfth came from neither." Two rows were
+# added since and neither number moved, and a third sentence — "three of the
+# twelve" — hung off the same figure. Both are read off the table now.
+_gapsec = read("dictionary/README.md").split("## Words the writing has asked for")[1]
+_gapsec = _gapsec.split("### A third way")[0]
+_gaprows = [_l for _l in _gapsec.splitlines()
+            if _l.startswith("| ") and not _l.startswith("| Missing") and "---" not in _l]
+_asked = [_l for _l in _gaprows if "#a-third-way-of-finding-one" in _l]
+_written = [_l for _l in _gaprows if _l not in _asked]
+_SPELL = {n: w for w, n in WORD_NUM.items()}
+_ORD = {12: "twelfth", 13: "thirteenth", 14: "fourteenth", 15: "fifteenth",
+        16: "sixteenth", 17: "seventeenth"}
+check(f"The first {_SPELL.get(len(_written))} came from writing" in read("dictionary/README.md"),
+      f"dictionary/README.md: {len(_written)} gaps came from writing, and the page "
+      f"does not say so")
+check(all(_ORD.get(len(_written) + _i + 1, "?") in read("dictionary/README.md")
+          for _i in range(len(_asked))),
+      f"dictionary/README.md: the {len(_asked)} gaps found by a question are not "
+      f"named as numbers {len(_written) + 1} to {len(_gaprows)}")
+check(f"of the {_SPELL.get(len(_gaprows))} are about how a person feels"
+      in read("dictionary/README.md"),
+      f"dictionary/README.md: the feelings count is not stated against "
+      f"{len(_gaprows)} gaps")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one

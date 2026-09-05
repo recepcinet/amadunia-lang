@@ -27,7 +27,6 @@ by writing is worth more than a gap found by reading a wordlist.
 
 | Missing | Found by | The sentence that could not be finished |
 |---|---|---|
-| quiet, silent — the adjective | [text 13](../texts/text-13-kula-una.md), [text 21](../texts/text-21-uan-umur.md) | *Dom sukut*, the house is silent, three times in two texts — and *sukut* is the **noun** silence, so the phrase reads "the house's silence". The lines are *Es sukut in dom*, there is silence in the house, which is the existential doing the work an adjective would. Found September 5, 2026. |
 | pain, to hurt | [text 6](../texts/text-6-seti-din.md) | a child ill for seven days never says where it hurts; *mal*, bad, is not the same thing |
 | love, as a noun | [text 7](../texts/text-7-surat-por-mama.md) | a letter cannot be signed *with love* — *ama* is the verb, and one root does one job |
 | to miss someone | [text 7](../texts/text-7-surat-por-mama.md) | *Mi sedih porke yu-yu baid* names the cause instead of the feeling |
@@ -37,6 +36,7 @@ by writing is worth more than a gap found by reading a wordlist.
 | a coin, as against an amount | [text 9](../texts/text-9-pagi-in-madina.md) | *Mi beri fai pesa* is "I give five money" |
 | slowly | [text 11](../texts/text-11-anak-katab.md) | *hayai* is fast and has no opposite, so a child writing *slowly* had to be written as writing *badly* |
 | but | [Lesson 12](../lessons/lesson-12-colors-directions.md) | *— No, eski. Ma hao!* — "no, old, but good". *ma* was invented on the spot and stood in the lesson unnoticed until September 4; the line now reads *No, eski. Hao!* and the contrast is gone |
+| quiet, silent — the adjective | [text 13](../texts/text-13-kula-una.md), [text 21](../texts/text-21-uan-umur.md) | *Dom sukut*, the house is silent, three times in two texts — and *sukut* is the **noun** silence, so the phrase reads "the house's silence". The lines are *Es sukut in dom*, there is silence in the house, which is the existential doing the work an adjective would. Found September 5, 2026. |
 | cheap, dear | [text 16](../texts/text-16-berapa-harga.md) | a whole bargaining scene runs on *kabir* and *kurang* — big and less — and says *this price is as big as the price in the new city* where a person would say *this is dear* |
 | a wall, a floor | [text 19](../texts/text-19-kamra-mi.md) | the dictionary has a house, a room, a door, a window, a bed, a table, a chair and a lamp, and not one surface to put them against; a description of a room can only list its contents |
 | fluent, fluently | [a sentence someone asked for](#a-third-way-of-finding-one) | *Mi parolas Esperanton tre flue* came out as *Mi sema hao Amadunia* — I speak Amadunia well. *hao* carries most of it, which is why this one is weaker than the others on the list |
@@ -44,8 +44,8 @@ by writing is worth more than a gap found by reading a wordlist.
 
 ### A third way of finding one
 
-The first eleven came from writing something original and stopping. The
-twelfth came from neither writing nor a wordlist: the founder asked how
+The first twelve came from writing something original and stopping. The
+thirteenth and fourteenth came from neither writing nor a wordlist: the founder asked how
 Amadunia says the Esperanto sentence *Mi parolas Esperanton tre flue* — "I
 speak Esperanto very fluently" — on September 4, 2026. The answer is *Mi sema
 hao Amadunia*, and two things fell out of the difference.
@@ -68,22 +68,36 @@ methods had missed.
 
 ---
 
-Three of the twelve are about how a person feels or where a person hurts, and
+Three of the fourteen are about how a person feels or where a person hurts, and
 that is where 300 roots turn out to be thinnest — not what a thematic wordlist
 would have predicted. The rest are joints rather than things: a point in the
 day, the word that puts one step after another, the opposite of sitting down,
 the difference between a coin and an amount, the opposite of *fast*, the word
 that contrasts two clauses, and the pair that prices a thing.
 
-**Ten of the twelve are not nouns a category would have suggested,** which was
-the whole case for finding gaps by writing. Two are exceptions and both are
-worth the correction. A wall and a floor: a wall and a floor are exactly what a wordlist
-headed *the house* would have contained, and eighteen texts went past them
-without noticing, because no one had described a room until
-[text 19](../texts/text-19-kamra-mi.md). Writing found it in the end; a list
-would have found it sooner. And *fluent* came from neither method but from a
-single sentence asked in another language, which is the third way described
-above.
+**Most of them are joints rather than things,** which was the whole case for
+finding gaps by writing: a point in the day, the word that puts one step after
+another, the opposite of sitting down, the difference between a coin and an
+amount, the opposite of *fast*, the word that contrasts two clauses, and the
+pair that prices a thing.
+
+This page used to put a number on that — "ten of the twelve are not nouns a
+category would have suggested" — by comparing the list against
+[the A1 checklist](a1-checklist.md). **That comparison is not the test it looks
+like, and the number is withdrawn.** The checklist was written later and by the
+same hand, and several of these concepts are on it *because* the writing had
+already found them. Counting the overlap of two lists one person wrote in one
+week measures the overlap, not the method.
+
+What survives without circularity is the exceptions, and they are worth the
+correction. **A wall and a floor** are exactly what a wordlist headed *the
+house* would have contained, and eighteen texts went past them without
+noticing, because no one had described a room until
+[text 19](../texts/text-19-kamra-mi.md); writing found it in the end, a list
+would have found it sooner. **Kinship** is the same shape and larger: uncle,
+aunt, grandmother and cousin sit in the checklist's *people* domain and no text
+had ever needed them. And **fluent** came from neither method but from a single
+sentence asked in another language, which is the third way described above.
 
 The first eight were re-checked against the dictionary on September 3,
 2026, and two entries did not survive it. Comparing one duration with another
