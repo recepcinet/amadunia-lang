@@ -2660,6 +2660,43 @@ for _p in PROSE:
               f"{os.path.basename(_p)}: '{_sent}' answers with a noun, so the "
               f"question word is a noun predicate and takes es")
 
+# This repository records what a page used to say, in the past tense and inside
+# quotation marks — *That line read "..." until September 5*. Every prose check
+# added this week has then fired on the correction rather than the fault, five
+# times, and each was patched by rewording. It is a convention, so it is worth
+# reading: a match inside a quotation opened just after *read* or *said* is a
+# withdrawn claim being recorded, not a live one.
+def _withdrawn(body, pos):
+    _before = body[:pos]
+    _open = _before.rfind('"')
+    if _open < 0 or _before.count('"') % 2 == 0: return False
+    return bool(re.search(r"\b(read|said|reads)\s*$", _before[max(0, _open - 24):_open]))
+
+# ------------------------- a lesson may not call a settled rule undecided
+# The last line of Lesson 01 read "pronouns and the verb *ama* — waiting on the
+# pronoun and word-order decisions". It was written on the first day, before
+# either decision existed; both were settled on September 2 and pronouns got
+# Lesson 09. The first lesson in the course pointed at a lesson never written
+# and at questions answered three days earlier, and nothing was looking,
+# because the settled-question check reads the open-questions index and this
+# was prose.
+_PENDING = ("waiting on", "not yet decided", "has not been decided",
+            "still undecided", "yet to be decided")
+for _p in sorted(glob.glob("lessons/lesson-*.md")):
+    _pb = read(_p).replace("\n", " ")
+    for _rule, _keys in _L23_NAMES.items():
+        # A name in that map with no file behind it is reported by the check
+        # that owns the map; reading it here would crash instead, which is the
+        # failure mode this file exists to prevent.
+        if not os.path.exists("grammar/" + _rule): continue
+        if not re.search(r"^\*Status: settled", read("grammar/" + _rule), re.M): continue
+        for _m in re.finditer("|".join(_PENDING), _pb, re.I):
+            _win = _pb[_m.start():_m.start() + 70].lower()
+            if any(_k in _win for _k in _keys) and not _withdrawn(_pb, _m.start()):
+                check(False,
+                      f"{os.path.basename(_p)}: '{_pb[_m.start():_m.start() + 50].strip()}' "
+                      f"— {_rule} is settled")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one

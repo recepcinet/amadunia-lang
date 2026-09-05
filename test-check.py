@@ -516,6 +516,15 @@ MUTATIONS = [
     ("a noun predicate question without es", "lessons/lesson-09-pronouns.md",
      "5. Nama ta-ta es ke?", "5. Nama ta-ta ke?",
      "the question word is a noun predicate and takes es"),
+    # Outside the quotation marks, so the withdrawn-claim reader lets it through
+    # to the check rather than exempting it.
+    ("a lesson calling a settled rule undecided", "lessons/lesson-01-greetings.md",
+     "the subject-verb-object order they stand in.",
+     "waiting on the pronoun decision.",
+     "pronouns.md is settled"),
+    ("Lesson 02's root count gone stale", "lessons/lesson-02-food-and-home.md",
+     "Two lessons, **40 roots**", "Two lessons, **20 roots**",
+     "claims 20 roots taught by here"),
     ("consonant pair missing from phonology.md", "grammar/phonology.md",
      "- `fr` \u2014 *fruta* (fruit), word-initial like *tr*\n", "",
      "does not list the consonant pair 'fr'"),

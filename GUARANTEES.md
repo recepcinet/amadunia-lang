@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**190 guarantees** in **94 groups**, and every one of them is
+**191 guarantees** in **95 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -337,6 +337,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### a question word as a noun predicate takes es
 
 - …: '…' answers with a noun, so the question word is a noun predicate and takes es
+### a lesson may not call a settled rule undecided
+
+- …: '…' — … is settled
 ### the but briefing cites real pages
 
 - proposal-but.md says '… pages' but its evidence table has … rows

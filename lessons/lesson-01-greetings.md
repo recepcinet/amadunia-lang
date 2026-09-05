@@ -64,4 +64,6 @@ Say these out loud. Every letter has one sound, so read them exactly as written.
 
 With six words you can open a conversation, ask how someone is, answer either way, and close. That is the whole point of the design.
 
-**Next lesson:** pronouns and the verb *ama* — waiting on the pronoun and word-order decisions noted in the [main README](../README.md).
+**Next lesson:** [water, food and home](lesson-02-food-and-home.md) — the first nouns, the first verbs, and the subject-verb-object order they stand in.
+
+That line read "pronouns and the verb *ama* — waiting on the pronoun and word-order decisions" until September 5, 2026. It was written on the first day, before either decision existed; both were settled on September 2 and [pronouns](../grammar/pronouns.md) got a lesson of their own at [09](lesson-09-pronouns.md). The first sentence of the course pointed at a lesson that was never written and at questions that had been answered for three days.

@@ -74,6 +74,8 @@ Say each aloud, then cover the English.
 
 ## What you can already say
 
-Two lessons in, with about twenty words, you can greet someone, ask their state, say what you want, eat, come, go, give, and call something good. No tense, no agreement, no gender has been needed yet.
+Two lessons, **40 roots** — nineteen taught in these two lessons and the other twenty-one the numbers and first words on [the front page](../README.md). You can greet someone, ask their state, say what you want, eat, come, go, give, and call something good. No tense, no agreement, no gender has been needed yet.
+
+That count read "about twenty words" until September 5, 2026, counting only the two word tables while every other lesson counts what the learner knows. It was the one lesson using its own convention, and the one whose figure nothing checked, because the check reads a number that follows the word *lessons*.
 
 Past and future are covered in [Lesson 4](lesson-04-tense.md), plurals in [Lesson 5](lesson-05-plural.md), questions in [Lesson 7](lesson-07-questions.md).
