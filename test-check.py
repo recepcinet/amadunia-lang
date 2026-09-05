@@ -252,6 +252,22 @@ MUTATIONS = [
     ("the noun-with-adjective figure gone stale", "grammar/copula.md",
      _NADJ, _NADJ_OFF,
      "two-word utterances are a noun with an adjective"),
+    # The Commands row is the wrong target: the paragraph below the table also
+    # says "command", so removing the row leaves the rule named. Pronouns is
+    # named in exactly one place, which is what makes it a real mutation.
+    ("the whole-language page losing a settled rule",
+     "lessons/lesson-23-everything-so-far.md",
+     "| **Pronouns** | *mi*, *yu*, *ta* \u2014 *ta* is he, she or it; the plural rule gives the rest |\n",
+     "",
+     "never names pronouns.md"),
+    ("a settled rule check.py cannot look for on that page", "check.py",
+     '"pronouns.md": ("pronoun",),', '"pronouns-renamed.md": ("pronoun",),',
+     "add it to _L23_NAMES"),
+    ("a lesson sending the reader to a text they cannot read yet",
+     "lessons/lesson-23-everything-so-far.md",
+     "read [Anak espera sol](../texts/story-1-anak-espera-sol.md) without help",
+     "read [Safari por pahar](../texts/story-2-safari-por-pahar.md) without help",
+     "which reading-ladder.md opens at Lesson 25"),
     ("consonant pair missing from phonology.md", "grammar/phonology.md",
      "- `fr` \u2014 *fruta* (fruit), word-initial like *tr*\n", "",
      "does not list the consonant pair 'fr'"),

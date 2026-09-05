@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**139 guarantees** in **70 groups**, and every one of them is
+**142 guarantees** in **72 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -241,6 +241,13 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - … is settled and the front page has no row for it — add one and name it in check.py's _FRONT_LABEL
 - README.md no longer teaches …: '…' is gone from the page that says it is all of the grammar
 - …: says 'all …' hyphenated forms; the repository has …
+### the page that claims to be the whole language
+
+- … is settled and check.py cannot tell whether Lesson 23 names it — add it to _L23_NAMES
+- lesson-23-everything-so-far.md says it is the entire language and never names …
+### a lesson may not send a learner to a text they cannot read
+
+- …: tells the reader they can read …, which reading-ladder.md opens at Lesson … — … lessons later
 ### madad is still held back
 
 - madad is used in … sentence(s) — … — which answers the open question by use; see proposal-two-jobs.md

@@ -32,7 +32,7 @@ Read it piece by piece:
 
 Nothing in that sentence changed its form. Not one word.
 
-## The whole grammar, in twelve lines
+## The whole grammar, in fifteen lines
 
 | | |
 |---|---|
@@ -48,20 +48,27 @@ Nothing in that sentence changed its form. Not one word.
 | **Questions** | rising tone; the question word stays where the answer goes |
 | **Verb chains** | verbs simply follow — *Mi mau kula pan* |
 | **Comparison** | *lebi/kurang/paling* before the adjective, *dari* for than |
+| **Pronouns** | *mi*, *yu*, *ta* — *ta* is he, she or it; the plural rule gives the rest |
+| **Commands** | a verb with no subject — *Anda!*; and any piece may stand alone — *Sasa.* |
+| **Stress** | the beat is on the second-to-last syllable, always — *a-ma-DU-nia* |
 
 Add *aur* and *o* for joining, *in/dari/por* for place, *una* for with, *porke/kab/agar* for because, when and if — and that is the entire language.
+
+The last three lines were added on September 5, 2026. The command and the fragment were granted on September 3 and this page — the one that claims to be the whole of Amadunia — went two days without them; the stress rule was settled the same day and fared the same. [Lesson 26](lesson-26-telling-and-answering.md) teaches the two of them that need teaching. A summary page is the easiest page in a repository to leave behind, because nothing in it ever looks wrong.
 
 ## What has never happened
 
 In three hundred roots and twenty-three lessons:
 
 - **No word has ever changed shape.** No conjugation, no case, no agreement, no plural ending, no gender.
-- **No rule has an exception.** Every one of the twelve above holds everywhere, without a list of irregulars.
+- **No rule has an exception.** Every one of the fifteen above holds everywhere, without a list of irregulars.
 - **No letter is silent** and no letter has two readings.
 
 ## Read a whole story
 
-You now know enough to read [Safari por pahar](../texts/story-2-safari-por-pahar.md) without help. Try the Amadunia first and check the English only when you are stuck.
+You now know enough to read [Anak espera sol](../texts/story-1-anak-espera-sol.md) without help — [the reading ladder](reading-ladder.md) opens it at Lesson 13, eleven lessons before anything else. Try the Amadunia first and check the English only when you are stuck.
+
+This page sent you to [Safari por pahar](../texts/story-2-safari-por-pahar.md) until September 5, 2026. The ladder opens that one at Lesson 25, two lessons after this one — the page was recommending a story it had not taught you to read, and the ladder had been saying so all along.
 
 ## What the language still cannot do
 

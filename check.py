@@ -1820,6 +1820,60 @@ for _p in PROSE:
                   f"{os.path.basename(_p)}: says 'all {_mn.group(1)}' hyphenated "
                   f"forms; the repository has {len(_joined)}")
 
+# --------------------------------- the page that claims to be the whole language
+# Lesson 23 says "that is the entire language". The command and the fragment
+# were granted on September 3, 2026 and the stress rule settled the same day,
+# and none of the three reached this page: it claimed completeness for two days
+# while missing three settled rules, and pronouns had never been on it at all.
+# A summary page is the easiest page to leave behind, because nothing in it ever
+# looks wrong. The front page has the same duty and already has a check; this is
+# that check applied to the other page that claims to hold everything.
+_L23_NAMES = {
+    "phonology.md": ("twenty letters",), "stress.md": ("stress", "beat"),
+    "numbers.md": ("number",), "tense.md": ("tense",), "plural.md": ("plural",),
+    "possession.md": ("possession",), "copula.md": ("copula",),
+    "negation.md": ("negation",), "questions.md": ("question",),
+    "pronouns.md": ("pronoun",), "demonstratives.md": ("this, that", "this/that"),
+    "place.md": ("place",), "verb-chains.md": ("verb chain",),
+    "comparison.md": ("comparison",), "subordination.md": ("clause", "porke"),
+    "adverbs.md": ("adverb",), "conjunction.md": ("aur",),
+    "sentence-types.md": ("command", "fragment", "stand alone"),
+    "definiteness.md": ("article", "no *the*"), "word-formation.md": ("hyphen", "joined"),
+    "pronunciation.md": ("one sound", "pronunc"),
+}
+_l23 = read("lessons/lesson-23-everything-so-far.md").lower()
+for _p in sorted(glob.glob("grammar/*.md")):
+    if not re.search(r"^\*Status: settled", read(_p), re.M): continue
+    _n = os.path.basename(_p)
+    if _n not in _L23_NAMES:
+        check(False, f"{_n} is settled and check.py cannot tell whether Lesson 23 "
+                     f"names it — add it to _L23_NAMES")
+        continue
+    check(any(_k in _l23 for _k in _L23_NAMES[_n]),
+          f"lesson-23-everything-so-far.md says it is the entire language and never "
+          f"names {_n}")
+
+# ------------------ a lesson may not send a learner to a text they cannot read
+# Lesson 23 said "You now know enough to read Safari por pahar", which the
+# reading ladder — derived from the course by this script — opens at Lesson 25.
+# Citing a later text is fine and Lesson 03 does it; telling the learner they can
+# read it is not, so the sentence must address the reader for this to fire.
+_ladder = {_m.group(1): int(_m.group(2)) for _m in
+           re.finditer(r"\|\s*\[[^\]]+\]\(\.\./texts/([^)]+)\)\s*\|\s*(\d+)\s*\|",
+                       read("lessons/reading-ladder.md"))}
+for _p in sorted(glob.glob("lessons/lesson-*.md")):
+    _n = _lesson_no(_p)
+    if _n is None: continue
+    _body = read(_p).replace("\n", " ")
+    for _s in re.split(r"(?<=[.!?])\s+", _body):
+        if not re.search(r"\byou\b", _s, re.I) or "read" not in _s.lower(): continue
+        for _mt in re.finditer(r"\]\(\.\./texts/([^)#]+)\)", _s):
+            _opens = _ladder.get(_mt.group(1))
+            check(_opens is None or _opens <= _n,
+                  f"{os.path.basename(_p)}: tells the reader they can read "
+                  f"{_mt.group(1)}, which reading-ladder.md opens at Lesson "
+                  f"{_opens:02d} — {_opens - _n if _opens else 0} lessons later")
+
 # ------------------------------------------- madad is still held back
 # proposal-two-jobs.md rests on madad appearing in no sentence anywhere, which
 # is what makes its decision free. The moment anything writes a sentence with
