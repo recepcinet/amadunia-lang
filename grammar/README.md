@@ -102,7 +102,7 @@ Two items are not grammar at all and sit outside this order: *madad* doing two
 jobs, and the thinness of Sino-Tibetan and Japonic recorded in
 [balance.md](../dictionary/balance.md). Both are vocabulary policy.
 
-## Open questions — 37 of them
+## Open questions — 38 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
@@ -228,6 +228,7 @@ measurement with its method stated, to be re-run rather than trusted.
 
 **[questions](questions.md)**
 
+- **May a question word stand in a modifier's slot?** The swap rule produces *Libro ke?* — the answer is *Libro ini*, the unknown is the *ini* — and [Lesson 16](../lessons/lesson-16-school-and-time.md) glosses it "Which book?". The language has no word for *which*, and this page describes the question word as standing where an **answer** stands, not a modifier. One sentence in the course does it. Found September 5, 2026.
 - ~~**The imperative was never granted.**~~ — granted September 3, 2026 in [sentence-types.md](sentence-types.md): a sentence that begins with a verb and has no subject is a command, and that is also what tells it from a statement. *Anda tarik ini*, *Buka ain yu*, *Otur sini* stand unchanged. Found by [the fourth text](../texts/text-4-in-madina-baru.md).
 - ~~**Fragments.**~~ — settled the same day in [sentence-types.md](sentence-types.md): any constituent may stand alone as an utterance. *Ke?* *Harga?* *Ponte?* are legal by rule now rather than by accident, and a fragment answer inherits the tense and subject of the question.
 - **Lesson 6 asked *Nama yu?*** with no question word. That is a yes/no-shaped question that context turns into "what is your name". The explicit form is *Nama yu es ke?* Both are allowed; whether the short form should be discouraged in teaching is open.

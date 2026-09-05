@@ -131,6 +131,17 @@ _TAFIG = re.search(r"— \d+ she, \d+ he, \d+ both, \d+ \*it\*",
                    io.open("grammar/pronouns.md", encoding="utf-8").read()).group(0)
 _TAFIG_OFF = re.sub(r"(\d+) she", lambda m: f"{int(m.group(1)) + 6} she", _TAFIG)
 
+# dom's rank and count both move, so this reads the row instead of naming it.
+_DOMROW = re.search(r"\| \d+ \| \*dom\* \| house, home \| \d+ \|",
+                    io.open("dictionary/frequency.md", encoding="utf-8").read()).group(0)
+_DOMROW_OFF = re.sub(r"(\d+) \|$", lambda m: f"{int(m.group(1)) + 1} |", _DOMROW)
+
+# The spelled open-question count appears in two "six of the N already have"
+# sentences and moves whenever a question is opened or settled. Read, not
+# quoted — twenty-first site of that kind.
+_SIXOF = re.search(r"six of the ([a-z-]+) already have",
+                   io.open("README.md", encoding="utf-8").read(), re.I).group(1)
+
 _LIVE = int(re.search(r"## Open questions — (\d+) of them",
                       io.open("grammar/README.md", encoding="utf-8").read()).group(1))
 # This was a hand-written dict that stopped at thirty-five, and the day the
@@ -331,7 +342,7 @@ MUTATIONS = [
     # The count must belong to its own row: dom said 104 while the corpus had
     # 103, and the check passed because 103 was on another word's row.
     ("a frequency count on the wrong row", "dictionary/frequency.md",
-     "| 8 | *dom* | house, home | 103 |", "| 8 | *dom* | house, home | 104 |",
+     _DOMROW, _DOMROW_OFF,
      "top forty has drifted: dom"),
     # The numeral and its translation must agree — this is the reader that can
     # see a number written in the language at all.
@@ -367,7 +378,7 @@ MUTATIONS = [
      "pronouns.md's gender figures are stale"),
     # Outside the link text, where the older count check cannot see it.
     ("an open-question count outside the link", "README.md",
-     "and six of the thirty-seven already have", "and six of the thirty-three already have",
+     f"and six of the {_SIXOF} already have", "and six of the thirty-three already have",
      "stands in a sentence about the open questions"),
     ("the front page's text count gone stale", "README.md",
      "[texts/](texts/) — twenty-one original pieces |",
@@ -376,9 +387,9 @@ MUTATIONS = [
     # The same stale sentence on a second page, whose link is to the briefings
     # rather than to the index, so the sentence-level rule could not see it.
     ("the briefing count stale on CONTRIBUTING", "CONTRIBUTING.md",
-     "**Six of the thirty-seven already have a briefing**",
+     f"**Six of the {_SIXOF.capitalize() if False else _SIXOF} already have a briefing**",
      "**Six of the thirty-three already have a briefing**",
-     "there are 6 open briefings and 37 open questions"),
+     f"there are 6 open briefings and {_LIVE} open questions"),
     ("a text miscounting its own sentences", "texts/text-13-kula-una.md",
      "**Seven of the eighteen sentences use it**",
      "**Seven of the seventeen sentences use it**",
@@ -497,6 +508,14 @@ MUTATIONS = [
      "See [the briefing](../grammar/proposal-two-jobs.md).",
      "See the open question.",
      "raises madad's two jobs without linking the"),
+    ("a comma list with no aur before the last",
+     "lessons/lesson-22-doing-and-feeling.md",
+     "| Akua, ates, udara aur tanah. | Water, fire, air and earth. |",
+     "| Akua, ates, udara, tanah. | Water, fire, air, earth. |",
+     "is a list of three or more with no aur before the last"),
+    ("a noun predicate question without es", "lessons/lesson-09-pronouns.md",
+     "5. Nama ta-ta es ke?", "5. Nama ta-ta ke?",
+     "the question word is a noun predicate and takes es"),
     ("consonant pair missing from phonology.md", "grammar/phonology.md",
      "- `fr` \u2014 *fruta* (fruit), word-initial like *tr*\n", "",
      "does not list the consonant pair 'fr'"),

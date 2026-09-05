@@ -59,7 +59,7 @@ course uses three positions and none of them is the rule yet.*
 | | |
 |---|---|
 | Ates garam. | Fire is hot. |
-| Akua, ates, udara, tanah. | Water, fire, air, earth. |
+| Akua, ates, udara aur tanah. | Water, fire, air and earth. |
 | Es ates in dom! | There is a fire in the house! |
 | Udara barid in rat. | The air is cold at night. |
 | Tanah in bage mi hao. | The ground in my garden is good. |

@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**188 guarantees** in **92 groups**, and every one of them is
+**190 guarantees** in **94 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -331,6 +331,12 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - …: raises madad's two jobs without linking the briefing; the problem covers two roots and that page separates them
 - …: calls a root the only one holding two jobs; the audit that said so read the glosses and not the sentences, and proposal-two-jobs.md separates two
+### a comma list still needs its aur
+
+- …: '…' is a list of three or more with no aur before the last — commas stand in for all but that one
+### a question word as a noun predicate takes es
+
+- …: '…' answers with a noun, so the question word is a noun predicate and takes es
 ### the but briefing cites real pages
 
 - proposal-but.md says '… pages' but its evidence table has … rows

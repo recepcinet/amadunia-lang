@@ -69,10 +69,10 @@ No *I / me*, no *she / her*, no *we / us*. One form each.
 > — Mi-mi es rafiki Sol. Sol sini?
 > — Ya, ta sini. Ta-ta rabota.
 > — Ta-ta es kim?
-> — Sol, rafiki ta, anak-anak ta. Kita kan ta-ta?
+> — Sol. Rafiki ta. Anak-anak ta. Kita kan ta-ta?
 > — Ya! Mersi!
 
-*Hello! Who are you all? — We're Sol's friends. Is Sol here? — Yes, she's here. They're working. — Who are they? — Sol, her friend, her children. Shall we see them? — Yes! Thanks!*
+*Hello! Who are you all? — We're Sol's friends. Is Sol here? — Yes, she's here. They're working. — Who are they? — Sol. Her friend. Her children. Do we see them? — Yes! Thanks!*
 
 ## Practice
 
@@ -80,11 +80,23 @@ No *I / me*, no *she / her*, no *we / us*. One form each.
 2. Yu-yu suda kan doktor? — *Did you all see the doctor?*
 3. Mi-mi saufa lai kab? — *When will we come?* (we, not you)
 4. Kita saufa lai sasa. — *We'll come now.* (all of us)
-5. Nama ta-ta ke? — *What are their names?*
+5. Nama ta-ta es ke? — *What are their names?*
 6. Pan garam. Mi mau ta! — *The bread is hot. I want it!*
 
 ## What you can already say
 
 Nine lessons, **81 roots**. You can now talk about anyone — one person or many, with you or without you, a person or a thing — and the words for them have never once changed their shape.
+
+**Two corrections, September 5, 2026.** Practice 5 read *Nama ta-ta ke?* with
+no *es*. A question word stands where the answer stands, and the answer to that
+one is a name — a noun, which takes *es*. Lessons 07 and 11 and the phrasebook
+all write *Nama yu es ke?*; this was the only one of the seven without it.
+
+And the conversation answered *Ta-ta es kim?* with a comma list — *Sol, rafiki
+ta, anak-anak ta*. [conjunction.md](../grammar/conjunction.md) lets commas
+stand in for all but the last, so a list still needs *aur* at the end, and
+*aur* does not arrive until [Lesson 14](lesson-14-not-and.md). The lesson had
+written something it had no way to write. It is three separate answers now,
+which the fragment rule grants and which this lesson can say.
 
 *there* is covered in [Lesson 10](lesson-10-a-day.md), the copula in [Lesson 11](lesson-11-being.md), *not* in [Lesson 14](lesson-14-not-and.md), *this* and *that* in [Lesson 15](lesson-15-pointing-placing.md).

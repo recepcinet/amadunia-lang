@@ -3,7 +3,7 @@
 Generated from the material a learner reads — the twenty-six lessons, the
 twenty-one texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **5800 words of running Amadunia**, and every one of the 300 roots appears
+it. **5812 words of running Amadunia**, and every one of the 300 roots appears
 at least once.
 
 [`check.py`](../check.py) regenerates this page and fails if it disagrees, so
@@ -33,26 +33,26 @@ cover half of everything.** They are the first twenty-five below.
 
 | | Root | Meaning | Uses | Share |
 |---|---|---|---|---|
-| 1 | *mi* | I, me | 576 | 9.9% |
+| 1 | *mi* | I, me | 578 | 9.9% |
 | 2 | *yu* | you — one form for everyone | 225 | 3.9% |
 | 3 | *ta* | he, she, it — no gender | 179 | 3.1% |
 | 4 | *in* | at, in, on | 172 | 3.0% |
 | 5 | *anak* | child | 132 | 2.3% |
-| 6 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 128 | 2.2% |
+| 6 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 130 | 2.2% |
 | 7 | *ini* | this — after the noun, last in the phrase | 108 | 1.9% |
-| 8 | *dom* | house, home | 103 | 1.8% |
-| 9 | *lai* | to come | 103 | 1.8% |
-| 10 | *no* | no; **not** — before the predicate, see [grammar/negation.md](../grammar/negation.md) | 103 | 1.8% |
+| 8 | *no* | no; **not** — before the predicate, see [grammar/negation.md](../grammar/negation.md) | 104 | 1.8% |
+| 9 | *dom* | house, home | 103 | 1.8% |
+| 10 | *lai* | to come | 103 | 1.8% |
 | 11 | *go* | to go | 99 | 1.7% |
 | 12 | *suda* | past marker (before the verb) | 93 | 1.6% |
-| 13 | *mau* | to want | 91 | 1.6% |
-| 14 | *aur* | and | 90 | 1.6% |
+| 13 | *aur* | and | 91 | 1.6% |
+| 14 | *mau* | to want | 91 | 1.6% |
 | 15 | *hao* | good | 88 | 1.5% |
-| 16 | *ca* | tea | 77 | 1.3% |
+| 16 | *ca* | tea | 78 | 1.3% |
 | 17 | *kita* | we, including you — see [grammar/pronouns.md](../grammar/pronouns.md) | 67 | 1.2% |
 | 18 | *kula* | to eat | 67 | 1.2% |
 | 19 | *sema* | to say, to speak | 67 | 1.2% |
-| 20 | *rafiki* | friend | 61 | 1.1% |
+| 20 | *rafiki* | friend | 61 | 1.0% |
 | 21 | *kabir* | big | 57 | 1.0% |
 | 22 | *keci* | small | 57 | 1.0% |
 | 23 | *insan* | person, human | 52 | 0.9% |
@@ -69,9 +69,9 @@ cover half of everything.** They are the first twenty-five below.
 | 34 | *doktor* | doctor | 37 | 0.6% |
 | 35 | *sasa* | now | 37 | 0.6% |
 | 36 | *sini* | here | 37 | 0.6% |
-| 37 | *por* | to, for | 36 | 0.6% |
-| 38 | *una* | together; *una* + noun = with — see [grammar/place.md](../grammar/place.md) | 36 | 0.6% |
-| 39 | *akua* | water | 35 | 0.6% |
+| 37 | *akua* | water | 36 | 0.6% |
+| 38 | *por* | to, for | 36 | 0.6% |
+| 39 | *una* | together; *una* + noun = with — see [grammar/place.md](../grammar/place.md) | 36 | 0.6% |
 | 40 | *skola* | school | 35 | 0.6% |
 
 ## Used exactly once

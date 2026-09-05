@@ -2612,6 +2612,54 @@ for _p in md():
           f"the audit that said so read the glosses and not the sentences, and "
           f"proposal-two-jobs.md separates two")
 
+# ------------------------------------------- a comma list still needs its aur
+# conjunction.md: "In writing, commas may stand in for all but the last." The
+# course held three lists and not one had the last join — *Sol, rafiki ta,
+# anak-anak ta* in Lesson 09, *Mi kupi pan, ca, akua* in Lesson 10, and the four
+# elements in Lesson 22. Two of the three were written in lessons that predate
+# *aur*, which arrives in Lesson 14: they had written something they had no way
+# to write, and both are separate sentences now.
+for _p in PROSE:
+    _cb = read(_p)
+    if _p.startswith("texts/") and "```" in _cb: _cb = "".join(_cb.split("```")[1::2])
+    for _ln, _am, _en in glossed_lines(_cb):
+        _plain = re.sub(r"[*`]", "", _am)
+        for _sent in re.split(r"(?<=[.!?])\s+", _plain):
+            if "," not in _sent: continue
+            _items = [_x.strip() for _x in _sent.strip(" .!?").split(",")]
+            if len(_items) < 3: continue
+            _gs = [re.findall(r"[a-z-]+", _x.lower()) for _x in _items]
+            if not all(_g and all(_w.split("-")[0] in words for _w in _g) for _g in _gs):
+                continue
+            check(" aur " in _sent or " o " in _sent,
+                  f"{os.path.basename(_p)}: '{_sent.strip()}' is a list of three or "
+                  f"more with no aur before the last — commas stand in for all but "
+                  f"that one")
+
+# ------------------------------- a question word as a noun predicate takes es
+# Lesson 09 asked *Nama ta-ta ke?* with no *es*. A question word stands where
+# the answer stands, and the answer to that one is a name — a noun, and a noun
+# predicate takes *es*. Lessons 07 and 11 and the phrasebook write *Nama yu es
+# ke?*; that was the only one of seven without it. Neither of the two copula
+# checks could see it: the subject is not a pronoun, and a question word sits
+# in PREDICATE_OK because *Yu suru ke?* is ordinary.
+# Two words are exempt — *Libro ke?*, what book — because the modifier reading
+# is live there and is now an open question in questions.md. With three the
+# noun phrase is complete and the question word is a predicate.
+for _p in PROSE:
+    _qb = read(_p)
+    if _p.startswith("texts/") and "```" in _qb: _qb = "".join(_qb.split("```")[1::2])
+    for _line, _sent, _toks in amadunia_runs(_qb):
+        _base = [_t.split("-")[0] for _t in _toks]
+        if not ({"ke", "kim"} & set(_base)) or "es" in _base: continue
+        if len(_base) < 3: continue
+        if any(_x in VERBS or _x in ("mau", "bisa", "lasim") or _x in ADJECTIVES
+               or _x in GROUP["Place"] or _x in GROUP["Prepositions"] for _x in _base):
+            continue
+        check(False,
+              f"{os.path.basename(_p)}: '{_sent}' answers with a noun, so the "
+              f"question word is a noun predicate and takes es")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one

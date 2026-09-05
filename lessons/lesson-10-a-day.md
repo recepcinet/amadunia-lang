@@ -67,11 +67,11 @@ subject at all, and that is what makes it one. [The rule](../grammar/sentence-ty
 ## A day, start to finish
 
 > Din. Mi ambil telefon. Mi suru rabota.
-> Mi go market. Mi kupi pan, ca, akua.
+> Mi go market. Mi kupi pan. Mi kupi ca. Mi kupi akua.
 > Mi lai dom. Familia mi situ. Kita kula una.
 > Rat. Mi otur. Mi lala.
 
-*Day. I take the phone. I work. I go to the market. I buy bread, tea, water. I come home. My family is there. We eat together. Night. I sit. I sleep.*
+*Day. I take the phone. I work. I go to the market. I buy bread. I buy tea. I buy water. I come home. My family is there. We eat together. Night. I sit. I sleep.*
 
 Every verb in that story is in its one and only form. Not one of them changed for *I*, for *we*, for past or present.
 

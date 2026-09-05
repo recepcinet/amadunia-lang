@@ -98,6 +98,20 @@ Ten candidates from ten families, ten collisions. As with possession, the langua
 
 ## Open questions
 
+- **May a question word stand in a modifier's slot?** The swap rule produces it
+  without anyone deciding: the answer is *Libro ini*, this book, the unknown is
+  the *ini*, and swapping it gives *Libro ke?* — which
+  [Lesson 16](../lessons/lesson-16-school-and-time.md) writes and glosses
+  "Which book?". English does the same with *what book*, so nothing looks
+  wrong, and the language has no word for *which*. But this page describes the
+  question word as standing where an **answer** stands, and *ini* is a modifier
+  rather than an answer. One sentence in the whole course does it. Found
+  September 5, 2026 while checking that a question word used as a noun
+  predicate takes *es*; that check exempts the two-word case for exactly this
+  reason, and if the answer is no, *Libro ke?* has to be rewritten.
+
+
+
 - ~~**The imperative was never granted.**~~ — granted September 3, 2026 in [sentence-types.md](sentence-types.md): a sentence that begins with a verb and has no subject is a command, and that is also what tells it from a statement. *Anda tarik ini*, *Buka ain yu*, *Otur sini* stand unchanged. Found by [the fourth text](../texts/text-4-in-madina-baru.md).
 - ~~**Fragments.**~~ — settled the same day in [sentence-types.md](sentence-types.md): any constituent may stand alone as an utterance. *Ke?* *Harga?* *Ponte?* are legal by rule now rather than by accident, and a fragment answer inherits the tense and subject of the question.
 
