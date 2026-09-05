@@ -58,7 +58,7 @@ Two different families, neither already dominant in the vocabulary. Both are sem
 |---|---|---|
 | akan (future) | Indonesian *akan* | metathesis pair with *anak* (child) — a-k-a-n vs a-n-a-k |
 | ta (future) | Swahili *-ta-* | *ta* is already he/she |
-| ga (future) | Hindi *-gā* | minimal pair with *go*, the verb it would most often stand next to |
+| ga (future) | Hindi *-gā* | minimal pair with *ba*, *ca*, *go*, *ta*, *ya* — and *go* is the verb it would most often stand next to |
 | hui (future) | Chinese *huì* | introduces the vowel sequence *ui*, not yet attested in the language |
 | le (past) | Chinese *le* | one light syllable, easy to miss in speech; and Chinese *le* is post-verbal, so the borrowing would misrepresent the source |
 | mau (future) | Indonesian colloquial | *mau* is already "to want"; using it for both breeds ambiguity |

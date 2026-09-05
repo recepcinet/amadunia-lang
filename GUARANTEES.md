@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**232 guarantees** in **111 groups**, and every one of them is
+**233 guarantees** in **111 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -366,6 +366,7 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### a rejection that cites a minimal pair must be one
 
 - …: rejects *…* as a minimal pair with *…*, and they differ in length or by more than one sound
+- …: … is a minimal pair with …, and the table says …
 ### "one sound from" has to be one sound
 
 - …: says *…* is one sound from *…*; it is …
@@ -432,7 +433,7 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - stress.md: … of the moved roots have two syllables, not what the page says
 ### conjunction.md's rejected candidates
 
-- conjunction.md: … is a minimal pair with …, and the table says …
+- questions.md rejects … for containing …, which is not in it
 - conjunction.md: … roots end in -…
 ### phonology.md illustrates itself
 

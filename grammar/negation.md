@@ -63,7 +63,7 @@ Using the answer word as the negator is what Spanish, Italian and Portuguese do:
 | ne | Latin, Russian, Polish, French | minimal pair with *ke* and *no* |
 | la | Arabic *lā* | minimal pair with *ta*, *ya*, *ba*, *ca* |
 | bu | Chinese *bù* 不 | minimal pair with *du*, *ba*, *yu* |
-| nai | Japanese *nai* ない | minimal pair with *bai*, *fai*, *lai* |
+| nai | Japanese *nai* ない | minimal pair with *bai*, *fai*, *lai*, *nau* |
 | non | Latin, French, Italian | no collision, but a second word for a job *no* already does |
 | tidak | Indonesian | one family, and three syllables for the commonest word in any language |
 

@@ -63,7 +63,7 @@ Every candidate collided, and none was needed:
 
 | Candidate | Source | Reason rejected |
 |---|---|---|
-| ki | Persian, Turkish, Hindi | minimal pair with *ke* (what) |
+| ki | Persian, Turkish, Hindi | minimal pair with *hi*, *ke*, *mi* — including *ke*, the question word it would stand beside |
 | ke | Spanish *que*, Persian | already "what" |
 | bahwa | Indonesian | one family, and long for the commonest joiner in a language |
 | anna | Arabic | minimal pair risk against *nama*, *nyama* families and no reach outside Semitic |

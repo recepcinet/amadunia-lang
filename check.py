@@ -2910,11 +2910,22 @@ for _p in sorted(glob.glob("grammar/*.md")):
     for _m in re.finditer(r"^\| ([a-z][a-z-]*)[^|]*\|[^|]*\| minimal pair(?: risk)? "
                           r"with ([^|]+)\|$", read(_p), re.M):
         _cand = _m.group(1).strip()
-        for _against in re.findall(r"\*([a-z-]+)\*", _m.group(2)):
+        _said = set(re.findall(r"\*([a-z-]+)\*", _m.group(2)))
+        for _against in sorted(_said):
             check(len(_cand) == len(_against)
                   and sum(_x != _y for _x, _y in zip(_cand, _against)) == 1,
                   f"{os.path.basename(_p)}: rejects *{_cand}* as a minimal pair with "
                   f"*{_against}*, and they differ in length or by more than one sound")
+        # Sound is not enough: eight rows in questions.md named one collision
+        # where the dictionary holds two, three or five, and a rejection that
+        # under-reports its own evidence reads as a near miss. The same reader
+        # does both halves, so the two pages cannot be measured differently.
+        _real = {_w for _w in words if len(_w) == len(_cand)
+                 and sum(_x != _y for _x, _y in zip(_w, _cand)) == 1}
+        check(_said == _real,
+              f"{os.path.basename(_p)}: {_cand} is a minimal pair with "
+              f"{', '.join(sorted(_real))}, and the table says "
+              f"{', '.join(sorted(_said))}")
 
 # ------------------------- "one sound from" has to be one sound
 # The rule pages also reject candidates for sitting *near* a root rather than
@@ -3382,18 +3393,16 @@ if _moves == _syl[3]:
 # with, which is a claim about the dictionary and is recomputed. All nine were
 # exact. The two counts in the same argument were not: it said four roots end
 # in -o and twenty in -i, against 13 and 41.
-_conj = read("grammar/conjunction.md")
-for _m in re.finditer(r"^\| ([a-z]+) \| .*? \| minimal pair with (.+?) \|$",
-                      _conj, re.M):
-    _cand = _m.group(1)
-    _said = set(re.findall(r"\*([a-z]+)\*", _m.group(2)))
-    _real = {w for w in words if len(w) == len(_cand)
-             and sum(x != y for x, y in zip(w, _cand)) == 1}
-    check(_said == _real,
-          f"conjunction.md: {_cand} is a minimal pair with "
-          f"{', '.join(sorted(_real))}, and the table says "
-          f"{', '.join(sorted(_said))}")
+# A candidate turned away for containing a settled word must contain it. kitne
+# was rejected for "beginning with kita" and does not begin with kita.
+for _m in re.finditer(r"^\| ([a-z]+)(?: \([A-Za-z]+\))? \| .*? \| "
+                      r"(?:begins with|ends in|inside|contain) \*([a-z]+)\*",
+                      read("grammar/questions.md"), re.M):
+    check(_m.group(2) in _m.group(1),
+          f"questions.md rejects {_m.group(1)} for containing "
+          f"{_m.group(2)}, which is not in it")
 
+_conj = read("grammar/conjunction.md")
 for _end, _phrase in (("o", "**{}** roots end in *-o*"),
                       ("i", "**{}** roots end in *-i*")):
     _n = sum(1 for w in words if w.endswith(_end))

@@ -87,7 +87,7 @@ The split — a copula with nouns, none with adjectives — is the Chinese rule 
 
 | Candidate | Source | Reason rejected |
 |---|---|---|
-| ni | Swahili *ni* | minimal pair with *mi* |
+| ni | Swahili *ni* | minimal pair with *hi*, *mi*, *no* |
 | da | Japanese *da* | d/t pair with *ta* |
 | dir | Turkish *-dir* | minimal pair with *din* (day) |
 | si | Chinese *shì* 是 | prefix of *sis* (6) and *sini*; and "yes" in Spanish and Italian, colliding in sense with *ya* |

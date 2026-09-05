@@ -81,8 +81,8 @@ And every candidate collided anyway:
 
 | Candidate | Source | Reason rejected |
 |---|---|---|
-| to | English | minimal pair with *ta* |
-| ku | Swahili *ku-* | minimal pair with *ke* |
+| to | English | minimal pair with *go*, *no*, *ta* |
+| ku | Swahili *ku-* | minimal pair with *du*, *ke*, *yu* |
 | de | Spanish, French | minimal pair with *du*, *ke* |
 | a | Spanish | thirty roots end in *-a*; the join would blur |
 | na | Irish, Hindi | minimal pair with *ba*, *ca*, *no*, *ta*, *ya* |

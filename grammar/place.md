@@ -101,24 +101,24 @@ Nearly every short candidate collided:
 
 | Candidate | For | Reason rejected |
 |---|---|---|
-| di | at (Indonesian) | minimal pair with *du*, *mi* |
+| di | at (Indonesian) | minimal pair with *du*, *hi*, *mi* |
 | fi | at (Arabic) | minimal pair with *mi*, *hi* |
-| ni | at (Japanese) | minimal pair with *mi*, *hi* |
-| da | at (Turkish) | minimal pair with *ta*, *ba*, *ca*, *ya* |
-| en | at (Spanish) | minimal pair with *es* |
+| ni | at (Japanese) | minimal pair with *hi*, *mi*, *no* |
+| da | at (Turkish) | minimal pair with *ba*, *ca*, *du*, *ta*, *ya* |
+| en | at (Spanish) | minimal pair with *es*, *in* |
 | me | in (Hindi) | minimal pair with *mi*, *ke* |
-| min | from (Arabic) | minimal pair with *din* |
+| min | from (Arabic) | minimal pair with *ain*, *din* |
 | de | from (Spanish) | minimal pair with *du*, *ke* |
 | se | from (Hindi) | minimal pair with *ke* |
 | ot | from (Russian) | minimal pair with *ok* |
 | a | to (Spanish) | thirty roots end in *-a*; *ca a mama* blurs |
-| ko | to (Hindi) | minimal pair with *go* |
-| li | to (Arabic) | minimal pair with *mi* |
+| ko | to (Hindi) | minimal pair with *go*, *ke*, *no* |
+| li | to (Arabic) | minimal pair with *hi*, *mi* |
 | pada | to (Indonesian) | minimal pair with *papa* |
 | kwa | with (Swahili) | the alphabet has no *w* |
 | kon / kum | with (Spanish, Latin) | minimal pairs with *kan*, *kim* |
-| to | with (Japanese) | minimal pair with *ta* |
-| sat | with (Hindi) | minimal pair with *sar*, *pat* |
+| to | with (Japanese) | minimal pair with *go*, *no*, *ta* |
+| sat | with (Hindi) | minimal pair with *pat*, *rat*, *sar* |
 
 ## Open questions
 
