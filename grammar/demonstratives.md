@@ -66,7 +66,7 @@ Indonesian and Malay *ini / itu*; Tagalog *ito*. Austronesian, some three hundre
 | ili | Russian *ili* (or), Swahili *ile* | *ili* is a minimal pair with *ini* |
 | este / ese | Spanish | one family; and *ese* would sit one sound from *es* |
 | yah / vah | Hindi | the alphabet has no *v* |
-| kore / sore | Japanese | clean, but one family, and *sore* is one sound from *sol* |
+| kore / sore | Japanese | clean — neither collides with anything, and *sore* is two sounds from *sol*, not one — but one family |
 
 ## A note on checking
 

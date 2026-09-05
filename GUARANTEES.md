@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**200 guarantees** in **102 groups**, and every one of them is
+**201 guarantees** in **103 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -363,6 +363,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### a rejection that cites a minimal pair must be one
 
 - …: rejects *…* as a minimal pair with *…*, and they differ in length or by more than one sound
+### "one sound from" has to be one sound
+
+- …: says *…* is one sound from *…*; it is …
 ### the but briefing cites real pages
 
 - proposal-but.md says '… pages' but its evidence table has … rows

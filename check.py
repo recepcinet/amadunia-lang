@@ -2870,6 +2870,27 @@ for _p in sorted(glob.glob("grammar/*.md")):
                   f"{os.path.basename(_p)}: rejects *{_cand}* as a minimal pair with "
                   f"*{_against}*, and they differ in length or by more than one sound")
 
+# ------------------------- "one sound from" has to be one sound
+# The rule pages also reject candidates for sitting *near* a root rather than
+# on it, and that distance is checkable too. *ese* really is one sound from
+# *es* — a deletion. *sore* was called one sound from *sol* and is two: change
+# the r and drop the e. The verdict stood on "one family" either way, but a
+# page that rejects by measurement has to measure.
+def _edit(_a, _b2):
+    _d = [[_i + _j if _i * _j == 0 else 0 for _j in range(len(_b2) + 1)]
+          for _i in range(len(_a) + 1)]
+    for _i in range(1, len(_a) + 1):
+        for _j in range(1, len(_b2) + 1):
+            _d[_i][_j] = min(_d[_i - 1][_j] + 1, _d[_i][_j - 1] + 1,
+                             _d[_i - 1][_j - 1] + (_a[_i - 1] != _b2[_j - 1]))
+    return _d[len(_a)][len(_b2)]
+for _p in md():
+    for _m in re.finditer(r"\*([a-z-]+)\*(?: would sit| is) one sound from \*([a-z-]+)\*",
+                          read(_p)):
+        check(_edit(_m.group(1), _m.group(2)) == 1,
+              f"{os.path.basename(_p)}: says *{_m.group(1)}* is one sound from "
+              f"*{_m.group(2)}*; it is {_edit(_m.group(1), _m.group(2))}")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one
