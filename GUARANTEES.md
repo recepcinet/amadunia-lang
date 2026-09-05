@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**155 guarantees** in **82 groups**, and every one of them is
+**159 guarantees** in **83 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -287,7 +287,13 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### counts that sit outside the link
 
 - …: '…' stands in a sentence about the open questions and is none of … questions, … briefings or … open: …
+- …: '…' — there are … open briefings and … open questions
 - …: says '…'; texts/ holds …
+### a text counting its own sentences
+
+- …: says '…'; its text has …
+- …: says '…'; its text has …
+- …: says '…' opens … sentences; it opens …
 ### the but briefing cites real pages
 
 - proposal-but.md says '… pages' but its evidence table has … rows

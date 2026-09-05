@@ -2249,6 +2249,23 @@ for _p in PROSE:
                       f"{os.path.basename(_p)}: '{_tok}' stands in a sentence about the "
                       f"open questions and is none of {live} questions, {_nb} briefings "
                       f"or {_nopen} open: {_s.strip()[:70]}")
+        # "Six of the thirty-three already have a briefing" is written on two
+        # pages, and yesterday's rule reached only the one whose sentence links
+        # grammar/README.md. CONTRIBUTING.md links the briefings themselves, so
+        # it kept the stale number one more day — two paragraphs below its own
+        # correct "37 open questions". The broad version of this check, every
+        # number in a sentence mentioning a briefing, was written and measured:
+        # GUARANTEES.md is one unbroken list with no sentence ends in it and
+        # produced forty hits on its own. This is keyed to the phrase instead.
+        for _mb in re.finditer(r"([A-Za-z-]+|\d+) of the ([A-Za-z-]+|\d+) already have", _s):
+            _n1 = (int(_mb.group(1)) if _mb.group(1).isdigit()
+                   else WORD_NUM.get(_mb.group(1).lower()))
+            _n2 = (int(_mb.group(2)) if _mb.group(2).isdigit()
+                   else WORD_NUM.get(_mb.group(2).lower()))
+            check(_n1 == _nopen and _n2 == live,
+                  f"{os.path.basename(_p)}: '{_mb.group(0)}' — there are {_nopen} open "
+                  f"briefings and {live} open questions")
+
         # The number of texts is stated on the front page and in the lesson
         # index as well as in texts/README.md, and only the last was checked.
         if "texts/" not in _s: continue
@@ -2258,6 +2275,46 @@ for _p in PROSE:
             if _n is None: continue
             check(_n == _ntexts,
                   f"{os.path.basename(_p)}: says '{_m.group(0)}'; texts/ holds {_ntexts}")
+
+# ------------------------------------ a text counting its own sentences
+# text 9 said "*mi* still opens thirteen of the twenty-one sentences" and its
+# text has twenty-two, fifteen of them opening with *mi*. Both numbers were
+# wrong and neither was checked: the corpus-wide sentence count is derived, and
+# a text's own is prose. amadunia_runs is not the instrument — it yields runs,
+# not sentences, and splits at a colon — so the sentences are split here, with
+# a closing quote allowed after the stop.
+# The convention: a sentence is a full stop, question mark or exclamation mark
+# in the text itself — the FIRST code block. Several texts carry a second block
+# as an illustration, and counting it made text 8 twenty sentences instead of
+# sixteen. text 21's "eighty-eight" could not be reproduced under any reading
+# tried — 101 stops, 87 outside quoted speech, 70 table rows, 60 lines — so it
+# is 101, the plain count, and the convention is written down here so the next
+# number cannot be a different one.
+def _text_sentences(body):
+    return re.findall(r"[.!?]", body.split("```")[1])
+for _p in sorted(glob.glob("texts/*.md")):
+    _b = read(_p)
+    if "```" not in _b: continue
+    _ss = _text_sentences(_b)
+    for _m in re.finditer(r"of the ([A-Za-z-]+|\d+) sentences", _b):
+        _n = int(_m.group(1)) if _m.group(1).isdigit() else WORD_NUM.get(_m.group(1).lower())
+        if _n is None: continue
+        check(_n == len(_ss),
+              f"{os.path.basename(_p)}: says '{_m.group(0)}'; its text has {len(_ss)}")
+    for _m in re.finditer(r"\*\*([A-Za-z-]+|\d+) sentences", _b):
+        _n = int(_m.group(1)) if _m.group(1).isdigit() else WORD_NUM.get(_m.group(1).lower())
+        if _n is None: continue
+        check(_n == len(_ss),
+              f"{os.path.basename(_p)}: says '{_m.group(0)}'; its text has {len(_ss)}")
+    for _m in re.finditer(r"\*([a-z-]+)\* (?:still )?opens ([A-Za-z-]+|\d+) of", _b):
+        _n = int(_m.group(2)) if _m.group(2).isdigit() else WORD_NUM.get(_m.group(2).lower())
+        if _n is None: continue
+        _real = sum(1 for _s in re.split(r'(?<=[.!?])"?\s+',
+                                         _b.split("```")[1].replace("\n", " "))
+                    if _s.strip().lower().startswith(_m.group(1) + " "))
+        check(_n == _real,
+              f"{os.path.basename(_p)}: says '{_m.group(1)}' opens {_n} sentences; "
+              f"it opens {_real}")
 
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the

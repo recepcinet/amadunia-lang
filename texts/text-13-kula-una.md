@@ -62,7 +62,7 @@ Mi senang porke kita una.
 
 ## What *una* did
 
-**Seven of the seventeen sentences use it**, and between them they cover both
+**Seven of the eighteen sentences use it**, and between them they cover both
 jobs and three kinds of "with" that English keeps apart:
 
 | | |

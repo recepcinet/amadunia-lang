@@ -70,7 +70,7 @@ shopping list and a claim about where law comes from. That is not an
 achievement of this text; it is what having no conjugation and no articles
 buys, and this is the first page where it can be seen plainly.
 
-**Negation does the arguing.** Four of the seventeen sentences are *no*
+**Negation does the arguing.** Four of the eighteen sentences are *no*
 sentences, and they are the spine of it: nature does not die, history does not
 die, law does not come from nature, number does not die.
 The language has one negator, it goes in one place, and it turns out to be

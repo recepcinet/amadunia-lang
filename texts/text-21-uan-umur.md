@@ -166,7 +166,7 @@ Anak keci sema nama tena.
 
 ## What length found
 
-**Eighty-eight sentences, 418 words, 122 roots** — two and a half times the
+**101 sentences, 418 words, 122 roots** — three times the
 longest text before it, and a fifth of everything the language has ever
 written in one page.
 

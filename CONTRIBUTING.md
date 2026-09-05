@@ -107,7 +107,7 @@ mark for a name, how `r` is made, and "want to be" plus an adjective. The
 imperative was settled on September 3, 2026; the other three are the most
 useful to answer.
 
-**Six of the thirty-three already have a briefing**, each one measured rather
+**Six of the thirty-seven already have a briefing**, each one measured rather
 than argued: [a mark for a name](grammar/proposal-names.md), ["want to be" plus
 an adjective](grammar/proposal-modal-adjective.md), [a word for
 "but"](grammar/proposal-but.md), [where a frequency adverb

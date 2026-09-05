@@ -74,7 +74,7 @@ and the frequency measure counts a word only inside a run of two or more, so a
 word in the middle of a list is named rather than used. It has its own sentence
 now. The measure is right and the draft was wrong: a list is not a use.
 
-**The commonest words did not get commoner.** But *mi* still opens thirteen of the twenty-one sentences,
+**The commonest words did not get commoner.** But *mi* still opens fifteen of the twenty-two sentences,
 because a first-person errand cannot avoid it. The distribution is a fact about
 the language, not about the material.
 
