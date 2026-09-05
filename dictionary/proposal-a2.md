@@ -18,15 +18,25 @@ the eleven words already taken — *hao*, *kan*, *lai*, *cang*, *yuki*, *nomu*,
 
 Root length, measured across all 300:
 
+<!-- generated -->
+
 | Family | 2-3 letters | 4 | 5+ | Average |
 |---|---|---|---|---|
-| Austronesian | 7 | 24 | 81 | 5.0 |
-| Semitic | 1 | 13 | 54 | 5.0 |
-| Turkic | 7 | 22 | 61 | 4.8 |
+| Austronesian | 7 | 24 | 84 | 5.1 |
+| Turkic | 7 | 22 | 65 | 4.9 |
+| Latin/Romance | 23 | 20 | 47 | 4.4 |
 | Indo-Aryan | 15 | 18 | 50 | 4.5 |
-| Latin/Romance | 23 | 20 | 46 | 4.4 |
-| **Sino-Tibetan** | **7** | **5** | **0** | **3.2** |
+| Semitic | 1 | 13 | 54 | 5.0 |
+| Sino-Tibetan | 7 | 5 | 0 | 3.2 |
 | Japonic | 3 | 4 | 1 | 3.6 |
+
+<!-- end generated -->
+
+Three of those rows were stale until September 5, 2026 — Austronesian's 5+
+column read 81 against 84, Turkic's 61 against 65, Latin/Romance's 46 against
+47 — and two averages with them. The rows counted roots by **reach**, so a root
+added anywhere moves several of them at once, and nothing was recounting. The
+table is generated now.
 
 Sino-Tibetan is the only family in the dictionary with no root of five letters
 or more. But modern Mandarin vocabulary is overwhelmingly two syllables, and
@@ -58,18 +68,22 @@ calculation.
 
 ## 3. What the writing has asked for
 
-Twelve gaps were found by trying to write something and failing, not by reading
-a list — with the twelfth found a third way, by translating one sentence
-somebody asked for. [They are recorded with the sentence that stopped in each case](README.md#words-the-writing-has-asked-for):
+Fourteen gaps are on the list: twelve found by trying to write something and
+failing, and two found a third way — by translating a sentence somebody asked
+for, and by somebody asking about kinship. [They are recorded with the sentence that stopped in each case](README.md#words-the-writing-has-asked-for):
 pain, love as a noun, to miss someone, the clock, a word for *then*, standing
 up, and a coin as against an amount.
 
-Three of the seven are about how a person feels or where a person hurts. No
+Three of those seven are about how a person feels or where a person hurts. No
 thematic wordlist predicted that, and it is the strongest evidence available
 about where 300 roots are actually thin. Two more were claimed and withdrawn on
 checking, which is why the list is audited rather than appended to.
 
-## 3b. Thirty-four roots have never been used
+This section's heading said **thirty-four** until September 5, 2026 and the
+paragraph beneath it said two, which is what the checker had been holding all
+along. A heading is the one line on a page that nobody rereads.
+
+## 3b. Two roots have never been used
 
 Being taught is not being used. Counted on September 4, 2026: **55 of the 300
 roots appeared in no text at all** — met once in a lesson's word table, drilled

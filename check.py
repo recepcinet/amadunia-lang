@@ -2543,6 +2543,14 @@ for _i, _t in enumerate("twenty thirty forty fifty".split()):
 check(_m3 and _WORDNUM.get(_m3.group(1).lower()) == len(_NEVER),
       f"proposal-a2.md says '{_m3.group(1) if _m3 else '?'} are still unused'; "
       f"{len(_NEVER)} roots appear in no text")
+# The heading over that paragraph said "Thirty-four roots have never been used"
+# while the paragraph said two, and only the paragraph was checked. A heading is
+# the one line on a page nobody rereads.
+_m3h = re.search(r"^## 3b\. ([A-Za-z-]+) roots have never been used$",
+                 read("dictionary/proposal-a2.md"), re.M)
+check(_m3h and _WORDNUM.get(_m3h.group(1).lower()) == len(_NEVER),
+      f"proposal-a2.md's heading says '{_m3h.group(1) if _m3h else '?'} roots have "
+      f"never been used'; {len(_NEVER)} do")
 
 # Three texts brought the unused count to two, and those two are the only
 # roots an open question forbids writing: madad's class is undecided, and
@@ -2747,6 +2755,34 @@ check(_have[:len(_want)] == _want,
       "balance.md's family table has drifted from the dictionary — regenerate it"
       + (f"\n    want: {_want[2] if len(_want) > 2 else ''}"
          f"\n    have: {_have[2] if len(_have) > 2 else '(missing)'}"))
+
+# ------------------------------- the A2 briefing's root-length table
+# proposal-a2.md argues that the thin families are thin for the wrong reason,
+# and the argument rests on a table of root lengths by family. Those rows count
+# roots by **reach**, so one root added anywhere moves several of them, and
+# nothing was recounting: Austronesian's 5+ column read 81 against 84, Turkic's
+# 61 against 65, Latin/Romance's 46 against 47, and two averages with them.
+# Generated from the dictionary now, for the seven families the page names.
+_A2FAM = ["Austronesian", "Turkic", "Latin/Romance", "Indo-Aryan",
+          "Semitic", "Sino-Tibetan", "Japonic"]
+_bylen = {}
+for _w in words:
+    for _fam in {_f for _l, _f in FAMILY.items()
+                 if re.search(r"\b" + _l + r"\b", source[_w])}:
+        _bylen.setdefault(_fam, []).append(_w)
+_a2want = "\n".join(
+    ["| Family | 2-3 letters | 4 | 5+ | Average |", "|---|---|---|---|---|"]
+    + [f"| {_f} | {sum(1 for _x in _bylen.get(_f, []) if len(_x) <= 3)} | "
+       f"{sum(1 for _x in _bylen.get(_f, []) if len(_x) == 4)} | "
+       f"{sum(1 for _x in _bylen.get(_f, []) if len(_x) >= 5)} | "
+       f"{sum(len(_x) for _x in _bylen.get(_f, [])) / max(1, len(_bylen.get(_f, []))):.1f} |"
+       for _f in _A2FAM])
+_a2body = read("dictionary/proposal-a2.md")
+_a2have = (_a2body.split("<!-- generated -->")[1].split("<!-- end generated -->")[0].strip()
+           if "<!-- generated -->" in _a2body else "")
+check(_a2have == _a2want,
+      "proposal-a2.md's root-length table has drifted from the dictionary — "
+      "regenerate it")
 
 # The front page prints the same table. Only balance.md's copy was checked,
 # and README's had been computed by the origin method this file corrected on
