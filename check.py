@@ -2542,6 +2542,28 @@ _want = ["| Family | Origin | | Reach | |"]
 for f, rc in sorted(_reach.items(), key=lambda kv: -kv[1]):
     oc = _ocount.get(f, 0)
     _want.append(f"| {f} | {oc} | {100*oc/len(words):.1f}% | {rc} | {100*rc/len(words):.1f}% |")
+# The table is regenerated, and the paragraph that reads it was not. It said
+# "six families sit between 20% and 29%" and named six of which three are not:
+# Austronesian is 38.3%, Turkic 31.3%, Latin/Romance 30.0%. Prose about a
+# derived table has to be derived too, so the threshold, the names and the two
+# spans are all recomputed here.
+_rank = sorted(_reach.items(), key=lambda kv: -kv[1])
+_fifth = [f for f, rc in _rank if 100 * rc / len(words) >= 20]
+_m5 = re.search(r"\*\*(\w+) families are named\s+in a fifth or more of the "
+                r"dictionary\*\* — ([^.]+)\.", bal)
+check(_m5 and WORD_NUM.get(_m5.group(1).lower()) == len(_fifth)
+      and [x.strip() for x in _m5.group(2).replace("\n", " ").split(",")] == _fifth,
+      f"balance.md's list of families named in a fifth or more is stale; the "
+      f"dictionary gives {len(_fifth)}: {', '.join(_fifth)}")
+_ranko = sorted(_ocount.items(), key=lambda kv: -kv[1])
+_m6 = re.search(r"top six run from ([\d.]+)% down to ([\d.]+)%; "
+                r"by origin the top six run from ([\d.]+)% down to ([\d.]+)%", bal)
+_spans = [100 * _rank[0][1] / len(words), 100 * _rank[5][1] / len(words),
+          100 * _ranko[0][1] / len(words), 100 * _ranko[5][1] / len(words)]
+check(_m6 and [float(x) for x in _m6.groups()] == [round(v, 1) for v in _spans],
+      "balance.md's spans from first to sixth are stale; the dictionary gives "
+      + ", ".join(f"{v:.1f}%" for v in _spans))
+
 _have = [l for l in bal.splitlines() if l.startswith("| ") and l.count("|") == 6]
 check(_have[:len(_want)] == _want,
       "balance.md's family table has drifted from the dictionary — regenerate it"

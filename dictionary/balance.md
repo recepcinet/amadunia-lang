@@ -40,7 +40,7 @@ root came from, counted once. Taking Latin, Romance, Germanic, Slavic and Greek 
 
 **By origin there is a largest bloc.** Latin/Romance is 25.0%, ahead of Austronesian at 22.3% and Semitic at 16.3%. Nothing dominates, but nothing is level either.
 
-**By reach it is much flatter.** No family is named in more than 38% of entries, and six families sit between 20% and 29% — Austronesian, Turkic, Latin/Romance, Indo-Aryan, Semitic, Niger-Congo. This is the more meaningful figure, and the gap between the two columns is the point: so many roots are shared across families that asking where a word *came from* overstates the imbalance. *sabun*, *kertas*, *kalima*, *insan*, *safari* and *kursi* each belong to five or six traditions at once.
+**By reach it is much flatter.** The top six run from 38.3% down to 21.3%; by origin the top six run from 25.0% down to 4.7%. **Six families are named in a fifth or more of the dictionary** — Austronesian, Turkic, Latin/Romance, Indo-Aryan, Semitic, Niger-Congo. This paragraph said those six sat "between 20% and 29%" until September 5, 2026, and three of them do not: Austronesian is 38.3%, Turkic 31.3% and Latin/Romance 30.0%. The figure it was reaching for is the flatness, and the drop from first to sixth says it. This is the more meaningful figure, and the gap between the two columns is the point: so many roots are shared across families that asking where a word *came from* overstates the imbalance. *sabun*, *kertas*, *kalima*, *insan*, *safari* and *kursi* each belong to five or six traditions at once.
 
 ## The weak spot
 

@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**159 guarantees** in **83 groups**, and every one of them is
+**161 guarantees** in **83 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -327,6 +327,8 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - balance.md counts … roots; the dictionary has …
 - balance.md's European figure is stale; recount gives … of …, …%
+- balance.md's list of families named in a fifth or more is stale; the dictionary gives …: …
+- …
 - …
 - …
 - balance.md's largest family is stale; recount gives … at …%
