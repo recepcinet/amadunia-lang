@@ -3,7 +3,7 @@
 Generated from the material a learner reads — the twenty-six lessons, the
 twenty texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **5794 words of running Amadunia**, and every one of the 300 roots appears
+it. **5800 words of running Amadunia**, and every one of the 300 roots appears
 at least once.
 
 [`check.py`](../check.py) regenerates this page and fails if it disagrees, so
@@ -13,9 +13,9 @@ the numbers follow the corpus rather than the other way round.
 
 | | Share of all running words |
 |---|---|
-| first 10 | 31% |
+| first 10 | 32% |
 | first 25 | 50% |
-| first 50 | 65% |
+| first 50 | 66% |
 | first 100 | 81% |
 | first 150 | 90% |
 | first 200 | 95% |
@@ -36,9 +36,9 @@ cover half of everything.** They are the first twenty-five below.
 | 1 | *mi* | I, me | 576 | 9.9% |
 | 2 | *yu* | you — one form for everyone | 225 | 3.9% |
 | 3 | *ta* | he, she, it — no gender | 179 | 3.1% |
-| 4 | *in* | at, in, on | 169 | 2.9% |
+| 4 | *in* | at, in, on | 172 | 3.0% |
 | 5 | *anak* | child | 132 | 2.3% |
-| 6 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 125 | 2.2% |
+| 6 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 128 | 2.2% |
 | 7 | *ini* | this — after the noun, last in the phrase | 108 | 1.9% |
 | 8 | *dom* | house, home | 103 | 1.8% |
 | 9 | *lai* | to come | 103 | 1.8% |

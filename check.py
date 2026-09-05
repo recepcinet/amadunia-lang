@@ -2146,6 +2146,46 @@ for path in PROSE:
                   f"verb of its own — no goes before a predicate, and the language "
                   f"has no ellipsis: {sent}")
 
+# --------------------------------------------- every sentence needs a predicate
+# The mandatory-copula check fires only when a sentence opens with a pronoun,
+# and the ini/itu check only after a demonstrative. Between them a shape went
+# unchecked: no verb, no adjective, no place word, no es. *Dom sukut* — the
+# house is silent — was written three times in two texts, and *sukut* is the
+# noun *silence*, so what it says is "the house's silence". The lines are
+# *Es sukut in dom* now, the existential doing an adjective's work, and the
+# missing adjective is on the list of words the writing has asked for.
+#
+# This cannot be checked on the Amadunia alone: a noun phrase standing by
+# itself is a legal fragment — *Tri anak*, *Nama yu* — and is the same string
+# as a sentence with its copula missing. The English is what says which was
+# meant, so a translation saying "is" or "are" is the trigger. Where a row
+# holds several sentences on each side and the counts agree, they are paired;
+# that is what it takes to reach the two lines that share a row with a verb.
+_PRED_ANY = (VERBS | ADJECTIVES | DEGREE | GROUP["Place"] | GROUP["Prepositions"]
+             | GROUP["Question words"]
+             | {"es", "mau", "bisa", "lasim", "cok", "daima", "kadang", "una"})
+# rabota is read as a verb here only because its class is undecided, the same
+# allowance PREDICATE_OK makes above. proposal-two-jobs.md is where that is
+# settled, and nothing here answers it.
+_PRED_ANY |= {"rabota"}
+def _sentences(s):
+    return [p.strip() for p in re.split(r"(?<=[.!?])\s+", s.strip()) if p.strip()]
+for _p in PROSE:
+    for _ln, _am, _en in glossed_lines(_p and read(_p)):
+        if not _en: continue
+        if any(_x in _en.lower() for _x in
+               ("wrong", "careful", "would be", "not a sentence", "rejected")): continue
+        _a, _e = _sentences(_am), _sentences(_en)
+        _pairs = list(zip(_a, _e)) if len(_a) == len(_e) else [(_am, _en)]
+        for _as, _es in _pairs:
+            _t = [_x.split("-")[0] for _x in re.findall(r"[a-z-]+", _as.lower())]
+            _known = [_x for _x in _t if _x in words]
+            if len(_known) < 2 or len(_known) * 2 < len(_t): continue
+            if any(_x in _PRED_ANY for _x in _t): continue
+            check(not re.search(r"\b(is|are|was|were)\b", _es),
+                  f"{os.path.basename(_p)}: '{_as}' is translated '{_es}' and has no "
+                  f"predicate in it — no verb, no adjective, no place word and no es")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one

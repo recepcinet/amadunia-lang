@@ -33,7 +33,7 @@ Kita kula aur sema aur kanta.
 Anak keci lala in kursi.
 Papa leta ta por yatak.
 
-Rat. Dom sukut.
+Rat. Es sukut in dom.
 Mi senang porke kita una.
 ```
 
@@ -57,7 +57,7 @@ Mi senang porke kita una.
 | Kita kula aur sema aur kanta. | We eat and talk and sing. |
 | Anak keci lala in kursi. | The small child sleeps in the chair. |
 | Papa leta ta por yatak. | Father carries him to bed. |
-| Rat. Dom sukut. | Night. The house is silent. |
+| Rat. Es sukut in dom. | Night. There is silence in the house. |
 | Mi senang porke kita una. | I am happy because we are together. |
 
 ## What *una* did
@@ -103,4 +103,4 @@ on the page is again doing what the grammar cannot.
 
 ## Roots used
 
-42 of 300.
+43 of 300.

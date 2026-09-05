@@ -69,7 +69,7 @@ Historia go tena.
 
 Tahun-tahun go. Rambut siya sasa putih.
 Anak-anak kabir sasa. Anak-anak go madina baid.
-Dom sukut. Ta-ta otur in bage.
+Es sukut in dom. Ta-ta otur in bage.
 Ta-ta kan sol. Ta-ta ingat din-din eski.
 
 Insan sema: "Mi ingat yu in skola."
@@ -77,7 +77,7 @@ Insan genc — no genc sasa — respon: "Mi ingat yu in market."
 Ta-ta kanta kanta eski.
 Rat lai. Stela in asman.
 
-Insan mati. Dom sukut tena.
+Insan mati. Es sukut in dom tena.
 Anak-anak lai. Anak-anak kan bage.
 Anak keci tanya: "Kim es insan ini?"
 Mama respon: "Ta es nasab yu. Ta suda hidup sini."
@@ -149,13 +149,13 @@ Anak keci sema nama tena.
 | Tahun-tahun go. Rambut siya sasa putih. | The years go. The black hair is white now. |
 | Anak-anak kabir sasa. | The children are big now. |
 | Anak-anak go madina baid. | The children go to a far city. |
-| Dom sukut. Ta-ta otur in bage. | The house is silent. They sit in the garden. |
+| Es sukut in dom. Ta-ta otur in bage. | There is silence in the house. They sit in the garden. |
 | Ta-ta kan sol. Ta-ta ingat din-din eski. | They see the sun. They remember the old days. |
 | Insan sema: "Mi ingat yu in skola." | The person says: "I remember that morning at school." |
 | Insan genc — no genc sasa — respon: "Mi ingat yu in market." | The young one — not young now — answers: "I remember you at the market." |
 | Ta-ta kanta kanta eski. | They sing an old song. |
 | Rat lai. Stela in asman. | Night comes. Stars are in the sky. |
-| Insan mati. Dom sukut tena. | The person dies. The house is silent again. |
+| Insan mati. Es sukut in dom tena. | The person dies. There is silence in the house again. |
 | Anak-anak lai. Anak-anak kan bage. | The children come. The children see the garden. |
 | Anak keci tanya: "Kim es insan ini?" | A small child asks: "Who is this person?" |
 | Mama respon: "Ta es nasab yu. Ta suda hidup sini." | The mother answers: "She is your relative. She lived here." |
@@ -166,7 +166,7 @@ Anak keci sema nama tena.
 
 ## What length found
 
-**Eighty-eight sentences, 414 words, 122 roots** — two and a half times the
+**Eighty-eight sentences, 418 words, 122 roots** — two and a half times the
 longest text before it, and a fifth of everything the language has ever
 written in one page.
 

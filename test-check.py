@@ -118,6 +118,13 @@ _NADJ = re.search(r"(\d+) two-word utterances",
                   io.open("grammar/copula.md", encoding="utf-8").read()).group(0)
 _NADJ_OFF = re.sub(r"\d+", lambda m: str(int(m.group(0)) + 2), _NADJ)
 
+# text 21's word count moves whenever a word goes into or out of it, and it has
+# now moved twice in two days. Read, not quoted. Nineteenth site of that kind.
+_T21W = re.search(r"(\d+) words,",
+                  io.open("texts/text-21-uan-umur.md", encoding="utf-8").read()).group(0)
+_T21W_OFF = re.sub(r"\d+", lambda m: str(int(m.group(0)) - 4), _T21W)
+_T21N = _T21W.split()[0]
+
 _LIVE = int(re.search(r"## Open questions — (\d+) of them",
                       io.open("grammar/README.md", encoding="utf-8").read()).group(1))
 # This was a hand-written dict that stopped at thirty-five, and the day the
@@ -313,8 +320,8 @@ MUTATIONS = [
      "Insan genc mau kan dunia.", "Genc mau kan dunia.",
      "is an adjective standing as a subject"),
     ("a text's word count gone stale", "texts/text-21-uan-umur.md",
-     "414 words,", "410 words,",
-     "words; its text has 414"),
+     _T21W, _T21W_OFF,
+     f"words; its text has {_T21N}"),
     # The count must belong to its own row: dom said 104 while the corpus had
     # 103, and the check passed because 103 was on another word's row.
     ("a frequency count on the wrong row", "dictionary/frequency.md",
@@ -337,6 +344,12 @@ MUTATIONS = [
      "| Mi mau ini. Mi no mau itu. | I want this. I do not want that. |",
      "| Mi mau ini, no itu. | I want this, not that. |",
      "denies a noun with no verb of its own"),
+    # The second of two sentences sharing a row with a verb: only the paired
+    # reader reaches it.
+    ("a noun standing where a predicate belongs", "texts/text-21-uan-umur.md",
+     "| Insan mati. Es sukut in dom tena. | The person dies. There is silence in the house again. |",
+     "| Insan mati. Dom sukut tena. | The person dies. The house is silent again. |",
+     "has no predicate in it"),
     ("consonant pair missing from phonology.md", "grammar/phonology.md",
      "- `fr` \u2014 *fruta* (fruit), word-initial like *tr*\n", "",
      "does not list the consonant pair 'fr'"),

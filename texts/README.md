@@ -34,7 +34,7 @@ been. Every sentence in the lessons, the texts and the phrasebook was reduced
 to its parts of speech — R for a pronoun, V a verb, N a noun, A an adjective,
 P a preposition, and so on — and the shapes counted.
 
-**1665 sentences, 401 distinct shapes**, and the fifteen commonest cover 43%
+**1665 sentences, 400 distinct shapes**, and the fifteen commonest cover 43%
 of them. The leaders are *RVN* at 8.6% (*Ta-ta lihat stela-stela*), *NA* at
 7.5% (*Sol kabir*) and *NV* at 4.8% (*Anak sema*). [`check.py`](../check.py)
 recounts the two headline numbers.
@@ -80,7 +80,7 @@ These are original compositions, not translations. Translating an existing book 
 | [Mila tahun](text-10-mila-tahun.md) | 37 | 300 roots, Lessons 1-23 — an argument, for the abstract words a scene cannot reach |
 | [Anak katab](text-11-anak-katab.md) | 31 | 300 roots, Lessons 1-23 — a portrait, written for the least-exercised rule |
 | [Tarik por skola](text-12-tarik-por-skola.md) | 36 | 300 roots, Lessons 1-25 — a walk to school, written for the imperative granted the day before |
-| [Kula una](text-13-kula-una.md) | 42 | 300 roots, Lessons 1-26 — a shared meal, written for *una*, the rule that had become the thinnest |
+| [Kula una](text-13-kula-una.md) | 43 | 300 roots, Lessons 1-26 — a shared meal, written for *una*, the rule that had become the thinnest |
 | [Yamur aur ca](text-14-yamur-aur-ca.md) | 45 | **147 roots, Lessons 1-18** — a rainy night, written for a learner in the middle of the course |
 | [Sol lai](text-15-sol-lai.md) | 42 | **89 roots, Lessons 1-10** — a day at home and at the market, the lowest rung on the reading ladder |
 | [Berapa harga](text-16-berapa-harga.md) | 62 | 300 roots, Lessons 1-26 — bargaining at the market, written for the words no text had ever used |

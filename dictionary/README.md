@@ -27,6 +27,7 @@ by writing is worth more than a gap found by reading a wordlist.
 
 | Missing | Found by | The sentence that could not be finished |
 |---|---|---|
+| quiet, silent — the adjective | [text 13](../texts/text-13-kula-una.md), [text 21](../texts/text-21-uan-umur.md) | *Dom sukut*, the house is silent, three times in two texts — and *sukut* is the **noun** silence, so the phrase reads "the house's silence". The lines are *Es sukut in dom*, there is silence in the house, which is the existential doing the work an adjective would. Found September 5, 2026. |
 | pain, to hurt | [text 6](../texts/text-6-seti-din.md) | a child ill for seven days never says where it hurts; *mal*, bad, is not the same thing |
 | love, as a noun | [text 7](../texts/text-7-surat-por-mama.md) | a letter cannot be signed *with love* — *ama* is the verb, and one root does one job |
 | to miss someone | [text 7](../texts/text-7-surat-por-mama.md) | *Mi sedih porke yu-yu baid* names the cause instead of the feeling |
