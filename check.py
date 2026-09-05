@@ -1724,6 +1724,21 @@ for _p in sorted(glob.glob("texts/*.md")):
                 and _t[1] in VERBS and _t[1] != "es"):
             _RULETEXT["command"].add(_f)
         if set(_t) & NUMBERS: _RULETEXT["number"].add(_f)
+# Only the floor was ever checked. The page also named four figures in prose —
+# "Place leads at eighteen ... the adverb rule at seven" — and three of them had
+# drifted against this very scan as the texts were edited. The whole table is
+# generated from it now, so the prose cannot say one thing while the scan says
+# another.
+_rt_want = "\n".join(
+    ["| Rule | Texts |", "|---|---:|"]
+    + [f"| {_k} | {len(_v)} |" for _k, _v in
+       sorted(_RULETEXT.items(), key=lambda kv: (-len(kv[1]), kv[0]))])
+_treadme = read("texts/README.md")
+_rt_have = (_treadme.split("<!-- generated -->")[1].split("<!-- end generated -->")[0].strip()
+            if "<!-- generated -->" in _treadme else "")
+check(_rt_have == _rt_want,
+      "texts/README.md's rule table has drifted from the scan that produces it — "
+      "regenerate it")
 _thin = min(_RULETEXT.items(), key=lambda kv: len(kv[1]))
 _m5 = re.search(r"each stand in \*\*at least (\w+)\*\* texts", read("texts/README.md"))
 check(_m5 and WORD_NUM.get(_m5.group(1).lower()) == len(_thin[1]),
