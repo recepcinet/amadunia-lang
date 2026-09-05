@@ -3441,6 +3441,37 @@ for _end, _phrase in (("o", "**{}** roots end in *-o*"),
           .replace("\n", " "),
           f"conjunction.md: {_n} roots end in -{_end}")
 
+# ------------------------------ concepts missing only as a part of speech
+# The checklist counts an action as had only when the index holds it as "to X",
+# which is right — safi is the quality clean and not the verb. It leaves a
+# category the page had met once and not named: a concept the dictionary holds
+# under another word class. The two actions are derived; the two qualities are
+# named, because free/freedom and angry/anger cannot be matched by machine
+# without matching floor to flower.
+_idxe = {_m.group(1).strip().lower()
+         for _m in re.finditer(r"^\| ([^|]+) \|", read("dictionary/index-english.md"), re.M)}
+_cl = read("dictionary/a1-checklist.md")
+_cldom = {_m.group(1): [_x.strip() for _x in _m.group(2).split(",")]
+          for _m in re.finditer(r"^## (.+)\n\n(.+)$", _cl, re.M)}
+_asnoun = sorted(_c for _c in _cldom.get("actions", [])
+                 if f"to {_c}" not in _idxe and _c in _idxe)
+check(all(f"**{_c}**, the action" in _cl for _c in _asnoun),
+      f"a1-checklist.md: {', '.join(_asnoun)} are missing as actions and held "
+      f"as nouns, and the page must say so")
+for _q, _n in (("free", "freedom"), ("angry", "anger")):
+    check(_q not in _idxe and _n in _idxe
+          and f"| **{_q}** | *{_idxe and [_e for _e in [_n]][0]}*" not in _cl
+          and f"**{_q}**" in _cl and f"*{_n}*" in _cl,
+          f"a1-checklist.md: {_q} is missing and {_n} is held, and the page "
+          f"must name the pair")
+
+# One concept is on the list twice on purpose and the page says which.
+_allc = [_c for _cs in _cldom.values() for _c in _cs]
+_twice = sorted({_c for _c in _allc if _allc.count(_c) > 1})
+check(len(_twice) == 1 and f"*{_twice[0]}* is in **actions**" in _cl,
+      f"a1-checklist.md: {len(_twice)} concepts appear twice — "
+      f"{', '.join(_twice)} — and one deliberate duplicate is documented")
+
 # ------------------------------------ the phrasebook's own reading level
 # The page told a learner that Lesson 1 was enough for its first section. Six
 # of that section's seven roots arrive later and *tena* arrives in Lesson 16,

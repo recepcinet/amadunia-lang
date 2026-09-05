@@ -24,6 +24,26 @@ was counted as had. An action now counts only if the index holds it as **to
 X**. *light* is the same shape and comes out right by luck: the index has both
 *light* and *light in weight*, and the quality is really there.
 
+**Four of the missing are a part of speech, not a concept.** The list counts a
+concept as had when the index answers it, and these four the language already
+has under another word class:
+
+| Missing | What the dictionary holds | |
+|---|---|---|
+| **work**, the action | *rabota*, the noun *work* | and whether one root may hold both jobs is [the open question](../grammar/proposal-two-jobs.md) |
+| **clean**, the action | *safi*, the quality *clean* | the pair this page was corrected for on September 5, 2026 |
+| **free** | *uhuru*, *freedom* | |
+| **angry** | *gusa*, *anger* | |
+
+That is the same shape as *quiet* on
+[the other list](README.md#words-the-writing-has-asked-for), where *sukut* is
+the noun *silence* and no adjective stands beside it. The two pages found the
+same thing by two methods and neither named it as a kind. It is worth a name
+because it is a cheaper gap than the others here: nobody has to decide what the
+idea is, only which word class should carry it — and for *work* that decision
+is already open under a different heading. **This still proposes nothing.**
+Noticed September 6, 2026.
+
 ## the house
 
 wall, floor, roof, kitchen, bathroom, stairs, garden, bed, door, window, table, chair, lamp, key, soap, plate, glass, knife, spoon, cup, clock, mirror, towel, box, bag
