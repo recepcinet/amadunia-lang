@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**212 guarantees** in **106 groups**, and every one of them is
+**223 guarantees** in **108 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -430,6 +430,21 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - stress.md: the dictionary has … roots of three syllables
 - stress.md: the two sets of … share … roots — … — and the page must name them
 - stress.md: … of the moved roots have two syllables, not what the page says
+### proposal-stress.md's own lists
+
+- proposal-stress.md no longer lists the three-syllable roots
+- proposal-stress.md lists … among the three-syllable roots; they are not three-syllable roots
+- proposal-stress.md names … of the … three-syllable roots, so … are unnamed
+- proposal-stress.md: … roots contain an attested vowel pair, …% of the dictionary
+- proposal-stress.md names roots as containing a vowel pair that do not: …
+- proposal-stress.md names … of the … affected roots, so … are unnamed
+- proposal-stress.md: penultimate and final differ on every root of two syllables or more, … of …, …%
+### pronunciation.md's tables
+
+- pronunciation.md gives a row to … letters; the alphabet has …
+- pronunciation.md illustrates a letter with a word that is not a root: …
+- pronunciation.md illustrates a letter with a word that does not contain it: …
+- pronunciation.md: a vowel reduces when it is unstressed, so the rule cannot be stated as 'no reduced variant under stress'
 ### the A2 briefing's theme table
 
 - …

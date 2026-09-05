@@ -33,13 +33,22 @@ speaker of any of them already knows these five sounds.
 | **o** | /o/ | Spanish *como*, Japanese *oto*, Indonesian *toko* | *dom* |
 | **u** | /u/ | Spanish *luna*, Japanese *uma*, Swahili *kuku* | *yu* |
 
-They never change. There is no long and short, and **no reduced variant under
-stress**: the *a* in *ama* and the *a* in *salam* are the same sound, and so are
-both unstressed *a*'s in a-ma-**DU**-nia. [Stress](stress.md) makes a syllable
-louder, not different — the way it works in Indonesian, Swahili and Japanese,
-and not the way it works in English, Russian or Portuguese, where an unstressed
-vowel collapses toward a schwa. If it collapsed here, *written as spoken* would
-stop being true the moment a word was said aloud.
+They never change. There is no long and short, and **no reduced variant away
+from stress**: the *a* in *ama* and the *a* in *salam* are the same sound, and so
+are both unstressed *a*'s in a-ma-**DU**-nia. [Stress](stress.md) makes a
+syllable louder, not different — the way it works in Indonesian, Swahili and
+Japanese, and not the way it works in English, Russian or Portuguese, where an
+unstressed vowel collapses toward a schwa. If it collapsed here, *written as
+spoken* would stop being true the moment a word was said aloud.
+
+That rule read "no reduced variant under stress" until September 5, 2026,
+which names the wrong condition: a vowel that reduces reduces when it is
+*un*stressed. As written it promised something no language on Earth breaks,
+while every example under it — and the whole paragraph it belongs to — is about
+the unstressed syllable. [stress.md](stress.md), [the phrasebook](../phrasebook.md)
+and this page's own next sentence all had it the right way round. The page that
+defines the twenty sounds is the one that had it backwards, in the six bold
+words that state the rule.
 
 ## Consonants
 

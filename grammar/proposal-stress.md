@@ -67,11 +67,23 @@ What the language does today. It is why the poem has no metre.
 **For 209 of the 300 roots, penultimate and initial are the same syllable.**
 A two-syllable word has its first syllable as its penultimate one. The two
 options can only disagree on the 34 three-syllable roots — *bahari, habari,
-kalima, kamisa, kucing, madina, muskil, negara, numero, polisi, restoran,
-safari, samaki, sapatu, telinga, uhuru* and the rest.
+kalima, kamisa, kemarin, madina, negara, numero, polisi, problema, restoran,
+safari, samaki, sapatu, telinga, uhuru* and the other eighteen.
 
 So the practical choice is between penultimate-or-initial on one side and final
-on the other, and even that separates only a third of the vocabulary.
+on the other, and that separates 243 of the 300 roots — every word of more than
+one syllable, 81%.
+
+Two corrections, September 5, 2026. The list above named *kucing* and *muskil*
+among the three-syllable roots and both have two syllables — *ku-cing*,
+*mus-kil* — by the definition this same page spends a section establishing.
+They are replaced by *kemarin* and *problema*, which are three. And the last
+sentence read *even that separates only a third of the vocabulary*: the choice
+between penultimate and final separates every root of two syllables or more,
+which is 81% of the dictionary and not a third. A third is nobody's count of
+anything here — the number beside it in the paragraph is 34, and 34 of 300 is
+a ninth. The sentence was the one that made the decision look cheap, and it
+was the one nobody checked.
 
 ## And it is free
 

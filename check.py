@@ -3376,6 +3376,80 @@ if _moves == _syl[3]:
           f"stress.md: {len(_moveset - _3syl)} of the moved roots have two "
           f"syllables, not what the page says")
 
+# --------------------------------------------- proposal-stress.md's own lists
+# The briefing that establishes what a syllable is then lists roots by
+# syllable count, and two of the sixteen it named as three-syllable had two —
+# kucing and muskil. A page whose subject is the counting rule is the last
+# place a hand-listed count should stand unchecked, so the lists are counted.
+_ps = read("grammar/proposal-stress.md").replace("\n", " ")
+_m3 = re.search(r"three-syllable roots — (.+?) and the other (\w+)\.", _ps)
+check(_m3, "proposal-stress.md no longer lists the three-syllable roots")
+if _m3:
+    _named3 = re.findall(r"[a-z]+", _m3.group(1))
+    _wrong3 = [w for w in _named3
+               if w not in words or len(re.findall(r"[aeiou]+", w)) != 3]
+    check(not _wrong3,
+          f"proposal-stress.md lists {', '.join(_wrong3)} among the "
+          f"three-syllable roots; they are not three-syllable roots")
+    check(_m3.group(2) == _SPELLN.get(_syl[3] - len(_named3)),
+          f"proposal-stress.md names {len(_named3)} of the {_syl[3]} "
+          f"three-syllable roots, so {_syl[3] - len(_named3)} are unnamed")
+
+# The same page's count of the roots whose syllable count depends on the vowel
+# pair rule, and the roots it names among them.
+_PAIRS = ("ai", "ao", "au", "ia", "ua")
+_pairw = [w for w in words if any(_q in w for _q in _PAIRS)]
+_mp = re.search(r"In (\d+) of the \d+ roots — (\d+)% — the count depends", _ps)
+check(_mp and int(_mp.group(1)) == len(_pairw)
+      and int(_mp.group(2)) == round(100 * len(_pairw) / len(words)),
+      f"proposal-stress.md: {len(_pairw)} roots contain an attested vowel "
+      f"pair, {round(100 * len(_pairw) / len(words))}% of the dictionary")
+_mo = re.search(r"The affected roots are the ones containing .+?: (.+?) and (\w+) others",
+                _ps)
+if _mo:
+    _namedp = re.findall(r"[a-z]+", _mo.group(1))
+    check(all(w in _pairw for w in _namedp),
+          f"proposal-stress.md names roots as containing a vowel pair that do "
+          f"not: {[w for w in _namedp if w not in _pairw]}")
+    check(_mo.group(2) == _SPELLN.get(len(_pairw) - len(_namedp)),
+          f"proposal-stress.md names {len(_namedp)} of the {len(_pairw)} "
+          f"affected roots, so {len(_pairw) - len(_namedp)} are unnamed")
+
+# What the final-versus-penultimate choice actually separates. The page said
+# "only a third of the vocabulary"; it is every root of two syllables or more.
+_multi = sum(1 for w in words if len(re.findall(r"[aeiou]+", w)) >= 2)
+check(f"separates {_multi} of the {len(words)} roots" in _ps
+      and f"one syllable, {round(100 * _multi / len(words))}%" in _ps,
+      f"proposal-stress.md: penultimate and final differ on every root of two "
+      f"syllables or more, {_multi} of {len(words)}, "
+      f"{round(100 * _multi / len(words))}%")
+
+# ------------------------------------------------ pronunciation.md's tables
+# Every letter of the alphabet gets a row, in the alphabet's own order within
+# vowels and consonants, and every word it is illustrated with is a real root.
+# The page names the sound of each letter; an example that is not a word would
+# be naming it with nothing.
+_pron = read("grammar/pronunciation.md")
+_rows = re.findall(r"^\| \*\*([a-z])\*\* \|.*\| \*([a-z]+)\* \|$", _pron, re.M)
+check(sorted(_l for _l, _ in _rows) == sorted(ALPHABET),
+      f"pronunciation.md gives a row to {len(_rows)} letters; the alphabet has "
+      f"{len(ALPHABET)}")
+check(all(_w in words for _l, _w in _rows),
+      f"pronunciation.md illustrates a letter with a word that is not a root: "
+      f"{[_w for _l, _w in _rows if _w not in words]}")
+check(all(_l in _w for _l, _w in _rows),
+      f"pronunciation.md illustrates a letter with a word that does not "
+      f"contain it: {[(_l, _w) for _l, _w in _rows if _l not in _w]}")
+
+# The reduction rule names the condition under which a vowel would reduce, and
+# it is the absence of stress. It said "under stress" — the wrong one — for two
+# days, while the phrasebook and stress.md both had it right.
+_under = _pron.find("no reduced variant under stress")
+check("**no reduced variant away\nfrom stress**" in _pron
+      and (_under == -1 or _withdrawn(_pron, _under)),
+      "pronunciation.md: a vowel reduces when it is unstressed, so the rule "
+      "cannot be stated as 'no reduced variant under stress'")
+
 # --------------------------------------------- the A2 briefing's theme table
 # proposal-a2.md counts the dictionary by thematic group to show that the thin
 # places are the concrete ones. Derived from the dictionary, so regenerated.
