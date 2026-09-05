@@ -40,9 +40,11 @@ The same words work on a verb, in the adverb slot:
 | | |
 |---|---|
 | Mi kara **lebi** dari yu. | I read more than you. |
-| Ta rabota **paling** cok. | She works the most. |
+| Ta rabota **paling**. | She works the most. |
 
 ## Open questions
 
 - **Superlative among a named group** — "the biggest of the three" — has no form yet. *paling kabir dari tri* is untested.
 - **Whether two degree words may stack.** Lesson 18's conversation read *Cok lebi hao* for "much better" until September 4, 2026. *cok*, *lebi*, *kurang* and *paling* all stand in the same slot in front of what they scale, and nothing grants putting two there at once. The line now reads *Lebi hao*, which says less. Found by reading the lesson rather than by a check, and left open rather than granted.
+
+  **This page was doing it too.** The row above read *Ta rabota **paling** cok*, "she works the most", two slots deep — on the page that says nothing grants two. Corrected September 5, 2026 to *Ta rabota paling*, and a check now refuses the shape. One hit in the whole repository, and it was here: the corpus never stacked them, only the page arguing about them did.

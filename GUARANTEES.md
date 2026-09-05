@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**198 guarantees** in **100 groups**, and every one of them is
+**199 guarantees** in **101 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -357,6 +357,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### a word a rule page names is not a noun
 
 - …: the heading '…' names *…* as a rule word and check.py classes it as a noun
+### two degree words in one slot
+
+- …: '… …' — two degree words in one slot, which comparison.md records as not granted: …
 ### the but briefing cites real pages
 
 - proposal-but.md says '… pages' but its evidence table has … rows

@@ -2833,6 +2833,26 @@ for _p in sorted(glob.glob("grammar/*.md")):
                   f"{os.path.basename(_p)}: the heading '{_h.strip('# ')}' names "
                   f"*{_w}* as a rule word and check.py classes it as a noun")
 
+# --------------------------------------- two degree words in one slot
+# comparison.md says *cok*, *lebi*, *kurang* and *paling* all stand in the same
+# slot in front of what they scale, and that nothing grants putting two there
+# at once — it records removing *Cok lebi hao* from Lesson 18 for exactly that.
+# Its own example two sections above was *Ta rabota paling cok*. One hit in the
+# repository and it was on the page arguing about it; the corpus never did it.
+_DEGREES = DEGREE | {"cok"}
+for path in PROSE:
+    body = read(path)
+    if path.startswith("texts/") and "```" in body:
+        body = "".join(body.split("```")[1::2])
+    for line, sent, toks in amadunia_runs(body):
+        if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗", "until")):
+            continue
+        base = [t.split("-")[0] for t in toks]
+        for _a, _b2 in zip(base, base[1:]):
+            check(not (_a in _DEGREES and _b2 in _DEGREES),
+                  f"{os.path.basename(path)}: '{_a} {_b2}' — two degree words in one "
+                  f"slot, which comparison.md records as not granted: {sent}")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one
