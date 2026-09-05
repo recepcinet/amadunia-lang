@@ -2225,6 +2225,40 @@ check(_m4 and [int(_x) for _x in _m4.groups()] ==
       f"{_ta_he + _ta_she + _ta_both} gendered, {_ta_she} she, {_ta_he} he, "
       f"{_ta_both} both, {_ta_it} it")
 
+# ------------------------------------------- counts that sit outside the link
+# The open-question count is checked wherever it appears inside the text of a
+# link to grammar/README.md. The front page put one outside: "six of the
+# thirty-three already have a briefing" — thirty-three when there were
+# thirty-seven, four behind and invisible to that check. Any number in a
+# sentence that links the open-question index has to be one of the three real
+# figures: the questions, the briefings, or the open briefings.
+# "one" is excluded: in every sentence here it is the determiner — "gathered in
+# one place", "answering one open question" — and no page will ever claim the
+# language has a single open question.
+_nb, _nopen = len(_BRIEFS), len(_OPENBRIEFS)
+_ntexts = len([_p for _p in glob.glob("texts/*.md") if not _p.endswith("README.md")])
+for _p in PROSE:
+    _flat = read(_p).replace("\n", " ")
+    for _s in re.split(r"(?<=[.!?|])\s+", _flat):
+        if "grammar/README.md)" in _s:
+            for _tok in re.findall(r"[A-Za-z][A-Za-z-]*|\d+", _s):
+                if _tok.lower() == "one": continue
+                _n = int(_tok) if _tok.isdigit() else WORD_NUM.get(_tok.lower())
+                if _n is None: continue
+                check(_n in (live, _nb, _nopen),
+                      f"{os.path.basename(_p)}: '{_tok}' stands in a sentence about the "
+                      f"open questions and is none of {live} questions, {_nb} briefings "
+                      f"or {_nopen} open: {_s.strip()[:70]}")
+        # The number of texts is stated on the front page and in the lesson
+        # index as well as in texts/README.md, and only the last was checked.
+        if "texts/" not in _s: continue
+        for _m in re.finditer(r"([A-Za-z-]+|\d+)[ -](?:original )?pieces", _s):
+            _n = (int(_m.group(1)) if _m.group(1).isdigit()
+                  else WORD_NUM.get(_m.group(1).lower()))
+            if _n is None: continue
+            check(_n == _ntexts,
+                  f"{os.path.basename(_p)}: says '{_m.group(0)}'; texts/ holds {_ntexts}")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one

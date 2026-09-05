@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**153 guarantees** in **81 groups**, and every one of them is
+**155 guarantees** in **82 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -284,6 +284,10 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - …: glosses ta … times and always as …; ta is he, she and it
 - pronouns.md's gender figures are stale; the corpus gives … sentences, … gendered, … she, … he, … both, … it
+### counts that sit outside the link
+
+- …: '…' stands in a sentence about the open questions and is none of … questions, … briefings or … open: …
+- …: says '…'; texts/ holds …
 ### the but briefing cites real pages
 
 - proposal-but.md says '… pages' but its evidence table has … rows
