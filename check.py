@@ -3376,6 +3376,33 @@ if _moves == _syl[3]:
           f"stress.md: {len(_moveset - _3syl)} of the moved roots have two "
           f"syllables, not what the page says")
 
+# ------------------------------------------ phonology.md illustrates itself
+# The page that settles which sequences exist illustrates each one with words.
+# The ua row read "uan, una" from the day it was written: una is u-n-a and has
+# no ua in it. The sequences themselves were checked against the dictionary
+# and the examples were not, so the one row that could not be right was the
+# one nothing read.
+_phon = read("grammar/phonology.md")
+_vrows = re.findall(r"^\| ([aeiou]{2}) \| (.+) \|$", _phon, re.M)
+check(sorted(_s for _s, _ in _vrows) == sorted(VOWEL_SEQS),
+      f"phonology.md gives a row to {len(_vrows)} vowel sequences; "
+      f"{len(VOWEL_SEQS)} are attested")
+for _s, _cell in _vrows:
+    for _e in re.findall(r"\*([a-z]+)\*", _cell):
+        check(_e in words and _s in _e,
+              f"phonology.md illustrates the sequence '{_s}' with {_e}, which "
+              f"is {'not a root' if _e not in words else 'has no ' + _s + ' in it'}")
+
+# The same for the consonant list. A cross-reference to another pair — "like
+# *tr*" — is not an example and is skipped by being no root.
+for _m in re.finditer(r"^- `([a-z]{2})` — (.*)$", _phon, re.M):
+    _cp, _rest = _m.group(1), _m.group(2)
+    for _e in re.findall(r"\*([a-z]+)\*", _rest):
+        if _e not in words: continue
+        check(_cp in _e,
+              f"phonology.md illustrates the consonant pair '{_cp}' with the "
+              f"root {_e}, which does not contain it")
+
 # --------------------------------------- proposal-sentence-types.md's counts
 # The briefing headlined "the imperative — 17 sentences", which added seven
 # commands in use to ten sentences in text 8 that avoid one; and under the

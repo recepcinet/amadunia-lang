@@ -83,6 +83,11 @@ This is the rule that kills most candidates. *beli* (to buy) fell to *beri*,
 outranks how widely a word travels: *ruma*, a house, was in use eighty-four
 times before it was replaced by *dom*, because *ruma* stood against *luma*.
 
+The eighty-four was recounted on September 5, 2026 and it is exact. The
+repository as it stood at the commit before the rename holds eighty-four
+occurrences of *ruma*, spread across twenty-one files — ten of them in
+Lesson 06 alone.
+
 ### The twenty-four that were already here
 
 The rule was adopted after the language had started, so twenty-four pairs
@@ -115,7 +120,14 @@ three; it is the example [CONTRIBUTING rule 4](../CONTRIBUTING.md) names.
 | ao | *hao* |
 | au | *nau*, *mau* |
 | ia | *dunia* |
-| ua | *uan*, *una* |
+| ua | *uan*, *akua* |
+
+The `ua` row read *uan*, *una* until September 5, 2026. *una* has no `ua` in
+it — u-n-a — so the table that settles which vowel sequences exist illustrated
+one of them with a word that does not contain it. It was the only one of the
+nine in this table that failed, and it had been there since the table was
+written. Every example on this page — in this table and in the consonant list
+above — is checked against the sequence it illustrates now.
 
 ## Open questions
 
