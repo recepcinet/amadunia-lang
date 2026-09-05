@@ -2768,6 +2768,20 @@ for _label, _val in (("Amadunia sentences in the material", _ma_sent),
           f"proposal-modal-adjective.md's row '{_label}' is stale; the material "
           f"gives {_val}")
 
+# ------------------------- no one sentence holds every rule of the language
+# adverbs.md said "Every rule in Amadunia is in that sentence" and Lesson 23
+# said "Every rule the language has is in this sentence", both of the same
+# showcase line. Nine of the twenty-one are in it, and a sentence cannot hold
+# them all: a command has no subject and a question is a question. The front
+# page had it right all along — "a sentence that uses all nine slots at once".
+for _p in md():
+    _eb = read(_p).replace("\n", " ")
+    for _m in re.finditer(r"[Ee]very rule [^.]{0,40}is in (?:that|this) sentence", _eb):
+        check(_withdrawn(_eb, _m.start()),
+              f"{os.path.basename(_p)}: '{_m.group(0)}' — nine of the "
+              f"{len(_RULEFILES)} rules are in it, and no sentence can hold a "
+              f"command and a question at once")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one

@@ -8,7 +8,7 @@ This lesson adds nothing. It is the whole of Amadunia on one page, at the point 
 
 ## The one sentence
 
-Every rule the language has is in this sentence:
+This sentence fills all nine slots of the order at once:
 
 > **Mi no suda kara hao libro ini in dom rat ini porke mi sedih.**
 > *I did not read this book well at home last night because I was sad.*

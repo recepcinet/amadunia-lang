@@ -47,7 +47,9 @@ Everything the language has settled, in one line:
 |---|---|
 | Mi no suda kara hao libro ini in dom rat ini porke mi sedih. | I did not read this book well at home last night because I was sad. |
 
-Every rule in Amadunia is in that sentence, and not one word in it has changed its shape.
+That sentence fills all nine slots at once, and not one word in it has changed its shape.
+
+It read "Every rule in Amadunia is in that sentence" until September 5, 2026. Nine of the twenty-one rules are in it — order, negation, tense, the adverb, the demonstrative, place, time, the clause and the invariant pronoun. The copula, existence, the plural, possession, questions, verb chains, comparison, *aur* and the command are not, and a sentence cannot hold them all: a command has no subject, and a question is a question.
 
 ## Sources
 
@@ -57,4 +59,4 @@ Using one form for adjective and adverb is the majority pattern: Chinese, Indone
 
 - **Adverbs of degree on adverbs** — "very quickly" — needs a word for "very". *cok* is "much"; whether it covers "very" is untested. Wanted twice now: by [the phrasebook](../phrasebook.md), which lost it from "thank you very much", and on September 4, 2026 by *Mi parolas Esperanton tre flue*, which came out as *Mi sema hao Amadunia* — I speak Amadunia well, with both the degree and the manner gone.
 - **Whether *daima* covers "forever".** It is glossed "always", from Arabic *dāʾiman*, which carries both senses. *Natura hidup daima* would say nature lives forever, and *Mi kula daima pan* says I always eat bread — habit and endlessness in one word and one slot. Most languages separate them. This is the same shape of question as *cok* and "very" above, and it was found the same way: [text 10](../texts/text-10-mila-tahun.md) recorded that the language had no word for *forever* without checking what it did have.
-- **Frequency adverbs.** *daima* (always) and *kadang* (sometimes) are adverbs by meaning but not adjectives. This page used to say they sit in the adverb slot with everything else; **counted on September 4, 2026, two of their thirteen uses do.** Five stand before the verb and six after the object, and Lesson 19 alone uses all three positions. [A briefing measures it and costs the three answers](proposal-frequency.md). Until it is decided the word *kadang* cannot be written at all, because any sentence using it would settle the question by accident.
+- **Frequency adverbs.** *daima* (always) and *kadang* (sometimes) are adverbs by meaning but not adjectives. This page used to say they sit in the adverb slot with everything else; counted, [most of them do not](proposal-frequency.md), and Lesson 19 alone uses all three positions. The split lived here as well as in the briefing until September 5, 2026, and only the briefing's copy was recounted — one word, two pages, one check. [A briefing measures it and costs the three answers](proposal-frequency.md). Until it is decided the word *kadang* cannot be written at all, because any sentence using it would settle the question by accident.
