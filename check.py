@@ -3441,6 +3441,65 @@ for _end, _phrase in (("o", "**{}** roots end in *-o*"),
           .replace("\n", " "),
           f"conjunction.md: {_n} roots end in -{_end}")
 
+# ---------------------------------- balance.md's examples of a wide root
+# The page names roots that belong to many traditions at once, and named six
+# of which three were outside the range it claimed — sabun at seven, kertas at
+# four, safari at three. An example chosen by memory is not evidence about a
+# dictionary; these are read off it.
+_famn = {_w: len({FAMILY[_k] for _k in FAMILY
+                  if re.search(r"\b" + _k + r"\b", source[_w])}) for _w in words}
+_bal = read("dictionary/balance.md").replace("\n", " ")
+_five = sum(1 for _v in _famn.values() if _v >= 5)
+_widest = max(_famn.values())
+_wroot = sorted(_w for _w in _famn if _famn[_w] == _widest)
+check(f"**{_SPELLN.get(_five, _five)} roots belong to five traditions or more**"
+      .lower() in _bal.lower(),
+      f"balance.md: {_five} roots name five families or more")
+check(len(_wroot) == 1
+      and f"one — *{_wroot[0]}* — belongs to {_SPELLN[_widest]}" in _bal,
+      f"balance.md: the widest root is {', '.join(_wroot)} at {_widest} families")
+_six = sum(1 for _v in _famn.values() if _v == 6)
+check(f"{_SPELLN.get(_six, _six)} more name six, among them".lower()
+      in _bal.lower(),
+      f"balance.md: {_six} roots name exactly six families")
+for _m in re.finditer(r"among them ([^.]+)\.", _bal):
+    for _w in re.findall(r"\*([a-z]+)\*", _m.group(1)):
+        check(_famn.get(_w) == 6,
+              f"balance.md names {_w} among the roots with six families; it "
+              f"has {_famn.get(_w)}")
+
+# A family with no root at all is a different claim from a family no root
+# comes from: Korean is named by two roots and originates none, and the page
+# said "no roots at all" three paragraphs under a table showing 2.
+for _fam, _name in (("Dravidian", "Tamil and Telugu"),):
+    _has = [_w for _w in words if any(FAMILY[_k] == _fam
+            and re.search(r"\b" + _k + r"\b", source[_w]) for _k in FAMILY)]
+    check(not _has and f"{_name} appear nowhere in the dictionary" in _bal,
+          f"balance.md: {len(_has)} roots name a {_fam} language")
+
+# ------------------------------------------ no paragraph is printed twice
+# dictionary/README.md carried one sentence twice, back to back, introducing
+# the same seven items as "the rest" and then as "most of them" — eleven and
+# half of fourteen, so both quantifiers were wrong and the list was right both
+# times. A rewritten sentence whose predecessor stays is invisible to a reader,
+# who skims the second copy of a list just read, and to every count-checking
+# rule here, because each copy states its own count consistently.
+for _p in md():
+    _pb = read(_p)
+    _prose = "\n\n".join(_pb.split("```")[0::2])
+    _paras = [re.sub(r"\s+", " ", _x).strip() for _x in _prose.split("\n\n")]
+    _paras = [_x for _x in _paras if len(_x) > 60 and not _x.startswith("|")]
+    _dup = {_x for _x in _paras if _paras.count(_x) > 1}
+    check(not _dup,
+          f"{_p}: a paragraph is printed twice — {sorted(_dup)[0][:70] if _dup else ''}")
+    _sents = [re.sub(r"\s+", " ", _s).strip()
+              for _s in re.split(r"(?<=[.!?]) ", " ".join(_paras))]
+    _long = [_s for _s in _sents if len(_s) > 80]
+    _dup2 = {_s for _s in _long if _long.count(_s) > 1}
+    check(not _dup2,
+          f"{_p}: a sentence is printed twice — "
+          f"{sorted(_dup2)[0][:70] if _dup2 else ''}")
+
 # --------------------------------- subordination's two shapes, both counted
 # The page states how many sentences carry each shape. The marked half was
 # always countable; the unmarked half was invisible until _clause_object was

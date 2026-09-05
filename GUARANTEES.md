@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**235 guarantees** in **112 groups**, and every one of them is
+**242 guarantees** in **114 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -436,6 +436,17 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - questions.md rejects … for containing …, which is not in it
 - conjunction.md: … roots end in -…
+### balance.md's examples of a wide root
+
+- balance.md: … roots name five families or more
+- balance.md: the widest root is … at … families
+- balance.md: … roots name exactly six families
+- balance.md names … among the roots with six families; it has …
+- balance.md: … roots name a … language
+### no paragraph is printed twice
+
+- …: a paragraph is printed twice — …
+- …: a sentence is printed twice — …
 ### subordination's two shapes, both counted
 
 - subordination.md's two counts are stale; the material holds … clauses with a marker and … without

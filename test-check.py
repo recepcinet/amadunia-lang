@@ -598,6 +598,40 @@ MUTATIONS = [
     ("the count of roots ending in -i gone stale",
      "grammar/conjunction.md", "but 41 roots end in *-i*",
      "but twenty roots end in *-i*", "41 roots end in -i"),
+    # Every sentence of this paragraph is short, so only the paragraph rule can
+    # see it: a duplicated paragraph also duplicates its sentences, and the
+    # first draft of this mutation was caught by the wrong one of the two.
+    ("a paragraph printed twice", "dictionary/README.md",
+     "## Words the writing has asked for",
+     "A short line here. Another short line. A third short line too.\n\n"
+     "A short line here. Another short line. A third short line too.\n\n"
+     "## Words the writing has asked for",
+     "a paragraph is printed twice"),
+    # The two paragraphs differ and only the long sentence repeats, so this
+    # reaches the sentence rule and not the paragraph one.
+    ("a sentence printed twice", "grammar/copula.md",
+     "## Why this and not the alternatives",
+     "Alpha opens. This is a deliberately long duplicated sentence, put here only to exercise the repeated-sentence guarantee.\n\n"
+     "Beta opens. This is a deliberately long duplicated sentence, put here only to exercise the repeated-sentence guarantee.\n\n"
+     "## Why this and not the alternatives",
+     "a sentence is printed twice"),
+    ("the wide-root count gone stale", "dictionary/balance.md",
+     "**Forty roots belong to five traditions or more**",
+     "**Thirty roots belong to five traditions or more**",
+     "40 roots name five families or more"),
+    ("the widest root named wrongly", "dictionary/balance.md",
+     "one — *sabun* — belongs to seven", "one — *kursi* — belongs to seven",
+     "the widest root is sabun at 7 families"),
+    ("the six-family count gone stale", "dictionary/balance.md",
+     "Thirteen more name six", "Twelve more name six",
+     "13 roots name exactly six families"),
+    ("a root listed among the six-family roots that is not",
+     "dictionary/balance.md", "*insan*, *mama*", "*safari*, *mama*",
+     "names safari among the roots with six families"),
+    ("Dravidian described as absent when it is not",
+     "dictionary/balance.md", "Tamil and Telugu appear nowhere in the dictionary",
+     "Tamil and Telugu are rare in the dictionary",
+     "0 roots name a Dravidian language"),
     ("the gap list's three parts not adding up", "dictionary/README.md",
      "**Seven of the fourteen are joints", "**Eight of the fourteen are joints",
      "the three parts of the gap list are [3, 8, 4]"),
