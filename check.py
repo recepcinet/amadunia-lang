@@ -588,7 +588,13 @@ for _line in read("dictionary/dictionary.md").split("## Counting")[0].splitlines
 PREDICATE_OK = (VERBS | PENDING_CLASS | ADJECTIVES | NUMBERS | DEGREE | GROUP["Place"]
                 | GROUP["Prepositions"] | GROUP["Grammar particles"]
                 | GROUP["This and that"] | GROUP["Question words"]
-                | {"no", "una", "cok", "daima", "kadang", "sasa", "tena"})
+                # These are grammar words the dictionary files under thematic
+            # headings — *una* and *kadar* under Qualities and ideas, *no*
+            # under Greetings, *tena* under Actions — so they cannot be read
+            # off a group and have to be listed. The list was missing *kadar*,
+            # the equality particle, which was therefore a noun to every check
+            # that asks what a noun is. The check below holds the list.
+            | {"no", "una", "cok", "daima", "kadang", "sasa", "tena", "kadar"})
 PREDICATE_OK -= {"tempat"}  # sits in the Place group but is a plain noun: in tempat ini
 # A number is not a predicate. It counts the noun after it, so "itu fai tahun"
 # and "kita tri" are a noun phrase in the predicate slot and a shape the grammar
@@ -694,7 +700,13 @@ for _grp, _rows in _rows_by_grp.items():
 # that rule using the very sentence Lesson 12 had already shown without comment.
 FUNCTION = (GROUP["Grammar particles"] | GROUP["Prepositions"] | GROUP["Place"]
             | GROUP["This and that"] | GROUP["Question words"] | NUMBERS | DEGREE
-            | {"no", "una", "cok", "daima", "kadang", "sasa", "tena"})
+            # These are grammar words the dictionary files under thematic
+            # headings — *una* and *kadar* under Qualities and ideas, *no*
+            # under Greetings, *tena* under Actions — so they cannot be read
+            # off a group and have to be listed. The list was missing *kadar*,
+            # the equality particle, which was therefore a noun to every check
+            # that asks what a noun is. The check below holds the list.
+            | {"no", "una", "cok", "daima", "kadang", "sasa", "tena", "kadar"})
 NOUNS = set(words) - VERBS - ADJECTIVES - FUNCTION - {"mi", "yu", "ta", "kita"}
 ADVERBIAL = ADJECTIVES | {"cok"}
 for path in sorted(glob.glob("lessons/lesson-*.md")):
@@ -2802,6 +2814,24 @@ for _m in re.finditer(r"[Nn]othing written so far has tried", _plu):
     check(_every == 0 or _withdrawn(_plu.replace("\n", " "), _m.start()),
           f"plural.md says nothing has tried to say *all* or *some*; {_every} page"
           f"{'' if _every == 1 else 's'} record wanting *every*")
+
+# ------------------------- a word a rule page names is not a noun
+# FUNCTION's hand-written tail was missing *kadar*, so the equality particle
+# was a noun to every check that asks what a noun is. Nothing visible broke,
+# which is the point: an incomplete classifier fails silently until the day it
+# does not. A settled rule page names its grammar words in its own section
+# headings — "As ... as is *kadar*", "Because is *porke*" — so those are the
+# words that may not come back classed as nouns. sentence-types.md's heading
+# "*plis* is politeness, not grammar" says the exemption itself.
+for _p in sorted(glob.glob("grammar/*.md")):
+    _gb = read(_p)
+    if not re.search(r"^\*Status: settled", _gb, re.M): continue
+    for _h in re.findall(r"^#{2,3} .*$", _gb, re.M):
+        if "not grammar" in _h: continue
+        for _w in re.findall(r"\*([a-z-]+)\*", _h):
+            check(_w not in NOUNS,
+                  f"{os.path.basename(_p)}: the heading '{_h.strip('# ')}' names "
+                  f"*{_w}* as a rule word and check.py classes it as a noun")
 
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the

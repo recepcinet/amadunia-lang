@@ -555,6 +555,11 @@ MUTATIONS = [
      "*Mi tanya yu nali*, *Mi bil ta go nali*",
      "*Mi tanya yu es nali*, *Mi bil ta go nali*",
      "'es nali' — es stands before a noun"),
+    # kadar was missing from FUNCTION's hand-written tail, so the equality
+    # particle was a noun to every check that asks what a noun is.
+    ("a rule word classed as a noun", "check.py",
+     '"tena", "kadar"})', '"tena"})',
+     "names *kadar* as a rule word and check.py classes it as a noun"),
     ("consonant pair missing from phonology.md", "grammar/phonology.md",
      "- `fr` \u2014 *fruta* (fruit), word-initial like *tr*\n", "",
      "does not list the consonant pair 'fr'"),
