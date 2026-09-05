@@ -72,8 +72,18 @@ Every candidate collided, and none was needed:
 
 - **Reported questions** — "I asked where you were" — puts a question word
   inside a clause. Tested on September 3, 2026 and **no rule forbids it**:
-  *Mi tanya yu es nali*, *Mi bil ta go nali*, *Ta sema kim lai* pass every check
-  in [`check.py`](../check.py). The two settled rules already compose — a clause
+  *Mi tanya yu nali*, *Mi bil ta go nali*, *Ta sema kim lai* pass every check
+  in [`check.py`](../check.py).
+
+  The first of those three read *Mi tanya yu **es** nali* until September 5,
+  2026, and it did pass every check — because no check covered it.
+  [copula.md](copula.md) says *es* stands before a noun and before nothing
+  else, and its own illustration is *Hotel nali?*, "where is the hotel", marked
+  *place word, no es*. The check that holds this had a hand-written list of
+  what may not follow *es* and that list was missing *nali*, *kiri* and
+  *yamin*. It reads the Place group now. The sentence offered as evidence that
+  the composition is unforbidden was the one thing on this page the rules
+  forbid. The two settled rules already compose — a clause
   stands where an object stands, and a question word stands where the answer
   will stand — which is the same argument this page used above to resolve *Mi
   mau yu kula*. What is left to decide is whether that composition is granted or

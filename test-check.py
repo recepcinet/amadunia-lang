@@ -550,6 +550,11 @@ MUTATIONS = [
      "is really about *all*, *some* and *every*.",
      "is really about *all* and *some*. Nothing written so far has tried.",
      "plural.md says nothing has tried to say"),
+    # nali was missing from the hand-written list of what may not follow es.
+    ("es before the word that asks for a place", "grammar/subordination.md",
+     "*Mi tanya yu nali*, *Mi bil ta go nali*",
+     "*Mi tanya yu es nali*, *Mi bil ta go nali*",
+     "'es nali' — es stands before a noun"),
     ("consonant pair missing from phonology.md", "grammar/phonology.md",
      "- `fr` \u2014 *fruta* (fruit), word-initial like *tr*\n", "",
      "does not list the consonant pair 'fr'"),

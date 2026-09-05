@@ -987,7 +987,13 @@ check(not _gone, f"frequency.md's top forty has drifted: {', '.join(_gone[:6])}"
 # so "Mi es una yu" stood in a lesson and twice in story 2 — found on
 # September 4 while measuring which settled rule was least exercised, which
 # turned out to be *una* with 21 sentences.
-_AFTER_ES = {"in", "dari", "por", "una", "sini", "situ", "upar", "sub"}
+# That set was written by hand and was missing kiri, yamin and nali — and nali
+# is how the language asks for a place, so *yu es nali* slipped through and sat
+# in subordination.md as the example proving a composition was unforbidden.
+# Read from the groups now. tempat is in the Place group and is a plain noun,
+# so *es tempat* is legal and it is taken back out.
+_AFTER_ES = (set(GROUP["Prepositions"]) | set(GROUP["Place"])
+             | {"una", "nali"}) - {"tempat"}
 for path in PROSE:
     for line, sent, toks in amadunia_runs(read(path)):
         low = [t.lower() for t in toks]
