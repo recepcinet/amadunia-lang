@@ -9,17 +9,27 @@ language was already relying on are prepared.
 It was called the smallest of the four, on the strength of two pages having
 tripped over it. Measured, it is not small.
 
+Counted across the material — the twenty-six lessons, the twenty-one texts and
+the phrasebook — which is the scope every other count in this repository uses,
+and not this page, whose illustrations are the only *modal + adjective* strings
+in existence.
+
 | | |
 |---|---|
-| Amadunia sentences in the repository | 1481 |
-| of those, verbless adjective predicates | **291 — one in five** |
-| modal followed by a verb, working normally | 61 |
-| modal followed by an adjective, in any file | **0, and none is possible** |
+| Amadunia sentences in the material | 1669 |
+| of those, verbless adjective predicates | **360 — one in five** |
+| modal followed by a verb, working normally | 58 |
+| modal followed by an adjective | **0, and none is possible** |
 | combinations with no legal form | **111** — three modals against 37 adjectives |
 
 The construction is not rare and the modals are not rare. They simply cannot
-meet. [`check.py`](../check.py) recounts the 111 from the dictionary, so the
-figure follows the language rather than this page.
+meet. [`check.py`](../check.py) recounts every row from the material and the
+dictionary, so the figures follow the language rather than this page.
+
+The first three read 1481, 291 and 61 until September 5, 2026, and the fourth
+said "in any file" — which, read literally, is four, because this page prints
+*Ca mau garam* and *Mi mau senang* to argue that they cannot exist. Only the
+111 was ever recounted.
 
 ## The gap
 
@@ -106,6 +116,6 @@ is a verb taking a noun, is affected at all.
 
 ---
 
-**All the briefings are now written** — four then, seven now. None decides anything. Together with
+**All the briefings are now written** — four then, eight now. None decides anything. Together with
 [the ordering](README.md) they are what the founder needs to settle the four
 places where Amadunia has been using something it never granted itself.

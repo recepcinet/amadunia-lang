@@ -1707,6 +1707,12 @@ _OPENBRIEFS = [_f for _f in _BRIEFS
 check(f"| {len(_RULEFILES)} rules —" in read("README.md"),
       f"README.md's directory table does not say '{len(_RULEFILES)} rules'; "
       f"grammar/ holds that many rule pages")
+# "All the briefings are now written — four then, seven now" said seven when
+# there were eight, on the page that closes the set.
+check(f"four then, {['zero','one','two','three','four','five','six','seven','eight','nine','ten'][len(_BRIEFS)]} now"
+      in read("grammar/proposal-modal-adjective.md"),
+      f"proposal-modal-adjective.md does not say there are now {len(_BRIEFS)} "
+      f"briefings; grammar/ holds that many")
 check(f"and {len(_BRIEFS)} briefings" in read("README.md"),
       f"README.md's directory table does not say '{len(_BRIEFS)} briefings'; "
       f"grammar/ holds that many")
@@ -2728,6 +2734,39 @@ for _p in _ORD_PAGES:
         check(_w == "nineteen",
               f"{os.path.basename(_p)}: says ordinals would remove the need for "
               f"'{_w}' roots; it is nineteen — seven weekdays and twelve months")
+
+# --------------------------- the modal-adjective briefing counts the material
+# Only the 111 was recounted. The three corpus rows beside it read 1481, 291
+# and 61 against a material of 1669, 360 and 58 — and the fourth said "modal
+# followed by an adjective, in any file: 0", which read literally is four,
+# because this page prints *Ca mau garam* and *Mi mau senang* to argue that
+# they cannot exist. The scope is the material, and the page now says so.
+_MAMOD = {"mau", "bisa", "lasim"}
+_ma_sent = _ma_adj = _ma_mv = _ma_ma = 0
+for _p in (sorted(glob.glob("lessons/lesson-*.md"))
+           + sorted(glob.glob("texts/*.md")) + ["phrasebook.md"]):
+    _mb = read(_p)
+    if _p.startswith("texts/") and "```" in _mb: _mb = "".join(_mb.split("```")[1::2])
+    if "## New word" in _mb:
+        _h3, _r3 = _mb.split("## New word", 1)
+        _mb = _h3 + "\n" + "\n## ".join(_r3.split("\n## ")[1:])
+    for _line, _sent, _toks in amadunia_runs(_mb):
+        _base = [_t.split("-")[0] for _t in _toks]
+        _ma_sent += 1
+        if (not any(_x in VERBS or _x in _MAMOD or _x == "es" for _x in _base)
+                and any(_x in ADJECTIVES for _x in _base)):
+            _ma_adj += 1
+        for _i, _w in enumerate(_base[:-1]):
+            if _w in _MAMOD and _base[_i + 1] in VERBS: _ma_mv += 1
+            if _w in _MAMOD and _base[_i + 1] in ADJECTIVES: _ma_ma += 1
+_madj = read("grammar/proposal-modal-adjective.md")
+for _label, _val in (("Amadunia sentences in the material", _ma_sent),
+                     ("of those, verbless adjective predicates", _ma_adj),
+                     ("modal followed by a verb, working normally", _ma_mv),
+                     ("modal followed by an adjective", _ma_ma)):
+    check(re.search(re.escape(_label) + r" \| \*{0,2}" + str(_val) + r"\b", _madj),
+          f"proposal-modal-adjective.md's row '{_label}' is stale; the material "
+          f"gives {_val}")
 
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
