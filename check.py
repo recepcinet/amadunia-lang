@@ -3376,6 +3376,31 @@ if _moves == _syl[3]:
           f"stress.md: {len(_moveset - _3syl)} of the moved roots have two "
           f"syllables, not what the page says")
 
+# ------------------------------------- conjunction.md's rejected candidates
+# The page rejects fifteen words for "and" and gives a reason for each. Nine
+# of the reasons are "minimal pair with ..." followed by the words collided
+# with, which is a claim about the dictionary and is recomputed. All nine were
+# exact. The two counts in the same argument were not: it said four roots end
+# in -o and twenty in -i, against 13 and 41.
+_conj = read("grammar/conjunction.md")
+for _m in re.finditer(r"^\| ([a-z]+) \| .*? \| minimal pair with (.+?) \|$",
+                      _conj, re.M):
+    _cand = _m.group(1)
+    _said = set(re.findall(r"\*([a-z]+)\*", _m.group(2)))
+    _real = {w for w in words if len(w) == len(_cand)
+             and sum(x != y for x, y in zip(w, _cand)) == 1}
+    check(_said == _real,
+          f"conjunction.md: {_cand} is a minimal pair with "
+          f"{', '.join(sorted(_real))}, and the table says "
+          f"{', '.join(sorted(_said))}")
+
+for _end, _phrase in (("o", "**{}** roots end in *-o*"),
+                      ("i", "**{}** roots end in *-i*")):
+    _n = sum(1 for w in words if w.endswith(_end))
+    check(_phrase.format(_n).replace("**", "") in _conj.replace("**", "")
+          .replace("\n", " "),
+          f"conjunction.md: {_n} roots end in -{_end}")
+
 # ------------------------------------------ phonology.md illustrates itself
 # The page that settles which sequences exist illustrates each one with words.
 # The ua row read "uan, una" from the day it was written: una is u-n-a and has

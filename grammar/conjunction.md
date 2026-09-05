@@ -56,7 +56,7 @@ Almost every major word for "and" was blocked, and by the language's own rules r
 | plus | Latin, global | minimal pair with *plis* |
 | ve | Turkish | the alphabet has no *v* |
 | wa | Arabic *wa* و | the alphabet has no *w* |
-| i | Spanish *y*, Russian, Polish | no collision, but twenty roots end in *-i* — *rafiki i mi*, *tri i du*, *beri i* would blur in speech |
+| i | Spanish *y*, Russian, Polish | no collision at the time, but 41 roots end in *-i* — *rafiki i mi*, *tri i du*, *beri i* would blur in speech |
 | e | Portuguese, Italian | one bare vowel; too light to carry a join |
 | hem | Turkish, Persian | clean, but reaches far fewer people |
 | gam | Hebrew | clean, but reaches fewer still |
@@ -65,7 +65,24 @@ That so many candidates collide is not bad luck. Short common words crowd the sa
 
 ## Open questions
 
-- ~~"or"~~ — settled: **o**, Spanish/Italian *o*, Portuguese *ou*. *Ca o akua?* The language's first one-letter word; the phonology allows a bare vowel, and only four roots end in *-o*, so it does not blur the way *i* would have.
+- ~~"or"~~ — settled: **o**, Spanish/Italian *o*, Portuguese *ou*. *Ca o akua?* The language's first one-letter word; the phonology allows a bare vowel, and 13 roots end in *-o*, so it blurs less than *i* would have.
+
+  Recounted September 5, 2026. It read *only four roots end in -o*, against
+  *twenty* ending in *-i*; it is **13** against **41** today. That is the stale
+  half. The other half is that neither figure was right when it was written:
+  on the day *o* was settled the dictionary held **six** roots ending in *-o* —
+  *no*, *mano*, *go*, *hao*, *o* itself and *foto* — and **22** ending in
+  *-i*. The argument was stated as one in five and has never been better than
+  one in three point seven; it is one in three point two now. So the
+  comparison held all along and the margin never did, and the sentence that
+  overstates it is the only thing on the page that ever said why *o* and not
+  *i*. The word is settled and this changes nothing about that.
+
+  A second thing the recount shows: *i* is listed above as having *no
+  collision*, and today it has one. *o* itself is a one-letter root now, so *i*
+  and *o* are a minimal pair — the shortest one possible. The row is true of
+  the day it was written and false of the dictionary it sits in, which is why
+  it now says *no collision at the time*.
 - ~~"with"~~ — settled in [place.md](place.md): *una* + noun.
 - **Joining more than two clauses** — whether long chains want a different rhythm — is a question for when there is more prose.
 - **There is no word for "but".** *aur* joins and *o* chooses; nothing contrasts. Found on September 4, 2026 in [Lesson 12](../lessons/lesson-12-colors-directions.md), which had been saying *Ma hao!* — an invented word — since it was written, for "but good!". The lesson now says *Hao!* and says less. [A briefing is now written](proposal-but.md): six pages have wanted one, *lakin* reaches five families with one word, and doing nothing is argued fairly. Whether the contrast is a conjunction, an adverb, or nothing at all is open; [several source languages do without one](../dictionary/README.md#words-the-writing-has-asked-for) in short speech, and Amadunia may too.

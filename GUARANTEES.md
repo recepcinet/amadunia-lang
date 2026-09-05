@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**230 guarantees** in **110 groups**, and every one of them is
+**232 guarantees** in **111 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -430,6 +430,10 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - stress.md: the dictionary has … roots of three syllables
 - stress.md: the two sets of … share … roots — … — and the page must name them
 - stress.md: … of the moved roots have two syllables, not what the page says
+### conjunction.md's rejected candidates
+
+- conjunction.md: … is a minimal pair with …, and the table says …
+- conjunction.md: … roots end in -…
 ### phonology.md illustrates itself
 
 - phonology.md gives a row to … vowel sequences; … are attested
