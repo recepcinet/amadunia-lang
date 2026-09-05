@@ -1611,6 +1611,19 @@ for _m in re.finditer(r"^## (.+)\n\n(.+)$", read("dictionary/a1-checklist.md"), 
     check(f"| {_m.group(1)} | {len(_have)} of {len(_ws)} | {', '.join(_miss)} |" in _a2,
           f"proposal-a2.md's missing list for '{_m.group(1)}' has drifted; the "
           f"dictionary gives: {', '.join(_miss)}")
+# The paragraph that compares the two methods does its own arithmetic on those
+# totals: it said the checklist "adds about eighty more" and asked which of
+# "the eighty-four" matter, when the checklist is missing a hundred and six and
+# seven of those are gaps the writing had already found.
+_mov = re.search(r"(\w+) of the twelve gaps found by", _a2.replace("\n", " "))
+_movn = WORD_NUM.get(_mov.group(1).lower()) if _mov else None
+check(_movn is not None and f"adds **{_a1tot - _a1present - _movn}** more" in _a2,
+      f"proposal-a2.md: the checklist is missing {_a1tot - _a1present} and "
+      f"{_movn} of those were found by writing, so it adds "
+      f"{_a1tot - _a1present - (_movn or 0)} more")
+check(f"which of the **{_a1tot - _a1present}** matter" in _a2,
+      f"proposal-a2.md: asks which of the wrong number matter; the checklist is "
+      f"missing {_a1tot - _a1present}")
 check(f"**{_a1present} of {_a1tot} are present" in _a2,
       f"proposal-a2.md's checklist total is stale; recount gives "
       f"{_a1present} of {_a1tot}")
@@ -2525,6 +2538,21 @@ _m4 = re.search(r"The evidence is (\w+) pages", _but)
 check(_m4 and WORD_NUM.get(_m4.group(1).lower()) == len(_butrows),
       f"proposal-but.md says '{_m4.group(1) if _m4 else '?'} pages' but its "
       f"evidence table has {len(_butrows)} rows")
+
+# --------------------------- the but briefing's prose counts its own table
+# The evidence table's row count is checked. The paragraph under it counts the
+# same rows in words — "Five of the seven are a bargain, a meal or a road ...
+# The seventh is the one that matters most" — and it kept saying seven for a
+# day after a row was withdrawn from the table above it.
+_butn = len(re.findall(r"^\| \[[^\]]+\]\([^)]+\) \| \*", _but, re.M))
+_ORDW = {5: "fifth", 6: "sixth", 7: "seventh", 8: "eighth", 9: "ninth"}
+_mbp = re.search(r"(\w+) of the (\w+) are a bargain", _but.replace("\n", " "))
+check(_mbp and WORD_NUM.get(_mbp.group(2).lower()) == _butn,
+      f"proposal-but.md's prose counts '{_mbp.group(2) if _mbp else '?'}' pages; "
+      f"its table has {_butn}")
+check(f"The {_ORDW.get(_butn, '?')} is the one that matters most" in _but,
+      f"proposal-but.md does not call page {_butn} the one that matters most")
+
 for _name, _rel, _quote in _butrows:
     _target = os.path.normpath(os.path.join("grammar", _rel))
     if not os.path.exists(_target):

@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**177 guarantees** in **89 groups**, and every one of them is
+**181 guarantees** in **90 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -214,6 +214,8 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - proposal-a2.md's checklist row for '…' is stale; the dictionary has … of …
 - proposal-a2.md's missing list for '…' has drifted; the dictionary gives: …
+- proposal-a2.md: the checklist is missing … and … of those were found by writing, so it adds … more
+- proposal-a2.md: asks which of the wrong number matter; the checklist is missing …
 - proposal-a2.md's checklist total is stale; recount gives … of …
 ### how many sentence shapes
 
@@ -321,6 +323,10 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### the but briefing cites real pages
 
 - proposal-but.md says '… pages' but its evidence table has … rows
+### the but briefing's prose counts its own table
+
+- proposal-but.md's prose counts '…' pages; its table has …
+- proposal-but.md does not call page … the one that matters most
 - proposal-but.md cites …, which does not exist
 - proposal-but.md quotes '…' from …, which no longer contains it
 ### used by a text, not a lesson

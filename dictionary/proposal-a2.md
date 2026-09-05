@@ -188,12 +188,18 @@ something. The everyday adjectives are close behind: there is
 no *slow*, no *angry*, no *tired*, no *hungry*, no *dark* and no *wet*, so a
 person can be sick or sad but not tired, and a night can be cold but not dark.
 
-**The two methods agree where they overlap.** Five of the twelve gaps found by
-writing — *slowly*, *to stand up*, *cheap*, *the clock*, *fluent* — are on this
-list too, which is the check that matters: the checklist reproduces what
-writing found and adds about eighty more. What it cannot do is say which of the eighty-four
-matter, and that is exactly what writing does say. Neither list replaces the
-other and this page keeps both.
+**The two methods agree where they overlap.** Seven of the twelve gaps found by
+writing — *slowly*, *to stand up*, *cheap*, *the clock*, *then*, *but* and *a
+wall* — are on this list too, which is the check that matters: the checklist
+reproduces what writing found and adds **99** more. What it cannot do is say
+which of the **106** matter, and that is exactly what writing does say. Neither
+list replaces the other and this page keeps both.
+
+Those two figures read "about eighty" and "the eighty-four" until September 5,
+2026, and the overlap read five rather than seven — *then*, *but* and *a wall*
+were missing from it and *fluent* was in it, which is one of the two gaps that
+came from a question rather than from writing. All three numbers are the
+checklist's own arithmetic and are checked as such now.
 
 ## 4. What A2 content is blocked on
 

@@ -26,7 +26,7 @@ Lesson 12 is the one that matters most. It did not work around the gap — it
 September 4, 2026. A gap that makes a careful writer invent is a different kind
 of gap from one that makes a writer rephrase.
 
-Five of the seven are a bargain, a meal or a road: ordinary speech, not argument. The seventh is the one that matters most after Lesson 12's: writing the longest text in the language, I typed *lakin* twice without deciding to, and the checker refused it both times.
+Four of the six are a bargain, a meal or a road: ordinary speech, not argument. The sixth is the one that matters most after Lesson 12's: writing the longest text in the language, I typed *lakin* twice without deciding to, and the checker refused it both times. This paragraph said five of seven, and the seventh, until September 5, 2026 — the day one row was withdrawn from the table above it and the sentence reading that table was not.
 The contrast is not a literary device here. It is what people say about weather
 and prices.
 
