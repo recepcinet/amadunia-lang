@@ -29,9 +29,11 @@ no *bookshop*, no *railway* — no word built out of two words.
 
 ## What has been called compounding is not compounding
 
-The front page has explained the 300-root target by saying compounding does
-the rest, and [text 6](../texts/text-6-seti-din.md) called *mesin ambil foto
-korpo anak* "the compounding the design was betting on". That sentence means
+The front page explained the 300-root target by saying compounding did the
+rest, and [text 6](../texts/text-6-seti-din.md) called *mesin ambil foto korpo
+anak* "the compounding the design was betting on". Both were corrected; this
+page was the reason, and it is the last page still describing the old state as
+the present one, until September 5, 2026. That sentence means
 *a machine takes a picture of the child's body*, and it does say X-ray without
 a new root — but it is a **sentence**, not a word. Nothing was formed. What
 carried it was the possession rule and a verb.
@@ -43,8 +45,9 @@ weaker claim than word-formation, and it is the true one.
 
 ## Open questions
 
-- **Does the language form compound words at all?** It never has, and the
-  front page has been leaning on the idea that it does. The decision has two
+- **Does the language form compound words at all?** It never has. The front
+  page leaned on the idea that it does until this page was written, and says
+  the opposite now. The decision has two
   hard parts. First, **juxtaposition is already taken**: *foto korpo* cannot
   mean "body-photo" as one word, because the possession rule already makes it
   "the body's picture". Second, the hyphen is already doing two jobs, and a

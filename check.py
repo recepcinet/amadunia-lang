@@ -2919,6 +2919,20 @@ check(_mdw and WORD_NUM.get(_mdw.group(1).lower()) == _bothways,
       f"definiteness.md says {_mdw.group(1) if _mdw else 'nothing'} nouns are "
       f"translated both ways; the material gives {_bothways}")
 
+# ------------------- a page may not describe a correction it caused as pending
+# word-formation.md is why the front page stopped saying compounding does the
+# rest — and it was the last page still saying the front page does. README, the
+# A2 briefing and text 6 had all been put right; the page that led the
+# correction had not. Once the front page carries the withdrawal, no page may
+# describe it as still leaning.
+if "used to say *compounding*" in read("README.md"):
+    for _p in md():
+        _wb = read(_p).replace("\n", " ")
+        for _m in re.finditer(r"front page (?:has been leaning|has explained)", _wb):
+            check(_withdrawn(_wb, _m.start()),
+                  f"{os.path.basename(_p)}: '{_m.group(0)}' on compounding, and "
+                  f"README.md has already withdrawn the claim")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one
