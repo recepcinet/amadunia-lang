@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**161 guarantees** in **83 groups**, and every one of them is
+**163 guarantees** in **84 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -135,6 +135,7 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - frequency.md's total is stale; the corpus has … running words
 - frequency.md is missing or contradicts the row '…'
+- …
 - frequency.md's top forty has drifted: …
 ### es before a preposition
 
@@ -294,6 +295,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - …: says '…'; its text has …
 - …: says '…'; its text has …
 - …: says '…' opens … sentences; it opens …
+### how many texts there are
+
+- …: says '…'; texts/ holds …
 ### the but briefing cites real pages
 
 - proposal-but.md says '… pages' but its evidence table has … rows

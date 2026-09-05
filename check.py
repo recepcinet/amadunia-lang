@@ -965,6 +965,17 @@ for _line in _want:
 # This asked whether the word appears and whether the number appears, in the
 # whole file, separately. dom's row said 104 when the count was 103 and the
 # check passed, because "| 103 |" was on lai's row. The pair has to hold.
+# The once-only list was the last thing on this page nobody derived. It named
+# ten roots and one of them, *dekat*, is used three times; the paragraph under
+# it said nine and was right. A list read off a table has to be read off the
+# table.
+_once = sorted(_w for _w, _n in _freq.items() if _n == 1)
+_m1 = re.search(r"(\d+) roots appear in a single sentence in the whole corpus:\s*\n\s*\n([^\n]+)", _fr)
+check(_m1 and int(_m1.group(1)) == len(_once)
+      and [x.strip(" *") for x in _m1.group(2).split(", ")] == _once,
+      f"frequency.md's once-only list is stale; {len(_once)} roots appear once: "
+      + ", ".join(_once))
+
 _gone = [w for w, n in _order[:40]
          if not re.search(r"\| \*" + re.escape(w) + r"\* \|.*\| " + str(n) + r" \|", _fr)]
 check(not _gone, f"frequency.md's top forty has drifted: {', '.join(_gone[:6])}")
@@ -2315,6 +2326,30 @@ for _p in sorted(glob.glob("texts/*.md")):
         check(_n == _real,
               f"{os.path.basename(_p)}: says '{_m.group(1)}' opens {_n} sentences; "
               f"it opens {_real}")
+
+# ------------------------------------------------- how many texts there are
+# The front page said twenty when there were twenty-one, and so did the lesson
+# index; both were caught by the "pieces" rule. frequency.md says "the twenty
+# texts" in its first sentence and the word there is *texts*, so it kept the
+# stale number a day longer. Pages inside texts/ are exempt: text 21 opens by
+# saying what was counted **before it was written**, which is history and true.
+# PROSE leaves frequency.md out — it is a derived page, not prose — so the first
+# draft of this check never opened the file the fault was in, and the harness
+# reported NOT CAUGHT twice before that showed. Every markdown file now.
+for _p in md():
+    if _p.startswith("texts/"): continue
+    # "the two texts that stopped" counts a subset, and the relative clause is
+    # what says so; without that clause the phrase is a claim about the corpus.
+    # Newlines are flattened first: frequency.md wraps between "the" and
+    # "twenty-one texts", and the first draft of this check read the raw file
+    # and matched nothing there — the harness caught that as NOT CAUGHT.
+    for _m in re.finditer(r"(?:the |all )([A-Za-z-]+|\d+) texts\b(?! that)",
+                          read(_p).replace("\n", " ")):
+        _n = (int(_m.group(1)) if _m.group(1).isdigit()
+              else WORD_NUM.get(_m.group(1).lower()))
+        if _n is None: continue
+        check(_n == _ntexts,
+              f"{os.path.basename(_p)}: says '{_m.group(0)}'; texts/ holds {_ntexts}")
 
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the

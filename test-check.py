@@ -399,6 +399,14 @@ MUTATIONS = [
     ("the first-to-sixth spans gone stale", "dictionary/balance.md",
      "top six run from 38.3% down to 21.3%", "top six run from 38.3% down to 20.3%",
      "spans from first to sixth are stale"),
+    ("the once-only list gone stale", "dictionary/frequency.md",
+     "*bai*, *bas*, *hi*, *madad*", "*bai*, *bas*, *dekat*, *hi*, *madad*",
+     "once-only list is stale"),
+    # The word is "texts" rather than "pieces", which is why this one outlived
+    # the front page's copy by a day.
+    ("a text count outside texts/ gone stale", "dictionary/frequency.md",
+     "twenty-one texts and the phrasebook", "twenty texts and the phrasebook",
+     "says 'the twenty texts'; texts/ holds 21"),
     ("consonant pair missing from phonology.md", "grammar/phonology.md",
      "- `fr` \u2014 *fruta* (fruit), word-initial like *tr*\n", "",
      "does not list the consonant pair 'fr'"),

@@ -1,7 +1,7 @@
 # How often each root is actually used
 
 Generated from the material a learner reads — the twenty-six lessons, the
-twenty texts and the phrasebook — counting every word inside an Amadunia
+twenty-one texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
 it. **5800 words of running Amadunia**, and every one of the 300 roots appears
 at least once.
@@ -76,11 +76,11 @@ cover half of everything.** They are the first twenty-five below.
 
 ## Used exactly once
 
-10 roots appear in a single sentence in the whole corpus:
+9 roots appear in a single sentence in the whole corpus:
 
-*bai*, *bas*, *dekat*, *hi*, *madad*, *mersi*, *ok*, *pardon*, *plis*, *ya*
+*bai*, *bas*, *hi*, *madad*, *mersi*, *ok*, *pardon*, *plis*, *ya*
 
-That list is now at its floor. Eight of the nine are interjections — *hi*,
+That list is now at its floor. It read ten until September 5, 2026 and carried *dekat*, which is used three times — the prose below it had said nine all along and was right, while the list and its own heading were not. Nothing was checking either. Eight of the nine are interjections — *hi*,
 *bai*, *ok*, *ya*, *bas*, *mersi*, *pardon*, *plis* — which are used alone and
 cannot be used any other way, so one appearance is every appearance they can
 have. The ninth is *madad*, [held back on purpose](../grammar/verb-chains.md)
