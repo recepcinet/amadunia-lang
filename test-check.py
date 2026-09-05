@@ -125,6 +125,12 @@ _T21W = re.search(r"(\d+) words,",
 _T21W_OFF = re.sub(r"\d+", lambda m: str(int(m.group(0)) - 4), _T21W)
 _T21N = _T21W.split()[0]
 
+# The gender split moves whenever a gloss is written, so this mutation reads the
+# sentence instead of naming the numbers. Twentieth site of that kind.
+_TAFIG = re.search(r"— \d+ she, \d+ he, \d+ both, \d+ \*it\*",
+                   io.open("grammar/pronouns.md", encoding="utf-8").read()).group(0)
+_TAFIG_OFF = re.sub(r"(\d+) she", lambda m: f"{int(m.group(1)) + 6} she", _TAFIG)
+
 _LIVE = int(re.search(r"## Open questions — (\d+) of them",
                       io.open("grammar/README.md", encoding="utf-8").read()).group(1))
 # This was a hand-written dict that stopped at thirty-five, and the day the
@@ -350,6 +356,15 @@ MUTATIONS = [
      "| Insan mati. Es sukut in dom tena. | The person dies. There is silence in the house again. |",
      "| Insan mati. Dom sukut tena. | The person dies. The house is silent again. |",
      "has no predicate in it"),
+    # verb-chains.md has no row showing both, so flipping its one masculine
+    # gloss makes the whole page feminine.
+    ("a teaching page giving ta one gender", "grammar/verb-chains.md",
+     "| Ta **lasim go** skola. | He must go to school. |",
+     "| Ta **lasim go** skola. | She must go to school. |",
+     "glosses ta 3 times and always as a woman"),
+    ("the gender figures gone stale", "grammar/pronouns.md",
+     _TAFIG, _TAFIG_OFF,
+     "pronouns.md's gender figures are stale"),
     ("consonant pair missing from phonology.md", "grammar/phonology.md",
      "- `fr` \u2014 *fruta* (fruit), word-initial like *tr*\n", "",
      "does not list the consonant pair 'fr'"),

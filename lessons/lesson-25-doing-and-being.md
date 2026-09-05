@@ -55,7 +55,7 @@ the very next one, called them new again.
 | Yu dengar musik? | Do you hear the music? |
 | Mi senti korku. | I feel fear. |
 | Mi punya du kanis. | I have two dogs. |
-| Ta tanya nama mi. | She asks my name. |
+| Ta tanya nama mi. | He asks my name. |
 | Mi respon: "Nama mi es Sol." | I answer: "My name is Sol." |
 | Tacir beca fruta in market. | The merchant sells fruit at the market. |
 | Mama mi leta ca. | My mother brings tea. |

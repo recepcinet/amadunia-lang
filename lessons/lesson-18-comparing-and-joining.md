@@ -77,7 +77,7 @@ Anywhere an object goes, a sentence can go. Nothing joins them:
 | | |
 |---|---|
 | Mi fikir **yu hao**. | I think you are good. |
-| Mi bil **ta suda lai**. | I know she came. |
+| Mi bil **ta suda lai**. | I know he came. |
 | Mi mau **yu kula**. | I want you to eat. |
 | Ta sema **dom mi kabir**. | She says my house is big. |
 
@@ -106,7 +106,7 @@ before the object.
 
 | | |
 |---|---|
-| Ta anda **hayai**. | She walks fast. |
+| Ta anda **hayai**. | He walks fast. |
 | Mi kara **hao**. | I read well. |
 | Kita rabota **cok**. | We work a lot. |
 

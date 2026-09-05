@@ -12,7 +12,7 @@
 |---|---|
 | Mi **mau kula** pan. | I want to eat bread. |
 | Yu **bisa otur** sini. | You can sit here. |
-| Ta **lasim go** skola. | She must go to school. |
+| Ta **lasim go** skola. | He must go to school. |
 | Mi **mau studi kara**. | I want to learn to read. |
 
 There is no word for "to". There is nothing to add and nothing to change — the verbs simply stand in a row.

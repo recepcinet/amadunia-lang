@@ -22,7 +22,7 @@ To say whose something is, put the owner right after it.
 |---|---|
 | dom mi | my house |
 | nama yu | your name |
-| anak ta | her child |
+| anak ta | her child, his child |
 | rafiki kita | our friend |
 
 You already know *mi*, *yu*, *ta*, *kita*. There is no separate word for *my* — the ordinary pronoun does it.
@@ -44,7 +44,7 @@ If you also want to describe the thing, the owner comes first, then the adjectiv
 | Amadunia | English |
 |---|---|
 | dom mi kabir | my big house |
-| anak ta keci | her small child |
+| anak ta keci | his small child |
 | rafiki yu hao | your good friend |
 
 ## Chains
@@ -63,7 +63,7 @@ Each word belongs to the one before it. Keep going as long as you need.
 |---|---|
 | Mi kan dom yu. | I see your house. |
 | Rafiki mi saufa lai. | My friend will come. |
-| Anak ta suda nomu ca. | Her child drank tea. |
+| Anak ta suda nomu ca. | His child drank tea. |
 | Kita bil nama doktor. | We know the doctor's name. |
 
 ## With plurals

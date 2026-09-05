@@ -30,7 +30,7 @@
 | Mi suda unut. | I forgot. |
 | Kita finis rabota sasa. | We finish the work now. |
 | Mi mau proba corba ini. | I want to try this soup. |
-| Ta gasil mano ta. | She washes her hands. |
+| Ta gasil mano ta. | He washes his hands. |
 | Mama mi tabak hao. | My mother cooks well. |
 
 ## Remember and forget
@@ -41,7 +41,7 @@ They are opposites and they behave the same:
 |---|---|
 | Mi ingat yu daima. | I always remember you. |
 | Mi no unut yu. | I do not forget you. |
-| Ta suda unut kalima ini. | She forgot this word. |
+| Ta suda unut kalima ini. | He forgot this word. |
 
 *Where* daima *stands is [not settled](../grammar/proposal-frequency.md): this
 course uses three positions and none of them is the rule yet.*

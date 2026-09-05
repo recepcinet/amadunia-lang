@@ -2186,6 +2186,45 @@ for _p in PROSE:
                   f"{os.path.basename(_p)}: '{_as}' is translated '{_es}' and has no "
                   f"predicate in it — no verb, no adjective, no place word and no es")
 
+# --------------------------------------- ta is he and she, and the pages must show it
+# pronouns.md: "It never changes for gender. ta is he, she and it." The English
+# glosses have to choose, and seven teaching pages chose the same way every
+# time: Lessons 06, 17, 18, 22 and 25, subordination.md and verb-chains.md each
+# glossed ta three to five times and only ever as a woman. A learner reading any
+# of them in order met the language's genderless pronoun as feminine and nothing
+# else. possession.md had it right all along — *anak ta*, "her child, his child".
+# Texts are exempt: a character in a story keeps one gender, and text 18's
+# driver, police officer and child are three people, not an inconsistency.
+# The figures on pronouns.md are recounted here so they cannot go stale.
+_TA_HE = re.compile(r"\b(he|him|his)\b", re.I)
+_TA_SHE = re.compile(r"\b(she|her|hers)\b", re.I)
+_ta_he = _ta_she = _ta_both = _ta_it = _ta_all = 0
+for _p in PROSE:
+    _m = _f = 0
+    for _ln, _am, _en in glossed_lines(read(_p)):
+        if not _en or "ta" not in re.findall(r"[a-z-]+", _am.lower()): continue
+        _g = re.sub(r"\]\([^)]*\)", "]", _en)
+        _h, _s = bool(_TA_HE.search(_g)), bool(_TA_SHE.search(_g))
+        _ta_all += 1
+        # A row that shows both — possession.md's "her child, his child" — is a
+        # page doing the right thing, so it counts for each side.
+        if _h and _s: _ta_both += 1; _m += 1; _f += 1
+        elif _h: _ta_he += 1; _m += 1
+        elif _s: _ta_she += 1; _f += 1
+        elif re.search(r"\b(it|its)\b", _g, re.I): _ta_it += 1
+    if _p.startswith("texts/"): continue
+    check(_m + _f < 3 or (_m and _f),
+          f"{os.path.basename(_p)}: glosses ta {_m + _f} times and always as "
+          f"{'a man' if _m else 'a woman'}; ta is he, she and it")
+_m4 = re.search(r"\*\*(\d+) glossed sentences in the repository contain \*ta\*, and "
+                r"(\d+) of them assign\s*\na gender[^*]*\*\* — (\d+) she, (\d+) he, "
+                r"(\d+) both, (\d+) \*it\*", read("grammar/pronouns.md"))
+check(_m4 and [int(_x) for _x in _m4.groups()] ==
+      [_ta_all, _ta_he + _ta_she + _ta_both, _ta_she, _ta_he, _ta_both, _ta_it],
+      f"pronouns.md's gender figures are stale; the corpus gives {_ta_all} sentences, "
+      f"{_ta_he + _ta_she + _ta_both} gendered, {_ta_she} she, {_ta_he} he, "
+      f"{_ta_both} both, {_ta_it} it")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one

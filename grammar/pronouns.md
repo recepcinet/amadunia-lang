@@ -21,6 +21,38 @@ Six forms. Four of them you already had; the other two are the plural rule doing
 
 **It never changes for gender.** *ta* is he, she and it. Whether the tea, the doctor or the child — *ta*.
 
+The English translations cannot say that, and every one of them has to choose.
+**125 glossed sentences in the repository contain *ta*, and 112 of them assign
+a gender the sentence does not have** — 57 she, 52 he, 3 both, 10 *it*. That is
+the shape of a language with no gender being read in one that has it, and it
+is not a fault in any single line. The split was 69 she to 41 he until
+September 5, 2026, when twelve glosses were changed for the reason below.
+
+It was a fault in seven pages. On September 5, 2026 the material was counted
+and [Lesson 06](../lessons/lesson-06-possession.md),
+[Lesson 17](../lessons/lesson-17-wanting-and-able.md),
+[Lesson 18](../lessons/lesson-18-comparing-and-joining.md),
+[Lesson 22](../lessons/lesson-22-doing-and-feeling.md),
+[Lesson 25](../lessons/lesson-25-doing-and-being.md),
+[subordination.md](subordination.md) and [verb-chains.md](verb-chains.md) each
+glossed *ta* three to five times and **only ever as a woman**. A learner
+reading any of them in order met *ta* as feminine and nothing else — which is
+the one thing this rule says it is not. [possession.md](possession.md) had
+been doing it correctly all along, glossing *anak ta* as "her child, his
+child"; Lesson 06, which teaches the same phrase, said "her child" and then
+said her four more times. Every one of those pages shows both now, and
+[`check.py`](../check.py) holds them to it.
+
+The texts are exempt and stay as they are: a character in a story keeps one
+gender, and [text 18](../texts/text-18-gusa-in-tarik.md) has a driver, a police
+officer and a child taking *he*, *she* and *he* in nine lines, which is the
+point rather than an inconsistency.
+
+Whether the glosses should instead use singular *they* everywhere is a real
+question and nobody has decided it. It would say what the language says, at the
+cost of 112 rewrites and of English prose that reads oddly in a beginner's
+lesson. Recorded, not decided.
+
 **It never changes for politeness.** One *yu* for a friend, a stranger, a child, a president. (Spanish *tú/usted*, Hindi *tu/tum/aap*, Indonesian *kamu/anda* — Amadunia *yu*.)
 
 **It pluralises like everything else.** Say it twice: *yu-yu*, *ta-ta*, *mi-mi*. The rule from [plural.md](plural.md), applied without exception.

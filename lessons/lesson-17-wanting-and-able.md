@@ -17,7 +17,7 @@
 | Mi mau kula pan. | I want to eat bread. |
 | Yu bisa otur. | You can sit. |
 | Yu bisa otur sini. | You can sit here. |
-| Ta lasim go skola. | She must go to school. |
+| Ta lasim go skola. | He must go to school. |
 | Kita lasim funga libro. | We must close the book. |
 
 There is no word for the "to" of *to eat*. Nothing goes between the verbs, and neither verb changes. (*por* is the preposition "to, for", as in *por yu* — a different word doing a different job.)
@@ -32,7 +32,7 @@ The time word goes in front of the first verb:
 |---|---|
 | Mi suda mau kula. | I wanted to eat. |
 | Yu saufa bisa kara. | You will be able to read. |
-| Ta suda lasim rabota. | She had to work. |
+| Ta suda lasim rabota. | He had to work. |
 
 ## Saying no
 

@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**151 guarantees** in **80 groups**, and every one of them is
+**153 guarantees** in **81 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -280,6 +280,10 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### every sentence needs a predicate
 
 - …: '…' is translated '…' and has no predicate in it — no verb, no adjective, no place word and no es
+### ta is he and she, and the pages must show it
+
+- …: glosses ta … times and always as …; ta is he, she and it
+- pronouns.md's gender figures are stale; the corpus gives … sentences, … gendered, … she, … he, … both, … it
 ### the but briefing cites real pages
 
 - proposal-but.md says '… pages' but its evidence table has … rows
