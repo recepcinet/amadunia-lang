@@ -421,6 +421,11 @@ MUTATIONS = [
     ("the rule-per-text table gone stale", "texts/README.md",
      "| place | 19 |", "| place | 18 |",
      "rule table has drifted from the scan that produces it"),
+    # The missing column was hand-written beside a checked count.
+    ("a checklist missing-list gone stale", "dictionary/proposal-a2.md",
+     "| the body | 13 of 20 | arm, finger, back, stomach, blood, bone, neck |",
+     "| the body | 13 of 20 | arm, finger, back, stomach, blood, bone |",
+     "missing list for 'the body' has drifted"),
     ("consonant pair missing from phonology.md", "grammar/phonology.md",
      "- `fr` \u2014 *fruta* (fruit), word-initial like *tr*\n", "",
      "does not list the consonant pair 'fr'"),

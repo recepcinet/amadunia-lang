@@ -1591,11 +1591,26 @@ _a1tot = _a1present = 0
 _a2 = read("dictionary/proposal-a2.md")
 for _m in re.finditer(r"^## (.+)\n\n(.+)$", read("dictionary/a1-checklist.md"), re.M):
     _ws = [_x.strip() for _x in _m.group(2).split(",")]
-    _have = [_x for _x in _ws if _x in _a1head or f"to {_x}" in _a1head]
+    # An action is a verb, so it counts as present only if the index holds it
+    # as "to X". *clean* was being answered by *safi*, the quality, which is the
+    # same English word in another domain of this very list — it stands in
+    # actions and in qualities, and the language has no verb for cleaning.
+    # *work* is the only other action matched by a bare entry, and it is exempt
+    # while rabota's class is open: counting it either way answers that
+    # question by arithmetic. See grammar/proposal-two-jobs.md.
+    if _m.group(1) == "actions":
+        _have = [_x for _x in _ws if f"to {_x}" in _a1head or _x == "work"]
+    else:
+        _have = [_x for _x in _ws if _x in _a1head or f"to {_x}" in _a1head]
     _a1tot += len(_ws); _a1present += len(_have)
     check(f"| {_m.group(1)} | {len(_have)} of {len(_ws)} |" in _a2,
           f"proposal-a2.md's checklist row for '{_m.group(1)}' is stale; "
           f"the dictionary has {len(_have)} of {len(_ws)}")
+    # The missing column was hand-written and only the count beside it checked.
+    _miss = [_x for _x in _ws if _x not in _have]
+    check(f"| {_m.group(1)} | {len(_have)} of {len(_ws)} | {', '.join(_miss)} |" in _a2,
+          f"proposal-a2.md's missing list for '{_m.group(1)}' has drifted; the "
+          f"dictionary gives: {', '.join(_miss)}")
 check(f"**{_a1present} of {_a1tot} are present" in _a2,
       f"proposal-a2.md's checklist total is stale; recount gives "
       f"{_a1present} of {_a1tot}")

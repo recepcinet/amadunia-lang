@@ -110,7 +110,7 @@ written down: [a hand-made list of 274 ordinary A1 concepts by
 domain](a1-checklist.md), each looked up in the English index by
 [`check.py`](../check.py).
 
-**169 of 274 are present. A hundred and five are not.**
+**168 of 274 are present. A hundred and six are not.**
 
 | Domain | Present | Missing |
 |---|---|---|
@@ -121,9 +121,20 @@ domain](a1-checklist.md), each looked up in the English index by
 | people | 14 of 27 | man, woman, baby, neighbour, uncle, aunt, grandmother, grandfather, cousin, son, daughter, husband, wife |
 | time | 13 of 22 | minute, today, late, early, Monday, Sunday, January, summer, winter |
 | weather | 8 of 14 | storm, ice, north, south, east, west |
-| actions | 44 of 60 | play, stand, lose, carry, laugh, cry, dance, jump, fall, push, pull, break, build, meet, hold, throw |
+| actions | 43 of 60 | play, stand, lose, carry, laugh, cry, dance, jump, fall, push, pull, break, build, meet, hold, throw, clean |
 | qualities | 27 of 45 | slow, weak, angry, tired, hungry, thirsty, free, cheap, expensive, dark, bright, soft, hard, wet, dry, fluent, brown, grey |
 | basics | 20 of 31 | but, all, some, none, every, few, also, only, very, then, never |
+
+**One of those was counted present by an adjective.** *clean* stands in the
+checklist twice — in **actions**, where it is the verb, and in **qualities**,
+where it is what a washed room is — and the English index answers *clean* with
+*safi*, which is the quality. The language has *gasil*, to wash, and no verb
+for cleaning. From September 5, 2026 a concept in **actions** counts as present
+only if the index holds it as **to X**, which is what an action is. That moved
+one word and no others: *work* is the only other action matched by a bare
+entry, and it is exempt while [*rabota*'s class is
+undecided](../grammar/proposal-two-jobs.md) — counting it either way here would
+answer that question by arithmetic.
 
 ### The sets a language has to close
 

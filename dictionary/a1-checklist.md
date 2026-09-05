@@ -15,6 +15,15 @@ on it — and [`check.py`](../check.py) looks each one up in
 missing on purpose, and *all*, *some*, *none* and *every* are
 [an open question](../grammar/plural.md) rather than an oversight.
 
+**One word appears twice, and it should.** *clean* is in **actions**, where it
+is the verb, and in **qualities**, where it is what a washed room is. They are
+two concepts and the list counts them as two. The English index answers *clean*
+with *safi*, the quality, and until September 5, 2026 that one entry was
+marking both of them present — so the verb, which the language does not have,
+was counted as had. An action now counts only if the index holds it as **to
+X**. *light* is the same shape and comes out right by luck: the index has both
+*light* and *light in weight*, and the quality is really there.
+
 ## the house
 
 wall, floor, roof, kitchen, bathroom, stairs, garden, bed, door, window, table, chair, lamp, key, soap, plate, glass, knife, spoon, cup, clock, mirror, towel, box, bag
