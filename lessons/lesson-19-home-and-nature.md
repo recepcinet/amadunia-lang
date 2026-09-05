@@ -132,7 +132,7 @@ would count itself as evidence.*
 > — In pahar. Es pohon-pohon aur uan sungai keci.
 > — Sundar! Yu punya animal?
 > — Ya, uan kucing. Ta kadang kimbia in pohon.
-> — Mi punya korku dari animal kabir, no dari kucing.
+> — Mi punya korku dari animal kabir. Mi no punya korku dari kucing.
 > — Kucing mi paling keci in madina! Lai kan ta.
 > — Mi lai agar mi bisa go in tren.
 

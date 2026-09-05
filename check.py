@@ -2117,6 +2117,35 @@ for _p in PROSE:
               f"{os.path.basename(_p)}: says Amadunia has "
               f"{_m.group(1) if _m else '?'} words; the dictionary has {len(words)}")
 
+# ------------------------------------------ no denies a predicate, not a noun
+# negation.md: "no goes immediately before the predicate — the verb, the
+# adjective, the place word, or es." Five sentences dropped the verb out of a
+# contrast and wrote *X, no Y* — Mi mau kamisa asul, no kamisa merah — which is
+# English ellipsis, and the language has no ellipsis rule. The fifth had been
+# promoted onto a rule page the day before, for a different reason.
+# A segment is what stands between commas and dashes. A segment that opens with
+# *no* and holds no verb, adjective, place word or es is an ellipsis; *No.* on
+# its own is the answer, which is the word's other job and always legal.
+_PREDICATE_AFTER_NO = (VERBS | ADJECTIVES | DEGREE | GROUP["Place"]
+                       | GROUP["Prepositions"] | {"es", "suda", "saufa"}
+                       | {"mau", "bisa", "lasim", "daima", "kadang", "cok", "tena", "sasa"})
+for path in PROSE:
+    body = read(path)
+    if path.startswith("texts/") and "```" in body:
+        body = "".join(body.split("```")[1::2])
+    for line, sent, toks in amadunia_runs(body):
+        if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗", "rejected")):
+            continue
+        if "·" in line: continue
+        for _seg in re.split(r"[,—]", sent):
+            _st = [t.split("-")[0] for t in re.findall(r"[a-z-]+", _seg.lower())]
+            if len(_st) < 2 or _st[0] != "no": continue
+            if any(_x in _PREDICATE_AFTER_NO for _x in _st[1:]): continue
+            check(False,
+                  f"{os.path.basename(path)}: '{_seg.strip()}' denies a noun with no "
+                  f"verb of its own — no goes before a predicate, and the language "
+                  f"has no ellipsis: {sent}")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one

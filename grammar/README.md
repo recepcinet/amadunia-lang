@@ -102,7 +102,7 @@ Two items are not grammar at all and sit outside this order: *madad* doing two
 jobs, and the thinness of Sino-Tibetan and Japonic recorded in
 [balance.md](../dictionary/balance.md). Both are vocabulary policy.
 
-## Open questions — 36 of them
+## Open questions — 37 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
@@ -175,6 +175,7 @@ measurement with its method stated, to be re-run rather than trusted.
 **[negation](negation.md)**
 
 - **Nothing, nobody, never.** Not yet designed. Whether they are built from *no* plus an existing word, or given their own roots, is open.
+- **Contrastive ellipsis — "X, not Y" — has no form.** *no* goes before a verb, an adjective, a place word or *es*, never before a noun, and five sentences were writing *X, no Y* anyway — a lesson practice item, two lesson tables, the phrasebook and this index's own demonstratives page. All five are full clauses now and all five are longer. Deciding it would give them back at no cost in words. Found September 5, 2026, the day after one of them was promoted onto a rule page for a different reason and nobody looked at its *no*.
 
 **[numbers](numbers.md)**
 

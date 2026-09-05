@@ -102,7 +102,7 @@
 
 ## Practice
 
-1. Anahtar mi in kamra, no in bage. — *My key is in the room, not in the garden.*
+1. Anahtar mi in kamra. Anahtar mi no in bage. — *My key is in the room. My key is not in the garden.*
 2. Corba ini lebi dulce dari ca. — *This soup is sweeter than the tea.*
 3. Es kertas aur lampu in kamra? — *Is there paper and a lamp in the room?*
 4. Mi punya umid porke yu sini. — *I have hope because you are here.*

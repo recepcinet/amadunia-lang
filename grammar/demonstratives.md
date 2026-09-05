@@ -26,13 +26,13 @@ The order inside a noun phrase is now complete: **noun → owner → adjective �
 | Ini es dom mi. | This is my house. |
 | Itu es ke? | What is that? |
 | Ini hao, itu mal. | This is good, that is bad. |
-| Mi mau ini, no itu. | I want this, not that. |
+| Mi mau ini. Mi no mau itu. | I want this. I do not want that. |
 | Mi mau kupi ini. | I want to buy this. |
 
 This section said **the subject** until September 5, 2026, and three sentences
 were already using them as objects — two of them in
-[the phrasebook](../phrasebook.md), where *Mi mau ini, no itu* is one of the
-lines a traveller actually needs. Nothing was wrong with the sentences: a rule
+[the phrasebook](../phrasebook.md), where wanting this and not that is one of
+the lines a traveller actually needs. Nothing was wrong with the sentences: a rule
 page had described half of what its own rule does. The last two rows are those
 sentences, so the page now shows both slots.
 

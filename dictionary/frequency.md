@@ -3,7 +3,7 @@
 Generated from the material a learner reads — the twenty-six lessons, the
 twenty texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **5784 words of running Amadunia**, and every one of the 300 roots appears
+it. **5794 words of running Amadunia**, and every one of the 300 roots appears
 at least once.
 
 [`check.py`](../check.py) regenerates this page and fails if it disagrees, so
@@ -33,20 +33,20 @@ cover half of everything.** They are the first twenty-five below.
 
 | | Root | Meaning | Uses | Share |
 |---|---|---|---|---|
-| 1 | *mi* | I, me | 572 | 9.9% |
+| 1 | *mi* | I, me | 576 | 9.9% |
 | 2 | *yu* | you — one form for everyone | 225 | 3.9% |
 | 3 | *ta* | he, she, it — no gender | 179 | 3.1% |
 | 4 | *in* | at, in, on | 169 | 2.9% |
 | 5 | *anak* | child | 132 | 2.3% |
-| 6 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 124 | 2.1% |
+| 6 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 125 | 2.2% |
 | 7 | *ini* | this — after the noun, last in the phrase | 108 | 1.9% |
 | 8 | *dom* | house, home | 103 | 1.8% |
 | 9 | *lai* | to come | 103 | 1.8% |
 | 10 | *no* | no; **not** — before the predicate, see [grammar/negation.md](../grammar/negation.md) | 103 | 1.8% |
 | 11 | *go* | to go | 99 | 1.7% |
 | 12 | *suda* | past marker (before the verb) | 93 | 1.6% |
-| 13 | *aur* | and | 90 | 1.6% |
-| 14 | *mau* | to want | 89 | 1.5% |
+| 13 | *mau* | to want | 91 | 1.6% |
+| 14 | *aur* | and | 90 | 1.6% |
 | 15 | *hao* | good | 88 | 1.5% |
 | 16 | *ca* | tea | 77 | 1.3% |
 | 17 | *kita* | we, including you — see [grammar/pronouns.md](../grammar/pronouns.md) | 67 | 1.2% |
@@ -56,7 +56,7 @@ cover half of everything.** They are the first twenty-five below.
 | 21 | *kabir* | big | 57 | 1.0% |
 | 22 | *keci* | small | 57 | 1.0% |
 | 23 | *insan* | person, human | 52 | 0.9% |
-| 24 | *punya* | to have | 51 | 0.9% |
+| 24 | *punya* | to have | 52 | 0.9% |
 | 25 | *sol* | sun | 50 | 0.9% |
 | 26 | *saufa* | future marker (before the verb) | 49 | 0.8% |
 | 27 | *dari* | from | 45 | 0.8% |

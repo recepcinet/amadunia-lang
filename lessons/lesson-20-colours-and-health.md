@@ -38,7 +38,7 @@ Colours follow the noun, like every adjective, and take no *es*:
 | Yuki putih. | Snow is white. |
 | Sol asfar. | The sun is yellow. |
 | Pohon yesil. | The tree is green. |
-| Mi mau kamisa asul, no kamisa merah. | I want a blue shirt, not a red one. |
+| Mi mau kamisa asul. Mi no mau kamisa merah. | I want a blue shirt. I do not want a red shirt. |
 
 ## Sky and cloud
 

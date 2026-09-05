@@ -69,5 +69,35 @@ Using the answer word as the negator is what Spanish, Italian and Portuguese do:
 
 ## Open questions
 
+- **Contrastive ellipsis — "X, not Y" — has no form.** *no* goes before the
+  predicate, and the predicate is a verb, an adjective, a place word or *es*.
+  It never goes before a noun. Five sentences were writing *X, no Y* anyway,
+  dropping the verb out of the second half the way English does:
+
+  | Where | Was | Now |
+  |---|---|---|
+  | [Lesson 19](../lessons/lesson-19-home-and-nature.md) | *…korku dari animal kabir, no dari kucing* | a second clause, with its verb |
+  | [Lesson 20](../lessons/lesson-20-colours-and-health.md) | *Mi mau kamisa asul, no kamisa merah* | *Mi mau kamisa asul. Mi no mau kamisa merah.* |
+  | [Lesson 21](../lessons/lesson-21-things-and-ideas.md) | *Anahtar mi in kamra, no in bage* | two sentences |
+  | [the phrasebook](../phrasebook.md) | *Mi mau ini, no itu* | *Mi mau ini. Mi no mau itu.* |
+  | [demonstratives.md](demonstratives.md) | the same sentence | the same |
+
+  Every one of them is longer now, and a phrasebook line that a traveller
+  actually says is longer than it needs to be. That is the argument **for**
+  deciding this, and it is the founder's to make: a rule that lets *no* stand
+  in front of a repeated constituent would give all five back at no cost in
+  words. Nothing here decides it.
+
+  A sixth sentence was a different fault and is simply fixed:
+  [Lesson 22](../lessons/lesson-22-doing-and-feeling.md) said *No korku* for
+  "no fear", which needs the existential — *No es korku*, there is no fear.
+
+  Found September 5, 2026. The last of them had been promoted **into a rule
+  page the day before**, when *Mi mau ini, no itu* was cited on
+  [demonstratives.md](demonstratives.md) as evidence that a demonstrative can
+  be an object. It is evidence of that. Nobody had looked at its *no*.
+
+
+
 - ~~Answering a negative question~~ — settled: *ya* and *no* answer the **fact**, never the wording. *Yu no mau ca? — No* means I do not want it; *Ya* means I do. This is the English, Spanish, Hindi, Arabic, Turkish and Indonesian system, by far the majority. When it matters, answer with the verb: *Mi mau* / *Mi no mau*.
 - **Nothing, nobody, never.** Not yet designed. Whether they are built from *no* plus an existing word, or given their own roots, is open.

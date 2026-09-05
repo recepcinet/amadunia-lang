@@ -90,7 +90,7 @@ English does — do not let an unstressed vowel slide toward *uh*.
 | Berapa harga? | How much? |
 | Harga kabir! | The price is big! — the nearest to *that's expensive*; [there is no word for it](dictionary/README.md#words-the-writing-has-asked-for) |
 | Mi mau kupi ini. | I want to buy this. |
-| Mi mau ini, no itu. | I want this, not that. |
+| Mi mau ini. Mi no mau itu. | I want this. I do not want that. |
 | Es kamisa lebi keci? | Is there a smaller shirt? |
 | Mi punya des pesa. | I have ten money. — *pesa* is the substance, not a coin; [the gap is recorded](dictionary/README.md#words-the-writing-has-asked-for) |
 | Ok, mi kupi. | Ok, I'll buy it. |
