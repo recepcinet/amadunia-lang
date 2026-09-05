@@ -48,8 +48,10 @@ particles like any other. So *Es doktor* is a sentence beginning with a verb
 and no subject, and by the rule above it should be a command: *be a doctor*.
 
 It is not. **A sentence-initial *es* is the existential**, settled first and
-standing in thirty sentences: *Es hotel in madina*, there is a hotel in the
-city. The narrower rule wins over the broader one, which is how any two rules
+standing in **44** sentences: *Es hotel in madina*, there is a hotel in the
+city. That read thirty until September 5, 2026, counted the day the rule was
+made and not since; [`check.py`](../check.py) counts it now, over the lessons,
+the texts and the phrasebook. The narrower rule wins over the broader one, which is how any two rules
 that overlap have to be ordered, and it is not an exception carved out for a
 word — *es* is simply already spoken for in that position.
 
@@ -91,6 +93,17 @@ anak* is citing a phrase, the way an English grammar prints "the big house". It
 is not claiming that a phrase is a sentence, and this rule has nothing to say
 about it. Counting naively gives fifty-seven fragments; forty-four is the count
 of things anybody actually said.
+
+**Those two numbers cannot be reproduced, and the reason is the distinction
+itself.** Separating a phrase somebody said from a phrase a table cites is a
+judgement about the page it sits on, and no rule stated here makes it
+mechanical — which is why the sentence needs two numbers at all. A scan of
+utterances with no predicate, taking a quoted turn or a phrasebook row as
+"said", gives 74 and 30 rather than 57 and 44. That is a different method, not
+a correction, and it is recorded rather than substituted: replacing a figure
+with one from a definition invented to check it is how a page ends up with a
+number no method produces. The existential count above **is** mechanical — a
+sentence whose first word is *es* — and is checked.
 
 **A fragment answer inherits the question.** *— Yu suda kula? — Ya.* means yes,
 I ate. The tense, the subject and the verb all come from the question, and

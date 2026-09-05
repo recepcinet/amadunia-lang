@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**203 guarantees** in **105 groups**, and every one of them is
+**204 guarantees** in **106 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -372,6 +372,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### a page may not describe a correction it caused as pending
 
 - …: '…' on compounding, and README.md has already withdrawn the claim
+### how many sentences the existential stands in
+
+- sentence-types.md's existential count is stale; a sentence-initial es stands in … sentences
 ### the but briefing cites real pages
 
 - proposal-but.md says '… pages' but its evidence table has … rows

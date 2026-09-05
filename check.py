@@ -2933,6 +2933,28 @@ if "used to say *compounding*" in read("README.md"):
                   f"{os.path.basename(_p)}: '{_m.group(0)}' on compounding, and "
                   f"README.md has already withdrawn the claim")
 
+# ------------------------------- how many sentences the existential stands in
+# sentence-types.md orders two rules by saying the existential is settled first
+# and "standing in thirty sentences". It was counted the day the rule was made
+# and not since; there are 44. The figure carries weight — it is the reason a
+# sentence-initial *es* is not read as a command — so it is counted here.
+_exist = 0
+for _p in (sorted(glob.glob("lessons/lesson-*.md"))
+           + sorted(glob.glob("texts/*.md")) + ["phrasebook.md"]):
+    _eb = read(_p)
+    if _p.startswith("texts/") and "```" in _eb: _eb = "".join(_eb.split("```")[1::2])
+    if "## New word" in _eb:
+        _h4, _r4 = _eb.split("## New word", 1)
+        _eb = _h4 + "\n" + "\n## ".join(_r4.split("\n## ")[1:])
+    for _line, _sent, _toks in amadunia_runs(_eb):
+        _base = [_t.split("-")[0] for _t in _toks]
+        if _base and (_base[0] == "es"
+                      or (len(_base) > 1 and _base[0] == "no" and _base[1] == "es")):
+            _exist += 1
+check(f"standing in **{_exist}** sentences" in read("grammar/sentence-types.md"),
+      f"sentence-types.md's existential count is stale; a sentence-initial es "
+      f"stands in {_exist} sentences")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one
