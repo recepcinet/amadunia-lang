@@ -2351,6 +2351,43 @@ for _p in md():
         check(_n == _ntexts,
               f"{os.path.basename(_p)}: says '{_m.group(0)}'; texts/ holds {_ntexts}")
 
+# ------------------------------------- the prose that reads the reading ladder
+# The ladder's table is regenerated; the three sentences under it were not.
+# "Four lessons leave the figure unchanged: 09, 11, 23 and 26" — six do, and
+# Lesson 05 joined the day its own row was corrected from 48% to 47%.
+# "they carry 92% to 100%" — Lesson 23 sits at 94%. And "half by Lesson 06",
+# written on this page and in the lesson index, is 49%: fifty arrives at 07.
+_lad = read("lessons/reading-ladder.md")
+_rows = [(int(_m.group(1)), int(_m.group(2)))
+         for _m in re.finditer(r"^\| (\d\d) \| (\d+)% \|$", _lad, re.M)]
+if _rows:
+    _flat = [f"{_n:02d}" for _i, (_n, _p) in enumerate(_rows)
+             if _i and _p == _rows[_i - 1][1]]
+    _m7 = re.search(r"\*\*(\w+) lessons leave the figure unchanged: ([^*]+)\.\*\*", _lad)
+    check(_m7 and WORD_NUM.get(_m7.group(1).lower()) == len(_flat)
+          and re.findall(r"\d\d", _m7.group(2)) == _flat,
+          f"reading-ladder.md's list of lessons that move nothing is stale; the "
+          f"table gives {len(_flat)}: {', '.join(_flat)}")
+    # Lessons 24 and 25 are the sweep-up pair, so the span they carry starts at
+    # the row before them and ends at the last row.
+    _m8 = re.search(r"they carry (\d+)% to (\d+)% between them", _lad)
+    _by = {_n: _p for _n, _p in _rows}
+    check(_m8 and (int(_m8.group(1)), int(_m8.group(2))) == (_by.get(23), _by.get(25)),
+          f"reading-ladder.md: Lessons 24 and 25 carry {_by.get(23)}% to {_by.get(25)}%")
+    # A fraction named with a lesson has to be the first lesson that reaches it.
+    # The index writes "half" and this page writes "Half", and the first draft
+    # matched only the capital — the harness reported it NOT CAUGHT. The wrap
+    # between "three" and "quarters" is why the whitespace is loose.
+    _FRACS = {"half": 50, "three quarters": 75, "a quarter": 25}
+    for _p2 in ("lessons/reading-ladder.md", "lessons/README.md"):
+        for _m9 in re.finditer(r"(half|three\s+quarters|a quarter) by Lesson (\d\d)",
+                               read(_p2), re.I):
+            _pct = _FRACS[re.sub(r"\s+", " ", _m9.group(1)).lower()]
+            _first = next((_n for _n, _v in _rows if _v >= _pct), None)
+            check(int(_m9.group(2)) == _first,
+                  f"{os.path.basename(_p2)}: '{re.sub(chr(10), ' ', _m9.group(0))}' — "
+                  f"the ladder first reaches {_pct}% at Lesson {_first:02d}")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one

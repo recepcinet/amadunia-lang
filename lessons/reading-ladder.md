@@ -38,19 +38,27 @@ counted with repeats, against the words the lessons have taught by that point.
 | 25 | 100% |
 | 26 | 100% |
 
-**A quarter of everything after one lesson.** That is the frequency curve doing
-the work — [ten roots carry a third of the corpus](../dictionary/frequency.md),
-and the first lesson teaches the commonest of them. Half by Lesson 06, three
-quarters by Lesson 16.
+**Nearly a quarter of everything after one lesson — 23%.** That is the
+frequency curve doing the work — [ten roots carry a third of the
+corpus](../dictionary/frequency.md), and the first lesson teaches the commonest
+of them. Half by Lesson 07, three quarters by Lesson 16.
 
-**Four lessons leave the figure unchanged: 09, 11, 23 and 26.** They teach
-pronouns, the copula, a review and the two sentence rules — grammar, not
-vocabulary. Nothing is wrong with them; the measure simply cannot see what they
-add, and that is worth knowing about the measure.
+**Six lessons leave the figure unchanged: 05, 09, 11, 17, 23 and 26.** Four of
+them teach no new root at all — pronouns, the copula, a review and the two
+sentence rules are grammar, not vocabulary. The other two do teach roots, and
+too few to move a whole percentage point: Lesson 05 adds *cok*, Lesson 17 adds
+*bisa* and *lasim*. Nothing is wrong with any of the six; the measure simply
+cannot see what four of them add and rounds away what the other two do, and
+that is worth knowing about the measure.
+
+This paragraph said **four** and named 09, 11, 23 and 26 until September 5,
+2026. Lesson 05 joined the list the day its own row was corrected from 48% to
+47%, and Lesson 17 had been on it longer than that. The list is recomputed from
+the table above now.
 
 **The last stretch is steep because it was built that way.** Lessons 24 and 25
 were written to sweep up the roots that had reached the dictionary without a
-lesson, so they carry 92% to 100% between them.
+lesson, so they carry 94% to 100% between them.
 
 ## When each text opens
 

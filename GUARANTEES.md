@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**163 guarantees** in **84 groups**, and every one of them is
+**166 guarantees** in **85 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -298,6 +298,11 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### how many texts there are
 
 - …: says '…'; texts/ holds …
+### the prose that reads the reading ladder
+
+- reading-ladder.md's list of lessons that move nothing is stale; the table gives …: …
+- reading-ladder.md: Lessons 24 and 25 carry …% to …%
+- …: '…' — the ladder first reaches …% at Lesson …
 ### the but briefing cites real pages
 
 - proposal-but.md says '… pages' but its evidence table has … rows
