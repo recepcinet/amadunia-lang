@@ -99,8 +99,8 @@ question cannot come up.
 
 The two standing gaps are here as well. **No word for *then***: the friend
 arrives, the tea is drunk, the rain stops, and the page's order does the work.
-**No word for *but***: *Ca garam* would rather be "the tea was hot but the
-night was cold". Both are
+**No word for *but***: *Ca garam* would rather be "the tea is hot but the
+night is cold". Both are
 [recorded with the others](../dictionary/README.md#words-the-writing-has-asked-for).
 
 ## Roots used

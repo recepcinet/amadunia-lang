@@ -8,19 +8,18 @@ for a decision that is the founder's.
 [conjunction.md](conjunction.md) records that as open, with the honest
 possibility that the language may not need one.
 
-## The evidence is seven pages, and it is the strongest on the open list
+## The evidence is six pages, and it is the strongest on the open list
 
 Every one of these is a sentence that stopped, not a line on a wordlist.
 
 | Page | The sentence | What it wanted |
 |---|---|---|
 | [Lesson 12](../lessons/lesson-12-colors-directions.md) | *— No, eski. Hao!* | no, old, **but** good |
-| [Text 13](../texts/text-13-kula-una.md) | *Corba garam. Pan baru.* | the soup was hot **but** the bread was old |
-| [Text 14](../texts/text-14-yamur-aur-ca.md) | *Ca garam.* | the tea was hot **but** the night was cold |
+| [Text 14](../texts/text-14-yamur-aur-ca.md) | *Ca garam.* | the tea is hot **but** the night is cold |
 | [Text 16](../texts/text-16-berapa-harga.md) | *Nyama lebi eski.* | the meat is cheaper **but** older |
-| [Text 17](../texts/text-17-tren-aur-farasi.md) | *Tarik duan aur safari no muskil.* | the road was short **but** the journey was not easy |
-| [Text 18](../texts/text-18-gusa-in-tarik.md) | *Tarik baru duan.* | the new road was short **but** slow |
-| [Text 21](../texts/text-21-uan-umur.md) | *Pesa keci.* | the money was little **but** the bread was good — written as *lakin* twice in draft, by reflex |
+| [Text 17](../texts/text-17-tren-aur-farasi.md) | *Tarik duan aur safari no muskil.* | the road is short **but** the journey is not easy |
+| [Text 18](../texts/text-18-gusa-in-tarik.md) | *Tarik baru duan.* | the new road is short **but** slow |
+| [Text 21](../texts/text-21-uan-umur.md) | *Pesa keci.* | the money is little **but** the bread is good — written as *lakin* twice in draft, by reflex |
 
 Lesson 12 is the one that matters most. It did not work around the gap — it
 **invented a word**, *ma*, and that word sat in the course unnoticed until
@@ -71,8 +70,8 @@ stand in the same place:
 
 | | |
 |---|---|
-| Tarik duan **aur** safari asan. | The road was short and the journey easy. |
-| Tarik duan **lakin** safari muskil. | The road was short but the journey hard. |
+| Tarik duan **aur** safari asan. | The road is short and the journey easy. |
+| Tarik duan **lakin** safari muskil. | The road is short but the journey hard. |
 
 No position rule, no new class, no change to any sentence already written. The
 whole cost is one root.
@@ -91,7 +90,7 @@ lesson. That is what a real gap does.
 
 ## What is measured and what is judgement
 
-Measured: the seven pages and their sentences, which `check.py` recounts; the
+Measured: the six pages and their sentences, which `check.py` recounts; the
 candidates' pass or failure against the phonotactic rules; the family reach.
 
 Judgement, and the founder's: whether the language takes a contrast word at

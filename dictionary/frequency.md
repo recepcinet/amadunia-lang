@@ -3,7 +3,7 @@
 Generated from the material a learner reads — the twenty-six lessons, the
 twenty texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **5770 words of running Amadunia**, and every one of the 300 roots appears
+it. **5771 words of running Amadunia**, and every one of the 300 roots appears
 at least once.
 
 [`check.py`](../check.py) regenerates this page and fails if it disagrees, so
@@ -44,7 +44,7 @@ cover half of everything.** They are the first twenty-five below.
 | 9 | *lai* | to come | 103 | 1.8% |
 | 10 | *no* | no; **not** — before the predicate, see [grammar/negation.md](../grammar/negation.md) | 103 | 1.8% |
 | 11 | *go* | to go | 99 | 1.7% |
-| 12 | *suda* | past marker (before the verb) | 92 | 1.6% |
+| 12 | *suda* | past marker (before the verb) | 93 | 1.6% |
 | 13 | *aur* | and | 90 | 1.6% |
 | 14 | *mau* | to want | 89 | 1.5% |
 | 15 | *hao* | good | 88 | 1.5% |

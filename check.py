@@ -1934,6 +1934,47 @@ check(f"**{_TENA[0]} of its {sum(_TENA)} uses are last in the sentence**" in _fq
       f"{_TENA[0]} of {sum(_TENA)}")
 
 
+# ------------------------------------------- an unmarked verb glossed as past
+# tense.md: the present is unmarked, and suda may be dropped only "when the time
+# has already been set" by an earlier sentence. Nothing held the English side to
+# that. Lesson 14 and conjunction.md glossed *Mi lai aur mi kan yu* as "I came
+# and I saw you" in a table where no row sets a past, and five texts wrote their
+# gap notes in the past — "the tea was hot", "the road was short" — while their
+# own line-by-line tables glossed the same sentences in the present. The but
+# briefing then copied four of them, which is the page the founder reads.
+# A row is licensed if the glossed line just above it carries suda: that is the
+# rule tense.md actually grants, and it is what keeps a narrative table legal.
+_PAST_EN = {
+    "came", "saw", "ate", "drank", "went", "was", "were", "bought", "wrote",
+    "slept", "said", "gave", "took", "made", "spoke", "walked", "worked",
+    "wanted", "looked", "heard", "asked", "answered", "sold", "brought", "sang",
+    "lived", "died", "began", "stopped", "felt", "knew", "understood",
+    "learned", "waited", "opened", "closed", "found", "forgot", "helped",
+    "sent", "loved", "played", "studied", "arrived", "carried", "showed",
+    "stood", "sat", "ran", "told", "thought", "became",
+}
+for _p in PROSE:
+    _prev_line, _prev_past = -9, False
+    for _ln, _am, _en in glossed_lines(read(_p)):
+        _toks = re.findall(r"[a-z-]+", _am.lower())
+        _marked = "suda" in _toks or "saufa" in _toks
+        # A table's header row reaches this reader too: proposal-ordinals.md has
+        # "| Where | What stopped |", which is not a sentence in any language.
+        _real = any(_t.split("-")[0] in words for _t in _toks)
+        if (_en and _real and not _marked
+                and not any(_x in _en.lower()
+                            for _x in ("wrong", "careful", "would be"))):
+            # A markdown link's target is not English: dictionary/README.md
+            # #words-the-writing-has-asked-for reads as the word "asked".
+            _plain = re.sub(r"\]\([^)]*\)", "]", _en)
+            _hit = sorted(set(re.findall(r"[a-z']+", _plain.lower())) & _PAST_EN)
+            _licensed = _prev_past and _ln - _prev_line <= 2
+            check(not _hit or _licensed,
+                  f"{os.path.basename(_p)}: '{_am}' has no suda and is glossed in "
+                  f"the past ('{_hit[0] if _hit else ''}') with nothing before it "
+                  f"setting the time: {_en[:60]}")
+        _prev_line, _prev_past = _ln, _marked
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one

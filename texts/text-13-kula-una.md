@@ -88,10 +88,15 @@ sentence. This page avoids the collision by keeping every *together* sentence
 free of an object, which is a way of writing around a hole, not a solution.
 [Recorded as an open question in place.md](../grammar/place.md).
 
-**No word for *but*.** *Corba garam. Pan baru.* would rather be "the soup was
-hot **but** the bread was old", which is the sentence a shared meal actually
-produces. [The ninth gap the writing has asked for](../dictionary/README.md#words-the-writing-has-asked-for),
-found the same day in Lesson 12.
+**This page's claim about *but* did not survive inspection, and is withdrawn.**
+It said *Corba garam. Pan baru.* would rather be "the soup was hot **but** the
+bread was old". The text is in the present, and *baru* is **new** — the table
+above glosses the line "The soup is hot. The bread is fresh." Two pieces of
+praise, which *aur* joins perfectly well. The note described a sentence this
+page never wrote, and [the briefing](../grammar/proposal-but.md) counted it as
+one of seven pages of evidence until September 5, 2026. It is six now, and the
+six are unaffected. A gap note is evidence the founder decides on; it has to
+quote the page it is on.
 
 **No word for *then*** ([the list](../dictionary/README.md#words-the-writing-has-asked-for))**.** The child falls asleep and is carried to bed; the order
 on the page is again doing what the grammar cannot.

@@ -12,8 +12,8 @@
 |---|---|
 | Mi kupi pan **aur** ca. | I buy bread and tea. |
 | Dom kabir **aur** sundar. | The house is big and beautiful. |
-| Mi lai **aur** mi kan yu. | I came and I saw you. |
-| Angin **aur** yuki lai. | Wind and snow came. |
+| Mi lai **aur** mi kan yu. | I come and I see you. |
+| Angin **aur** yuki lai. | Wind and snow come. |
 
 ## Why the language needs a word here
 

@@ -112,7 +112,7 @@ this since Lesson 13 and has never decided it; it belongs beside
 [the question about *in* and time](../grammar/place.md).
 
 **No word for *but*, a fourth time.** *Tarik duan aur safari no muskil* wants
-"the road was short **but** the journey was not easy". Every text that has
+"the road is short **but** the journey is not easy". Every text that has
 tried to contrast two clauses has wanted it —
 [the ninth gap](../dictionary/README.md#words-the-writing-has-asked-for), now
 asked for by four pages.

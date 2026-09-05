@@ -103,7 +103,7 @@ The split — a copula with nouns, none with adjectives — is the Chinese rule 
   merah* is "the house is red" by this rule, and since
   [the fragment rule](sentence-types.md) of September 3, 2026 granted that any
   constituent may stand alone as an utterance, it is also "the red house"
-  standing on its own. Nothing distinguishes them. **139 two-word utterances
+  standing on its own. Nothing distinguishes them. **137 two-word utterances
   in the repository have this shape**, counted everywhere but the two pages
   that state the figure — writing the example *Dom merah* into this very
   bullet made the first draft of the count wrong by one, which is the third

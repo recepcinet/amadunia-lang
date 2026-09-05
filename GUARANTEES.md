@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**142 guarantees** in **72 groups**, and every one of them is
+**143 guarantees** in **73 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -255,6 +255,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - proposal-frequency.md's row for '…' is stale; the corpus has …
 - proposal-frequency.md's tena figure is stale; recount gives … of …
+### an unmarked verb glossed as past
+
+- …: '…' has no suda and is glossed in the past ('…') with nothing before it setting the time: …
 ### the but briefing cites real pages
 
 - proposal-but.md says '… pages' but its evidence table has … rows

@@ -52,9 +52,9 @@ The order never changes: **no → suda/saufa → verb**.
 | | |
 |---|---|
 | Mi kupi pan **aur** ca. | I buy bread and tea. |
-| Angin **aur** yuki lai. | Wind and snow came. |
+| Angin **aur** yuki lai. | Wind and snow come. |
 | Dom mi keci **aur** sundar. | My house is small and beautiful. |
-| Mi lai **aur** mi kan yu. | I came and I saw you. |
+| Mi lai **aur** mi kan yu. | I come and I see you. |
 
 Nouns, adjectives, whole sentences — one word for all three.
 

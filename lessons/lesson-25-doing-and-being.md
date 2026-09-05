@@ -88,7 +88,7 @@ the very next one, called them new again.
 | | |
 |---|---|
 | Mi senang porke yu sini. | I am happy because you are here. |
-| Ta sedih porke rafiki ta go. | She is sad because her friend went. |
+| Ta sedih porke rafiki ta suda go. | She is sad because her friend went. |
 | Sukut in hutan. | There is silence in the forest. |
 
 ## Big words

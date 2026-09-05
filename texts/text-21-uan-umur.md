@@ -207,7 +207,7 @@ paragraph rather than the one it replaced.
 drafts of this page wrote *lakin* — the candidate in
 [the briefing for "but"](../grammar/proposal-but.md) — once at *Pesa keci,
 lakin…* and once at *Kamra keci, lakin…*. [`check.py`](../check.py) refused
-both, correctly: a text invents nothing. That makes seven pages that have
+both, correctly: a text invents nothing. That makes six pages that have
 wanted the word, and this is the first time it arrived in a draft by reflex
 rather than by argument.
 
