@@ -68,18 +68,29 @@ methods had missed.
 
 ---
 
-Three of the fourteen are about how a person feels or where a person hurts, and
-that is where 300 roots turn out to be thinnest — not what a thematic wordlist
-would have predicted. The rest are joints rather than things: a point in the
-day, the word that puts one step after another, the opposite of sitting down,
-the difference between a coin and an amount, the opposite of *fast*, the word
-that contrasts two clauses, and the pair that prices a thing.
+The fourteen divide three ways, and the division is the argument for finding
+gaps by writing.
 
-**Most of them are joints rather than things,** which was the whole case for
-finding gaps by writing: a point in the day, the word that puts one step after
-another, the opposite of sitting down, the difference between a coin and an
-amount, the opposite of *fast*, the word that contrasts two clauses, and the
-pair that prices a thing.
+**Three of the fourteen are about how a person feels or where a person hurts**
+— pain, love as a noun, and missing someone. That is where 300 roots turn out to be thinnest,
+and it is not what a thematic wordlist would have predicted.
+
+**Seven of the fourteen are joints rather than things:** a point in the day, the word that puts
+one step after another, the opposite of sitting down, the difference between a
+coin and an amount, the opposite of *fast*, the word that contrasts two
+clauses, and the pair that prices a thing. A wordlist names things; only a
+sentence notices that it cannot get from one step to the next.
+
+**Four of the fourteen are neither**, and they are the ones this page argues about below: a
+wall and a floor, the kinship set, *fluent*, and *quiet* — which is not a
+missing concept at all but a missing part of speech, since *sukut* is the noun
+*silence* and there is no adjective beside it.
+
+Until September 6, 2026 those two paragraphs were one sentence printed twice,
+back to back, introducing the same seven items as *the rest* and then as *most
+of them*. Neither quantifier was right: the rest of fourteen is eleven, and
+seven of fourteen is exactly half. The list was correct both times and the
+sentence around it was wrong both times, in two different directions.
 
 This page used to put a number on that — "ten of the twelve are not nouns a
 category would have suggested" — by comparing the list against

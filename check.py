@@ -2569,6 +2569,16 @@ check(all(_ORD.get(len(_written) + _i + 1, "?") in read("dictionary/README.md")
           for _i in range(len(_asked))),
       f"dictionary/README.md: the {len(_asked)} gaps found by a question are not "
       f"named as numbers {len(_written) + 1} to {len(_gaprows)}")
+# The page splits the list three ways and the three parts have to be the whole
+# list. Until September 6, 2026 one sentence was printed twice, introducing the
+# same seven items as "the rest" — eleven — and then as "most of them" — seven
+# of fourteen, which is half. The list was right both times; the sentence
+# around it was wrong both times, in opposite directions.
+_split = [WORD_NUM.get(_m.lower()) for _m in
+          re.findall(r"\*\*(\w+) of the \w+ (?:are|is)", read("dictionary/README.md"))]
+check(len(_split) == 3 and None not in _split and sum(_split) == len(_gaprows),
+      f"dictionary/README.md: the three parts of the gap list are {_split} and "
+      f"must account for all {len(_gaprows)} of it")
 check(f"of the {_SPELL.get(len(_gaprows))} are about how a person feels"
       in read("dictionary/README.md"),
       f"dictionary/README.md: the feelings count is not stated against "

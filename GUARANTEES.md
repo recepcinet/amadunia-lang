@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**234 guarantees** in **112 groups**, and every one of them is
+**235 guarantees** in **112 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -317,6 +317,7 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - dictionary/README.md: … gaps came from writing, and the page does not say so
 - dictionary/README.md: the … gaps found by a question are not named as numbers … to …
+- dictionary/README.md: the three parts of the gap list are … and must account for all … of it
 - dictionary/README.md: the feelings count is not stated against … gaps
 ### the demand table counts the pages that ask
 
