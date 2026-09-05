@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**186 guarantees** in **91 groups**, and every one of them is
+**188 guarantees** in **92 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -327,6 +327,10 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - proposal-two-jobs.md's heading is stale; rabota stands in … places in the material
 - proposal-two-jobs.md's split is stale; … places put rabota after a subject and … put something in front
 - proposal-two-jobs.md's distinct-sentence figures are stale; the material gives … and …, … in all
+### the two-job problem has two roots, not one
+
+- …: raises madad's two jobs without linking the briefing; the problem covers two roots and that page separates them
+- …: calls a root the only one holding two jobs; the audit that said so read the glosses and not the sentences, and proposal-two-jobs.md separates two
 ### the but briefing cites real pages
 
 - proposal-but.md says '… pages' but its evidence table has … rows

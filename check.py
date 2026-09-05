@@ -2586,6 +2586,32 @@ check(f"gives ten and seven, seventeen in all" in _twojobs
       f"proposal-two-jobs.md's distinct-sentence figures are stale; the material "
       f"gives {_ndist[0]} and {_ndist[1]}, {sum(_ndist)} in all")
 
+# ------------------------------ the two-job problem has two roots, not one
+# Lesson 08 said *madad* "is the only root in the dictionary" that holds two
+# jobs, while teaching *rabota* in the table above it and using it three times
+# on the same page. The September 3 audit that produced "the only" read the
+# glosses and not the sentences; verb-chains.md recorded the correction on
+# September 4 and the lesson never heard about it.
+# Any page that raises the problem — the giveaway is madad's own gloss — has to
+# name the other root or link the briefing that separates them.
+for _p in md():
+    _tb = read(_p)
+    if "help; to help" not in _tb: continue
+    if _p.endswith("dictionary.md"): continue      # the gloss itself, not a claim
+    if _p.endswith("proposal-two-jobs.md"): continue   # it is the briefing
+    # The condition is the link rather than the word: every page that raises
+    # this already carries rabota somewhere for its own reasons — Lesson 08
+    # teaches it — so "names rabota" is satisfied by accident and would not
+    # hold a new page to anything. The link is the thing that has to be there.
+    check("proposal-two-jobs.md" in _tb,
+          f"{os.path.basename(_p)}: raises madad's two jobs without linking the "
+          f"briefing; the problem covers two roots and that page separates them")
+for _p in md():
+    check("only root in the dictionary" not in read(_p),
+          f"{os.path.basename(_p)}: calls a root the only one holding two jobs; "
+          f"the audit that said so read the glosses and not the sentences, and "
+          f"proposal-two-jobs.md separates two")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one

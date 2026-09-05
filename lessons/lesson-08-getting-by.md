@@ -21,7 +21,9 @@
 
 Most of these you already know. *mersi*, *pardon*, *plis*, *market* travel the world as they are; *insan*, *madad*, *pesa* are shared across a dozen languages each. Amadunia only wrote them down.
 
-**Why *madad* is not in a sentence here.** It is glossed "help; to help", a noun and a verb at once, and it is the only root in the dictionary that is. Until that is settled, *Mi mau madad* is two sentences at the same time — *I want help* and *I want to help* — so this lesson teaches the word and waits. See the open question in [grammar/verb-chains.md](../grammar/verb-chains.md).
+**Why *madad* is not in a sentence here.** It is glossed "help; to help", a noun and a verb at once. Until that is settled, *Mi mau madad* is two sentences at the same time — *I want help* and *I want to help* — so this lesson teaches the word and waits. See [the briefing](../grammar/proposal-two-jobs.md).
+
+This paragraph called *madad* **the only such root** until September 5, 2026. There are two, and the second is *rabota*, taught in the table above and used three times on this page — *Mi rabota sini*, *Yu rabota nali*, *Insan-insan rabota sasa*. The audit that produced "the only" read the dictionary's glosses and not the sentences, and [verb-chains.md](../grammar/verb-chains.md) recorded the correction on September 4 without this lesson hearing about it. *rabota* cannot be held back the way *madad* is: the course needs both of its readings already, which is exactly what makes its decision the expensive one.
 
 ## The three words that open every door
 
