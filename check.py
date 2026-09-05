@@ -2544,6 +2544,48 @@ for _p in sorted(glob.glob("lessons/lesson-*.md")):
           f"{os.path.basename(_p)}: says '{_mv.group(0)}' and its word table "
           f"teaches {_nv}")
 
+# ------------------------------- the two-jobs briefing counts rabota
+# The heading said "the decision costs eighteen sentences" and eighteen is not
+# any reading of the material: every occurrence gives 11 after a subject and 9
+# with a verb or a quantity in front, and every distinct sentence gives 10 and
+# 7. The page had taken its eleven from the first count and its seven from the
+# second and added them. Both conventions are named on the page now and both
+# are held here — a cost is places to rewrite, so the headline is occurrences.
+_RMOD = {"mau", "bisa", "lasim"}
+_rab_occ = [0, 0]                    # after a subject, something in front
+_rab_set = (set(), set())
+for _p in (sorted(glob.glob("lessons/lesson-*.md"))
+           + sorted(glob.glob("texts/*.md")) + ["phrasebook.md"]):
+    _rb = read(_p)
+    if _p.startswith("texts/") and "```" in _rb:
+        _rb = "".join(_rb.split("```")[1::2])
+    if "## New word" in _rb:
+        _h2, _r2 = _rb.split("## New word", 1)
+        _rb = _h2 + "\n" + "\n## ".join(_r2.split("\n## ")[1:])
+    for _line, _sent, _toks in amadunia_runs(_rb):
+        _base = [_t.split("-")[0] for _t in _toks]
+        for _i, _w in enumerate(_base):
+            if _w != "rabota": continue
+            _prev = _base[_i - 1] if _i else None
+            _k = 1 if (_prev in VERBS or _prev in _RMOD or _prev == "cok") else 0
+            _rab_occ[_k] += 1
+            _rab_set[_k].add(" ".join(_base))
+_twojobs = read("grammar/proposal-two-jobs.md")
+_TWENTY = {17: "seventeen", 18: "eighteen", 19: "nineteen", 20: "twenty",
+           21: "twenty-one", 22: "twenty-two"}
+check(f"the decision costs {_TWENTY.get(sum(_rab_occ), '?')} sentences" in _twojobs,
+      f"proposal-two-jobs.md's heading is stale; rabota stands in "
+      f"{sum(_rab_occ)} places in the material")
+check(f"**eleven places put" in _twojobs and _rab_occ[0] == 11
+      and f"**nine put a verb" in _twojobs and _rab_occ[1] == 9,
+      f"proposal-two-jobs.md's split is stale; {_rab_occ[0]} places put rabota "
+      f"after a subject and {_rab_occ[1]} put something in front")
+_ndist = (len(_rab_set[0]), len(_rab_set[1]))
+check(f"gives ten and seven, seventeen in all" in _twojobs
+      and _ndist == (10, 7) and sum(_ndist) == 17,
+      f"proposal-two-jobs.md's distinct-sentence figures are stale; the material "
+      f"gives {_ndist[0]} and {_ndist[1]}, {sum(_ndist)} in all")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one

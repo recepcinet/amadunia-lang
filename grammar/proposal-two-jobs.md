@@ -38,18 +38,30 @@ needs a new root and the language has none.
 | a verb | a command | writable | a noun for "help", if one is ever wanted |
 | a noun | a fragment | impossible | a verb for "to help" |
 
-## *rabota* — the decision costs eighteen sentences
+## *rabota* — the decision costs twenty sentences
 
 *rabota* is glossed "work", one noun, and is used both ways. Recounted inside
-the material — the lessons, the texts and the phrasebook, each sentence counted
-once — **eleven sentences put it straight after a subject** (*Mi rabota sini*,
-*Ta-ta rabota*, *Kita rabota cok*) and **seven put a verb or a quantity in
-front of it** (*Mi suru rabota*, *Kita finis rabota*, *Mi suda naiti rabota
-baru*). [verb-chains.md](verb-chains.md) reports thirteen and six over a wider
-scope that includes the grammar files; the figures differ by where the count is
+the material — the lessons, the texts and the phrasebook — **eleven places put
+it straight after a subject** (*Mi rabota sini*, *Ta-ta rabota*, *Kita rabota
+cok*) and **nine put a verb or a quantity in front of it** (*Mi suru rabota*,
+*Kita finis rabota*, *Mi suda naiti rabota baru*). Twenty in all, and the
+convention is places rather than sentences, because a cost is what would have
+to be rewritten and the same sentence printed twice is two rewrites. Counting
+each distinct sentence once instead gives ten and seven, seventeen in all;
+[`check.py`](../check.py) holds both figures.
+
+[verb-chains.md](verb-chains.md) reports thirteen and six over a wider scope
+that includes the grammar files; the figures differ by where the count is
 drawn, not by what the sentences say.
 
-The seven are exactly the ambiguous ones. *Ta suda lasim rabota* is "she had to
+**This heading said eighteen until September 5, 2026, and eighteen is not any
+reading of the material.** Every occurrence gives 11 and 9; every distinct
+sentence gives 10 and 7. The page had taken its eleven from the first count and
+its seven from the second and added them — which is how a number no method
+produces gets written down, and why the two conventions are now named rather
+than assumed.
+
+The nine are exactly the ambiguous ones. *Ta suda lasim rabota* is "she had to
 work" if *rabota* is a verb and "she had to have work" if it is a noun, and
 nothing on the page decides which.
 

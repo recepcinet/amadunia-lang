@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**183 guarantees** in **90 groups**, and every one of them is
+**186 guarantees** in **91 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -322,6 +322,11 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### a lesson heading counting its own verbs
 
 - …: says '…' and its word table teaches …
+### the two-jobs briefing counts rabota
+
+- proposal-two-jobs.md's heading is stale; rabota stands in … places in the material
+- proposal-two-jobs.md's split is stale; … places put rabota after a subject and … put something in front
+- proposal-two-jobs.md's distinct-sentence figures are stale; the material gives … and …, … in all
 ### the but briefing cites real pages
 
 - proposal-but.md says '… pages' but its evidence table has … rows
