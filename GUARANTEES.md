@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**176 guarantees** in **88 groups**, and every one of them is
+**177 guarantees** in **89 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -315,6 +315,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - grammar/README.md's demand row for '…' says …; … pages write the claim
 - grammar/README.md's demand table is not in descending order of demand, which is what it says it is for: …
 - …: says '…'; the demand table has … rows at zero
+### a lesson heading counting its own verbs
+
+- …: says '…' and its word table teaches …
 ### the but briefing cites real pages
 
 - proposal-but.md says '… pages' but its evidence table has … rows

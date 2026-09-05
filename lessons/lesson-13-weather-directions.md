@@ -56,7 +56,11 @@ But say **what** something is, and *es* comes back:
 | Dugu mi sundar. | My sibling is beautiful. |
 | Amadunia asan! | Amadunia is easy! |
 
-## Four new verbs
+## Five new verbs
+
+This heading said **four** until September 5, 2026, and the closing line named
+the same four — *kimbia*, to run, was taught in the table above, shown in the
+last row below, and left out of both counts.
 
 | | |
 |---|---|
@@ -103,6 +107,6 @@ Nothing new. The particle goes before the verb, and the verb never changes:
 
 ## What you can already say
 
-Thirteen lessons, **117 roots**. Weather, directions, and four verbs that carry a lot: open, understand, learn, wait. You can now say you are learning the language, in the language.
+Thirteen lessons, **117 roots**. Weather, directions, and five verbs that carry a lot: open, understand, learn, wait, run. You can now say you are learning the language, in the language.
 
 *not* and *and* are covered in [Lesson 14](lesson-14-not-and.md); *this*, *that* and place marking in [Lesson 15](lesson-15-pointing-placing.md).

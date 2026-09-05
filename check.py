@@ -2494,6 +2494,25 @@ if _drows:
                   f"{os.path.basename(_p3)}: says '{_m3.group(0)}'; the demand table "
                   f"has {_zeros} rows at zero")
 
+# ------------------------------------ a lesson heading counting its own verbs
+# Lesson 13's "## Four new verbs" stood over a table teaching five — *kimbia*,
+# to run, was in the word list, shown in the section's last row, and left out
+# of the heading and of the closing line, which named the other four. A heading
+# is the line nobody rereads; this is the second one this week.
+# Only "N new verbs" is counted. "Two animals" stands over three sentences
+# about two animals and "Fourteen verbs" over thirteen rows, one of which
+# carries two — those headings count the thing, not the rows, and are right.
+for _p in sorted(glob.glob("lessons/lesson-*.md")):
+    _lb = read(_p)
+    _mv = re.search(r"^## ([A-Za-z]+) new verbs$", _lb, re.M)
+    if not _mv or "## New word" not in _lb: continue
+    _vsec = _lb.split("## New word")[1].split("\n## ")[0]
+    _nv = len([_c.strip() for _l in _vsec.splitlines() if _l.startswith("|")
+               for _c in _l.split("|")[1:-1] if _c.strip() in VERBS])
+    check(WORD_NUM.get(_mv.group(1).lower()) == _nv,
+          f"{os.path.basename(_p)}: says '{_mv.group(0)}' and its word table "
+          f"teaches {_nv}")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one
