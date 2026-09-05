@@ -116,7 +116,7 @@ The inclusive / exclusive split (*kita* / *mi-mi*) is shared by Indonesian, Taga
 |---|---|---|
 | kami | we (exclusive) | not needed — *mi-mi* already fills the slot with no new word |
 | hum | they | is "we" in Hindi/Urdu — a pronoun with the opposite reference for 600M people |
-| nos | we | minimal pair with *no* |
+| nos | we | three letters, where the space is closed at 49 roots; it is a near miss for *no* rather than a minimal pair, which needs equal length |
 | oni, mereka, kalian, antum | they / you all | each adds a word only one family recognises, to do a job the plural rule already does |
 | a separate "it" | it | would reintroduce a human / non-human distinction |
 | a formal "you" | you | politeness levels are an exception generator |

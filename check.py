@@ -2853,6 +2853,23 @@ for path in PROSE:
                   f"{os.path.basename(path)}: '{_a} {_b2}' — two degree words in one "
                   f"slot, which comparison.md records as not granted: {sent}")
 
+# ------------------------ a rejection that cites a minimal pair must be one
+# The rule pages reject candidates and record why, and those reasons are the
+# repository's evidence. Four cited a minimal pair that is not one, because the
+# two words are different lengths: *de* against *des*, *nos* against *no*, *ka*
+# against *kan*, *che* against *ca*. Every one of the four is genuinely
+# rejected — by the four-letter minimum, or by a pair the page did not name —
+# so the verdicts held and the reasons did not.
+for _p in sorted(glob.glob("grammar/*.md")):
+    for _m in re.finditer(r"^\| ([a-z][a-z-]*)[^|]*\|[^|]*\| minimal pair(?: risk)? "
+                          r"with ([^|]+)\|$", read(_p), re.M):
+        _cand = _m.group(1).strip()
+        for _against in re.findall(r"\*([a-z-]+)\*", _m.group(2)):
+            check(len(_cand) == len(_against)
+                  and sum(_x != _y for _x, _y in zip(_cand, _against)) == 1,
+                  f"{os.path.basename(_p)}: rejects *{_cand}* as a minimal pair with "
+                  f"*{_against}*, and they differ in length or by more than one sound")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one

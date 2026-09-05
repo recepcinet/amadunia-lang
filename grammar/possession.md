@@ -69,7 +69,7 @@ It also matches what Amadunia already does with adjectives: modifiers follow the
 
 ## Why this and not the alternatives
 
-**Why no marker.** Every marker candidate with real reach collides with a word already settled: Chinese *de* 的 is a minimal pair with *des* (10); Japanese *no* の is already "no"; Swahili *ya* is already "yes". That three independent candidates all collide is a sign the language does not want a marker here — and juxtaposition needs none.
+**Why no marker.** Every marker candidate with real reach collides with a word already settled: Chinese *de* 的 is a minimal pair with *du* (2) and *ke* (what); Japanese *no* の is already "no"; Swahili *ya* is already "yes". That three independent candidates all collide is a sign the language does not want a marker here — and juxtaposition needs none.
 
 **Why owner before adjective.** The owner is the most identifying information ("whose house"); adjectives describe. Arabic and Indonesian, the two largest noun-first models, both bind the owner tighter to the noun than the adjective.
 
@@ -79,7 +79,7 @@ It also matches what Amadunia already does with adjectives: modifiers follow the
 
 | Candidate | Source | Reason rejected |
 |---|---|---|
-| de (particle) | Chinese *de* 的, Romance *de* | minimal pair with *des* (10) |
+| de (particle) | Chinese *de* 的, Romance *de* | minimal pair with *du* and *ke* — and two letters, where the space is closed |
 | no (particle) | Japanese *no* の | already "no" |
 | ya (particle) | Swahili *-a* class agreement | already "yes" |
 | -im / -in (suffix) | Turkish, Hungarian, Arabic | inflection on the noun — against the spirit of rule 3 |

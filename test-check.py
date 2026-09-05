@@ -564,6 +564,11 @@ MUTATIONS = [
      "| Ta rabota **paling**. | She works the most. |",
      "| Ta rabota **paling** cok. | She works the most. |",
      "two degree words in one slot"),
+    # Four rejections cited a pair of different lengths, which is not a pair.
+    ("a rejection citing a pair that is not one", "grammar/possession.md",
+     "minimal pair with *du* and *ke* — and two letters",
+     "minimal pair with *des* — and two letters",
+     "rejects *de* as a minimal pair with *des*"),
     ("consonant pair missing from phonology.md", "grammar/phonology.md",
      "- `fr` \u2014 *fruta* (fruit), word-initial like *tr*\n", "",
      "does not list the consonant pair 'fr'"),

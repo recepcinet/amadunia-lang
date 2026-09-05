@@ -65,7 +65,7 @@ Six families in seven words. Each was chosen to be recognised on sight by the la
 | Candidate | Source | Collision |
 |---|---|---|
 | ma | Chinese *ma* 吗 | crowds *mi, mau, mal, mama* |
-| ka | Japanese *ka* か, Korean *-kka* | minimal pair with *kan* (to see) |
+| ka | Japanese *ka* か, Korean *-kka* | minimal pair with *ba*, *ca*, *ke*, *ta* and *ya* — five at once |
 | mi | Turkish *mi* | is already "I" |
 | ne | Latin *-ne*, Japanese *ne* | minimal pair with *no* |
 | mai | Thai *mái* | minimal pair with *mau* (to want) |
@@ -84,7 +84,7 @@ Ten candidates from ten families, ten collisions. As with possession, the langua
 | Candidate | Meaning | Reason rejected |
 |---|---|---|
 | ne (Turkish) | what | minimal pair with *no* |
-| che (Persian) | what | minimal pair with *ca* (tea) |
+| che (Persian) | what | not spellable: *c* is already the *ch* sound and the alphabet has no digraph. Written legally as *ce* it is a minimal pair with *ca* and *ke* |
 | mana (Indonesian) | where | minimal pair with *mama* |
 | do (Japanese) | how | minimal pair with *du* (2) |
 | kak (Russian) | how | minimal pair with *kan* |
