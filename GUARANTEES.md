@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**223 guarantees** in **108 groups**, and every one of them is
+**227 guarantees** in **109 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -430,6 +430,12 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - stress.md: the dictionary has … roots of three syllables
 - stress.md: the two sets of … share … roots — … — and the page must name them
 - stress.md: … of the moved roots have two syllables, not what the page says
+### proposal-sentence-types.md's counts
+
+- proposal-sentence-types.md: text 8 opens … sentences with yu and a verb
+- proposal-sentence-types.md prints … example commands and does not say so
+- proposal-sentence-types.md: the block prints a command missing from its own list of eight: …
+- proposal-sentence-types.md: … of the eight are absent from the block — …
 ### proposal-stress.md's own lists
 
 - proposal-stress.md no longer lists the three-syllable roots

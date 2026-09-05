@@ -10,13 +10,29 @@ and not one of the sentences counted below needed rewriting once they were.
 
 ## What is actually in use
 
-**The imperative — 17 sentences.** Seven across Lessons 13, 16 and 19 and
-the phrasebook, counted when this briefing was written; ten more in
+**The imperative.** This read "17 sentences" until September 5, 2026, and the
+figure added two unlike things. Seven were commands across Lessons 13, 16 and
+19 and [the phrasebook](../phrasebook.md); the other ten were in
 [text 8](../texts/text-8-kaifa-suru-ca.md), a recipe written deliberately
-without one to find out what that costs. That text is the sharpest evidence
-available: every step of it says *yu* where the rest of the world says
-nothing. The original seven, from the lessons and
-[the phrasebook](../phrasebook.md):
+*without* an imperative to find out what that costs — every step of it says
+*yu* where the rest of the world says nothing. Those ten are the sharpest
+evidence on the page and they are not the imperative in use. They are the
+places it was needed and unavailable, which is the opposite claim, printed
+under a heading that says **what is actually in use**.
+
+Recounted, the two halves are these. Text 8 has **12** sentences that open with
+*yu* and a verb, not ten. And over the four files the seven was drawn from, as
+they stood on the day this page was written, a subject-less verb-initial
+sentence occurs **10 times** and says **8 different things** — *Anda yamin,
+Anda tarik ini, Buka ain yu, Funga libro aur otur, Go kiri, Go yamin, Lai kan
+ta, Sema tena*. Seven is neither.
+
+**And the block below prints five, under a sentence that called them seven.**
+It has printed five since the day the page was written. The two that are
+missing cannot be recovered: three of the eight above — *Anda yamin*, *Funga
+libro aur otur*, *Go kiri* — are absent from it, and nothing says which two of
+those three were meant. Recorded rather than repaired, and the sentence says
+five now, because five is what is there:
 
 ```
 Anda tarik ini.      Walk this road.

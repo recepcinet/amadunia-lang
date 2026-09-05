@@ -3376,6 +3376,41 @@ if _moves == _syl[3]:
           f"stress.md: {len(_moveset - _3syl)} of the moved roots have two "
           f"syllables, not what the page says")
 
+# --------------------------------------- proposal-sentence-types.md's counts
+# The briefing headlined "the imperative — 17 sentences", which added seven
+# commands in use to ten sentences in text 8 that avoid one; and under the
+# sentence calling them seven it printed five. Both halves are counted now.
+_pst = read("grammar/proposal-sentence-types.md")
+_t8 = read("texts/text-8-kaifa-suru-ca.md")
+_t8 = "".join(_t8.split("```")[1::2]) if "```" in _t8 else _t8
+_yu = sum(1 for _l, _s, _t in amadunia_runs(_t8)
+          if _t[0] == "yu" and len(_t) > 1 and _t[1].split("-")[0] in VERBS)
+check(f"Text 8 has **{_yu}** sentences that open with" in _pst.replace("\n", " "),
+      f"proposal-sentence-types.md: text 8 opens {_yu} sentences with yu and "
+      f"a verb")
+
+# The block of examples and the sentence introducing it must agree, which they
+# did not from the day the page was written.
+_blk = [_l for _l in _pst.split("```")[1].splitlines() if _l.strip()]
+check(f"the sentence says\n{_SPELLN[len(_blk)]} now" in _pst,
+      f"proposal-sentence-types.md prints {len(_blk)} example commands and "
+      f"does not say so")
+
+# The three it says are missing from the block must actually be missing from
+# it, and everything in the block must be one of the eight it lists.
+_named8 = [_s.strip() for _s in _pst.split("**8 different things** — *", 1)[1]
+           .split("*", 1)[0].replace("\n", " ").split(",")]
+_inblk = [re.split(r"[.!,]", _l)[0].strip() for _l in _blk]
+check(all(_s in _named8 for _s in _inblk),
+      f"proposal-sentence-types.md: the block prints a command missing from "
+      f"its own list of eight: {[s for s in _inblk if s not in _named8]}")
+_absent = [_s for _s in _named8 if _s not in _inblk]
+check(all(f"*{_s}*" in _pst.replace("\n", " ") for _s in _absent)
+      and f"three of the eight above" in _pst.replace("\n", " ")
+      and len(_absent) == 3,
+      f"proposal-sentence-types.md: {len(_absent)} of the eight are absent "
+      f"from the block — {', '.join(_absent)}")
+
 # --------------------------------------------- proposal-stress.md's own lists
 # The briefing that establishes what a syllable is then lists roots by
 # syllable count, and two of the sixteen it named as three-syllable had two —
