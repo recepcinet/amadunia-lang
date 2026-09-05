@@ -20,9 +20,9 @@ texts, and no page has ever said why:
 | farasi | Farasi kuat. — The horse is strong. | Farasi lebi kabir dari kanis. — A horse is bigger than a dog. |
 | kanis | Kanis kimbia in hutan. — The dog runs in the forest. | Kanis keci lai una ta-ta. — A small dog comes with them. |
 | kalima | Kalima-kalima lai dari dunia. — The words come from the world. | Kalima no sakil in lingua ini. — A word is not heavy in this language. |
-| ponte | Ponte in sungai. — The bridge is over the river. | — Ponte? — A bridge? |
+| ponte | Ponte in sungai. — The bridge is at the river. | — Ponte? — A bridge? |
 | rafiki | Rafiki-rafiki suda lai. — The friends came. | Rafiki eski hao. — An old friend is good. |
-| insan | Insan-insan sini hao. — The people here are good. | Insan hao. — A good person. |
+| insan | Insan-insan hao sini. — The people are good here. | Insan hao. — A good person. |
 
 A learner reading those pages meets the same noun under two English words and
 is told nothing. That is what this page is for.

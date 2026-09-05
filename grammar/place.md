@@ -122,6 +122,34 @@ Nearly every short candidate collided:
 
 ## Open questions
 
+- **A place word cannot attach to a noun, and cannot take one.** *sini, situ,
+  upar, sub, kiri, yamin* are whole place expressions and go last, so there is
+  no way to say **the people here**, **the soup there**, or **below the house**.
+  Four sentences had been writing those anyway, and this rule's own page did
+  not notice because the sentences are made entirely of real words:
+
+  | Where | Was | Wanted | Now |
+  |---|---|---|---|
+  | [definiteness.md](definiteness.md) | *Insan-insan sini hao* | the people **here** are good | *Insan-insan hao sini* — the people are good here |
+  | [text 7](../texts/text-7-surat-por-mama.md) | *Insan-insan sini hao* | the same | the same |
+  | [text 4](../texts/text-4-in-madina-baru.md) | *Corba situ paling hao in madina* | the soup **there** is the best | *Corba paling hao in madina* |
+  | [text 21](../texts/text-21-uan-umur.md) | *Es bage sub dom* | a garden **below the house** | *Es bage sub* — a garden below |
+
+  The first three put a place word in front of the predicate, where the rule
+  above says place goes last. The fourth is the other half of the same gap: it
+  used *sub* as a preposition, and the language has three prepositions —
+  *in*, *dari*, *por* — none of which means above or below.
+
+  **The gloss moved with it.** *Ponte in sungai* was translated "the bridge is
+  **over** the river" on this rule's own illustration and in Lesson 24. *in* is
+  at or in; over has no word. Both now say "at the river".
+
+  Found September 5, 2026 by counting every adjacent pair of word classes in
+  the repository and reading the rare ones. Nothing in the language was
+  invented to close the gap.
+
+
+
 - ~~Existence~~ — settled in [copula.md](copula.md) on September 3, 2026: *es* at the front of a sentence, with no subject, means "there is".
 - **Does a time expression take *in*?** The rule above says place first, then
   time, and stops there — it never says whether "when" carries a preposition.

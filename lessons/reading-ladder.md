@@ -20,8 +20,8 @@ counted with repeats, against the words the lessons have taught by that point.
 | 07 | 50% |
 | 08 | 55% |
 | 09 | 55% |
-| 10 | 58% |
-| 11 | 58% |
+| 10 | 57% |
+| 11 | 57% |
 | 12 | 61% |
 | 13 | 64% |
 | 14 | 65% |

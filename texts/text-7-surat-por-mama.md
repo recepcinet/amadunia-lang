@@ -20,7 +20,7 @@ Mi in madina baru sasa. Dom mi keci aur safi.
 Es pencere kabir in kamra mi.
 Mi lihat asman dari pencere.
 
-Insan-insan sini hao. Mi punya du rafiki baru.
+Insan-insan hao sini. Mi punya du rafiki baru.
 Ta-ta studi in skola una mi.
 
 Mi ingat dom kita. Mi ingat ca yu. Mi ingat golos papa.
@@ -47,7 +47,7 @@ Anak yu
 | Dom mi keci aur safi. | My house is small and clean. |
 | Es pencere kabir in kamra mi. | There is a big window in my room. |
 | Mi lihat asman dari pencere. | I look at the sky from the window. |
-| Insan-insan sini hao. | The people here are good. |
+| Insan-insan hao sini. | The people are good here. |
 | Mi punya du rafiki baru. | I have two new friends. |
 | Ta-ta studi in skola una mi. | They study at school with me. |
 | Mi ingat dom kita. | I remember our house. |

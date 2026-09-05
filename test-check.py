@@ -120,9 +120,19 @@ _NADJ_OFF = re.sub(r"\d+", lambda m: str(int(m.group(0)) + 2), _NADJ)
 
 _LIVE = int(re.search(r"## Open questions — (\d+) of them",
                       io.open("grammar/README.md", encoding="utf-8").read()).group(1))
-_WORDS = {25: "Twenty-five", 26: "Twenty-six", 27: "Twenty-seven", 28: "Twenty-eight",
-          29: "Twenty-nine", 30: "Thirty", 31: "Thirty-one", 32: "Thirty-two",
-          33: "Thirty-three", 34: "Thirty-four", 35: "Thirty-five"}
+# This was a hand-written dict that stopped at thirty-five, and the day the
+# count reached thirty-six the harness died on a KeyError instead of reporting
+# anything — a crash where a report belongs, in the file whose whole job is to
+# refuse to report a pass it has not seen. It is derived now.
+def _WORD(n):
+    _tens = {2: "Twenty", 3: "Thirty", 4: "Forty", 5: "Fifty", 6: "Sixty",
+             7: "Seventy", 8: "Eighty", 9: "Ninety"}
+    _ones = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+    if not 20 <= n <= 99: raise ValueError(f"no spelling for {n}")
+    return _tens[n // 10] + (f"-{_ones[n % 10]}" if n % 10 else "")
+class _Words(dict):
+    def __getitem__(self, n): return _WORD(n)
+_WORDS = _Words()
 
 MUTATIONS = [
     ("letter outside the alphabet", "dictionary/dictionary.md",
@@ -290,6 +300,15 @@ MUTATIONS = [
     ("a number standing as a predicate after a pronoun", "texts/text-19-kamra-mi.md",
      "Kamra keci. Kita sini.", "Kamra keci. Kita tri sini.",
      "a noun predicate needs es before it"),
+    # A place word in front of the predicate: "the people HERE are good".
+    ("a place word not last in its clause", "grammar/definiteness.md",
+     "Insan-insan hao sini. \u2014 The people are good here.",
+     "Insan-insan sini hao. \u2014 The people here are good.",
+     "place goes last, and a place word takes no noun after it"),
+    # and the other half: a place word used as a preposition.
+    ("a place word taking a noun", "texts/text-21-uan-umur.md",
+     "Es bage sub.", "Es bage sub dom.",
+     "place goes last, and a place word takes no noun after it"),
     ("consonant pair missing from phonology.md", "grammar/phonology.md",
      "- `fr` \u2014 *fruta* (fruit), word-initial like *tr*\n", "",
      "does not list the consonant pair 'fr'"),

@@ -16,7 +16,7 @@ Written at 300 roots, with no grammar beyond Lesson 26.
 
 ```
 Anak lai in dom keci. Mama senang. Papa senang.
-Dom in tarik keci. Es bage sub dom.
+Dom in tarik keci. Es bage sub.
 Anak kula, lala, kanta.
 Mama sema kalima. Anak dengar.
 Papa katab nama anak in libro.
@@ -97,7 +97,7 @@ Anak keci sema nama tena.
 | Anak lai in dom keci. | A child comes into a small house. |
 | Mama senang. Papa senang. | The mother is happy. The father is happy. |
 | Dom in tarik keci. | The house is on a small road. |
-| Es bage sub dom. | There is a garden below the house. |
+| Es bage sub. | There is a garden below. |
 | Anak kula, lala, kanta. | The child eats, sleeps, sings. |
 | Mama sema kalima. Anak dengar. | The mother says words. The child listens. |
 | Papa katab nama anak in libro. | The father writes the child's name in a book. |

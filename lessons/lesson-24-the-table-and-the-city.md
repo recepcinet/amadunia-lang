@@ -84,7 +84,7 @@ and this table was not trimmed, so for a day the word was new in two places.
 | Es banka in madina ini? | Is there a bank in this city? |
 | Hospital in tarik ini. | The hospital is on this road. |
 | Mi kula in restoran. | I eat at a restaurant. |
-| Ponte in sungai. | The bridge is over the river. |
+| Ponte in sungai. | The bridge is at the river. |
 | Tempat ini hao. | This place is good. |
 | Negara mi kabir. | My country is big. |
 | Nasab mi in madina itu. | My relatives are in that city. |

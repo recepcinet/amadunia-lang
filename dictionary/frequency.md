@@ -3,7 +3,7 @@
 Generated from the material a learner reads — the twenty-six lessons, the
 twenty texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **5771 words of running Amadunia**, and every one of the 300 roots appears
+it. **5769 words of running Amadunia**, and every one of the 300 roots appears
 at least once.
 
 [`check.py`](../check.py) regenerates this page and fails if it disagrees, so

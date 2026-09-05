@@ -2004,6 +2004,35 @@ for _p in PROSE:
               f"{os.path.basename(_p)}: '{_am}' denies something and its "
               f"translation does not: {_en[:70]}")
 
+# ---------------------------------------------- a place word must end its clause
+# place.md: "sini, situ, sasa, kab, porke, kaifa all go last", and the place
+# words are whole expressions that take no noun. Four sentences broke it and
+# every word in each of them exists, so nothing was looking: three put a place
+# word in front of the predicate to mean "the people HERE", "the soup THERE",
+# and one used sub as a preposition, "below the house". The language has three
+# prepositions and none of them means above or below.
+# A place word may be followed by more place — *upar in pahar*, above on the
+# mountain, is one place expression in two words — and a conjunction or a
+# subordinator opens a new clause, where the count starts again.
+_PLACEW = {"sini", "situ", "upar", "sub", "kiri", "yamin"}
+_CLAUSE_END = {"aur", "o", "porke", "kab", "agar"}
+_MORE_PLACE = _PLACEW | GROUP["Prepositions"] | {"sasa"}
+for path in PROSE:
+    body = read(path)
+    if path.startswith("texts/") and "```" in body:
+        body = "".join(body.split("```")[1::2])
+    for line, sent, toks in amadunia_runs(body):
+        if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗", "rejected")):
+            continue
+        base = [t.split("-")[0] for t in toks]
+        for i, w in enumerate(base[:-1]):
+            if w not in _PLACEW: continue
+            nxt = base[i + 1]
+            if nxt in _CLAUSE_END or nxt in _MORE_PLACE: continue
+            check(False,
+                  f"{os.path.basename(path)}: '{w} {nxt}' — place goes last, and a "
+                  f"place word takes no noun after it: {sent}")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one

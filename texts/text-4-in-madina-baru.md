@@ -22,7 +22,7 @@ Written at 300 roots, with no grammar beyond Lesson 23.
 — Ponte?
 — Ya. Ponte in sungai. Yu no bisa unut ta — ta merah.
 — Mersi! Aur es restoran in tempat ini?
-— Es. Restoran keci. Corba situ paling hao in madina.
+— Es. Restoran keci. Corba paling hao in madina.
 — Yu sema benar?
 — Mi sema benar daima. Mi es tacir. Mi no bisa sema yalan.
 — Ok! Mi go sasa. Aksam hao!
@@ -46,7 +46,7 @@ Written at 300 roots, with no grammar beyond Lesson 23.
 | — Ponte? | A bridge? |
 | — Ya. Ponte in sungai. Yu no bisa unut ta — ta merah. | Yes. The bridge on the river. You cannot forget it — it is red. |
 | — Mersi! Aur es restoran in tempat ini? | Thanks! And is there a restaurant in this place? |
-| — Es. Restoran keci. Corba situ paling hao in madina. | There is. A small restaurant. The soup there is the best in the city. |
+| — Es. Restoran keci. Corba paling hao in madina. | There is. A small restaurant. The soup is the best in the city. |
 | — Yu sema benar? | Are you telling the truth? |
 | — Mi sema benar daima. Mi es tacir. Mi no bisa sema yalan. | I always tell the truth. I am a merchant. I cannot tell lies. |
 | — Ok! Mi go sasa. Aksam hao! | Ok! I'm going now. Good evening! |
@@ -90,4 +90,4 @@ Two of these are new, and one of them is uncomfortable.
 
 ## Roots used
 
-63 of 300.
+62 of 300.
