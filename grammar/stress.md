@@ -139,8 +139,27 @@ wrong place.
 
 That is the real price of the decision, it is not zero, and nothing makes it
 smaller: any single rule moves somebody's beat. It is paid to the smaller side —
-87 against 34, nearly three to one — and what is lost is recognition of rhythm,
-never meaning, because meaning never rode on stress here in the first place.
+87 against 34, two and a half to one — and what is lost is recognition of
+rhythm, never meaning, because meaning never rode on stress here in the first
+place.
+
+The ratio read *nearly three to one* until September 5, 2026. Eighty-seven to
+thirty-four is 2.56, which rounds to three only if you round it once; and the
+rounding went the way that made the price look smaller, on the one page whose
+stated job is to say plainly who pays.
+
+**Two thirty-fours, and they are not the same thirty-four.** This page says a
+learner "can only go wrong on the 34 three-syllable roots", and then that 34
+roots have their beat moved. The two sets share four words — *anahtar*,
+*pencere*, *restoran*, *telefon* — and nothing else. **Thirty of the roots whose
+beat moves have two syllables**, which is to say they are among the roots the
+paragraph above has just promised an initial-stress learner cannot get wrong:
+that learner is right about where the beat falls and a Turkish speaker is wrong
+about the same word, because the two are being told different things. Both
+counts are correct and the collision is chance — 34 out of 300 twice over — but
+one page printing one number for two sets reads as one set. Found on September
+5, 2026 by listing the members instead of comparing the totals, which is the
+only way it could have been found.
 
 (French is counted as final-stress by simplification: it stresses the phrase
 rather than the word, so *mersi* has no fixed word beat to move.)

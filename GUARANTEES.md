@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**207 guarantees** in **106 groups**, and every one of them is
+**212 guarantees** in **106 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -425,6 +425,11 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - …
 - balance.md's largest family is stale; recount gives … at …%
 - stress.md's cost figures are stale; recount gives … keeping the beat and … losing it
+- stress.md's share figure is stale; … of … is … per cent
+- stress.md's ratio is stale; … to … is …
+- stress.md: the dictionary has … roots of three syllables
+- stress.md: the two sets of … share … roots — … — and the page must name them
+- stress.md: … of the moved roots have two syllables, not what the page says
 ### the A2 briefing's theme table
 
 - …

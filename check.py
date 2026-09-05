@@ -759,6 +759,12 @@ WORD_NUM = {w: i for i, w in enumerate(
     "zero one two three four five six seven eight nine ten eleven twelve "
     "thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty".split())}
 _SPELLN = {_n: _w for _w, _n in WORD_NUM.items()}
+# WORD_NUM stops at twenty because that is as far as the prose it parses
+# counts; spelling out a figure needs further. A missing entry raised
+# KeyError rather than reporting, which is a check that cannot fail.
+_SPELLN.update({_n: _w for _w, _n in zip(
+    "thirty forty fifty sixty seventy eighty ninety".split(),
+    range(30, 100, 10))})
 _TENS = "twenty thirty forty fifty sixty seventy eighty ninety".split()
 _UNITS = "one two three four five six seven eight nine".split()
 for _i, _t in enumerate(_TENS):
@@ -3325,18 +3331,50 @@ _FINAL  = {"Turkish", "Azeri", "Turkmen", "Uzbek", "Kazakh", "Persian", "French"
 _PENULT = {"Indonesian", "Malay", "Swahili", "Polish", "Spanish", "Italian",
            "Portuguese", "Tagalog", "Javanese"}
 _stressmd = read("grammar/stress.md")
-_keeps = _moves = 0
+_keepset, _moveset = set(), set()
 for w in words:
     if len(re.findall(r"[aeiou]+", w)) < 2: continue
     _hits = [(source[w].find(k), k) for k in FAMILY if re.search(r"\b" + k + r"\b", source[w])]
     if not _hits: continue
     _first = min(_hits)[1]
-    if _first in _PENULT: _keeps += 1
-    elif _first in _FINAL: _moves += 1
+    if _first in _PENULT: _keepset.add(w)
+    elif _first in _FINAL: _moveset.add(w)
+_keeps, _moves = len(_keepset), len(_moveset)
 check(f"| **{_keeps}**, and they keep their beat |" in _stressmd
       and f"| **{_moves}**, and their beat moves |" in _stressmd,
       f"stress.md's cost figures are stale; recount gives {_keeps} keeping "
       f"the beat and {_moves} losing it")
+
+# The share of the dictionary a final-stress speaker has to re-stress, and the
+# ratio between the two sides. The ratio said "nearly three to one" for 2.56,
+# rounded once in the direction that made the price look smaller.
+_flat = _stressmd.replace("\n", " ")
+check(f"{_SPELLN[round(100 * _moves / len(words))]} per cent of the dictionary"
+      in _flat,
+      f"stress.md's share figure is stale; {_moves} of {len(words)} is "
+      f"{round(100 * _moves / len(words))} per cent")
+check(f"{_keeps} against {_moves}" in _flat
+      and f"is {round(_keeps / _moves, 2)}," in _flat,
+      f"stress.md's ratio is stale; {_keeps} to {_moves} is "
+      f"{round(_keeps / _moves, 2)}")
+
+# Two different sets on this page both number 34, and the page printed the
+# figure twice before it said so. The overlap is what makes them two sets, so
+# the overlap is what is checked: the shared roots by name, and how many of the
+# moved roots are the two-syllable ones the page has just called safe.
+_3syl = {w for w in words if len(re.findall(r"[aeiou]+", w)) == 3}
+check(f"go wrong on the {_syl[3]} three-syllable roots" in _flat,
+      f"stress.md: the dictionary has {_syl[3]} roots of three syllables")
+if _moves == _syl[3]:
+    _both = sorted(_moveset & _3syl)
+    check(all(f"*{w}*" in _flat for w in _both)
+          and f"share {_SPELLN[len(_both)]} words" in _flat,
+          f"stress.md: the two sets of {_moves} share {len(_both)} roots — "
+          f"{', '.join(_both)} — and the page must name them")
+    check(f"**{_SPELLN[len(_moveset - _3syl)].capitalize()} of the roots whose "
+          f"beat moves have two syllables**" in _flat,
+          f"stress.md: {len(_moveset - _3syl)} of the moved roots have two "
+          f"syllables, not what the page says")
 
 # --------------------------------------------- the A2 briefing's theme table
 # proposal-a2.md counts the dictionary by thematic group to show that the thin
