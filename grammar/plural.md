@@ -73,9 +73,20 @@ Keeping the noun single after a numeral is itself shared by Turkish, Hungarian, 
   covered**: the existential negation settled in
   [copula.md](copula.md) gives *No es ca*, there is no tea, which is what "none"
   usually means in a sentence — so the question is narrower than its name, and
-  is really about *all* and *some*. Nothing written so far has tried to say
-  either, which is the whole of the evidence for it. Recorded here, where the
-  decision would live, on September 3, 2026.
+  is really about *all*, *some* and *every*. Recorded here, where the decision
+  would live, on September 3, 2026.
+
+  **One page has since tried.** This entry read "nothing written so far has
+  tried to say either" until September 5, 2026, and
+  [text 19](../texts/text-19-kamra-mi.md) had already recorded the want — *Mi
+  beri akua por flor in pagi*, which says "in the morning" where somebody
+  waters plants **every** morning — and cited *this page* while doing it. The
+  page it pointed at said no page had pointed.
+
+  It is also the same want as the last question on this list: *din-din* for
+  "every day" is the distributive sense of doubling, and if doubling carries
+  it, a doubled *pagi* is already the answer to text 19 and *every* needs no
+  word at all. Two questions, one sentence, and neither knew about the other.
 
 - ~~Pronouns~~ — settled: *mi-mi*, *yu-yu*, *ta-ta* are confirmed; see [pronouns.md](pronouns.md).
 - Whether doubling may also carry the distributive sense some source languages give it (*din-din* = "every day"), or stays strictly plural.

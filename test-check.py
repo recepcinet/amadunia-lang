@@ -545,6 +545,11 @@ MUTATIONS = [
      "This sentence fills all nine slots of the order at once:",
      "Every rule the language has is in this sentence:",
      "nine of the 21 rules are in it"),
+    # Outside the withdrawal quotation, so it reads as a live claim again.
+    ("a rule page saying nothing has asked for it", "grammar/plural.md",
+     "is really about *all*, *some* and *every*.",
+     "is really about *all* and *some*. Nothing written so far has tried.",
+     "plural.md says nothing has tried to say"),
     ("consonant pair missing from phonology.md", "grammar/phonology.md",
      "- `fr` \u2014 *fruta* (fruit), word-initial like *tr*\n", "",
      "does not list the consonant pair 'fr'"),

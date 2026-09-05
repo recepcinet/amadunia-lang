@@ -2782,6 +2782,21 @@ for _p in md():
               f"{len(_RULEFILES)} rules are in it, and no sentence can hold a "
               f"command and a question at once")
 
+# ------------------------- a rule page may not say nothing has asked for it
+# plural.md's open question said of *all* and *some* that "nothing written so
+# far has tried to say either, which is the whole of the evidence for it" —
+# while text 19 had recorded wanting *every* and had cited plural.md while
+# doing it. The page it pointed at said no page had pointed. The demand table
+# already counts those pages, so the two are tied together here.
+_every = sum(1 for _f in sorted(glob.glob("texts/*.md")) + ["phrasebook.md"]
+             if not _f.endswith("README.md")
+             and re.search(r"no word for \*every\*", read(_f), re.I))
+_plu = read("grammar/plural.md")
+for _m in re.finditer(r"[Nn]othing written so far has tried", _plu):
+    check(_every == 0 or _withdrawn(_plu.replace("\n", " "), _m.start()),
+          f"plural.md says nothing has tried to say *all* or *some*; {_every} page"
+          f"{'' if _every == 1 else 's'} record wanting *every*")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one
