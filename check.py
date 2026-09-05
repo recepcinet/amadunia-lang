@@ -2891,6 +2891,34 @@ for _p in md():
               f"{os.path.basename(_p)}: says *{_m.group(1)}* is one sound from "
               f"*{_m.group(2)}*; it is {_edit(_m.group(1), _m.group(2))}")
 
+# ---------------------------- how many nouns are glossed both ways
+# definiteness.md says the material has relied on having no articles from the
+# beginning, and counted the reliance: "Seven nouns are translated both ways".
+# Seven was the number of rows in its own table. Forty nouns are. The claim was
+# five times too small on the page whose whole argument it is.
+_the_g, _a_g = defaultdict(set), defaultdict(set)
+for _p in PROSE:
+    if _p.endswith("definiteness.md"): continue
+    if not (_p.startswith("lessons/") or _p.startswith("texts/")
+            or _p.startswith("grammar/")): continue
+    for _ln, _am, _en in glossed_lines(read(_p)):
+        if not _en: continue
+        _seen_w = {_x.split("-")[0] for _x in re.findall(r"[a-z-]+", _am.lower())}
+        for _w in _seen_w:
+            if _w not in NOUNS: continue
+            _gl = meaning[_w].split(",")[0].split(";")[0].strip().lower()
+            if not _gl or " " in _gl: continue
+            if re.search(r"\bthe " + re.escape(_gl) + r"s?\b", _en.lower()):
+                _the_g[_w].add(_p)
+            if re.search(r"\b(a|an) " + re.escape(_gl) + r"\b", _en.lower()):
+                _a_g[_w].add(_p)
+_bothways = len(set(_the_g) & set(_a_g))
+_defb = read("grammar/definiteness.md")
+_mdw = re.search(r"\*\*([A-Za-z-]+) nouns\*\* are translated both ways", _defb)
+check(_mdw and WORD_NUM.get(_mdw.group(1).lower()) == _bothways,
+      f"definiteness.md says {_mdw.group(1) if _mdw else 'nothing'} nouns are "
+      f"translated both ways; the material gives {_bothways}")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one

@@ -11,8 +11,8 @@ will be.
 
 ## The material has relied on this from the beginning
 
-Seven nouns are translated both ways in the lessons, the grammar files and the
-texts, and no page has ever said why:
+**Forty nouns** are translated both ways in the lessons, the grammar files and
+the texts, and no page has ever said why. Seven of them:
 
 | Root | Translated *the* | Translated *a* |
 |---|---|---|
@@ -26,6 +26,13 @@ texts, and no page has ever said why:
 
 A learner reading those pages meets the same noun under two English words and
 is told nothing. That is what this page is for.
+
+The count read **seven** until September 5, 2026 — the number of rows in the
+table, mistaken for the number in the corpus. Forty is the figure, and it makes
+the page's case rather than weakening it: the material has leaned on
+articlelessness five times harder than the page claimed.
+[`check.py`](../check.py) recounts it, and it counts a noun whose dictionary
+gloss is a single word and which some gloss renders "the X" and some "a X".
 
 ## Where the world's languages sit
 
