@@ -99,6 +99,17 @@ The split — a copula with nouns, none with adjectives — is the Chinese rule 
 
 ## Open questions
 
+- ~~**Can an adjective stand as a noun?**~~ — answered by the rule, not by a
+  decision: **no**, and the copula is why. An adjective predicate takes no *es*
+  and a noun predicate must have one, so the moment *genc* can be a noun,
+  *Ta genc* stops having one reading. [Text 21](../texts/text-21-uan-umur.md)
+  had opened seventeen sentences with *Genc* — the young one — for a day.
+  Every word in them existed, which is why five days of checks for invented
+  words saw nothing; the invention was a **shape**. The sentences say
+  *insan genc*, a noun with an adjective after it, which is what the language
+  actually has. Recorded here rather than as an open question because nothing
+  is open: allowing it would cost a settled rule.
+
 - **A noun with an adjective is now both a sentence and a phrase.** *Dom
   merah* is "the house is red" by this rule, and since
   [the fragment rule](sentence-types.md) of September 3, 2026 granted that any

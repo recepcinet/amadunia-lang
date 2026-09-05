@@ -3,7 +3,7 @@
 Generated from the material a learner reads — the twenty-six lessons, the
 twenty texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **5769 words of running Amadunia**, and every one of the 300 roots appears
+it. **5786 words of running Amadunia**, and every one of the 300 roots appears
 at least once.
 
 [`check.py`](../check.py) regenerates this page and fails if it disagrees, so
@@ -13,7 +13,7 @@ the numbers follow the corpus rather than the other way round.
 
 | | Share of all running words |
 |---|---|
-| first 10 | 32% |
+| first 10 | 31% |
 | first 25 | 50% |
 | first 50 | 65% |
 | first 100 | 81% |
@@ -40,7 +40,7 @@ cover half of everything.** They are the first twenty-five below.
 | 5 | *anak* | child | 132 | 2.3% |
 | 6 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 124 | 2.1% |
 | 7 | *ini* | this — after the noun, last in the phrase | 108 | 1.9% |
-| 8 | *dom* | house, home | 104 | 1.8% |
+| 8 | *dom* | house, home | 103 | 1.8% |
 | 9 | *lai* | to come | 103 | 1.8% |
 | 10 | *no* | no; **not** — before the predicate, see [grammar/negation.md](../grammar/negation.md) | 103 | 1.8% |
 | 11 | *go* | to go | 99 | 1.7% |
@@ -55,23 +55,23 @@ cover half of everything.** They are the first twenty-five below.
 | 20 | *rafiki* | friend | 61 | 1.1% |
 | 21 | *kabir* | big | 57 | 1.0% |
 | 22 | *keci* | small | 57 | 1.0% |
-| 23 | *punya* | to have | 51 | 0.9% |
-| 24 | *sol* | sun | 50 | 0.9% |
-| 25 | *saufa* | future marker (before the verb) | 49 | 0.8% |
-| 26 | *dari* | from | 45 | 0.8% |
-| 27 | *kan* | to see | 44 | 0.8% |
-| 28 | *libro* | book | 44 | 0.8% |
-| 29 | *pan* | bread, food | 43 | 0.7% |
-| 30 | *din* | day | 42 | 0.7% |
-| 31 | *market* | market, shop | 38 | 0.7% |
-| 32 | *tarik* | road, way | 38 | 0.7% |
-| 33 | *doktor* | doctor | 37 | 0.6% |
-| 34 | *sasa* | now | 37 | 0.6% |
-| 35 | *sini* | here | 37 | 0.6% |
-| 36 | *por* | to, for | 36 | 0.6% |
-| 37 | *una* | together; *una* + noun = with — see [grammar/place.md](../grammar/place.md) | 36 | 0.6% |
-| 38 | *akua* | water | 35 | 0.6% |
-| 39 | *insan* | person, human | 35 | 0.6% |
+| 23 | *insan* | person, human | 52 | 0.9% |
+| 24 | *punya* | to have | 51 | 0.9% |
+| 25 | *sol* | sun | 50 | 0.9% |
+| 26 | *saufa* | future marker (before the verb) | 49 | 0.8% |
+| 27 | *dari* | from | 45 | 0.8% |
+| 28 | *kan* | to see | 44 | 0.8% |
+| 29 | *libro* | book | 44 | 0.8% |
+| 30 | *pan* | bread, food | 43 | 0.7% |
+| 31 | *din* | day | 42 | 0.7% |
+| 32 | *market* | market, shop | 38 | 0.7% |
+| 33 | *tarik* | road, way | 38 | 0.7% |
+| 34 | *doktor* | doctor | 37 | 0.6% |
+| 35 | *sasa* | now | 37 | 0.6% |
+| 36 | *sini* | here | 37 | 0.6% |
+| 37 | *por* | to, for | 36 | 0.6% |
+| 38 | *una* | together; *una* + noun = with — see [grammar/place.md](../grammar/place.md) | 36 | 0.6% |
+| 39 | *akua* | water | 35 | 0.6% |
 | 40 | *skola* | school | 35 | 0.6% |
 
 ## Used exactly once

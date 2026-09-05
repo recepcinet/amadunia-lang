@@ -309,6 +309,17 @@ MUTATIONS = [
     ("a place word taking a noun", "texts/text-21-uan-umur.md",
      "Es bage sub.", "Es bage sub dom.",
      "place goes last, and a place word takes no noun after it"),
+    ("an adjective standing as a subject", "texts/text-21-uan-umur.md",
+     "Insan genc mau kan dunia.", "Genc mau kan dunia.",
+     "is an adjective standing as a subject"),
+    ("a text's word count gone stale", "texts/text-21-uan-umur.md",
+     "414 words,", "410 words,",
+     "words; its text has 414"),
+    # The count must belong to its own row: dom said 104 while the corpus had
+    # 103, and the check passed because 103 was on another word's row.
+    ("a frequency count on the wrong row", "dictionary/frequency.md",
+     "| 8 | *dom* | house, home | 103 |", "| 8 | *dom* | house, home | 104 |",
+     "top forty has drifted: dom"),
     ("consonant pair missing from phonology.md", "grammar/phonology.md",
      "- `fr` \u2014 *fruta* (fruit), word-initial like *tr*\n", "",
      "does not list the consonant pair 'fr'"),

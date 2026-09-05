@@ -12,19 +12,19 @@ counted with repeats, against the words the lessons have taught by that point.
 | After lesson | Share of the texts' words you know |
 |---|---|
 | 01 | 23% |
-| 02 | 34% |
+| 02 | 33% |
 | 03 | 46% |
 | 04 | 47% |
-| 05 | 48% |
+| 05 | 47% |
 | 06 | 49% |
 | 07 | 50% |
 | 08 | 55% |
 | 09 | 55% |
-| 10 | 57% |
-| 11 | 57% |
-| 12 | 61% |
+| 10 | 58% |
+| 11 | 58% |
+| 12 | 62% |
 | 13 | 64% |
-| 14 | 65% |
+| 14 | 66% |
 | 15 | 71% |
 | 16 | 76% |
 | 17 | 76% |

@@ -37,29 +37,29 @@ Rafiki otur dekat. Rafiki genc aur hayai.
 Kita kula pan una. Kita kimbia una.
 
 Tahun-tahun go. Anak genc sasa.
-Genc mau kan dunia.
-Genc sema: "Mi mau go madina kabir."
+Insan genc mau kan dunia.
+Insan genc sema: "Mi mau go madina kabir."
 Mama sedih. Papa sema: "Go."
 
-Genc ambil tren. Tren anda cok hora.
-Genc kan pahar, sungai, hutan aur bahari.
+Insan genc ambil tren. Tren anda cok hora.
+Insan genc kan pahar, sungai, hutan aur bahari.
 Madina kabir. Cok insan in tarik.
-Genc naiti kamra keci. Kamra kotor.
-Genc gasil kamra una sabun aur akua.
+Insan genc naiti kamra keci. Kamra kotor.
+Insan genc gasil kamra una sabun aur akua.
 
-Genc naiti rabota in market.
+Insan genc naiti rabota in market.
 Tacir beca fruta aur nyama.
-Genc ambil fruta. Genc beca fruta.
+Insan genc ambil fruta. Insan genc beca fruta.
 Insan-insan lai. Insan-insan kupi.
-Aksam lai. Genc funga market.
-Pesa keci. Genc kula pan aur corba.
-Genc lala. Genc punya mimpi.
+Aksam lai. Insan genc funga market.
+Pesa keci. Insan genc kula pan aur corba.
+Insan genc lala. Insan genc punya mimpi.
 
-Genc kan insan baru in market uan din.
+Insan genc kan insan baru in market uan din.
 Insan baru kupi legum aur telur.
-Genc sema: "Salam." Insan sema: "Salam."
+Insan genc sema: "Salam." Insan sema: "Salam."
 Ta-ta sema. Ta-ta kanta. Ta-ta anda in tarik.
-Genc sema: "Mi ama yu." Insan sema: "Mi ama yu."
+Insan genc sema: "Mi ama yu." Insan sema: "Mi ama yu."
 
 Ta-ta naiti dom keci in madina.
 Es pencere kabir in kamra.
@@ -73,7 +73,7 @@ Dom sukut. Ta-ta otur in bage.
 Ta-ta kan sol. Ta-ta ingat din-din eski.
 
 Insan sema: "Mi ingat yu in skola."
-Genc — no genc sasa — respon: "Mi ingat yu in market."
+Insan genc — no genc sasa — respon: "Mi ingat yu in market."
 Ta-ta kanta kanta eski.
 Rat lai. Stela in asman.
 
@@ -118,27 +118,27 @@ Anak keci sema nama tena.
 | Rafiki genc aur hayai. | The friend is young and quick. |
 | Kita kula pan una. Kita kimbia una. | We eat bread together. We run together. |
 | Tahun-tahun go. Anak genc sasa. | The years go. The child is young now. |
-| Genc mau kan dunia. | The young one wants to see the world. |
-| Genc sema: "Mi mau go madina kabir." | He says: "I want to go to a big city." |
+| Insan genc mau kan dunia. | The young one wants to see the world. |
+| Insan genc sema: "Mi mau go madina kabir." | He says: "I want to go to a big city." |
 | Mama sedih. Papa sema: "Go." | The mother is sad. The father says: "Go." |
-| Genc ambil tren. Tren anda cok hora. | He takes a train. The train travels many hours. |
-| Genc kan pahar, sungai, hutan aur bahari. | He sees mountains, rivers, forest and sea. |
+| Insan genc ambil tren. Tren anda cok hora. | He takes a train. The train travels many hours. |
+| Insan genc kan pahar, sungai, hutan aur bahari. | He sees mountains, rivers, forest and sea. |
 | Madina kabir. Cok insan in tarik. | The city is big. Many people are in the road. |
-| Genc naiti kamra keci. Kamra kotor. | He finds a small room. The room is dirty. |
-| Genc gasil kamra una sabun aur akua. | He washes the room with soap and water. |
-| Genc naiti rabota in market. | He finds work at the market. |
+| Insan genc naiti kamra keci. Kamra kotor. | He finds a small room. The room is dirty. |
+| Insan genc gasil kamra una sabun aur akua. | He washes the room with soap and water. |
+| Insan genc naiti rabota in market. | He finds work at the market. |
 | Tacir beca fruta aur nyama. | The merchant sells fruit and meat. |
-| Genc ambil fruta. Genc beca fruta. | He takes fruit. He sells fruit. |
+| Insan genc ambil fruta. Insan genc beca fruta. | He takes fruit. He sells fruit. |
 | Insan-insan lai. Insan-insan kupi. | People come. People buy. |
-| Aksam lai. Genc funga market. | Evening comes. He closes the market. |
-| Pesa keci. Genc kula pan aur corba. | The money is little. He eats bread and soup. |
-| Genc lala. Genc punya mimpi. | He sleeps. He has a dream. |
-| Genc kan insan baru in market uan din. | One day he sees a new person at the market. |
+| Aksam lai. Insan genc funga market. | Evening comes. He closes the market. |
+| Pesa keci. Insan genc kula pan aur corba. | The money is little. He eats bread and soup. |
+| Insan genc lala. Insan genc punya mimpi. | He sleeps. He has a dream. |
+| Insan genc kan insan baru in market uan din. | One day he sees a new person at the market. |
 | Insan baru kupi legum aur telur. | The new person buys vegetables and eggs. |
-| Genc sema: "Salam." Insan sema: "Salam." | He says: "Peace." The person says: "Peace." |
+| Insan genc sema: "Salam." Insan sema: "Salam." | He says: "Peace." The person says: "Peace." |
 | Ta-ta sema. Ta-ta kanta. | They talk. They sing. |
 | Ta-ta anda in tarik. | They walk in the road. |
-| Genc sema: "Mi ama yu." | He says: "I love you." |
+| Insan genc sema: "Mi ama yu." | He says: "I love you." |
 | Insan sema: "Mi ama yu." | The person says: "I love you." |
 | Ta-ta naiti dom keci in madina. | They find a small house in the city. |
 | Es pencere kabir in kamra. | There is a big window in the room. |
@@ -152,7 +152,7 @@ Anak keci sema nama tena.
 | Dom sukut. Ta-ta otur in bage. | The house is silent. They sit in the garden. |
 | Ta-ta kan sol. Ta-ta ingat din-din eski. | They see the sun. They remember the old days. |
 | Insan sema: "Mi ingat yu in skola." | The person says: "I remember that morning at school." |
-| Genc — no genc sasa — respon: "Mi ingat yu in market." | The young one — not young now — answers: "I remember you at the market." |
+| Insan genc — no genc sasa — respon: "Mi ingat yu in market." | The young one — not young now — answers: "I remember you at the market." |
 | Ta-ta kanta kanta eski. | They sing an old song. |
 | Rat lai. Stela in asman. | Night comes. Stars are in the sky. |
 | Insan mati. Dom sukut tena. | The person dies. The house is silent again. |
@@ -166,17 +166,28 @@ Anak keci sema nama tena.
 
 ## What length found
 
-**Eighty-eight sentences, 398 words, 122 roots** — two and a half times the
+**Eighty-eight sentences, 414 words, 122 roots** — two and a half times the
 longest text before it, and a fifth of everything the language has ever
 written in one page.
 
 **Who is who survived, and it should not have been obvious.** The language has
 no gender and no case, so *ta* is he, she and it alike, and forty sentences
 separate the child from the old person it becomes. What holds it together is
-that the subject is named again whenever it changes — *anak*, *genc*, *insan*,
-*ta-ta* — which the language forces by never dropping a subject. The one rule
-that looked like a cost, no pronoun dropping, is what makes a long story
-readable.
+that the subject is named again whenever it changes — *anak*, *insan genc*,
+*insan*, *ta-ta* — which the language forces by never dropping a subject. The
+one rule that looked like a cost, no pronoun dropping, is what makes a long
+story readable.
+
+**The middle name was wrong for a day.** The second stage was *Genc* — the
+young one — in seventeen sentences, and *genc* is an adjective. Nothing in the
+language lets an adjective stand as a noun, and letting it would cost a settled
+rule: an adjective predicate takes no *es* and a noun predicate must have one,
+so *Ta genc* would stop having one reading. It is *insan genc* now, a noun with
+an adjective after it, which is the shape the language actually has and says
+exactly what was meant. Found September 5, 2026 by counting adjacent word
+classes across the repository; every word in all seventeen sentences existed,
+which is why nothing had seen them.
+[Recorded in copula.md](../grammar/copula.md).
 
 **The tense held by not being marked.** The whole life is told in the unmarked
 present, and *suda* appears once — *Ta suda hidup sini*, she lived here —

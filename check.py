@@ -962,8 +962,11 @@ for _i, (_w, _n) in enumerate(_order, 1):
         _want.append(f"| first {_i} | {100*_cum/_tot:.0f}% |")
 for _line in _want:
     check(_line in _fr, f"frequency.md is missing or contradicts the row '{_line}'")
+# This asked whether the word appears and whether the number appears, in the
+# whole file, separately. dom's row said 104 when the count was 103 and the
+# check passed, because "| 103 |" was on lai's row. The pair has to hold.
 _gone = [w for w, n in _order[:40]
-         if f"| *{w}* |" not in _fr or f"| {n} |" not in _fr]
+         if not re.search(r"\| \*" + re.escape(w) + r"\* \|.*\| " + str(n) + r" \|", _fr)]
 check(not _gone, f"frequency.md's top forty has drifted: {', '.join(_gone[:6])}")
 
 # --------------------------------------------- es before a preposition
@@ -2032,6 +2035,44 @@ for path in PROSE:
             check(False,
                   f"{os.path.basename(path)}: '{w} {nxt}' — place goes last, and a "
                   f"place word takes no noun after it: {sent}")
+
+# ------------------------------------------- a text's own word count is a claim
+# text 21 said "398 words" while its code block held 414. It had gone stale the
+# day before, when one word came out of it, and nothing was looking: every other
+# number on that page is checked and this one was prose. Hyphenated forms count
+# as two, which is the convention the roots-used sections already use.
+for _p in sorted(glob.glob("texts/*.md")):
+    _b = read(_p)
+    if "```" not in _b: continue
+    _code = "".join(_b.split("```")[1::2])
+    _m = re.search(r"(\d+) words,", _b)
+    if not _m: continue
+    _true = len(re.findall(r"[A-Za-z]+", _code))
+    check(int(_m.group(1)) == _true,
+          f"{os.path.basename(_p)}: says {_m.group(1)} words; its text has {_true}")
+
+# --------------------------------------------- an adjective is not a noun
+# text 21 opened seventeen sentences with *Genc* — the young one — and *genc* is
+# an adjective. The language has no nominalisation: an adjective follows a noun,
+# and standing one alone in the subject slot would cost the copula rule, which
+# turns on a noun predicate taking es and an adjective predicate not taking one.
+# Every word in those sentences existed, so five days of checks for invented
+# words saw nothing. The fix was a noun to stand on: *insan genc*.
+for path in PROSE:
+    body = read(path)
+    if path.startswith("texts/") and "```" in body:
+        body = "".join(body.split("```")[1::2])
+    for line, sent, toks in amadunia_runs(body):
+        if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗", "rejected")):
+            continue
+        base = [t.split("-")[0] for t in toks]
+        if len(base) < 2 or base[0] not in ADJECTIVES: continue
+        # An adjective may open a fragment — *Hao!* — and may be a predicate
+        # after a subject; only a following verb makes it a subject.
+        if base[1] in VERBS or base[1] in {"mau", "bisa", "lasim", "no", "es"}:
+            check(False,
+                  f"{os.path.basename(path)}: '{base[0]}' is an adjective standing "
+                  f"as a subject; the language has no nominalisation: {sent}")
 
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the

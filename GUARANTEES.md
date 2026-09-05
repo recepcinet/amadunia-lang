@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**145 guarantees** in **75 groups**, and every one of them is
+**147 guarantees** in **77 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -264,6 +264,12 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### a place word must end its clause
 
 - …: '… …' — place goes last, and a place word takes no noun after it: …
+### a text's own word count is a claim
+
+- …: says … words; its text has …
+### an adjective is not a noun
+
+- …: '…' is an adjective standing as a subject; the language has no nominalisation: …
 ### the but briefing cites real pages
 
 - proposal-but.md says '… pages' but its evidence table has … rows
