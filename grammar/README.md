@@ -102,7 +102,7 @@ Two items are not grammar at all and sit outside this order: *madad* doing two
 jobs, and the thinness of Sino-Tibetan and Japonic recorded in
 [balance.md](../dictionary/balance.md). Both are vocabulary policy.
 
-## Open questions — 34 of them
+## Open questions — 35 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
@@ -179,6 +179,7 @@ measurement with its method stated, to be re-run rather than trusted.
 **[numbers](numbers.md)**
 
 - **Ordinal numbers have no form.** *First, second, eighth* cannot be built, and nothing in the cardinal system suggests a derivation. [Text 6](../texts/text-6-seti-din.md) is the clearest case: a story that runs on days wanted *on the eighth day* and could only say *for eight days*. **It also blocks two whole vocabulary sets**: the language names no weekday and no month, and numbering them — the economical answer, and Chinese's — needs an ordinal. Answering this question would remove the need for about a dozen roots.
+- **A number cannot count a pronoun.** *The three of us* has no form: numbers go before what they count — *tri anak* — and a pronoun takes neither that shape nor the reverse. Found September 5, 2026 in [text 19](../texts/text-19-kamra-mi.md), which had written *Kita tri sini* and glossed it "the three of us are here". The invention was a shape, not a word, and every check the repository had was looking for words.
 - Whether the separator between groups is a hyphen or a space is used inconsistently above (*du-des-uan* vs *pat-des fai*, both inherited from the README) and needs a single rule.
 
 **[phonology](phonology.md)**

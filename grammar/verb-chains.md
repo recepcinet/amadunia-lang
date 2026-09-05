@@ -40,12 +40,14 @@ The full order is unchanged from every other rule in the language: **no → suda
 
 Because *no* goes in front of what it denies, moving it moves the meaning. This falls out of the existing rule; nothing new is needed.
 
+The last row read "She can stay away" until September 5, 2026 — a paraphrase with no negative in it at all, in the one table whose whole job is to show where the negative went. *lai* is *to come*, and *no lai* is *not come*, not *stay away*, which says something about intention the sentence does not.
+
 | | |
 |---|---|
 | Mi **no** mau kula. | I do not want to eat. |
 | Mi mau **no** kula. | I want *not* to eat. |
 | Ta **no** bisa lai. | She cannot come. |
-| Ta bisa **no** lai. | She can stay away. |
+| Ta bisa **no** lai. | She is able *not* to come. |
 
 ## The object comes last
 

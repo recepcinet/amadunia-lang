@@ -210,7 +210,7 @@ negation, conjunction, demonstratives, place, verb chains, comparison,
 subordination, adverbs, stress and the sentence types are settled — twenty-one rules, each recorded with its
 reasoning and with the candidates it rejected.
 
-**[Thirty-four questions are still open](grammar/README.md)**, gathered on one
+**[Thirty-five questions are still open](grammar/README.md)**, gathered on one
 page, ordered by [what the writing has actually asked for](grammar/README.md) —
 a mark for a name now leads, and six questions have never been reached for at
 all. Four were not left open on purpose but were forms the material already

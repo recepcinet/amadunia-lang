@@ -590,6 +590,12 @@ PREDICATE_OK = (VERBS | PENDING_CLASS | ADJECTIVES | NUMBERS | DEGREE | GROUP["P
                 | GROUP["This and that"] | GROUP["Question words"]
                 | {"no", "una", "cok", "daima", "kadang", "sasa", "tena"})
 PREDICATE_OK -= {"tempat"}  # sits in the Place group but is a plain noun: in tempat ini
+# A number is not a predicate. It counts the noun after it, so "itu fai tahun"
+# and "kita tri" are a noun phrase in the predicate slot and a shape the grammar
+# does not have. Letting numbers stand here hid both cases in the repository:
+# Lesson 16's *Anak itu fai tahun*, which needed es, and text 19's *Kita tri
+# sini*, which needed rewriting because a number cannot count a pronoun at all.
+PREDICATE_OK -= NUMBERS
 # rabota is allowed here only because its class is undecided. Ten sentences in
 # the lessons, the grammar and the phrasebook read it as a verb and would fail
 # this check the moment it is settled as the noun the dictionary says it is.
@@ -1974,6 +1980,29 @@ for _p in PROSE:
                   f"the past ('{_hit[0] if _hit else ''}') with nothing before it "
                   f"setting the time: {_en[:60]}")
         _prev_line, _prev_past = _ln, _marked
+
+# ------------------------------------ a negative sentence glossed without one
+# The English side of the repository went unchecked until the tense glosses were
+# found; this is the same seam. verb-chains.md's table exists to show that moving
+# *no* moves the meaning, and its last row glossed *Ta bisa no lai* as "She can
+# stay away" — no negative in it at all, in the one place where the negative is
+# the whole point. Only this direction is checked: a gloss may add "no" for
+# English reasons ("no es" in an annotation, "not a coin"), but a *no* in the
+# Amadunia has to reach the translation. Requiring the line to be mostly
+# dictionary words keeps English table cells out; without it, definiteness.md's
+# "No article at all" reads as a sentence.
+_NEG_EN = re.compile(r"(?:\bnot\b|\bnever\b|n't\b|\bcannot\b|\bnothing\b"
+                     r"|\bnone\b|\bwithout\b|\bno\b)", re.I)
+for _p in PROSE:
+    for _ln, _am, _en in glossed_lines(read(_p)):
+        if not _en: continue
+        _t = [_x.split("-")[0] for _x in re.findall(r"[a-z-]+", _am.lower())]
+        _known = [_x for _x in _t if _x in words]
+        if len(_known) < 2 or len(_known) * 2 < len(_t): continue
+        if "no" not in _t: continue
+        check(bool(_NEG_EN.search(re.sub(r"\]\([^)]*\)", "]", _en))),
+              f"{os.path.basename(_p)}: '{_am}' denies something and its "
+              f"translation does not: {_en[:70]}")
 
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the

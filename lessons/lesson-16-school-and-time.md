@@ -87,9 +87,11 @@
 | Uan hora. | One hour. |
 | Tri hora. | Three hours. |
 | Mi suda studi du tahun. | I studied for two years. |
-| Anak itu fai tahun. | That child is five years old. |
+| Anak itu **es** fai tahun. | That child is five years old. |
 
 Remember: after a number the noun stays single. *Tri hora*, never *tri hora-hora*.
+
+The age line carried no *es* until September 5, 2026. *fai tahun* is a noun phrase, and a noun predicate takes *es* — *itu* closes the phrase before it, so *Anak itu fai tahun* was not a sentence at all.
 
 ## Rain
 

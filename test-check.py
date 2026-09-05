@@ -278,6 +278,18 @@ MUTATIONS = [
      "| [Text 14](../texts/text-14-yamur-aur-ca.md) | *Ca garam.* | the tea is hot **but** the night is cold |\n",
      "",
      "but its evidence table has 5 rows"),
+    ("a negative sentence glossed without a negative", "grammar/verb-chains.md",
+     "| Ta bisa **no** lai. | She is able *not* to come. |",
+     "| Ta bisa **no** lai. | She can stay away. |",
+     "denies something and its translation does not"),
+    # itu closes the phrase, so a number after one starts a predicate.
+    ("a number standing as a predicate after itu", "lessons/lesson-16-school-and-time.md",
+     "| Anak itu **es** fai tahun. |", "| Anak itu fai tahun. |",
+     "ini and itu close a phrase"),
+    # and the same slot straight after a pronoun subject
+    ("a number standing as a predicate after a pronoun", "texts/text-19-kamra-mi.md",
+     "Kamra keci. Kita sini.", "Kamra keci. Kita tri sini.",
+     "a noun predicate needs es before it"),
     ("consonant pair missing from phonology.md", "grammar/phonology.md",
      "- `fr` \u2014 *fruta* (fruit), word-initial like *tr*\n", "",
      "does not list the consonant pair 'fr'"),

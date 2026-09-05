@@ -31,7 +31,7 @@ Flor in pencere. Flor merah aur putih.
 Mi beri akua por flor in pagi.
 
 Rafiki mi lai. Kita nomu ca aur sema.
-Kamra keci. Kita tri sini.
+Kamra keci. Kita sini.
 
 In rat mi funga pencere. Kamra barid.
 Mi lala hao.
@@ -59,14 +59,14 @@ Kamra ini keci. Mi ama kamra mi.
 | Flor in pencere. Flor merah aur putih. | Flowers are in the window. The flowers are red and white. |
 | Mi beri akua por flor in pagi. | I give water to the flowers in the morning. |
 | Rafiki mi lai. Kita nomu ca aur sema. | My friend comes. We drink tea and talk. |
-| Kamra keci. Kita tri sini. | The room is small. The three of us are here. |
+| Kamra keci. Kita sini. | The room is small. We are here. |
 | In rat mi funga pencere. | At night I close the window. |
 | Kamra barid. Mi lala hao. | The room is cold. I sleep well. |
 | Kamra ini keci. Mi ama kamra mi. | This room is small. I love my room. |
 
 ## What Lesson 21 is enough for
 
-Twenty-four sentences, 49 roots, and no rule the course has not reached: the
+Twenty-four sentences, 48 roots, and no rule the course has not reached: the
 existential, possession, a subordinate-free description, an adverb, a
 conjunction. The vocabulary is the lesson's own — *kamra*, *pencere*, *lampu*,
 *yatak*, *kertas*, *kalima*, *ide*, *flor* — which is the point of writing at
@@ -87,8 +87,8 @@ where a person waters plants **every** morning. *all, some, none* is
 [on the open list](../grammar/plural.md) and this is the first page to want the
 fourth member of that family.
 
-**No word for *but*, a sixth time.** *Kamra keci. Kita tri sini* is two
-sentences where one was meant: the room is small **but** the three of us fit.
+**No word for *but*, a sixth time.** *Kamra keci. Kita sini* is two
+sentences where one was meant: the room is small **but** we fit.
 The draft of this page wrote it with *lakin*, the candidate in
 [the briefing](../grammar/proposal-but.md), to see how the sentence would look
 if the briefing were accepted — and [`check.py`](../check.py) rejected it,
@@ -96,6 +96,17 @@ correctly. **A text invents nothing.** A briefing is where a word that does not
 exist may be written; a text is where the absence has to be felt. The line
 stands as two sentences, and the gap is recorded rather than papered over.
 
+**A number cannot count a pronoun, and this page had assumed it could.** The
+line was *Kita tri sini*, "the three of us are here", until September 5, 2026.
+Numbers go before what they count — *tri anak* — and nothing in the language
+attaches one to *kita*: *tri kita* is not a shape either, and *kita tri* would
+read as possession if it read as anything. The line is *Kita sini* now, and
+"the three of us" is
+[recorded as an open question in numbers.md](../grammar/numbers.md). It was
+written by reflex from English and stood for a day, which is what the rule
+about texts inventing nothing exists to prevent — the invention here was not a
+word but a shape, and no check was looking for shapes.
+
 ## Roots used
 
-49 of 300.
+48 of 300.

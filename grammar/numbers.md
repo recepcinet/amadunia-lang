@@ -62,6 +62,17 @@ needed turned out not to be the rule that was written down.
 
 ## Open questions
 
+- **A number cannot count a pronoun.** *The three of us* has no form. Numbers
+  go before what they count — *tri anak* — and a pronoun takes neither that
+  shape nor the reverse: *tri kita* is not a construction, and *kita tri* would
+  read as possession if it read as anything. Found on September 5, 2026 in
+  [text 19](../texts/text-19-kamra-mi.md), which had written *Kita tri sini*
+  since the day it was written and had it read back as "the three of us are
+  here" by everyone including its own line-by-line table. The line is *Kita
+  sini* now. The invention was a **shape**, not a word, which is why nothing
+  caught it: every check the repository had was looking for words that do not
+  exist, and every word in that sentence exists.
+
 - **Ordinal numbers have no form.** *First, second, eighth* cannot be built.
   [Text 6](../texts/text-6-seti-din.md) is the clearest case: a story that runs
   on days — ill seven days, medicine eight days — wanted *on the eighth day* and

@@ -34,7 +34,7 @@ been. Every sentence in the lessons, the texts and the phrasebook was reduced
 to its parts of speech — R for a pronoun, V a verb, N a noun, A an adjective,
 P a preposition, and so on — and the shapes counted.
 
-**1665 sentences, 410 distinct shapes**, and the fifteen commonest cover 43%
+**1665 sentences, 409 distinct shapes**, and the fifteen commonest cover 43%
 of them. The leaders are *RVN* at 8.6% (*Ta-ta lihat stela-stela*), *NA* at
 7.5% (*Sol kabir*) and *NV* at 4.8% (*Anak sema*). [`check.py`](../check.py)
 recounts the two headline numbers.
@@ -86,6 +86,6 @@ These are original compositions, not translations. Translating an existing book 
 | [Berapa harga](text-16-berapa-harga.md) | 62 | 300 roots, Lessons 1-26 — bargaining at the market, written for the words no text had ever used |
 | [Tren aur farasi](text-17-tren-aur-farasi.md) | 73 | 300 roots, Lessons 1-26 — a journey to a farm, written for the same reason and reaching 27 more |
 | [Gusa in tarik](text-18-gusa-in-tarik.md) | 43 | 300 roots, Lessons 1-26 — a blocked street, the last five roots that could be written |
-| [Kamra mi](text-19-kamra-mi.md) | 49 | **232 roots, Lessons 1-21** — a room, written for the largest gap left on the reading ladder |
+| [Kamra mi](text-19-kamra-mi.md) | 48 | **232 roots, Lessons 1-21** — a room, written for the largest gap left on the reading ladder |
 | [In skola](text-20-in-skola.md) | 42 | **136 roots, Lessons 1-16** — a school day, written for the gap between Lessons 13 and 18 |
 | [Uan umur](text-21-uan-umur.md) | 122 | 300 roots, Lessons 1-26 — a whole life, and **the first long text**: 88 sentences against a previous longest of 34 |
