@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**233 guarantees** in **111 groups**, and every one of them is
+**234 guarantees** in **112 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -435,6 +435,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - questions.md rejects … for containing …, which is not in it
 - conjunction.md: … roots end in -…
+### subordination's two shapes, both counted
+
+- subordination.md's two counts are stale; the material holds … clauses with a marker and … without
 ### phonology.md illustrates itself
 
 - phonology.md gives a row to … vowel sequences; … are attested

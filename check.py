@@ -528,6 +528,25 @@ for _m in re.finditer(r"^\| (\d+) \| \[[^\]]+\]\(lesson-\d\d[^)]*\) \| (.+) \|$"
 VERBS  = {w for w in words if meaning[w].startswith("to ")}
 VERBS |= {"bisa", "lasim"}  # modals, glossed "can" and "must", not "to ..."
 VERBS |= {"madad"}          # class undecided: treat as a verb until it is settled
+
+# A clause can be the object of a verb and nothing marks it — *Mi fikir yu
+# hao*, *Mi bil ta suda lai*. That is half of the subordination rule and no
+# scanner here could see it: the detector looked for porke, kab and agar, so
+# the rule was measured by the half that has a word and came out thinnest of
+# the fifteen. This finds the unambiguous shape only — a verb, then a pronoun,
+# then a predicate. A pronoun takes no adjective and heads no phrase, so a
+# predicate after one can only be a clause. It misses *Ta sema dom mi kabir*,
+# where the clause subject is a noun and the reading is genuinely ambiguous
+# with a noun plus an adjective. A floor, not a count, and deliberately so.
+def _clause_object(_toks):
+    _t = [_x.lower() for _x in _toks]
+    for _i in range(len(_t) - 2):
+        if (_t[_i] in VERBS and _t[_i] != "es" and _t[_i + 1] in PRONOUNS
+                and (_t[_i + 2].split("-")[0] in VERBS
+                     or _t[_i + 2] in ADJECTIVES
+                     or _t[_i + 2] in {"suda", "saufa", "no", "es"})):
+            return True
+    return False
 for path in glob.glob("lessons/lesson-*.md"):
     _num = re.search(r"lesson-(\d\d)", path)
     if not _num: continue          # the two-digit rule reports it; do not crash here
@@ -1282,7 +1301,8 @@ for _p in sorted(glob.glob("texts/*.md")):
         if any(_a in VERBS and _b in VERBS for _a, _b in zip(_t, _t[1:])):
             _need.add("verb chain")
         if {"lebi", "kurang", "paling", "kadar"} & set(_t): _need.add("comparison")
-        if {"porke", "kab", "agar"} & set(_t): _need.add("subordination")
+        if {"porke", "kab", "agar"} & set(_t) or _clause_object(_t):
+            _need.add("subordination")
         if any(_a in VERBS and _b in ADJECTIVES for _a, _b in zip(_t, _t[1:])):
             _need.add("adverb")
         if _t[0] in VERBS and _t[0] != "es": _need.add("command")
@@ -1815,7 +1835,8 @@ for _p in sorted(glob.glob("texts/*.md")):
         if any(_a in VERBS and _b in VERBS for _a, _b in zip(_t, _t[1:])):
             _RULETEXT["verb chain"].add(_f)
         if {"lebi", "kurang", "paling", "kadar"} & set(_t): _RULETEXT["comparison"].add(_f)
-        if {"porke", "kab", "agar"} & set(_t): _RULETEXT["subordination"].add(_f)
+        if {"porke", "kab", "agar"} & set(_t) or _clause_object(_t):
+            _RULETEXT["subordination"].add(_f)
         if any(_a in VERBS and _b in ADJECTIVES for _a, _b in zip(_t, _t[1:])):
             _RULETEXT["adverb"].add(_f)
         if (_t[0] in VERBS and _t[0] != "es") or (_t[0] == "no" and len(_t) > 1
@@ -3409,6 +3430,28 @@ for _end, _phrase in (("o", "**{}** roots end in *-o*"),
     check(_phrase.format(_n).replace("**", "") in _conj.replace("**", "")
           .replace("\n", " "),
           f"conjunction.md: {_n} roots end in -{_end}")
+
+# --------------------------------- subordination's two shapes, both counted
+# The page states how many sentences carry each shape. The marked half was
+# always countable; the unmarked half was invisible until _clause_object was
+# written, and the figures are the reason the rule looked thinnest. Derived.
+_mark = _unmark = 0
+for _p in (sorted(glob.glob("lessons/lesson-*.md"))
+           + sorted(glob.glob("texts/*.md")) + ["phrasebook.md"]):
+    _sb = read(_p)
+    if _p.startswith("texts/") and "```" in _sb:
+        _sb = "".join(_sb.split("```")[1::2])
+    if "## New word" in _sb:
+        _sh, _sr = _sb.split("## New word", 1)
+        _sb = _sh + "\n" + "\n## ".join(_sr.split("\n## ")[1:])
+    for _line, _sent, _toks in amadunia_runs(_sb):
+        _t = [_x.lower() for _x in _toks]
+        if {"porke", "kab", "agar"} & set(_t): _mark += 1
+        if _clause_object(_t): _unmark += 1
+check(f"**{_mark}\nsentences** with a marker and **{_unmark} without one**"
+      in read("grammar/subordination.md"),
+      f"subordination.md's two counts are stale; the material holds {_mark} "
+      f"clauses with a marker and {_unmark} without")
 
 # ------------------------------------------ phonology.md illustrates itself
 # The page that settles which sequences exist illustrates each one with words.

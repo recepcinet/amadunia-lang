@@ -8,6 +8,14 @@ five, against place's nineteen — and the two rules that were thin before it,
 the adverb rule and commands, each got a page of their own and stopped being
 thin. This is the same remedy applied to the third.
 
+**The premise turned out to be an artefact, and this page is what exposed it.**
+Writing the four shapes out made it plain that one of them has no word in it,
+so the scan that called subordination thinnest had been counting only the
+marked half. Counting both, the rule stands in seven texts and *comparison* is
+the thinnest at six. The page is still worth its place — the eleven unmarked
+clauses in the material were being counted nowhere, and three of them are
+here — but the reason it was written did not survive being written.
+
 The rule has three marked shapes and one unmarked one. *porke*, *kab* and
 *agar* each open a clause; a clause that is simply the object of a verb opens
 with nothing at all. A whole story of deciding, waiting and changing one's

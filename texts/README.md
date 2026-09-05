@@ -27,8 +27,8 @@ it — a count is only as good as what it counted.
 | plural | 9 |
 | adverb | 8 |
 | command | 7 |
+| subordination | 7 |
 | comparison | 6 |
-| subordination | 6 |
 
 <!-- end generated -->
 
@@ -57,12 +57,21 @@ the material had started using them, and writing a page for each is what
 turned that round. *una* was the third, at 21 sentences, and
 [text 13](text-13-kula-una.md) answered it.
 
-**Subordination was the fourth**, and it is why the floor is six rather than
-five. It stood in five texts on September 6, 2026 — the thinnest of the
-fifteen, against place's nineteen — and
-[text 22](text-22-agar-yamur-lai.md) was written for it. The remedy is now
-four for four, and the pattern behind it is the same every time: a rule the
-lessons taught late is a rule the texts reach for last.
+**Subordination was the fourth** — and writing its text is what showed the
+table had been measuring the rule by half of itself. It stood at five, the
+thinnest of the fifteen, and [text 22](text-22-agar-yamur-lai.md) was written
+for it on September 6, 2026. That page then pointed out that a clause can be
+the object of a verb with *nothing* marking it, so the detector — which looks
+for *porke*, *kab* and *agar* — could not see that shape at all. Taught to see
+it, the scan puts subordination in **seven** texts, and the thinnest rule is
+**comparison at six**.
+
+So the premise was wrong and the text was still worth writing: subordination
+now stands in seven texts instead of five, and eleven sentences that exercise
+it were being counted nowhere. But the honest form of the sentence this
+paragraph used to carry is that **a rule with no word in it cannot be found by
+a scanner that reads words** — and comparison, not subordination, is what the
+next text should be written for.
 
 ## How many shapes the language actually uses
 
