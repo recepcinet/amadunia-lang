@@ -57,6 +57,14 @@ Measured: the thirteen sentences and their three positions, the cost of each
 answer, and *tena*'s 29 of 29 — [`check.py`](../check.py) recounts all of them,
 so this page cannot drift the way [adverbs.md](adverbs.md) did.
 
+That sentence was not true when it was written. The three positions and
+*tena* were recounted; the total and the three costs were prose, and a cost is
+the whole point of the page — each answer's price is every sentence that is not
+already standing where it would put them. All five figures are computed from
+the corpus as of September 5, 2026. They were right, which is luck: the last
+three days moved *insan genc* through Lesson 25 and rewrote five contrast
+sentences, and any of that could have touched one.
+
 Judgement, and the founder's: which position, whether *daima* and *kadang*
 behave alike, and whether *tena* is bound by the same answer or stays a
 separate thing that happens to sit in the same place.

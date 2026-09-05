@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**181 guarantees** in **90 groups**, and every one of them is
+**183 guarantees** in **90 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -260,6 +260,8 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - proposal-frequency.md's row for '…' is stale; the corpus has …
 - proposal-frequency.md's tena figure is stale; recount gives … of …
+- proposal-frequency.md: answer … costs … of … rewrites, because … sentences already stand there
+- proposal-frequency.md's headline is stale; … of … sentences stand in the adverb slot
 ### an unmarked verb glossed as past
 
 - …: '…' has no suda and is glossed in the past ('…') with nothing before it setting the time: …

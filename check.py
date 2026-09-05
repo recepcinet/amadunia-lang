@@ -1995,6 +1995,24 @@ for _label, _n in _FREQPOS.items():
 check(f"**{_TENA[0]} of its {sum(_TENA)} uses are last in the sentence**" in _fq,
       f"proposal-frequency.md's tena figure is stale; recount gives "
       f"{_TENA[0]} of {sum(_TENA)}")
+# The page says "the thirteen sentences and their three positions, the cost of
+# each answer, and tena's 29 of 29 — check.py recounts all of them". It
+# recounted the three positions and tena. The total and the three costs were
+# prose, and a cost is the whole point of the page: each answer's price is
+# every sentence not already in that position.
+_fqtot = sum(_FREQPOS.values())
+_FQPOSOF = {"A": "the adverb slot", "B": "before the verb", "C": "after the object"}
+for _row, _pos in _FQPOSOF.items():
+    _cost = _fqtot - _FREQPOS[_pos]
+    check(re.search(r"\| \*\*" + _row + r"\*\* \|[^|]*\| " + str(_cost)
+                    + r" of " + str(_fqtot) + r" \|", _fq),
+          f"proposal-frequency.md: answer {_row} costs {_cost} of {_fqtot} "
+          f"rewrites, because {_FREQPOS[_pos]} sentences already stand there")
+_mft = re.search(r"\*\*(\w+) of (\w+) do\*\*", _fq)
+check(_mft and WORD_NUM.get(_mft.group(2).lower()) == _fqtot
+      and WORD_NUM.get(_mft.group(1).lower()) == _FREQPOS["the adverb slot"],
+      f"proposal-frequency.md's headline is stale; {_FREQPOS['the adverb slot']} "
+      f"of {_fqtot} sentences stand in the adverb slot")
 
 
 # ------------------------------------------- an unmarked verb glossed as past
