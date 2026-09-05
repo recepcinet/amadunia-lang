@@ -190,7 +190,7 @@ measurement with its method stated, to be re-run rather than trusted.
 
 **[numbers](numbers.md)**
 
-- **Ordinal numbers have no form.** *First, second, eighth* cannot be built, and nothing in the cardinal system suggests a derivation. [Text 6](../texts/text-6-seti-din.md) is the clearest case: a story that runs on days wanted *on the eighth day* and could only say *for eight days*. **It also blocks two whole vocabulary sets**: the language names no weekday and no month, and numbering them — the economical answer, and Chinese's — needs an ordinal. Answering this question would remove the need for about a dozen roots.
+- **Ordinal numbers have no form.** *First, second, eighth* cannot be built, and nothing in the cardinal system suggests a derivation. [Text 6](../texts/text-6-seti-din.md) is the clearest case: a story that runs on days wanted *on the eighth day* and could only say *for eight days*. **It also blocks two whole vocabulary sets**: the language names no weekday and no month, and numbering them — the economical answer, and Chinese's — needs an ordinal. Answering this question would remove the need for nineteen roots — seven weekday names and twelve month names.
 - **A number cannot count a pronoun.** *The three of us* has no form: numbers go before what they count — *tri anak* — and a pronoun takes neither that shape nor the reverse. Found September 5, 2026 in [text 19](../texts/text-19-kamra-mi.md), which had written *Kita tri sini* and glossed it "the three of us are here". The invention was a shape, not a word, and every check the repository had was looking for words.
 - Whether the separator between groups is a hyphen or a space is used inconsistently above (*du-des-uan* vs *pat-des fai*, both inherited from the README) and needs a single rule.
 
@@ -262,7 +262,7 @@ measurement with its method stated, to be re-run rather than trusted.
 
 **[verb-chains](verb-chains.md)**
 
-- **Words that are both noun and verb.** *madad* is glossed "help; to help", so *Mi mau madad* is "I want help" **or** "I want to help". *rabota* is glossed "work" and is used as a verb in 13 sentences and as a noun in 6. Two roots, not one, and the second is a core A1 word: read as a verb one site breaks, read as a noun ten do. The chain rule made this visible for the first time.
+- **Words that are both noun and verb.** *madad* is glossed "help; to help", so *Mi mau madad* is "I want help" **or** "I want to help". *rabota* is glossed "work" and is used both ways, in [twenty places](proposal-two-jobs.md) and as a noun in 6. Two roots, not one, and the second is a core A1 word: read as a verb one site breaks, read as a noun ten do. The chain rule made this visible for the first time.
 
 Nothing on this list has been invented to make a lesson or a text work. When something was needed and undecided, the lesson said so.
 

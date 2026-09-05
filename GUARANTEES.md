@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**191 guarantees** in **95 groups**, and every one of them is
+**193 guarantees** in **96 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -325,6 +325,7 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### the two-jobs briefing counts rabota
 
 - proposal-two-jobs.md's heading is stale; rabota stands in … places in the material
+- …: says rabota stands in …; the material gives … places
 - proposal-two-jobs.md's split is stale; … places put rabota after a subject and … put something in front
 - proposal-two-jobs.md's distinct-sentence figures are stale; the material gives … and …, … in all
 ### the two-job problem has two roots, not one
@@ -340,6 +341,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### a lesson may not call a settled rule undecided
 
 - …: '…' — … is settled
+### the ordinals figure is on four pages
+
+- …: says ordinals would remove the need for '…' roots; it is nineteen — seven weekdays and twelve months
 ### the but briefing cites real pages
 
 - proposal-but.md says '… pages' but its evidence table has … rows

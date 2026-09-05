@@ -2576,6 +2576,21 @@ _TWENTY = {17: "seventeen", 18: "eighteen", 19: "nineteen", 20: "twenty",
 check(f"the decision costs {_TWENTY.get(sum(_rab_occ), '?')} sentences" in _twojobs,
       f"proposal-two-jobs.md's heading is stale; rabota stands in "
       f"{sum(_rab_occ)} places in the material")
+# The figure is written on more than the briefing: verb-chains.md carried its
+# own and proposal-a2.md a third, and only the briefing was checked, so the
+# third survived the day the first two were corrected. Every page that states
+# it is held now.
+for _p in md():
+    _rp = read(_p).replace("\n", " ")
+    # Only a number that follows *rabota*: the reverse direction matched
+    # "*madad*'s zero sentences, *rabota*'s ..." and reported zero.
+    for _m in re.finditer(r"\*rabota\*[^.]{0,90}?\b([A-Za-z-]+|\d+) (?:places|sentences)", _rp):
+        _tok = _m.group(1)
+        _n = int(_tok) if _tok.isdigit() else WORD_NUM.get(_tok.lower())
+        if _n is None: continue
+        check(_n == sum(_rab_occ),
+              f"{os.path.basename(_p)}: says rabota stands in {_n}; the material "
+              f"gives {sum(_rab_occ)} places")
 check(f"**eleven places put" in _twojobs and _rab_occ[0] == 11
       and f"**nine put a verb" in _twojobs and _rab_occ[1] == 9,
       f"proposal-two-jobs.md's split is stale; {_rab_occ[0]} places put rabota "
@@ -2696,6 +2711,23 @@ for _p in sorted(glob.glob("lessons/lesson-*.md")):
                 check(False,
                       f"{os.path.basename(_p)}: '{_pb[_m.start():_m.start() + 50].strip()}' "
                       f"— {_rule} is settled")
+
+# ------------------------------ the ordinals figure is on four pages
+# Seven weekday names and twelve month names is nineteen roots, and that number
+# is the whole case for the ordinals briefing. numbers.md and the briefing said
+# nineteen; proposal-a2.md said "about a dozen" and the grammar index said the
+# same — and the briefing cited proposal-a2 as its source, so the page being
+# quoted was the one that disagreed. Every page that states it is held to the
+# same figure and to the two sets it is made of.
+_ORD_PAGES = ("grammar/numbers.md", "grammar/proposal-ordinals.md",
+              "dictionary/proposal-a2.md", "grammar/README.md")
+for _p in _ORD_PAGES:
+    _ob = read(_p).replace("\n", " ")
+    for _m in re.finditer(r"remove the need for ([A-Za-z*\s-]+?) roots", _ob):
+        _w = re.sub(r"[*\s]+", " ", _m.group(1)).strip().lower()
+        check(_w == "nineteen",
+              f"{os.path.basename(_p)}: says ordinals would remove the need for "
+              f"'{_w}' roots; it is nineteen — seven weekdays and twelve months")
 
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the

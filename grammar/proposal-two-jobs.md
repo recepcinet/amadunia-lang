@@ -83,7 +83,7 @@ inheritance, not the practice. Three ways out:
 
 ## What is measured and what is judgement
 
-Measured: *madad*'s zero sentences, *rabota*'s eleven and seven, the one-site
+Measured: *madad*'s zero sentences, *rabota*'s split above, the one-site
 against ten-site repair cost, and the fact that every root added since has one
 job. `check.py` recounts the first two.
 

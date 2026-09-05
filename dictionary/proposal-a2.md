@@ -172,7 +172,17 @@ same: *din du* for the second day, *mensis tri* for the third month.
 first, second, third — and [ordinals have no form](../grammar/numbers.md).
 That open question, filed since text 6 wanted "on the eighth day", turns out to
 block two whole vocabulary sets as well as a sentence. It is the first case
-where answering one open question would remove the need for a dozen roots.
+where answering one open question would remove the need for **nineteen** roots:
+seven weekday names and twelve month names.
+
+That figure read "a dozen" until September 5, 2026, while
+[numbers.md](../grammar/numbers.md) and
+[the ordinals briefing](../grammar/proposal-ordinals.md) both said nineteen —
+and the briefing cited **this page** for it. Three pages, two numbers, and the
+one being quoted was the odd one out. The seasons are the set left out of all
+three: four more that a number could name, and *mausim tri* for autumn is not
+what anybody calls it, so they are counted as roots the language would still
+need.
 
 The compass is the opposite: four directions that no number can build, and no
 root for any of them.
@@ -211,7 +221,7 @@ anything:
 - ~~the imperative~~ — [settled](../grammar/sentence-types.md): a verb with no subject
 - **a mark for a name** ([briefing](../grammar/proposal-names.md))
 - **"want to be" plus an adjective** ([briefing](../grammar/proposal-modal-adjective.md))
-- ***rabota*'s class** — one word, nineteen sentences ([the open question](../grammar/verb-chains.md))
+- ***rabota*'s class** — one word, [twenty places](../grammar/proposal-two-jobs.md)
 
 And on the open list, *before*, *after*, *until* and the ordinals were each
 hit by real writing: [the letter](../texts/text-7-surat-por-mama.md) was
