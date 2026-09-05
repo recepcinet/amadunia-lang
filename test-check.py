@@ -320,6 +320,19 @@ MUTATIONS = [
     ("a frequency count on the wrong row", "dictionary/frequency.md",
      "| 8 | *dom* | house, home | 103 |", "| 8 | *dom* | house, home | 104 |",
      "top forty has drifted: dom"),
+    # The numeral and its translation must agree — this is the reader that can
+    # see a number written in the language at all.
+    ("an Amadunia numeral disagreeing with its translation",
+     "lessons/lesson-20-colours-and-health.md",
+     "| Amadunia punya tri-sen kalima. | Amadunia has 300 words. |",
+     "| Amadunia punya du-sen kalima. | Amadunia has 300 words. |",
+     "is 200, which its translation does not say"),
+    # and the claim itself must match the dictionary
+    ("a sentence overstating the size of the language",
+     "lessons/lesson-20-colours-and-health.md",
+     "| Amadunia punya tri-sen kalima. | Amadunia has 300 words. |",
+     "| Amadunia punya tri-sen kalima. | Amadunia has 299 words. |",
+     "says Amadunia has 299 words"),
     ("consonant pair missing from phonology.md", "grammar/phonology.md",
      "- `fr` \u2014 *fruta* (fruit), word-initial like *tr*\n", "",
      "does not list the consonant pair 'fr'"),

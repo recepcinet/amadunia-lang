@@ -98,10 +98,12 @@ Colours follow the noun, like every adjective, and take no *es*:
 
 | | |
 |---|---|
-| Amadunia punya du-sen tri-des pat kalima. | Amadunia has 234 words. |
+| Amadunia punya tri-sen kalima. | Amadunia has 300 words. |
 | Numero ini kabir. | This number is big. |
 | Mi katab surat por rafiki mi. | I write a letter to my friend. |
 | Kalima ini benar. | This word is true. |
+
+That first line said *du-sen tri-des pat* — 234 — until September 5, 2026, which was the size of the dictionary on the day it was written. The repository has twenty-odd checks that recount a number and not one of them could read this one, because it is written in Amadunia.
 
 ## Life and freedom
 

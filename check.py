@@ -2074,6 +2074,49 @@ for path in PROSE:
                   f"{os.path.basename(path)}: '{base[0]}' is an adjective standing "
                   f"as a subject; the language has no nominalisation: {sent}")
 
+# ------------------------------------- a number written in Amadunia is a claim
+# Lesson 20 said *Amadunia punya du-sen tri-des pat kalima* — Amadunia has 234
+# words — which was true the day it was written and wrong for every day since.
+# The repository recounts twenty-odd numbers and not one of these checks could
+# read that one, because it is written in the language rather than in digits.
+# Two things are checked here: that a numeral means what its translation says,
+# and that a sentence claiming the size of the language matches the dictionary.
+def _num_value(parts):
+    """The value of a run of digit and base words, by the rule in numbers.md:
+    a digit before a base multiplies it, a digit after a base adds to it."""
+    total = current = 0
+    for _part in parts:
+        _v = _VAL[_part]
+        if _v >= 10:
+            current = (current or 1) * _v
+            total += current
+            current = 0
+        else:
+            current = _v
+    return total + current
+
+for _p in PROSE:
+    for _ln, _am, _en in glossed_lines(read(_p)):
+        if not _en: continue
+        _runs, _run = [], []
+        for _tok in re.findall(r"[a-z-]+", _am.lower()):
+            _parts = _tok.split("-")
+            if all(_q in _VAL for _q in _parts):
+                _run.extend(_parts)
+            elif _run:
+                _runs.append(_run); _run = []
+        if _run: _runs.append(_run)
+        for _r in _runs:
+            _v = _num_value(_r)
+            if not re.search(r"\d", _en): continue
+            check(re.search(r"\b%d\b" % _v, _en),
+                  f"{os.path.basename(_p)}: the numeral in '{_am}' is {_v}, which "
+                  f"its translation does not say: {_en[:60]}")
+        _m = re.search(r"Amadunia has (\d+) words", _en)
+        check(not _m or int(_m.group(1)) == len(words),
+              f"{os.path.basename(_p)}: says Amadunia has "
+              f"{_m.group(1) if _m else '?'} words; the dictionary has {len(words)}")
+
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the
 # sentence that stopped. A quotation is a claim about another file, so each one

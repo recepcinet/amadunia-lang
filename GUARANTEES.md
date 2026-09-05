@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**147 guarantees** in **77 groups**, and every one of them is
+**149 guarantees** in **78 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -270,6 +270,10 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### an adjective is not a noun
 
 - …: '…' is an adjective standing as a subject; the language has no nominalisation: …
+### a number written in Amadunia is a claim
+
+- …: the numeral in '…' is …, which its translation does not say: …
+- …: says Amadunia has … words; the dictionary has …
 ### the but briefing cites real pages
 
 - proposal-but.md says '… pages' but its evidence table has … rows
