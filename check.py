@@ -3441,6 +3441,41 @@ for _end, _phrase in (("o", "**{}** roots end in *-o*"),
           .replace("\n", " "),
           f"conjunction.md: {_n} roots end in -{_end}")
 
+# ------------------------------------ the phrasebook's own reading level
+# The page told a learner that Lesson 1 was enough for its first section. Six
+# of that section's seven roots arrive later and *tena* arrives in Lesson 16,
+# so the claim was out by more than half the course. Both figures are computed
+# from the lessons, the same source the reading ladder uses.
+_pbk = read("phrasebook.md")
+_arrives, _seen = {}, set()
+for _n in sorted(_LADAFTER):
+    for _w in _LADAFTER[_n] - _seen: _arrives[_w] = _n
+    _seen = _LADAFTER[_n]
+_sec = _pbk.split("## Hello and goodbye")[1].split("\n## ")[0]
+_easy, _hard = [], 0
+for _l in _sec.splitlines():
+    if not _l.startswith("| ") or _l.startswith("|---"): continue
+    _cell = _l.split("|")[1].strip()
+    _ws = [_t.split("-")[0] for _t in re.findall(r"[a-z]+(?:-[a-z]+)*", _cell.lower())]
+    _ws = [_w for _w in _ws if _w in words]
+    if not _ws: continue
+    _need = max(_arrives.get(_w, 99) for _w in _ws)
+    _hard = max(_hard, _need)
+    if _need == 1: _easy.append(_cell.rstrip("!?."))
+check(f"gets you {_SPELLN[len(_easy)]} of the {_SPELLN[len(_sec.strip().splitlines()) - 2]} lines"
+      in _pbk.replace("\n", " "),
+      f"phrasebook.md: {len(_easy)} of the first section's lines need nothing "
+      f"past Lesson 01")
+check(all(f"*{_e}" in _pbk for _e in _easy),
+      f"phrasebook.md does not name the lines Lesson 01 covers: "
+      f"{', '.join(_easy)}")
+check(f"**Lesson {_hard:02d}**" in _pbk,
+      f"phrasebook.md: the first section is not complete until Lesson {_hard:02d}")
+_pbw = {_t.split("-")[0] for _line, _s, _tk in amadunia_runs(_pbk) for _t in _tk}
+_pblast = max(_arrives.get(_w, 0) for _w in _pbw if _w in words)
+check(f"arrives in\n[Lesson {_pblast}]" in _pbk or f"arrives in [Lesson {_pblast}]" in _pbk,
+      f"phrasebook.md: its last word arrives in Lesson {_pblast}")
+
 # ---------------------------------- balance.md's examples of a wide root
 # The page names roots that belong to many traditions at once, and named six
 # of which three were outside the range it claimed — sabun at seven, kertas at

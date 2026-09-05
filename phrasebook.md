@@ -4,11 +4,19 @@ Everything here obeys the rules in [grammar/](grammar/) and uses only words in
 [the dictionary](dictionary/dictionary.md). [`check.py`](check.py) tests every
 line on this page along with the lessons.
 
-If you have read [Lesson 1](lessons/lesson-01-greetings.md) you can already say
-the first section. The rest draws on the whole course — the last word it needs
-arrives in [Lesson 25](lessons/lesson-25-doing-and-being.md), so read
-the page for what you can use now rather than as a test of what you have
-finished.
+[Lesson 1](lessons/lesson-01-greetings.md) gets you five of the eight lines in
+the first section — *Hi!*, *Salam!*, *Ok?*, *Ya, ok.* and *Bai!*. The two greetings for
+a time of day wait for Lesson 03, and the last line, "I'll come again", waits
+for **Lesson 16**, which is where *tena* is taught. The rest of the page draws on
+the whole course; its last word arrives in
+[Lesson 25](lessons/lesson-25-doing-and-being.md). Read it for what you can use
+now rather than as a test of what you have finished.
+
+That paragraph said "if you have read Lesson 1 you can already say the first
+section" until September 6, 2026. Six of the seven roots in that section are
+taught after Lesson 01 and one of them fifteen lessons after it, so the claim
+was out by more than half the course. Both figures are computed from the
+lessons now, the way the [reading ladder](lessons/reading-ladder.md) is.
 
 ## Saying it
 
