@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**171 guarantees** in **86 groups**, and every one of them is
+**174 guarantees** in **87 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -310,6 +310,11 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - dictionary/README.md: … gaps came from writing, and the page does not say so
 - dictionary/README.md: the … gaps found by a question are not named as numbers … to …
 - dictionary/README.md: the feelings count is not stated against … gaps
+### the demand table counts the pages that ask
+
+- grammar/README.md's demand row for '…' says …; … pages write the claim
+- grammar/README.md's demand table is not in descending order of demand, which is what it says it is for: …
+- …: says '…'; the demand table has … rows at zero
 ### the but briefing cites real pages
 
 - proposal-but.md says '… pages' but its evidence table has … rows

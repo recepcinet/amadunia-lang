@@ -113,25 +113,36 @@ That sentence was not true until September 3, 2026. *All, some, none* and the or
 The list below is grouped by file, which says nothing about which questions
 matter. This does. The measure is narrow and deliberate: **a page that tried to
 say something and could not**, recorded at the time in a text's gaps, the
-phrasebook's list, or a lesson's note. Counted September 3, 2026.
+phrasebook's list, or a lesson's note. First counted September 3, 2026 and
+recounted September 5.
 
 | Question | Pages that reached for it |
 |---|---|
 | ~~the imperative~~ | settled September 3, 2026 — 3 pages had reached for it |
-| *although, before, after, until* | **2** — [text 7](../texts/text-7-surat-por-mama.md), [text 8](../texts/text-8-kaifa-suru-ca.md) |
-| ordinal numbers | 1 — [text 6](../texts/text-6-seti-din.md) |
-| a word for *then* | 1 — [text 8](../texts/text-8-kaifa-suru-ca.md) |
-| *very* | 1 — [phrasebook](../phrasebook.md) |
+| a word for *then* | **5** — [text 8](../texts/text-8-kaifa-suru-ca.md), [text 12](../texts/text-12-tarik-por-skola.md), [text 13](../texts/text-13-kula-una.md), [text 14](../texts/text-14-yamur-aur-ca.md), [text 21](../texts/text-21-uan-umur.md) |
+| *although, before, after, until* | 2 — [text 7](../texts/text-7-surat-por-mama.md), [text 8](../texts/text-8-kaifa-suru-ca.md) |
+| ordinal numbers | 2 — [text 6](../texts/text-6-seti-din.md), [story 2](../texts/story-2-safari-por-pahar.md) |
+| *very* | 2 — [the phrasebook](../phrasebook.md), and a sentence the founder asked for, [recorded with the gaps](../dictionary/README.md#a-third-way-of-finding-one) |
+| *all, some, none, every* | 1 — [text 19](../texts/text-19-kamra-mi.md) wanted *every* morning |
 | whether *daima* covers *forever* | 1 — [text 10](../texts/text-10-mila-tahun.md) |
 | whether a time noun takes *in* | 1 — [phrasebook](../phrasebook.md) |
 | *never* | 0 |
-| *all, some, none* | 0 — and *none* may already be covered by the existential *no es* |
 | indirect questions | 0 |
 | reflexives | 0 |
 | superlative within a named group | 0 |
 | where frequency adverbs sit | 0 |
 
-Six questions have never been reached for by anything anyone wrote. That is not
+**A word for *then* leads, and it led for two days without the table saying
+so.** The September 3 count had it at one page. Four more had recorded it by
+the time this was recounted — [`check.py`](../check.py) now counts the pages
+that write the claim, so the ordering follows the writing instead of a
+memory of it. *all, some, none* moved off zero the same way, when
+[text 19](../texts/text-19-kamra-mi.md) wanted *every*, and ordinals and *very*
+each gained a second page. A table whose whole purpose is to rank the questions
+by demand is the last table in the repository that should have been counted
+once.
+
+Five questions have never been reached for by anything anyone wrote. That is not
 an argument for dropping them — a language needs *never* eventually — but it is
 an argument about order.
 

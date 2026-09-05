@@ -2282,11 +2282,18 @@ for _p in PROSE:
     _flat = read(_p).replace("\n", " ")
     for _s in re.split(r"(?<=[.!?|])\s+", _flat):
         if "grammar/README.md)" in _s:
+            # The same sentence also summarises the demand table below, so its
+            # counts are legitimate numbers to find here: "a word for *then*
+            # leads it with five pages, and five questions have never been
+            # reached for".
+            _dc = {int(_x) for _x in
+                   re.findall(r"^\| [^|]+ \| \*{0,2}(\d+)\*{0,2} ",
+                              read("grammar/README.md"), re.M)}
             for _tok in re.findall(r"[A-Za-z][A-Za-z-]*|\d+", _s):
                 if _tok.lower() == "one": continue
                 _n = int(_tok) if _tok.isdigit() else WORD_NUM.get(_tok.lower())
                 if _n is None: continue
-                check(_n in (live, _nb, _nopen),
+                check(_n in (live, _nb, _nopen) or _n in _dc,
                       f"{os.path.basename(_p)}: '{_tok}' stands in a sentence about the "
                       f"open questions and is none of {live} questions, {_nb} briefings "
                       f"or {_nopen} open: {_s.strip()[:70]}")
@@ -2444,6 +2451,48 @@ check(f"of the {_SPELL.get(len(_gaprows))} are about how a person feels"
       in read("dictionary/README.md"),
       f"dictionary/README.md: the feelings count is not stated against "
       f"{len(_gaprows)} gaps")
+
+# --------------------------------- the demand table counts the pages that ask
+# grammar/README.md ranks the open questions by how many pages tried to say
+# something and stopped, and it is the table the founder is meant to read
+# first. It said "Counted September 3, 2026" and was never recounted: *then*
+# stood at one page while five had written the claim, *all, some, none* stood
+# at zero after text 19 wanted *every*, and ordinals and *very* had each gained
+# a second page. A table whose purpose is to rank by demand is the last one
+# that should be counted once.
+# Only the two rows with a clean, uniform claim are machine-counted — the
+# others are worded differently on each page and the table says which is which
+# by naming its sources.
+_gi = read("grammar/README.md")
+for _q, _pat in (("a word for \\*then\\*", r"no word for \*then\*"),
+                 ("every", r"no word for \*every\*")):
+    _n = sum(1 for _f in sorted(glob.glob("texts/*.md")) + ["phrasebook.md"]
+             if not _f.endswith("README.md") and re.search(_pat, read(_f), re.I))
+    _m = re.search(r"^\| [^|]*" + _q + r"[^|]*\| \*{0,2}(\d+)\*{0,2} ", _gi, re.M)
+    check(_m and int(_m.group(1)) == _n,
+          f"grammar/README.md's demand row for '{_q}' says "
+          f"{_m.group(1) if _m else 'nothing'}; {_n} pages write the claim")
+# The heaviest demand has to be the first row under the settled one, or the
+# table is not ordered by the thing it says it is ordered by.
+_drows = [_l for _l in _gi.splitlines()
+          if re.match(r"^\| [^|]+ \| \*{0,2}\d+\*{0,2} ", _l)]
+if _drows:
+    _counts = [int(re.search(r"\| \*{0,2}(\d+)", _l).group(1)) for _l in _drows]
+    check(_counts == sorted(_counts, reverse=True),
+          "grammar/README.md's demand table is not in descending order of demand, "
+          f"which is what it says it is for: {_counts}")
+    # The front page and the index both summarise the table, and the front page
+    # was summarising it wrongly: it said a mark for a name led, and that
+    # question scores zero here — the index says so itself, two paragraphs on.
+    _zeros = sum(1 for _c in _counts if _c == 0)
+    for _p3 in ("README.md", "grammar/README.md"):
+        # Flattened: the phrase wraps in README.md, and the first draft read the
+        # raw file and matched nothing. Third check this week to need it.
+        for _m3 in re.finditer(r"([A-Za-z-]+) questions have never been reached for",
+                               read(_p3).replace("\n", " ")):
+            check(WORD_NUM.get(_m3.group(1).lower()) == _zeros,
+                  f"{os.path.basename(_p3)}: says '{_m3.group(0)}'; the demand table "
+                  f"has {_zeros} rows at zero")
 
 # ---------------------------------------- the but briefing cites real pages
 # proposal-but.md rests on six pages that wanted the word, each quoted with the

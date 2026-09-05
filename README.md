@@ -212,8 +212,10 @@ reasoning and with the candidates it rejected.
 
 **[Thirty-seven questions are still open](grammar/README.md)**, gathered on one
 page, ordered by [what the writing has actually asked for](grammar/README.md) —
-a mark for a name now leads, and six questions have never been reached for at
-all. Four were not left open on purpose but were forms the material already
+a word for *then* leads it with five pages, and five questions have never been
+reached for at all. A mark for a name scores zero there and is still the
+briefing that matters most, which the index says plainly: it was not found by
+writing but by asking how a word is said aloud. Four were not left open on purpose but were forms the material already
 relied on that no rule had granted: a mark for a name, how *r* is made, "want
 to be" followed by an adjective, and the imperative — which led the list with
 three pages that tried and stopped until it was granted on September 3, 2026.
