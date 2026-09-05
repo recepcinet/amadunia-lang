@@ -196,7 +196,7 @@ is the whole vocabulary. The comparison with Esperanto is not like for like —
 its 917 roots are multiplied by some forty affixes into tens of thousands of
 words, and 300 against 917 flatters this language rather than the other one.
 What 300 gives beyond 300 is *forms*, not words: every noun has a doubled
-plural, and eleven number words reach a thousand. This page used to say *compounding* does the
+plural, and twelve number words reach a thousand. This page used to say *compounding* does the
 rest. It does not: every hyphen in the repository was counted, and all 37 are
 either a number or a doubled plural. [No compound word has ever been
 formed](grammar/word-formation.md), and whether one may be is now an open

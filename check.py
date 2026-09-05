@@ -758,6 +758,7 @@ for path in sorted(glob.glob("lessons/lesson-*.md")):
 WORD_NUM = {w: i for i, w in enumerate(
     "zero one two three four five six seven eight nine ten eleven twelve "
     "thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty".split())}
+_SPELLN = {_n: _w for _w, _n in WORD_NUM.items()}
 _TENS = "twenty thirty forty fifty sixty seventy eighty ninety".split()
 _UNITS = "one two three four five six seven eight nine".split()
 for _i, _t in enumerate(_TENS):
@@ -1405,7 +1406,46 @@ _VAL = {_w: int(meaning[_w]) for _w in words
         if re.fullmatch(r"\d+", meaning[_w].strip())}
 check(len(_VAL) == 12,
       f"the dictionary gives {len(_VAL)} roots glossed as a bare number; the "
-      f"number system is eleven digits and bases plus mila")
+      f"number system is ten digits and the bases sen and mila")
+
+# Four pages say how many words the number system is, and until September 5,
+# 2026 all four said eleven. Three of them were wrong and one was right, and
+# the difference is the ceiling each names: eleven roots reach a hundred, and
+# it takes mila — the twelfth — to reach a thousand. The figure was correct
+# everywhere before mila was settled, so settling it left no broken sentence
+# behind, only three sentences that had quietly stopped being true. Both
+# counts are read off the glosses.
+_plural = sorted(glob.glob("lessons/lesson-*-plural.md"))
+_plural_lesson = _plural[0] if _plural else "lessons/README.md"
+_ALLNUM = _SPELLN[len(_VAL)]
+_HUNDRED = _SPELLN[sum(1 for _v in _VAL.values() if _v <= 100)]
+for _p, _phrase in (("README.md", f"{_ALLNUM} number words reach a thousand"),
+                    ("grammar/numbers.md", f"{_ALLNUM} words and no exception"),
+                    # By glob, not by name: a lesson renamed to one digit is
+                    # the naming check's report to make, and a hardcoded path
+                    # here raises before it can print. It ate that report once.
+                    (_plural_lesson,
+                     f"nothing to teach: {_ALLNUM} words with not one exception"),
+                    ("dictionary/dictionary.md",
+                     f"Learn {_HUNDRED} words and you can count to a hundred")):
+    check(_phrase in read(_p).replace("\n", " "),
+          f"{_p}: the number system is {len(_VAL)} words, {_HUNDRED} of which "
+          f"reach a hundred; the page does not say '{_phrase}'")
+
+# The status line names the values that are settled, and mila was settled
+# after it was written: it said "1-10, 100" while the table below it printed
+# mila.
+_maxnum = max(_VAL.values())
+check(f"*Status: settled for 1-10, 100, {_maxnum}.*".replace("1-10", "1\u201310")
+      in read("grammar/numbers.md"),
+      f"numbers.md: the largest settled number is {_maxnum} and the status "
+      f"line does not name it")
+
+# The dictionary says the built numbers are not counted in the root total, and
+# named the total by hand: it read "the 113" through six batches.
+check(f"are not counted in the {len(words)}" in read("dictionary/dictionary.md"),
+      f"dictionary.md: the count the built numbers are excluded from is not "
+      f"{len(words)}")
 
 # The digit table is printed twice, on the front page and in numbers.md, and
 # neither copy was tied to the dictionary. Both are checked against it.

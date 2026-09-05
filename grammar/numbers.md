@@ -1,8 +1,8 @@
 # Numbers
 
-*Taught on [the front page](../README.md) rather than in a lesson, because there is nothing to teach — eleven words and no exception. [Lesson 05](../lessons/lesson-05-plural.md) is where they are first used and now says where they came from. That arrangement is why six, eight and nine sat in no sentence in the whole course until [Lesson 21](../lessons/lesson-21-things-and-ideas.md) and [Lesson 24](../lessons/lesson-24-the-table-and-the-city.md) were given sentences for them.*
+*Taught on [the front page](../README.md) rather than in a lesson, because there is nothing to teach — twelve words and no exception. [Lesson 05](../lessons/lesson-05-plural.md) is where they are first used and now says where they came from. That arrangement is why six, eight and nine sat in no sentence in the whole course until [Lesson 21](../lessons/lesson-21-things-and-ideas.md) and [Lesson 24](../lessons/lesson-24-the-table-and-the-city.md) were given sentences for them.*
 
-*Status: settled for 1–10, 100.*
+*Status: settled for 1–10, 100, 1000.*
 
 ## Digits
 
@@ -17,6 +17,18 @@
 | 10 | des |
 | 100 | sen |
 | 1000 | mila |
+
+**Twelve, not eleven.** This page opened with *eleven words and no exception*
+until September 5, 2026, and so did [Lesson 05](../lessons/lesson-05-plural.md);
+[the front page](../README.md) said eleven number words *reach a thousand*,
+which eleven of them cannot — *mila* is the twelfth and it is the one that
+reaches it. Eleven was right until *mila* was settled, and the sentence that
+carried it was never the sentence that changed. The
+[dictionary](../dictionary/dictionary.md) still says eleven and is still
+correct: it is counting the words that reach **a hundred**, and that ceiling did
+not move. One number, two ceilings, and only the pages that named the higher one
+were wrong — which is why finding it took reading all four rather than grepping
+for the figure. [`check.py`](../check.py) counts both from the glosses now.
 
 ## Building numbers
 

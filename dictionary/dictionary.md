@@ -332,7 +332,7 @@
 
 ## Counting to a hundred
 
-These are **not roots** and are not counted in the 113. Every one is built from the roots above by the rule in [grammar/numbers.md](../grammar/numbers.md) — the digit, then *des*. Learn eleven words and you can count to a hundred.
+These are **not roots** and are not counted in the 300 — a figure that read *the 113* until September 5, 2026, left behind by every batch since September 2. Every one is built from the roots above by the rule in [grammar/numbers.md](../grammar/numbers.md) — the digit, then *des*. Learn eleven words and you can count to a hundred.
 
 | | Amadunia | built from |
 |---|---|---|
