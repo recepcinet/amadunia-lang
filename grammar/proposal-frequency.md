@@ -42,7 +42,7 @@ sentence is worth knowing before either is answered.
 
 *tena*, "again", is not a frequency word — it counts repetitions rather than
 naming a rate — but it is the nearest neighbour in the dictionary and it has
-been consistent from the start: **29 of its 29 uses are last in the sentence**,
+been consistent from the start: **30 of its 30 uses are last in the sentence**,
 without one exception. *Mi lai tena*, *Anak katab tena*, *Yamur no lai tena*,
 *Din lai tena*.
 

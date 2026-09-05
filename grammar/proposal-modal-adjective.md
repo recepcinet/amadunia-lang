@@ -9,16 +9,16 @@ language was already relying on are prepared.
 It was called the smallest of the four, on the strength of two pages having
 tripped over it. Measured, it is not small.
 
-Counted across the material — the twenty-six lessons, the twenty-one texts and
+Counted across the material — the twenty-six lessons, the twenty-two texts and
 the phrasebook — which is the scope every other count in this repository uses,
 and not this page, whose illustrations are the only *modal + adjective* strings
 in existence.
 
 | | |
 |---|---|
-| Amadunia sentences in the material | 1669 |
-| of those, verbless adjective predicates | **360 — one in five** |
-| modal followed by a verb, working normally | 58 |
+| Amadunia sentences in the material | 1697 |
+| of those, verbless adjective predicates | **362 — one in five** |
+| modal followed by a verb, working normally | 60 |
 | modal followed by an adjective | **0, and none is possible** |
 | combinations with no legal form | **111** — three modals against 37 adjectives |
 
