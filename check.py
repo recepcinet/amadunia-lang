@@ -3811,6 +3811,27 @@ check(len(_twice) == 1 and f"*{_twice[0]}* is in **actions**" in _cl,
       f"a1-checklist.md: {len(_twice)} concepts appear twice — "
       f"{', '.join(_twice)} — and one deliberate duplicate is documented")
 
+# ---------------- the concepts the language composes instead of naming
+# Two rules join words — possession and the demonstrative — and nothing else
+# does, so the list of single-English-word concepts the material reaches with a
+# phrase rather than a root is short and can be held in full. It is two, and
+# one of them is counted missing by the checklist because the index holds roots.
+_composed = set()
+for _p in sorted(glob.glob("lessons/lesson-*.md")) + ["phrasebook.md"]:
+    for _l in read(_p).splitlines():
+        if not _l.startswith("| "): continue
+        _c = [_x.strip() for _x in _l.split("|")[1:-1]]
+        if len(_c) != 2: continue
+        _tk = [_x.lower() for _x in re.findall(r"[a-z]+(?:-[a-z]+)*", _c[0].lower())]
+        if len(_tk) < 2 or not all(_x.split("-")[0] in words for _x in _tk): continue
+        _en = re.sub(r"[^a-z ]", "", _c[1].lower()).strip()
+        if len(_en.split()) == 1 and _en: _composed.add(_en)
+check(_composed == {"today", "tonight"}
+      and all(f"**{_w}**" in read("dictionary/a1-checklist.md")
+              for _w in sorted(_composed)),
+      f"a1-checklist.md must name the concepts the material composes rather "
+      f"than names: {', '.join(sorted(_composed))}")
+
 # ------------------------------ the kinship block, split three ways
 # The checklist counts thirteen kinship concepts missing, and the count reads a
 # settled decision as an absence: the language has no gender anywhere, so a son

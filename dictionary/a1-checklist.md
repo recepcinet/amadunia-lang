@@ -66,6 +66,27 @@ as missing vocabulary reads a decision as an absence. **Four are the real
 hole.** This proposes nothing; the [A2 briefing](proposal-a2.md) is where the
 question belongs, and it is a narrower question than thirteen.
 
+**And kinship is not the only place composition hides a concept.** Swept on
+September 8, 2026: every two-word Amadunia phrase in the lessons and the
+phrasebook that is glossed by a single English word. There are exactly two,
+both in [the phrasebook](../phrasebook.md), and both are the demonstrative
+rather than possession — *din ini* for **today** and *rat ini* for **tonight**,
+this day and this night.
+
+**One of the two is on this list as missing.** *today* stands in the **time**
+domain and the index has no entry for it, because the index holds roots and
+*din ini* is two of them. So the same thing is true of it as of a grandmother:
+the language says it, the count cannot see it, and the count is not wrong — it
+is measuring roots, which is what it says it measures. *tonight* is not on the
+list at all, which is the checklist's own judgement about what an A1 learner
+needs and not an oversight.
+
+Two rules compose, then, and only two: possession and the demonstrative.
+Nothing else joins — [no compound word has ever been
+formed](../grammar/word-formation.md) — so the list of concepts the language
+reaches without a root is short and can be written out in full, which is what
+these two paragraphs do.
+
 ## the house
 
 wall, floor, roof, kitchen, bathroom, stairs, garden, bed, door, window, table, chair, lamp, key, soap, plate, glass, knife, spoon, cup, clock, mirror, towel, box, bag
