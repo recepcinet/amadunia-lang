@@ -3456,6 +3456,31 @@ for _end, _phrase in (("o", "**{}** roots end in *-o*"),
           .replace("\n", " "),
           f"conjunction.md: {_n} roots end in -{_end}")
 
+# ------------------------------- the ladder's first row, wherever it is said
+# reading-ladder.md printed "23%" in prose above a table whose Lesson 01 row
+# said 22, because the table is regenerated and the sentence over it is not.
+# It went stale the day text 23 moved the denominator. The front page had the
+# same figure as "a quarter" with no number at all, rounding 22 up by three.
+_l01 = next((int(_m.group(1)) for _m in
+             re.finditer(r"^\| 01 \| (\d+)% \|$", read("lessons/reading-ladder.md"), re.M)), None)
+check(_l01 is not None, "reading-ladder.md has no row for Lesson 01")
+if _l01 is not None:
+    for _p in ("lessons/reading-ladder.md", "README.md", "lessons/README.md"):
+        _t = read(_p).replace("\n", " ")
+        for _m in re.finditer(r"(\d+)% ?\.?\*{0,2} That is the frequency|"
+                              r"after one lesson — (\d+)%", _t):
+            _n = int(_m.group(1) or _m.group(2))
+            check(_n == _l01,
+                  f"{os.path.basename(_p)}: says {_n}% of the texts' words "
+                  f"after one lesson; the ladder's own row says {_l01}%")
+        # A fraction named without a figure has to be the honest one: 22 is
+        # nearly a quarter and is not a quarter.
+        for _m in re.finditer(r"(nearly )?a quarter of (?:the texts'|everything)",
+                              _t, re.I):
+            check(bool(_m.group(1)) == (_l01 < 25),
+                  f"{os.path.basename(_p)}: calls {_l01}% "
+                  f"{'a quarter' if _l01 < 25 else 'nearly a quarter'}")
+
 # ----------------------------- the index marks every briefing it calls open
 # grammar/README.md opens by saying how many briefings are open and then marks
 # them one by one. It said six and marked five: the row for "want to be" plus

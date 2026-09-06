@@ -38,7 +38,13 @@ counted with repeats, against the words the lessons have taught by that point.
 | 25 | 100% |
 | 26 | 100% |
 
-**Nearly a quarter of everything after one lesson — 23%.** That is the
+**Nearly a quarter of everything after one lesson — 22%.** That figure read
+23% until September 6, 2026, printed four lines above a table that said 22:
+the table is regenerated and the sentence over it was not, and it went stale
+the day [text 23](../texts/text-23-kim-paling-hayai.md) moved the denominator.
+[The front page](../README.md) had the same number as *a quarter*, with no
+figure at all — rounding 22 up by three on the page a reader meets first. Both
+are computed from this table now. That is the
 frequency curve doing the work — [ten roots carry a third of the
 corpus](../dictionary/frequency.md), and the first lesson teaches the commonest
 of them. Half by Lesson 08, three quarters by Lesson 16.
