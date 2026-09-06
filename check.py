@@ -3878,6 +3878,29 @@ check(not _unmapped,
       f"an etymology names a language the family map does not know, so its "
       f"family is counted nowhere: {', '.join(_unmapped)}")
 
+# --------------------- a time word in front of the subject, while it is open
+# place.md settles that time goes last and grants fronting to a subordinate
+# clause alone. Eight sentences front a time word instead, two of them in
+# lessons, and every one is a contrast. The shape is an open question now, so
+# the count is held and the rule page has to name each sentence — the same
+# treatment as a tense marker before an adjective.
+_TIMEW = {"sasa", "besok", "kemarin", "daima", "kadang"}
+_fronted = set()
+for _p, _fb2 in _material():
+    for _line, _sent, _toks in amadunia_runs(_fb2):
+        _t = [_x.lower().split("-")[0] for _x in _toks]
+        if (len(_t) > 2 and _t[0] in _TIMEW
+                and (_t[1] in PRONOUNS or (_t[1] in words and _t[1] not in VERBS
+                                           and _t[1] not in ADJECTIVES))):
+            _fronted.add((os.path.basename(_p), _sent.strip()))
+check(len(_fronted) == 8,
+      f"{len(_fronted)} sentences open with a time word; the shape is an open "
+      f"question and stood in eight when it was raised: "
+      f"{sorted(_s for _, _s in _fronted)}")
+check(all(f"*{_s}*" in read("grammar/place.md") for _, _s in _fronted),
+      f"grammar/place.md must name every sentence that fronts a time word: "
+      f"{sorted(_s for _, _s in _fronted)}")
+
 # ------------------------ a gloss may not claim a category the language lacks
 # text 6 glossed an unmarked predicate with a bare duration as "he has been ill
 # seven days" — the English perfect doing work the Amadunia does not do, and

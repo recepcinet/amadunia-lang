@@ -122,6 +122,36 @@ Nearly every short candidate collided:
 
 ## Open questions
 
+- **Whether a time word may open a sentence.** The order this page settles puts
+  place first and time after it, both at the end, and grants fronting to one
+  thing only: a subordinate clause, with a comma. **Eight sentences front a
+  time word instead**, and two of them are lessons:
+
+  | Where | Sentence | |
+  |---|---|---|
+  | [Lesson 20](../lessons/lesson-20-colours-and-health.md) | *sasa ta hao* | now she is well |
+  | [Lesson 22](../lessons/lesson-22-doing-and-feeling.md) | *sasa kita go* | now we go |
+  | [text 16](../texts/text-16-berapa-harga.md) | *Besok mi saufa tabak samaki una mama mi* | tomorrow I will cook fish with my mother |
+  | [text 17](../texts/text-17-tren-aur-farasi.md) | *Besok mi saufa go dom mi* | tomorrow I will go to my house |
+  | [text 20](../texts/text-20-in-skola.md) | *Sasa mi faham* | now I understand |
+  | [text 20](../texts/text-20-in-skola.md) | *Besok mi saufa go skola tena* | tomorrow I will go to school again |
+  | [text 21](../texts/text-21-uan-umur.md) | *Sasa anak faham* | now the child understands |
+  | [text 26](../texts/text-26-dom-eski.md) | *Sasa dom itu no es dom mi* | now that house is not my house |
+
+  Every one of them is a contrast — *now*, as against before; *tomorrow*, as
+  against today — and English, Chinese, Indonesian and Turkish all front a time
+  word for exactly that. Nothing here grants it and nothing here forbids it
+  either: the rule says where time *goes*, not that it may go nowhere else.
+  That is the same silence that covered the imperative until September 3 and
+  [a tense marker before an adjective](tense.md) until yesterday.
+
+  Found September 12, 2026 by reducing every sentence in the material to its
+  parts of speech and reading the shapes that occur once — the method that
+  found the four sentences below. The most recent of the eight is
+  [text 26](../texts/text-26-dom-eski.md), written two days ago, which used the
+  shape without noticing it was not granted. [`check.py`](../check.py) holds
+  the count at eight while the question is open.
+
 - **A place word cannot attach to a noun, and cannot take one.** *sini, situ,
   upar, sub, kiri, yamin* are whole place expressions and go last, so there is
   no way to say **the people here**, **the soup there**, or **below the house**.

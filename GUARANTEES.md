@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**287 guarantees** in **134 groups**, and every one of them is
+**289 guarantees** in **135 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -501,6 +501,10 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### every language an etymology names must map to a family
 
 - an etymology names a language the family map does not know, so its family is counted nowhere: …
+### a time word in front of the subject, while it is open
+
+- … sentences open with a time word; the shape is an open question and stood in eight when it was raised: …
+- grammar/place.md must name every sentence that fronts a time word: …
 ### a gloss may not claim a category the language lacks
 
 - a gloss claims a category the language has not settled: …

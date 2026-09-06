@@ -120,7 +120,7 @@ Two items are not grammar at all and sit outside this order: *madad* doing two
 jobs, and the thinness of Sino-Tibetan and Japonic recorded in
 [balance.md](../dictionary/balance.md). Both are vocabulary policy.
 
-## Open questions — 39 of them
+## Open questions — 40 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
@@ -220,6 +220,7 @@ measurement with its method stated, to be re-run rather than trusted.
 
 **[place](place.md)**
 
+- **Whether a time word may open a sentence.** The order puts time at the end and grants fronting to a subordinate clause alone, and eight sentences front a time word instead — *sasa ta hao*, *Besok mi saufa go dom mi* — two of them in lessons. Every one is a contrast, which is what fronting is for in the languages this one borrows from. **Open — the founder's call.**
 - **Does a time expression take *in*?** Six sentences say *in pagi*; twenty-odd say *rat ini* with no preposition. Nobody decided; the two forms grew side by side.
 - **With an object, the two jobs of *una* collide.** Alone after a verb it is "together" — *Kita kula una* — and before a noun it is "with". Put an object in and the reading flips: *Kita kula una pan* is "we eat with bread", never "we eat the bread together". Found by [text 13](../texts/text-13-kula-una.md), September 4, 2026.
 - **A place word cannot attach to a noun, and cannot take one.** *sini, situ, upar, sub, kiri, yamin* are whole place expressions and go last, so **the people here**, **the soup there** and **below the house** have no form. Four sentences were writing them anyway, in a text, a lesson's source and this rule's own illustration; all four are rewritten and the gap is recorded. *Ponte in sungai* had been glossed "the bridge is **over** the river" in two places — *in* is at or in. Found September 5, 2026 by counting every adjacent pair of word classes in the repository and reading the rare ones.
