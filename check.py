@@ -55,16 +55,27 @@ words = [l.split("|")[1].strip() for l in rows]
 meaning = {l.split("|")[1].strip(): l.split("|")[2].strip() for l in rows}
 source  = {l.split("|")[1].strip(): l.split("|")[3].strip() for l in rows}
 
-for w in words:
-    check(set(w) <= ALPHABET, f"{w}: uses a letter outside the alphabet")
-    check(not re.search("[" + "".join(sorted(CONSONANTS)) + "]{3}", w),
-          f"{w}: three consonants in a row")
-    for pair in re.findall(r"(?=([aeiou]{2}))", w):
-        check(pair in VOWEL_SEQS, f"{w}: vowel sequence '{pair}' is not attested")
+# The four rules about a word's shape, in one function. They were a loop over
+# the dictionary and nothing else could ask them, so balance.md's table of ten
+# candidate borrowings — the evidence for what A2 could take from Chinese and
+# Japanese — carried ten verdicts written by hand under a sentence claiming
+# they had been through every rule in this file. Now they have.
+def _shape_faults(_w):
+    _f = []
+    if not set(_w) <= ALPHABET: _f.append("uses a letter outside the alphabet")
+    if re.search("[" + "".join(sorted(CONSONANTS)) + "]{3}", _w):
+        _f.append("three consonants in a row")
+    for _pair in re.findall(r"(?=([aeiou]{2}))", _w):
+        if _pair not in VOWEL_SEQS:
+            _f.append(f"vowel sequence '{_pair}' is not attested")
     # Only pairs were checked, so a run of three slipped through whenever each
     # of its pairs was attested. kuai — recorded in CONTRIBUTING as rejected for
     # exactly this — passed every phonotactic rule in this file.
-    check(not re.search(r"[aeiou]{3}", w), f"{w}: three vowels in a row")
+    if re.search(r"[aeiou]{3}", _w): _f.append("three vowels in a row")
+    return _f
+
+for w in words:
+    for _fault in _shape_faults(w): check(False, f"{w}: {_fault}")
     check(source[w] != "—", f"{w}: no etymology")
 
 # The two- and three-letter space is full: 49 roots occupy it — o, then 14 of
@@ -4449,6 +4460,49 @@ for _m in re.finditer(r"among them ([^.]+)\.", _bal):
               f"balance.md names {_w} among the roots with six families; it "
               f"has {_famn.get(_w)}")
 
+# --------------------------- balance.md's ten candidate borrowings, re-run
+# The page says ten ordinary Chinese and Japanese words "were put through every
+# rule in check.py — alphabet, consonant runs, vowel pairs, minimal pairs,
+# length — and seven passed", and then prints ten verdicts that were written by
+# hand. It is the evidence for what A2 could take from the two thinnest
+# families, so the verdicts are re-run against the rules themselves rather than
+# quoted. A rejected row must also say what rejected it.
+_cands = re.findall(r"^\| [^|]+ \| \*([a-z]+)\* \| (passes|rejected)([^|]*)\|$",
+                    read("dictionary/balance.md"), re.M)
+_mten = re.search(r"(\w+) ordinary words", " ".join(read("dictionary/balance.md").split()))
+check(_mten and WORD_NUM.get(_mten.group(1).lower()) == len(_cands),
+      f"balance.md's candidate table has {len(_cands)} rows; the paragraph "
+      f"above it counts {_mten.group(1) if _mten else '?'}")
+_passed = 0
+for _w, _verdict, _why in _cands:
+    _faults = _shape_faults(_w)
+    if len(_w) < 4: _faults.append("shorter than four letters")
+    _faults += [f"minimal pair with {_x}" for _x in words
+                if len(_x) == len(_w) and sum(_a != _b for _a, _b in zip(_x, _w)) == 1]
+    check(bool(_faults) == (_verdict == "rejected"),
+          f"balance.md says {_w} {_verdict}; the rules say "
+          + (", ".join(_faults) if _faults else "it passes"))
+    if not _faults: _passed += 1
+check(f"and {_SPELLN[_passed]} passed" in " ".join(read("dictionary/balance.md").split()),
+      f"balance.md: {_passed} of the ten candidates pass every rule")
+
+# The widest root's seven families are named one by one on the page, and only
+# the count was held: the names could have been any seven. Same for the two
+# roots that reach Korean, which are what the 0.7% in the table is made of.
+_wf = sorted({FAMILY[_k] for _k in FAMILY
+              if re.search(r"\b" + _k + r"\b", source[_wroot[0]])})
+check(f"belongs to {_SPELLN[_widest]}: " + ", ".join(_wf[:-1]) + " and " + _wf[-1]
+      in _bal,
+      f"balance.md does not name {_wroot[0]}'s families as the dictionary has "
+      f"them: {', '.join(_wf)}")
+_kor = sorted(_w for _w in words
+              if any(FAMILY[_k] == "Koreanic" and re.search(r"\b" + _k + r"\b",
+                                                            source[_w])
+                     for _k in FAMILY))
+check(len(_kor) == 2
+      and f"*{_kor[0]}* and *{_kor[1]}* name it among their sources" in _bal,
+      f"balance.md: the roots that name a Korean source are {', '.join(_kor)}")
+
 # A family with no root at all is a different claim from a family no root
 # comes from: Korean is named by two roots and originates none, and the page
 # said "no roots at all" three paragraphs under a table showing 2.
@@ -4678,8 +4732,11 @@ _MONTH = {"January": 1, "February": 2, "March": 3, "April": 4, "May": 5,
           "November": 11, "December": 12}
 for _p in md() + ["check.py", "test-check.py", "CONTRIBUTING.md"]:
     if not os.path.exists(_p): continue
-    for _m in re.finditer(r"\b(" + "|".join(_MONTH) + r") (\d{1,2}), (\d{4})\b",
-                          read(_p)):
+    # Flattened first. Five dates in the future survived this check for two
+    # days because they wrapped between the day and the year — the fourth time
+    # a scan in this file has had to learn that a claim is not a line.
+    for _m in re.finditer(r"\b(" + "|".join(_MONTH) + r")\s+(\d{1,2}),\s+(\d{4})\b",
+                          " ".join(read(_p).split())):
         try:
             _d = _dt.date(int(_m.group(3)), _MONTH[_m.group(1)], int(_m.group(2)))
         except ValueError:

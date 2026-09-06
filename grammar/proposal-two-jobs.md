@@ -38,7 +38,7 @@ needs a new root and the language has none.
 | a verb | a command | writable | a noun for "help", if one is ever wanted |
 | a noun | a fragment | impossible | a verb for "to help" |
 
-**Two is now a measured figure and not an assumption.** Swept September 14,
+**Two is now a measured figure and not an assumption.** Swept September 6,
 2026: every root standing straight after a pronoun subject, which is the verb
 slot and nothing else — a noun beside a noun would be ambiguous with
 possession, and after a pronoun it cannot be. Only *rabota* comes back. The

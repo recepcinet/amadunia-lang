@@ -94,7 +94,7 @@ and the three new families reach one root each, so the sort had nothing to
 separate them — it kept the order they happened to be inserted in, which comes
 from iterating a set of family names, which depends on the interpreter's hash
 seed. One run of the checker called the table right and the next called it
-wrong, on a file nobody had touched. Ties are broken by name from September 10,
+wrong, on a file nobody had touched. Ties are broken by name from September 6,
 2026, and the row order is a fact about the dictionary rather than about the
 process that read it.
 

@@ -231,7 +231,7 @@ once as the verb and once as a noun. [The dictionary glosses it *to
 sing*](../dictionary/dictionary.md) and nothing else, and
 [one root does one job](../CONTRIBUTING.md): the two roots that break that rule
 are named and this was quietly a third. The line says *Ta-ta kanta tena* now —
-they sing again — which loses the song and the age of it. Found September 13,
+they sing again — which loses the song and the age of it. Found September 6,
 2026 by reducing every sentence in the material to its parts of speech and
 reading the shapes that occur once; the song is
 [on the list of words the writing has asked for](../dictionary/README.md#words-the-writing-has-asked-for).

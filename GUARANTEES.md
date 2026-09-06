@@ -2,12 +2,12 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**308 guarantees** in **141 groups**, and every one of them is
+**310 guarantees** in **142 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
-A contributor should not have to read 4707 lines of Python to find
-out what will fail. That figure said **eleven hundred** until September 15,
+A contributor should not have to read 4764 lines of Python to find
+out what will fail. That figure said **eleven hundred** until September 6,
 2026, on the page whose whole reason for existing is that the Python is too
 long to read — it was written when the checker was a quarter of its size and
 nothing recomputed it. The regenerator writes it now.
@@ -27,10 +27,7 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 ### dictionary
 
-- …: uses a letter outside the alphabet
-- …: three consonants in a row
-- …: vowel sequence '…' is not attested
-- …: three vowels in a row
+- …: …
 - …: no etymology
 - … roots are shorter than four letters; the short space is closed at 49 — see CONTRIBUTING rule 2
 - ACCEPTED_PAIRS lists …/…, which is no longer a pair in the dictionary
@@ -568,6 +565,13 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - balance.md: the widest root is … at … families
 - balance.md: … roots name exactly six families
 - balance.md names … among the roots with six families; it has …
+### balance.md's ten candidate borrowings, re-run
+
+- balance.md's candidate table has … rows; the paragraph above it counts …
+- …
+- balance.md: … of the ten candidates pass every rule
+- balance.md does not name …'s families as the dictionary has them: …
+- balance.md: the roots that name a Korean source are …
 - balance.md: … roots name a … language
 ### no paragraph is printed twice
 

@@ -105,8 +105,7 @@ Three things this text wanted to say and could not. None of them was invented
 to make the text work.
 
 **The perfect is not in the language, and this line was borrowing it.** *Ta
-bimar seti din* was glossed "he **has been** ill seven days" until September
-12, 2026. The Amadunia has no tense marker at all and no word for *for*: it is
+bimar seti din* was glossed "he **has been** ill seven days" until September 6, 2026. The Amadunia has no tense marker at all and no word for *for*: it is
 an unmarked predicate with a bare duration after it, and the English perfect
 was doing work the sentence does not do. Whether *suda* covers the perfect is
 [an open question](../grammar/tense.md), and a gloss is not the place to answer
