@@ -34,9 +34,14 @@ You also know *kita*. It means "we" too — but a particular we.
 
 > — Mi-mi go market sasa. Yu-yu?
 > — No, mi-mi sini.
-> — Ok. Kita saufa kula una rat!
+> — Ok. Kita saufa kula una!
 
-*We're going to the market now. You all? — No, we're staying here. — Ok. We'll all eat together tonight!*
+*We're going to the market now. You all? — No, we're staying here. — Ok. We'll all eat together!*
+
+The last line said *Kita saufa kula una rat* — "tonight" — until September 6,
+2026. [Lesson 15](lesson-15-pointing-placing.md) puts a noun after *una* to
+mean *with*, so *una rat* is "with the night", and the time word had to come
+out: at Lesson 09 there is no *in* to hold it apart.
 
 The last line uses *kita* because the speaker means everyone — both groups.
 
@@ -88,7 +93,7 @@ No *I / me*, no *she / her*, no *we / us*. One form each.
 Nine lessons, **81 roots**. You can now talk about anyone — one person or many, with you or without you, a person or a thing — and the words for them have never once changed their shape.
 
 **Two corrections, September 5, 2026.** Practice 5 read *Nama ta-ta ke?* with
-no *es*. A question word stands where the answer stands, and the answer to that
+without *es*. A question word stands where the answer stands, and the answer to that
 one is a name — a noun, which takes *es*. Lessons 07 and 11 and the phrasebook
 all write *Nama yu es ke?*; this was the only one of the seven without it.
 

@@ -48,10 +48,16 @@ Leave the subject out and the sentence becomes a command. Nothing is added.
 |---|---|
 | Otur sini. | Sit here. |
 | Kula pan. | Eat bread. |
-| No go! | Do not go! |
+| Lai sini. | Come here. |
 
 *Yu otur sini* is different — it is a statement about you. A command has no
 subject at all, and that is what makes it one. [The rule](../grammar/sentence-types.md).
+
+The third row read *No go!* until September 6, 2026, which put *no* in front of
+a predicate four lessons before [Lesson 14](lesson-14-not-and.md) teaches it to
+go there, in a single line with nothing said about it.
+[Lesson 26](lesson-26-telling-and-answering.md) is where a command is denied,
+and it explains the rule it is using.
 
 ## The body
 

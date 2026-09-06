@@ -48,7 +48,7 @@ particles like any other. So *Es doktor* is a sentence beginning with a verb
 and no subject, and by the rule above it should be a command: *be a doctor*.
 
 It is not. **A sentence-initial *es* is the existential**, settled first and
-standing in **45** sentences: *Es hotel in madina*, there is a hotel in the
+standing in **44** sentences: *Es hotel in madina*, there is a hotel in the
 city. That read thirty until September 5, 2026, counted the day the rule was
 made and not since; [`check.py`](../check.py) counts it now, over the lessons,
 the texts and the phrasebook. The narrower rule wins over the broader one, which is how any two rules

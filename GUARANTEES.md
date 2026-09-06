@@ -2,11 +2,11 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**307 guarantees** in **140 groups**, and every one of them is
+**308 guarantees** in **141 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
-A contributor should not have to read 4659 lines of Python to find
+A contributor should not have to read 4707 lines of Python to find
 out what will fail. That figure said **eleven hundred** until September 15,
 2026, on the page whose whole reason for existing is that the Python is too
 long to read — it was written when the checker was a quarter of its size and
@@ -181,6 +181,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - reading-ladder.md is missing or contradicts the row '…'
 - texts/README.md's index does not list …
+### a lesson may not use a rule dated after itself
+
+- …: uses the … rule, which Lesson … introduces: …
 ### giving needs por
 
 - …: '… …' after beri — a recipient takes por, or it reads as an owner: …

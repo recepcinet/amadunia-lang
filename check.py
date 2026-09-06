@@ -1363,7 +1363,13 @@ def _rules_in(_line, _toks):
         _r.add("tone question")
     if {"ini", "itu"} & set(_t): _r.add("demonstrative")
     if {"in", "dari", "por"} & set(_t): _r.add("place")
-    if "una" in _t: _r.add("una")
+    # *una* alone is the adverb "together" and marks nothing; *una* with a noun
+    # after it is the preposition "with". Lesson 15 states exactly that
+    # distinction, and tagging every *una* as the preposition dated three
+    # lessons — 02, 09 and 10 — to Lesson 15 for a word they use as an adverb.
+    if any(_a == "una" and (_b in NOUNS or _b in PRONOUNS)
+           for _a, _b in zip(_t, _t[1:])):
+        _r.add("una")
     if any(_a in VERBS and _b in VERBS for _a, _b in zip(_t, _t[1:])):
         _r.add("verb chain")
     if {"lebi", "kurang", "paling", "kadar"} & set(_t): _r.add("comparison")
@@ -1403,11 +1409,26 @@ def _rules_in(_line, _toks):
 # lesson: a text using them waits for nothing. The map needed the entry as soon
 # as the two rule detectors were merged — the ladder's copy had no number test
 # at all, so nothing had ever asked this map for it.
+# Three of these were the lesson that *states* the rule rather than the lesson
+# that starts using it, which is six lessons of overstatement in the reading
+# ladder: *es* arrives at the foot of Lesson 06 and Lesson 11 says so itself in
+# its own first paragraph; *lebi* arrives in Lesson 16 and the rest of the
+# comparison words in 18. They are read off the syllabus now. The vocabulary
+# half of a ladder row already refuses a text that uses a word before it is
+# taught, so dating a construction from its earliest word cannot let anything
+# through — it only stops the ladder charging for a lesson a reader does not
+# need yet.
+def _first_lesson_with(*_ws):
+    return min([_n for _n in sorted(_LADAFTER)
+                if any(_w in _LADAFTER[_n] for _w in _ws)] or [99])
 _RULE_LESSON = {"number": 1, "tone question": _first_q,
+                "copula": _first_lesson_with("es"),
+                "comparison": _first_lesson_with("lebi", "kurang", "paling",
+                                                 "kadar"),
                 "tense": 4, "plural": 5, "possession": 6, "question": 7,
-                "command": 10, "copula": 11, "adverb": 12, "negation": 14,
+                "command": 10, "adverb": 12, "negation": 14,
                 "conjunction": 14, "demonstrative": 15, "place": 15, "una": 15,
-                "verb chain": 17, "existence": 18, "comparison": 18,
+                "verb chain": 17, "existence": 18,
                 "subordination": 18}
 # A text opens when a reader has both its words and its rules, so the row is
 # the later of the two. It used to be the vocabulary alone, with a second check
@@ -1441,6 +1462,29 @@ _index = [_l for _l in read("texts/README.md").splitlines() if _l.startswith("| 
 for _f in sorted(_LADVOCAB):
     check(any(f"]({_f})" in _l for _l in _index),
           f"texts/README.md's index does not list {_f}")
+
+# --------------------------- a lesson may not use a rule dated after itself
+# The block above holds five rules, named one at a time, because each needed
+# its own shape test. Every rule the scanner can find has a lesson beside it in
+# _RULE_LESSON, so all eighteen can be held at once — and the five that were
+# named by hand were the five somebody had thought to name. Widening it found
+# four more: *es* in Lessons 06 to 10 against a map that said Lesson 11,
+# *lebi* in Lesson 16 against 18, *una* used as "together" in three lessons
+# against the Lesson 15 preposition, and two real faults in the lessons
+# themselves — *No go!* in Lesson 10, four lessons before negation is taught,
+# and *Kita saufa kula una rat* in Lesson 09, which by Lesson 15's own rule
+# says "eat with the night".
+for _p in sorted(glob.glob("lessons/lesson-*.md")):
+    _ln = _lesson_no(_p)
+    if _ln is None: continue          # the two-digit rule reports that
+    for _line, _sent, _toks in amadunia_runs(read(_p)):
+        if any(_x in _line.lower() for _x in
+               ("wrong", "cannot", "not legal", "✗", "until september")):
+            continue
+        for _k in sorted(_rules_in(_line, _toks)):
+            check(_RULE_LESSON[_k] <= _ln,
+                  f"{os.path.basename(_p)}: uses the {_k} rule, which "
+                  f"Lesson {_RULE_LESSON[_k]:02d} introduces: {_sent}")
 
 # **Withdrawn: that reading-ladder.md says in prose which texts have a grammar
 # arriving after their vocabulary.** It was written and could not be broken.
@@ -3946,7 +3990,7 @@ for _p in md():
 # inside a sentence of English that is naming the phrase rather than saying it.
 # The residue is small and is not removable by any rule that does not also cost
 # real sentences — three were tried — so it is counted and held instead.
-_prose_runs = 0
+_prose_runs = _prose_words = 0
 for _p in (sorted(glob.glob("lessons/lesson-*.md")) + ["phrasebook.md"]):
     _pb = read(_p)
     if "## New word" in _pb:
@@ -3957,8 +4001,12 @@ for _p in (sorted(glob.glob("lessons/lesson-*.md")) + ["phrasebook.md"]):
         if _ls.startswith(("|", ">", "```")): continue
         if re.match(r"^[-\d]+[.)]?\s", _ls): continue
         _prose_runs += 1
+        _prose_words += len(_toks)
+# The word half of that pair was a literal 57 inside this check, so the run
+# count was derived and the words beside it were not — the same page, the same
+# sentence, one number held and one not.
 check(f"**{_prose_runs} runs" in read("grammar/proposal-sentence-types.md")
-      and f"**{_prose_runs} runs, 57 words**" in read("texts/README.md"),
+      and f"**{_prose_runs} runs, {_prose_words} words**" in read("texts/README.md"),
       f"{_prose_runs} runs come from explanatory prose, and both pages that "
       f"state it must say so")
 

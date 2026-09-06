@@ -3,7 +3,7 @@
 Generated from the material a learner reads — the twenty-six lessons, the
 twenty-nine texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **6574 words of running Amadunia**, and 291 of the 300 roots appear in one.
+it. **6571 words of running Amadunia**, and 291 of the 300 roots appear in one.
 
 The other nine appear in no sentence of more than one word anywhere: *bai*,
 *bas*, *hi*, *mersi*, *ok*, *pardon*, *plis*, *ya* — and *madad*, which is
@@ -49,11 +49,11 @@ cover half of everything.** They are the first twenty-five below.
 | 3 | *ta* | he, she, it — no gender | 205 | 3.1% |
 | 4 | *in* | at, in, on | 195 | 3.0% |
 | 5 | *anak* | child | 148 | 2.3% |
-| 6 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 134 | 2.0% |
-| 7 | *lai* | to come | 122 | 1.9% |
+| 6 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 133 | 2.0% |
+| 7 | *lai* | to come | 123 | 1.9% |
 | 8 | *dom* | house, home | 120 | 1.8% |
-| 9 | *go* | to go | 117 | 1.8% |
-| 10 | *no* | no; **not** — before the predicate, see [grammar/negation.md](../grammar/negation.md) | 117 | 1.8% |
+| 9 | *go* | to go | 116 | 1.8% |
+| 10 | *no* | no; **not** — before the predicate, see [grammar/negation.md](../grammar/negation.md) | 115 | 1.8% |
 | 11 | *ini* | this — after the noun, last in the phrase | 109 | 1.7% |
 | 12 | *suda* | past marker (before the verb) | 107 | 1.6% |
 | 13 | *aur* | and | 104 | 1.6% |
@@ -63,9 +63,9 @@ cover half of everything.** They are the first twenty-five below.
 | 17 | *sema* | to say, to speak | 81 | 1.2% |
 | 18 | *kita* | we, including you — see [grammar/pronouns.md](../grammar/pronouns.md) | 73 | 1.1% |
 | 19 | *kula* | to eat | 72 | 1.1% |
-| 20 | *kabir* | big | 69 | 1.0% |
-| 21 | *keci* | small | 69 | 1.0% |
-| 22 | *rafiki* | friend | 69 | 1.0% |
+| 20 | *kabir* | big | 69 | 1.1% |
+| 21 | *keci* | small | 69 | 1.1% |
+| 22 | *rafiki* | friend | 69 | 1.1% |
 | 23 | *sol* | sun | 58 | 0.9% |
 | 24 | *saufa* | future marker (before the verb) | 57 | 0.9% |
 | 25 | *dari* | from | 56 | 0.9% |
@@ -82,7 +82,7 @@ cover half of everything.** They are the first twenty-five below.
 | 36 | *sasa* | now | 40 | 0.6% |
 | 37 | *itu* | that | 39 | 0.6% |
 | 38 | *por* | to, for | 39 | 0.6% |
-| 39 | *sini* | here | 38 | 0.6% |
+| 39 | *sini* | here | 39 | 0.6% |
 | 40 | *skola* | school | 38 | 0.6% |
 
 ## Used exactly once

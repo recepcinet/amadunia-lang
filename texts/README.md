@@ -86,9 +86,9 @@ it — a count is only as good as what it counted.
 | subordination | 12 |
 | verb chain | 12 |
 | existence | 11 |
-| una | 11 |
 | command | 10 |
 | adverb | 9 |
+| una | 9 |
 | comparison | 8 |
 
 <!-- end generated -->
@@ -141,12 +141,12 @@ been. Every sentence in the lessons, the texts and the phrasebook was reduced
 to its parts of speech — R for a pronoun, V a verb, N a noun, A an adjective,
 P a preposition, and so on — and the shapes counted.
 
-**1876 sentences, 448 distinct shapes**, and the fifteen commonest cover 42%
+**1875 sentences, 448 distinct shapes**, and the fifteen commonest cover 42%
 of them. The leaders are *RVN* at 8.3% (*Ta-ta lihat stela-stela*), *NA* at
 7.5% (*Sol kabir*) and *NV* at 4.8% (*Anak sema*). [`check.py`](../check.py)
 recounts the two headline numbers.
 
-**1567 of the 1876 are distinct — 84%.** The corpus is not padded with
+**1567 of the 1875 are distinct — 84%.** The corpus is not padded with
 repeats: the most repeated sentence appears eight times across five files and
 is *Mi sema*, "I say", which is a quotation frame rather than a sentence
 anybody is making. It read *Mi sema* at seven until September 6, 2026, and the
@@ -179,7 +179,7 @@ subject is.** Corrected September 6, 2026, and the phrasing is covered now.
 
 Every figure on this page comes from one scanner, and on September 6, 2026 it
 was found reading a row of vocabulary as two sentences. Excluding that left a
-smaller residue, measured rather than guessed: **22 runs, 57 words**, come from
+smaller residue, measured rather than guessed: **21 runs, 55 words**, come from
 explanatory prose in the lessons and the phrasebook rather than from a table, a
 quoted line, a code block or a numbered practice item. Six of the 22 are real
 sentences; the other 16 are a page naming a form to talk about it, or a piece

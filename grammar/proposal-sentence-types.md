@@ -64,7 +64,7 @@ may be *said alone*, not what may be *printed alone*.
 This page drew a distinction by hand — a grammar lesson printing *dom mi* in a
 table is citing a phrase, not claiming it is a sentence — and the scanner that
 produces every corpus figure in the repository has never known it. Measured on
-September 6, 2026: **22 runs come from explanatory prose** in the lessons and
+September 6, 2026: **21 runs come from explanatory prose** in the lessons and
 the phrasebook rather than from a table, a quoted line, a code block or a
 numbered practice item. They divide three ways.
 
