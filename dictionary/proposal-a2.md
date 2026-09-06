@@ -13,8 +13,13 @@ what this page is about. What the next 300 should be *made of* is.
 
 The record said Chinese and Japanese contribute almost nothing because their
 words are short and the two- and three-letter space is full. That is true of
-the eleven words already taken — *hao*, *kan*, *lai*, *cang*, *yuki*, *nomu*,
-*suru* — and false about the languages.
+the fifteen words already taken — *hao*, *kan*, *lai*, *cang*, *yuki*, *nomu*,
+*suru* and eight more — and false about the languages.
+
+That count read **eleven** until September 7, 2026, which is the Sino-Tibetan
+figure alone; the sentence is about Chinese *and* Japanese, and the seven words
+it names are four of one and three of the other. Eleven plus four is what the
+record should have said.
 
 Root length, measured across all 300:
 
@@ -124,7 +129,7 @@ written down: [a hand-made list of 274 ordinary A1 concepts by
 domain](a1-checklist.md), each looked up in the English index by
 [`check.py`](../check.py).
 
-**168 of 274 are present. A hundred and six are not.**
+**167 of 273 are present. A hundred and six are not.**
 
 | Domain | Present | Missing |
 |---|---|---|
@@ -135,7 +140,7 @@ domain](a1-checklist.md), each looked up in the English index by
 | people | 14 of 27 | man, woman, baby, neighbour, uncle, aunt, grandmother, grandfather, cousin, son, daughter, husband, wife |
 | time | 13 of 22 | minute, today, late, early, Monday, Sunday, January, summer, winter |
 | weather | 8 of 14 | storm, ice, north, south, east, west |
-| actions | 43 of 60 | play, stand, lose, carry, laugh, cry, dance, jump, fall, push, pull, break, build, meet, hold, throw, clean |
+| actions | 42 of 59 | play, stand, lose, carry, laugh, cry, dance, jump, fall, push, pull, break, build, meet, hold, throw, clean |
 | qualities | 27 of 45 | slow, weak, angry, tired, hungry, thirsty, free, cheap, expensive, dark, bright, soft, hard, wet, dry, fluent, brown, grey |
 | basics | 20 of 31 | but, all, some, none, every, few, also, only, very, then, never |
 
@@ -144,11 +149,19 @@ checklist twice — in **actions**, where it is the verb, and in **qualities**,
 where it is what a washed room is — and the English index answers *clean* with
 *safi*, which is the quality. The language has *gasil*, to wash, and no verb
 for cleaning. From September 5, 2026 a concept in **actions** counts as present
-only if the index holds it as **to X**, which is what an action is. That moved
-one word and no others: *work* is the only other action matched by a bare
-entry, and it is exempt while [*rabota*'s class is
-undecided](../grammar/proposal-two-jobs.md) — counting it either way here would
-answer that question by arithmetic.
+only if the index holds it as **to X**, which is what an action is.
+
+**And *work* is set aside from both sides of the fraction.** It is the only
+other action the index answers with a bare entry, and the reason is
+[*rabota*'s undecided class](../grammar/proposal-two-jobs.md). It was exempt
+from the rule and counted **present** until September 7, 2026 — which is the
+answer the exemption was written to avoid giving, because counting it present
+asserts that *rabota* is the verb and counting it missing asserts that it is
+not. Neither is neutral. It is now left out of the numerator and the
+denominator alike: 273 concepts counted, the 274th named and waiting. The
+totals moved by one each way, and the page and
+[the checklist](a1-checklist.md) now say the same thing about the same word,
+which they did not.
 
 ### The sets a language has to close
 

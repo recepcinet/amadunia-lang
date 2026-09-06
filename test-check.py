@@ -615,6 +615,12 @@ MUTATIONS = [
      "Beta opens. This is a deliberately long duplicated sentence, put here only to exercise the repeated-sentence guarantee.\n\n"
      "## Why this and not the alternatives",
      "a sentence is printed twice"),
+    ("the thin-family root count gone stale", "dictionary/proposal-a2.md",
+     "the fifteen words already taken", "the eleven words already taken",
+     "15 roots come from Chinese or Japanese"),
+    ("work counted back into the checklist total", "dictionary/proposal-a2.md",
+     "| actions | 42 of 59 |", "| actions | 43 of 59 |",
+     "checklist row for 'actions' is stale; the dictionary has 42 of 59"),
     ("a rejection overstating a candidate's syllables", "grammar/negation.md",
      "| tidak | Indonesian | one family, and two syllables",
      "| tidak | Indonesian | one family, and three syllables",

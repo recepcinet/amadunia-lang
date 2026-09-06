@@ -30,7 +30,7 @@ has under another word class:
 
 | Missing | What the dictionary holds | |
 |---|---|---|
-| **work**, the action | *rabota*, the noun *work* | and whether one root may hold both jobs is [the open question](../grammar/proposal-two-jobs.md) |
+| **work**, the action | *rabota*, the noun *work* | and whether one root may hold both jobs is [the open question](../grammar/proposal-two-jobs.md) — so it is [set aside from the count entirely](proposal-a2.md), rather than counted either way |
 | **clean**, the action | *safi*, the quality *clean* | the pair this page was corrected for on September 5, 2026 |
 | **free** | *uhuru*, *freedom* | |
 | **angry** | *gusa*, *anger* | |

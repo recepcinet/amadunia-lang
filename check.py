@@ -1711,8 +1711,15 @@ for _m in re.finditer(r"^## (.+)\n\n(.+)$", read("dictionary/a1-checklist.md"), 
     # *work* is the only other action matched by a bare entry, and it is exempt
     # while rabota's class is open: counting it either way answers that
     # question by arithmetic. See grammar/proposal-two-jobs.md.
+    # Counting *work* present asserts that rabota is the verb; counting it
+    # missing asserts that it is not. Neither is neutral, and the exemption was
+    # written to be neutral, so it is set aside from both sides of the fraction
+    # instead: 273 concepts counted, and the 274th named and left out until the
+    # question is answered. Until September 7, 2026 it was counted present,
+    # which is the answer it was written to avoid giving.
     if _m.group(1) == "actions":
-        _have = [_x for _x in _ws if f"to {_x}" in _a1head or _x == "work"]
+        _ws = [_x for _x in _ws if _x != "work"]
+        _have = [_x for _x in _ws if f"to {_x}" in _a1head]
     else:
         _have = [_x for _x in _ws if _x in _a1head or f"to {_x}" in _a1head]
     _a1tot += len(_ws); _a1present += len(_have)
@@ -3501,6 +3508,18 @@ for _end, _phrase in (("o", "**{}** roots end in *-o*"),
     check(_phrase.format(_n).replace("**", "") in _conj.replace("**", "")
           .replace("\n", " "),
           f"conjunction.md: {_n} roots end in -{_end}")
+
+# ---------------- how many roots the two thin families have actually given
+# proposal-a2.md says how many words are already taken from Chinese and
+# Japanese and named eleven, which is the Sino-Tibetan figure alone; the
+# sentence is about both families and the seven words it lists are four of one
+# and three of the other.
+_thin = sum(1 for _w in words
+            if FAMILY.get(min([(source[_w].find(_k), _k) for _k in FAMILY
+                               if re.search(r"\b" + _k + r"\b", source[_w])] or
+                              [(0, None)])[1]) in ("Sino-Tibetan", "Japonic"))
+check(f"the {_SPELLN[_thin]} words already taken" in read("dictionary/proposal-a2.md"),
+      f"proposal-a2.md: {_thin} roots come from Chinese or Japanese")
 
 # ------------------- a rejection that counts syllables or letters must count
 # negation.md turned tidak away for "three syllables" and it has two; the but
