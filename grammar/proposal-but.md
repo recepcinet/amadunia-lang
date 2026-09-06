@@ -39,7 +39,7 @@ pairs against all 300 roots, and the l/r ban.
 | Shape | Source | Verdict |
 |---|---|---|
 | **lakin** | Arabic *lākin*, Persian, Turkish *lakin*, Urdu/Hindi *lekin*, and Swahili *lakini* | passes everything |
-| lakini | the Swahili form of the same word | passes; two syllables longer |
+| lakini | the Swahili form of the same word | passes; one syllable and two letters longer |
 | tapi | Indonesian, Malay | passes; reaches one family |
 | tetapi | the formal Indonesian form | passes; six letters for one family |
 | ancak | Turkish | passes; reaches one family |

@@ -3502,6 +3502,32 @@ for _end, _phrase in (("o", "**{}** roots end in *-o*"),
           .replace("\n", " "),
           f"conjunction.md: {_n} roots end in -{_end}")
 
+# ------------------- a rejection that counts syllables or letters must count
+# negation.md turned tidak away for "three syllables" and it has two; the but
+# briefing called lakini "two syllables longer" when it is one syllable and two
+# letters. Both verdicts hold on their other half — one family, and a word
+# already chosen — but a record that overstates what it refused is worth less
+# than one that does not. Counted by the rule the language counts by: one
+# syllable per vowel group.
+for _p in sorted(glob.glob("grammar/*.md")) + sorted(glob.glob("dictionary/*.md")):
+    for _line in read(_p).splitlines():
+        _m = re.match(r"\| \*{0,2}([a-z]+)\*{0,2}(?: \([A-Za-z ]+\))? \|[^|]*\| "
+                      r"[^|]*?\b([A-Za-z-]+|\d+) (syllables?|letters)\b", _line)
+        if not _m: continue
+        # A comparative — "one syllable and two letters longer" — is a
+        # difference, not a count, and the first version of this check read it
+        # as one. The test is on the whole row, because the words that make it
+        # a comparative come after the unit.
+        if re.search(r"\b(longer|shorter|more|fewer)\b", _line): continue
+        _cand, _tok, _unit = _m.group(1), _m.group(2), _m.group(3)
+        _n = int(_tok) if _tok.isdigit() else WORD_NUM.get(_tok.lower())
+        if _n is None: continue
+        _real = (len(re.findall(r"[aeiou]+", _cand)) if _unit.startswith("syllable")
+                 else len(_cand))
+        check(_n == _real,
+              f"{os.path.basename(_p)}: says {_cand} has {_n} {_unit}; it has "
+              f"{_real}")
+
 # ------------------------------ every "N roots end in -X" claim, everywhere
 # conjunction.md's two were corrected on September 5 and the same claim about
 # *-a* survived on place.md and verb-chains.md, both saying thirty against 69.
