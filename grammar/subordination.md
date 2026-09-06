@@ -15,12 +15,16 @@
 
 There is no word for "that". A whole sentence simply stands where an object would stand.
 
-**And that is why the rule was mismeasured.** Every count of subordination in
-this repository looked for *porke*, *kab* and *agar*, because those are the
-words there are to look for. The unmarked clause has none, so half the rule was
-invisible to the instrument: on September 6, 2026 the material held **59
-sentences** with a marker and **11 without one**, and the eleven had never been
-counted anywhere. [`check.py`](../check.py) finds them now, by the one shape
+**And that is why the rule was mismeasured, twice.** Every count of
+subordination in this repository looked for *porke*, *kab* and *agar*, because
+those are the words there are to look for. The unmarked clause has none, so
+half the rule was invisible to the instrument, and the eleven sentences that
+carry it had never been counted anywhere. The other half of the mistake was
+counting too much: *kab* and *porke* are also the question words *when* and
+*why*, and in a question they stand last, where the answer will stand, marking
+nothing. Ten sentences in the material are that shape and every one was being
+read as a subordinate clause. The material holds **50 sentences** with a marker
+and **11 without one**. [`check.py`](../check.py) finds them now, by the one shape
 that cannot be read two ways — a verb, then a pronoun, then a predicate, as in
 *Mi fikir yu hao*. A pronoun takes no adjective and heads no phrase, so nothing
 else can follow it there. **It is a floor and not a count:** *Ta sema dom mi

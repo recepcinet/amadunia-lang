@@ -783,6 +783,26 @@ WORD_NUM = {w: i for i, w in enumerate(
     "zero one two three four five six seven eight nine ten eleven twelve "
     "thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty".split())}
 _SPELLN = {_n: _w for _w, _n in WORD_NUM.items()}
+
+# Ordinals, spelled once. This file had three hand-written maps of them —
+# 1 to 13, 5 to 9, and 12 to 17 — and the first ran out the day text 21 became
+# the fourteenth of twenty-nine by adjacent-pair repetition: the check asked
+# for "? of twenty-nine", found nothing, and reported the page wrong whatever
+# the page said. That is the third map in this file to end before the corpus
+# did. Built from the number words instead, which already reach 199.
+_ORDIRREG = {"one": "first", "two": "second", "three": "third",
+             "five": "fifth", "eight": "eighth", "nine": "ninth",
+             "twelve": "twelfth", "twenty": "twentieth", "thirty": "thirtieth",
+             "forty": "fortieth", "fifty": "fiftieth"}
+def _ordinal(_n):
+    _w = _SPELLN.get(_n)
+    if _w is None: return "?"
+    _head, _sep, _tail = _w.rpartition("-")
+    _last = _tail or _w
+    _o = _ORDIRREG.get(_last) or (_last[:-1] + "ieth" if _last.endswith("y")
+                                  else _last + "th")
+    return _head + _sep + _o if _head else _o
+
 # WORD_NUM stops at twenty because that is as far as the prose it parses
 # counts; spelling out a figure needs further. A missing entry raised
 # KeyError rather than reporting, which is a check that cannot fail.
@@ -1328,14 +1348,34 @@ def _rules_in(_line, _toks):
         _r.add("existence")
     if "no" in _t: _r.add("negation")
     if {"aur", "o"} & set(_t): _r.add("conjunction")
-    if "?" in _line: _r.add("question")
+    # A question mark is two different rules with two different lessons. The
+    # question word arrives in Lesson 07; asking by tone alone has been in the
+    # lessons since Lesson 01, and the syllabus check above already holds that.
+    # Tagging every "?" as Lesson 07 dated 162 of the material's 253 questions
+    # six lessons late, which the reading ladder would have charged to any text
+    # that asked one.
+    # Written as two statements because this file holds itself to exactly one
+    # `_r.add("<rule>")` per rule — a conditional inside the call hides the
+    # rule's name from the check that stops a second detector appearing.
+    if "?" in _line and set(_t) & GROUP["Question words"]:
+        _r.add("question")
+    if "?" in _line and not set(_t) & GROUP["Question words"]:
+        _r.add("tone question")
     if {"ini", "itu"} & set(_t): _r.add("demonstrative")
     if {"in", "dari", "por"} & set(_t): _r.add("place")
     if "una" in _t: _r.add("una")
     if any(_a in VERBS and _b in VERBS for _a, _b in zip(_t, _t[1:])):
         _r.add("verb chain")
     if {"lebi", "kurang", "paling", "kadar"} & set(_t): _r.add("comparison")
-    if {"porke", "kab", "agar"} & set(_t) or _clause_object(_t):
+    # *kab* and *porke* are the question words *when* and *why* as well as the
+    # clause markers *when* and *because*. In a question they stand last, where
+    # the answer will stand, and they mark nothing: ten sentences in the
+    # material are that shape, and every one of them was being read as a
+    # subordinate clause. The Lesson 08 conversation in text 29 asks *Ta lai
+    # kab?* and the ladder dated it to Lesson 18 for it.
+    if ({"porke", "kab", "agar"} & set(_t)
+            and not ("?" in _line and _t[-1] in ("porke", "kab"))) \
+            or _clause_object(_t):
         _r.add("subordination")
     if any(_a in VERBS and _b in ADJECTIVES for _a, _b in zip(_t, _t[1:])):
         _r.add("adverb")
@@ -1363,7 +1403,7 @@ def _rules_in(_line, _toks):
 # lesson: a text using them waits for nothing. The map needed the entry as soon
 # as the two rule detectors were merged — the ladder's copy had no number test
 # at all, so nothing had ever asked this map for it.
-_RULE_LESSON = {"number": 1,
+_RULE_LESSON = {"number": 1, "tone question": _first_q,
                 "tense": 4, "plural": 5, "possession": 6, "question": 7,
                 "command": 10, "copula": 11, "adverb": 12, "negation": 14,
                 "conjunction": 14, "demonstrative": 15, "place": 15, "una": 15,
@@ -2083,6 +2123,19 @@ check(set(_RULE_LESSON) == set(_RULETEXT),
       "the rules the ladder dates and the rules the scan finds differ: "
       f"dated but never found {sorted(set(_RULE_LESSON) - set(_RULETEXT))}, "
       f"found but never dated {sorted(set(_RULETEXT) - set(_RULE_LESSON))}")
+
+# The two halves of the question mark, counted where the split is explained.
+_qmark = _qword = 0
+for _p, _qb in _material():
+    for _line, _sent, _toks in amadunia_runs(_qb):
+        if "?" not in _line: continue
+        _qmark += 1
+        if set(_t.lower() for _t in _toks) & GROUP["Question words"]: _qword += 1
+_qr = " ".join(read("texts/README.md").split())
+check(f"material's {_qmark} questions, {_qmark - _qword} use no question word"
+      in _qr,
+      f"texts/README.md: the material has {_qmark} questions and "
+      f"{_qmark - _qword} of them use no question word")
 
 _thin = min(_RULETEXT.items(), key=lambda kv: len(kv[1]))
 _m5 = re.search(r"each stand in \*\*at least (\w+)\*\* texts", read("texts/README.md"))
@@ -2867,8 +2920,6 @@ if _rows:
 # added since and neither number moved, and a third sentence — "three of the
 # twelve" — hung off the same figure. Both are read off the table now.
 _SPELL = {n: w for w, n in WORD_NUM.items()}
-_ORD = {12: "twelfth", 13: "thirteenth", 14: "fourteenth", 15: "fifteenth",
-        16: "sixteenth", 17: "seventeenth"}
 # The split this counts is "the row names a text or a lesson", not "writing
 # found it": *a song* names text 21 and was found by a sweep of sentence
 # shapes, not by the writing stopping. The sentence says what the column shows.
@@ -2876,7 +2927,7 @@ check(f"{_SPELL.get(len(_written))} name a text or a lesson"
       in read("dictionary/README.md"),
       f"dictionary/README.md: {len(_written)} rows name a text or a lesson, and "
       f"the page does not say so")
-check(all(_ORD.get(len(_written) + _i + 1, "?") in read("dictionary/README.md")
+check(all(_ordinal(len(_written) + _i + 1) in read("dictionary/README.md")
           for _i in range(len(_asked))),
       f"dictionary/README.md: the {len(_asked)} gaps found by a question are not "
       f"named as numbers {len(_written) + 1} to {len(_gaprows)}")
@@ -3389,12 +3440,11 @@ check(_m4 and WORD_NUM.get(_m4.group(1).lower()) == len(_butrows),
 # The seventh is the one that matters most" — and it kept saying seven for a
 # day after a row was withdrawn from the table above it.
 _butn = len(re.findall(r"^\| \[[^\]]+\]\([^)]+\) \| \*", _but, re.M))
-_ORDW = {5: "fifth", 6: "sixth", 7: "seventh", 8: "eighth", 9: "ninth"}
 _mbp = re.search(r"(\w+) of the (\w+) are a bargain", _but.replace("\n", " "))
 check(_mbp and WORD_NUM.get(_mbp.group(2).lower()) == _butn,
       f"proposal-but.md's prose counts '{_mbp.group(2) if _mbp else '?'}' pages; "
       f"its table has {_butn}")
-check(f"The {_ORDW.get(_butn, '?')} is the one that matters most" in _but,
+check(f"The {_ordinal(_butn)} is the one that matters most" in _but,
       f"proposal-but.md does not call page {_butn} the one that matters most")
 
 for _name, _rel, _quote in _butrows:
@@ -4005,16 +4055,13 @@ if _T21 in _tshapes:
     # number 7, so the page could not move without the checker having to be
     # edited by hand — a check that has to be rewritten when the thing it
     # measures changes is a second copy of the figure. Both are derived.
-    _ORDW = {1: "first", 2: "second", 3: "third", 4: "fourth", 5: "fifth",
-             6: "sixth", 7: "seventh", 8: "eighth", 9: "ninth", 10: "tenth",
-             11: "eleventh", 12: "twelfth", 13: "thirteenth"}
-    check(f"the {_ORDW.get(_rank_top, '?')} *least* repetitive of "
+    check(f"the {_ordinal(_rank_top)} *least* repetitive of "
           f"{_SPELLN[len(_tshapes)]} texts" in _t21.replace("\n", " "),
           f"text-21 is the {_rank_top}th least repetitive of {len(_tshapes)} "
           f"by its three commonest shapes")
     check(f"{round(_adj21)}% of adjacent sentence pairs share a shape" in _t21
-          and f"{_ORDW.get(_rank_adj, '?')} of {_SPELLN[len(_tshapes)]}" in _t21
-          and f"{_ORDW.get(_rank_adj, '?')} of {_SPELLN[len(_tshapes)]}" in _rdme,
+          and f"{_ordinal(_rank_adj)} of {_SPELLN[len(_tshapes)]}" in _t21
+          and f"{_ordinal(_rank_adj)} of {_SPELLN[len(_tshapes)]}" in _rdme,
           f"text-21 shares a shape between {round(_adj21)}% of adjacent pairs, "
           f"{_rank_adj}th of {len(_tshapes)}")
 
@@ -4390,14 +4437,23 @@ for _p in md():
 # The page states how many sentences carry each shape. The marked half was
 # always countable; the unmarked half was invisible until _clause_object was
 # written, and the figures are the reason the rule looked thinnest. Derived.
+# Counted through _rules_in, not beside it: this block had its own copy of the
+# marker test and so counted the ten questions that end in *kab* or *porke* as
+# subordinate clauses, which the rule detector no longer does. The two halves
+# are a partition — a sentence with a marker is counted as marked even when it
+# also carries an unmarked clause — so they sum to the sentences that use the
+# rule at all.
 _mark = _unmark = 0
 for _p, _sb in _material():
     for _line, _sent, _toks in amadunia_runs(_sb):
         _t = [_x.lower() for _x in _toks]
+        if "subordination" not in _rules_in(_line, _toks): continue
         if {"porke", "kab", "agar"} & set(_t): _mark += 1
-        if _clause_object(_t): _unmark += 1
-check(f"**{_mark}\nsentences** with a marker and **{_unmark} without one**"
-      in read("grammar/subordination.md"),
+        else: _unmark += 1
+# Flattened: the expected string carried the newline the sentence happened to
+# wrap at, so rewording the paragraph around it broke a check about arithmetic.
+check(f"**{_mark} sentences** with a marker and **{_unmark} without one**"
+      in " ".join(read("grammar/subordination.md").split()),
       f"subordination.md's two counts are stale; the material holds {_mark} "
       f"clauses with a marker and {_unmark} without")
 

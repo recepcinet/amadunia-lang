@@ -204,8 +204,8 @@ By sentence shape — every sentence reduced to its parts of speech — this tex
 uses **52 distinct shapes**, more than any other text in the language; the next
 highest are story 2 and [text 22](text-22-agar-yamur-lai.md) with 27 each. Its
 three commonest shapes cover 33% of it, which makes it the eighth *least*
-repetitive of twenty-eight texts. And 8% of adjacent sentence pairs share a
-shape, thirteenth of twenty-eight: the recipe is 28% and the poem 25%, both for
+repetitive of twenty-nine texts. And 8% of adjacent sentence pairs share a
+shape, fourteenth of twenty-nine: the recipe is 28% and the poem 25%, both for
 good reasons.
 
 *Four of those five figures were wrong until September 6, 2026.* The paragraph

@@ -4,18 +4,27 @@ Original writing in Amadunia.
 
 Every text here is written using **only** the roots in the [dictionary](../dictionary/dictionary.md) and **only** the grammar that has been settled in [grammar/](../grammar/). Nothing is invented to make a sentence work. When a text cannot say something, that is recorded at the end of it as a gap — which is the point. A lesson shows what the language can do; a text finds out what it cannot.
 
-**Seventeen rules can be spotted in a sentence**, and they
+**Eighteen rules can be spotted in a sentence**, and they
 each stand in **at least eight** texts. That is not the same as every settled
 rule, and the two sentences used to be one: the claim read *every settled rule
 is exercised here* with the narrower figure beneath it, which is an overclaim
 followed by its own qualification. There are twenty-one rule pages. Fourteen of them are measured
-here, three more rows are sub-rules of those pages — existence, *una* and the
-command — and **seven rules cannot be seen by a sentence scanner at all**:
+here, four more rows are sub-rules of those pages — existence, *una*, the
+command and the tone question — and **seven rules cannot be seen by a sentence
+scanner at all**:
 definiteness because it is marked by nothing, word-formation
 because it is an absence, phonology, pronunciation and stress because they are
 properties of every word rather than of any sentence, and word order because it
 is true of all of them. Pronouns are the exception and are simply not tracked:
 the scanner could count them and does not.
+
+**A question mark is two rules, and the scan counted it as one.** Asking with
+a question word — *ke*, *kim*, *nali*, *kab*, *kaifa*, *berapa* — is Lesson 07.
+Asking by tone alone has been in the lessons since Lesson 01, and the syllabus
+is checked for exactly that. Of the material's 259 questions, 164 use no
+question word, so dating every one of them to Lesson 07 charged six lessons to
+any text that asked one — both figures recounted here. They are two rows now, and the tone question stands in
+more texts than the question word does.
 
 **Possession was on the invisible list until September 6, 2026**, on the
 grounds that it is marked by nothing — and being marked by nothing is not the
@@ -64,15 +73,16 @@ it — a count is only as good as what it counted.
 | Rule | Texts |
 |---|---:|
 | place | 25 |
-| possession | 23 |
+| possession | 24 |
 | conjunction | 19 |
 | negation | 19 |
-| tense | 18 |
-| number | 17 |
+| tense | 19 |
+| number | 18 |
 | copula | 16 |
+| tone question | 16 |
 | demonstrative | 15 |
-| question | 15 |
 | plural | 13 |
+| question | 12 |
 | subordination | 12 |
 | verb chain | 12 |
 | existence | 11 |
@@ -131,12 +141,12 @@ been. Every sentence in the lessons, the texts and the phrasebook was reduced
 to its parts of speech — R for a pronoun, V a verb, N a noun, A an adjective,
 P a preposition, and so on — and the shapes counted.
 
-**1851 sentences, 448 distinct shapes**, and the fifteen commonest cover 42%
+**1876 sentences, 448 distinct shapes**, and the fifteen commonest cover 42%
 of them. The leaders are *RVN* at 8.3% (*Ta-ta lihat stela-stela*), *NA* at
 7.5% (*Sol kabir*) and *NV* at 4.8% (*Anak sema*). [`check.py`](../check.py)
 recounts the two headline numbers.
 
-**1556 of the 1851 are distinct — 84%.** The corpus is not padded with
+**1567 of the 1876 are distinct — 84%.** The corpus is not padded with
 repeats: the most repeated sentence appears eight times across five files and
 is *Mi sema*, "I say", which is a quotation frame rather than a sentence
 anybody is making. It read *Mi sema* at seven until September 6, 2026, and the
@@ -150,7 +160,7 @@ The measurement was made to test a claim and refuted it.
 [Text 21](text-21-uan-umur.md), the long one, said at first that the shapes
 drone at that length. They do not: it uses 52 distinct shapes, more than any
 other text, and only 8% of its adjacent sentence pairs share a shape, which
-puts it thirteenth of twenty-eight. The most repetitive pages are
+puts it fourteenth of twenty-nine. The most repetitive pages are
 [the recipe](text-8-kaifa-suru-ca.md) at 28% and [the poem](text-5-uan.md) at
 25%, both of which repeat on purpose.
 
@@ -224,3 +234,4 @@ These are original compositions, not translations. Translating an existing book 
 | [Dom eski](text-26-dom-eski.md) | 45 | 300 roots, Lessons 1-26 — a memory, and the first page to find that an adjective predicate cannot be put in the past |
 | [Kalima por anak-anak](text-27-kalima-por-anak-anak.md) | 39 | 300 roots, Lessons 1-26 — a notice on a school wall, **written for the imperative and against a missing *everyone***, and one of the four texts that use no *mi* |
 | [Din mi](text-28-din-mi.md) | 30 | **30 roots, Lessons 1-06** — one day from sunrise to night, written for the nine lessons that had nothing to read; the lowest rung on the ladder |
+| [Yu mau ke?](text-29-yu-mau-ke.md) | 37 | **37 roots, Lessons 1-08** — a market conversation, the second rung on the ladder and the first text that is mostly questions |
