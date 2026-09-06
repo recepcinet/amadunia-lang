@@ -1129,6 +1129,38 @@ MUTATIONS = [
      "texts/text-27-kalima-por-anak-anak.md",
      "**Four texts use\nno *mi* at all**", "**Five texts use\nno *mi* at all**",
      "texts use no *mi*"),
+    # check.py refuses a date later than today anywhere in the repository, and
+    # this file is one of the places it reads. Both replacements are assembled
+    # from pieces so that the test for the rule is not itself a breach of it —
+    # the same convention the forbidden-pattern checks use.
+    ("a correction dated in the future", "grammar/negation.md",
+     "September 6, 2026", "September 30, " + "2027",
+     "which has not happened"),
+    ("a date that is not a date", "grammar/negation.md",
+     "September 6, 2026", "September 3" + "1, 2026",
+     "is not a date"),
+    ("the briefing's enumeration counted wrong", "dictionary/proposal-a2.md",
+     "**The first 7, in the order", "**The first 8, in the order",
+     "and then lists"),
+    ("the briefing's division of the gap table gone stale",
+     "dictionary/proposal-a2.md",
+     "Sixteen gaps are on the list", "Fifteen gaps are on the list",
+     "does not divide the gap table as it stands"),
+    ("the briefing's count of gaps found by writing gone stale",
+     "dictionary/proposal-a2.md",
+     "Seven of the thirteen gaps found by\nwriting",
+     "Seven of the twelve gaps found by\nwriting",
+     "gaps found by writing'; the table holds"),
+    ("kinship's absences miscounted in the briefing",
+     "dictionary/proposal-a2.md",
+     "absences are thirteen of twenty-seven",
+     "absences are fourteen of twenty-seven",
+     "kinship's absences are"),
+    ("kinship's presences miscounted in the briefing",
+     "dictionary/proposal-a2.md",
+     "**Kinship is fourteen\nof twenty-seven present**",
+     "**Kinship is thirteen\nof twenty-seven present**",
+     "kinship is 14 of 27 present"),
     ("a gap row that lost a cell wall", "dictionary/README.md",
      "| a rule | [text 27](../texts/text-27-kalima-por-anak-anak.md) |",
      "| a rule | [text 27](../texts/text-27-kalima-por-anak-anak.md) | | ",
@@ -1326,7 +1358,7 @@ def run(cwd):
 
 def main():
     src = os.path.dirname(os.path.abspath(__file__))
-    # One run at a time. Two overlapping runs on September 10, 2026 wrote to
+    # One run at a time. Two overlapping runs on September 6, 2026 wrote to
     # one output file, and the second reported the first's failure as its own —
     # a green tree read as red, which is the same class of mistake as reading a
     # red one as green and just as expensive. The lock names the process

@@ -88,7 +88,7 @@ Two different families, neither already dominant in the vocabulary. Both are sem
   verb, and copula.md says *nothing before an adjective* and this is something.
   It is the same kind of thing as the imperative before September 3 — a rule
   the writing settled by using it, waiting for somebody to say so — and it is
-  the founder's to grant or refuse. Found September 11, 2026 by
+  the founder's to grant or refuse. Found September 6, 2026 by
   [text 26](../texts/text-26-dom-eski.md), which is a memory, needed it in its
   second sentence, and worked round it because an open shape is not for new
   writing. [`check.py`](../check.py) holds the count at five so the shape

@@ -17,7 +17,7 @@ properties of every word rather than of any sentence, and word order because it
 is true of all of them. Pronouns are the exception and are simply not tracked:
 the scanner could count them and does not.
 
-**The question rule was missing from this table until September 7, 2026**, and
+**The question rule was missing from this table until September 6, 2026**, and
 not because it is hard to see. Its detector looked for a question mark in the
 sentence, and the scanner splits sentences *on* the question mark, so the mark
 was never there to find. Counted properly, the question rule stands in fourteen
@@ -31,13 +31,13 @@ in Lesson 06 — so the repository's two headline corpus sizes were being
 measured over two different corpora, the sentence count over one and the word
 count over the other. There is one definition now, and it removes the table
 rows rather than the section: a gloss is not a use, and a sentence is a
-sentence wherever it is printed. Merged September 8, 2026, and no check
+sentence wherever it is printed. Merged September 6, 2026, and no check
 enforces it — a structural rule stated precisely enough to test turned out to
 need four exceptions, which is a rule not worth writing.
 
 **It was missing because the test existed twice.** The reading ladder needs the
 same judgement — which rules a sentence uses — and had its own copy, which read
-the raw line and had always worked. Compared line by line on September 8, 2026,
+the raw line and had always worked. Compared line by line on September 6, 2026,
 the two copies had drifted **three** ways: the table could not see a question,
 the ladder could not see a *negative* command, and the ladder had no number
 detector at all. Only the first had reached a published figure; the ladder's

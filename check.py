@@ -1754,6 +1754,24 @@ check(not unused, f"{len(unused)} roots are never used in a sentence, only "
                   f"glossed: {', '.join(unused[:12])}"
                   + (" ..." if len(unused) > 12 else ""))
 
+# ------------------------------------------- the gap table, scanned once
+# dictionary/README.md's table is the one list of what the writing has asked
+# for, and three separate paragraphs count it — its own page, the A2
+# briefing's section 3, and the briefing's overlap arithmetic. The briefing's
+# was a hardcoded "twelve" inside this file, so when a sixteenth gap was added
+# the pattern stopped matching instead of reporting a stale page. One scan,
+# every reader.
+_gapsec = read("dictionary/README.md").split("## Words the writing has asked for")[1]
+_gapsec = _gapsec.split("### A third way")[0]
+_gaprows = [_l for _l in _gapsec.splitlines()
+            if _l.startswith("| ") and not _l.startswith("| Missing") and "---" not in _l]
+_asked = [_l for _l in _gaprows if "#a-third-way-of-finding-one" in _l]
+_written = [_l for _l in _gaprows if _l not in _asked]
+# One row names a text and was still not found by the writing stopping: it says
+# so in the cell, and the difference is the whole of section 3's arithmetic.
+_swept = [_l for _l in _written if "rather than by writing" in _l]
+_bywriting = [_l for _l in _written if _l not in _swept]
+
 # --------------------------------------------------- the A1 checklist
 # dictionary/a1-checklist.md is the wordlist method, kept beside the gaps found
 # by writing. The concepts are judgement and live in that file; the arithmetic
@@ -1777,7 +1795,7 @@ for _m in re.finditer(r"^## (.+)\n\n(.+)$", read("dictionary/a1-checklist.md"), 
     # missing asserts that it is not. Neither is neutral, and the exemption was
     # written to be neutral, so it is set aside from both sides of the fraction
     # instead: 273 concepts counted, and the 274th named and left out until the
-    # question is answered. Until September 7, 2026 it was counted present,
+    # question is answered. Until September 6, 2026 it was counted present,
     # which is the answer it was written to avoid giving.
     if _m.group(1) == "actions":
         _ws = [_x for _x in _ws if _x != "work"]
@@ -1797,8 +1815,12 @@ for _m in re.finditer(r"^## (.+)\n\n(.+)$", read("dictionary/a1-checklist.md"), 
 # totals: it said the checklist "adds about eighty more" and asked which of
 # "the eighty-four" matter, when the checklist is missing a hundred and six and
 # seven of those are gaps the writing had already found.
-_mov = re.search(r"(\w+) of the twelve gaps found by", _a2.replace("\n", " "))
+_mov = re.search(r"(\w+) of the (\w+) gaps found by writing",
+                 _a2.replace("\n", " "))
 _movn = WORD_NUM.get(_mov.group(1).lower()) if _mov else None
+check(_mov is not None and WORD_NUM.get(_mov.group(2).lower()) == len(_bywriting),
+      f"proposal-a2.md: says '{_mov.group(2) if _mov else '?'} gaps found by "
+      f"writing'; the table holds {len(_bywriting)}")
 check(_movn is not None and f"adds **{_a1tot - _a1present - _movn}** more" in _a2,
       f"proposal-a2.md: the checklist is missing {_a1tot - _a1present} and "
       f"{_movn} of those were found by writing, so it adds "
@@ -1812,6 +1834,55 @@ check(f"{_SPELLN[_a1tot - _a1present].capitalize()} are not" in _a2,
 check(f"**{_a1present} of {_a1tot} are present" in _a2,
       f"proposal-a2.md's checklist total is stale; recount gives "
       f"{_a1present} of {_a1tot}")
+
+# Section 3 opens by dividing the gap table four ways — how many there are and
+# how each was found — and it said fifteen and twelve while the table held
+# sixteen and thirteen. The page's own page was checked and this one was not,
+# which is how a briefing comes to disagree with the list it summarises.
+# The seven concepts named under that sentence are the first seven rows of a
+# sixteen-row table, and they were printed with no count in front of them, one
+# line under the word "sixteen" — a list that reads as the whole of something
+# it is a third of. The count is stated now and has to match the items after
+# it, so the two cannot come apart.
+_first = re.search(r"\*\*The first (\d+), in the order they were found:\*\* (.+?)\.",
+                   " ".join(_a2.split()))
+if _first:
+    _items = [_x.strip() for _x in _first.group(2).split(",")]
+    check(int(_first.group(1)) == len(_items),
+          f"proposal-a2.md says the first {_first.group(1)} and then lists "
+          f"{len(_items)}")
+# Whether they are the table's first seven *in the same words* is not checked:
+# the page writes "the clock" where the table writes "a clock, an hour of the
+# day", and "standing up" for "to get up, to stand", so any test would be a
+# list of allowed rewordings maintained by hand. A check that needs a table of
+# exceptions to state is not a check. The count is exact and is held; the
+# correspondence is prose and is not claimed to be held.
+
+_s3 = re.search(r"(\w+) gaps are on the list: (\w+) found by trying to write "
+                r"something and failing, (\w+) by a sweep of sentence shapes, "
+                r"and (\w+) found a third way",
+                " ".join(_a2.split()))
+check(_s3 is not None
+      and [WORD_NUM.get(_g.lower()) for _g in _s3.groups()]
+          == [len(_gaprows), len(_bywriting), len(_swept), len(_asked)],
+      f"proposal-a2.md's section 3 does not divide the gap table as it stands: "
+      f"{len(_gaprows)} gaps, {len(_bywriting)} found by writing, "
+      f"{len(_swept)} by a sweep, {len(_asked)} by a question")
+
+# The same page counted kinship twice, four paragraphs apart, and printed
+# thirteen in one place and fourteen in the other — one the absences and one
+# the presences, both phrased as "kinship is N of twenty-seven". Both are read
+# off the people row now, so the two sentences cannot drift apart or be read
+# as one count contradicting itself.
+_ppl = re.search(r"^\| people \| (\d+) of (\d+) \|", _a2, re.M)
+if _ppl:
+    _have, _all = int(_ppl.group(1)), int(_ppl.group(2))
+    check(f"absences are {_SPELLN[_all - _have]} of {_SPELLN[_all]}" in
+          " ".join(_a2.split()),
+          f"proposal-a2.md: kinship's absences are {_all - _have} of {_all}")
+    check(f"**Kinship is {_SPELLN[_have]} of {_SPELLN[_all]} present**" in
+          " ".join(_a2.split()),
+          f"proposal-a2.md: kinship is {_have} of {_all} present")
 
 # ---------------------------------------------- how many sentence shapes
 # texts/README.md counts sentence shapes as well as words: every sentence
@@ -2740,12 +2811,6 @@ if _rows:
 # eleven came from writing ... The twelfth came from neither." Two rows were
 # added since and neither number moved, and a third sentence — "three of the
 # twelve" — hung off the same figure. Both are read off the table now.
-_gapsec = read("dictionary/README.md").split("## Words the writing has asked for")[1]
-_gapsec = _gapsec.split("### A third way")[0]
-_gaprows = [_l for _l in _gapsec.splitlines()
-            if _l.startswith("| ") and not _l.startswith("| Missing") and "---" not in _l]
-_asked = [_l for _l in _gaprows if "#a-third-way-of-finding-one" in _l]
-_written = [_l for _l in _gaprows if _l not in _asked]
 _SPELL = {n: w for w, n in WORD_NUM.items()}
 _ORD = {12: "twelfth", 13: "thirteenth", 14: "fourteenth", 15: "fifteenth",
         16: "sixteenth", 17: "seventeenth"}
@@ -3432,7 +3497,7 @@ FAMILY = {
     "Yoruba":"Niger-Congo","Chinese":"Sino-Tibetan","Mandarin":"Sino-Tibetan",
     "Japanese":"Japonic","Korean":"Koreanic","Tamil":"Dravidian","Telugu":"Dravidian",
     "Hausa":"Afro-Asiatic","Somali":"Afro-Asiatic",
-    # Named in an etymology and mapped to nothing until September 9, 2026, so
+    # Named in an etymology and mapped to nothing until September 6, 2026, so
     # the reach column dropped them in silence: negara names Thai and Khmer,
     # du names Welsh. Three families the dictionary touches and the
     # measurement could not see.
@@ -3482,7 +3547,7 @@ for f in origin.values(): _ocount[f] = _ocount.get(f, 0) + 1
 # the count alone is stable — it keeps that random order. Three families reach
 # one root each, so their three rows came out in a different order from run to
 # run and the check that compares the table to the file passed or failed by
-# luck. Found September 10, 2026 after one harness run failed on a tree that
+# luck. Found September 6, 2026 after one harness run failed on a tree that
 # five runs of check.py had called clean.
 _want = ["| Family | Origin | | Reach | |"]
 for f, rc in sorted(_reach.items(), key=lambda kv: (-kv[1], kv[0])):
@@ -3999,7 +4064,7 @@ check(not _unmapped,
 # the count being two. A noun-glossed root straight after a pronoun subject is
 # in the verb slot and nowhere else — *Mi rabota sini* — so the scan is exact
 # where a noun beside a noun would be ambiguous with possession. Swept
-# September 14, 2026: rabota and nothing else, which is what the briefing says.
+# September 6, 2026: rabota and nothing else, which is what the briefing says.
 _TWOJOB = {"rabota", "madad"}
 _FUNCW = {"es", "no", "suda", "saufa", "aur", "o", "in", "dari", "por", "una",
           "ini", "itu", "lebi", "kurang", "paling", "kadar", "porke", "kab",
@@ -4414,6 +4479,33 @@ check(not _missing,
 m = re.search(r"\*\*(\d+) roots\*\*", read("README.md"))
 check(m and int(m.group(1)) == len(words),
       f"README.md says {m.group(1) if m else '?'} roots; the dictionary has {len(words)}")
+
+# ---------------------------------------------- a date that has not happened
+# Every page here dates its own corrections, and the date is half the record:
+# "it read X until <a day>" is a claim about a day. Nineteen of those lines
+# named a day that had not arrived — one of them eight days ahead — and git
+# blame put every one of them in a commit made on September 6, 2026, the day
+# the sweep found them. A page that misdates its own correction is telling the
+# reader the record is approximate, which is the one thing this repository is
+# not allowed to be. Today is read from the clock rather than from the history,
+# so the check works in the harness's copy, which has no .git in it.
+import datetime as _dt
+_TODAY = _dt.date.today()
+_MONTH = {"January": 1, "February": 2, "March": 3, "April": 4, "May": 5,
+          "June": 6, "July": 7, "August": 8, "September": 9, "October": 10,
+          "November": 11, "December": 12}
+for _p in md() + ["check.py", "test-check.py", "CONTRIBUTING.md"]:
+    if not os.path.exists(_p): continue
+    for _m in re.finditer(r"\b(" + "|".join(_MONTH) + r") (\d{1,2}), (\d{4})\b",
+                          read(_p)):
+        try:
+            _d = _dt.date(int(_m.group(3)), _MONTH[_m.group(1)], int(_m.group(2)))
+        except ValueError:
+            check(False, f"{_p}: {_m.group(0)} is not a date")
+            continue
+        check(_d <= _TODAY,
+              f"{_p}: dated {_m.group(0)}, which has not happened — today is "
+              f"{_TODAY.strftime('%B %-d, %Y')}")
 
 # -------------------------------------------------------------------- links
 for f in md():

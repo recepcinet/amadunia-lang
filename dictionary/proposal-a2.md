@@ -16,7 +16,7 @@ words are short and the two- and three-letter space is full. That is true of
 the fifteen words already taken — *hao*, *kan*, *lai*, *cang*, *yuki*, *nomu*,
 *suru* and eight more — and false about the languages.
 
-That count read **eleven** until September 7, 2026, which is the Sino-Tibetan
+That count read **eleven** until September 6, 2026, which is the Sino-Tibetan
 figure alone; the sentence is about Chinese *and* Japanese, and the seven words
 it names are four of one and three of the other. Eleven plus four is what the
 record should have said.
@@ -73,11 +73,16 @@ calculation.
 
 ## 3. What the writing has asked for
 
-Fifteen gaps are on the list: twelve found by trying to write something and
-failing, one by a sweep of sentence shapes, and two found a third way — by translating a sentence somebody asked
-for, and by somebody asking about kinship. [They are recorded with the sentence that stopped in each case](README.md#words-the-writing-has-asked-for):
-pain, love as a noun, to miss someone, the clock, a word for *then*, standing
-up, and a coin as against an amount.
+Sixteen gaps are on the list: thirteen found by trying to write something and
+failing, one by a sweep of sentence shapes, and two found a third way — by
+translating a sentence somebody asked for, and by somebody asking about
+kinship. [They are recorded with the sentence that stopped in each
+case](README.md#words-the-writing-has-asked-for). **The first 7, in the order
+they were found:** pain, love as a noun, to miss someone, the clock, a word for
+*then*, standing up, a coin as against an amount.
+
+That enumeration was printed with no count in front of it until September 6,
+2026, directly under the word *sixteen*, so seven items read as the whole list.
 
 Three of those seven are about how a person feels or where a person hurts. No
 thematic wordlist predicted that, and it is the strongest evidence available
@@ -132,7 +137,7 @@ domain](a1-checklist.md), each looked up in the English index by
 **167 of 273 are present. A hundred and six are not.**
 
 Both halves of that sentence are checked now. The second was not, until
-September 9, 2026: the checker's number parser stopped at ninety-nine, so a
+September 6, 2026: the checker's number parser stopped at ninety-nine, so a
 figure written out as *a hundred and six* was invisible to it, and this is the
 count the whole page turns on. A parser that cannot spell a number cannot test
 a sentence that spells it — and the shape of that failure is the one this
@@ -162,7 +167,7 @@ only if the index holds it as **to X**, which is what an action is.
 **And *work* is set aside from both sides of the fraction.** It is the only
 other action the index answers with a bare entry, and the reason is
 [*rabota*'s undecided class](../grammar/proposal-two-jobs.md). It was exempt
-from the rule and counted **present** until September 7, 2026 — which is the
+from the rule and counted **present** until September 6, 2026 — which is the
 answer the exemption was written to avoid giving, because counting it present
 asserts that *rabota* is the verb and counting it missing asserts that it is
 not. Neither is neutral. It is now left out of the numerator and the
@@ -208,7 +213,8 @@ need.
 The compass is the opposite: four directions that no number can build, and no
 root for any of them.
 
-**Kinship is thirteen of twenty-seven, and four of the thirteen are the hole.**
+**Kinship's absences are thirteen of twenty-seven, and four of the thirteen
+are the hole.**
 The *people* domain is the largest block of absences on the checklist, and
 [the checklist now splits it](a1-checklist.md): three of the thirteen are
 already sayable by possession alone — a grandmother is the mother of my mother
@@ -217,18 +223,21 @@ vocabulary that is missing, and four are roots the language does not have.
 Reading a settled decision as an absence is what the block was doing, and it
 made the domain look three times emptier than it is.
 
-**Clothing is two of nine** — a shirt and a shoe — and is the thinnest domain in
-the language by a distance. **Kinship is fourteen of twenty-seven**, and the
-missing half is the whole of the extended family: no uncle, aunt, grandmother,
-grandfather or cousin, and no son, daughter, husband or wife. The founder
-noticed this on September 4, 2026 by asking how to say *uncle*; the checklist
-had listed eighteen people-words and none of those nine, which is the second
-time a hole in the checklist has been found by somebody simply wanting to say
-something. The everyday adjectives are close behind: there is
+**Clothing is two of nine** — a shirt and a shoe — and is the thinnest domain
+in the language by a distance; nothing composes a coat. **Kinship is fourteen
+of twenty-seven present**, which is the same measurement as the paragraph
+above and not a second one: fourteen present, thirteen absent, and only four
+of those thirteen a root the language would have to add. This page said
+*fourteen of twenty-seven* and *thirteen of twenty-seven* four paragraphs
+apart, as though they were the same count disagreeing with itself, until
+September 6, 2026. The founder noticed the domain on September 4, 2026 by
+asking how to say *uncle*; the checklist had listed eighteen people-words and
+none of the nine he asked after, which is the second time a hole in the
+checklist has been found by somebody simply wanting to say something. The everyday adjectives are close behind: there is
 no *slow*, no *angry*, no *tired*, no *hungry*, no *dark* and no *wet*, so a
 person can be sick or sad but not tired, and a night can be cold but not dark.
 
-**The two methods agree where they overlap.** Seven of the twelve gaps found by
+**The two methods agree where they overlap.** Seven of the thirteen gaps found by
 writing — *slowly*, *to stand up*, *cheap*, *the clock*, *then*, *but* and *a
 wall* — are on this list too, which is the check that matters: the checklist
 reproduces what writing found and adds **99** more. What it cannot do is say
@@ -297,7 +306,7 @@ Food has fourteen.
 
 That is the shape of a dictionary built by writing texts about ideas, which is
 what happened, and it is the opposite of what a beginner needs first. **The
-next roots should be concrete**, and the seven gaps found by writing —
+next roots should be concrete**, and those first seven —
 pain, love as a noun, to miss, the clock, *then*, to stand up, a coin — all sit
 in exactly those thin groups.
 

@@ -67,7 +67,7 @@ Using the answer word as the negator is what Spanish, Italian and Portuguese do:
 | non | Latin, French, Italian | no collision, but a second word for a job *no* already does |
 | tidak | Indonesian | one family, and two syllables for the commonest word in any language |
 
-That row said **three** syllables until September 7, 2026. *tidak* has two by
+That row said **three** syllables until September 6, 2026. *tidak* has two by
 the rule this language counts by — [one syllable per vowel
 group](stress.md) — and the overstatement was on the half of the reason that
 is a measurement rather than a judgement. The verdict does not move: one family

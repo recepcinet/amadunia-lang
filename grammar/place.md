@@ -145,7 +145,7 @@ Nearly every short candidate collided:
   That is the same silence that covered the imperative until September 3 and
   [a tense marker before an adjective](tense.md) until yesterday.
 
-  Found September 12, 2026 by reducing every sentence in the material to its
+  Found September 6, 2026 by reducing every sentence in the material to its
   parts of speech and reading the shapes that occur once — the method that
   found the four sentences below. The most recent of the eight is
   [text 26](../texts/text-26-dom-eski.md), written two days ago, which used the
@@ -186,7 +186,7 @@ Nearly every short candidate collided:
   has nothing to attach to. The first four sentences wanted a place word to
   take a noun; this one wanted an **adjective** to, which the language allows
   even less. The text now states the road and the river in two sentences and
-  leaves the relation between them to the reader. Found September 7, 2026.
+  leaves the relation between them to the reader. Found September 6, 2026.
 
   Every gap this repository has found by writing has been a missing word.
   This one is a missing **slot**: *in*, *dari* and *por* are the whole set, and

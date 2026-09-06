@@ -49,7 +49,7 @@ Noticed September 6, 2026.
 [text 24](../texts/text-24-mama-mama-mi.md) showed why the block overstates the
 hole: possession puts the owner straight after the thing owned and applies
 twice without a marker, so a grandmother is the mother of my mother and needs
-no root. Measured on September 8, 2026, the thirteen divide three ways.
+no root. Measured on September 6, 2026, the thirteen divide three ways.
 
 | | | |
 |---|---|---|
@@ -67,7 +67,7 @@ hole.** This proposes nothing; the [A2 briefing](proposal-a2.md) is where the
 question belongs, and it is a narrower question than thirteen.
 
 **And kinship is not the only place composition hides a concept.** Swept on
-September 8, 2026: every two-word Amadunia phrase in the lessons and the
+September 6, 2026: every two-word Amadunia phrase in the lessons and the
 phrasebook that is glossed by a single English word. There are exactly two,
 both in [the phrasebook](../phrasebook.md), and both are the demonstrative
 rather than possession — *din ini* for **today** and *rat ini* for **tonight**,

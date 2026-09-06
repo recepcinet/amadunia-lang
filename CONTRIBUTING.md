@@ -96,7 +96,7 @@ by hand. Rule 7 is the one a machine cannot judge.
 `python3 test-check.py` then checks the checker, by breaking each guarantee and
 requiring `check.py` to reject it. It takes a lock while it runs and refuses to
 start a second time: two runs at once write over each other's output, and on
-September 10, 2026 the second read the first's failure as its own and reported
+September 6, 2026 the second read the first's failure as its own and reported
 a green tree as red.
 It has caught a collision in five consecutive batches of new words, every time
 after the word looked clean by eye.

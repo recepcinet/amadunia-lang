@@ -2,11 +2,11 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**296 guarantees** in **139 groups**, and every one of them is
+**303 guarantees** in **140 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
-A contributor should not have to read 4433 lines of Python to find
+A contributor should not have to read 4525 lines of Python to find
 out what will fail. That figure said **eleven hundred** until September 15,
 2026, on the page whose whole reason for existing is that the Python is too
 long to read — it was written when the checker was a quarter of its size and
@@ -227,10 +227,15 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - proposal-a2.md's checklist row for '…' is stale; the dictionary has … of …
 - proposal-a2.md's missing list for '…' has drifted; the dictionary gives: …
+- proposal-a2.md: says '… gaps found by writing'; the table holds …
 - proposal-a2.md: the checklist is missing … and … of those were found by writing, so it adds … more
 - proposal-a2.md: asks which of the wrong number matter; the checklist is missing …
 - proposal-a2.md: … concepts are missing and the page must say so in words as well as in figures
 - proposal-a2.md's checklist total is stale; recount gives … of …
+- proposal-a2.md says the first … and then lists …
+- proposal-a2.md's section 3 does not divide the gap table as it stands: … gaps, … found by writing, … by a sweep, … by a question
+- proposal-a2.md: kinship's absences are … of …
+- proposal-a2.md: kinship is … of … present
 ### how many sentence shapes
 
 - texts/README.md's shape count is stale; the material has … sentences in … distinct shapes
@@ -596,6 +601,10 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### README
 
 - README.md says … roots; the dictionary has …
+### a date that has not happened
+
+- …: … is not a date
+- …: dated …, which has not happened — today is …
 ### links
 
 - …: broken link to …

@@ -98,7 +98,7 @@ wrong, on a file nobody had touched. Ties are broken by name from September 10,
 2026, and the row order is a fact about the dictionary rather than about the
 process that read it.
 
-Three families were invisible to this table until September 9, 2026, and the
+Three families were invisible to this table until September 6, 2026, and the
 reason is that the map from a language to its family did not hold them: *negara*
 names **Thai** and **Khmer**, *du* names **Welsh**, and Tai-Kadai,
 Austroasiatic and Celtic had nowhere to go. The reach column dropped them in
