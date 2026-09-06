@@ -982,18 +982,36 @@ for path in sorted(glob.glob("grammar/*.md")):
           or "../README.md" in body,
           f"{base}: does not say which lesson teaches it")
 
+# The material a learner reads, prepared the same way every time. Nine scans
+# read it and each prepared it itself: five removed the whole "New words"
+# section, four kept it, and the difference is one sentence and four words —
+# a line of prose under that heading in Lesson 06 that cites *Nama mi es Luma*.
+# So the repository's two headline corpus sizes were measured over two
+# different corpora. One definition now, and it removes the table rows rather
+# than the section, because a gloss is not a use and a sentence is a sentence
+# wherever it is printed.
+def _material():
+    for _p in (sorted(glob.glob("lessons/lesson-*.md"))
+               + sorted(glob.glob("texts/*.md")) + ["phrasebook.md"]):
+        if _p.endswith("texts/README.md"): continue
+        _b = read(_p)
+        if _p.startswith("texts/") and "```" in _b:
+            _b = "".join(_b.split("```")[1::2])
+        if "## New word" in _b:
+            _head, _rest = _b.split("## New word", 1)
+            _sec, _after = (_rest.split("\n## ", 1) + [""])[:2]
+            _sec = "\n".join(_l for _l in _sec.splitlines()
+                             if not _l.startswith("|"))
+            _b = _head + "## New word" + _sec + ("\n## " + _after if _after else "")
+        yield _p, _b
+
 # ------------------------------------------------------------- frequency
 # dictionary/frequency.md is derived from the corpus the way dictionary.json is
 # derived from the markdown: regenerated here and compared, so a lesson edited
 # tomorrow cannot leave it quietly wrong. Only the counted parts are checked —
 # the total, the cumulative curve and the top forty — and the prose is free.
 _freq = defaultdict(int)
-for _p in sorted(glob.glob("lessons/lesson-*.md")) + sorted(glob.glob("texts/*.md")) + ["phrasebook.md"]:
-    _b = read(_p)
-    if _p.startswith("texts/") and "```" in _b: _b = "".join(_b.split("```")[1::2])
-    if "## New word" in _b:
-        _h, _r = _b.split("## New word", 1)
-        _b = _h + "\n" + "\n## ".join(_r.split("\n## ")[1:])
+for _p, _b in _material():
     for _line, _sent, _toks in amadunia_runs(_b):
         for _t in _toks:
             _t = _t.split("-")[0]
@@ -1684,11 +1702,7 @@ for path in md():
 # draws. Counting citations meant a root could be "in use" without ever
 # appearing in a lesson, a text or the phrasebook.
 in_use = set()
-for path in (sorted(glob.glob("lessons/lesson-*.md"))
-             + sorted(glob.glob("texts/*.md")) + ["phrasebook.md"]):
-    body = read(path)
-    if path.startswith("texts/") and "```" in body:
-        body = "".join(body.split("```")[1::2])
+for path, body in _material():
     for line, sent, toks in amadunia_runs(body):
         if any(x in line.lower() for x in
                ("wrong", "rejected", "cannot", "not legal", "✗")): continue
@@ -1701,9 +1715,15 @@ for path in (sorted(glob.glob("lessons/lesson-*.md"))
     # twenty words was being read as two ten-word sentences. They are used, and
     # this is the shape they are used in.
     for _l in body.splitlines():
-        _cells = ([_c.strip() for _c in _l.split("|")[1:-1]] if _l.startswith("|")
-                  else [_l.lstrip("> —").strip()] if _l.startswith(">") else [])
-        for _c in _cells:
+        # A quoted line is a turn somebody took, and every word in it was said.
+        # amadunia_runs splits on the comma, so *No, bas.* and *Ya, ok.* come
+        # back as pairs of one-token runs and neither word counts as used —
+        # which left *bas* looking unused the moment the glosses stopped
+        # counting.
+        if _l.startswith(">"):
+            in_use |= {_w for _w in re.findall(r"[a-z]+", _l.lower()) if _w in words}
+            continue
+        for _c in ([_c.strip() for _c in _l.split("|")[1:-1]] if _l.startswith("|") else []):
             _w = _c.strip("*!?., ").lower()
             if _w in words: in_use.add(_w)
 unused = sorted(set(words) - in_use)
@@ -1789,13 +1809,10 @@ def _shape_tag(_t):
     if _r in words: return "N"
     return "?"
 _shapes, _sents = defaultdict(int), set()
-for _p in (sorted(glob.glob("texts/*.md")) + sorted(glob.glob("lessons/lesson-*.md"))
-           + ["phrasebook.md"]):
-    # The index is about the texts, not one of them. It quotes example shapes,
-    # and counting them made the material one sentence longer than it is.
-    if _p.endswith("texts/README.md"): continue
-    _sb = read(_p)
-    if _p.startswith("texts/") and "```" in _sb: _sb = "".join(_sb.split("```")[1::2])
+# The index is about the texts, not one of them: it quotes example shapes, and
+# counting them made the material one sentence longer than it is. _material()
+# leaves it out for every scan, not only this one.
+for _p, _sb in _material():
     for _line, _sent, _toks in amadunia_runs(_sb):
         _shapes["".join(_shape_tag(_t) for _t in _toks)] += 1
         _sents.add(" ".join(_t.lower() for _t in _toks))
@@ -2067,10 +2084,7 @@ for _p in sorted(glob.glob("lessons/lesson-*.md")):
 # the briefing's central claim stops being true. The phrasebook's list of bare
 # words separated by dots is a list, not an utterance, and is not a sentence.
 _madad = []
-for _p in (sorted(glob.glob("lessons/lesson-*.md"))
-           + sorted(glob.glob("texts/*.md")) + ["phrasebook.md"]):
-    _mb = read(_p)
-    if _p.startswith("texts/") and "```" in _mb: _mb = "".join(_mb.split("```")[1::2])
+for _p, _mb in _material():
     for _line, _sent, _toks in amadunia_runs(_mb):
         if "·" in _line: continue
         if "madad" in [_x.lower() for _x in _toks]:
@@ -2091,10 +2105,7 @@ _TENA = [0, 0]                                  # final, not final
 # those too made the briefing count itself the moment it was written: 22 uses
 # instead of 13, because every example it prints came back as evidence.
 _seen4 = set()
-for _p in (sorted(glob.glob("lessons/lesson-*.md"))
-           + sorted(glob.glob("texts/*.md")) + ["phrasebook.md"]):
-    _fb = read(_p)
-    if _p.startswith("texts/") and "```" in _fb: _fb = "".join(_fb.split("```")[1::2])
+for _p, _fb in _material():
     for _line, _sent, _toks in amadunia_runs(_fb):
         _t = [_x.lower() for _x in _toks]
         _key = (_p, _sent.strip())
@@ -2719,14 +2730,7 @@ for _p in sorted(glob.glob("lessons/lesson-*.md")):
 _RMOD = {"mau", "bisa", "lasim"}
 _rab_occ = [0, 0]                    # after a subject, something in front
 _rab_set = (set(), set())
-for _p in (sorted(glob.glob("lessons/lesson-*.md"))
-           + sorted(glob.glob("texts/*.md")) + ["phrasebook.md"]):
-    _rb = read(_p)
-    if _p.startswith("texts/") and "```" in _rb:
-        _rb = "".join(_rb.split("```")[1::2])
-    if "## New word" in _rb:
-        _h2, _r2 = _rb.split("## New word", 1)
-        _rb = _h2 + "\n" + "\n## ".join(_r2.split("\n## ")[1:])
+for _p, _rb in _material():
     for _line, _sent, _toks in amadunia_runs(_rb):
         _base = [_t.split("-")[0] for _t in _toks]
         for _i, _w in enumerate(_base):
@@ -2902,13 +2906,7 @@ for _p in _ORD_PAGES:
 # they cannot exist. The scope is the material, and the page now says so.
 _MAMOD = {"mau", "bisa", "lasim"}
 _ma_sent = _ma_adj = _ma_mv = _ma_ma = 0
-for _p in (sorted(glob.glob("lessons/lesson-*.md"))
-           + sorted(glob.glob("texts/*.md")) + ["phrasebook.md"]):
-    _mb = read(_p)
-    if _p.startswith("texts/") and "```" in _mb: _mb = "".join(_mb.split("```")[1::2])
-    if "## New word" in _mb:
-        _h3, _r3 = _mb.split("## New word", 1)
-        _mb = _h3 + "\n" + "\n## ".join(_r3.split("\n## ")[1:])
+for _p, _mb in _material():
     for _line, _sent, _toks in amadunia_runs(_mb):
         _base = [_t.split("-")[0] for _t in _toks]
         _ma_sent += 1
@@ -3091,13 +3089,7 @@ if "used to say *compounding*" in read("README.md"):
 # and not since; there are 44. The figure carries weight — it is the reason a
 # sentence-initial *es* is not read as a command — so it is counted here.
 _exist = 0
-for _p in (sorted(glob.glob("lessons/lesson-*.md"))
-           + sorted(glob.glob("texts/*.md")) + ["phrasebook.md"]):
-    _eb = read(_p)
-    if _p.startswith("texts/") and "```" in _eb: _eb = "".join(_eb.split("```")[1::2])
-    if "## New word" in _eb:
-        _h4, _r4 = _eb.split("## New word", 1)
-        _eb = _h4 + "\n" + "\n## ".join(_r4.split("\n## ")[1:])
+for _p, _eb in _material():
     for _line, _sent, _toks in amadunia_runs(_eb):
         _base = [_t.split("-")[0] for _t in _toks]
         if _base and (_base[0] == "es"
@@ -3510,6 +3502,14 @@ for _end, _phrase in (("o", "**{}** roots end in *-o*"),
 # make sure a second copy cannot come back: every rule the scanner knows is
 # added to a set in one function and nowhere else.
 _selfsrc = read("check.py")
+
+# ------------------------------- the rule detectors are defined exactly once
+# They were defined twice and drifted three ways. This file reads itself to
+# make sure a second copy cannot come back: every rule the scanner knows is
+# added to a set in one function and nowhere else.
+_selfsrc = read("check.py")
+
+
 for _rule in sorted(_RULETEXT):
     check(_selfsrc.count(f'_r.add("{_rule}")') == 1
           and f'_RULETEXT["{_rule}"].add' not in _selfsrc
@@ -3910,14 +3910,7 @@ for _p in md():
 # always countable; the unmarked half was invisible until _clause_object was
 # written, and the figures are the reason the rule looked thinnest. Derived.
 _mark = _unmark = 0
-for _p in (sorted(glob.glob("lessons/lesson-*.md"))
-           + sorted(glob.glob("texts/*.md")) + ["phrasebook.md"]):
-    _sb = read(_p)
-    if _p.startswith("texts/") and "```" in _sb:
-        _sb = "".join(_sb.split("```")[1::2])
-    if "## New word" in _sb:
-        _sh, _sr = _sb.split("## New word", 1)
-        _sb = _sh + "\n" + "\n## ".join(_sr.split("\n## ")[1:])
+for _p, _sb in _material():
     for _line, _sent, _toks in amadunia_runs(_sb):
         _t = [_x.lower() for _x in _toks]
         if {"porke", "kab", "agar"} & set(_t): _mark += 1

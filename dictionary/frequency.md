@@ -3,7 +3,7 @@
 Generated from the material a learner reads — the twenty-six lessons, the
 twenty-four texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **6165 words of running Amadunia**, and 291 of the 300 roots appear in one.
+it. **6166 words of running Amadunia**, and 291 of the 300 roots appear in one.
 
 The other nine appear in no sentence of more than one word anywhere: *bai*,
 *bas*, *hi*, *mersi*, *ok*, *pardon*, *plis*, *ya* — and *madad*, which is
@@ -44,12 +44,12 @@ cover half of everything.** They are the first twenty-five below.
 
 | | Root | Meaning | Uses | Share |
 |---|---|---|---|---|
-| 1 | *mi* | I, me | 609 | 9.9% |
+| 1 | *mi* | I, me | 610 | 9.9% |
 | 2 | *yu* | you — one form for everyone | 227 | 3.7% |
-| 3 | *ta* | he, she, it — no gender | 203 | 3.3% |
+| 3 | *ta* | he, she, it — no gender | 202 | 3.3% |
 | 4 | *in* | at, in, on | 182 | 3.0% |
 | 5 | *anak* | child | 142 | 2.3% |
-| 6 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 131 | 2.1% |
+| 6 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 132 | 2.1% |
 | 7 | *lai* | to come | 112 | 1.8% |
 | 8 | *ini* | this — after the noun, last in the phrase | 108 | 1.8% |
 | 9 | *no* | no; **not** — before the predicate, see [grammar/negation.md](../grammar/negation.md) | 107 | 1.7% |

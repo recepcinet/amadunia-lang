@@ -23,6 +23,18 @@ sentence, and the scanner splits sentences *on* the question mark, so the mark
 was never there to find. Counted properly, the question rule stands in fourteen
 texts, seventh of sixteen.
 
+**And the material itself was prepared nine different ways.** Nine scans read
+the lessons, the texts and the phrasebook, and each prepared the text itself:
+five removed the whole *New words* section of a lesson, four kept it. The
+difference is one sentence and four words — a line of prose under that heading
+in Lesson 06 — so the repository's two headline corpus sizes were being
+measured over two different corpora, the sentence count over one and the word
+count over the other. There is one definition now, and it removes the table
+rows rather than the section: a gloss is not a use, and a sentence is a
+sentence wherever it is printed. Merged September 8, 2026, and no check
+enforces it — a structural rule stated precisely enough to test turned out to
+need four exceptions, which is a rule not worth writing.
+
 **It was missing because the test existed twice.** The reading ladder needs the
 same judgement — which rules a sentence uses — and had its own copy, which read
 the raw line and had always worked. Compared line by line on September 8, 2026,
