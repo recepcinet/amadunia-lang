@@ -39,7 +39,7 @@ Twenty-one rules and eight briefings, one decision each. **Six briefings are ope
 | [proposal-stress.md](proposal-stress.md) | The briefing the open questions put first. **Decided September 3, 2026** — the rule is [stress.md](stress.md); this is the record of what it was decided on. |
 | [proposal-sentence-types.md](proposal-sentence-types.md) | The imperative and the fragment. **Decided September 3, 2026** — the rules are [sentence-types.md](sentence-types.md). |
 | [proposal-names.md](proposal-names.md) | Marking a name. Forty-eight sentences are ambiguous today, and capital letters cannot be spoken. **Open — the founder's call.** |
-| [proposal-modal-adjective.md](proposal-modal-adjective.md) | "Want to be" plus an adjective. Called the smallest of the four until it was measured: 377 verbless adjective predicates and 60 working modals in the material, and not one place the two may meet. **Open — the founder's call.** |
+| [proposal-modal-adjective.md](proposal-modal-adjective.md) | "Want to be" plus an adjective. Called the smallest of the four until it was measured: 400 verbless adjective predicates and 59 working modals in the material, and not one place the two may meet. **Open — the founder's call.** |
 
 *Three claims in the tables above were the last copies of things corrected
 elsewhere,* and the third is the reason this paragraph is not about numbers
@@ -50,14 +50,19 @@ also the only open briefing in the table with no **Open — the founder's call.*
 on it, so the page said six were open and marked five. Both corrected September
 6, 2026.
 
-*And two figures were stale.* The index said *rabota* has **eighteen** at stake — a figure
-[its own briefing](proposal-two-jobs.md) had already withdrawn as "not any
-reading of the material" — and it gave *tena*'s figure as it stood
-before the recount, one short of the thirty it is now. Both corrected September
-6, 2026, and *tena*'s stood twice on the briefing itself, twelve lines apart,
-one corrected and one not. An index is where a withdrawn number goes to survive: it repeats a page's
-claim in one clause, links to it, and is read by nobody who is checking that
-page. Every page stating either figure is checked now.
+*And four figures were stale.* The index said *rabota* has **eighteen** at
+stake — a figure [its own briefing](proposal-two-jobs.md) had already withdrawn
+as "not any reading of the material" — and it gave *tena*'s figure as it stood
+before the recount, one short of the thirty it stood at that day. Both
+corrected September 6, 2026, and *tena*'s stood twice on the briefing itself,
+twelve lines apart, one corrected and one not. The other two were the modal
+row's, **377** verbless adjective predicates and **60** working modals against
+a briefing that had been recounted to 400 and 59; they were corrected later the
+same day, by which point this paragraph had been complaining about exactly that
+for a day while carrying two instances of it four lines above. An index is
+where a withdrawn number goes to survive: it repeats a page's claim in one
+clause, links to it, and is read by nobody who is checking that page. Every
+page stating any of the four is checked now.
 
 **The full order of a sentence:**
 
@@ -137,32 +142,43 @@ recounted September 5.
 | Question | Pages that reached for it |
 |---|---|
 | ~~the imperative~~ | settled September 3, 2026 — 3 pages had reached for it |
-| a word for *then* | **5** — [text 8](../texts/text-8-kaifa-suru-ca.md), [text 12](../texts/text-12-tarik-por-skola.md), [text 13](../texts/text-13-kula-una.md), [text 14](../texts/text-14-yamur-aur-ca.md), [text 21](../texts/text-21-uan-umur.md) |
-| *although, before, after, until* | 2 — [text 7](../texts/text-7-surat-por-mama.md), [text 8](../texts/text-8-kaifa-suru-ca.md) |
-| ordinal numbers | 2 — [text 6](../texts/text-6-seti-din.md), [story 2](../texts/story-2-safari-por-pahar.md) |
+| a word for *then* | **6** — [text 8](../texts/text-8-kaifa-suru-ca.md), [text 12](../texts/text-12-tarik-por-skola.md), [text 13](../texts/text-13-kula-una.md), [text 14](../texts/text-14-yamur-aur-ca.md), [text 21](../texts/text-21-uan-umur.md), [text 22](../texts/text-22-agar-yamur-lai.md) |
+| *although, before, after, until* | 3 — [text 7](../texts/text-7-surat-por-mama.md), [text 8](../texts/text-8-kaifa-suru-ca.md), [text 26](../texts/text-26-dom-eski.md) |
+| ordinal numbers | 3 — [text 6](../texts/text-6-seti-din.md), [story 2](../texts/story-2-safari-por-pahar.md), [text 27](../texts/text-27-kalima-por-anak-anak.md) |
 | *very* | 2 — [the phrasebook](../phrasebook.md), and a sentence the founder asked for, [recorded with the gaps](../dictionary/README.md#a-third-way-of-finding-one) |
-| *all, some, none, every* | 1 — [text 19](../texts/text-19-kamra-mi.md) wanted *every* morning |
+| *all, some, none, every* | **2** — [text 19](../texts/text-19-kamra-mi.md) wanted *every* morning, [text 27](../texts/text-27-kalima-por-anak-anak.md) wanted *everyone* |
 | whether *daima* covers *forever* | 1 — [text 10](../texts/text-10-mila-tahun.md) |
-| whether a time noun takes *in* | 1 — [phrasebook](../phrasebook.md) |
-| *never* | 0 |
+| whether a time noun takes *in* | 1 — [text 7](../texts/text-7-surat-por-mama.md), which could not say "in the month I arrive" |
+| *never* | 1 — [story 2](../texts/story-2-safari-por-pahar.md) |
+| reflexives | 1 — [story 2](../texts/story-2-safari-por-pahar.md) |
+| superlative within a named group | 1 — [text 23](../texts/text-23-kim-paling-hayai.md) |
 | indirect questions | 0 |
-| reflexives | 0 |
-| superlative within a named group | 0 |
 | where frequency adverbs sit | 0 |
 
-**A word for *then* leads, and it led for two days without the table saying
-so.** The September 3 count had it at one page. Four more had recorded it by
-the time this was recounted — [`check.py`](../check.py) now counts the pages
-that write the claim, so the ordering follows the writing instead of a
-memory of it. *all, some, none* moved off zero the same way, when
-[text 19](../texts/text-19-kamra-mi.md) wanted *every*, and ordinals and *very*
-each gained a second page. A table whose whole purpose is to rank the questions
-by demand is the last table in the repository that should have been counted
-once.
+**A word for *then* leads, and it has led since the second recount.** The
+September 3 count had it at one page; five more have recorded it since.
 
-Five questions have never been reached for by anything anyone wrote. That is not
+**Recounted in full on September 6, 2026, and seven of the thirteen rows
+moved.** *never*, reflexives and the superlative in a named group all stood at
+zero and all three had been recorded in a text's gaps — two of them in
+[story 2](../texts/story-2-safari-por-pahar.md), which is where the mark for a
+name was found as well. *then* gained [text 22](../texts/text-22-agar-yamur-lai.md),
+*every* gained [text 27](../texts/text-27-kalima-por-anak-anak.md), the
+subordinators gained [text 26](../texts/text-26-dom-eski.md) and the ordinals
+gained text 27. The row for *whether a time noun takes* in named the phrasebook
+and the page that could not say it is [text 7](../texts/text-7-surat-por-mama.md).
+
+**Two rows are machine-counted and the rest are not**, and the two are the ones
+whose claim is written the same way everywhere: *no word for then* and *no word
+for every*. Both counters were a page short until September 6, 2026, because
+they required the italics the claim is usually written in — text 22 wrote
+*then* in quotation marks and text 27 wrote *everyone*. A counter that sees one
+spelling of a claim flatters the table it is checking.
+
+Two questions have never been reached for by anything anyone wrote. That is not
 an argument for dropping them — a language needs *never* eventually — but it is
-an argument about order.
+an argument about order, and it is a much shorter list than the five this
+paragraph claimed for three days.
 
 **Two caveats, and they matter.** Stress and marking a name score zero here and
 are the first and third briefings, because neither was found by writing: stress
@@ -170,10 +186,14 @@ was found by asking how a word is said aloud, and the name problem by scanning
 every sentence for ambiguity. Absence from this table means nothing was blocked
 while writing, not that the question is small.
 
-And this table is **not machine-checked**. It rests on matching topic words
-against gap sections, and the topic list would be hand-kept — the arrangement
-that has already gone wrong three times in this repository. It is a dated
-measurement with its method stated, to be re-run rather than trusted.
+And eleven of the thirteen rows are **not machine-checked**. They rest on
+matching topic words against gap sections, and the topic list would be
+hand-kept — the arrangement that has already gone wrong three times in this
+repository. Those eleven are a dated measurement with its method stated, to be
+re-run rather than trusted, and re-running them on September 6, 2026 moved five
+of them. This paragraph said the whole table was unchecked while the paragraph
+above it said `check.py` counts the pages; both were half right and the page
+said two things.
 
 **[adverbs](adverbs.md)**
 

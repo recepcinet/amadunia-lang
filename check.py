@@ -2074,6 +2074,16 @@ _rt_have = (_treadme.split("<!-- generated -->")[1].split("<!-- end generated --
 check(_rt_have == _rt_want,
       "texts/README.md's rule table has drifted from the scan that produces it — "
       "regenerate it")
+# Every rule the ladder knows a lesson for has to be a rule the scan can
+# produce, or the ladder is measuring with a hole in it. Possession sat in
+# _RULE_LESSON from the beginning and no scan ever emitted it, so a text
+# written to Lesson 06 was offered at Lesson 04 and nothing said a word. The
+# two lists are held against each other in both directions.
+check(set(_RULE_LESSON) == set(_RULETEXT),
+      "the rules the ladder dates and the rules the scan finds differ: "
+      f"dated but never found {sorted(set(_RULE_LESSON) - set(_RULETEXT))}, "
+      f"found but never dated {sorted(set(_RULETEXT) - set(_RULE_LESSON))}")
+
 _thin = min(_RULETEXT.items(), key=lambda kv: len(kv[1]))
 _m5 = re.search(r"each stand in \*\*at least (\w+)\*\* texts", read("texts/README.md"))
 check(_m5 and WORD_NUM.get(_m5.group(1).lower()) == len(_thin[1]),
@@ -2909,8 +2919,13 @@ for _l in _gaprows:
 # others are worded differently on each page and the table says which is which
 # by naming its sources.
 _gi = read("grammar/README.md")
-for _q, _pat in (("a word for \\*then\\*", r"no word for \*then\*"),
-                 ("every", r"no word for \*every\*")):
+# The patterns required the italics the claim is usually written in, and two
+# pages wrote it another way: text 22 has it in quotation marks and text 27
+# writes *everyone* rather than *every*. Both were invisible, so the two rows
+# the table machine-counts were each one page short — a counter that only sees
+# one spelling of a claim is a counter that flatters the table it checks.
+for _q, _pat in (("a word for \\*then\\*", r"no word for [*\"]?then"),
+                 ("every", r"no word for \*?every")):
     _n = sum(1 for _f in sorted(glob.glob("texts/*.md")) + ["phrasebook.md"]
              if not _f.endswith("README.md") and re.search(_pat, read(_f), re.I))
     _m = re.search(r"^\| [^|]*" + _q + r"[^|]*\| \*{0,2}(\d+)\*{0,2} ", _gi, re.M)
@@ -2978,9 +2993,10 @@ for _p, _rb in _material():
             _rab_occ[_k] += 1
             _rab_set[_k].add(" ".join(_base))
 _twojobs = read("grammar/proposal-two-jobs.md")
-_TWENTY = {17: "seventeen", 18: "eighteen", 19: "nineteen", 20: "twenty",
-           21: "twenty-one", 22: "twenty-two"}
-check(f"the decision costs {_TWENTY.get(sum(_rab_occ), '?')} sentences" in _twojobs,
+# This was a second hand-written map of spelled numbers, 17 to 22, in a file
+# that already has one for every number it uses. The names recount had exactly
+# this and ran out of range; a map that ends is a check that stops checking.
+check(f"the decision costs {_SPELLN[sum(_rab_occ)]} sentences" in _twojobs,
       f"proposal-two-jobs.md's heading is stale; rabota stands in "
       f"{sum(_rab_occ)} places in the material")
 # The figure is written on more than the briefing: verb-chains.md carried its
@@ -3162,6 +3178,23 @@ for _label, _val in (("Amadunia sentences in the material", _ma_sent),
     check(re.search(re.escape(_label) + r" \| \*{0,2}" + str(_val) + r"\b", _madj),
           f"proposal-modal-adjective.md's row '{_label}' is stale; the material "
           f"gives {_val}")
+
+# Both figures are written on the grammar index too, in one clause inside a
+# table row, and only the briefing's own table was checked — so the index still
+# said 377 and 60 while the briefing said 400 and 59, on a page whose own
+# paragraph complains that an index is where a withdrawn number goes to
+# survive. Every page that states either one is held to the recount now, the
+# way tena's and rabota's are.
+for _p in md():
+    _mb2 = " ".join(read(_p).split())
+    for _m in re.finditer(r"(\d+) verbless adjective predicates", _mb2):
+        check(int(_m.group(1)) == _ma_adj,
+              f"{os.path.basename(_p)}: says {_m.group(1)} verbless adjective "
+              f"predicates; the material gives {_ma_adj}")
+    for _m in re.finditer(r"(\d+) working modals", _mb2):
+        check(int(_m.group(1)) == _ma_mv,
+              f"{os.path.basename(_p)}: says {_m.group(1)} working modals; the "
+              f"material gives {_ma_mv}")
 
 # ------------------------- no one sentence holds every rule of the language
 # adverbs.md said "Every rule in Amadunia is in that sentence" and Lesson 23

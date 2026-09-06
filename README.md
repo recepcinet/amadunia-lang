@@ -215,7 +215,7 @@ reasoning and with the candidates it rejected.
 
 **[Forty questions are still open](grammar/README.md)**, gathered on one
 page, ordered by [what the writing has actually asked for](grammar/README.md) —
-a word for *then* leads it with five pages, and five questions have never been
+a word for *then* leads it with six pages, and two questions have never been
 reached for at all. A mark for a name scores zero there and is still the
 briefing that matters most, which the index says plainly: it was not found by
 writing but by asking how a word is said aloud. Four were not left open on purpose but were forms the material already
