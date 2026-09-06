@@ -6,7 +6,7 @@ the checker prints when something is wrong — not a paraphrase of one. There ar
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
-A contributor should not have to read 4525 lines of Python to find
+A contributor should not have to read 4570 lines of Python to find
 out what will fail. That figure said **eleven hundred** until September 15,
 2026, on the page whose whole reason for existing is that the Python is too
 long to read — it was written when the checker was a quarter of its size and
@@ -162,7 +162,6 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### reading ladder
 
 - reading-ladder.md is missing or contradicts the row '…'
-- reading-ladder.md is missing or contradicts the row '…'
 ### stress
 
 - stress.md's syllable counts are stale; the dictionary gives …/…/…
@@ -180,7 +179,8 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - …: 'ke' opens the sentence — the question word stands where the answer will stand, so it follows es: …
 ### the ladder's number is the binding one
 
-- …: the reading ladder says Lesson …, but the text uses a rule that arrives in Lesson … — the row understates it
+- reading-ladder.md is missing or contradicts the row '…'
+- texts/README.md's index does not list …
 ### giving needs por
 
 - …: '… …' after beri — a recipient takes por, or it reads as an owner: …

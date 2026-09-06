@@ -918,10 +918,12 @@ for path in PROSE:
         if toks[0] in ("sol", "luma"): _ambiguous += 1
 _namesbody = read("grammar/proposal-names.md")
 _m = re.search(r"\*\*([A-Za-z-]+) sentences are formally ambiguous", _namesbody)
-_names = {"Thirty-four": 34, "Thirty-five": 35, "Thirty-six": 36, "Thirty-seven": 37,
-          "Thirty-eight": 38, "Thirty-nine": 39, "Forty": 40, "Forty-one": 41,
-          "Forty-two": 42, "Forty-three": 43}
-check(_m and _names.get(_m.group(1)) == _ambiguous,
+# This was a hand-written map from ten spelled numbers to their values, ending
+# at forty-three, and the corpus reached forty-eight — so the check answered
+# None for the true figure and reported the page as wrong no matter what the
+# page said. WORD_NUM already spells every number the repository uses; a second
+# map is a second thing to run out.
+check(_m and WORD_NUM.get(_m.group(1).lower()) == _ambiguous,
       f"proposal-names.md says {_m.group(1) if _m else '?'} sentences are formally "
       f"ambiguous; the corpus has {_ambiguous}")
 
@@ -938,7 +940,8 @@ _spelled = [(_f, _w) for _f in ("grammar/proposal-names.md", "grammar/README.md"
             for _w in re.findall(r"([A-Za-z][a-z]+(?:-[a-z]+)?) sentences "
                                  r"(?:are formally ambiguous|are ambiguous|already written)",
                                  read(_f))]
-_wrong = [f"{_f} says {_w}" for _f, _w in _spelled if _names.get(_w.capitalize()) != _ambiguous]
+_wrong = [f"{_f} says {_w}" for _f, _w in _spelled
+          if WORD_NUM.get(_w.lower()) != _ambiguous]
 check(_spelled and not _wrong,
       f"the ambiguous-name count is stale where it is written: "
       f"{'; '.join(_wrong)} against a recount of {_ambiguous}")
@@ -1201,14 +1204,17 @@ _allw = [_t for _, _v in _LADTEXT.values() for _t in _v]
 for _n in sorted(_LADAFTER):
     _row = f"| {_n:02d} | {100 * sum(1 for _t in _allw if _t in _LADAFTER[_n]) / len(_allw):.0f}% |"
     check(_row in _lad, f"reading-ladder.md is missing or contradicts the row '{_row}'")
+_LADVOCAB = {}
 for _k, (_title, _ts) in _LADTEXT.items():
     # A lesson whose name has stopped being two digits drops out of the ladder
     # and can leave a text taught by nothing. The two-digit rule reports that;
     # min() over an empty sequence would raise before it could.
     _reach = [_n for _n in sorted(_LADAFTER) if all(_x in _LADAFTER[_n] for _x in _ts)]
     if not _reach: continue
-    _row = f"| [{_title}](../texts/{_k}) | {_reach[0]:02d} |"
-    check(_row in _lad, f"reading-ladder.md is missing or contradicts the row '{_row}'")
+    _LADVOCAB[_k] = (_title, _reach[0])
+# The row itself is checked further down, where the rules a text uses can be
+# read: a text opens when its words and its grammar are both taught, and for
+# text 28 those are two different lessons.
 
 # --------------------------------------------------------------- stress
 # grammar/stress.md defines a syllable as a vowel group and states the counts
@@ -1306,6 +1312,11 @@ for path in PROSE:
 # mark the splitter had removed, the ladder's command detector could not see a
 # negative command, and the ladder had no number detector at all. Two copies of
 # one judgement is the fault; one copy is the fix.
+# What a noun is, defined once. FUNCTION above already answers "which words are
+# not content words", and the giving rule further down had built the same set a
+# second time under another name; both read this one now.
+NOUNS = set(words) - VERBS - ADJECTIVES - PRONOUNS - FUNCTION - GROUP["Greetings and basics"]
+
 def _rules_in(_line, _toks):
     _t = [_x.lower() for _x in _toks]
     _r = set()
@@ -1332,6 +1343,14 @@ def _rules_in(_line, _toks):
             and _t[1] in VERBS and _t[1] != "es"):
         _r.add("command")
     if set(_t) & NUMBERS: _r.add("number")
+    # Possession is a noun with its owner straight after it — mama mi — and
+    # nothing marks it. It stood in _RULE_LESSON from the beginning and no scan
+    # ever produced it, so the ladder's guarantee that a text's grammar never
+    # outruns its vocabulary was measured by a detector blind to Lesson 06.
+    # text 28 was written to Lesson 06 and the ladder offered it Lesson 04.
+    if any(_a.split("-")[0] in NOUNS and _b in PRONOUNS
+           for _a, _b in zip(_t, _t[1:])):
+        _r.add("possession")
     return _r
 
 # reading-ladder.md counts vocabulary, and the worry it names is that a text
@@ -1350,29 +1369,55 @@ _RULE_LESSON = {"number": 1,
                 "conjunction": 14, "demonstrative": 15, "place": 15, "una": 15,
                 "verb chain": 17, "existence": 18, "comparison": 18,
                 "subordination": 18}
-_ladrows = {}
-for _l in read("lessons/reading-ladder.md").splitlines():
-    _m = re.match(r"\| \[([^\]]+)\]\(\.\./texts/([^)]+)\) \| (\d+) \|", _l)
-    if _m: _ladrows[_m.group(2)] = int(_m.group(3))
+# A text opens when a reader has both its words and its rules, so the row is
+# the later of the two. It used to be the vocabulary alone, with a second check
+# that the grammar had not overrun it — which held only because no text had
+# ever managed to. text 28 uses every word by Lesson 04 and possession by
+# Lesson 06, and under the old pair the ladder would have offered it three
+# lessons early. One number, computed from both halves.
+_LADGRAM = {}
 for _p in sorted(glob.glob("texts/*.md")):
     _f = os.path.basename(_p)
-    if _f not in _ladrows: continue
     _tb = read(_p)
-    if "```" not in _tb: continue
+    if "```" not in _tb or _f not in _LADVOCAB: continue
     _need = set()
     for _line, _sent, _toks in amadunia_runs("".join(_tb.split("```")[1::2])):
         _need |= _rules_in(_line, _toks)
-    _g = max([_RULE_LESSON[_k] for _k in _need] + [0])
-    check(_g <= _ladrows[_f],
-          f"{_f}: the reading ladder says Lesson {_ladrows[_f]}, but the text "
-          f"uses a rule that arrives in Lesson {_g} — the row understates it")
+    _LADGRAM[_f] = max([_RULE_LESSON[_k] for _k in _need] + [0])
+for _f, (_title, _vocab) in sorted(_LADVOCAB.items()):
+    _row = f"| [{_title}](../texts/{_f}) | {max(_vocab, _LADGRAM[_f]):02d} |"
+    check(_row in _lad,
+          f"reading-ladder.md is missing or contradicts the row '{_row}'")
+# The page says which half binds, so the two halves have to be named where they
+# differ; a page saying it never happens while it has happened is worse than a
+# page with no claim in it.
+# texts/README.md's index has a row per text, and nothing required it to have
+# all of them: text 28 was left out of it and every check passed, because the
+# orphan rule was satisfied by the ladder's link on another page. A file in
+# texts/ that the index does not list is a text nobody browsing finds.
+# The index rows, not the whole page: texts/README.md links text 28 from a
+# paragraph as well, so searching the file passed with the row deleted.
+_index = [_l for _l in read("texts/README.md").splitlines() if _l.startswith("| [")]
+for _f in sorted(_LADVOCAB):
+    check(any(f"]({_f})" in _l for _l in _index),
+          f"texts/README.md's index does not list {_f}")
+
+# **Withdrawn: that reading-ladder.md says in prose which texts have a grammar
+# arriving after their vocabulary.** It was written and could not be broken.
+# The page names text 28 three times in prose for unrelated reasons — as the
+# lowest rung, as the text that moved the flat-lesson list — so the check
+# passed however the disclosure was worded, and removing any one mention left
+# two. A check that cannot fail while the page is about that text is not a
+# check, and a looser pattern would be a check on the wording rather than on
+# the fact. What matters is held elsewhere: the row is the later of the two
+# numbers, and that is exact.
 
 # ------------------------------------------- giving needs por
 # place.md states it with its reasoning: "Mi beri pan dugu mi" reads, by the
 # possession rule, as "I give my sibling's bread". The recipient needs por to
 # stay apart from an owner. Nothing held it, and text 6 had "Doktor beri ilac
 # mama" — the mother's medicine — since it was written.
-_GIVENOUNS = (set(words) - ADJECTIVES - VERBS - NUMBERS - FUNCTION) | {"mi", "yu", "ta", "kita"}
+_GIVENOUNS = NOUNS | GROUP["Greetings and basics"] | {"mi", "yu", "ta", "kita"}
 for path in PROSE:
     body = read(path)
     if path.startswith("texts/") and "```" in body:

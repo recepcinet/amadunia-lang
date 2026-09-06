@@ -16,7 +16,7 @@ name-use from a sun-use is a judgement, not a measurement, and it is exactly
 the judgement no rule currently supports. Counting every occurrence instead
 gives Sol 51 and Luma 19.
 
-**Forty-three sentences are formally ambiguous.** That number *is* reproducible,
+**Forty-eight sentences are formally ambiguous.** That number *is* reproducible,
 and [`check.py`](../check.py) now recounts it: a sentence whose first word is
 *Sol* or *Luma*, where every word in it is a dictionary word and nothing says
 which reading is meant. Ten are in each of the two stories, four in Lesson 12,
@@ -97,7 +97,7 @@ own name.
 Whether the marker appears with every name or only where ambiguity is possible;
 whether it also marks place names (*Amadunia* itself is a name and appears
 unmarked five times in [text 3](../texts/text-3-lingua-ini.md)); whether it is
-stressed; and what happens to the forty-three sentences already written — most
+stressed; and what happens to the forty-eight sentences already written — most
 of which, on inspection, would simply gain one word.
 
 That last number was **thirty-six** on this page until September 5, 2026, while
