@@ -2086,6 +2086,21 @@ for _label, _n in _FREQPOS.items():
 check(f"**{_TENA[0]} of its {sum(_TENA)} uses are last in the sentence**" in _fq,
       f"proposal-frequency.md's tena figure is stale; recount gives "
       f"{_TENA[0]} of {sum(_TENA)}")
+# The figure is written on more than the one line that was derived. It stood
+# twice on this page — twelve lines apart, one corrected and one not — and a
+# third time in the grammar index, which is how a page comes to contradict
+# itself. Every page that states it is held, the way rabota's is.
+for _p in md():
+    # The match may not cross a cell boundary: proposal-frequency's cost column
+    # names tena in one cell and "7 of 13" — the price of an answer, not a
+    # count of tena — in the next. The index states the figure inside a table
+    # row, so skipping table rows would lose the copy that was stale.
+    for _m in re.finditer(r"\*tena\*[^.|]{0,60}?\b(\d+) of (?:its )?(\d+)\b",
+                          read(_p).replace("\n", " ")):
+        check((int(_m.group(1)), int(_m.group(2))) == (_TENA[0], sum(_TENA)),
+              f"{os.path.basename(_p)}: says tena stands last in "
+              f"{_m.group(1)} of {_m.group(2)}; the recount gives "
+              f"{_TENA[0]} of {sum(_TENA)}")
 # The page says "the thirteen sentences and their three positions, the cost of
 # each answer, and tena's 29 of 29 — check.py recounts all of them". It
 # recounted the three positions and tena. The total and the three costs were

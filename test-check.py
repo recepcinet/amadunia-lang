@@ -615,6 +615,9 @@ MUTATIONS = [
      "Beta opens. This is a deliberately long duplicated sentence, put here only to exercise the repeated-sentence guarantee.\n\n"
      "## Why this and not the alternatives",
      "a sentence is printed twice"),
+    ("the tena figure gone stale in the grammar index", "grammar/README.md",
+     "*tena* settled itself 30 of 30", "*tena* settled itself 29 of 29",
+     "says tena stands last in 29 of 29"),
     ("an action held as a noun dropped from the checklist's note",
      "dictionary/a1-checklist.md", "| **work**, the action |",
      "| **rabota**, the action |",

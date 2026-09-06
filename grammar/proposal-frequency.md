@@ -54,7 +54,7 @@ word next door.
 ## What is measured and what is judgement
 
 Measured: the thirteen sentences and their three positions, the cost of each
-answer, and *tena*'s 29 of 29 — [`check.py`](../check.py) recounts all of them,
+answer, and *tena*'s 30 of 30 — [`check.py`](../check.py) recounts all of them,
 so this page cannot drift the way [adverbs.md](adverbs.md) did.
 
 That sentence was not true when it was written. The three positions and
