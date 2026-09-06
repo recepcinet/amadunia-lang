@@ -640,6 +640,10 @@ MUTATIONS = [
     ("a family row dropped from the balance table", "dictionary/balance.md",
      "| Celtic | 0 | 0.0% | 1 | 0.3% |\n", "",
      "family table has drifted from the dictionary"),
+    ("two tied family rows swapped", "dictionary/balance.md",
+     "| Austroasiatic | 0 | 0.0% | 1 | 0.3% |\n| Celtic | 0 | 0.0% | 1 | 0.3% |",
+     "| Celtic | 0 | 0.0% | 1 | 0.3% |\n| Austroasiatic | 0 | 0.0% | 1 | 0.3% |",
+     "family table has drifted from the dictionary"),
     ("a composed concept dropped from the checklist's note",
      "dictionary/a1-checklist.md", "**today** and *rat ini* for **tonight**",
      "**today** and *rat ini* for tonight",
@@ -1264,6 +1268,24 @@ def run(cwd):
 
 def main():
     src = os.path.dirname(os.path.abspath(__file__))
+    # One run at a time. Two overlapping runs on September 10, 2026 wrote to
+    # one output file, and the second reported the first's failure as its own —
+    # a green tree read as red, which is the same class of mistake as reading a
+    # red one as green and just as expensive. The lock names the process
+    # holding it so a stale file after a crash says who to look for.
+    _lock = os.path.join(src, ".mutation-lock")
+    if os.path.exists(_lock):
+        print("another run holds " + _lock + ": "
+              + io.open(_lock, encoding="utf-8").read().strip()
+              + "\nDelete it if that process is gone.")
+        return 1
+    io.open(_lock, "w", encoding="utf-8").write(f"pid {os.getpid()}\n")
+    try:
+        return _run_all(src)
+    finally:
+        if os.path.exists(_lock): os.remove(_lock)
+
+def _run_all(src):
     tmp = tempfile.mkdtemp(prefix="amadunia-mut-")
     work = os.path.join(tmp, "repo")
     shutil.copytree(src, work, ignore=shutil.ignore_patterns(".git", "__pycache__"))

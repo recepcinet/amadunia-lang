@@ -21,9 +21,9 @@ Two numbers are worth separating. **Origin** is the family a root came from — 
 | Sino-Tibetan | 11 | 3.7% | 12 | 4.0% |
 | Japonic | 4 | 1.3% | 8 | 2.7% |
 | Koreanic | 0 | 0.0% | 2 | 0.7% |
-| Tai-Kadai | 0 | 0.0% | 1 | 0.3% |
 | Austroasiatic | 0 | 0.0% | 1 | 0.3% |
 | Celtic | 0 | 0.0% | 1 | 0.3% |
+| Tai-Kadai | 0 | 0.0% | 1 | 0.3% |
 
 Every root now names at least one language, so no row is left over. Six once
 were: *bai, foto, hi, hotel, ok, taksi* said only "already-global" and were
@@ -82,7 +82,16 @@ are here as evidence about the cause. The thinness is not a wall the
 phonology built — it is which words the borrowing reached for. It went to the
 classical monosyllables and stopped.
 
-No root comes from Korean or from a Dravidian language. Three families were invisible to this table until September 9, 2026, and the
+No root comes from Korean or from a Dravidian language. **And the three rows arrived in a random order.** The table is sorted by reach,
+and the three new families reach one root each, so the sort had nothing to
+separate them — it kept the order they happened to be inserted in, which comes
+from iterating a set of family names, which depends on the interpreter's hash
+seed. One run of the checker called the table right and the next called it
+wrong, on a file nobody had touched. Ties are broken by name from September 10,
+2026, and the row order is a fact about the dictionary rather than about the
+process that read it.
+
+Three families were invisible to this table until September 9, 2026, and the
 reason is that the map from a language to its family did not hold them: *negara*
 names **Thai** and **Khmer**, *du* names **Welsh**, and Tai-Kadai,
 Austroasiatic and Celtic had nowhere to go. The reach column dropped them in

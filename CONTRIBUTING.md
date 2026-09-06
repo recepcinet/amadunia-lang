@@ -83,12 +83,21 @@ and [`check.py`](check.py) refuses a root whose sources name no language.
 python3 check.py
 ```
 
+**Run it plain.** `python3 check.py | tail -1` reports the exit status of
+`tail`, which is always zero, so a red checker reads as green — the pipeline
+lies about the one thing the command is for. The same is true of
+`python3 test-check.py | grep PASS`. Both print their verdict on the last line
+precisely so that a pipe is never needed.
+
 It enforces 1 through 6, 8 and 9, plus everything else the repository
 promises. Rule 8 was on this list before anything enforced it: until
 September 4, 2026 the only thing holding one root to one job was an audit run
 by hand. Rule 7 is the one a machine cannot judge.
 `python3 test-check.py` then checks the checker, by breaking each guarantee and
-requiring `check.py` to reject it.
+requiring `check.py` to reject it. It takes a lock while it runs and refuses to
+start a second time: two runs at once write over each other's output, and on
+September 10, 2026 the second read the first's failure as its own and reported
+a green tree as red.
 It has caught a collision in five consecutive batches of new words, every time
 after the word looked clean by eye.
 

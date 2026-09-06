@@ -3361,8 +3361,15 @@ for w in words:
     for fam in fams: _reach[fam] = _reach.get(fam, 0) + 1
 _ocount = {}
 for f in origin.values(): _ocount[f] = _ocount.get(f, 0) + 1
+# Ties are broken by name. _reach is filled by iterating a set of families, so
+# its insertion order changes with the interpreter's hash seed, and a sort on
+# the count alone is stable — it keeps that random order. Three families reach
+# one root each, so their three rows came out in a different order from run to
+# run and the check that compares the table to the file passed or failed by
+# luck. Found September 10, 2026 after one harness run failed on a tree that
+# five runs of check.py had called clean.
 _want = ["| Family | Origin | | Reach | |"]
-for f, rc in sorted(_reach.items(), key=lambda kv: -kv[1]):
+for f, rc in sorted(_reach.items(), key=lambda kv: (-kv[1], kv[0])):
     oc = _ocount.get(f, 0)
     _want.append(f"| {f} | {oc} | {100*oc/len(words):.1f}% | {rc} | {100*rc/len(words):.1f}% |")
 # The table is regenerated, and the paragraph that reads it was not. It said
@@ -3370,7 +3377,7 @@ for f, rc in sorted(_reach.items(), key=lambda kv: -kv[1]):
 # Austronesian is 38.3%, Turkic 31.3%, Latin/Romance 30.0%. Prose about a
 # derived table has to be derived too, so the threshold, the names and the two
 # spans are all recomputed here.
-_rank = sorted(_reach.items(), key=lambda kv: -kv[1])
+_rank = sorted(_reach.items(), key=lambda kv: (-kv[1], kv[0]))
 _fifth = [f for f, rc in _rank if 100 * rc / len(words) >= 20]
 _m5 = re.search(r"\*\*(\w+) families are named\s+in a fifth or more of the "
                 r"dictionary\*\* — ([^.]+)\.", bal)

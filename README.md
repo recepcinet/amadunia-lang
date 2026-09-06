@@ -141,9 +141,9 @@ at once.
 | Sino-Tibetan | 11 | 3.7% | 12 | 4.0% |
 | Japonic | 4 | 1.3% | 8 | 2.7% |
 | Koreanic | 0 | 0.0% | 2 | 0.7% |
-| Tai-Kadai | 0 | 0.0% | 1 | 0.3% |
 | Austroasiatic | 0 | 0.0% | 1 | 0.3% |
 | Celtic | 0 | 0.0% | 1 | 0.3% |
+| Tai-Kadai | 0 | 0.0% | 1 | 0.3% |
 
 **European roots are 34% of the dictionary**, against Esperanto's ~95% — both
 counted the same way, by where a root came from. By reach the largest is
