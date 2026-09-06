@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**259 guarantees** in **119 groups**, and every one of them is
+**264 guarantees** in **120 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -437,6 +437,13 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - questions.md rejects … for containing …, which is not in it
 - conjunction.md: … roots end in -…
+### text 21 measures itself against the others
+
+- text-21 uses … distinct shapes by the scanner that produces the corpus figure
+- text-21: the next highest shape count is …
+- text-21: its three commonest shapes cover …%
+- text-21 is the …th least repetitive of … by its three commonest shapes
+- text-21 shares a shape between …% of adjacent pairs, …th of …
 ### text 5's arithmetic about rhyme
 
 - text-5: … of … roots end in a vowel, …%

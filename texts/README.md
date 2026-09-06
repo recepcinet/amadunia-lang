@@ -95,9 +95,9 @@ be measuring the copying.
 
 The measurement was made to test a claim and refuted it.
 [Text 21](text-21-uan-umur.md), the long one, said at first that the shapes
-drone at that length. They do not: it uses 56 distinct shapes, more than any
+drone at that length. They do not: it uses 52 distinct shapes, more than any
 other text, and only 8% of its adjacent sentence pairs share a shape, which
-puts it eleventh of twenty-one. The most repetitive pages are
+puts it eleventh of twenty-three. The most repetitive pages are
 [the recipe](text-8-kaifa-suru-ca.md) at 28% and [the poem](text-5-uan.md) at
 25%, both of which repeat on purpose.
 

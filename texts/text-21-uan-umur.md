@@ -201,11 +201,22 @@ like subject-verb-object over and over, so the first version of this section
 said so. Then it was measured, and the measurement disagrees twice.
 
 By sentence shape — every sentence reduced to its parts of speech — this text
-uses **56 distinct shapes**, more than any other text in the language; the
-next highest is story 2 with 27. Its three commonest shapes cover 31% of it,
-which makes it the fifth *least* repetitive of twenty-one texts. And 8% of
-adjacent sentence pairs share a shape, eleventh of twenty-one: the recipe is
-28% and the poem 25%, both for good reasons.
+uses **52 distinct shapes**, more than any other text in the language; the next
+highest are story 2 and [text 22](text-22-agar-yamur-lai.md) with 27 each. Its
+three commonest shapes cover 33% of it, which makes it the seventh *least*
+repetitive of twenty-three texts. And 8% of adjacent sentence pairs share a
+shape, eleventh of twenty-three: the recipe is 28% and the poem 25%, both for
+good reasons.
+
+*Four of those five figures were wrong until September 6, 2026.* The paragraph
+said 56 shapes, 31%, fifth of twenty-one and eleventh of twenty-one. Fifty-six
+is not a figure the repository's own shape scanner produces at any scope — it
+gives 52 over the poem's block and 53 over the whole file — and the other three
+went stale when [text 22](text-22-agar-yamur-lai.md) and
+[text 23](text-23-kim-paling-hayai.md) were written four days later. This is
+the section that exists because a claim about this text was measured and
+refuted; measuring it again is the same act, and it should not have taken four
+days. Every figure in it is derived now.
 
 So length did not flatten the language. It did the opposite — a long text
 visits more situations and reaches for more shapes. The drone was in the

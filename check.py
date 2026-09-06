@@ -10,7 +10,7 @@ It exits 0 when the language and its materials are consistent, and
 check corresponds to a decision recorded in grammar/.
 """
 import io, os, re, sys, glob
-from collections import defaultdict
+from collections import Counter, defaultdict
 
 ALPHABET   = set("abcdefghiklmnoprstuy")   # 20 letters; c is the ch sound
 VOWELS     = set("aeiou")
@@ -784,6 +784,11 @@ _SPELLN = {_n: _w for _w, _n in WORD_NUM.items()}
 _SPELLN.update({_n: _w for _w, _n in zip(
     "thirty forty fifty sixty seventy eighty ninety".split(),
     range(30, 100, 10))})
+# And the compounds between them: "eleventh of twenty-three" needed one and
+# raised KeyError instead of reporting, which is a check that cannot fail —
+# the same way spelling out thirty did on September 5.
+_SPELLN.update({_t + _u: _SPELLN[_t] + "-" + _SPELLN[_u]
+                for _t in range(20, 100, 10) for _u in range(1, 10)})
 _TENS = "twenty thirty forty fifty sixty seventy eighty ninety".split()
 _UNITS = "one two three four five six seven eight nine".split()
 for _i, _t in enumerate(_TENS):
@@ -3455,6 +3460,55 @@ for _end, _phrase in (("o", "**{}** roots end in *-o*"),
     check(_phrase.format(_n).replace("**", "") in _conj.replace("**", "")
           .replace("\n", " "),
           f"conjunction.md: {_n} roots end in -{_end}")
+
+# ------------------------------- text 21 measures itself against the others
+# The section exists because a claim about this text was measured and refuted.
+# Four of its five figures then went wrong: 56 distinct shapes is not a number
+# the shape scanner gives at any scope, and three rankings went stale the day
+# texts 22 and 23 were added. A page that argues from a measurement has to be
+# remeasured when the corpus moves, and nothing derived these.
+_tshapes = {}
+for _p in sorted(glob.glob("texts/*.md")):
+    if _p.endswith("README.md"): continue
+    _tb = read(_p)
+    if "```" not in _tb: continue
+    _seq = [tuple(_shape_tag(_t) for _t in _tk)
+            for _l, _s, _tk in amadunia_runs("".join(_tb.split("```")[1::2]))]
+    if not _seq: continue
+    _cnt = Counter(_seq)
+    _tshapes[os.path.basename(_p)] = (
+        len(_cnt),
+        100 * sum(_n for _, _n in _cnt.most_common(3)) / len(_seq),
+        100 * sum(1 for _a, _b in zip(_seq, _seq[1:]) if _a == _b) / (len(_seq) - 1)
+        if len(_seq) > 1 else 0.0)
+_T21 = "text-21-uan-umur.md"
+if _T21 in _tshapes:
+    _n21, _top21, _adj21 = _tshapes[_T21]
+    _t21 = read("texts/" + _T21).replace("\n", " ")
+    _rdme = read("texts/README.md").replace("\n", " ")
+    _rank_top = sorted(_tshapes, key=lambda _k: _tshapes[_k][1]).index(_T21) + 1
+    _rank_adj = sorted(_tshapes, key=lambda _k: -_tshapes[_k][2]).index(_T21) + 1
+    _second = max(_v[0] for _k, _v in _tshapes.items() if _k != _T21)
+    check(f"uses **{_n21} distinct shapes**" in _t21
+          and f"uses {_n21} distinct shapes" in _rdme,
+          f"text-21 uses {_n21} distinct shapes by the scanner that produces "
+          f"the corpus figure")
+    check(_n21 == max(_v[0] for _v in _tshapes.values())
+          and f"with {_second} each" in _t21,
+          f"text-21: the next highest shape count is {_second}")
+    check(f"cover {round(_top21)}% of it" in _t21,
+          f"text-21: its three commonest shapes cover {round(_top21)}%")
+    check(f"the seventh *least*\nrepetitive of {_SPELLN[len(_tshapes)]} texts"
+          .replace("\n", " ") in _t21
+          and _rank_top == 7,
+          f"text-21 is the {_rank_top}th least repetitive of {len(_tshapes)} "
+          f"by its three commonest shapes")
+    check(f"{round(_adj21)}% of adjacent sentence pairs share a shape" in _t21
+          and f"eleventh of {_SPELLN[len(_tshapes)]}" in _t21
+          and f"eleventh of {_SPELLN[len(_tshapes)]}" in _rdme
+          and _rank_adj == 11,
+          f"text-21 shares a shape between {round(_adj21)}% of adjacent pairs, "
+          f"{_rank_adj}th of {len(_tshapes)}")
 
 # ---------------------------------------- text 5's arithmetic about rhyme
 # The poem's page says how cheap a rhyme is, and every figure in it is a fact
