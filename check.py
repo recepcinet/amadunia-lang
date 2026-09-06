@@ -3456,6 +3456,32 @@ for _end, _phrase in (("o", "**{}** roots end in *-o*"),
           .replace("\n", " "),
           f"conjunction.md: {_n} roots end in -{_end}")
 
+# ----------------------------- the index marks every briefing it calls open
+# grammar/README.md opens by saying how many briefings are open and then marks
+# them one by one. It said six and marked five: the row for "want to be" plus
+# an adjective carried no marker, and carried a judgement — "the smallest of
+# the four" — that its own briefing opens by withdrawing. An index restates a
+# page in one clause and is read by nobody auditing that page.
+_gidx = read("grammar/README.md")
+_mopen = re.search(r"\*\*(\w+) briefings are open\*\*", _gidx)
+# Only table rows count: the paragraph that records this very fault names the
+# marker in prose, and the first version of the check read that as a sixth row.
+_marked = sum(1 for _l in _gidx.splitlines()
+              if _l.startswith("| [") and "**Open — the founder's call.**" in _l)
+check(_mopen and WORD_NUM.get(_mopen.group(1).lower()) == _marked,
+      f"grammar/README.md says {_mopen.group(1) if _mopen else '?'} briefings "
+      f"are open and marks {_marked} rows")
+# Every briefing that is not recorded as decided must carry the marker.
+for _bp in sorted(glob.glob("grammar/proposal-*.md")):
+    _bn = os.path.basename(_bp)
+    _decided = re.match(r"\*\*Decided on \w+ \d+, \d+", read(_bp).split("\n\n")[1]
+                        if len(read(_bp).split("\n\n")) > 1 else "")
+    _row = next((_l for _l in _gidx.splitlines()
+                 if _l.startswith("| [") and f"({_bn})" in _l), "")
+    check(bool(_decided) != ("**Open — the founder's call.**" in _row),
+          f"grammar/README.md's row for {_bn} is "
+          f"{'marked open though the briefing is decided' if _decided else 'not marked open'}")
+
 # ------------------------------ concepts missing only as a part of speech
 # The checklist counts an action as had only when the index holds it as "to X",
 # which is right — safi is the quality clean and not the verb. It leaves a

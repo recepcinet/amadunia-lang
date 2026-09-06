@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**250 guarantees** in **116 groups**, and every one of them is
+**252 guarantees** in **117 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -437,6 +437,10 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - questions.md rejects … for containing …, which is not in it
 - conjunction.md: … roots end in -…
+### the index marks every briefing it calls open
+
+- grammar/README.md says … briefings are open and marks … rows
+- grammar/README.md's row for … is …
 ### concepts missing only as a part of speech
 
 - a1-checklist.md: … are missing as actions and held as nouns, and the page must say so
