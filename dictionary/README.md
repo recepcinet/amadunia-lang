@@ -39,16 +39,18 @@ by writing is worth more than a gap found by reading a wordlist.
 | quiet, silent — the adjective | [text 13](../texts/text-13-kula-una.md), [text 21](../texts/text-21-uan-umur.md) | *Dom sukut*, the house is silent, three times in two texts — and *sukut* is the **noun** silence, so the phrase reads "the house's silence". The lines are *Es sukut in dom*, there is silence in the house, which is the existential doing the work an adjective would. Found September 5, 2026. |
 | cheap, dear | [text 16](../texts/text-16-berapa-harga.md) | a whole bargaining scene runs on *kabir* and *kurang* — big and less — and says *this price is as big as the price in the new city* where a person would say *this is dear* |
 | a wall, a floor | [text 19](../texts/text-19-kamra-mi.md) | the dictionary has a house, a room, a door, a window, a bed, a table, a chair and a lamp, and not one surface to put them against; a description of a room can only list its contents |
-| a song | [text 21](../texts/text-21-uan-umur.md) | *Ta-ta kanta kanta eski* — they sing an old song — used *kanta* as the verb and again as a noun, and the dictionary glosses it *to sing* and nothing else. The line is *Ta-ta kanta tena* now, they sing again, and the song is gone. Found September 13, 2026 by a shape sweep rather than by writing, which makes it the third entry here found by neither method the page describes | the whole kinship set is six words — *mama*, *papa*, *anak*, *dugu*, *familia*, *nasab*. *dugu mama* is the mother's sibling and works today; whether the language wants its own root is A2's call |
+| a song | [text 21](../texts/text-21-uan-umur.md) | *Ta-ta kanta kanta eski* — they sing an old song — used *kanta* as the verb and again as a noun, and the dictionary glosses it *to sing* and nothing else. The line is *Ta-ta kanta tena* now, they sing again, and the song is gone. Found September 6, 2026 by a shape sweep rather than by writing, which makes it the one entry here found by neither method the page describes |
+| a rule | [text 27](../texts/text-27-kalima-por-anak-anak.md) | a notice pinned on a school wall cannot say what it is. *legis* is law, which is a courtroom, and *kalima* is a word, so the title reads *words for the children* where *rules for the children* was meant |
 | fluent, fluently | [a sentence someone asked for](#a-third-way-of-finding-one) | *Mi parolas Esperanton tre flue* came out as *Mi sema hao Amadunia* — I speak Amadunia well. *hao* carries most of it, which is why this one is weaker than the others on the list |
-| uncle, aunt, grandmother, cousin | [a question someone asked](#a-third-way-of-finding-one) |
+| uncle, aunt, grandmother, cousin | [a question someone asked](#a-third-way-of-finding-one) | the whole kinship set is six words — *mama*, *papa*, *anak*, *dugu*, *familia*, *nasab*. *dugu mama* is the mother's sibling and works today; whether the language wants its own root is A2's call |
 
 ### A third way of finding one
 
-Of the fifteen, thirteen name a text or a lesson as the place they were found — twelve because
-the writing stopped there, and one, *a song*, because a sweep of every sentence
-shape in the material turned up a line using one root for two jobs. The
-fourteenth and fifteenth came from neither writing nor a wordlist: the founder asked how
+Of the sixteen, fourteen name a text or a lesson as the place they were found
+— thirteen because the writing stopped there, and one, *a song*, because a
+sweep of every sentence shape in the material turned up a line using one root
+for two jobs. The fifteenth and sixteenth came from neither writing nor a
+wordlist: the founder asked how
 Amadunia says the Esperanto sentence *Mi parolas Esperanton tre flue* — "I
 speak Esperanto very fluently" — on September 4, 2026. The answer is *Mi sema
 hao Amadunia*, and two things fell out of the difference.
@@ -71,24 +73,25 @@ methods had missed.
 
 ---
 
-The fourteen divide three ways, and the division is the argument for finding
+The sixteen divide three ways, and the division is the argument for finding
 gaps by writing.
 
-**Three of the fifteen are about how a person feels or where a person hurts**
+**Three of the sixteen are about how a person feels or where a person hurts**
 — pain, love as a noun, and missing someone. That is where 300 roots turn out to be thinnest,
 and it is not what a thematic wordlist would have predicted.
 
-**Seven of the fifteen are joints rather than things:** a point in the day, the word that puts
+**Seven of the sixteen are joints rather than things:** a point in the day, the word that puts
 one step after another, the opposite of sitting down, the difference between a
 coin and an amount, the opposite of *fast*, the word that contrasts two
 clauses, and the pair that prices a thing. A wordlist names things; only a
 sentence notices that it cannot get from one step to the next.
 
-**Five of the fifteen are neither**, and they are the ones this page argues about below: a
-wall and a floor, the kinship set, *fluent*, *quiet* — which is not a missing
-concept at all but a missing part of speech, since *sukut* is the noun
-*silence* and there is no adjective beside it — and *a song*, which is the same
-shape the other way round: *kanta* is the verb and there is no noun.
+**Six of the sixteen are neither**, and they are the ones this page argues
+about below: a wall and a floor, the kinship set, *fluent*, *a rule*, *quiet* —
+which is not a missing concept at all but a missing part of speech, since
+*sukut* is the noun *silence* and there is no adjective beside it — and *a
+song*, which is the same shape the other way round: *kanta* is the verb and
+there is no noun.
 
 Until September 6, 2026 those two paragraphs were one sentence printed twice,
 back to back, introducing the same seven items as *the rest* and then as *most
@@ -111,7 +114,9 @@ noticing, because no one had described a room until
 [text 19](../texts/text-19-kamra-mi.md); writing found it in the end, a list
 would have found it sooner. **Kinship** is the same shape and larger: uncle,
 aunt, grandmother and cousin sit in the checklist's *people* domain and no text
-had ever needed them. And **fluent** came from neither method but from a single
+had ever needed them. **A rule** is the third of that kind and the plainest: any wordlist with a
+*school* heading has it, and twenty-six texts went past it because none of them
+was a notice. And **fluent** came from neither method but from a single
 sentence asked in another language, which is the third way described above.
 
 The first eight were re-checked against the dictionary on September 3,

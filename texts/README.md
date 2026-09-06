@@ -55,21 +55,21 @@ it — a count is only as good as what it counted.
 
 | Rule | Texts |
 |---|---:|
-| place | 24 |
-| conjunction | 18 |
-| negation | 18 |
+| place | 25 |
+| conjunction | 19 |
+| negation | 19 |
 | number | 17 |
 | tense | 17 |
 | copula | 16 |
 | demonstrative | 15 |
 | question | 15 |
+| plural | 12 |
+| subordination | 12 |
 | verb chain | 12 |
 | existence | 11 |
-| plural | 11 |
-| subordination | 11 |
-| una | 10 |
+| una | 11 |
+| command | 10 |
 | adverb | 9 |
-| command | 9 |
 | comparison | 8 |
 
 <!-- end generated -->
@@ -122,15 +122,17 @@ been. Every sentence in the lessons, the texts and the phrasebook was reduced
 to its parts of speech — R for a pronoun, V a verb, N a noun, A an adjective,
 P a preposition, and so on — and the shapes counted.
 
-**1799 sentences, 443 distinct shapes**, and the fifteen commonest cover 43%
-of them. The leaders are *RVN* at 8.6% (*Ta-ta lihat stela-stela*), *NA* at
-7.5% (*Sol kabir*) and *NV* at 4.8% (*Anak sema*). [`check.py`](../check.py)
+**1820 sentences, 448 distinct shapes**, and the fifteen commonest cover 42%
+of them. The leaders are *RVN* at 8.1% (*Ta-ta lihat stela-stela*), *NA* at
+7.2% (*Sol kabir*) and *NV* at 4.7% (*Anak sema*). [`check.py`](../check.py)
 recounts the two headline numbers.
 
-**1522 of the 1799 are distinct — 85%.** The corpus is not padded with
-repeats: the most repeated sentence appears seven times across four files and
-is *Mi sema*, "I say", which is a quotation frame rather than a sentence
-anybody is making. That matters for
+**1541 of the 1820 are distinct — 85%.** The corpus is not padded with
+repeats: the most repeated sentence appears eight times across four files and
+is *Ta sema*, "they say", which is a quotation frame rather than a sentence
+anybody is making. It read *Mi sema* at seven until September 6, 2026, and the
+line went stale without anything noticing, because the two headline numbers
+above were checked and the sentence under them was prose; it is derived now. That matters for
 [the frequency list](../dictionary/frequency.md), which counts every
 occurrence: if a sixth of the material were copies of itself the curve would
 be measuring the copying.
@@ -139,7 +141,7 @@ The measurement was made to test a claim and refuted it.
 [Text 21](text-21-uan-umur.md), the long one, said at first that the shapes
 drone at that length. They do not: it uses 52 distinct shapes, more than any
 other text, and only 8% of its adjacent sentence pairs share a shape, which
-puts it eleventh of twenty-six. The most repetitive pages are
+puts it twelfth of twenty-seven. The most repetitive pages are
 [the recipe](text-8-kaifa-suru-ca.md) at 28% and [the poem](text-5-uan.md) at
 25%, both of which repeat on purpose.
 
@@ -211,3 +213,4 @@ These are original compositions, not translations. Translating an existing book 
 | [Mama mama mi](text-24-mama-mama-mi.md) | 59 | 300 roots, Lessons 1-26 — a portrait of one person, and the first text to find a gap in the prepositions rather than the vocabulary |
 | [Tarik por hospital](text-25-tarik-por-hospital.md) | 45 | 300 roots, Lessons 1-24 — directions to a stranger, **written for commands** and as a second witness to the missing preposition |
 | [Dom eski](text-26-dom-eski.md) | 45 | 300 roots, Lessons 1-26 — a memory, and the first page to find that an adjective predicate cannot be put in the past |
+| [Kalima por anak-anak](text-27-kalima-por-anak-anak.md) | 39 | 300 roots, Lessons 1-26 — a notice on a school wall, **written for the imperative and against a missing *everyone***, and one of the four texts that use no *mi* |

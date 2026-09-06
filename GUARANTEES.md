@@ -2,11 +2,11 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**291 guarantees** in **137 groups**, and every one of them is
+**296 guarantees** in **139 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
-A contributor should not have to read 4321 lines of Python to find
+A contributor should not have to read 4433 lines of Python to find
 out what will fail. That figure said **eleven hundred** until September 15,
 2026, on the page whose whole reason for existing is that the Python is too
 long to read — it was written when the checker was a quarter of its size and
@@ -235,6 +235,7 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - texts/README.md's shape count is stale; the material has … sentences in … distinct shapes
 - texts/README.md's repetition figure is stale; … of … sentences are distinct
+- texts/README.md's most-repeated sentence is stale; it is '…', … times across … files
 ### a text's table repeats its own text
 
 - …: the line-by-line table has a sentence the text does not: …
@@ -319,6 +320,13 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - …: says '…'; its text has … sentences
 - …: says '…'; its text has …
 - …: says '…' opens … sentences; it opens …
+### a text counting the texts that leave *mi* out
+
+- …: says '…'; … do — …
+### a text counting its own commands
+
+- …: splits into … sentences but has … stops — the two readings disagree
+- …: says … of its sentences are commands and … of those negative; the text has … and …
 ### how many texts there are
 
 - …: says '…'; texts/ holds …
@@ -333,6 +341,7 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - dictionary/README.md: the … gaps found by a question are not named as numbers … to …
 - dictionary/README.md: the three parts of the gap list are … and must account for all … of it
 - dictionary/README.md: the feelings count is not stated against … gaps
+- dictionary/README.md: a gap row has … cells against the header's … — …
 ### the demand table counts the pages that ask
 
 - grammar/README.md's demand row for '…' says …; … pages write the claim

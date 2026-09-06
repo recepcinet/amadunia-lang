@@ -1628,16 +1628,30 @@ for path in PROSE:
 # a number or a doubled plural. It fell behind by one when three texts were
 # written after it, so the count is recomputed. File names are excluded: they
 # are hyphenated because file names are, not because the language joins roots.
+# The title part of a file name — anak-katab, surat-por-mama — is named in
+# word-formation.md as a hyphenation that is not a joining, so the exact slugs
+# are excluded and nothing else is. Matching a file name by substring instead
+# excluded *anak-anak* everywhere the day a file was called
+# text-27-kalima-por-anak-anak.
+_SLUGS = {re.sub(r"^(?:text-\d+|story-\d+|lesson-\d\d)-", "",
+                 os.path.basename(_p)[:-3]) for _p in md()}
 _joined = set()
-_filenames = {os.path.basename(_p) for _p in md()}
 for path in md():
     for _line in read(path).splitlines():
         # phonology.md writes syllable divisions the same way — por-ke is the
         # break inside porke, not two roots joined.
         if "syllable break" in _line: continue
+        # A file name is hyphenated because file names are. The test used to be
+        # "this form is a substring of some file name", which excluded the form
+        # everywhere the moment a file was named after it: text 27 is called
+        # kalima-por-anak-anak, and adding it removed every real *anak-anak*
+        # from the census. Link targets are cut out of the line instead, so a
+        # form is judged where it stands.
+        _line = re.sub(r"\]\([^)]*\)", "]()", _line)
+        _line = re.sub(r"\b[a-z0-9-]+\.md\b", "", _line)
         for _t in re.findall(r"\b[a-z]+(?:-[a-z]+)+\b", _line.lower()):
             _ps = _t.split("-")
-            if all(_x in words for _x in _ps) and not any(_t in _f for _f in _filenames):
+            if all(_x in words for _x in _ps) and _t not in _SLUGS:
                 _joined.add(_t)
 _reduplications = {_t for _t in _joined if len(set(_t.split("-"))) == 1}
 _numberforms = {_t for _t in _joined if all(_x in NUMBERS for _x in _t.split("-"))}
@@ -1835,6 +1849,31 @@ check(f"**{_stot} sentences, {len(_shapes)} distinct shapes**" in read("texts/RE
 check(f"**{len(_sents)} of the {_stot} are distinct" in read("texts/README.md"),
       f"texts/README.md's repetition figure is stale; {len(_sents)} of "
       f"{_stot} sentences are distinct")
+
+# The sentence under those two numbers names the most repeated sentence in the
+# material and says how often and in how many files. It said *Mi sema*, seven
+# times, until September 6, 2026, by which point *Ta sema* had passed it at
+# eight — the headline pair was checked and the example beside it was prose, so
+# it went stale in the usual way. Same scan, so the example cannot disagree
+# with the count it illustrates.
+_reps, _repwhere = Counter(), defaultdict(set)
+for _p, _sb in _material():
+    for _line, _sent, _toks in amadunia_runs(_sb):
+        _k = " ".join(_t.lower() for _t in _toks)
+        _reps[_k] += 1
+        _repwhere[_k].add(_p)
+_top = min(_reps.items(), key=lambda _kv: (-_kv[1], _kv[0]))
+# The claim wraps, so the file is flattened before it is read — the same
+# lesson the "twenty-six texts" check learned when it matched nothing.
+_m = re.search(r"appears ([A-Za-z-]+|\d+) times across ([A-Za-z-]+|\d+) files "
+               r"and is \*([A-Za-z ]+)\*",
+               " ".join(read("texts/README.md").split()))
+_g = list(_m.groups()) if _m else []
+check(len(_g) == 3
+      and [WORD_NUM.get(_g[0].lower()), WORD_NUM.get(_g[1].lower()), _g[2].lower()]
+          == [_top[1], len(_repwhere[_top[0]]), _top[0]],
+      f"texts/README.md's most-repeated sentence is stale; it is '{_top[0]}', "
+      f"{_top[1]} times across {len(_repwhere[_top[0]])} files")
 
 # ------------------------------------ a text's table repeats its own text
 # Every text prints its Amadunia twice: once in the code block and once, line
@@ -2532,6 +2571,14 @@ for _p in PROSE:
 # number cannot be a different one.
 def _text_sentences(body):
     return re.findall(r"[.!?]", body.split("```")[1])
+# The stops above count the sentences; this splits them. The "opens" check
+# below carried its own copy of the split and the command check would have made
+# a third, so there is one, and a claim that uses it is held to agreeing with
+# the stop count on the same page.
+def _text_units(_body):
+    return [_s.strip() for _s in
+            re.split(r'(?<=[.!?])"?\s+', _body.split("```")[1].replace("\n", " "))
+            if _s.strip()]
 for _p in sorted(glob.glob("texts/*.md")):
     _b = read(_p)
     if "```" not in _b: continue
@@ -2566,12 +2613,65 @@ for _p in sorted(glob.glob("texts/*.md")):
     for _m in re.finditer(r"\*([a-z-]+)\* (?:still )?opens ([A-Za-z-]+|\d+) of", _b):
         _n = int(_m.group(2)) if _m.group(2).isdigit() else WORD_NUM.get(_m.group(2).lower())
         if _n is None: continue
-        _real = sum(1 for _s in re.split(r'(?<=[.!?])"?\s+',
-                                         _b.split("```")[1].replace("\n", " "))
-                    if _s.strip().lower().startswith(_m.group(1) + " "))
+        _real = sum(1 for _s in _text_units(_b)
+                    if _s.lower().startswith(_m.group(1) + " "))
         check(_n == _real,
               f"{os.path.basename(_p)}: says '{_m.group(1)}' opens {_n} sentences; "
               f"it opens {_real}")
+
+# ------------------------------- a text counting the texts that leave *mi* out
+# text 27 was drafted as "the only genre in the corpus with no speaker and no
+# listener named", which is a claim about twenty-six other files and was made
+# by writing it down. Three of them leave *mi* out too — the recipe and two
+# portraits — so the sentence was false the day it was typed. What is countable
+# is the pronoun, so that is what the page says and this is what counts it.
+_nomi = [os.path.basename(_p) for _p in sorted(glob.glob("texts/*.md"))
+         if "```" in read(_p)
+         and "mi" not in [_t.lower() for _t in
+                          re.findall(r"[A-Za-z-]+", read(_p).split("```")[1])]]
+for _p in sorted(glob.glob("texts/*.md")):
+    _b = read(_p)
+    for _m in re.finditer(r"([A-Za-z-]+|\d+) texts use\s+no \*mi\*",
+                          " ".join(_b.split())):
+        _n = (int(_m.group(1)) if _m.group(1).isdigit()
+              else WORD_NUM.get(_m.group(1).lower()))
+        check(_n == len(_nomi),
+              f"{os.path.basename(_p)}: says '{_m.group(0)}'; {len(_nomi)} do "
+              f"— {', '.join(_nomi)}")
+
+# --------------------------------------- a text counting its own commands
+# text 27 is a notice, so what it is made of is a count of commands, and its
+# first draft put three numbers in one sentence — how many sentences, how many
+# of them commands, how many of those negative — of which only the first was
+# checked, and all three were wrong. _rules_in decides what a command is
+# everywhere else in this file, so it decides here too: a sentence opening with
+# *agar* opens with the marker and is not one, however plainly it orders
+# somebody about.
+for _p in sorted(glob.glob("texts/*.md")):
+    _b = read(_p)
+    if "```" not in _b: continue
+    # The claim is bold up to the first comma and wraps wherever the line ends,
+    # so the marks and the newlines are part of what has to match. The first
+    # draft of this pattern allowed neither and matched nothing at all, which a
+    # deliberately wrong number in the text showed at once.
+    _m = re.search(r"([A-Za-z-]+|\d+)\s+of\s+the\s+(?:[A-Za-z-]+|\d+)\s+"
+                   r"sentences\s+are\s+commands\*{0,2},\s+and\s+"
+                   r"([A-Za-z-]+|\d+)\s+of\s+those\s+are\s+negative", _b)
+    if not _m: continue
+    _units = _text_units(_b)
+    check(len(_units) == len(_text_sentences(_b)),
+          f"{os.path.basename(_p)}: splits into {len(_units)} sentences but has "
+          f"{len(_text_sentences(_b))} stops — the two readings disagree")
+    _cmd = [_u for _u in _units
+            if re.findall(r"[A-Za-z-]+", _u)
+            and "command" in _rules_in(_u, re.findall(r"[A-Za-z-]+", _u))]
+    _neg = [_u for _u in _cmd if _u.lower().startswith("no ")]
+    _said = [int(_g) if _g.isdigit() else WORD_NUM.get(_g.lower())
+             for _g in (_m.group(1), _m.group(2))]
+    check(_said == [len(_cmd), len(_neg)],
+          f"{os.path.basename(_p)}: says {_m.group(1)} of its sentences are "
+          f"commands and {_m.group(2)} of those negative; the text has "
+          f"{len(_cmd)} and {len(_neg)}")
 
 # ------------------------------------------------- how many texts there are
 # The front page said twenty when there were twenty-one, and so did the lesson
@@ -2674,6 +2774,18 @@ check(f"of the {_SPELL.get(len(_gaprows))} are about how a person feels"
       in read("dictionary/README.md"),
       f"dictionary/README.md: the feelings count is not stated against "
       f"{len(_gaprows)} gaps")
+
+# A row of that table lost a cell wall on September 6, 2026: *a song* ended up
+# carrying the kinship note as a fourth cell, and *uncle, aunt, grandmother,
+# cousin* was left with nothing but a link. Markdown renders both without
+# complaint and the row count was still right, so every check above passed. The
+# shape of a row is the thing that was wrong, so the shape is what is held.
+_gaphead = [_l for _l in _gapsec.splitlines() if _l.startswith("| Missing")][0]
+_cells = lambda _l: len(_l.strip().strip("|").split("|"))
+for _l in _gaprows:
+    check(_cells(_l) == _cells(_gaphead),
+          f"dictionary/README.md: a gap row has {_cells(_l)} cells against the "
+          f"header's {_cells(_gaphead)} — {_l[:60]}")
 
 # --------------------------------- the demand table counts the pages that ask
 # grammar/README.md ranks the open questions by how many pages tried to say
