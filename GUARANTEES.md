@@ -6,8 +6,18 @@ the checker prints when something is wrong — not a paraphrase of one. There ar
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
-A contributor should not have to read eleven hundred lines of Python to find
-out what will fail. This page is that list, and `check.py` regenerates it and
+A contributor should not have to read 4321 lines of Python to find
+out what will fail. That figure said **eleven hundred** until September 15,
+2026, on the page whose whole reason for existing is that the Python is too
+long to read — it was written when the checker was a quarter of its size and
+nothing recomputed it. The regenerator writes it now.
+
+It is not *checked*, and that is worth a line. A guarantee inside check.py that
+the file is N lines long cannot hold: the mutation harness instruments the
+checker by rewriting it, which makes it three lines longer, so the check would
+fail on every run of the test that exists to prove the checks work. A number
+that describes a file cannot be verified from inside that file when the tool
+verifying it edits the file. Regenerated, not guarded. This page is that list, and `check.py` regenerates it and
 refuses to pass if it has drifted — so it cannot fall behind the checker it
 describes.
 
