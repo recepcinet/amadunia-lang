@@ -794,6 +794,15 @@ _SPELLN.update({_n: _w for _w, _n in zip(
 # the same way spelling out thirty did on September 5.
 _SPELLN.update({_t + _u: _SPELLN[_t] + "-" + _SPELLN[_u]
                 for _t in range(20, 100, 10) for _u in range(1, 10)})
+# And past a hundred, because proposal-a2.md writes its missing count as
+# "a hundred and six" — the one figure on that page no check could read, since
+# a parser that cannot spell a number cannot test a sentence that spells it.
+_SPELLN.update({100 + _n: "a hundred and " + _SPELLN[_n] for _n in range(1, 100)})
+_SPELLN[100] = "a hundred"
+# The parser is widened with it. Every check that reads a number word does
+# `WORD_NUM.get(...)` and skips what comes back None, so a figure written in a
+# form the map did not hold was not merely unspelled — it was unchecked.
+WORD_NUM.update({_w: _n for _n, _w in _SPELLN.items() if _n > 99})
 _TENS = "twenty thirty forty fifty sixty seventy eighty ninety".split()
 _UNITS = "one two three four five six seven eight nine".split()
 for _i, _t in enumerate(_TENS):
@@ -1783,6 +1792,9 @@ check(_movn is not None and f"adds **{_a1tot - _a1present - _movn}** more" in _a
 check(f"which of the **{_a1tot - _a1present}** matter" in _a2,
       f"proposal-a2.md: asks which of the wrong number matter; the checklist is "
       f"missing {_a1tot - _a1present}")
+check(f"{_SPELLN[_a1tot - _a1present].capitalize()} are not" in _a2,
+      f"proposal-a2.md: {_a1tot - _a1present} concepts are missing and the "
+      f"page must say so in words as well as in figures")
 check(f"**{_a1present} of {_a1tot} are present" in _a2,
       f"proposal-a2.md's checklist total is stale; recount gives "
       f"{_a1present} of {_a1tot}")

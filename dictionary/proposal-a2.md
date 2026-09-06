@@ -131,6 +131,14 @@ domain](a1-checklist.md), each looked up in the English index by
 
 **167 of 273 are present. A hundred and six are not.**
 
+Both halves of that sentence are checked now. The second was not, until
+September 9, 2026: the checker's number parser stopped at ninety-nine, so a
+figure written out as *a hundred and six* was invisible to it, and this is the
+count the whole page turns on. A parser that cannot spell a number cannot test
+a sentence that spells it — and the shape of that failure is the one this
+repository keeps finding, a map returning nothing for what it does not know
+rather than saying it does not know.
+
 | Domain | Present | Missing |
 |---|---|---|
 | the house | 13 of 25 | wall, floor, roof, kitchen, bathroom, stairs, spoon, clock, mirror, towel, box, bag |

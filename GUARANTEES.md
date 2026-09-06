@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**282 guarantees** in **131 groups**, and every one of them is
+**283 guarantees** in **131 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -219,6 +219,7 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - proposal-a2.md's missing list for '…' has drifted; the dictionary gives: …
 - proposal-a2.md: the checklist is missing … and … of those were found by writing, so it adds … more
 - proposal-a2.md: asks which of the wrong number matter; the checklist is missing …
+- proposal-a2.md: … concepts are missing and the page must say so in words as well as in figures
 - proposal-a2.md's checklist total is stale; recount gives … of …
 ### how many sentence shapes
 
