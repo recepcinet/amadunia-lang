@@ -615,6 +615,13 @@ MUTATIONS = [
      "Beta opens. This is a deliberately long duplicated sentence, put here only to exercise the repeated-sentence guarantee.\n\n"
      "## Why this and not the alternatives",
      "a sentence is printed twice"),
+    ("the prose-residue count gone stale in the briefing",
+     "grammar/proposal-sentence-types.md", "**22 runs come from",
+     "**20 runs come from",
+     "22 runs come from explanatory prose"),
+    ("the prose-residue count gone stale in the texts index",
+     "texts/README.md", "**22 runs, 57 words**", "**20 runs, 57 words**",
+     "22 runs come from explanatory prose"),
     ("the count of roots reaching a real sentence gone stale",
      "dictionary/frequency.md", "291 of the 300 roots appear in one",
      "292 of the 300 roots appear in one",

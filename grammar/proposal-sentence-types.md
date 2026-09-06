@@ -59,6 +59,42 @@ phenomenon, and there are 44 of them.
 That distinction matters for whatever rule is written: it should govern what
 may be *said alone*, not what may be *printed alone*.
 
+## What the corpus scan counts that nobody said
+
+This page drew a distinction by hand — a grammar lesson printing *dom mi* in a
+table is citing a phrase, not claiming it is a sentence — and the scanner that
+produces every corpus figure in the repository has never known it. Measured on
+September 6, 2026: **22 runs come from explanatory prose** in the lessons and
+the phrasebook rather than from a table, a quoted line, a code block or a
+numbered practice item. They divide three ways.
+
+**Six are real** — the closing *Mi ama dunia. Yu ama dunia. Kita ama dunia.* of
+Lesson 23 and of the phrasebook, three sentences each.
+
+**Eleven are citations**: *Mi kula*, *yu kula*, *ta kula* in Lesson 02, *Pagi
+hao* and *Rat mal* in Lesson 03, *Tri hora* in Lesson 16, *Buka mulut* and *No
+go skola besok* in Lesson 26, and three more.
+
+**Five are fragments** cut by markdown emphasis and not phrases at all: *no es*
+comes from a line of English prose about the copula, and *kita kula sasa* is
+what is left when a quoted conditional wraps across two lines.
+
+**Three rules were tried and all three misclassify.** *Presented at the head of
+its line* drops the second clause of a legitimate practice item — *Din kabir,
+rat keci* loses *rat keci* — and the second and third sentences of the closing
+line above. *Wrapped in emphasis* drops that closing line entirely, since it is
+italic. *Unbalanced asterisks* finds 33 runs across the repository and among
+them the front page's fourteen-word full-order example, a real sentence whose
+emphasis merely wraps. A rule that costs real sentences to remove citations is
+worse than the residue, so none was adopted.
+
+Sixteen things nobody said, in 1728 — under one per cent. Recorded rather than
+corrected, and [`check.py`](../check.py) holds the count so it cannot grow
+quietly. This record lives on a grammar page because
+[texts/README.md](../texts/README.md), where it belongs by subject, is inside
+the material the scanner counts: writing these examples out there added ten
+more of the thing being measured, and the checker caught it.
+
 ## The imperative: the slot is free
 
 This is the same shape as two decisions already made.

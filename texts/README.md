@@ -112,6 +112,24 @@ that figure is checked; the sentence half sat in a phrasing the sentence check
 did not match. **A number is checked when its wording is checked, not when its
 subject is.** Corrected September 6, 2026, and the phrasing is covered now.
 
+### What the corpus scan counts that nobody said
+
+Every figure on this page comes from one scanner, and on September 6, 2026 it
+was found reading a row of vocabulary as two sentences. Excluding that left a
+smaller residue, measured rather than guessed: **22 runs, 57 words**, come from
+explanatory prose in the lessons and the phrasebook rather than from a table, a
+quoted line, a code block or a numbered practice item. Six of the 22 are real
+sentences; the other 16 are a page naming a form to talk about it, or a piece
+of one left behind when a quoted phrase wraps across two lines.
+
+**The full list, and the three rules for telling a citation from an utterance
+that were tried and rejected, are
+[on the briefing that owns the distinction](../grammar/proposal-sentence-types.md#what-the-corpus-scan-counts-that-nobody-said)** —
+and they are there rather than here for the reason the record itself makes:
+this page is inside the material the scanner counts, so writing the examples
+out would have added ten more of exactly the thing being measured. It did, in
+the first draft, and the checker said so.
+
 **A gap has to be a sentence that stopped.** Before a text records one, the
 rule page that would grant the thing has to be read. [Text
 10](text-10-mila-tahun.md) claimed the language could not compare one duration

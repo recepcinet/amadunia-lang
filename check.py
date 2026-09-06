@@ -3502,6 +3502,27 @@ for _end, _phrase in (("o", "**{}** roots end in *-o*"),
           .replace("\n", " "),
           f"conjunction.md: {_n} roots end in -{_end}")
 
+# ------------------------ how much of the corpus count is nobody's sentence
+# The scanner reads a run of dictionary words wherever it finds one, including
+# inside a sentence of English that is naming the phrase rather than saying it.
+# The residue is small and is not removable by any rule that does not also cost
+# real sentences — three were tried — so it is counted and held instead.
+_prose_runs = 0
+for _p in (sorted(glob.glob("lessons/lesson-*.md")) + ["phrasebook.md"]):
+    _pb = read(_p)
+    if "## New word" in _pb:
+        _ph, _pr = _pb.split("## New word", 1)
+        _pb = _ph + "\n" + "\n## ".join(_pr.split("\n## ")[1:])
+    for _line, _sent, _toks in amadunia_runs(_pb):
+        _ls = _line.strip()
+        if _ls.startswith(("|", ">", "```")): continue
+        if re.match(r"^[-\d]+[.)]?\s", _ls): continue
+        _prose_runs += 1
+check(f"**{_prose_runs} runs" in read("grammar/proposal-sentence-types.md")
+      and f"**{_prose_runs} runs, 57 words**" in read("texts/README.md"),
+      f"{_prose_runs} runs come from explanatory prose, and both pages that "
+      f"state it must say so")
+
 # ------------------------- how many roots reach a sentence of more than one
 # frequency.md said every one of the 300 roots appears in running Amadunia,
 # and that was true only because the phrasebook's twenty-word list was being
