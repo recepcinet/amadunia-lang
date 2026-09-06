@@ -3,8 +3,19 @@
 Generated from the material a learner reads — the twenty-six lessons, the
 twenty-three texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **6078 words of running Amadunia**, and every one of the 300 roots appears
-at least once.
+it. **6058 words of running Amadunia**, and 291 of the 300 roots appear in one.
+
+The other nine appear in no sentence of more than one word anywhere: *bai*,
+*bas*, *hi*, *mersi*, *ok*, *pardon*, *plis*, *ya* — and *madad*, which is
+[held back on purpose](../grammar/verb-chains.md) until its class is decided.
+The eight are interjections and are used alone, which the language grants:
+[a single constituent may stand as an utterance](../grammar/sentence-types.md).
+This page counts runs of two words or more, so a one-word utterance is
+invisible to it, and until September 6, 2026 the count read *every one of the
+300* because [the phrasebook's list of twenty words](../phrasebook.md) — a row
+of vocabulary separated by dots — was being read as two ten-word sentences.
+Excluding it took twenty words off the total and left the eight with nothing,
+which is the truth about them and not a gap.
 
 [`check.py`](../check.py) regenerates this page and fails if it disagrees, so
 the numbers follow the corpus rather than the other way round.
@@ -14,10 +25,10 @@ the numbers follow the corpus rather than the other way round.
 | | Share of all running words |
 |---|---|
 | first 10 | 31% |
-| first 25 | 49% |
+| first 25 | 50% |
 | first 50 | 65% |
 | first 100 | 81% |
-| first 150 | 89% |
+| first 150 | 90% |
 | first 200 | 95% |
 | first 300 | 100% |
 
@@ -33,19 +44,19 @@ cover half of everything.** They are the first twenty-five below.
 
 | | Root | Meaning | Uses | Share |
 |---|---|---|---|---|
-| 1 | *mi* | I, me | 602 | 9.9% |
-| 2 | *yu* | you — one form for everyone | 228 | 3.8% |
+| 1 | *mi* | I, me | 601 | 9.9% |
+| 2 | *yu* | you — one form for everyone | 227 | 3.7% |
 | 3 | *ta* | he, she, it — no gender | 186 | 3.1% |
-| 4 | *in* | at, in, on | 179 | 2.9% |
+| 4 | *in* | at, in, on | 179 | 3.0% |
 | 5 | *anak* | child | 142 | 2.3% |
-| 6 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 132 | 2.2% |
-| 7 | *lai* | to come | 110 | 1.8% |
+| 6 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 131 | 2.2% |
+| 7 | *lai* | to come | 109 | 1.8% |
 | 8 | *ini* | this — after the noun, last in the phrase | 108 | 1.8% |
-| 9 | *no* | no; **not** — before the predicate, see [grammar/negation.md](../grammar/negation.md) | 106 | 1.7% |
+| 9 | *no* | no; **not** — before the predicate, see [grammar/negation.md](../grammar/negation.md) | 105 | 1.7% |
 | 10 | *dom* | house, home | 104 | 1.7% |
-| 11 | *go* | to go | 103 | 1.7% |
+| 11 | *go* | to go | 102 | 1.7% |
 | 12 | *aur* | and | 95 | 1.6% |
-| 13 | *mau* | to want | 94 | 1.5% |
+| 13 | *mau* | to want | 93 | 1.5% |
 | 14 | *suda* | past marker (before the verb) | 93 | 1.5% |
 | 15 | *hao* | good | 91 | 1.5% |
 | 16 | *ca* | tea | 78 | 1.3% |
@@ -76,15 +87,16 @@ cover half of everything.** They are the first twenty-five below.
 
 ## Used exactly once
 
-9 roots appear in a single sentence in the whole corpus:
+1 roots appear in a single sentence in the whole corpus:
 
-*bai*, *bas*, *hi*, *madad*, *mersi*, *ok*, *pardon*, *plis*, *ya*
+*salam*
 
-That list is now at its floor. It read ten until September 5, 2026 and carried *dekat*, which is used three times — the prose below it had said nine all along and was right, while the list and its own heading were not. Nothing was checking either. Eight of the nine are interjections — *hi*,
-*bai*, *ok*, *ya*, *bas*, *mersi*, *pardon*, *plis* — which are used alone and
-cannot be used any other way, so one appearance is every appearance they can
-have. The ninth is *madad*, [held back on purpose](../grammar/verb-chains.md)
-until its class is decided.
+The list read nine until September 6, 2026 — *bai*, *bas*, *hi*, *madad*,
+*mersi*, *ok*, *pardon*, *plis*, *ya* — and every one of those nine has moved
+to zero rather than one, because their single appearance was the twenty-word
+list this page had been counting as two sentences. Nothing about them changed;
+what changed is that they are no longer credited with a sentence nobody wrote.
+*salam* is the only root left that is used once and used in a sentence.
 
 It was 37 roots long two texts ago. [Text 9](../texts/text-9-pagi-in-madina.md)
 was written from it and took eighteen, one of which needed a second attempt

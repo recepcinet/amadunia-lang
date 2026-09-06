@@ -411,7 +411,7 @@ MUTATIONS = [
      "top six run from 38.3% down to 21.3%", "top six run from 38.3% down to 20.3%",
      "spans from first to sixth are stale"),
     ("the once-only list gone stale", "dictionary/frequency.md",
-     "*bai*, *bas*, *hi*, *madad*", "*bai*, *bas*, *dekat*, *hi*, *madad*",
+     "*salam*\n\nThe list read", "*salam*, *dekat*\n\nThe list read",
      "once-only list is stale"),
     # The word is "texts" rather than "pieces", which is why this one outlived
     # the front page's copy by a day.
@@ -534,7 +534,7 @@ MUTATIONS = [
      "*rabota* is glossed \"work\" and is used as a verb in 13 sentences",
      "says rabota stands in 13; the material gives 20 places"),
     ("a briefing's corpus row gone stale", "grammar/proposal-modal-adjective.md",
-     "| Amadunia sentences in the material | 1730 |",
+     "| Amadunia sentences in the material | 1728 |",
      "| Amadunia sentences in the material | 1481 |",
      "row 'Amadunia sentences in the material' is stale"),
     ("the closing briefing count gone stale", "grammar/proposal-modal-adjective.md",
@@ -615,6 +615,15 @@ MUTATIONS = [
      "Beta opens. This is a deliberately long duplicated sentence, put here only to exercise the repeated-sentence guarantee.\n\n"
      "## Why this and not the alternatives",
      "a sentence is printed twice"),
+    ("the count of roots reaching a real sentence gone stale",
+     "dictionary/frequency.md", "291 of the 300 roots appear in one",
+     "292 of the 300 roots appear in one",
+     "291 of 300 roots appear in a sentence of more than one word"),
+    ("a root that stands alone dropped from the frequency page's list",
+     "dictionary/frequency.md",
+     "*bai*,\n*bas*, *hi*, *mersi*, *ok*, *pardon*, *plis*, *ya* — and *madad*",
+     "*bai*,\n*bas*, *hi*, *mersi*, *ok*, *pardon*, *plis* — and *madad*",
+     "must name the 9 roots that reach no such sentence"),
     ("a lesson naming something that is not a command",
      "lessons/lesson-26-telling-and-answering.md", "*Lala sasa*) and three",
      "*Mi mau go*) and three",
@@ -1148,9 +1157,12 @@ MUTATIONS = [
     # removing it from text 6 no longer made it unused and this mutation began
     # tripping the root-count check instead. yanlis is now the only root whose
     # single running use is in this text.
-    ("root glossed but never used", "texts/text-6-seti-din.md",
-     'Doktor respon: "No. Kalb anak hao.\nKorpo ta kuat. Ide yu yanlis."',
-     'Doktor respon: "No. Kalb anak hao.\nKorpo ta kuat."',
+    # Since a one-word utterance counts as use, *bas* is the only root left
+    # whose every use is in one file — a quoted line in Lesson 02 — and so the
+    # only one a single edit can strand. Every other root now appears in two
+    # places at least, which is a fact about how dense the corpus has become.
+    ("root glossed but never used", "lessons/lesson-02-food-and-home.md",
+     "bas", "pan",
      "never used in a sentence"),
     ("settled question listed as open", "lessons/lesson-20-colours-and-health.md",
      "What is still open is kept in one place: [the open questions](../grammar/README.md).",

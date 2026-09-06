@@ -276,6 +276,11 @@ def amadunia_runs(text):
             # Amadunia and reported "Pagi in madina" for putting time before
             # place. A title is not an utterance.
             if "](" in cell: continue
+            # A row of vocabulary separated by "·" is a list of words, not an
+            # utterance. The phrasebook's twenty-word list was read as two
+            # ten-word sentences, which put twenty words and two sentences into
+            # every corpus figure derived here.
+            if "\u00b7" in cell: continue
             for s in re.split(r"[.!?,:]", cell):
                 toks = re.findall(r"[a-z]+(?:-[a-z]+)*", s.lower())
                 if len(toks) >= 2 and all(t.split("-")[0] in words or t.split("-")[0] in PROPER
@@ -1654,8 +1659,14 @@ for path in md():
 # The high numbers were among them, which meant the number system had never
 # actually been shown above six. Text 6 used all five. Every root must now
 # appear in at least one running sentence.
+# Restricted to what a learner reads. A grammar page cites a form to argue
+# about it — proposal-sentence-types prints "*No, bas.*" as an example of a
+# fragment — and citing is not using, which is the distinction that page itself
+# draws. Counting citations meant a root could be "in use" without ever
+# appearing in a lesson, a text or the phrasebook.
 in_use = set()
-for path in PROSE:
+for path in (sorted(glob.glob("lessons/lesson-*.md"))
+             + sorted(glob.glob("texts/*.md")) + ["phrasebook.md"]):
     body = read(path)
     if path.startswith("texts/") and "```" in body:
         body = "".join(body.split("```")[1::2])
@@ -1663,6 +1674,19 @@ for path in PROSE:
         if any(x in line.lower() for x in
                ("wrong", "rejected", "cannot", "not legal", "✗")): continue
         in_use |= {t.split("-")[0] for t in toks}
+    # A single constituent standing alone is an utterance — that is the
+    # fragment rule, granted September 3, 2026 — but amadunia_runs needs two
+    # tokens, so a one-word line is invisible to it. Seven politeness roots
+    # (bai, bas, mersi, ok, pardon, plis, ya) never occur in a longer sentence
+    # anywhere, and were counted as used only because the phrasebook's list of
+    # twenty words was being read as two ten-word sentences. They are used, and
+    # this is the shape they are used in.
+    for _l in body.splitlines():
+        _cells = ([_c.strip() for _c in _l.split("|")[1:-1]] if _l.startswith("|")
+                  else [_l.lstrip("> —").strip()] if _l.startswith(">") else [])
+        for _c in _cells:
+            _w = _c.strip("*!?., ").lower()
+            if _w in words: in_use.add(_w)
 unused = sorted(set(words) - in_use)
 check(not unused, f"{len(unused)} roots are never used in a sentence, only "
                   f"glossed: {', '.join(unused[:12])}"
@@ -3477,6 +3501,27 @@ for _end, _phrase in (("o", "**{}** roots end in *-o*"),
     check(_phrase.format(_n).replace("**", "") in _conj.replace("**", "")
           .replace("\n", " "),
           f"conjunction.md: {_n} roots end in -{_end}")
+
+# ------------------------- how many roots reach a sentence of more than one
+# frequency.md said every one of the 300 roots appears in running Amadunia,
+# and that was true only because the phrasebook's twenty-word list was being
+# read as two ten-word sentences. Nine roots reach no sentence of more than one
+# word: eight interjections, which the fragment rule says may stand alone, and
+# madad, held back until its class is decided. Both figures are derived.
+_reached = sum(1 for _w in words if _freq.get(_w, 0))
+check(f"{_reached} of the {len(words)} roots appear in one" in read("dictionary/frequency.md"),
+      f"frequency.md: {_reached} of {len(words)} roots appear in a sentence of "
+      f"more than one word")
+_alone = sorted(_w for _w in words if not _freq.get(_w, 0))
+# Scoped to the sentence that names them: the page names the same nine again
+# in the once-only paragraph below, so a name dropped from the first list was
+# still found in the second and the check passed with the list short.
+_alonepara = read("dictionary/frequency.md").split("The other nine appear", 1)
+_alonepara = _alonepara[1].split("\n\n", 1)[0] if len(_alonepara) > 1 else ""
+check(all(f"*{_w}*" in _alonepara for _w in _alone)
+      and len(_alone) == len(words) - _reached,
+      f"frequency.md must name the {len(_alone)} roots that reach no such "
+      f"sentence: {', '.join(_alone)}")
 
 # ---------------------------- lesson 26 counts the turns in its conversation
 # The lesson says seven of eleven sentences are commands or short turns, names

@@ -16,9 +16,9 @@ in existence.
 
 | | |
 |---|---|
-| Amadunia sentences in the material | 1730 |
+| Amadunia sentences in the material | 1728 |
 | of those, verbless adjective predicates | **377 — one in five** |
-| modal followed by a verb, working normally | 60 |
+| modal followed by a verb, working normally | 59 |
 | modal followed by an adjective | **0, and none is possible** |
 | combinations with no legal form | **111** — three modals against 37 adjectives |
 
