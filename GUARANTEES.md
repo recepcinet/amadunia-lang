@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**272 guarantees** in **123 groups**, and every one of them is
+**273 guarantees** in **124 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -439,6 +439,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - questions.md rejects … for containing …, which is not in it
 - conjunction.md: … roots end in -…
+### every "N roots end in -X" claim, everywhere
+
+- …: says … roots end in -…; … do
 ### how much of the corpus count is nobody's sentence
 
 - … runs come from explanatory prose, and both pages that state it must say so

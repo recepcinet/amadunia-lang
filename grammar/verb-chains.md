@@ -84,7 +84,7 @@ And every candidate collided anyway:
 | to | English | minimal pair with *go*, *no*, *ta* |
 | ku | Swahili *ku-* | minimal pair with *du*, *ke*, *yu* |
 | de | Spanish, French | minimal pair with *du*, *ke* |
-| a | Spanish | thirty roots end in *-a*; the join would blur |
+| a | Spanish | 69 roots end in *-a*; the join would blur |
 | na | Irish, Hindi | minimal pair with *ba*, *ca*, *no*, *ta*, *ya* |
 | za | Polish | the alphabet has no *z* |
 

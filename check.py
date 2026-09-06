@@ -3502,6 +3502,22 @@ for _end, _phrase in (("o", "**{}** roots end in *-o*"),
           .replace("\n", " "),
           f"conjunction.md: {_n} roots end in -{_end}")
 
+# ------------------------------ every "N roots end in -X" claim, everywhere
+# conjunction.md's two were corrected on September 5 and the same claim about
+# *-a* survived on place.md and verb-chains.md, both saying thirty against 69.
+# The fix went to the pages being read and not to the claim, which is the
+# failure CONTRIBUTING names — after it is decided, grep for it.
+for _p in md():
+    for _m in re.finditer(r"\b(\d+|[a-z-]+) roots end in \*-([a-z])\*",
+                          read(_p).replace("\n", " ")):
+        _tok, _end = _m.group(1), _m.group(2)
+        _n = int(_tok) if _tok.isdigit() else WORD_NUM.get(_tok.lower())
+        if _n is None: continue
+        _real = sum(1 for _w in words if _w.endswith(_end))
+        check(_n == _real,
+              f"{os.path.basename(_p)}: says {_n} roots end in -{_end}; "
+              f"{_real} do")
+
 # ------------------------ how much of the corpus count is nobody's sentence
 # The scanner reads a run of dictionary words wherever it finds one, including
 # inside a sentence of English that is naming the phrase rather than saying it.

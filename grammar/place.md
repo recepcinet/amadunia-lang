@@ -111,7 +111,7 @@ Nearly every short candidate collided:
 | de | from (Spanish) | minimal pair with *du*, *ke* |
 | se | from (Hindi) | minimal pair with *ke* |
 | ot | from (Russian) | minimal pair with *ok* |
-| a | to (Spanish) | thirty roots end in *-a*; *ca a mama* blurs |
+| a | to (Spanish) | 69 roots end in *-a*; *ca a mama* blurs |
 | ko | to (Hindi) | minimal pair with *go*, *ke*, *no* |
 | li | to (Arabic) | minimal pair with *hi*, *mi* |
 | pada | to (Indonesian) | minimal pair with *papa* |
@@ -147,6 +147,23 @@ Nearly every short candidate collided:
   Found September 5, 2026 by counting every adjacent pair of word classes in
   the repository and reading the rare ones. Nothing in the language was
   invented to close the gap.
+
+  **A fifth sentence, and a different shape.**
+  [Text 24](../texts/text-24-mama-mama-mi.md) tried to say that a house stood
+  on a road near a river, with *dekat* taking the river after it, and the
+  checker refused the line. *dekat* is not a place word at all; it is an
+  adjective, so a noun in front of it is described by it and a noun after it
+  has nothing to attach to. The first four sentences wanted a place word to
+  take a noun; this one wanted an **adjective** to, which the language allows
+  even less. The text now states the road and the river in two sentences and
+  leaves the relation between them to the reader. Found September 7, 2026.
+
+  Every gap this repository has found by writing has been a missing word.
+  This one is a missing **slot**: *in*, *dari* and *por* are the whole set, and
+  a language that can say a road and a river cannot say one is beside the
+  other. Whether the set should grow is the founder's call and nothing here
+  proposes a candidate — [the ones already rejected are in the table
+  above](#why-this-and-not-the-alternatives).
 
 
 
