@@ -3742,15 +3742,20 @@ if _T21 in _tshapes:
           f"text-21: the next highest shape count is {_second}")
     check(f"cover {round(_top21)}% of it" in _t21,
           f"text-21: its three commonest shapes cover {round(_top21)}%")
-    check(f"the seventh *least*\nrepetitive of {_SPELLN[len(_tshapes)]} texts"
-          .replace("\n", " ") in _t21
-          and _rank_top == 7,
+    # The rank was written into this check as the word "seventh" and the
+    # number 7, so the page could not move without the checker having to be
+    # edited by hand — a check that has to be rewritten when the thing it
+    # measures changes is a second copy of the figure. Both are derived.
+    _ORDW = {1: "first", 2: "second", 3: "third", 4: "fourth", 5: "fifth",
+             6: "sixth", 7: "seventh", 8: "eighth", 9: "ninth", 10: "tenth",
+             11: "eleventh", 12: "twelfth", 13: "thirteenth"}
+    check(f"the {_ORDW.get(_rank_top, '?')} *least* repetitive of "
+          f"{_SPELLN[len(_tshapes)]} texts" in _t21.replace("\n", " "),
           f"text-21 is the {_rank_top}th least repetitive of {len(_tshapes)} "
           f"by its three commonest shapes")
     check(f"{round(_adj21)}% of adjacent sentence pairs share a shape" in _t21
-          and f"eleventh of {_SPELLN[len(_tshapes)]}" in _t21
-          and f"eleventh of {_SPELLN[len(_tshapes)]}" in _rdme
-          and _rank_adj == 11,
+          and f"{_ORDW.get(_rank_adj, '?')} of {_SPELLN[len(_tshapes)]}" in _t21
+          and f"{_ORDW.get(_rank_adj, '?')} of {_SPELLN[len(_tshapes)]}" in _rdme,
           f"text-21 shares a shape between {round(_adj21)}% of adjacent pairs, "
           f"{_rank_adj}th of {len(_tshapes)}")
 

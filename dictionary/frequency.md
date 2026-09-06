@@ -1,9 +1,9 @@
 # How often each root is actually used
 
 Generated from the material a learner reads — the twenty-six lessons, the
-twenty-five texts and the phrasebook — counting every word inside an Amadunia
+twenty-six texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **6238 words of running Amadunia**, and 291 of the 300 roots appear in one.
+it. **6344 words of running Amadunia**, and 291 of the 300 roots appear in one.
 
 The other nine appear in no sentence of more than one word anywhere: *bai*,
 *bas*, *hi*, *mersi*, *ok*, *pardon*, *plis*, *ya* — and *madad*, which is
@@ -28,7 +28,7 @@ the numbers follow the corpus rather than the other way round.
 | first 25 | 49% |
 | first 50 | 65% |
 | first 100 | 81% |
-| first 150 | 89% |
+| first 150 | 90% |
 | first 200 | 95% |
 | first 300 | 100% |
 
@@ -44,46 +44,46 @@ cover half of everything.** They are the first twenty-five below.
 
 | | Root | Meaning | Uses | Share |
 |---|---|---|---|---|
-| 1 | *mi* | I, me | 613 | 9.8% |
-| 2 | *yu* | you — one form for everyone | 231 | 3.7% |
-| 3 | *ta* | he, she, it — no gender | 203 | 3.3% |
-| 4 | *in* | at, in, on | 184 | 2.9% |
-| 5 | *anak* | child | 142 | 2.3% |
-| 6 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 132 | 2.1% |
-| 7 | *lai* | to come | 112 | 1.8% |
-| 8 | *no* | no; **not** — before the predicate, see [grammar/negation.md](../grammar/negation.md) | 110 | 1.8% |
-| 9 | *ini* | this — after the noun, last in the phrase | 109 | 1.7% |
-| 10 | *go* | to go | 107 | 1.7% |
-| 11 | *dom* | house, home | 106 | 1.7% |
-| 12 | *aur* | and | 100 | 1.6% |
-| 13 | *suda* | past marker (before the verb) | 96 | 1.5% |
+| 1 | *mi* | I, me | 626 | 9.9% |
+| 2 | *yu* | you — one form for everyone | 231 | 3.6% |
+| 3 | *ta* | he, she, it — no gender | 203 | 3.2% |
+| 4 | *in* | at, in, on | 187 | 2.9% |
+| 5 | *anak* | child | 144 | 2.3% |
+| 6 | *es* | is, am, are — before a noun predicate only; see [grammar/copula.md](../grammar/copula.md) | 134 | 2.1% |
+| 7 | *dom* | house, home | 116 | 1.8% |
+| 8 | *no* | no; **not** — before the predicate, see [grammar/negation.md](../grammar/negation.md) | 113 | 1.8% |
+| 9 | *lai* | to come | 112 | 1.8% |
+| 10 | *ini* | this — after the noun, last in the phrase | 109 | 1.7% |
+| 11 | *go* | to go | 108 | 1.7% |
+| 12 | *suda* | past marker (before the verb) | 106 | 1.7% |
+| 13 | *aur* | and | 103 | 1.6% |
 | 14 | *mau* | to want | 94 | 1.5% |
 | 15 | *hao* | good | 92 | 1.5% |
-| 16 | *ca* | tea | 79 | 1.3% |
-| 17 | *sema* | to say, to speak | 78 | 1.3% |
+| 16 | *ca* | tea | 79 | 1.2% |
+| 17 | *sema* | to say, to speak | 78 | 1.2% |
 | 18 | *kita* | we, including you — see [grammar/pronouns.md](../grammar/pronouns.md) | 69 | 1.1% |
 | 19 | *kula* | to eat | 67 | 1.1% |
-| 20 | *rafiki* | friend | 66 | 1.1% |
-| 21 | *kabir* | big | 64 | 1.0% |
-| 22 | *keci* | small | 63 | 1.0% |
-| 23 | *dari* | from | 55 | 0.9% |
+| 20 | *kabir* | big | 66 | 1.0% |
+| 21 | *rafiki* | friend | 66 | 1.0% |
+| 22 | *keci* | small | 65 | 1.0% |
+| 23 | *dari* | from | 56 | 0.9% |
 | 24 | *saufa* | future marker (before the verb) | 55 | 0.9% |
 | 25 | *punya* | to have | 54 | 0.9% |
-| 26 | *sol* | sun | 53 | 0.8% |
-| 27 | *insan* | person, human | 52 | 0.8% |
-| 28 | *kan* | to see | 50 | 0.8% |
-| 29 | *libro* | book | 45 | 0.7% |
-| 30 | *pan* | bread, food | 44 | 0.7% |
-| 31 | *din* | day | 43 | 0.7% |
-| 32 | *tarik* | road, way | 43 | 0.7% |
-| 33 | *lebi* | more | 41 | 0.7% |
+| 26 | *insan* | person, human | 53 | 0.8% |
+| 27 | *sol* | sun | 53 | 0.8% |
+| 28 | *kan* | to see | 52 | 0.8% |
+| 29 | *lebi* | more | 45 | 0.7% |
+| 30 | *libro* | book | 45 | 0.7% |
+| 31 | *pan* | bread, food | 44 | 0.7% |
+| 32 | *tarik* | road, way | 44 | 0.7% |
+| 33 | *din* | day | 43 | 0.7% |
 | 34 | *market* | market, shop | 40 | 0.6% |
-| 35 | *por* | to, for | 38 | 0.6% |
-| 36 | *sasa* | now | 38 | 0.6% |
-| 37 | *sini* | here | 38 | 0.6% |
-| 38 | *akua* | water | 37 | 0.6% |
-| 39 | *doktor* | doctor | 37 | 0.6% |
-| 40 | *anda* | to walk | 36 | 0.6% |
+| 35 | *sasa* | now | 40 | 0.6% |
+| 36 | *itu* | that | 39 | 0.6% |
+| 37 | *por* | to, for | 38 | 0.6% |
+| 38 | *sini* | here | 38 | 0.6% |
+| 39 | *akua* | water | 37 | 0.6% |
+| 40 | *doktor* | doctor | 37 | 0.6% |
 
 ## Used exactly once
 

@@ -18,7 +18,7 @@ There is no word for "that". A whole sentence simply stands where an object woul
 **And that is why the rule was mismeasured.** Every count of subordination in
 this repository looked for *porke*, *kab* and *agar*, because those are the
 words there are to look for. The unmarked clause has none, so half the rule was
-invisible to the instrument: on September 6, 2026 the material held **54
+invisible to the instrument: on September 6, 2026 the material held **56
 sentences** with a marker and **11 without one**, and the eleven had never been
 counted anywhere. [`check.py`](../check.py) finds them now, by the one shape
 that cannot be read two ways — a verb, then a pronoun, then a predicate, as in

@@ -88,7 +88,7 @@ them the front page's fourteen-word full-order example, a real sentence whose
 emphasis merely wraps. A rule that costs real sentences to remove citations is
 worse than the residue, so none was adopted.
 
-Sixteen things nobody said, in 1778 — under one per cent. Recorded rather than
+Sixteen things nobody said, in 1799 — under one per cent. Recorded rather than
 corrected, and [`check.py`](../check.py) holds the count so it cannot grow
 quietly. This record lives on a grammar page because
 [texts/README.md](../texts/README.md), where it belongs by subject, is inside
