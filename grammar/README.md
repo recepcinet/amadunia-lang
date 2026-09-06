@@ -34,7 +34,7 @@ Twenty-one rules and eight briefings, one decision each. **Six briefings are ope
 |---|---|
 | [proposal-ordinals.md](proposal-ordinals.md) | First, second, eighth. No affix is possible, so the choice is position or a particle; answering it would remove the need for nineteen roots. **Open — the founder's call.** |
 | [proposal-two-jobs.md](proposal-two-jobs.md) | May a root hold two jobs? *madad* has never been used in a sentence, so its decision is free; *rabota* stands in twenty places. **Open — the founder's call.** |
-| [proposal-frequency.md](proposal-frequency.md) | Where *daima* and *kadang* stand. Thirteen uses in three positions; *tena* settled itself 30 of 30. **Open — the founder's call.** |
+| [proposal-frequency.md](proposal-frequency.md) | Where *daima* and *kadang* stand. Thirteen uses in three positions; *tena* settled itself 31 of 31. **Open — the founder's call.** |
 | [proposal-but.md](proposal-but.md) | A word for "but". Six pages wanted one and Lesson 12 invented one; *lakin* reaches five families. **Open — the founder's call.** |
 | [proposal-stress.md](proposal-stress.md) | The briefing the open questions put first. **Decided September 3, 2026** — the rule is [stress.md](stress.md); this is the record of what it was decided on. |
 | [proposal-sentence-types.md](proposal-sentence-types.md) | The imperative and the fragment. **Decided September 3, 2026** — the rules are [sentence-types.md](sentence-types.md). |
@@ -195,7 +195,7 @@ measurement with its method stated, to be re-run rather than trusted.
 
 - **"want to be" plus an adjective has no form.** *es* is a verb and can be chained — *mau es doktor*, "want to be a doctor". An adjective is its own predicate and takes no verb, so *mau* has nothing to attach to: "wants to be the easiest" cannot be built. Both [text 3](../texts/text-3-lingua-ini.md) and Lesson 21 hit this and both were rewritten around it — text 3 by supplying a noun (*mau es lingua paling asan*), Lesson 21 by dropping the modal. Whether *es* is allowed before an adjective inside a verb chain, or something else is needed, is undecided. Found September 3, 2026 by checking every sentence in the repository against the copula rule.
 
-- **A noun with an adjective is now both a sentence and a phrase.** *Dom merah* is "the house is red" by the copula rule, and since [the fragment rule](sentence-types.md) of September 3, 2026 it is also "the red house" standing alone. 141 two-word utterances in the repository have this shape. Found September 5, 2026 by reading Lesson 12 end to end: its table glosses *Dom merah.* one way and its conversation glossed the same string the other way, eighty lines apart. Recorded, not briefed — context has carried it everywhere else.
+- **A noun with an adjective is now both a sentence and a phrase.** *Dom merah* is "the house is red" by the copula rule, and since [the fragment rule](sentence-types.md) of September 3, 2026 it is also "the red house" standing alone. 143 two-word utterances in the repository have this shape. Found September 5, 2026 by reading Lesson 12 end to end: its table glosses *Dom merah.* one way and its conversation glossed the same string the other way, eighty lines apart. Recorded, not briefed — context has carried it everywhere else.
 
 **[demonstratives](demonstratives.md)**
 

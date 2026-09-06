@@ -55,21 +55,21 @@ it — a count is only as good as what it counted.
 
 | Rule | Texts |
 |---|---:|
-| place | 22 |
-| conjunction | 16 |
-| negation | 16 |
+| place | 23 |
+| conjunction | 17 |
+| negation | 17 |
+| number | 16 |
+| tense | 16 |
 | copula | 15 |
-| number | 15 |
-| tense | 15 |
-| question | 14 |
-| demonstrative | 13 |
+| question | 15 |
+| demonstrative | 14 |
 | verb chain | 12 |
 | existence | 11 |
 | plural | 10 |
+| subordination | 10 |
 | una | 10 |
-| subordination | 9 |
-| adverb | 8 |
-| command | 8 |
+| adverb | 9 |
+| command | 9 |
 | comparison | 7 |
 
 <!-- end generated -->
@@ -122,12 +122,12 @@ been. Every sentence in the lessons, the texts and the phrasebook was reduced
 to its parts of speech — R for a pronoun, V a verb, N a noun, A an adjective,
 P a preposition, and so on — and the shapes counted.
 
-**1755 sentences, 427 distinct shapes**, and the fifteen commonest cover 43%
+**1778 sentences, 433 distinct shapes**, and the fifteen commonest cover 43%
 of them. The leaders are *RVN* at 8.6% (*Ta-ta lihat stela-stela*), *NA* at
 7.5% (*Sol kabir*) and *NV* at 4.8% (*Anak sema*). [`check.py`](../check.py)
 recounts the two headline numbers.
 
-**1483 of the 1755 are distinct — 85%.** The corpus is not padded with
+**1501 of the 1778 are distinct — 84%.** The corpus is not padded with
 repeats: the most repeated sentence appears seven times across four files and
 is *Mi sema*, "I say", which is a quotation frame rather than a sentence
 anybody is making. That matters for
@@ -139,7 +139,7 @@ The measurement was made to test a claim and refuted it.
 [Text 21](text-21-uan-umur.md), the long one, said at first that the shapes
 drone at that length. They do not: it uses 52 distinct shapes, more than any
 other text, and only 8% of its adjacent sentence pairs share a shape, which
-puts it eleventh of twenty-four. The most repetitive pages are
+puts it eleventh of twenty-five. The most repetitive pages are
 [the recipe](text-8-kaifa-suru-ca.md) at 28% and [the poem](text-5-uan.md) at
 25%, both of which repeat on purpose.
 
@@ -209,3 +209,4 @@ These are original compositions, not translations. Translating an existing book 
 | [Agar yamur lai](text-22-agar-yamur-lai.md) | 62 | 300 roots, Lessons 1-26 — a journey that may not happen, **written for subordination**, which turned out not to be the thinnest rule |
 | [Kim paling hayai](text-23-kim-paling-hayai.md) | 50 | 300 roots, Lessons 1-26 — children ranking animals, **written for comparison**, the thinnest rule once subordination stopped being it |
 | [Mama mama mi](text-24-mama-mama-mi.md) | 59 | 300 roots, Lessons 1-26 — a portrait of one person, and the first text to find a gap in the prepositions rather than the vocabulary |
+| [Tarik por hospital](text-25-tarik-por-hospital.md) | 45 | 300 roots, Lessons 1-24 — directions to a stranger, **written for commands** and as a second witness to the missing preposition |
