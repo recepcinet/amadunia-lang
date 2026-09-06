@@ -104,8 +104,11 @@ first text to use it on purpose.
 available.
 
 That is worth saying plainly rather than boasting about: **a rhyme that costs
-nothing is worth little.** In a language where a quarter of all words end in
-the same sound, rhyming is not a craft. If Amadunia ever grows a poetry, its
+nothing is worth little.** In a language where nearly a quarter of all words
+end in the same sound, rhyming is not a craft. The line read *a quarter* until
+September 6, 2026 — five lines under the 23% it was rounding, and the second
+page found this week where a fraction with no figure beside it overstated the
+figure four lines above it. If Amadunia ever grows a poetry, its
 music will have to come from rhythm and repetition, not from endings.
 
 ## What the language could not do

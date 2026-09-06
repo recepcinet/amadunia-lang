@@ -3456,6 +3456,26 @@ for _end, _phrase in (("o", "**{}** roots end in *-o*"),
           .replace("\n", " "),
           f"conjunction.md: {_n} roots end in -{_end}")
 
+# ---------------------------------------- text 5's arithmetic about rhyme
+# The poem's page says how cheap a rhyme is, and every figure in it is a fact
+# about the dictionary. Three were exact; the fraction printed without a figure
+# beside it was not — "a quarter of all words end in the same sound" sat five
+# lines under the 23% it was rounding.
+_t5 = read("texts/text-5-uan.md").replace("\n", " ")
+_endvowel = sum(1 for _w in words if _w[-1] in "aeiou")
+_enda = sum(1 for _w in words if _w.endswith("a"))
+_endarn = sum(1 for _w in words if _w.endswith("ar") or _w.endswith("an"))
+check(abs(100 * _endvowel / len(words) - 50) < 2 and "Half the three hundred roots end in a vowel" in _t5,
+      f"text-5: {_endvowel} of {len(words)} roots end in a vowel, "
+      f"{100 * _endvowel / len(words):.0f}%")
+check(f"{round(100 * _enda / len(words))}% end in *-a* alone" in _t5,
+      f"text-5: {round(100 * _enda / len(words))}% of roots end in -a")
+check(f"another {round(100 * _endarn / len(words))}% between them" in _t5,
+      f"text-5: -ar and -an are {round(100 * _endarn / len(words))}% between them")
+check(("nearly a quarter of all words" in _t5) == (round(100 * _enda / len(words)) < 25),
+      f"text-5: the commonest ending is {round(100 * _enda / len(words))}% and "
+      f"the page must not call it a quarter without qualifying it")
+
 # ------------------------------- the ladder's first row, wherever it is said
 # reading-ladder.md printed "23%" in prose above a table whose Lesson 01 row
 # said 22, because the table is regenerated and the sentence over it is not.
