@@ -44,6 +44,28 @@ idea is, only which word class should carry it — and for *work* that decision
 is already open under a different heading. **This still proposes nothing.**
 Noticed September 6, 2026.
 
+**Thirteen of the missing are kinship, and five of them are not missing.**
+*people* is the largest block of absences on this list, and
+[text 24](../texts/text-24-mama-mama-mi.md) showed why the block overstates the
+hole: possession puts the owner straight after the thing owned and applies
+twice without a marker, so a grandmother is the mother of my mother and needs
+no root. Measured on September 8, 2026, the thirteen divide three ways.
+
+| | | |
+|---|---|---|
+| **Composed already** | grandmother, grandfather, cousin | the mother of my mother, the father of my father, the child of a parent's sibling — settled possession and nothing else |
+| **Refused by design** | man, woman, son, daughter, uncle, aunt | the language has no gender anywhere: *ta* is he, she and it, *dugu* is a sibling of either, *anak* a child of either. A parent's sibling composes; *uncle* as against *aunt* does not, and a root for either would be the first gendered word in the dictionary |
+| **Genuinely absent** | husband, wife, baby, neighbour | four roots. *baby* comes close — *anak keci* is a small child — and *neighbour* is blocked twice: it needs a word, and it needs the [preposition that does not exist](../grammar/place.md), since nobody can live *near* anything |
+
+So the domain is thinner on paper than in use, and the split matters more than
+the total. **Three of the thirteen are already sayable**, at a cost in
+length — a cousin is the child of the sibling of my mother, four words, and
+length is a real price but a different one from silence. **Six are not gaps at
+all** but the no-gender rule doing what it was chosen to do, and counting them
+as missing vocabulary reads a decision as an absence. **Four are the real
+hole.** This proposes nothing; the [A2 briefing](proposal-a2.md) is where the
+question belongs, and it is a narrower question than thirteen.
+
 ## the house
 
 wall, floor, roof, kitchen, bathroom, stairs, garden, bed, door, window, table, chair, lamp, key, soap, plate, glass, knife, spoon, cup, clock, mirror, towel, box, bag

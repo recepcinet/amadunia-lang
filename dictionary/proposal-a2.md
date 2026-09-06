@@ -200,6 +200,15 @@ need.
 The compass is the opposite: four directions that no number can build, and no
 root for any of them.
 
+**Kinship is thirteen of twenty-seven, and four of the thirteen are the hole.**
+The *people* domain is the largest block of absences on the checklist, and
+[the checklist now splits it](a1-checklist.md): three of the thirteen are
+already sayable by possession alone — a grandmother is the mother of my mother
+— six are the no-gender rule doing what it was chosen to do rather than
+vocabulary that is missing, and four are roots the language does not have.
+Reading a settled decision as an absence is what the block was doing, and it
+made the domain look three times emptier than it is.
+
 **Clothing is two of nine** — a shirt and a shoe — and is the thinnest domain in
 the language by a distance. **Kinship is fourteen of twenty-seven**, and the
 missing half is the whole of the extended family: no uncle, aunt, grandmother,

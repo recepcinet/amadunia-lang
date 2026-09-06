@@ -3811,6 +3811,29 @@ check(len(_twice) == 1 and f"*{_twice[0]}* is in **actions**" in _cl,
       f"a1-checklist.md: {len(_twice)} concepts appear twice — "
       f"{', '.join(_twice)} — and one deliberate duplicate is documented")
 
+# ------------------------------ the kinship block, split three ways
+# The checklist counts thirteen kinship concepts missing, and the count reads a
+# settled decision as an absence: the language has no gender anywhere, so a son
+# as against a daughter is refused rather than missing. The three parts have to
+# account for the thirteen the checklist actually lists.
+_people = next(([_x.strip() for _x in _m.group(2).split(",")]
+                for _m in re.finditer(r"^## (.+)\n\n(.+)$",
+                                      read("dictionary/a1-checklist.md"), re.M)
+                if _m.group(1) == "people"), [])
+_kinmiss = [_c for _c in _people if _c not in _idxe]
+_cl2 = read("dictionary/a1-checklist.md").replace("\n", " ")
+_parts = [WORD_NUM.get(_w.lower()) for _w in
+          re.findall(r"\*\*(\w+) of the thirteen are already sayable|"
+                     r"\*\*(\w+) are not gaps|\*\*(\w+) are the real",
+                     _cl2) for _w in _w if _w]
+check(f"**Thirteen of the missing are kinship" in _cl2
+      and len(_kinmiss) == 13,
+      f"a1-checklist.md: {len(_kinmiss)} of the people domain are missing from "
+      f"the index, not thirteen")
+check(sum(_p for _p in _parts if _p) == len(_kinmiss) and len(_parts) == 3,
+      f"a1-checklist.md: the three parts of the kinship block are {_parts} and "
+      f"must account for all {len(_kinmiss)}")
+
 # ------------------------------------ the phrasebook's own reading level
 # The page told a learner that Lesson 1 was enough for its first section. Six
 # of that section's seven roots arrive later and *tena* arrives in Lesson 16,
