@@ -3478,6 +3478,37 @@ for _end, _phrase in (("o", "**{}** roots end in *-o*"),
           .replace("\n", " "),
           f"conjunction.md: {_n} roots end in -{_end}")
 
+# ---------------------------- lesson 26 counts the turns in its conversation
+# The lesson says seven of eleven sentences are commands or short turns, names
+# the four commands and left the three turns unnamed. Naming them is what makes
+# the seven checkable: counted strictly — a sentence of exactly one word —
+# there are two, and the total is six. Both readings are defensible and only
+# one had been written down.
+_l26 = read("lessons/lesson-26-telling-and-answering.md")
+_conv = (_l26.split("## A conversation", 1)[1].split("\n## ")[0]
+         if "## A conversation" in _l26 else "")
+_convs = re.findall(r"[.!?]", "\n".join(_l for _l in _conv.splitlines()
+                                        if _l.strip().startswith(">")))
+_named = re.search(r"four commands \(([^)]+)\)", _l26.replace("\n", " "))
+_cmds = re.findall(r"\*([^*]+)\*", _named.group(1)) if _named else []
+check(len(_cmds) == 4 and all(_c.lower().split()[0] in VERBS or
+                              (_c.lower().split()[0] == "no"
+                               and _c.lower().split()[1] in VERBS)
+                              for _c in _cmds),
+      f"lesson 26 names {len(_cmds)} commands and each must begin with a verb: "
+      f"{_cmds}")
+check(f"Seven of those {_SPELLN[len(_convs)]} sentences" in _l26,
+      f"lesson 26's conversation has {len(_convs)} sentences")
+_oneword = sum(1 for _s in re.split(r"(?<=[.!?]) ",
+                                    " ".join(_l.strip("> —").strip()
+                                             for _l in _conv.splitlines()
+                                             if _l.strip().startswith(">")))
+               if len(_s.strip(".!?").split()) == 1)
+check(f"there\nare {_SPELLN[_oneword]}, *Ya* and *No*, and the total is "
+      f"{_SPELLN[len(_cmds) + _oneword]}" in _l26,
+      f"lesson 26: counted strictly there are {_oneword} one-word turns and "
+      f"{len(_cmds) + _oneword} of the two kinds together")
+
 # ------------------------------- text 21 measures itself against the others
 # The section exists because a claim about this text was measured and refuted.
 # Four of its five figures then went wrong: 56 distinct shapes is not a number

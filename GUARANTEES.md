@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**266 guarantees** in **120 groups**, and every one of them is
+**269 guarantees** in **121 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -439,6 +439,11 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - questions.md rejects … for containing …, which is not in it
 - conjunction.md: … roots end in -…
+### lesson 26 counts the turns in its conversation
+
+- lesson 26 names … commands and each must begin with a verb: …
+- lesson 26's conversation has … sentences
+- lesson 26: counted strictly there are … one-word turns and … of the two kinds together
 ### text 21 measures itself against the others
 
 - text-21 uses … distinct shapes by the scanner that produces the corpus figure

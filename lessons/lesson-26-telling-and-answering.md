@@ -100,7 +100,17 @@ from the question; nothing is repeated and nothing is marked.
 to school tomorrow. — I want to go! — No. Sleep now. I'll bring tea and
 medicine. — Thank you, mother.*
 
-Seven of those eleven sentences are commands or one-word turns — four commands (*Otur sini*, *Buka mulut*, *No go skola besok*, *Lala sasa*) and three turns of one word.
+Seven of those eleven sentences are commands or short turns — four commands (*Otur sini*,
+*Buka mulut*, *No go skola besok*, *Lala sasa*) and three turns
+that are a single word of answer: *Ya*, *No*, and the thanks that closes the
+exchange, whose second word is the person addressed rather than part of what is
+said.
+
+The three were unnamed until September 6, 2026, and naming them is what makes
+the seven checkable. Counted strictly — a sentence of exactly one word — there
+are two, *Ya* and *No*, and the total is six. Both readings are defensible and
+only one of them was written down, which is the difference between a figure and
+a claim.
 
 ## Practice
 
