@@ -1531,7 +1531,7 @@ check(f"are not counted in the {len(words)}" in read("dictionary/dictionary.md")
 
 # The digit table is printed twice, on the front page and in numbers.md, and
 # neither copy was tied to the dictionary. Both are checked against it.
-_DIGITS = " | ".join(_w for _w, _v in sorted(_VAL.items(), key=lambda kv: kv[1])
+_DIGITS = " | ".join(_w for _w, _v in sorted(_VAL.items(), key=lambda kv: (kv[1], kv[0]))
                      if _v <= 10)
 for _p in ("README.md", "grammar/numbers.md"):
     check(f"| {_DIGITS} |" in read(_p),
@@ -3339,7 +3339,7 @@ for w in words:
 euro = sum(1 for f in origin.values() if f in EUROPEAN)
 counts = {}
 for f in origin.values(): counts[f] = counts.get(f, 0) + 1
-top = max(counts.items(), key=lambda kv: kv[1])
+top = max(counts.items(), key=lambda kv: (kv[1], kv[0]))
 
 bal = read("dictionary/balance.md")
 m = re.search(r"## All (\d+) roots", bal)
@@ -3385,7 +3385,7 @@ check(_m5 and WORD_NUM.get(_m5.group(1).lower()) == len(_fifth)
       and [x.strip() for x in _m5.group(2).replace("\n", " ").split(",")] == _fifth,
       f"balance.md's list of families named in a fifth or more is stale; the "
       f"dictionary gives {len(_fifth)}: {', '.join(_fifth)}")
-_ranko = sorted(_ocount.items(), key=lambda kv: -kv[1])
+_ranko = sorted(_ocount.items(), key=lambda kv: (-kv[1], kv[0]))
 _m6 = re.search(r"top six run from ([\d.]+)% down to ([\d.]+)%; "
                 r"by origin the top six run from ([\d.]+)% down to ([\d.]+)%", bal)
 _spans = [100 * _rank[0][1] / len(words), 100 * _rank[5][1] / len(words),
@@ -3526,6 +3526,27 @@ for _end, _phrase in (("o", "**{}** roots end in *-o*"),
 # make sure a second copy cannot come back: every rule the scanner knows is
 # added to a set in one function and nowhere else.
 _selfsrc = read("check.py")
+
+# ------------------------------ every ordering in this file is fully decided
+# A sort whose key is one count leaves ties in whatever order the items were
+# inserted in, and an insertion order that comes from iterating a set depends
+# on the interpreter's hash seed. The balance table's three tied rows came out
+# differently from run to run because of it, so the checker called a file right
+# and then wrong without the file changing. Every sort that orders anything
+# printed or compared now ends its key with the name, and this file reads
+# itself to keep it that way.
+# The patterns are assembled rather than written out: spelling them here put
+# them in this file, and the check found its own message. Fourteenth time in
+# this window that a note became the thing it described.
+for _bare in (_k + _t for _k in ("key=lambda kv: -kv[1]", "key=lambda kv: kv[1]",
+                                 "key=lambda kv: -len(kv[1])",
+                                 "key=lambda _k: -_tshapes[_k]",
+                                 "key=lambda _k: _tshapes[_k]")
+              for _t in (")",)):
+    check(_bare not in _selfsrc,
+          f"check.py sorts with a single-term key — {_bare} — so ties fall in "
+          f"the order a set happened to iterate in")
+
 
 # ------------------------------- the rule detectors are defined exactly once
 # They were defined twice and drifted three ways. This file reads itself to
@@ -3709,8 +3730,8 @@ if _T21 in _tshapes:
     _n21, _top21, _adj21 = _tshapes[_T21]
     _t21 = read("texts/" + _T21).replace("\n", " ")
     _rdme = read("texts/README.md").replace("\n", " ")
-    _rank_top = sorted(_tshapes, key=lambda _k: _tshapes[_k][1]).index(_T21) + 1
-    _rank_adj = sorted(_tshapes, key=lambda _k: -_tshapes[_k][2]).index(_T21) + 1
+    _rank_top = sorted(_tshapes, key=lambda _k: (_tshapes[_k][1], _k)).index(_T21) + 1
+    _rank_adj = sorted(_tshapes, key=lambda _k: (-_tshapes[_k][2], _k)).index(_T21) + 1
     _second = max(_v[0] for _k, _v in _tshapes.items() if _k != _T21)
     check(f"uses **{_n21} distinct shapes**" in _t21
           and f"uses {_n21} distinct shapes" in _rdme,
@@ -4150,7 +4171,7 @@ for _line in read("dictionary/dictionary.md").split("## Counting")[0].splitlines
     if _h: _g2 = re.sub(r"\s*—.*", "", _h.group(1)).strip(); _grpcount[_g2] = 0; continue
     if re.match(r"^\| [a-z]", _line) and _g2: _grpcount[_g2] += 1
 _a2 = read("dictionary/proposal-a2.md")
-_missing = [f"| {k} | {v} |" for k, v in sorted(_grpcount.items(), key=lambda kv: -kv[1])
+_missing = [f"| {k} | {v} |" for k, v in sorted(_grpcount.items(), key=lambda kv: (-kv[1], kv[0]))
             if f"| {k} | {v} |" not in _a2]
 check(not _missing,
       "proposal-a2.md's theme table has drifted from the dictionary: "

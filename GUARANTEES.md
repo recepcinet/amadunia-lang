@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**283 guarantees** in **131 groups**, and every one of them is
+**284 guarantees** in **132 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -440,6 +440,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - questions.md rejects … for containing …, which is not in it
 - conjunction.md: … roots end in -…
+### every ordering in this file is fully decided
+
+- check.py sorts with a single-term key — … — so ties fall in the order a set happened to iterate in
 ### the rule detectors are defined exactly once
 
 - check.py detects the … rule in more than one place; the copies drifted three ways before they were merged

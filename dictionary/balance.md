@@ -82,7 +82,14 @@ are here as evidence about the cause. The thinness is not a wall the
 phonology built — it is which words the borrowing reached for. It went to the
 classical monosyllables and stopped.
 
-No root comes from Korean or from a Dravidian language. **And the three rows arrived in a random order.** The table is sorted by reach,
+No root comes from Korean or from a Dravidian language. **Nine sorts in the checker had the same shape, and eight of them could not
+have shown it.** After the balance table was fixed, every ordering in
+[`check.py`](../check.py) that decides what a file should say was given a
+tiebreak, and the file now reads itself to refuse a single-term sort key. The
+other eight were safe only because their values happened not to tie — which is
+the same protection this table had until three families reached one root each.
+
+**And the three rows arrived in a random order.** The table is sorted by reach,
 and the three new families reach one root each, so the sort had nothing to
 separate them — it kept the order they happened to be inserted in, which comes
 from iterating a set of family names, which depends on the interpreter's hash
