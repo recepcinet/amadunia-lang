@@ -71,7 +71,7 @@ Anak lala.
 
 ## What ten lessons are enough for
 
-Twenty-three sentences and 42 roots. A morning, an errand, a meeting, an
+Twenty-seven sentences and 42 roots. A morning, an errand, a meeting, an
 evening — the shape of a day, told with no rule the course has not reached.
 
 **Four things the page had to do without**, and none of them is missing from

@@ -72,7 +72,7 @@ Rat. Mi no sedih.
 
 ## What a smaller language cost
 
-Twenty-five sentences, 45 roots, and **every one of them taught by Lesson 18**.
+Twenty-nine sentences, 45 roots, and **every one of them taught by Lesson 18**.
 The grammar is all there — existence, the verb chain, *una*, a command, a
 question, a subordinate clause — because Lesson 18 is where the last of those
 arrives. What is missing is words, and the shape of what is missing is worth

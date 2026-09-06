@@ -62,7 +62,7 @@ Besok mi saufa go skola tena.
 
 ## What sixteen lessons are enough for
 
-Twenty-one sentences, 42 roots. A day at school told with the plain sentence:
+Twenty-four sentences, 42 roots. A day at school told with the plain sentence:
 subject, verb, object, an adjective after its noun, a preposition, a
 demonstrative, the plural, possession, a command, a question and the two tense
 markers. Nothing here is a workaround; it is simply a smaller language, and

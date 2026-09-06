@@ -2491,6 +2491,23 @@ for _p in sorted(glob.glob("texts/*.md")):
         if _n is None: continue
         check(_n == len(_ss),
               f"{os.path.basename(_p)}: says '{_m.group(0)}'; its text has {len(_ss)}")
+    # A text's summary heads with "N sentences, M roots" and no bold. The root
+    # half was right in all four texts that use it, because the foot of the
+    # page states it and that is checked; the sentence half was wrong in three,
+    # matching neither the lines nor the stops. The phrasing was the only thing
+    # keeping it out of this check.
+    for _m in re.finditer(r"^([A-Za-z-]+|\d+) sentences(?:,| and) \d+ roots", _b, re.M):
+        _n = int(_m.group(1)) if _m.group(1).isdigit() else WORD_NUM.get(_m.group(1).lower())
+        if _n is None: continue
+        check(_n == len(_ss),
+              f"{os.path.basename(_p)}: heads its summary '{_m.group(0)}'; its "
+              f"text has {len(_ss)} sentences")
+    for _m in re.finditer(r"times in ([A-Za-z-]+|\d+) sentences", _b):
+        _n = int(_m.group(1)) if _m.group(1).isdigit() else WORD_NUM.get(_m.group(1).lower())
+        if _n is None: continue
+        check(_n == len(_ss),
+              f"{os.path.basename(_p)}: says '{_m.group(0)}'; its text has "
+              f"{len(_ss)} sentences")
     for _m in re.finditer(r"\*\*([A-Za-z-]+|\d+) sentences", _b):
         _n = int(_m.group(1)) if _m.group(1).isdigit() else WORD_NUM.get(_m.group(1).lower())
         if _n is None: continue

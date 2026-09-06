@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**264 guarantees** in **120 groups**, and every one of them is
+**266 guarantees** in **120 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -304,6 +304,8 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### a text counting its own sentences
 
 - …: says '…'; its text has …
+- …: heads its summary '…'; its text has … sentences
+- …: says '…'; its text has … sentences
 - …: says '…'; its text has …
 - …: says '…' opens … sentences; it opens …
 ### how many texts there are

@@ -61,7 +61,7 @@ Anak katab nama ta in kertas baru.
 
 ## What the text found
 
-**One rule carries the whole story — eleven times in eighteen sentences.**
+**One rule carries the whole story — eleven times in seventeen sentences.**
 *katab hao*, *katab mal*, *katab tena*,
 *studi kuat*, *kanta hayai*, *kara hao libro* — the same adjective-after-verb
 in every one, and the story is the difference between *mal* and *hao*. Nothing

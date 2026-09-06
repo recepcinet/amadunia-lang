@@ -101,6 +101,17 @@ puts it eleventh of twenty-three. The most repetitive pages are
 [the recipe](text-8-kaifa-suru-ca.md) at 28% and [the poem](text-5-uan.md) at
 25%, both of which repeat on purpose.
 
+**Four texts headed a summary with a sentence count nobody could reproduce.**
+*Twenty-five sentences, 45 roots* opens text 14; the roots were right and the
+sentences were not, and the same shape stood on texts 15, 19 and 20. Measured
+by the convention [`check.py`](../check.py) writes down — a full stop, question
+mark or exclamation mark inside the text's own code block — three of the four
+were wrong by three or four, and none of them matched the line count either.
+The root half was right every time, because the foot of each page states it and
+that figure is checked; the sentence half sat in a phrasing the sentence check
+did not match. **A number is checked when its wording is checked, not when its
+subject is.** Corrected September 6, 2026, and the phrasing is covered now.
+
 **A gap has to be a sentence that stopped.** Before a text records one, the
 rule page that would grant the thing has to be read. [Text
 10](text-10-mila-tahun.md) claimed the language could not compare one duration
