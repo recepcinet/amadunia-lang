@@ -648,6 +648,9 @@ MUTATIONS = [
      "| Austroasiatic | 0 | 0.0% | 1 | 0.3% |\n| Celtic | 0 | 0.0% | 1 | 0.3% |",
      "| Celtic | 0 | 0.0% | 1 | 0.3% |\n| Austroasiatic | 0 | 0.0% | 1 | 0.3% |",
      "family table has drifted from the dictionary"),
+    ("a third root standing in the verb slot", "texts/text-15-sol-lai.md",
+     "Mi kupi ca.", "Mi corba ca.",
+     "stands in the verb slot, which is a third root doing two jobs"),
     ("a root doing two jobs outside the two that are named",
      # The bare sentence, so the runner replaces it in the code block as well
      # as in the table: the doubled verb has to be in the Amadunia for the

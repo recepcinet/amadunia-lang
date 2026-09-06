@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**290 guarantees** in **136 groups**, and every one of them is
+**291 guarantees** in **137 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -501,6 +501,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### every language an etymology names must map to a family
 
 - an etymology names a language the family map does not know, so its family is counted nowhere: …
+### no root but the two named may stand where only a verb can
+
+- a root that is not a verb stands in the verb slot, which is a third root doing two jobs: …
 ### a verb root may not stand twice in a row
 
 - a verb root stands twice in a row, which is one root taking a second job: …

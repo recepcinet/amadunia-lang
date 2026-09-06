@@ -38,6 +38,16 @@ needs a new root and the language has none.
 | a verb | a command | writable | a noun for "help", if one is ever wanted |
 | a noun | a fragment | impossible | a verb for "to help" |
 
+**Two is now a measured figure and not an assumption.** Swept September 14,
+2026: every root standing straight after a pronoun subject, which is the verb
+slot and nothing else — a noun beside a noun would be ambiguous with
+possession, and after a pronoun it cannot be. Only *rabota* comes back. The
+count had never been checked, and it was wrong three days earlier: *kanta* was
+doing both jobs in [text 21](../texts/text-21-uan-umur.md), where a doubled
+verb read as *sing a song*, and adjacency rather than the verb slot is what
+found it. [`check.py`](../check.py) now holds both shapes, so a third root
+cannot join *madad* and *rabota* without saying so.
+
 ## *rabota* — the decision costs twenty sentences
 
 *rabota* is glossed "work", one noun, and is used both ways. Recounted inside

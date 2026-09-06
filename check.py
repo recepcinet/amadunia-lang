@@ -3882,6 +3882,30 @@ check(not _unmapped,
       f"an etymology names a language the family map does not know, so its "
       f"family is counted nowhere: {', '.join(_unmapped)}")
 
+# ------------- no root but the two named may stand where only a verb can
+# The design rule is one root, one job, and the briefing's whole case rests on
+# the count being two. A noun-glossed root straight after a pronoun subject is
+# in the verb slot and nowhere else — *Mi rabota sini* — so the scan is exact
+# where a noun beside a noun would be ambiguous with possession. Swept
+# September 14, 2026: rabota and nothing else, which is what the briefing says.
+_TWOJOB = {"rabota", "madad"}
+_FUNCW = {"es", "no", "suda", "saufa", "aur", "o", "in", "dari", "por", "una",
+          "ini", "itu", "lebi", "kurang", "paling", "kadar", "porke", "kab",
+          "agar", "sini", "situ", "upar", "sub", "kiri", "yamin", "ke", "kim",
+          "nali", "berapa", "kaifa", "cok", "daima", "kadang", "tena", "plis",
+          "ya", "ok", "bas"}
+_verbslot = set()
+for _p, _vb in _material():
+    for _line, _sent, _toks in amadunia_runs(_vb):
+        _t = [_x.lower().split("-")[0] for _x in _toks]
+        if (len(_t) > 1 and _t[0] in PRONOUNS and _t[1] in words
+                and _t[1] not in VERBS and _t[1] not in ADJECTIVES
+                and _t[1] not in _FUNCW and _t[1] not in _TWOJOB):
+            _verbslot.add((os.path.basename(_p), _sent.strip()))
+check(not _verbslot,
+      f"a root that is not a verb stands in the verb slot, which is a third "
+      f"root doing two jobs: {sorted(_verbslot)[:2]}")
+
 # ---------------------- a verb root may not stand twice in a row
 # text 21 wrote *kanta kanta eski* and glossed it "an old song": kanta once as
 # the verb and once as a noun, in a language whose design rule is one root, one
