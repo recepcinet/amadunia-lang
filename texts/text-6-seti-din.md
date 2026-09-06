@@ -49,7 +49,7 @@ Anak go skola tena. Ta senang.
 | Amadunia | English |
 |---|---|
 | Anak bimar. | The child is ill. |
-| Ta bimar seti din. | He has been ill seven days. |
+| Ta bimar seti din. | He is ill seven days. |
 | Sar ta garam. | His head is hot. |
 | Kulit ta garam tena. | His skin is hot too. |
 | Ta no mau kula. | He does not want to eat. |
@@ -103,6 +103,15 @@ whole claim of the number system and had never actually been shown.
 
 Three things this text wanted to say and could not. None of them was invented
 to make the text work.
+
+**The perfect is not in the language, and this line was borrowing it.** *Ta
+bimar seti din* was glossed "he **has been** ill seven days" until September
+12, 2026. The Amadunia has no tense marker at all and no word for *for*: it is
+an unmarked predicate with a bare duration after it, and the English perfect
+was doing work the sentence does not do. Whether *suda* covers the perfect is
+[an open question](../grammar/tense.md), and a gloss is not the place to answer
+it. It reads "he is ill seven days" now, which is awkward English and exact
+Amadunia.
 
 **There is no word for pain.** (First on [the list](../dictionary/README.md#words-the-writing-has-asked-for).) The child is ill for seven days and never says
 where it hurts, because there is no way to. The nearest root is *mal*, bad,

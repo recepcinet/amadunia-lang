@@ -3878,6 +3878,30 @@ check(not _unmapped,
       f"an etymology names a language the family map does not know, so its "
       f"family is counted nowhere: {', '.join(_unmapped)}")
 
+# ------------------------ a gloss may not claim a category the language lacks
+# text 6 glossed an unmarked predicate with a bare duration as "he has been ill
+# seven days" — the English perfect doing work the Amadunia does not do, and
+# whether suda covers the perfect is an open question. A gloss that borrows a
+# category settles it by the back door, which is the same fault as the
+# phrasebook translating round the missing word for pain. The scan is over the
+# glossed tables of the material: two cells, Amadunia and English.
+_BORROWED = re.compile(r"\b(would|could|should|might|used to|had been|"
+                       r"has been|have been|each other|himself|herself|"
+                       r"myself|themselves)\b", re.I)
+_claims = []
+for _p, _gb in _material():
+    for _l in read(_p).splitlines():
+        if not _l.startswith("| "): continue
+        _c = [_x.strip() for _x in _l.split("|")[1:-1]]
+        if len(_c) != 2: continue
+        _tk = [_x.lower() for _x in re.findall(r"[a-z]+(?:-[a-z]+)*", _c[0].lower())]
+        if len(_tk) < 2 or not all(_x.split("-")[0] in words for _x in _tk): continue
+        _m = _BORROWED.search(_c[1])
+        if _m: _claims.append(f"{os.path.basename(_p)}: {_c[1]}")
+check(not _claims,
+      f"a gloss claims a category the language has not settled: "
+      f"{'; '.join(_claims[:3])}")
+
 # ------------------- a tense marker in front of an adjective, while it is open
 # tense.md puts the marker before the verb and copula.md puts nothing before an
 # adjective, so an adjective predicate has no granted past. The material has
