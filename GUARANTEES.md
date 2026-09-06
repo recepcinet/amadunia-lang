@@ -2,11 +2,11 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**310 guarantees** in **142 groups**, and every one of them is
+**305 guarantees** in **141 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
-A contributor should not have to read 4764 lines of Python to find
+A contributor should not have to read 4731 lines of Python to find
 out what will fail. That figure said **eleven hundred** until September 6,
 2026, on the page whose whole reason for existing is that the Python is too
 long to read — it was written when the checker was a quarter of its size and
@@ -78,7 +78,6 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### coverage
 
 - …
-- lessons/README.md: the wordless-rule table is incomplete: …
 ### the syllabus may not credit a late lesson
 
 - lessons/README.md credits Lesson … with the rising-tone question; Lesson … already asks one, and that lesson page says so itself
@@ -104,12 +103,6 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - dictionary.md: the … group is not in numerical order
 - …
-### grammar a lesson has not reached
-
-- …: a verb with no subject is a command, taught in Lesson …: …
-- …: a subjectless 'es' means "there is", taught in Lesson …: …
-- …: '… …' — possession is taught in Lesson …: …
-- …: '… …' — an adjective after the verb is taught in Lesson …: …
 ### counts named in a link
 
 - …: '…' names … open questions; there are …

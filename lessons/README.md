@@ -67,22 +67,47 @@ Read the [texts](../texts/) — twenty-nine pieces written in Amadunia with noth
 
 The [phrasebook](../phrasebook.md) is the practical page. The [grammar files](../grammar/) give the reasoning behind every rule, including the candidates that were rejected and why.
 
-## Where each wordless rule starts
+## Where each rule starts
 
-Most rules arrive with a word, and [`check.py`](../check.py) already stops a
-lesson using a word no lesson has taught. Five rules arrive with no word at all — nothing to look up, nothing to spot. Those are the ones that drifted:
-verb chains ran in three lessons before Lesson 17 granted them, and Lesson 18
-introduced the adverb rule with a sentence Lesson 12 had already used.
-
-This table is the single place those five numbers live. `check.py` reads it
-and holds every earlier lesson to it, so the syllabus and the checker cannot
-disagree.
+Every rule a sentence can be scanned for, and the lesson that grants it. **This
+table is the single place these numbers live**: [`check.py`](../check.py) reads
+it, holds every earlier lesson to it, and dates the
+[reading ladder](reading-ladder.md) by it, so the syllabus and the checker
+cannot disagree.
 
 | Rule | Introduced in |
 |---|---|
+| number | 01 |
+| tone question | 01 |
+| tense | 04 |
+| plural | 05 |
+| copula | 06 |
 | possession | 06 |
+| question | 07 |
 | command | 10 |
 | adverb | 12 |
+| conjunction | 14 |
+| negation | 14 |
+| demonstrative | 15 |
+| place | 15 |
+| una | 15 |
+| comparison | 16 |
 | verb chain | 17 |
 | existence | 18 |
+| subordination | 18 |
+
+**Five of these are the ones that drifted, and they are the five that arrive
+with no word at all** — possession, the command, the adverb, the verb chain and
+the existential. Nothing to look up and nothing to spot: verb chains ran in
+three lessons before Lesson 17 granted them, and Lesson 18 introduced the
+adverb rule with a sentence Lesson 12 had already used. The other thirteen
+arrive with a word, and a lesson using a word no lesson has taught is stopped
+by a different rule.
+
+**Thirteen of these numbers lived in the checker until September 6, 2026**, and
+three of the thirteen were wrong: the copula was dated to Lesson 11, where the
+rule is stated in full, when *es* arrives at the foot of Lesson 06; comparison
+to Lesson 18 when *lebi* arrives in 16; and every question mark to Lesson 07
+when asking by tone has been in the lessons since Lesson 01. A number the
+founder cannot read is a number nobody checks.
 

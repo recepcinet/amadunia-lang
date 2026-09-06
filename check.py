@@ -499,16 +499,28 @@ check(not untaught, f"{len(untaught)} roots are taught nowhere: {', '.join(untau
 # The lesson that introduces each wordless rule is declared once, in
 # lessons/README.md, and read from there. These four numbers used to sit in
 # this file, which is the arrangement that let three of them drift.
-INTRO = {m.group(1): int(m.group(2)) for m in
-         re.finditer(r"^\| (possession|adverb|verb chain|existence|command) \| (\d\d) \|$",
-                     read("lessons/README.md"), re.M)}
-check(len(INTRO) == 5, f"lessons/README.md: the wordless-rule table is incomplete: {INTRO}")
-# A missing row used to raise a KeyError further down, so the check above
-# reported nothing and the run died instead — the failure mode it exists to
-# prevent. Absent rules fall back to 99, which keeps every dependent check
-# running and lets this one be the message that appears.
-for _k in ("possession", "adverb", "verb chain", "existence", "command"):
-    INTRO.setdefault(_k, 99)
+# Which lesson grants which rule. Five of these were read from the syllabus and
+# thirteen were literals here, and three of the thirteen were wrong — the
+# copula six lessons late, comparison two, and every question mark six. A
+# number the founder cannot read is a number nobody checks, so all eighteen are
+# stated in lessons/README.md and read from there. The reading ladder dates a
+# text by this table and every lesson is held to it.
+_RULE_LESSON = {_m.group(1): int(_m.group(2)) for _m in
+                re.finditer(r"^\| ([a-z ]+) \| (\d\d) \|$",
+                            read("lessons/README.md").split("## Where each rule starts")[-1]
+                            .split("\n## ")[0], re.M)}
+# A missing row used to raise a KeyError further down, so the check reported
+# nothing and the run died instead — the failure mode it exists to prevent.
+# Absent rules fall back to 99, which keeps every dependent check running and
+# lets the message below be the one that appears. The list of rules the scanner
+# can find is _rules_in's own, held against this table further down.
+class _RuleLessons(dict):
+    def __missing__(self, _k): return 99
+_RULE_LESSON = _RuleLessons(_RULE_LESSON)
+# There is no count check here on purpose. "Eighteen" would be a literal in
+# this file again, and the rules the scanner can find are held against this
+# table further down in both directions — a renamed heading empties the map,
+# every rule falls back to 99, and that check names all eighteen.
 
 # ------------------------------- the syllabus may not credit a late lesson
 # with a device an earlier lesson already uses. The index called Lesson 07
@@ -567,7 +579,7 @@ for path in glob.glob("lessons/lesson-*.md"):
     _num = re.search(r"lesson-(\d\d)", path)
     if not _num: continue          # the two-digit rule reports it; do not crash here
     n = int(_num.group(1))
-    if n >= INTRO["verb chain"]: continue
+    if n >= _RULE_LESSON["verb chain"]: continue
     # The closing section used to be cut off here. It holds no Amadunia
     # sentence in any lesson — counted, all twenty-six — so the cut hid
     # nothing, but a sentence put there later would have been invisible to
@@ -579,7 +591,7 @@ for path in glob.glob("lessons/lesson-*.md"):
         for a, b in zip(base, base[1:]):
             check(not (a in VERBS and b in VERBS),
                   f"{os.path.basename(path)}: verb chain '{a} {b}' predates "
-                  f"Lesson {INTRO['verb chain']:02d}")
+                  f"Lesson {_RULE_LESSON['verb chain']:02d}")
 
 # --------------------------------------------------------- verb position
 # A tense marker is followed by a verb, an adjective, a place, or es. Nothing
@@ -727,12 +739,7 @@ for _grp, _rows in _rows_by_grp.items():
         check(not out, f"dictionary.md: the '{_grp}' group is not alphabetical: "
                        + ", ".join(out[:3]))
 
-# ----------------------------------------- grammar a lesson has not reached
-# Vocabulary order is checked. Grammar that introduces no new word was not,
-# which is how verb chains sat in three early lessons. The same scan, widened,
-# found two more: possession three lessons before Lesson 06 taught it, and the
-# adverb rule eight lessons before anything explained it — Lesson 18 introduced
-# that rule using the very sentence Lesson 12 had already shown without comment.
+# ------------------------------- what a noun is, and what a function word is
 FUNCTION = (GROUP["Grammar particles"] | GROUP["Prepositions"] | GROUP["Place"]
             | GROUP["This and that"] | GROUP["Question words"] | NUMBERS | DEGREE
             # These are grammar words the dictionary files under thematic
@@ -744,37 +751,13 @@ FUNCTION = (GROUP["Grammar particles"] | GROUP["Prepositions"] | GROUP["Place"]
             | {"no", "una", "cok", "daima", "kadang", "sasa", "tena", "kadar"})
 NOUNS = set(words) - VERBS - ADJECTIVES - FUNCTION - {"mi", "yu", "ta", "kita"}
 ADVERBIAL = ADJECTIVES | {"cok"}
-for path in sorted(glob.glob("lessons/lesson-*.md")):
-    _num = re.search(r"lesson-(\d\d)", path)
-    if not _num: continue          # the two-digit rule reports it; do not crash here
-    n = int(_num.group(1))
-    body = read(path)      # the closing section is read too, see above
-    for line, sent, toks in amadunia_runs(body):
-        if any(x in line.lower() for x in ("wrong", "cannot", "not legal", "✗")): continue
-        base = [t.split("-")[0] for t in toks]
-        # es is excluded deliberately, not by accident: it is a verb, and its
-        # gloss simply does not start with "to ", which is the only reason it
-        # was never in VERBS. A sentence-initial es is the existential, which
-        # wins that slot — see grammar/sentence-types.md. Thirty sentences
-        # depend on it, so the exclusion is written rather than inherited.
-        if n < INTRO["command"] and base[0] in VERBS \
-                and base[0] not in ("bisa", "lasim", "es"):
-            check(False,
-                  f"{os.path.basename(path)}: a verb with no subject is a command, "
-                  f"taught in Lesson {INTRO['command']:02d}: {sent}")
-        if n < INTRO["existence"]:
-            check(base[0] != "es",
-                  f"{os.path.basename(path)}: a subjectless 'es' means \"there is\", "
-                  f"taught in Lesson {INTRO['existence']:02d}: {sent}")
-        for a, b in zip(base, base[1:]):
-            if n < INTRO["possession"]:
-                check(not (a in NOUNS and b in {"mi", "yu", "ta", "kita"}),
-                      f"{os.path.basename(path)}: '{a} {b}' — possession is taught "
-                      f"in Lesson {INTRO['possession']:02d}: {sent}")
-            if n < INTRO["adverb"]:
-                check(not (a in VERBS and b in ADVERBIAL),
-                      f"{os.path.basename(path)}: '{a} {b}' — an adjective after the "
-                      f"verb is taught in Lesson {INTRO['adverb']:02d}: {sent}")
+# The five-rule block that stood here — possession, the adverb, the command,
+# the existential and the verb chain, each with its own hand-written shape test
+# — was deleted on September 6, 2026. It asked the same question as the sweep
+# further down, which puts every rule _rules_in can find against the lesson
+# that grants it, and the five it held were the five somebody had thought to
+# name. Two scanners for one judgement is the fault this repository keeps
+# finding; the second copy is gone rather than kept in step.
 
 # ------------------------------------------------- counts named in a link
 # The number of open questions changes whenever one is settled or found, and
@@ -1420,27 +1403,11 @@ def _rules_in(_line, _toks):
 # lesson: a text using them waits for nothing. The map needed the entry as soon
 # as the two rule detectors were merged — the ladder's copy had no number test
 # at all, so nothing had ever asked this map for it.
-# Three of these were the lesson that *states* the rule rather than the lesson
-# that starts using it, which is six lessons of overstatement in the reading
-# ladder: *es* arrives at the foot of Lesson 06 and Lesson 11 says so itself in
-# its own first paragraph; *lebi* arrives in Lesson 16 and the rest of the
-# comparison words in 18. They are read off the syllabus now. The vocabulary
-# half of a ladder row already refuses a text that uses a word before it is
-# taught, so dating a construction from its earliest word cannot let anything
-# through — it only stops the ladder charging for a lesson a reader does not
-# need yet.
-def _first_lesson_with(*_ws):
-    return min([_n for _n in sorted(_LADAFTER)
-                if any(_w in _LADAFTER[_n] for _w in _ws)] or [99])
-_RULE_LESSON = {"number": 1, "tone question": _first_q,
-                "copula": _first_lesson_with("es"),
-                "comparison": _first_lesson_with("lebi", "kurang", "paling",
-                                                 "kadar"),
-                "tense": 4, "plural": 5, "possession": 6, "question": 7,
-                "command": 10, "adverb": 12, "negation": 14,
-                "conjunction": 14, "demonstrative": 15, "place": 15, "una": 15,
-                "verb chain": 17, "existence": 18,
-                "subordination": 18}
+# The map itself is read from lessons/README.md near the top of this file, so
+# these numbers are the syllabus's and not the checker's. It stood here as a
+# literal as well until September 6, 2026 — the second definition silently
+# shadowed the first, and the two agreed only because they had just been
+# corrected together.
 # A text opens when a reader has both its words and its rules, so the row is
 # the later of the two. It used to be the vocabulary alone, with a second check
 # that the grammar had not overrun it — which held only because no text had
