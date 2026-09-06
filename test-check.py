@@ -615,6 +615,13 @@ MUTATIONS = [
      "Beta opens. This is a deliberately long duplicated sentence, put here only to exercise the repeated-sentence guarantee.\n\n"
      "## Why this and not the alternatives",
      "a sentence is printed twice"),
+    ("a second copy of a rule detector", "check.py",
+     'if "una" in _t: _r.add("una")',
+     # Same number of lines: an inserted line shifts every line after it, and
+     # the coverage instrument then credits the wrong one — the first version
+     # of this mutation was caught and still reported its guarantee unreached.
+     'if "una" in _t: _r.add("una"); _r.add("una")',
+     "detects the una rule in more than one place"),
     ("the tracked-rule count gone stale", "texts/README.md",
      "**Sixteen rules can be spotted in a sentence**",
      "**Fifteen rules can be spotted in a sentence**",

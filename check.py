@@ -1273,13 +1273,52 @@ for path in PROSE:
                          f"follows es: {sent}")
 
 # ------------------------------- the ladder's number is the binding one
+# The rules a scanner can see in one sentence, in one place. This test existed
+# twice — once for the reading ladder and once for the exercise table — and the
+# copies had drifted three ways: the table's question detector looked for a
+# mark the splitter had removed, the ladder's command detector could not see a
+# negative command, and the ladder had no number detector at all. Two copies of
+# one judgement is the fault; one copy is the fix.
+def _rules_in(_line, _toks):
+    _t = [_x.lower() for _x in _toks]
+    _r = set()
+    if {"suda", "saufa"} & set(_t): _r.add("tense")
+    if any("-" in _x and _x.split("-")[0] == _x.split("-")[-1] for _x in _toks):
+        _r.add("plural")
+    if "es" in _t: _r.add("copula")
+    if _t[0] == "es" or (len(_t) > 1 and _t[0] == "no" and _t[1] == "es"):
+        _r.add("existence")
+    if "no" in _t: _r.add("negation")
+    if {"aur", "o"} & set(_t): _r.add("conjunction")
+    if "?" in _line: _r.add("question")
+    if {"ini", "itu"} & set(_t): _r.add("demonstrative")
+    if {"in", "dari", "por"} & set(_t): _r.add("place")
+    if "una" in _t: _r.add("una")
+    if any(_a in VERBS and _b in VERBS for _a, _b in zip(_t, _t[1:])):
+        _r.add("verb chain")
+    if {"lebi", "kurang", "paling", "kadar"} & set(_t): _r.add("comparison")
+    if {"porke", "kab", "agar"} & set(_t) or _clause_object(_t):
+        _r.add("subordination")
+    if any(_a in VERBS and _b in ADJECTIVES for _a, _b in zip(_t, _t[1:])):
+        _r.add("adverb")
+    if (_t[0] in VERBS and _t[0] != "es") or (_t[0] == "no" and len(_t) > 1
+            and _t[1] in VERBS and _t[1] != "es"):
+        _r.add("command")
+    if set(_t) & NUMBERS: _r.add("number")
+    return _r
+
 # reading-ladder.md counts vocabulary, and the worry it names is that a text
 # might need a rule later than its last word — which would make every row an
 # understatement. Measured across all twenty-one texts, it never happens, so
 # the page says so and this holds it. The rule-to-lesson map is the one
 # lessons/README.md publishes for the wordless rules, extended with the rules
 # that arrive with a word of their own.
-_RULE_LESSON = {"tense": 4, "plural": 5, "possession": 6, "question": 7,
+# "number" is 1 because the numbers are taught on the front page, before any
+# lesson: a text using them waits for nothing. The map needed the entry as soon
+# as the two rule detectors were merged — the ladder's copy had no number test
+# at all, so nothing had ever asked this map for it.
+_RULE_LESSON = {"number": 1,
+                "tense": 4, "plural": 5, "possession": 6, "question": 7,
                 "command": 10, "copula": 11, "adverb": 12, "negation": 14,
                 "conjunction": 14, "demonstrative": 15, "place": 15, "una": 15,
                 "verb chain": 17, "existence": 18, "comparison": 18,
@@ -1295,27 +1334,7 @@ for _p in sorted(glob.glob("texts/*.md")):
     if "```" not in _tb: continue
     _need = set()
     for _line, _sent, _toks in amadunia_runs("".join(_tb.split("```")[1::2])):
-        _t = [_x.lower() for _x in _toks]
-        if {"suda", "saufa"} & set(_t): _need.add("tense")
-        if any("-" in _x and _x.split("-")[0] == _x.split("-")[-1] for _x in _toks):
-            _need.add("plural")
-        if "es" in _t: _need.add("copula")
-        if _t[0] == "es" or (len(_t) > 1 and _t[0] == "no" and _t[1] == "es"):
-            _need.add("existence")
-        if "no" in _t: _need.add("negation")
-        if {"aur", "o"} & set(_t): _need.add("conjunction")
-        if "?" in _line: _need.add("question")
-        if {"ini", "itu"} & set(_t): _need.add("demonstrative")
-        if {"in", "dari", "por"} & set(_t): _need.add("place")
-        if "una" in _t: _need.add("una")
-        if any(_a in VERBS and _b in VERBS for _a, _b in zip(_t, _t[1:])):
-            _need.add("verb chain")
-        if {"lebi", "kurang", "paling", "kadar"} & set(_t): _need.add("comparison")
-        if {"porke", "kab", "agar"} & set(_t) or _clause_object(_t):
-            _need.add("subordination")
-        if any(_a in VERBS and _b in ADJECTIVES for _a, _b in zip(_t, _t[1:])):
-            _need.add("adverb")
-        if _t[0] in VERBS and _t[0] != "es": _need.add("command")
+        _need |= _rules_in(_line, _toks)
     _g = max([_RULE_LESSON[_k] for _k in _need] + [0])
     check(_g <= _ladrows[_f],
           f"{_f}: the reading ladder says Lesson {_ladrows[_f]}, but the text "
@@ -1855,36 +1874,7 @@ for _p in sorted(glob.glob("texts/*.md")):
     if "```" not in _src: continue
     _f = os.path.basename(_p)
     for _line, _sent, _toks in amadunia_runs("".join(_src.split("```")[1::2])):
-        _t = [_x.lower() for _x in _toks]
-        if {"suda", "saufa"} & set(_t): _RULETEXT["tense"].add(_f)
-        if any("-" in _x and _x.split("-")[0] == _x.split("-")[-1] for _x in _toks):
-            _RULETEXT["plural"].add(_f)
-        if "es" in _t: _RULETEXT["copula"].add(_f)
-        if _t[0] == "es" or (len(_t) > 1 and _t[0] == "no" and _t[1] == "es"):
-            _RULETEXT["existence"].add(_f)
-        if "no" in _t: _RULETEXT["negation"].add(_f)
-        if {"aur", "o"} & set(_t): _RULETEXT["conjunction"].add(_f)
-        # The question mark has to be looked for in the line, not the
-        # sentence: amadunia_runs splits on "?" and never leaves one in _sent,
-        # so this detector could not fire and the question rule was missing
-        # from the exercise table altogether. The reading ladder's copy of the
-        # same detector reads the line and has always worked — two copies of
-        # one test, and only one of them right.
-        if "?" in _line: _RULETEXT["question"].add(_f)
-        if {"ini", "itu"} & set(_t): _RULETEXT["demonstrative"].add(_f)
-        if {"in", "dari", "por"} & set(_t): _RULETEXT["place"].add(_f)
-        if "una" in _t: _RULETEXT["una"].add(_f)
-        if any(_a in VERBS and _b in VERBS for _a, _b in zip(_t, _t[1:])):
-            _RULETEXT["verb chain"].add(_f)
-        if {"lebi", "kurang", "paling", "kadar"} & set(_t): _RULETEXT["comparison"].add(_f)
-        if {"porke", "kab", "agar"} & set(_t) or _clause_object(_t):
-            _RULETEXT["subordination"].add(_f)
-        if any(_a in VERBS and _b in ADJECTIVES for _a, _b in zip(_t, _t[1:])):
-            _RULETEXT["adverb"].add(_f)
-        if (_t[0] in VERBS and _t[0] != "es") or (_t[0] == "no" and len(_t) > 1
-                and _t[1] in VERBS and _t[1] != "es"):
-            _RULETEXT["command"].add(_f)
-        if set(_t) & NUMBERS: _RULETEXT["number"].add(_f)
+        for _k in _rules_in(_line, _toks): _RULETEXT[_k].add(_f)
 # Only the floor was ever checked. The page also named four figures in prose —
 # "Place leads at eighteen ... the adverb rule at seven" — and three of them had
 # drifted against this very scan as the texts were edited. The whole table is
@@ -3514,6 +3504,18 @@ for _end, _phrase in (("o", "**{}** roots end in *-o*"),
     check(_phrase.format(_n).replace("**", "") in _conj.replace("**", "")
           .replace("\n", " "),
           f"conjunction.md: {_n} roots end in -{_end}")
+
+# ------------------------------- the rule detectors are defined exactly once
+# They were defined twice and drifted three ways. This file reads itself to
+# make sure a second copy cannot come back: every rule the scanner knows is
+# added to a set in one function and nowhere else.
+_selfsrc = read("check.py")
+for _rule in sorted(_RULETEXT):
+    check(_selfsrc.count(f'_r.add("{_rule}")') == 1
+          and f'_RULETEXT["{_rule}"].add' not in _selfsrc
+          and f'_need.add("{_rule}")' not in _selfsrc,
+          f"check.py detects the {_rule} rule in more than one place; the "
+          f"copies drifted three ways before they were merged")
 
 # --------------------- how many rules the exercise table can see, and cannot
 # texts/README.md claimed every settled rule was exercised and then narrowed
