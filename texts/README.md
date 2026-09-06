@@ -14,20 +14,20 @@ it — a count is only as good as what it counted.
 
 | Rule | Texts |
 |---|---:|
-| place | 21 |
-| conjunction | 15 |
+| place | 22 |
+| conjunction | 16 |
+| negation | 16 |
 | copula | 15 |
-| negation | 15 |
 | number | 15 |
-| tense | 14 |
+| tense | 15 |
 | demonstrative | 13 |
 | verb chain | 12 |
 | existence | 11 |
 | plural | 10 |
 | una | 10 |
+| subordination | 9 |
 | adverb | 8 |
-| subordination | 8 |
-| command | 7 |
+| command | 8 |
 | comparison | 7 |
 
 <!-- end generated -->
@@ -80,12 +80,12 @@ been. Every sentence in the lessons, the texts and the phrasebook was reduced
 to its parts of speech — R for a pronoun, V a verb, N a noun, A an adjective,
 P a preposition, and so on — and the shapes counted.
 
-**1728 sentences, 423 distinct shapes**, and the fifteen commonest cover 43%
+**1755 sentences, 427 distinct shapes**, and the fifteen commonest cover 43%
 of them. The leaders are *RVN* at 8.6% (*Ta-ta lihat stela-stela*), *NA* at
 7.5% (*Sol kabir*) and *NV* at 4.8% (*Anak sema*). [`check.py`](../check.py)
 recounts the two headline numbers.
 
-**1460 of the 1728 are distinct — 84%.** The corpus is not padded with
+**1483 of the 1755 are distinct — 85%.** The corpus is not padded with
 repeats: the most repeated sentence appears seven times across four files and
 is *Mi sema*, "I say", which is a quotation frame rather than a sentence
 anybody is making. That matters for
@@ -97,7 +97,7 @@ The measurement was made to test a claim and refuted it.
 [Text 21](text-21-uan-umur.md), the long one, said at first that the shapes
 drone at that length. They do not: it uses 52 distinct shapes, more than any
 other text, and only 8% of its adjacent sentence pairs share a shape, which
-puts it eleventh of twenty-three. The most repetitive pages are
+puts it eleventh of twenty-four. The most repetitive pages are
 [the recipe](text-8-kaifa-suru-ca.md) at 28% and [the poem](text-5-uan.md) at
 25%, both of which repeat on purpose.
 
@@ -166,3 +166,4 @@ These are original compositions, not translations. Translating an existing book 
 | [Uan umur](text-21-uan-umur.md) | 122 | 300 roots, Lessons 1-26 — a whole life, and **the first long text**: 88 sentences against a previous longest of 34 |
 | [Agar yamur lai](text-22-agar-yamur-lai.md) | 62 | 300 roots, Lessons 1-26 — a journey that may not happen, **written for subordination**, which turned out not to be the thinnest rule |
 | [Kim paling hayai](text-23-kim-paling-hayai.md) | 50 | 300 roots, Lessons 1-26 — children ranking animals, **written for comparison**, the thinnest rule once subordination stopped being it |
+| [Mama mama mi](text-24-mama-mama-mi.md) | 59 | 300 roots, Lessons 1-26 — a portrait of one person, and the first text to find a gap in the prepositions rather than the vocabulary |

@@ -22,8 +22,8 @@ Six forms. Four of them you already had; the other two are the plural rule doing
 **It never changes for gender.** *ta* is he, she and it. Whether the tea, the doctor or the child — *ta*.
 
 The English translations cannot say that, and every one of them has to choose.
-**132 glossed sentences in the repository contain *ta*, and 118 of them assign
-a gender the sentence does not have** — 61 she, 54 he, 3 both, 11 *it*. That is
+**148 glossed sentences in the repository contain *ta*, and 134 of them assign
+a gender the sentence does not have** — 77 she, 54 he, 3 both, 11 *it*. That is
 the shape of a language with no gender being read in one that has it, and it
 is not a fault in any single line. The split was 69 she to 41 he until
 September 5, 2026, when twelve glosses were changed for the reason below.

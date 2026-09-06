@@ -11,7 +11,7 @@ will be.
 
 ## The material has relied on this from the beginning
 
-**Forty nouns** are translated both ways in the lessons, the grammar files and
+**Forty-one nouns** are translated both ways in the lessons, the grammar files and
 the texts, and no page has ever said why. Seven of them:
 
 | Root | Translated *the* | Translated *a* |
