@@ -3,7 +3,7 @@
 Generated from the material a learner reads — the twenty-six lessons, the
 twenty-six texts and the phrasebook — counting every word inside an Amadunia
 sentence and ignoring the vocabulary tables, which teach a word rather than use
-it. **6344 words of running Amadunia**, and 291 of the 300 roots appear in one.
+it. **6343 words of running Amadunia**, and 291 of the 300 roots appear in one.
 
 The other nine appear in no sentence of more than one word anywhere: *bai*,
 *bas*, *hi*, *mersi*, *ok*, *pardon*, *plis*, *ya* — and *madad*, which is

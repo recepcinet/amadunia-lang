@@ -73,8 +73,8 @@ calculation.
 
 ## 3. What the writing has asked for
 
-Fourteen gaps are on the list: twelve found by trying to write something and
-failing, and two found a third way — by translating a sentence somebody asked
+Fifteen gaps are on the list: twelve found by trying to write something and
+failing, one by a sweep of sentence shapes, and two found a third way — by translating a sentence somebody asked
 for, and by somebody asking about kinship. [They are recorded with the sentence that stopped in each case](README.md#words-the-writing-has-asked-for):
 pain, love as a noun, to miss someone, the clock, a word for *then*, standing
 up, and a coin as against an amount.

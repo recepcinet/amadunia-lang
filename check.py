@@ -2649,9 +2649,13 @@ _written = [_l for _l in _gaprows if _l not in _asked]
 _SPELL = {n: w for w, n in WORD_NUM.items()}
 _ORD = {12: "twelfth", 13: "thirteenth", 14: "fourteenth", 15: "fifteenth",
         16: "sixteenth", 17: "seventeenth"}
-check(f"The first {_SPELL.get(len(_written))} came from writing" in read("dictionary/README.md"),
-      f"dictionary/README.md: {len(_written)} gaps came from writing, and the page "
-      f"does not say so")
+# The split this counts is "the row names a text or a lesson", not "writing
+# found it": *a song* names text 21 and was found by a sweep of sentence
+# shapes, not by the writing stopping. The sentence says what the column shows.
+check(f"{_SPELL.get(len(_written))} name a text or a lesson"
+      in read("dictionary/README.md"),
+      f"dictionary/README.md: {len(_written)} rows name a text or a lesson, and "
+      f"the page does not say so")
 check(all(_ORD.get(len(_written) + _i + 1, "?") in read("dictionary/README.md")
           for _i in range(len(_asked))),
       f"dictionary/README.md: the {len(_asked)} gaps found by a question are not "
@@ -3877,6 +3881,23 @@ _unmapped = sorted({_m.group(1) for _w in words
 check(not _unmapped,
       f"an etymology names a language the family map does not know, so its "
       f"family is counted nowhere: {', '.join(_unmapped)}")
+
+# ---------------------- a verb root may not stand twice in a row
+# text 21 wrote *kanta kanta eski* and glossed it "an old song": kanta once as
+# the verb and once as a noun, in a language whose design rule is one root, one
+# job and whose two exceptions are named. A doubled noun is the plural and is
+# hyphenated; a doubled verb is a root borrowing a second job, and the gloss
+# check cannot see it because the English it borrows is an ordinary word.
+_doubled = []
+for _p, _db in _material():
+    for _line, _sent, _toks in amadunia_runs(_db):
+        _t = [_x.lower() for _x in _toks]
+        for _a, _b in zip(_t, _t[1:]):
+            if _a == _b and "-" not in _a and _a in VERBS:
+                _doubled.append(f"{os.path.basename(_p)}: {_sent.strip()}")
+check(not _doubled,
+      f"a verb root stands twice in a row, which is one root taking a second "
+      f"job: {'; '.join(_doubled[:3])}")
 
 # --------------------- a time word in front of the subject, while it is open
 # place.md settles that time goes last and grants fronting to a subordinate

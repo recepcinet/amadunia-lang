@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**289 guarantees** in **135 groups**, and every one of them is
+**290 guarantees** in **136 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -319,7 +319,7 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - …: '…' — the ladder first reaches …% at Lesson …
 ### the gap list counts its own two methods
 
-- dictionary/README.md: … gaps came from writing, and the page does not say so
+- dictionary/README.md: … rows name a text or a lesson, and the page does not say so
 - dictionary/README.md: the … gaps found by a question are not named as numbers … to …
 - dictionary/README.md: the three parts of the gap list are … and must account for all … of it
 - dictionary/README.md: the feelings count is not stated against … gaps
@@ -501,6 +501,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### every language an etymology names must map to a family
 
 - an etymology names a language the family map does not know, so its family is counted nowhere: …
+### a verb root may not stand twice in a row
+
+- a verb root stands twice in a row, which is one root taking a second job: …
 ### a time word in front of the subject, while it is open
 
 - … sentences open with a time word; the shape is an open question and stood in eight when it was raised: …

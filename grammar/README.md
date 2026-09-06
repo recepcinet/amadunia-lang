@@ -34,7 +34,7 @@ Twenty-one rules and eight briefings, one decision each. **Six briefings are ope
 |---|---|
 | [proposal-ordinals.md](proposal-ordinals.md) | First, second, eighth. No affix is possible, so the choice is position or a particle; answering it would remove the need for nineteen roots. **Open — the founder's call.** |
 | [proposal-two-jobs.md](proposal-two-jobs.md) | May a root hold two jobs? *madad* has never been used in a sentence, so its decision is free; *rabota* stands in twenty places. **Open — the founder's call.** |
-| [proposal-frequency.md](proposal-frequency.md) | Where *daima* and *kadang* stand. Thirteen uses in three positions; *tena* settled itself 31 of 31. **Open — the founder's call.** |
+| [proposal-frequency.md](proposal-frequency.md) | Where *daima* and *kadang* stand. Thirteen uses in three positions; *tena* settled itself 32 of 32. **Open — the founder's call.** |
 | [proposal-but.md](proposal-but.md) | A word for "but". Six pages wanted one and Lesson 12 invented one; *lakin* reaches five families. **Open — the founder's call.** |
 | [proposal-stress.md](proposal-stress.md) | The briefing the open questions put first. **Decided September 3, 2026** — the rule is [stress.md](stress.md); this is the record of what it was decided on. |
 | [proposal-sentence-types.md](proposal-sentence-types.md) | The imperative and the fragment. **Decided September 3, 2026** — the rules are [sentence-types.md](sentence-types.md). |

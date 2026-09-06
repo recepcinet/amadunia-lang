@@ -74,7 +74,7 @@ Ta-ta kan sol. Ta-ta ingat din-din eski.
 
 Insan sema: "Mi ingat yu in skola."
 Insan genc — no genc sasa — respon: "Mi ingat yu in market."
-Ta-ta kanta kanta eski.
+Ta-ta kanta tena.
 Rat lai. Stela in asman.
 
 Insan mati. Es sukut in dom tena.
@@ -153,7 +153,7 @@ Anak keci sema nama tena.
 | Ta-ta kan sol. Ta-ta ingat din-din eski. | They see the sun. They remember the old days. |
 | Insan sema: "Mi ingat yu in skola." | The person says: "I remember that morning at school." |
 | Insan genc — no genc sasa — respon: "Mi ingat yu in market." | The young one — not young now — answers: "I remember you at the market." |
-| Ta-ta kanta kanta eski. | They sing an old song. |
+| Ta-ta kanta tena. | They sing again. |
 | Rat lai. Stela in asman. | Night comes. Stars are in the sky. |
 | Insan mati. Es sukut in dom tena. | The person dies. There is silence in the house again. |
 | Anak-anak lai. Anak-anak kan bage. | The children come. The children see the garden. |
@@ -166,7 +166,7 @@ Anak keci sema nama tena.
 
 ## What length found
 
-**101 sentences, 418 words, 122 roots** — three times the
+**101 sentences, 417 words, 122 roots** — three times the
 longest text before it, and a fifth of everything the language has ever
 written in one page.
 
@@ -224,6 +224,17 @@ writing of it, not in the reading, and the honest record of that is this
 paragraph rather than the one it replaced.
 
 ## Gaps
+
+**No word for a song, and this page had been borrowing the verb.** The line
+read *Ta-ta kanta kanta eski* — glossed "they sing an old song" — using *kanta*
+once as the verb and once as a noun. [The dictionary glosses it *to
+sing*](../dictionary/dictionary.md) and nothing else, and
+[one root does one job](../CONTRIBUTING.md): the two roots that break that rule
+are named and this was quietly a third. The line says *Ta-ta kanta tena* now —
+they sing again — which loses the song and the age of it. Found September 13,
+2026 by reducing every sentence in the material to its parts of speech and
+reading the shapes that occur once; the song is
+[on the list of words the writing has asked for](../dictionary/README.md#words-the-writing-has-asked-for).
 
 **I reached for a word that does not exist, twice, without meaning to.** Both
 drafts of this page wrote *lakin* — the candidate in

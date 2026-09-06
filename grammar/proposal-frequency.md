@@ -42,7 +42,7 @@ sentence is worth knowing before either is answered.
 
 *tena*, "again", is not a frequency word — it counts repetitions rather than
 naming a rate — but it is the nearest neighbour in the dictionary and it has
-been consistent from the start: **31 of its 31 uses are last in the sentence**,
+been consistent from the start: **32 of its 32 uses are last in the sentence**,
 without one exception. *Mi lai tena*, *Anak katab tena*, *Yamur no lai tena*,
 *Din lai tena*.
 
@@ -54,7 +54,7 @@ word next door.
 ## What is measured and what is judgement
 
 Measured: the thirteen sentences and their three positions, the cost of each
-answer, and *tena*'s 31 of 31 — [`check.py`](../check.py) recounts all of them,
+answer, and *tena*'s 32 of 32 — [`check.py`](../check.py) recounts all of them,
 so this page cannot drift the way [adverbs.md](adverbs.md) did.
 
 That sentence was not true when it was written. The three positions and
