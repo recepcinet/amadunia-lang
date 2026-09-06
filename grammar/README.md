@@ -39,7 +39,7 @@ Twenty-one rules and eight briefings, one decision each. **Six briefings are ope
 | [proposal-stress.md](proposal-stress.md) | The briefing the open questions put first. **Decided September 3, 2026** — the rule is [stress.md](stress.md); this is the record of what it was decided on. |
 | [proposal-sentence-types.md](proposal-sentence-types.md) | The imperative and the fragment. **Decided September 3, 2026** — the rules are [sentence-types.md](sentence-types.md). |
 | [proposal-names.md](proposal-names.md) | Marking a name. Forty-eight sentences are ambiguous today, and capital letters cannot be spoken. **Open — the founder's call.** |
-| [proposal-modal-adjective.md](proposal-modal-adjective.md) | "Want to be" plus an adjective. Called the smallest of the four until it was measured: 403 verbless adjective predicates and 59 working modals in the material, and not one place the two may meet. **Open — the founder's call.** |
+| [proposal-modal-adjective.md](proposal-modal-adjective.md) | "Want to be" plus an adjective. Called the smallest of the four until it was measured: 405 verbless adjective predicates and 59 working modals in the material, and not one place the two may meet. **Open — the founder's call.** |
 
 *Three claims in the tables above were the last copies of things corrected
 elsewhere,* and the third is the reason this paragraph is not about numbers
