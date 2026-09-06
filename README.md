@@ -285,8 +285,12 @@ in the first draft of the phrasebook. It found five roots that were glossed in
 a word table and then never used in a single sentence — including the numbers
 eight and nine, so the number system had never been shown above six. And when
 its own hand-written verb list was replaced by one read from the dictionary, it
-turned out to have known 19 of the language's 47 verbs, and three real verb
-chains were sitting in early lessons where the rule forbids them.
+turned out to have known 19 of the 47 roots the dictionary glosses *to
+something*, and three real verb chains were sitting in early lessons where the
+rule forbids them. The language has 50 verbs, not 47: *bisa*, *lasim* and
+*madad* are verbs by behaviour and not by gloss, and this sentence said *the
+language's 47 verbs* until September 6, 2026, which is the smaller of the two
+counts wearing the name of the larger.
 
 And [`test-check.py`](test-check.py) checks the checker. It breaks each
 guarantee in turn against a throwaway copy of the repository and demands that

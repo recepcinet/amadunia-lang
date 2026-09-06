@@ -2,11 +2,11 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**305 guarantees** in **141 groups**, and every one of them is
+**314 guarantees** in **143 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
-A contributor should not have to read 4731 lines of Python to find
+A contributor should not have to read 4822 lines of Python to find
 out what will fail. That figure said **eleven hundred** until September 6,
 2026, on the page whose whole reason for existing is that the Python is too
 long to read — it was written when the checker was a quarter of its size and
@@ -602,6 +602,19 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### the A2 briefing's theme table
 
 - …
+### the figures a page states in passing
+
+- …: says '…'; the dictionary has …
+- …: says '…'; lessons/ holds …
+- …: says '…'; … words behave as verbs
+- …: says '…'; … roots are glossed that way
+- …: says '…'; the verb chain arrives in Lesson …
+- …: says '…'; the dictionary glosses … as …
+- …: says '…'; that spelling is …
+- …: says '…'; the ladder opens it at Lesson …
+### a link labelled with a number names that file
+
+- …: a link labelled '…' points at …
 ### README
 
 - README.md says … roots; the dictionary has …

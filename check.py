@@ -2927,11 +2927,15 @@ if _rows:
     # between "three" and "quarters" is why the whitespace is loose.
     _FRACS = {"half": 50, "three quarters": 75, "a quarter": 25}
     for _p2 in ("lessons/reading-ladder.md", "lessons/README.md"):
-        for _m9 in re.finditer(r"(half|three\s+quarters|a quarter) by Lesson (\d\d)",
+        # One digit as well as two: perturbing "Lesson 06" to "Lesson 7" in a
+        # copy of the tree left this check matching nothing at all, which is
+        # the silent-skip failure this file keeps finding in its own patterns.
+        # A one-digit lesson number is wrong here anyway and now says so.
+        for _m9 in re.finditer(r"(half|three\s+quarters|a quarter) by Lesson (\d{1,2})",
                                read(_p2), re.I):
             _pct = _FRACS[re.sub(r"\s+", " ", _m9.group(1)).lower()]
             _first = next((_n for _n, _v in _rows if _v >= _pct), None)
-            check(int(_m9.group(2)) == _first,
+            check(len(_m9.group(2)) == 2 and int(_m9.group(2)) == _first,
                   f"{os.path.basename(_p2)}: '{re.sub(chr(10), ' ', _m9.group(0))}' — "
                   f"the ladder first reaches {_pct}% at Lesson {_first:02d}")
 
@@ -4676,6 +4680,93 @@ _missing = [f"| {k} | {v} |" for k, v in sorted(_grpcount.items(), key=lambda kv
 check(not _missing,
       "proposal-a2.md's theme table has drifted from the dictionary: "
       + ", ".join(_missing[:3]))
+
+# ------------------------------- the figures a page states in passing
+# Every number in this repository was perturbed by one, one at a time, in a
+# copy of the tree, and the run re-checked: 43 of the front page's 81 numbers
+# could be changed without a word of complaint. Most of those are history or
+# facts about other languages — Esperanto's 917 roots, the year 1887 — and
+# nothing here can hold them. These are the ones that are facts about this
+# repository, stated in passing rather than in the sentence somebody thought to
+# check, and they were all free to drift.
+for _p in md():
+    _fb = " ".join(read(_p).split())
+    # "the 89 roots the lessons have taught by Lesson 10" is a different claim
+    # — a cutoff, not the dictionary — and four texts and the ladder write it;
+    # so is "the 47 roots the dictionary glosses to something", held below.
+    for _m in re.finditer(r"\bthe (\d+) roots\b(?! the (?:lessons|course|dictionary))"
+                          r"|(\d+) roots with sourced etymologies", _fb):
+        _n = int(_m.group(1) or _m.group(2))
+        check(_n == len(words),
+              f"{os.path.basename(_p)}: says '{_m.group(0)}'; the dictionary "
+              f"has {len(words)}")
+    for _m in re.finditer(r"(\d+) lessons in order", _fb):
+        check(int(_m.group(1)) == len(names),
+              f"{os.path.basename(_p)}: says '{_m.group(0)}'; lessons/ holds "
+              f"{len(names)}")
+    # Two counts, three apart: 47 roots are glossed "to something" and 50 words
+    # behave as verbs, because bisa, lasim and madad are verbs by behaviour and
+    # not by gloss. The front page said "the language's 47 verbs" — the smaller
+    # count wearing the name of the larger — so both are held, each by its own
+    # name.
+    for _m in re.finditer(r"[Tt]he language has (\d+) verbs", _fb):
+        check(int(_m.group(1)) == len(VERBS),
+              f"{os.path.basename(_p)}: says '{_m.group(0)}'; {len(VERBS)} "
+              f"words behave as verbs")
+    for _m in re.finditer(r"(\d+) roots the dictionary glosses", _fb):
+        _togloss = sum(1 for _w in words if meaning[_w].startswith("to "))
+        check(int(_m.group(1)) == _togloss,
+              f"{os.path.basename(_p)}: says '{_m.group(0)}'; {_togloss} roots "
+              f"are glossed that way")
+    for _m in re.finditer(r"chain two verbs before Lesson (\d+)", _fb):
+        check(int(_m.group(1)) == _RULE_LESSON["verb chain"],
+              f"{os.path.basename(_p)}: says '{_m.group(0)}'; the verb chain "
+              f"arrives in Lesson {_RULE_LESSON['verb chain']:02d}")
+    # A digit in brackets after a number root is that root's gloss: *ba* (8).
+    for _m in re.finditer(r"\*([a-z]+)\* \((\d+)\)", _fb):
+        if _m.group(1) not in _VAL: continue
+        check(_VAL[_m.group(1)] == int(_m.group(2)),
+              f"{os.path.basename(_p)}: says '{_m.group(0)}'; the dictionary "
+              f"glosses {_m.group(1)} as {_VAL[_m.group(1)]}")
+    # "11 = *des-uan*" is arithmetic, and the front page teaches the system
+    # with four of these. The parser that reads a number out of a glossed
+    # sentence reads them too.
+    for _m in re.finditer(r"(\d+) = \*([a-z][a-z\- ]*)\*", _fb):
+        _parts = [_q for _tok in _m.group(2).split() for _q in _tok.split("-")]
+        if not all(_q in _VAL for _q in _parts): continue
+        check(_num_value(_parts) == int(_m.group(1)),
+              f"{os.path.basename(_p)}: says '{_m.group(0)}'; that spelling is "
+              f"{_num_value(_parts)}")
+    # The lesson index writes the link between the name and the verb — "[story
+    # 1](...) becomes readable at Lesson 13" — so the link is part of what has
+    # to match. And the row is looked up only if it exists: a lesson renamed to
+    # one digit drops out of the ladder and took this check down with it, so
+    # the run died where the two-digit rule should have reported it, which is
+    # the failure mode that rule's own comment warns about.
+    _S1 = "story-1-anak-espera-sol.md"
+    for _m in re.finditer(r"story 1(?:\]\([^)]*\))? (?:becomes )?readable at "
+                          r"Lesson (\d+)", _fb):
+        if _S1 not in _LADVOCAB or _S1 not in _LADGRAM: continue
+        _row = max(_LADVOCAB[_S1][1], _LADGRAM[_S1])
+        check(int(_m.group(1)) == _row,
+              f"{os.path.basename(_p)}: says '{_m.group(0)}'; the ladder opens "
+              f"it at Lesson {_row:02d}")
+
+# ------------------------------- a link labelled with a number names that file
+# The gap table and the indexes are full of links written "[text 6](.../text-6-
+# seti-din.md)", and the label and the target were free to disagree: perturbing
+# the label in a copy of the tree changed nothing anywhere. A reader follows
+# the number, so a label pointing at another file misleads exactly the reader
+# who is checking.
+for _p in md():
+    for _m in re.finditer(r"\[(?:[Tt]ext|[Ss]tory|[Ll]esson) (\d+)[^\]]*\]\(([^)]+)\)",
+                          read(_p)):
+        _target = os.path.basename(_m.group(2)).split("#")[0]
+        _tn = re.search(r"(?:text|story|lesson)-(\d+)", _target)
+        if not _tn: continue
+        check(int(_tn.group(1)) == int(_m.group(1)),
+              f"{os.path.basename(_p)}: a link labelled '{_m.group(1)}' points "
+              f"at {_target}")
 
 # ------------------------------------------------------------------- README
 # The front page states the root count by hand; it must match the dictionary.
