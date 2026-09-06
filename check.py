@@ -3878,6 +3878,29 @@ check(not _unmapped,
       f"an etymology names a language the family map does not know, so its "
       f"family is counted nowhere: {', '.join(_unmapped)}")
 
+# ------------------- a tense marker in front of an adjective, while it is open
+# tense.md puts the marker before the verb and copula.md puts nothing before an
+# adjective, so an adjective predicate has no granted past. The material has
+# been writing one since Lesson 11 — the marker straight in front of the
+# adjective — in five sentences no rule grants. The count is held so the shape
+# cannot spread while the question is open, which is the same treatment madad
+# gets: a word or a shape whose decision is free stays free.
+_tenseadj = set()
+for _p, _tb in _material():
+    for _line, _sent, _toks in amadunia_runs(_tb):
+        _t = [_x.lower().split("-")[0] for _x in _toks]
+        for _a, _b in zip(_t, _t[1:]):
+            if _a in ("suda", "saufa") and _b in ADJECTIVES and _b not in VERBS:
+                _tenseadj.add((os.path.basename(_p), _sent.strip()))
+check(len(_tenseadj) == 5,
+      f"{len(_tenseadj)} sentences put a tense marker in front of an "
+      f"adjective; the shape is an open question and stood in five when it was "
+      f"raised: {sorted(_s for _, _s in _tenseadj)}")
+check(all(f"*{_s}*" in read("grammar/tense.md")
+          for _, _s in _tenseadj),
+      f"grammar/tense.md must name every sentence that uses the open shape: "
+      f"{sorted(_s for _, _s in _tenseadj)}")
+
 # ---------------- the concepts the language composes instead of naming
 # Two rules join words — possession and the demonstrative — and nothing else
 # does, so the list of single-English-word concepts the material reaches with a

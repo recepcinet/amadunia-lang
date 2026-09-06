@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**284 guarantees** in **132 groups**, and every one of them is
+**286 guarantees** in **133 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -501,6 +501,10 @@ The `…` marks where a message fills in a word, a count or a sentence.
 ### every language an etymology names must map to a family
 
 - an etymology names a language the family map does not know, so its family is counted nowhere: …
+### a tense marker in front of an adjective, while it is open
+
+- … sentences put a tense marker in front of an adjective; the shape is an open question and stood in five when it was raised: …
+- grammar/tense.md must name every sentence that uses the open shape: …
 ### the concepts the language composes instead of naming
 
 - a1-checklist.md must name the concepts the material composes rather than names: …

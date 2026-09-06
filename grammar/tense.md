@@ -68,3 +68,28 @@ Two different families, neither already dominant in the vocabulary. Both are sem
 
 - Whether *suda* also covers the perfect ("I have eaten") or whether that needs its own marker.
 - Whether a habitual ("I eat every day") ever needs marking, or whether the unmarked present carries it.
+- **What tenses an adjective predicate.** This rule puts the marker in front of
+  the verb; [the copula rule](copula.md) puts nothing in front of an adjective,
+  so *Dom kabir* — the house is big — has no verb to mark and no way to say
+  *was*. **The material has been answering it since Lesson 11 without a rule:**
+  the marker goes straight in front of the adjective, where the verb would
+  stand.
+
+  | Where | Sentence | |
+  |---|---|---|
+  | [Lesson 11](../lessons/lesson-11-being.md) | *Dom suda kabir* | the house was big |
+  | [Lesson 11](../lessons/lesson-11-being.md) | *Ca saufa garam* | the tea will be hot |
+  | [Lesson 11](../lessons/lesson-11-being.md) | *Din saufa garam* | the day will be hot |
+  | [Lesson 20](../lessons/lesson-20-colours-and-health.md) | *Ta suda bimar* | she was sick |
+  | [text 16](../texts/text-16-berapa-harga.md) | *Mi fikir samaki saufa hao* | I think the fish will be good |
+
+  Five sentences, and the lesson that teaches the copula teaches three of them.
+  Nothing grants the shape: this page says *before the verb* and there is no
+  verb, and copula.md says *nothing before an adjective* and this is something.
+  It is the same kind of thing as the imperative before September 3 — a rule
+  the writing settled by using it, waiting for somebody to say so — and it is
+  the founder's to grant or refuse. Found September 11, 2026 by
+  [text 26](../texts/text-26-dom-eski.md), which is a memory, needed it in its
+  second sentence, and worked round it because an open shape is not for new
+  writing. [`check.py`](../check.py) holds the count at five so the shape
+  cannot spread while the question is open.

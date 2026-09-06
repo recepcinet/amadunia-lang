@@ -120,7 +120,7 @@ Two items are not grammar at all and sit outside this order: *madad* doing two
 jobs, and the thinness of Sino-Tibetan and Japonic recorded in
 [balance.md](../dictionary/balance.md). Both are vocabulary policy.
 
-## Open questions — 38 of them
+## Open questions — 39 of them
 
 Gathered from the files above so they can be read in one place. Each is recorded where the decision would live.
 
@@ -269,6 +269,7 @@ measurement with its method stated, to be re-run rather than trusted.
 
 - Whether *suda* also covers the perfect ("I have eaten") or whether that needs its own marker.
 - Whether a habitual ("I eat every day") ever needs marking, or whether the unmarked present carries it.
+- **What tenses an adjective predicate.** The marker goes before the verb and an adjective predicate has none, so *the house was big* has nowhere to put *suda* — and the material has been putting it straight in front of the adjective since Lesson 11, in five sentences no rule grants. **Open — the founder's call.**
 
 **[definiteness](definiteness.md)**
 

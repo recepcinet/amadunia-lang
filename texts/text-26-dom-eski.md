@@ -103,17 +103,22 @@ long time*. The tree lived in the garden and the page cannot say for how long,
 which is the sentence a memory most wants. [Recorded with the other things the
 writing has asked for](../dictionary/README.md#words-the-writing-has-asked-for).
 
-**An adjective predicate cannot be put in the past at all.** *Kamra mi keci*
-is "my room is small", and the sentence this page wanted is *my room was
-small*. There is nowhere to put *suda*: it goes in front of a verb, and an
-adjective predicate has no verb — [that is the copula rule, and it is
-deliberate](../grammar/copula.md). Writing *Kamra mi suda es keci* is the
-obvious repair and [the checker refuses it](../check.py), because *es* never
-stands before an adjective. So the room is described in the present inside a
-page that is entirely past, and the reader is left to carry the tense across
-from the sentences around it. This is the sharpest thing this page found and it
-is not a missing word: it is what *no conjugation* costs, in the one place the
-cost is not free.
+**An adjective predicate has no granted way into the past.** *Kamra mi keci* is
+"my room is small", and the sentence this page wanted is *my room was small*.
+*suda* goes in front of a verb and an adjective predicate has none; *es* before
+the adjective is [refused by the copula rule](../grammar/copula.md) and by the
+checker. So the room is described in the present inside a page that is entirely
+past, and the reader carries the tense across from the sentences around it.
+
+**The course has been doing it since Lesson 11 anyway.** Written the day after
+this page, and it corrects what this page first said: *Dom suda kabir* — the
+house was big — puts the marker straight in front of the adjective, where the
+verb would be, and [Lesson 11](../lessons/lesson-11-being.md) teaches it, twice
+more in the future. Five sentences in the material use the shape and no rule
+grants it. So the language does have a way and this page did not use it, which
+is the right way round: [an open shape is not for new writing until it is
+settled](../grammar/tense.md), and finding it in the lessons is worth more than
+inventing it here would have been.
 
 ## Roots used
 
