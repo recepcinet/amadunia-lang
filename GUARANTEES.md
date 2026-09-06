@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**275 guarantees** in **126 groups**, and every one of them is
+**277 guarantees** in **127 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -439,6 +439,10 @@ The `…` marks where a message fills in a word, a count or a sentence.
 
 - questions.md rejects … for containing …, which is not in it
 - conjunction.md: … roots end in -…
+### how many rules the exercise table can see, and cannot
+
+- texts/README.md: grammar/ holds … rule pages
+- texts/README.md: the scan tracks … rules
 ### how many roots the two thin families have actually given
 
 - proposal-a2.md: … roots come from Chinese or Japanese

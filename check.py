@@ -1864,7 +1864,13 @@ for _p in sorted(glob.glob("texts/*.md")):
             _RULETEXT["existence"].add(_f)
         if "no" in _t: _RULETEXT["negation"].add(_f)
         if {"aur", "o"} & set(_t): _RULETEXT["conjunction"].add(_f)
-        if "?" in _sent: _RULETEXT["question"].add(_f)
+        # The question mark has to be looked for in the line, not the
+        # sentence: amadunia_runs splits on "?" and never leaves one in _sent,
+        # so this detector could not fire and the question rule was missing
+        # from the exercise table altogether. The reading ladder's copy of the
+        # same detector reads the line and has always worked — two copies of
+        # one test, and only one of them right.
+        if "?" in _line: _RULETEXT["question"].add(_f)
         if {"ini", "itu"} & set(_t): _RULETEXT["demonstrative"].add(_f)
         if {"in", "dari", "por"} & set(_t): _RULETEXT["place"].add(_f)
         if "una" in _t: _RULETEXT["una"].add(_f)
@@ -3508,6 +3514,22 @@ for _end, _phrase in (("o", "**{}** roots end in *-o*"),
     check(_phrase.format(_n).replace("**", "") in _conj.replace("**", "")
           .replace("\n", " "),
           f"conjunction.md: {_n} roots end in -{_end}")
+
+# --------------------- how many rules the exercise table can see, and cannot
+# texts/README.md claimed every settled rule was exercised and then narrowed
+# itself to the fifteen a scanner can spot. There are twenty-one rule pages,
+# and eight of them are invisible to a sentence scanner for reasons worth
+# stating rather than passing over: two are marked by nothing, one is an
+# absence, three are properties of every word, and one is true of every
+# sentence. The count of rule pages is derived so the sentence cannot drift
+# from the directory.
+_rulepages = [_p for _p in sorted(glob.glob("grammar/*.md"))
+              if not os.path.basename(_p).startswith(("README", "proposal-"))]
+check(f"There are {_SPELLN[len(_rulepages)]} rule pages" in read("texts/README.md"),
+      f"texts/README.md: grammar/ holds {len(_rulepages)} rule pages")
+check(f"**{_SPELLN[len(_RULETEXT)].capitalize()} rules can be spotted in a sentence**"
+      in read("texts/README.md"),
+      f"texts/README.md: the scan tracks {len(_RULETEXT)} rules")
 
 # ---------------- how many roots the two thin families have actually given
 # proposal-a2.md says how many words are already taken from Chinese and
