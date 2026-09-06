@@ -2,7 +2,7 @@
 
 **Generated from [`check.py`](check.py) itself.** Every line below is a message
 the checker prints when something is wrong — not a paraphrase of one. There are
-**281 guarantees** in **130 groups**, and every one of them is
+**282 guarantees** in **131 groups**, and every one of them is
 exercised by a mutation in [`test-check.py`](test-check.py), which says so on
 every run.
 
@@ -494,6 +494,9 @@ The `…` marks where a message fills in a word, a count or a sentence.
 - a1-checklist.md: … are missing as actions and held as nouns, and the page must say so
 - a1-checklist.md: … is missing and … is held, and the page must name the pair
 - a1-checklist.md: … concepts appear twice — … — and one deliberate duplicate is documented
+### every language an etymology names must map to a family
+
+- an etymology names a language the family map does not know, so its family is counted nowhere: …
 ### the concepts the language composes instead of naming
 
 - a1-checklist.md must name the concepts the material composes rather than names: …

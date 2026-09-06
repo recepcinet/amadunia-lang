@@ -3304,6 +3304,11 @@ FAMILY = {
     "Yoruba":"Niger-Congo","Chinese":"Sino-Tibetan","Mandarin":"Sino-Tibetan",
     "Japanese":"Japonic","Korean":"Koreanic","Tamil":"Dravidian","Telugu":"Dravidian",
     "Hausa":"Afro-Asiatic","Somali":"Afro-Asiatic",
+    # Named in an etymology and mapped to nothing until September 9, 2026, so
+    # the reach column dropped them in silence: negara names Thai and Khmer,
+    # du names Welsh. Three families the dictionary touches and the
+    # measurement could not see.
+    "Thai":"Tai-Kadai","Khmer":"Austroasiatic","Welsh":"Celtic",
 }
 EUROPEAN = {"Latin/Romance", "Germanic", "Slavic", "Greek"}
 
@@ -3810,6 +3815,23 @@ _twice = sorted({_c for _c in _allc if _allc.count(_c) > 1})
 check(len(_twice) == 1 and f"*{_twice[0]}* is in **actions**" in _cl,
       f"a1-checklist.md: {len(_twice)} concepts appear twice — "
       f"{', '.join(_twice)} — and one deliberate duplicate is documented")
+
+# ------------- every language an etymology names must map to a family
+# Three did not — Thai and Khmer in negara, Welsh in du — and the reach column
+# dropped them without a row or a warning. The map is checked against the
+# etymologies now: a source language the dictionary names and FAMILY does not
+# know is a family the balance measurement cannot see.
+_NOTLANG = {"Earth", "Egyptian", "Bantu", "Esperanto", "Yemen", "Quran",
+            "Frucht", "Kaffee", "Glas", "Tier", "Moment", "Studium", "Auto",
+            "Maschine", "Schule", "Gruppe", "Geschichte", "Idee", "Kultur",
+            "Natur", "Nummer", "Problem", "Musik", "Germanic", "Latin",
+            "Replaced", "September"}
+_unmapped = sorted({_m.group(1) for _w in words
+                    for _m in re.finditer(r"\b([A-Z][a-z]{2,})\b", source[_w])
+                    if _m.group(1) not in FAMILY and _m.group(1) not in _NOTLANG})
+check(not _unmapped,
+      f"an etymology names a language the family map does not know, so its "
+      f"family is counted nowhere: {', '.join(_unmapped)}")
 
 # ---------------- the concepts the language composes instead of naming
 # Two rules join words — possession and the demonstrative — and nothing else
